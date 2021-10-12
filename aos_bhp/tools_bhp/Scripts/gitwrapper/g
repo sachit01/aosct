@@ -1,0 +1,525 @@
+#!/bin/bash
+
+red=`tput setaf 1`
+green=`tput setaf 2`
+#yellow=`tput setaf 3`
+blue=`tput setaf 4`
+white=`tput setaf 7`
+black=`tput setaf 8`
+reset=`tput sgr0`
+
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+GIT_STATUS="git status"
+GIT_GET_BRANCH="git symbolic-ref --short HEAD"
+GIT_ADD="git add ."
+GIT_CHECKOUT_ALL="git checkout ."
+GIT_CHECKOUT_MASTER="git checkout master"
+GIT_COMMIT_AMEND="git commit --amend"
+GIT_COMMIT_NEW="git commit"
+GIT_PULL_REBASE="git pull --rebase"
+GIT_REBASE_MASTER="git rebase master"
+GITK="nohup gitk &"
+GIT_PUSH="git push origin HEAD:refs/for/master"
+GIT_CLEAN="git clean -df"
+
+END="------------------------------------------------------------------------------"
+
+#Repo paths
+ROOT="/p/aos_bhp"
+ATP_CORE="$ROOT/atp_core"
+ATP_BHP="$ROOT/atp_bhp"
+ATC="$ROOT/atc"
+DISP="$ROOT/dispatcher"
+TOOLS="$ROOT/tools_bhp"
+DMI="$ROOT/dmi_bhp"
+
+cmd_pre_actions(){
+  echo -n "${blue}$(tput bold)$1:>$(tput sgr0)${black}"
+  cd $2
+  echo -e $PWD: ${red}
+}
+
+cmd_post_actions(){
+  echo -en $1 ${reset}
+  echo DONE
+  echo $END
+}
+
+cmd_invoker(){
+  cmd_pre_actions "$1" "$2"
+  #echo -n "                                  " # Just for readability
+  $3
+  cmd_post_actions
+}
+
+goto_repo(){ # $1 = path
+  echo -n "${red}$(tput bold)$1:>${reset}"
+  cd $1
+}
+
+git_status_repo(){ # TODO
+  echo TODO
+}
+
+git_push(){ # "git 
+  echo -n "git push origin HEAD:refs/for/master "
+  echo "$1"
+  cd $2
+  echo -en $PWD: ${red}
+  git push origin HEAD:refs/for/master
+  cmd_post_actions
+}
+
+git_checkout_new_b(){
+  cmd_pre_actions "$1" "$2"
+  git checkout -b $3
+  cmd_post_actions
+}
+
+git_rmb(){
+  cmd_pre_actions "$1" "$2"
+  git branch -d $4
+  echo -en ${reset}
+  echo $END
+}
+
+git_cob(){
+  cmd_pre_actions "$1" "$2"
+  git checkout $4
+  echo -en ${reset}
+  echo $END
+}
+
+g_choosen_branch=""
+query_branch(){
+  IFS=$'\n' # to do the output line-feed separated
+  BRANCHES=()
+  index=0
+  maxindex=0
+  cd $TOOLS # Just to be in a repo for querying for local branches
+  while read line; do
+	BRANCHES=("${BRANCHES[@]}" $line)
+	echo [$index] ${red}${BRANCHES[@]:$index:1}${reset}
+	((index+=1))
+  done < <(git branch | cut -c 3-)
+  maxindex=$index
+  
+  # Make sure the chosen index is valid
+  notdone=1
+  while [ $notdone -gt 0 ] ; do
+    read -p "Choose branch index! " i
+	if [ $i -lt $maxindex ]; then
+	  notdone=0
+	else
+      echo "Invalid index, try again..."
+	fi
+  done
+  
+  cd .. #cd back to the aos_bhp repo
+  
+  g_choosen_branch=${BRANCHES[$i]}
+}
+
+git_checkout_b(){ # git checkout <branch>
+  query_branch
+  exc_cmd_all_excpt_dmi git_cob $g_choosen_branch
+}
+
+git_remove_branch(){ # git remove <branch>
+  query_branch
+  
+  read -p "The chosen branch should not be checked out in any repo. Sure the branch is not checkout out? (y/n) " yn
+  case $yn in
+        [Yy]* ) echo removing $g_choosen_branch;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer (y)es or (n)o.";;
+  esac
+  
+  exc_cmd_all_excpt_dmi git_rmb $g_choosen_branch
+}
+
+FILES=()
+gindex=0
+list_files_and_choose(){
+#  FILES=()
+  index=0
+  ok=0 # OK to start picking filess
+  
+  while read line; do
+	if [ "$line" = "Changes not staged for commit:" ]; then # After jumped through "changes to be commited" set ok=1
+	  ok=1
+	fi
+	if [[ "$line" = "modified:"* && $ok = 1 ]]; then
+	  set $line
+	  FILES=("${FILES[@]}" "$2")
+	  echo  "[$index]  ${red}$2 $(tput sgr0)${black}"
+	  #FILES=("${FILES[@]}" "${line[@]:9}")
+	  #echo  "[$index]  ${red}${line[@]:9} $(tput sgr0)${black}"
+	  ((index+=1))
+	fi
+  done < <(git status)
+  maxindex=$index
+ 
+  # Make sure the chosen index is valid
+  notdone=1
+  while [ $notdone -gt 0 ] ; do
+    read -p "Choose file index! " i
+	if [ $i -lt $maxindex ]; then
+	  notdone=0
+	else
+      echo "Invalid index, try again..."
+	fi
+  done
+  gindex=$i
+  #echo -e $i ${FILES[$i]}
+  echo $END
+}
+
+git_checkout_f(){ # git checkout <file>
+  eval list_files_and_choose
+  i=$gindex
+  echo  "Checking out ${red} [$i] ${FILES[$i]}$(tput sgr0)${black}"
+  git checkout ${FILES[@]:$i:1}
+  echo
+  git_checkout_f
+}
+
+git_add_f(){ # git add <file>
+  eval list_files_and_choose
+  i=$gindex
+  echo  "Adding file ${red}[$i] ${FILES[$i]}$(tput sgr0)${black}"
+  git add ${FILES[@]:$i:1}
+  echo
+  git_add_f
+}
+
+git_diff_f(){ # git diff <file>
+  eval list_files_and_choose
+  i=$gindex
+  git diff ${FILES[@]:$i:1}
+}
+
+git_clean_handler(){
+  if [ "$2" = "all" ]; then 
+   exc_cmd_all "$GIT_CLEAN"
+  else
+   git_cmd_handler "$GIT_CLEAN"
+  fi 
+}
+
+exc_cmd_all_excpt_dmi() {
+  echo $END
+  $1 "CORE (1)" $ATP_CORE $3 $@
+  $1 "ATP_BHP (2)" $ATP_BHP $3 $@
+  $1 "ATC (3)" $ATC $3 $@
+  $1 "DISP (4)" $DISP $3 $@
+  $1 "TOOLS (5)" $TOOLS $3 $@
+}
+
+exc_cmd_all() { # $1 = the command
+  echo $END
+  cmd_invoker "CORE (1)" $ATP_CORE "$1"
+  cmd_invoker "ATP_BHP (2)" $ATP_BHP "$1"
+  cmd_invoker "ATC (3)" $ATC "$1"
+  cmd_invoker "DISP (4)" $DISP "$1"
+  cmd_invoker "TOOLS (5)" $TOOLS "$1"
+  cmd_invoker "DMI (6)" $DMI "$1"
+}
+
+exc_cmd_single() {
+	if [ "$2" = "" ]; then
+	  $1 $ROOT
+	elif [ $2 = CORE ]; then
+	  $1 $ATP_CORE
+	elif [ $2 = "BHP" ]; then
+	  $1 $ATP_BHP
+    elif [ $2 = "ATC" ]; then
+	  $1 $ATC
+    elif [ $2 = "DISP" ]; then
+	  $1 $DISP
+    elif [ $2 = "TOOLS" ]; then
+	  $1 $TOOLS
+    elif [ $2 = "DMI" ]; then
+	  $1 $DMI
+    else
+	  cd $2
+    fi
+}
+
+git_cmd_handler(){
+  echo ${blue}
+  OPTIONS_LIST=(ATP_CORE ATP_BHP ATC DISP TOOLS DMI ALL ALL-DMI)
+  
+  if [ "$3" = "" ]; then
+    OPTIONS="ATP_CORE ATP_BHP ATC DISP TOOLS DMI ALL ALL-DMI"
+    select opt in $OPTIONS; do
+	  echo ${reset}
+	  break
+    done
+  else
+    opt=${OPTIONS_LIST[(($3 - 1))]}
+  fi
+  
+  echo "$opt"
+  if [ "$opt" = "ATP_CORE" ]; then
+	cmd_invoker "CORE (1)" $ATP_CORE "$1"
+	exit
+  elif [ "$opt" = "ATP_BHP" ]; then
+    cmd_invoker "ATP_BHP (2)" $ATP_BHP "$1"
+	exit
+  elif [ "$opt" = "ATC" ]; then
+    cmd_invoker "ATC (3)" $ATC "$1"
+    exit
+  elif [ "$opt" = "DISP" ]; then
+    cmd_invoker "DISP (4)" $DISP "$1"
+    exit
+  elif [ "$opt" = "TOOLS" ]; then
+    cmd_invoker "TOOLS (5)" $TOOLS "$1"
+    exit
+  elif [ "$opt" = "DMI" ]; then
+    $1 "DMI (6)" $DMI
+	exit
+  elif [ "$opt" = "ALL" ]; then
+    exc_cmd_all "$1"
+    exit
+  elif [ "$opt" = "ALL-DMI" ]; then
+    exc_cmd_all_excpt_dmi $1 $3
+    exit
+  else
+    #clear
+    echo bad option
+  fi
+}
+
+git_cmd_handler_old(){
+
+	OPTIONS="ATP_CORE ATP_BHP ATC DISP TOOLS DMI ALL ALL-DMI"
+	select opt in $OPTIONS; do
+	   if [ "$opt" = "ATP_CORE" ]; then
+		$1 CORE $ATP_CORE $3
+		exit
+	   elif [ "$opt" = "ATP_BHP" ]; then
+		$1 ATP_BHP $ATP_BHP $3
+		exit
+	   elif [ "$opt" = "ATC" ]; then
+		$1 ATC $ATC $3
+		exit
+	   elif [ "$opt" = "DISP" ]; then
+		$1 DISP $DISP $3
+		exit
+	   elif [ "$opt" = "TOOLS" ]; then
+		$1 TOOLS $TOOLS $3
+		exit
+	   elif [ "$opt" = "DMI" ]; then
+		$1 DMI $DMI
+		exit
+	   elif [ "$opt" = "ALL" ]; then
+	    exc_cmd_all "$1"
+		exit
+	   elif [ "$opt" = "ALL-DMI" ]; then
+	    exc_cmd_all_excpt_dmi $1 $3
+		exit
+	   else
+		#clear
+		echo bad option
+	   fi
+	done
+}
+
+setup_alias(){
+ alias gcd="exc_cmd_single goto_repo" $@
+}
+
+allrebase(){
+  REPOS=()
+  CIDS=()
+  
+  #ask about the branch
+  echo ${red}NOTE: Ensure there are no untracked changes in your repos!${reset}
+  query_branch
+  read -p "Have you choosen the correct branch to rebase (y/n)! " yn
+  case $yn in
+        [Yy]* ) echo Rebasing $g_choosen_branch;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer (y)es or (n)o.";;
+  esac
+  
+  cd $ROOT
+  index=0
+  while read line; do
+	if [[ $line == *"checked out"* ]]; then
+	  repo=$(echo $line | grep -Po '[^" :":]+(?=:)')
+	  repo=$(echo ${repo//[\']/})
+	  changeid=$(echo ${line#*$'checked out '})
+      changeid=$(echo ${changeid//[\']/})
+	  
+	  REPOS[$index]=$repo
+	  CIDS[$index]=$changeid
+	  
+	  echo To rebase $red$bold$repo:$g_choosen_branch$reset to change id $red$bold$changeid$reset
+      #echo ${REPOS[$index]} [${CIDS[$index]}]
+    fi
+	((index+=1))
+  done < <(git submodule update)
+
+  echo Start rebasing
+  
+  index=0
+  for i in "${REPOS[@]}" ; do
+   cmd_pre_actions ${REPOS[$index]} ${REPOS[$index]}
+   echo $reset
+   echo Rebasing $red$bold$g_choosen_branch$reset to change id $red$bold${CIDS[$index]}$reset
+   git checkout $g_choosen_branch
+   echo -en ${reset}
+   
+   git rebase ${CIDS[$index]}
+   #echo $cmd
+   
+   cd ..
+   echo $END
+   ((index+=1))
+  done
+}
+
+show_issues(){
+  
+  echo -e "\033[4m1. Known issues with the wrapper\033[0m"
+  echo -e " - Files including the space character in the name will not work when when listing files in addf/cof/diff etc."
+  echo -e " - Array of files not updated properly when element should be removed and not shown, addf/cof/diff etc."
+  
+  echo $END
+}
+
+help(){
+  echo Help information for Git wrapper: 
+  echo $END
+  echo -e '\e[4:2mHow to work with git submodules\e[4:0m' "\n"
+  
+  echo -e "\033[4m1. General work flow\033[0m"
+  echo -en " - Pull the latest from aos_bhp repo\t\t\t\t" 
+  echo -e "${red}@/p/aos_bhp/>${green}git pull${reset}"
+  echo -en " - Update sub repos to the latest given by aos_bhp \t\t"
+  echo -e "${red}@/p/aos_bhp/>${green}git submodule update${reset}"
+  echo -en " - Create local branch for your work \t\t\t\t"
+  echo -e "${red}@/p/aos_bhp/>${green}g cnb <branch_name>${reset}"
+  echo -e " - Work on the task in related repositories, contiue when done..."
+  echo -en " - Commit work in relevant repos \t\t\t\t"
+  echo -e "${red}@/p/aos_bhp/>${green}g ncommit/acommit ${reset}(run g for explation)"
+  echo -en " - Rebase all repos, start pull root \t\t\t\t"
+  echo -e "${red}@/p/aos_bhp/>${green}git pull${reset}"
+  echo -en " - Run rebase command while having work branch checked out \t"
+  echo -e "${red}@/p/aos_bhp/>${green}g smrebase${reset}"
+  echo -en " - Push work from relevant repos when rebase is handled \t"
+  echo -e "${red}@/p/aos_bhp/>${green}g push ${reset}(run g for explation)"
+  echo -e " - Get work REVIEWED and SUBMITTED in gerrit"
+  echo -en " - Update aos_bhp to point to your changes \t\t\t"
+  echo -e "${red}@/p/aos_bhp/>${green}./update${reset}"
+  echo -en " - Commit the update of aos_bhp (master branch) \t\t"
+  echo -e "${red}@/p/aos_bhp/>${green}git commit -m \"Commit message\"${reset}"
+  echo -en " - Push the update of aos_bhp (master branch)\t\t\t"
+  echo -e "${red}@/p/aos_bhp/>${green}git push origin HEAD:refs/for/master${reset}"
+  echo -e " - Jenkins will have initiated a build of you work in all sub repositories"
+  echo -e " - When Jenkins is done, assuming build passed, submit aos_bhp change in gerrit"
+  echo -e "Done"
+  echo $END
+}
+
+sourceDone=0
+if [ "$1" = "" ]; then
+  echo -n ${reset}
+  echo "arguments are:"
+  echo ${green}"g help" ${reset}"- for help"
+  echo ${green}"g st" ${reset}"- for status"
+  echo ${green}"g add"  ${reset}"- for git add"
+  echo ${green}"g acommit" ${reset}"- for commit --amend"
+  echo ${green}"g ncommit" ${reset}"- for a new commit"
+  echo ${green}"g pull" ${reset}"- for pull --rebase"
+  echo ${green}"g co" ${reset}"- for checkout all local"
+  echo ${green}"g rebase" ${reset}"- for rebase master"
+  echo ${green}"g gk" ${reset}"- for starting gitk in a repo of choice"
+  echo ${green}"g push" ${reset}"- for pushing on master"
+  echo ${green}"g lsb" ${reset}"- for listing current inuse branches"
+  echo ${green}"g comst" ${reset}"- for checkout master on repos"
+  echo ${green}"gcd <REPO>" ${reset}"- to jump to given repo"
+  echo ${green}"g cob" ${reset}"- to checkout a certain branch in current repo (Menu option)"
+  echo ${green}"g rmb" ${reset}"- to remove a certain branch in current repo (Menu option)"
+  echo ${green}"g cof" ${reset}"- to checkout a certain file in current repo (Menu option)"
+  echo ${green}"g addf" ${reset}"- to add a certain file for commit in current repo (Menu option)"
+  echo ${green}"g diff" ${reset}"- to ""git diff"" a certain file for commit in current repo (Menu option)"
+  echo ${green}"g cnb <branch_name>" ${reset}"- to ""git checkout <name>"" for each repo except DMI"
+  echo ${green}"g smrebase" ${reset}"- to rebase all submodules to valid change ID given by ""git submodule update"""
+  echo ${green}"g clean -df (all)" ${reset}"- to clean repo or all repos if run with all option"
+  # if [ $sourceDone = 0 ]; then
+	# sourceDone=1
+    # source g
+	# echo "Sourced"
+  # fi
+  setup_alias
+elif [ "$1" = help ]; then
+  help
+elif [ "$1" = st ]; then
+  echo "git status"
+  if [ "$2" = "" ]; then
+    exc_cmd_all "$GIT_STATUS"
+  else
+    git_cmd_handler "$GIT_STATUS" $@
+  fi
+elif [ "$1" = add ]; then
+  echo "git add ."
+  git_cmd_handler "$GIT_ADD" $@ #git_add $@
+elif [ "$1" = acommit ]; then
+  echo "git commit --amend"
+  git_cmd_handler "$GIT_COMMIT_AMEND" #git_commit_amend $@
+elif [ "$1" = ncommit ]; then
+  echo "git commit -m"
+  git_cmd_handler "$GIT_COMMIT_NEW" #git_commit_new $@
+elif [ "$1" = pull ]; then
+  echo "git pull --rebase"
+  git_cmd_handler "$GIT_PULL_REBASE" #git_pull $@
+elif [ "$1" = co ]; then
+  echo "git checkout ."
+  git_cmd_handler "$GIT_CHECKOUT_ALL"
+elif [ "$1" = rebase ]; then
+  echo "git rebase master"
+  git_cmd_handler "$GIT_REBASE_MASTER" #git_rebase_master $@
+elif [ "$1" = gk ]; then
+  echo "gitk - under construnction"
+  git_cmd_handler "$GITK" $@ #git_gitk $@
+elif [ "$1" = push ]; then
+  echo "git push origin HEAD:refs/for/master"
+  git_cmd_handler "$GIT_PUSH" #git_push $@
+elif [ "$1" = lsb ]; then
+  echo "git show inuse branches"
+  exc_cmd_all "$GIT_GET_BRANCH"
+elif [ "$1" = comst ]; then
+  echo "git checkout master on branch"
+  git_cmd_handler "$GIT_CHECKOUT_MASTER" #git_co_mstrbranch $@
+elif [ "$1" = cd ]; then
+  exc_cmd_single goto_repo $@
+  echo $@
+elif [ "$1" = cob ]; then
+  git_checkout_b
+elif [ "$1" = rmb ]; then
+  git_remove_branch
+elif [ "$1" = cof ]; then
+  git_checkout_f
+elif [ "$1" = addf ]; then
+  git_add_f
+elif [ "$1" = diff ]; then
+  git_diff_f
+elif [ "$1" = cnb ]; then
+  exc_cmd_all_excpt_dmi git_checkout_new_b $@
+elif [ "$1" = smrebase ]; then
+  allrebase $@
+elif [ "$1" = clean ]; then
+  git_clean_handler $@
+elif [ "$1" = issues ]; then
+  show_issues
+else
+  echo "missing command"
+  exit
+fi  
+
+

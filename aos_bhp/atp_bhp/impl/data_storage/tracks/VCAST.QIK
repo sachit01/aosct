@@ -1,0 +1,56 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atp_bhp\impl\data_storage\tracks
+BEGIN_RECORD tracks.cpp
+CHECKSUM 2911999665
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATP2DS6TracksFv
+   instance__Q3_3ATP2DS6TracksSFv
+CALLED_OBJECTS
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q3_3ATP2DS14AbstractTracksFv
+   __ct__Q3_3ATP2DS5TrackFUsQ2_3ATP9TravelDirT1UiQ2_3ATP6OdoDir
+   __ct__Q3_3ATP2DS5TrackFv
+   __ct__Q3_3ATP2DS6BaliseFUsT1Ui
+   __ct__Q3_3ATP2DS6BaliseFv
+   __ct__Q3_3ATP2DS6TracksFRCQ3_3ATP2DS6Tracks
+   __dt__Q3_3ATP2DS5TrackFv
+   __dt__Q3_3ATP2DS6BaliseFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::IO::BtmTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATP::DS::ErrorHandler
+   ATP::DS::Tracks
+   ATP::IO::ErrorHandler
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::Tracks
+INCLUDES
+END_RECORD tracks.cpp

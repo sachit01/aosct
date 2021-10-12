@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6221B896-1910-4E54-933C-6DECBC884D0E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>test_disp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\atc\impl\basic_ip;..\..\..\dispatcher\impl\class_d;c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h;..\..\..\atc\impl\application;..\..\..\atc\impl\aos_template_library;..\..\..\atc\impl\atc_base;..\..\..\atc\impl\atc_types;c\impl\bds_sim;..\..\..\atc\impl\config;..\..\..\atc\impl\console;..\..\..\atc\impl\event_handler;..\..\..\atc\impl\log_handler;..\..\..\atc\impl\simulation\common;..\..\..\atc\impl\serialization;..\..\..\atc\impl\util;..\..\..\atc\impl\vfw;..\..\..\atc\impl\math;..\..\..\dispatcher\impl\config;..\..\..\dispatcher\impl\console;..\..\..\dispatcher\impl\disp_application;..\..\..\dispatcher\impl\event_handler;..\..\..\dispatcher\impl\log_handler;..\..\..\dispatcher\impl\message_dispatcher;..\..\..\dispatcher\impl\basic_ip;C:\CoVP_CoHP\Linux_ppc\include;C:\GSP_2\Software\Development\BDS\include;C:\GSP_2\Software\Development\VitalIO_Handler\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_SIL;_DISPATCHER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_SIL;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_DISPATCHER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>..\..\..\atc\impl\application;..\..\..\atc\impl\aos_template_library;..\..\..\atc\impl\atc_base;..\..\..\atc\impl\atc_types;..\..\..\atc\impl\basic_ip;c\impl\bds_sim;..\..\..\atc\impl\config;..\..\..\atc\impl\console;..\..\..\atc\impl\event_handler;..\..\..\atc\impl\log_handler;..\..\..\atc\impl\simulation\common;..\..\..\atc\impl\serialization;..\..\..\atc\impl\util;..\..\..\atc\impl\vfw;..\..\..\atc\impl\math;..\..\..\dispatcher\impl\class_d;..\..\..\dispatcher\impl\config;..\..\..\dispatcher\impl\console;..\..\..\dispatcher\impl\disp_application;..\..\..\dispatcher\impl\event_handler;..\..\..\dispatcher\impl\log_handler;..\..\..\dispatcher\impl\message_dispatcher;..\..\..\dispatcher\impl\basic_ip;C:\CoVP_CoHP\Linux_ppc\include;C:\GSP_2\Software\Development\BDS\include;C:\GSP_2\Software\Development\VitalIO_Handler\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\atc\impl\application\abstract_application_base.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\config_file.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\ipaddress_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\math\atc_math.cpp" />
+    <ClCompile Include="..\basic_ip\basic_ip.cpp" />
+    <ClCompile Include="..\class_d\class_d_transceiver.cpp" />
+    <ClCompile Include="..\disp_application\disp_application.cpp" />
+    <ClCompile Include="..\disp_main\disp_main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\log_handler\log_handler.cpp" />
+    <ClCompile Include="..\message_dispatcher\message_dispatcher.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\atc_base\atc_base.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\basic_ip\abstract_basic_ip.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\bds_sim\bds_sim.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\abstract_config_base.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\base_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\bool_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\int16_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\int32_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\int64_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\int8_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\string_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\uint16_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\uint32_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\uint64_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\uint8_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\console\abstract_console.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\console\trace_interface.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\event_handler\abstract_event_handler.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\event_handler\event.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\log_handler\abstract_log_handler.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\util\atc_util.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\vfw_sim\vfw_sim.cpp" />
+    <ClCompile Include="..\..\..\dispatcher\impl\config\config.cpp" />
+    <ClCompile Include="..\..\..\dispatcher\impl\console\console.cpp" />
+    <ClCompile Include="..\..\..\dispatcher\impl\event_handler\event_handler.cpp" />
+    <ClCompile Include="vfw_sim_disp_bhp.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test_disp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\atc\impl\application\abstract_application_base.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\basic_ip\abstract_basic_ip_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\abstract_config_base_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\config_file.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\ipaddress_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\math\atc_math.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\math\atc_math_event_ids.hpp" />
+    <ClInclude Include="..\..\spec\input\basic_ip\basic_ip_specification.hpp" />
+    <ClInclude Include="..\..\spec\input\disp_application\disp_application_specification.hpp" />
+    <ClInclude Include="..\..\spec\input\disp_main\disp_main_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\message_dispatcher\message_dispatcher_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\event_handler\event_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\log_handler\log_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\basic_ip\basic_ip.hpp" />
+    <ClInclude Include="..\class_d\class_d_transceiver.hpp" />
+    <ClInclude Include="..\class_d\class_d_types.hpp" />
+    <ClInclude Include="..\disp_application\dispatcher_version.hpp" />
+    <ClInclude Include="..\disp_application\disp_application.hpp" />
+    <ClInclude Include="..\log_handler\log_handler.hpp" />
+    <ClInclude Include="..\message_dispatcher\channel_config_dispatcher.hpp" />
+    <ClInclude Include="..\message_dispatcher\message_dispatcher_event_ids.hpp" />
+    <ClInclude Include="..\message_dispatcher\message_dispatcher.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\atc_base\atc_base.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\basic_ip\abstract_basic_ip.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\abstract_config_base.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\base_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\bool_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\int16_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\int32_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\int64_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\int8_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\string_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\uint16_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\uint32_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\uint64_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\uint8_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\console\abstract_console.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\console\trace_interface.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\event_handler\abstract_event_handler.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\event_handler\event.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\log_handler\abstract_log_handler.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\util\atc_util.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\vfw_sim\vfw_sim.hpp" />
+    <ClInclude Include="..\..\..\dispatcher\impl\config\config.hpp" />
+    <ClInclude Include="..\..\..\dispatcher\impl\console\console.hpp" />
+    <ClInclude Include="..\..\..\dispatcher\impl\event_handler\event_handler.hpp" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,133 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atp_bhp\impl\config
+BEGIN_RECORD config.cpp
+CHECKSUM  145000952
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __CPR60____ne__Q2_3ATP16BHPTypicalConfigCFRCQ2_3ATPJ13J
+   __ct__Q2_3ATP16BHPTypicalConfigFv
+   __ct__Q2_3ATP6ConfigFv
+   getBPDeltaRapidLoss__Q2_3ATP6ConfigCFv
+   getBPTimeRapidLoss__Q2_3ATP6ConfigCFv
+   getBrakePressureStabilizeMargin__Q2_3ATP6ConfigCFv
+   getDefaultValLocoType__Q2_3ATP6ConfigCFv
+   getDeleteTrackMargin__Q2_3ATP6ConfigCFv
+   getECPBCarsInBrakeCalc__Q2_3ATP6ConfigCFv
+   getECPBMinPercBrakeCars__Q2_3ATP6ConfigCFv
+   getEbCutOutConfigured__Q2_3ATP6ConfigCFv
+   getEbFbInaccuracy__Q2_3ATP6ConfigCFv
+   getEbFbSignalStatus__Q2_3ATP6ConfigCFv
+   getEbFeedbackTimeout__Q2_3ATP6ConfigCFv
+   getLCSMaxSample__Q2_3ATP6ConfigCFv
+   getLCSSpeedDiffForSample__Q2_3ATP6ConfigCFv
+   getMaxEbApplyFeedback__Q2_3ATP6ConfigCFv
+   getMaxEbFbDiffTimeout__Q2_3ATP6ConfigCFv
+   getMaxEbFbDiff__Q2_3ATP6ConfigCFv
+   getMaxExtReversingDistance__Q2_3ATP6ConfigCFv
+   getMaxExtReversingSpeed__Q2_3ATP6ConfigCFv
+   getMaxValLocoType__Q2_3ATP6ConfigCFv
+   getMinApproachSpeed__Q2_3ATP6ConfigCFv
+   getMinEbReleaseFeedback__Q2_3ATP6ConfigCFv
+   getMinValLocoType__Q2_3ATP6ConfigCFv
+   getNonLeadingLocoInput__Q2_3ATP6ConfigCFv
+   getOBRDBrakeTestPressure__Q2_3ATP6ConfigCFv
+   getOBRDLengthMargin__Q2_3ATP6ConfigCFv
+   getOBRDReportTimeout__Q2_3ATP6ConfigCFv
+   getRailRoadInputAvail__Q2_3ATP6ConfigCFv
+   getRangeMaxBP1__Q2_3ATP6ConfigCFv
+   getRangeMaxBP2__Q2_3ATP6ConfigCFv
+   getRangeMinBP1__Q2_3ATP6ConfigCFv
+   getRangeMinBP2__Q2_3ATP6ConfigCFv
+   getSbPrPropagationSpeed__Q2_3ATP6ConfigCFv
+   getTcoFeedbackTimeout__Q2_3ATP6ConfigCFv
+   getTcoOrderAndTCOFb__Q2_3ATP6ConfigCFv
+   getTicInitToRunTimeout__Q2_3ATP6ConfigCFv
+   getTimsEcbpTimeOut__Q2_3ATP6ConfigCFv
+   getTimsEotTimeOut__Q2_3ATP6ConfigCFv
+   getTimsLengthMargin__Q2_3ATP6ConfigCFv
+   getTimsMinBPLastCar__Q2_3ATP6ConfigCFv
+   getTimsMinBPLoco__Q2_3ATP6ConfigCFv
+   getTypicalConfig__Q2_3ATP6ConfigCFUcRQ2_3ATP16BHPTypicalConfig
+   getTypicalConfig__Q2_3ATP6ConfigCFUsN21RQ2_3ATP16BHPTypicalConfig
+   getUseEbTcoFbDuringBrakeTest__Q2_3ATP6ConfigCFv
+   initCrossCompare__Q2_3ATP6ConfigCFv
+   init__Q2_3ATP6ConfigFv
+   instance__Q2_3ATP6ConfigSFv
+   preInit__Q2_3ATP6ConfigFv
+CALLED_OBJECTS
+   __CPR83____ct__Q3_3ATP7Support20AbstractCrossCompareFRCQ3_3ATPJ13JJ21J
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC11IOComponentFRCQ2_3ATC11IOComponent
+   __ct__Q2_3ATC11IOComponentFUsPCcT2
+   __ct__Q2_3ATC11IOComponentFv
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC18AbstractConfigBaseFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC7ATCMathFRCQ2_3ATC7ATCMath
+   __ct__Q2_3ATC7ATCMathFv
+   __ct__Q2_3ATP14AbstractConfigFv
+   __ct__Q2_3ATP6ConfigFRCQ2_3ATP6Config
+   __ct__Q3_3ATP7Support18CrossCompareObjectFv
+   __ct__Q3_3ATP7Support18CrossCompareOutputFv
+   __ct__Q3_3ATP7Support20AbstractCrossCompareFv
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFPCZ1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __dt__Q2_3ATC14BaseConfigItemFv
+   __dt__Q3_3ATP7Support18CrossCompareObjectFv
+   __dt__Q3_3ATP7Support18CrossCompareOutputFv
+   __dt__Q3_3ATP7Support20AbstractCrossCompareFv
+   __dt__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFv
+   addBoolConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22bPQ2_3ATC10ConfigFile
+   addCrossCompareData__Q3_3ATP7Support20AbstractCrossCompareFPQ3_3ATP7Support18CrossCompareObject
+   addStringConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22UcT5T2PQ2_3ATC10ConfigFile
+   addUint16ConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22N31PQ2_3ATC10ConfigFile
+   addUint8ConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22UcN25PQ2_3ATC10ConfigFile
+   aosHalt__3ATCFPCciT1
+   corePtr__Q3_3ATP7Support20AbstractCrossCompareSFv
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRPCc
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRUc
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRUs
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRb
+   getDeleteTrackMargin__Q2_3ATP14AbstractConfigCFv
+   getEBMarginAdded__Q2_3ATP14AbstractConfigCFv
+   getRollAwayMargin__Q2_3ATP14AbstractConfigCFv
+   initCrossCompare__Q2_3ATP14AbstractConfigCFv
+   init__Q2_3ATP14AbstractConfigFv
+   maximum__Q2_3ATC7ATCMathSFUiT1
+   preInit__Q2_3ATC13BaseComponentFv
+   preInit__Q3_3ATP7Support20AbstractCrossCompareFv
+   reportConfigError__Q2_3ATC18AbstractConfigBaseSFPCciT1
+   setGlobalNameToConfigParameter__Q2_3ATC18AbstractConfigBaseFUsPCc
+   vfw_strlcpy
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+   configFileCommon__Q2_3ATC18AbstractConfigBase
+   configFileInstance__Q2_3ATC18AbstractConfigBase
+   configFileMaint__Q2_3ATC18AbstractConfigBase
+   configFileRuntime__Q2_3ATC18AbstractConfigBase
+   configFileType__Q2_3ATC18AbstractConfigBase
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATP::BHPTypicalConfig
+   ATP::Config
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::BHPTypicalConfig
+   ATP::Config
+INCLUDES
+END_RECORD config.cpp

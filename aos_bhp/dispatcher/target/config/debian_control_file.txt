@@ -1,0 +1,8 @@
+Package: aosconfig
+Version: ${VERSION}
+Maintainer: https://www.bombardier.com
+Architecture: powerpc
+Description: Automatic Train Protection
+ Copyright: Bombardier Transportation
+ Automatic Train Protection (Linux PPC, CPU-C)
+Provides: Automatic_Train_Protection

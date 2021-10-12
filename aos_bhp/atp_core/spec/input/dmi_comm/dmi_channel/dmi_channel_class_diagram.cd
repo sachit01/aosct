@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::DMICom::DMIChannel">
+    <Position X="3.25" Y="3.25" Width="2.5" />
+    <Members>
+      <Field Name="active" Hidden="true" />
+      <Field Name="bufIdx" Hidden="true" />
+      <Method Name="calculateCRC" Hidden="true" />
+      <Field Name="chstat" Hidden="true" />
+      <Field Name="connected" Hidden="true" />
+      <Field Name="crossCompareChannelWriteDesc" Hidden="true" />
+      <Field Name="dmiAckMsgOutQueue" Hidden="true" />
+      <Method Name="DMIChannel" Hidden="true" />
+      <Field Name="dmiChannelID" Hidden="true" />
+      <Field Name="dmiConnectionStatus" Hidden="true" />
+      <Field Name="dmiMsgInQueue" Hidden="true" />
+      <Field Name="dmiMsgStart" Hidden="true" />
+      <Field Name="dmiNoAckMsgOutQueue" Hidden="true" />
+      <Method Name="extractMessage" Hidden="true" />
+      <Field Name="inBuf" Hidden="true" />
+      <Field Name="inBufCnt" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="lastMessageReceivedTime" Hidden="true" />
+      <Field Name="maxDmiChannelEvent" Hidden="true" />
+      <Field Name="maxRetryCnt" Hidden="true" />
+      <Field Name="numVfwChannelsDmiChannels" Hidden="true" />
+      <Field Name="outBuf" Hidden="true" />
+      <Field Name="outBufCnt" Hidden="true" />
+      <Method Name="packMsg" Hidden="true" />
+      <Field Name="popInQueueIdx" Hidden="true" />
+      <Method Name="popNoAckOutQueue" Hidden="true" />
+      <Field Name="popNoAckOutQueueIdx" Hidden="true" />
+      <Field Name="pushInQueueIdx" Hidden="true" />
+      <Method Name="pushMsgToInQueue" Hidden="true" />
+      <Field Name="pushNoAckOutQueueIdx" Hidden="true" />
+      <Field Name="readChannelName" Hidden="true" />
+      <Method Name="readFromChannel" Hidden="true" />
+      <Method Name="readFromChannelAndDiscard" Hidden="true" />
+      <Field Name="retryCnt" Hidden="true" />
+      <Method Name="sendAck" Hidden="true" />
+      <Field Name="sendAckNumber" Hidden="true" />
+      <Field Name="syncChannelReadDesc" Hidden="true" />
+      <Field Name="timeoutAckMessage" Hidden="true" />
+      <Field Name="timeoutConnected" Hidden="true" />
+      <Field Name="traceLevelError" Hidden="true" />
+      <Field Name="txMode" Hidden="true" />
+      <Field Name="waitForAckStartTime" Hidden="true" />
+      <Field Name="waitingAckNumber" Hidden="true" />
+      <Field Name="waitingResendMsg" Hidden="true" />
+      <Field Name="writeChannelName" Hidden="true" />
+      <Method Name="writeToChannel" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ATP::DMICom::DMIChannel::TxMode">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_channel\dmi_channel.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <InheritanceLine Type="ATC::IOComponent" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.625" Y="2.444" />
+        <Point X="4.625" Y="2.875" />
+        <Point X="4.625" Y="2.875" />
+        <Point X="4.625" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>1AAKAABBAEAwEAAAZmgAUDFQMAAQQgYMBKQpImkBVAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_channel\dmi_channel.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::IOComponent">
+    <Position X="3.25" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Protected" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="7.25" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

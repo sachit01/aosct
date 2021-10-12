@@ -1,0 +1,32 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atc\impl\fixed_size_mempool
+BEGIN_RECORD fixed_size_pool_manager.cpp
+CHECKSUM  3331514196
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __dt__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   addrFromIndex__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFUs
+   allocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   checkPointer__tm__4_PUc__46__N_30_TU_fixed_size_pool_manager_cpp_1faf79b2FZ1Z_Z1Z
+   createPool__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFUiUs
+   deAllocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFPv
+   getNumberOfFreeBlocks__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   indexFromAddr__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFPCUc
+   poolAlignedBlockSize__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   poolBlockSize__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   poolCreatedOk__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+CALLED_OBJECTS
+   aosHalt__3ATCFPCciT1
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::AOSMem::FixedSizeMemoryPool
+DEFAULT_TESTABLE_CLASSES
+   ATC::AOSMem::FixedSizeMemoryPool
+INCLUDES
+END_RECORD fixed_size_pool_manager.cpp

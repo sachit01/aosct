@@ -1,0 +1,912 @@
+*** 2011-08-12 Ver 2.6.0 ***
+
+FrameStyle=1 in INI-file makes application to appear as a movable window (instead of filling up the entire screen)
+Size is fixed , default (800 * 600) but maybe customized using the settings
+Width=800 
+Height=600
+
+e.g.
+
+Width=1024
+Height=768
+
+or
+
+Width=640
+Height=480
+
+Framestyle=0 will make the application run in full-screen as in previous versions.
+
+
+*** 2011-08-18 Ver 2.6.1 ***
+
+Corrected preliminary configuration-forms for the new framestyle.
+
+
+*** 2011-09-09 Ver 2.6.3 ***
+
+- LK style configuration-forms for "Manual configuration" and "Reconfiguration"
+
+- "OnScreenDisplay" Alphanumeric keyboard now compatible with all descendants of TWinControl
+
+- "OnScreenDisplay" numeric keyboard compatible with all descendants of TWinControl
+
+- Errors/log-messages no longer stored on file
+
+*** 2011-10-06 Ver 2.7.0 ***
+
+- New protocol with modified header. Up to 512 bytes messages.
+
+
+*** 2011-10-11 Ver 2.7.1 ***
+
+- Individual CarName - messages replaced by CarNameList for all carnames in a train.
+
+*** 2011-10-13 Ver 2.7.2 ***
+
+- CarAnswerList - messages redefined
+- Ceiling Speed List redefined for many speed datablocks in one message.
+
+*** 2011-10-19 Ver 2.7.3 ***
+- Gradient Data List and Car Status redefined for many datablocks in one message.
+
+*** 2011-10-21 Ver 2.7.4 ***
+- MMI now allows (again) 0 cars to be configured
+
+*** 2011-10-25 Ver 2.7.5 ***
+- FirstTimeInactive state removed
+
+*** 2011-10-25 Ver 2.7.6 ***
+- LocoStatus Word -> LongWord (32 bit)
+
+*** 2011-10-26 Ver 2.7.7 ***
+- FirstCarIsLoco removed
+
+*** 2011-10-27 Ver 2.7.8 ***
+- Automatic configuration removed
+- Corrected end of numeric input when driver clicks on Accept in Manual Configuration
+
+*** 2011-10-27 Ver 2.7.10 ***
+- ConfigSubState redefined
+
+*** 2011-11-03 Ver 2.7.11 ***
+- Display PowerDown-screen when detected
+- Ini-file settings reorganized
+Project 'LKAB' 
+Default no of cars 
+etc
+- Removed mtShutDownMMI
+- Removed LogData messages
+- Removed EventLog
+
+*** 2011-11-03 Ver 2.7.12 ***
+- Disable(and grey) Accept-buttons etc. when they should not be used
+
+*** 2011-11-10 Ver 2.7.13 ***
+- Version displayed in caption (FrameStyle window only)
+- LoadHandling-panel removed
+- YardMode in progress..
+
+*** 2011-11-10 Ver 2.7.14 ***
+- Allow yard Mode
+
+*** 2011-11-15 Ver 2.7.15 ***
+- Configurable types of cars and car-images
+
+*** 2011-11-17 Ver 2.7.16 ***
+- Allow yard mode also frpm Login- and Manual Configuration-screen
+- Yard mode send trace-commands / receive trace-response
+
+*** 2011-11-18 Ver 2.7.17 ***
+- Yard mode speedo-meter and brake-controls enabled
+
+*** 2011-11-23 Ver 2.7.18 ***
+- Yard mode speed also shown as a number
+- Yard mode reading of response improved
+- Yard mode buttons positions changed (Manual config and Login)
+- System Restart screen
+
+*** 2011-11-23 Ver 2.7.19 ***
+- Corrected System Restart screen
+- Corrected display of Yard Mode button on Login-screen.
+
+*** 2011-11-23 Ver 2.7.20 ***
+- Corrected display of ATP2 Yard Mode response
+
+*** 2011-11-23 Ver 2.7.22 ***
+- Yard Mode response now displayed with fixed-width font
+
+*** 2011-11-24 Ver 2.7.23 ***
+- Yard Mode connect to ATO corrected.
+
+*** 2011-12-01 Ver 2.7.24 ***
+- Startup history (in progress..)
+
+*** 2011-12-06 Ver 2.7.26 ***
+- Startup history
+- Limit no of lines in Startup history and YardMode response.
+
+*** 2011-12-06 Ver 2.7.27 ***
+- Corrected Ini-file default-values
+
+*** 2011-12-20 Ver 2.7.28 ***
+- New layout and symbols for manual configuration and re-registration.
+TIC -> TIMS
+
+- Flag "Accept without TIMS" included in CarList message.
+
+*** 2011-12-21 Ver 2.7.29 ***
+
+- Reversed order of lines in Startup history
+- Corrected message when too many cars configured
+- Corrected "TIMS required" during re-registration
+- Corrected behaviour of "Accept"-buttons on Manual Config-form
+
+*** 2011-12-22 Ver 2.7.30 ***
+- Corrected display of image for CarsConnected in ReConfig form
+- All images on the Manual/Re-registration/TrainVsTrack-forms are now possible to replace using settings in the Ini-file
+- Corrected ManualConfiguration - form when 'None' selected immediately before 'Accept'
+Count is now correctly cleared to 0
+
+*** 2012-01-04 Ver 2.7.31 ***
+- MMI is now using N-JRU as logger
+- MMI Status and Errorcodes redefined
+- MMI.Ini: LogLevel introduced
+- MMI.Ini: Chapter [ErrorLog] removed
+- SystemIconChangeATOMode hidden at MMIInit
+- MMI.Ini: Chapter [N-JRU] introduced
+
+*** 2012-01-11 Ver 2.7.32 ***
+- Message MMITime to ATP removed
+- MMI always sends MMIStartup message also when MMI is started before ATP and after recover following Communication Lost.
+
+*** 2012-01-12 Ver 2.7.33 ***
+- Login-button disabled when login message sent to ATP. Reenabled when Login-screen is shown again.
+
+*** 2012-01-13 Ver 2.7.34 ***
+- Always format time in 24-hour mode and date as yyyy-mm-dd
+- YardMode is now using a fixed-width font that exists in a standard computer (Courier New)
+- Login:Enter/Return - key now acts as Login-click only if Login-button is visible and enabled
+
+*** 2012-01-17 Ver 2.7.35 ***
+- Changed default IP-address of ATO (Yard Mode)
+- Revised text-types in Error messages
+
+*** 2012-01-18 Ver 2.7.36 ***
+- Re-registration "Reject"-button now language-dependent.
+
+*** 2012-01-24 Ver 2.7.37 ***
+- Manual Configuration form corrected. ComboBox.AutoComplete switched off.
+- Hide alpha-numeric keyboard after editing Combo-Box and Accept
+
+*** 2012-02-01 Ver 2.7.38 ***
+- New text-type, "Pantograph Error"
+- Display "Undef text type:n" for unknown error text types
+
+*** 2012-02-07 Ver 2.7.39 ***
+- Re-enable of Accept/YardMode-buttons when Unregistered during Manual configuration.
+- Re-registration form now displays correctly cars connected at A or B-end.
+- Manual configuration form: Cars connected at A/B only available when any cars defined.
+Assumed cars connected at B-end when no cars connected.
+
+*** 2012-02-22 Ver 2.7.40 ***
+- Cars connected at A/B - end now displayed correctly during Re-registration
+- Various icons are now centred instead of stretched in order to avoid distortion
+- Introduced icons for ATO Mode / Switch in Yard Mode
+
+*** 2012-02-23 Ver 2.7.41 ***
+- No longer possible to send Login Id / Password using the OnScreenDisplay Enter-key
+  when the Login-button is disabled.
+- Yard Mode - button moved upwards on Manual Config Form in order to not to be hidden by OSD Keyboard.
+- Numeric keyboard re-enabled in some additional cases. 
+
+*** 2012-02-29 Ver 2.7.42 ***
+- Start-up history button also displayed when ATPState "Inactive" , i.e. "screensaver" mode. Text-list area hidden.
+
+*** 2012-03-08 Ver 2.7.43 ***
+- Now prepared to receive ATP Notifications with length of up to 255 chars
+
+*** 2012-03-14 Ver 2.7.44 ***
+- FormLogin:Correct input-field(same as focused field) is now receiving characters entered from OSD-keyboard also after incomplete input and "Login"-button clicked.
+- FormLogin:Login-button reenabled after 15 seconds of inactivity after button pressed.
+- Displayfield for TrainName is now wide enough to display 10 "wide" characters such as 'H'. 
+- ManualConfigurationForm: Focus removed from EditCount field/cell in FormShow
+- ManualConfigurationForm: ComboBoxCarsConnect re-enabled in FormShow (if previously disabled because of carcount == 0)
+
+*** 2012-03-15 Ver 2.7.45 ***
+- Change Log level now accessible from the System button menu.
+- LogLevelDebug logs all messages sent/received
+- Car-names now recovered Ok after MMI restart.
+- Train-name, Time, ATPMode now displayed centered instead of right-aligned.
+
+*** 2012-04-19 Ver 2.7.46 ***
+- Now receives info/displays(on associated panel) from all units ATP1, ATP2 and ATO in YardMode regardless of which unit tab-sheet is selected.
+
+*** 2012-05-10 Ver 2.7.47 & 48 ***
+- Changed various names of units/forms etc.
+
+*** 2012-05-11 Ver 2.7.49 ***
+- Do not call RearrangeCarBlockList from FormMain if Manual configuration is already visible.
+- Made buttons Configuration, YardMode, Read and Clear configurable via text or image.
+- Made ATO mode icons configurable.
+- Do not show TIMS integrity in shunting.
+
+*** 2012-05-15 Ver 2.8.0 ***
+- Resource-files as sourcecode added to project. 
+  MainArea.Res replaced by MMIResources.Rc
+  MMIAreaB.Res replaced by MMIAreaB.Rc
+  MMIAreaD.Res replaced by MMIAreaD.Rc
+
+- Forms and units renamed.
+
+  
+*** 2012-05-15 Ver 2.8.1 ***
+- Icon renamed to MMI.Ico and moved to .\Resource
+- MMIAreaC.Res removed
+- Unnecessary bitmaps removed from MMI.Res (MMI.Res will be recreated with only main icon if missing)
+
+*** 2012-05-28 Ver 2.8.2 ***
+- Form renamed
+- Display Count 0 (instead of blank) when no cars connected in FormManualConfiguration
+- Corrected DLL-interface making it possible to use MMICL DebugLevel
+- Corrected DLL-interface when sending message from MMI to ATP with more than 256 bytes
+
+*** 2012-05-31 ***
+- Removed cartype Lokomotiv, Service from ini-file. Did not count this change as new version.
+
+*** 2012-06-07 Ver 2.8.3 ***
+- Accept w/o TIMS handling added to reconfiguration form.
+  Reconfig now handles tsetup with TIMS NA/not used and sends startup correctley.
+  Accetp w/o TIMS also added when TIMS not OK/Available.
+
+*** 2012-08-27 Ver 2.8.4 ***
+- TExchange.Train_Config_Data(): Corrected handling of TIMSRequired and CarsConnected
+- Checked and corrected all combinations of Manual configuration,Re-reg and TIMS Ok/Not Ok
+
+
+*** 2012-09-05 Ver 2.8.5 ***
+- MMI program version now included in Log-message sent to N-JRU at startup.
+
+*** 2012-09-24 Ver 2.8.6 ***
+- "Login failed" - message displayed when verificationState = RedoinputState
+ATP1 (START) will stay in this state in 4 START-cycles before changing to verificationState = InputState 
+which will cause the MMI to display the Login-screen again.
+
+*** 2012-10-02 Ver 2.8.7 ***
+- More details reported when "Error in Ceiling_SpeedList" occurs.
+
+*** 2012-10-10 Ver 2.8.8 ***
+- Display rear/front tracksection/pos (click to hide/show)
+New setting in Ini-file.
+[Test]
+TSPos = 1 ;Display rear/front tracksection/pos
+
+Messages extended:
+
+Speed&Distance  (MessageType 5) extended with tracksection/pos
+TrainConfigData (MessageType 8) extended with balise-distance front/rear
+
+*** 2012-10-10 Ver 2.8.9 ***
+Handling-done button(in Location mode) not enabled until speed is zero a number of subsequent periods (2 seconds)
+
+*** 2012-10-15 Ver 2.8.10 ***
+- Display leading/trailing tracksection/pos (click to hide/show)
+Note setting in Ini-file.
+[Test]
+TSPos = 1 ;Display leading/trailing tracksection/pos
+
+Messages extended:
+
+Speed&Distance  (MessageType 5) extended with leading/trailing tracksection/pos
+
+*** 2012-10-16 Ver 2.8.11 ***
+- EnableCarsConnected in FormManualConfiguration.FormShow;
+
+- OkToShowHandlingDone flag is true when HandlingDone-button may be visible.
+Timer-function makes the HandlingDone-button visible when OkToShowHandlingDOne and speed is 0 (at least ~2 secs ) and ATOMode is manual.
+
+*** 2012-10-18 Ver 2.8.12 ***
+- Reboot PC 5 seconds after ATP SystemRestartState has been detected.
+This is happening when 
++ the ATP is restarted as the result of a planned restart (after MA with Q_ROUTE_TYPE = "Location end" and location data NID_LOCATION = "ATP Reset" is completed)
++ in YardMode/Shunting and the driver requests Train Configuration (Configure-button).
+
+- A new IniFile-setting in the [MMI] - chapter.
+; SystemRestart = 0, Default, No reboot when ATP enters SystemRestart state
+; SystemRestart = 1, Default, Reboot PC (5 seconds) after that the ATP has entered SystemRestart state
+
+*** 2012-10-18 Ver 2.8.13 ***
+- Disable/re-enable controls on Manual Configuration-form.
+No longer possible to change count, car-type etc when configuration sent.
+Controls re-enabled when form shown again after restart or if accept-buttons re-enabled.
+
+*** 2012-10-25 Ver 2.8.14 ***
+- Default max of planning area for LKAB changed from 1000 to 500 m
+- New symbol introduced for speedReason conditional target (pantograph shift)
+- Obsolete language-strings removed
+- Swedish terminology corrected in language-file
+- FormFullScreenMsg may now display also a delayed string.
+ATP testing subsystems , please wait ... will be replaced by Please start the loco ... 
+after 7 seconds.
+- Display leading/trailing pos with 1 decimal only
+
+*** 2012-10-26 Ver 2.8.15 ***
+- Moved definition of car-types and replaced images to the language-file.
+- ATO symbols reworked.
+
+*** 2012-10-30 Ver 2.8.16 ***
+- OdoMeterInvalid now included in message ATP Modes States.
+- OdoMeterInvalid and FreeRolling now indicated as symbols in the System area.
+- Detailed brake information scale is now linear in LKAB instead of logarithmic.
+- Planning area dimmed when OdoMeterInvalid
+- Speedometer disabled when OdoMeterInvalid
+
+*** 2012-10-31 Ver 2.8.17 ***
+- Corrected initialization of ATO Mode Symbol.
+If ATOEnable set to 0 in ATP1 and MMI not restarted the ATO Symbol was previously not displayed correctly.
+
+- Improved error-handling if Car-image file defined in language-file is not found.
+
+*** 2012-11-01 Ver 2.8.18 ***
+- Reworked Free-rolling symbol.
+
+*** 2012-11-08 Ver 2.8.19 ***
+- Corrected WriteMMIStatus error-argument when error in Car_List_Answer
+- Corrected Log-string for TrainVsTrackDirWanted
+- Minor corrections of names etc to match the interface-specification
+
+*** 2012-11-14 Ver 2.8.20 ***
+- Corrected a minor error in MMIAread.AddGradientToList
+- Compiled for Release
+
+*** 2012-11-16 Ver 2.8.21 ***
+- Added emergency alert reasons
+- Extended max length of text-messages displayed on the MMI 20->25 chars
+
+*** 2012-12-11 Ver 2.8.22 ***
+- Use AbsoluteFilePath() to adjust convert relative paths with MMIPath as root independent of working directory.
+
+*** 2013-03-20 Ver 2.8.23 ***
+- New and spare [ERROR]TextType´s for ATO/Pantograph-error, RollAwayProtection etc.
+
+*** 2013-06-11 Ver 2.8.24 ***
+- Make Leading/Trailing positions invisible when main screen is deactivated because of mode/state-change.
+- 4 spaces inserted in line logged to N-JRU to compensate for the speed info inserted by other log sources.
+
+*** 2013-09-17 Ver 2.8.25 ***
+- Do not show LogOut-button when in ATO Automatic
+- More detailed reasons for speed-change. PantoShiftToNone/Roof/Side
+
+*** 2013-09-19 Ver 2.8.26 ***
+- ShortMonthNames in language-file
+- Leading/trailing-texts in language-files
+- Additional DirectionArrowType for left-right arrows overrides project-setting (for backward compatibility). Will be replaced by individual symbols in the future.
+
+*** 2013-09-24 Ver 2.8.27 ***
+- The ATP is now sending info to MMI about position/speed and info for planning area also in Inactive state 
+in order to be able to display a proper planning area when the state has recovered to Active again. 
+Because of this the MMI should not make the Leading/Trailing fields visible just because that information arrives. 
+It must not make these fields visible before the rest of the main screen becomes visible.
+
+- Error messages in language-file: Renamed TT_Spare1..3. Introduced TT_Spare6..15
+
+*** 2013-09-25 Ver 2.8.28 ***
+- Corrected reception of LocoVsTrain - message from ATP1.
+Only of importance when MMI is restarted during registration and info is resent from ATP1 to MMI.
+
+*** 2013-10-02 Ver 2.8.29 ***
+- Display EmergencyBrake - button also on the Login-form. Same behaviour as on main form.
+This makes it possible to release the emergency brake before attempting to login.
+
+- The MMI now expects EmercencyAlert codes from ATP1 in the range [0..255] instead of [1..256].
+Now it conforms with the interface-documentation and the code 255 is also possible to use.
+The predefined codes will be translated as before but other unknown codes (0 or 10..255) will be displayed with a translated text
+"EA: Reason:<nr>".
+
+*** 2013-10-03 Ver 2.9.0 ***
+- Corrected enable "Handling-done" - button in Location when ATOMode = Undefined
+
+*** 2013-10-03 Ver 2.9.0 ***
+- Corrected enable "Handling-done" - button in Location when ATOMode = Undefined
+
+*** 2013-10-29 Ver 2.9.1 ***
+- Supporting translation of tags to language-dependent strings when receiving strings from AOS in the messages
+ 
+*** 2013-12-16 Ver 2.9.2 ***
+- Corrected translation of several tags arriving in the same string concatenating them to a language-dependent string.
+- Swedish.Ini Translated "EA:Dispatcher" to "EA: Operatör"
+- Corrected behaviour of "Change to ATO Mode" - bitmaps when in "Yard Mode" 
+ 
+*** 2014-03-21 Ver 3.0.0 ***
+- N-JRU log accessible via alternative screen (swipe to/from). Automatically hidden when speed > 0 
+- AOS Terminal accessible via alternative screen (swipe to/from). Automatically hidden when speed > 0
+- Login-form prepared for EA-icon (requires addition of EA-info to DriverInfo - message) 
+
+*** 2014-03-25 Ver 3.0.1 ***
+- EA-icon displayed also on Login-form
+- ATO <-> LCS comm.status displayed when problem detected in either direction ATO->LCS or LCS->ATO.
+- "ATP-modes and states" - message extended. Hence, this version is NOT compatible with earlier ATP1.
+- New Ini-file setting
+[Test]
+; AltScreens = 0 Default, do not allow alternative screens (Log, Terminal .. )
+; AltScreens = 1 Allow (swipe to) alternative screens
+;
+AltScreens = 1 
+
+*** 2014-04-04 Ver 3.0.2 ***
+- Adjustments to allow MMI to run in 1024 * 768 as well as 800 * 600 resolution.
+It did work also in previous versions in 1024 * 768 resolution but the look and feel was compromised.
+Some images did not scale well, buttons became too small, some fonts did not scale well etc..
+
+These adjustments include 
+- changing to fonts looking better when scaled.
+- redesign of bitmaps and in some cases HiRes-bitmaps only used when the higher resolution is detected.
+- redesign of forms automatic layout adjustments depending on resolution.
+
+*** 2014-04-11 Ver 3.0.4 ***
+- Compatibility version sent to ATP/received from ATP/checked.
+Message displayed as ATPNotification if incompatibility discovered.
+Incompatibility means wrong(or no) version received from ATP
+
+- Size of ATPNotification-message changed from 255 to 100 characters.
+
+- Main form and on-screen keyboard-forms are now double-buffered.
+
+*** 2014-04-22 Ver 3.0.5 ***
+
+- Display current leading odometer position if enabled ny new setting in MMI.INI
+; OdoPos = 0 Default, no display of odometer position
+; OdoPos = 1 Display leading odometer position
+;
+OdoPos = 1
+
+*** 2014-05-05 Ver 3.0.6 ***
+- Corrected turning off OdoPos
+- Double-buffered switched off for Main form because it has been observed that MMIAreaD was not always updated correctly (left blank)
+- Corrected version-check if MMI restarted during configuration/registration.
+- AltScreen Errlog now also working if Fatal Error
+- ATPMessage form no longer visible at start-up.
+- Improved error-handling when N-JRU-logfile not found at expected location.
+
+*** 2014-05-07 Ver 3.0.7 ***
+- Show LogOut-button also when ATOMode undefined
+
+*** 2014-12-16 Ver 3.1.0 ***
+- Show text-messages from AOS also in YardMode (in separate tab-sheet).
+
+*** 2015-01-07 Ver 3.1.1 ***
+- Only show C-button (Configuration) on main screen(Shunting mode) and YardMode screen when speed is zero.
+
+*** 2015-01-08 Ver 3.1.2 ***
+- Only show Y-button (Yard Mode) on main screen when speed is zero AND (ATO Man OR Undefined) AND actYardModeAllowed.
+
+*** 2015-02-06 ver 3.2.0 ***
+- ProjectSetting Demo introduced with 120 km/h etc. settings
+- New setting in Ini-file 
+[MMI]
+SpeedMaxScale
+overrides project-setting of speed-scale.
+- Max scale of announcement-area increased 3000 -> 20000 for the Demo-project
+- Scaling of announcement area corrected for large distances.
+- Fields for displaying Trailing/Leading pos made wider
+
+*** 2015-04-01 ver 3.2.1 ***
+- Corrected toggling of Wanted ATO Mode Switch in YardMode, see NCR arn_006#3030.
+- Corrected toggling of Wanted ATO Mode Switch also on main screen , 
+but only a minor problem. Sometimes the alternating image was not centered during the first toggling period.
+
+*** 2015-04-02 ver 3.2.2 ***
+- Renamed text TT_Spare4 to TT_LCSError
+
+*** 2015-04-09 ver 3.2.3 ***
+- Corrected handling of translated ATPNotification-messages.
+Now allowing up to three-times the original size of the original buffer for the translated string.
+This means an increase from 100 to 300 characters. The longest message in use now is ~170 characters.
+
+*** 2017-05-04 ver 4.0.0 ***
+Upgrade for BHP according to upgraded ingterface-spec
+- Renamed to DMI.Exe
+- New ATP modes
+- New train states
+- Confirm mode-change
+- Buttons visibility
+- New forms for "Select mode" and "Confirm mode change"
+
+*** 2017-05-10 ver 4.0.1 ***
+- Now reading settings from DMI.Ini
+- New messages AreaRequest and RegistrationArea
+- New form for "Select area"
+
+*** 2017-05-12 ver 4.0.2 ***
+- Now reading settings from DMI.Ini (fixed again)
+
+*** 2017-06-18 ver 4.0.3 ***
+- Corrected checking for the bit DrivingForward.
+
+*** 2017-08-29 ver 4.1.0 ***
+- Now supporting up to 350 cars
+  20 character train-name and car-name
+- Requires MMICL.DLL ver 2.8.0, 2017-08-22
+
+*** 2017-09-12 ver 4.1.1 ***
+- Now supporting also ATP Modes, Staff Responsible, Shunting Route, Split, Join (same screen as Normal mode)
+- Language-file English.Ini now supports all ATP-modes
+- Corrected reception of CarNameList
+- Speedometer max set to 100 km/h as default
+- Announcement area default scale increased
+- Removed ProjectSetting from DMI.INI
+
+*** 2017-10-12 ver 4.1.2 ***
+- Indication for Standstill event
+- Brake Test - buttons and indications
+
+*** 2017-10-16 ver 4.1.3 ***
+- Corrected Confirm ATP Mode form.
+
+*** 2017-10-19 ver 4.1.4 ***
+- Corrected Brake Test Notification indication
+
+*** 2017-10-19 ver 4.1.5 ***
+- Corrected Brake Test Notification time left
+
+*** 2017-10-24 ver 4.1.6 ***
+- Corrected Brake Test button only shown when indications Brake Test Notification AND Brake Test Allowed
+
+*** 2017-10-25 ver 4.1.7 ***
+- Now displaying up to 25 characters as DMI Message.
+- Safety Halt now displayed on the DMI
+
+*** 2017-11-19 ver 4.1.8 ***
+Implemented new buttons according to DMI-ATP IFS ver 2.11
+
+*** 2017-12-13 ver 4.1.9 ***
+- Implemented BTMTest buttons/status and "Change Train Name" according to DMI-ATP IFS ver 2.13
+
+
+*** 2017-12-14 ver 4.1.10 ***
+- Corrected AdditionalStatus2 (removed hard-coded test-code)
+
+*** 2017-12-18 ver 4.1.11 ***
+- The BTM test button now only shown if "BTM Test possible" bit is set.
+
+*** 2017-12-18 ver 4.1.12 ***
+- The message ReConfigSelected renamed to ReRegSelected
+- The form ReConfiguration renamed to FormReRegistration
+
+*** 2018-01-17 ver 4.1.13 ***
+- Show "normal" screen also in ATP Mode Possession.
+
+*** 2018-02-20 ver 4.2.0 ***
+- New common basic layout. First step is the "Layer1" and "Normal" screen.
+- DataModuleDMI separates data from GUI
+
+*** 2018-02-24 ver 4.2.2 ***
+- Confirm Brake test
+- Change Train Id moved to popup-menu
+
+*** 2018-03-11 ver 4.2.4 ***
+- Common layout on all screens
+
+*** 2018-03-15 ver 4.2.5 ***
+- Correction Regarding Logout button.
+- Confirm Mode handling is done in "Layer1".
+
+*** 2018-03-16 ver 4.2.6 ***
+- Correction Regarding Logout option in shunting/yard/posession mode.
+- Correction for Planning Area
+
+*** 2018-03-19 ver 4.2.7 ***
+- Corrected behaviour during startup. No longer showing a wrong invalid screen.
+
+*** 2018-03-22 ver 4.2.8 ***
+-  Direction for planning area is changed to Driver Info Data0.
+-  Hide odometer value from MMIAreaB.
+-  New Form for train composition added which will be displayed from menu and as well by clicking train lengh on planning area.
+
+*** 2018-04-02 ver 4.2.9 ***
+-  Implementation regarding Vehicle Type and Vehicle Data.
+
+*** 2018-04-09 ver 4.2.10 ***
+-  Correction done in ReRegistration for not to send vehicle data and just send confirmation message.
+
+*** 2018-04-11 ver 4.2.11 ***
+-  Correction for manual configuration page.
+
+*** 2018-04-28 ver 4.2.12 ***
+-  Implementation of confirmation for accepting re-registration setup.
+-  Requirement implementation for: AOS 2236, AOS 2570, AOS 2564, AOS 2300, AOS 454
+
+*** 2018-05-14 ver 4.2.13 ***
+-  Implementation of departure test.
+-  Implementation of location data
+-  Implementation of confirmation in sleeping mode.
+-  Removal of obselete message: CarList, CarListAnswer, CarStatusList 
+
+*** 2018-05-21 ver 4.2.14 ***
+-  Implementation for Handling Done, Free Rolling, Free Rolling Confirmation.
+
+*** 2018-06-13 ver 4.2.15 ***
+-  Implementation for Confirm MA in Shunting Route, Staff Responsible and Join mode
+
+*** 2018-06-13 ver 4.2.16 ***
+- Implemenation of Radio Area.
+- Correction for DMI reconnection with ATP restart.
+- Configuration option enable for reject configuration. 
+
+*** 2018-08-10 ver 4.2.17 ***
+- Implementation of Cancel Registration Area.
+- Implementation of Train Weight display.
+- Implementation of Estimated Time of Arrival.
+- New Icon for radio connected and disconnected included.
+- Icon for train loaded is changed and icon for unloaded train is removed.
+- Correction for the Ceiling Speed changed reason "other".
+
+*** 2018-09-28 ver 4.2.18 ***
+- Correction related to speed profile
+- Correction for Train Composition form.
+
+*** 2018-10-18 ver 4.2.19 ***
+- Correction related to reduce the warning in the code.
+- Correction to adjust DMI time according UTC time.
+
+*** 2018-11-11 ver 4.2.20 ***
+- Remote Interface to enable test automation
+[RemoteInterface]
+Enabled=0
+Port=30197
+
+- Minor corrections. Removed obsolete declarations, re-format, removed warnings.
+- Time in event sent to NJRU/RU from DMI corrected to UTC.
+- Format of event-line sent to NJRU corrected 
+- Scroll-bar for events removed in all forms
+- Positions of fields adjusted to align with others
+
+*** 2018-11-20 ver 4.2.21 ***
+-Fixed the character length in Radio Message in Command Message.
+-Removed the unused to function FillVehicleData.
+-Added to Dmi.res file to Git Ignore.
+
+*** 2018-12-06 ver 4.2.22 ***
+-In Remote Interface for Test Function, fixed the Remote Interface ports
+-Fixed the ATP PoweringDown state when the Driver presses ATP off button
+-Slightly tweaked the LoadedTrain icon to look symmetrical.
+-Fixed the ATP Sleeping Screen Display Text.
+
+*** 2018-12-06 ver 4.2.23 ***
+- To Handle DMI RegArea Remotely.
+- Updated the Remote Ports in ini file
+
+*** 2018-12-17 ver 4.2.24 ***
+- Added Separate send/receive buffers for Remote interface with procedure RemoteInternalCommand
+- Added the Loaded/Notloaded ComboBox for the Driver to select the LoadStatus in Automatic Configuration
+- Corrected the remote Command "DMISelect CarsConnectedonBSide"
+- Tweaked the Heading of Configurations
+- Added the strings of Loaded/NotLoaded and Yard/Shunting to English.Ini
+-TODO: Add the procedure SendLoadStatus to send Confirmation to ATP in UnitExchange
+
+*** 2018-12-18 ver 4.2.25 ***
+- Added the field Train-length to the response for the remote command getAtpInfo
+- Corrected response for remote command DMISelect <orientation> when wrong ATP mode
+- Respond "retry" if mode ahs not yet changed from Configuration to Registration.
+
+*** 2018-12-18 ver 4.2.26 ***
+- Added the Loaded/NotLoaded ComboBox for the Driver to select the LoadStatus in Manual Configuration.
+- Added the DMI-ATP Message Handler in UnitExchange.pas .
+- Tweaked the Components in DMI to suit for 1024*768 px.
+- Updated the AdjustComboBox method to resize ComboBox and Font Size.
+- Disabled the Cars Connected A/B side in DMI.
+
+*** 2019-01-11 ver 4.2.27 ***
+- Added the OSDKeyboard to the New Train Name Form
+- Removed the Estimated Speed Target Display on DMI.
+
+*** 2019-01-21 ver 4.2.28 ***
+-Added the new Icon StandStill Vertical, Confirm Integrity and Resume Supervision
+-Added the Loaded/Not Loaded Messsage Exchange from DMI to ATP in ManualConfiguration
+-Placed the new StandStill Icon in MMIPANELE28
+
+*** 2019-02-21 ver 4.2.29 ***
+-Added the MessageTypes TIMSConfirmIntegrity and TIMSCancelIntegrity.
+-Added Milliseconds to DMI Log Lines
+-Enabled the TIMSInhibiIntegrity and TIMSConfirmIntegrity at E3
+-Enabled Loaded Status by Driver for Manual and Auto Configuration Modes.
+-Removed the bsSystemMenu icon of UnitConfirmDepartureTest.
+-Sequenced to send TrainLoaded Message before Connected Cars on B-side both in Auto and Manual Configs.
+
+**** 2019-02-22 ver 4.2.30 ***
+-Added the TypicalConfig Message Handler 
+-Added the TypicalConfigTypes to the ComboBox.
+
+*** 2019-03-05 ver 4.2.31 ***
+- Current Odometer pos in changed to 32bit .
+- Changes reflected in Speed&Distance Message, CeilinngSpeed List nad Gradient List.
+
+*** 2019-03-05 ver 4.2.32 ***
+- Converted the Old Delphi Binary DFM to text compatible
+- Readable for git to merge.
+
+*** 2019-03-13 ver 4.2.33 ***
+- Fixed the DMI Crash on ATP Exit
+- Improved the Standstill Icon
+
+*** 2019-03-18 ver 4.2.34 ***
+-Fixing the TypicalConfig Bugs
+-Updating the VehicleType EditCount to DrawGrid
+
+*** 2019-03-20 ver 4.2.34 ***
+- Added DMISelect AcceptReReg -Accept re-registration. Either with or without TIMS
+- Added DMISelect RejectReReg -Reject Re-registration
+- Added DMISelect AcceptAutoConfig -Replacing DMISelect AcceptCarsonBSide 
+
+*** 2019-04-01 ver 4.2.35 ***
+- Added Loaded Status Ack confirmation
+- Added CarsConnectedonBSide ComboBox and diabled with Bside on default.
+- Updated the MessageTypes as per FIS ATP-DMI
+- Login from accepts Upper Case and Lower Case.
+
+*** 2019-04-04 ver 4.2.36 ***
+- Set standstill icon as transparent
+- Adjusted size and pos of standstill icon
+- Adjusted size and pos of controls in Manual / Automatic configuration forms
+- Restored the Automatic Configuration title
+- Close Form Confirm Load Status change when changing to Yard/Possession/Shunting
+- Correct Show/Hide Form Confirm Load Status change in Manual Config form
+- Changed Radio Area to Radio Channel
+- Corrected DMI-crash when more than 8 vehicle-types
+- Clear "Press C-button" on PowerUp-screen when C-button not allowed
+- Enable Cars connected on A/B-side when bit ALLOWED_TO_SELECT_CARS_CONNECTED_ON_A_B_SIDE is set.
+
+*** 2019-04-10 ver 4.2.37 ***
+- Show On-Screen keyboard In FormNewTrainName
+- Corrected showing message after incorrect login
+- Handling of actual driving direction in Location mode
+
+*** 2019-04-26 ver 4.2.38 ***
+- Implemenation of Approach Area in Level Crossing.
+- Display Brake System In use on DMI.
+
+*** 2019-06-11 ver 4.2.39 ***
+-New Shift Buttons to Keyboard 
+-Added new Symbols and Lowercase Letters
+
+*** 2019-06-19 ver 4.2.40 ***
+- Removed superfluous [x]-buttons from StartUp-history and Train-composition forms (defect 309321)
+- Handle new remote commands Minimize, Restore, DMISelect HandlingDone
+- Store MA Margin in DataModule. Now received in Driver info - message.
+- Include MA Margin in getATPInfo-response
+- Smaller font when displaying events. Now allowing up to 30 chars.
+- Updated English.ini for some DMI events lacking text-translation
+- Corrected log-layout to align with AOS log-layout
+- Changed layout of FormLayer1 so TrainName and LocationName have the same available space.
+  The fontsize is automatically adjusted to allow names up to 20 characters to fit inside the available space.
+
+*** 2019-06-28 ver 4.2.41 ***
+- Do not send any response for the remote commands Minimize and Restore
+  These commands are mainly for internal use and the response 
+  shall not be sent back to the test environment
+
+- WindowState setting in DMI.Ini 
+  ; Window state at start-up (only relevant and valid when FrameStyle = 1)
+  ;
+  ; WindowState = 0, Default, Restored size which is the default window size
+  ; WindowState = 1, Minimized,
+  ;
+
+- Removed the obsolete form AOSTerminal
+
+- Removed obsolete settings from DMI.Ini related to AOSTerminal
+
+
+*** 2019-07-03 ver 4.2.42 ***
+
+- Corrected setting of initial WindowState (0/1) = (Default/Minimized)
+
+*** 2019-08-20 ver 4.2.43 ***
+- Updated the ConfirmTrainIntegrity and InhibitTrainIntegrity in one condition
+  to Enable and show IntegrityAlert Button.
+
+*** 2019-08-23 ver 4.2.44 ***
+- Corrected starting DMI in Minimized state. Application did not start and initalize correctly in minimized state.
+
+*** 2019-08-27 ver 4.2.45 ***
+- Removed the interface string "waiting for Drive confirmation"
+
+*** 2019-08-28 ver 4.2.46 ***
+- Increased MMI_MAX_PACKAGE_SIZE to 8787 to accomodate 350cars
+
+*** 2019-10-02 ver 4.2.47 ***
+- Update the Cars in Train Re-registration when new train setup is recieved before the current train setup is accepted
+
+*** 2019-11-07 ver 4.2.48 ***
+- Correct calculation of pos for start of BCA indication to avoid it to "jump" up and down. 
+- Corrected show / hide of ConfirmNewATPMode
+
+*** 2019-11-13 ver 4.2.49 ***
+Changes according to updated DMI Interface spec, ver 2.38
+- Train weight field received and stored as a 4 byte integer (in unit Megagrammes = tonnes)
+- MA Margin received and stored as 2 bytes integer (in unit cm). Same definition as in FFFIS TCC-AOS
+
+*** 2019-12-09 ver 4.2.50 ***
+- Now supports remote command DMISelect ConfirmNewMode
+- Corrected behavior of SelectArea when form already opened.
+- Larger ComboBox for SelectArea to improve touchability.
+- Combobox now displays a translation of the AreaId fetched from the language file
+  section [Area]
+- Corrected behavior of COmboBox CarsConnected on ManualConfiguration form.
+
+*** 2020-01-12 ver 4.2.51 ***
+- Do not hide FormTrainVsTrackDir (if already shown) when activating form after logout/login in registration mode.
+
+*** 2020-01-29 ver 4.2.52 ***
+- Dialog box to abort last car brake Pressure in Progresss
+- ACK form to confirm the driver option selected
+
+*** 2020-02-25 ver 4.2.53 ***
+- Tachometer , Doppler Failure Indication in MMIpanel32
+- Driver shall confirm the Tachometer and doppler failure
+- Log events for tachometer and doppler failure
+
+*** 2020-02-26 ver 4.2.54 ***
+- Hide all overlay forms when communication lost
+- Changed and centered caption on FormFreeRollingCleared
+- Clear location name when ATP Mode is not Location
+- Removed 'Mg' from the Loaded icon and made the wheels more round.
+- Changed warning color of speedometer to more orange than brown.
+- Changed design of FormATPMessage 
+
+
+*** 2020-04-02 ver 4.2.55 ***
+- Now allowing input of up to 20 characters as *Other" in Manual Configuration.
+- Now allowing up to 35 characters per DMI log event-text
+- Updated DMI event-texts in language-file
+- Re-installed application icon
+- Standardized use of font, buttonKind, button sizes in most overlay forms
+
+*** 2020-04-16 ver 4.2.56 ***
+- Removed horizontal scrollbar from text-area
+
+*** 2020-05-13 ver 4.2.57 ***
+- Brakeability and brake-delays now received in Driver info - message from ATP
+- Track gradient and effective gradient now received in Spped & distance message from ATP
+- Added brakeability, brake-delay and gradients to ATPInfo in Remote Interface
+
+*** 2020-05-27 ver 4.2.58 ***
+- In the AreaA, the bar on the right displays the distance to target. Greeen bar of that bar now represents the MA Margin.
+- This shows the driver how far it is to the MA Margin or when the train front is within the MA Margin.
+
+*** 2020-06-23 ver 4.2.59 ***
+- FormFullScreen Messages are updated through UpdateDMI method of FormFullScreenMsg
+
+
+*** 2020-06-29 ver 4.2.60 ***
+- FormNewTrainName is shown Only if the driver is logged in.
+
+*** 2020-07-01 ver 4.2.61 ***
+-FormLogin shows Standstill, SB and EB. Mainlayer2 is inherited to FormLogin.
+-All of these are only indication icons.
+
+*** 2020-07-03 ver 4.2.62 ***
+- Do not show MA Margin when in BCA for speed-target
+- Display of MA margin is now relative to SB targetpoint of primary target (instead of end of primary target)
+- For compatibility, distance to target forwarded to AOSPC re-calculated to show distance to end of primary target.
+
+*** 2020-07-16 ver 4.2.63 ***
+- Increased the maximum size of Ceiling speed targets to 51 
+- Increased the maximum size of Gradient targets to 52
+
+*** 2020-07-31 ver 4.2.64 ***
+- Added commands for notloaded and load change Confirmation to Auto control
+
+*** 2020-08-17 ver 4.2.65 ***
+- FormTrainComposition.FormStyle = fsStayOnTop to keep the form visible also when the user clicks outside the window.
+- Flag indicating driver clicked on the train extent cleared when Train-composition form shown to prevent the form to re-open again when closed quickly.
+
+*** 2020-10-12 ver 4.2.66 ***
+- Driver has to be authorized to perform BrakeTest, confirm Brake Test and Cancel RegistrationArea.
+- Confirm Brake Test and Cancel RegistrationArea forms are closed when driver logs out.
+
+*** 2020-10-23 ver 4.2.67 ***
+- MA Margin shall not displayed when train is in LocationMode
+
+*** 2020-10-29 ver 4.2.68 ***
+- Disable OK button when AreaRequest received second time.

@@ -1,0 +1,34 @@
+# Doxyfile 1.8.10
+
+@INCLUDE = P:\aos_bhp\atp_core\spec\input\atp_core_all\common_doxygen_params
+
+# The PROJECT_NAME tag is a single word (or a sequence of words surrounded by
+# double-quotes, unless you are using Doxywizard) that should identify the
+# project for which the documentation is generated. This name is used in the
+# title of most generated pages and in a few other places.
+# The default value is: My Project.
+
+PROJECT_NAME           = "TIMS (Core)"
+
+# The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
+# into which the generated documentation will be written. If a relative path is
+# entered, it will be relative to the location where doxygen was started. If
+# left blank the current directory will be used.
+
+OUTPUT_DIRECTORY       = P:\aos_bhp\atp_core\spec\output\atp_core_all\train_gateway\tims
+
+# The INPUT tag is used to specify the files and/or directories that contain
+# documented source files. You may enter file names like myfile.cpp or
+# directories like /usr/src/myproject. Separate the files or directories with
+# spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
+# Note: If this tag is empty the current directory is searched.
+
+INPUT                  = P:\aos_bhp\atp_core\impl\train_gateway\tims \
+                         P:\aos_bhp\atp_core\spec\input\train_gateway\tims \
+                         P:\aos_bhp\atp_core\spec\input\images
+
+# When a file name is specified after GENERATE_TAGFILE, doxygen will create a
+# tag file that is based on the input files it reads. See section "Linking to
+# external documentation" for more information about the usage of tag files.
+
+GENERATE_TAGFILE       = P:\aos_bhp\atp_core\spec\input\atp_core_all\tm.tag

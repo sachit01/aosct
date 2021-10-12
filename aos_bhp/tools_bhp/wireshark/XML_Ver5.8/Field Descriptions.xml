@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*******************************************************************************
+*
+* (C) COPYRIGHT Bombardier Transportation (Signal) Sweden AB, 2011
+* 
+* We reserve all rights in this file and in the information 
+* contained therein. Reproduction, use or disclosure to third 
+* parties without written authority is strictly forbidden.
+*
+*  %name:          Field Descriptions.xml %
+*
+*  %version:       1 %
+*
+*  %created_by:    akushwah %
+*
+*  %date_created:  2017-03-07 12:31 %
+*
+*  DESCRIPTION: 
+*              
+*
+******************************************************************************/
+
+/*******************************************************************************
+*
+* REVISION HISTORY :
+*
+* Date          Name        Changes
+* 2011-09-26    Antbäck     TRACK_SECTION_DATA -> TRACK_DATA
+* 2011-10-03    Hidaji      NID_ERROR_NO to Dword, added undefined to Q_ATO_MODE
+*	                          M_TEXT size from 20 to 99
+* 2011-10-27    Antbäck     Defined "unsued bits" in B_DIRECTION and B_TRAIN_STATUS
+* 2011-10-31    Antbäck     Removed Q_POSITION
+* 2011-11-24    Antbäck     Updated texts in B_TRAIN_STATUS
+* 2011-12-07    Antbäck     Added Q_TIMS_AVAILABLE, removed Q_TIC_DISABLED
+* 2011-01-06    Hidaji      Added M_AOS_VERSION filed
+* 2012-01-17    Antbäck     Text TIC changed to TIMS for two items
+* 2012-01-18    Antbäck     Corrections before release
+* 2012-01-20    Antbäck     Removed D_PREVIOUS_BG
+* 2012-03-08    Antbäck     Added T_CLOCK_OFFSET
+* 2012-07-03    Antbäck     Added B_TRAIN_STATUS bits BrakeReleaseWanted(12)
+* 2012-10-25    Antbäck     Added ATOOnBatteryOnly
+* 2013-11-07    Hidaji      Added panto statuses and LCS low battery 
+* 2014-08-15    Antbäck     Added version info as XML data 
+* 2016-06-23    akushwah    Added/updated field for BHP projects
+* 2017-02-14    akushwah    Added/Updated message according to FFFIS AOS TCC Ver5.5
+*******************************************************************************/
+-->
+<FieldDescriptions>
+    <VersionData>
+        <Name>%name:          Field Descriptions.xml %</Name>
+        <Version>%version:       1 %</Version>
+        <CreatedBy>%created_by:    akushwah %</CreatedBy>
+        <Date>%date_created:  2017-03-07 12:31 %</Date>
+    </VersionData>
+    <Comment String="Complies to FFFIS v5.5"></Comment>
+    <FieldDescription type="B_DIRECTION">
+        <Detail>Orientation and travel direction of the train as a bit field.</Detail>
+        <Length>1</Length>
+        <Min></Min>
+        <Max></Max>
+        <Resolution></Resolution>
+        <Format>BITFIELD</Format>
+        <Special>
+            <Bits>
+                <Bit value="0">Driving direction. 0 = forward (locomotive first), 1 = reverse</Bit>
+                <Bit value="1">Orientation in Track. 0 = as track (loco closest to leg 1), 1 = opposite</Bit>
+                <Bit value="2">Locomotive orientation. 0 = B end facing cars, 1 = A end facing cars</Bit>
+				<Bit value="3">Not Used (3)</Bit>
+                <Bit value="4">Not Used (4)</Bit>
+                <Bit value="5">Not Used (5)</Bit>
+                <Bit value="6">Not Used (6)</Bit>
+                <Bit value="7">Not Used (7)</Bit>
+            </Bits>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="B_TRAIN_CORE_STATUS">
+        <Detail>Status of the train as a bit field.</Detail>
+        <Length>4</Length>
+        <Min></Min>
+        <Max></Max>
+        <Resolution></Resolution>
+        <Format>BITFIELD</Format>
+        <Special>
+            <Bits>
+                <Bit value="0">Safety Halt, AOS</Bit>
+                <Bit value="1">EA from driver</Bit>
+                <Bit value="2">TIMS Integrity Broken</Bit>
+                <Bit value="3">Braking event, AOS</Bit>
+                <Bit value="4">Handling done</Bit>
+                <Bit value="5">Train Idling</Bit>
+                <Bit value="6">TIMS Integrity manual override from Driver</Bit>
+                <Bit value="7">MA time out</Bit>
+                <Bit value="8">ATP reset</Bit>
+                <Bit value="9">ATP needs to be reset</Bit>
+                <Bit value="10">ATP intervention</Bit>
+                <Bit value="11">Brake release requested</Bit>
+                <Bit value="12">Manual TIMS confirmation</Bit>
+                <Bit value="13">Slip detected</Bit>
+                <Bit value="14">Free rolling</Bit>
+                <Bit value="15">EA active</Bit>
+                <Bit value="16">Attention needed</Bit>
+                <Bit value="17">Not ready to drive</Bit>
+                <Bit value="18">Safe for boarding is active</Bit>
+				<Bit value="19">Not Used (19)</Bit>
+                <Bit value="20">Not Used (20)</Bit>
+                <Bit value="21">Not Used (21)</Bit>
+                <Bit value="22">Not Used (22)</Bit>
+                <Bit value="23">Not Used (23)</Bit>
+                <Bit value="24">Not Used (24)</Bit>
+                <Bit value="25">Not Used (25)</Bit>
+                <Bit value="26">Not Used (26)</Bit>
+                <Bit value="27">Not Used (27)</Bit>
+                <Bit value="28">Not Used (28)</Bit>
+                <Bit value="29">Not Used (29)</Bit>
+                <Bit value="30">Not Used (30)</Bit>
+                <Bit value="31">Not Used (31)</Bit>
+            </Bits>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="D_BRAKE_DISTANCE">
+        <Detail>Worst case Braking distance</Detail>
+        <Length>3</Length>
+        <Min>0</Min>
+        <Max>16777215</Max>
+        <Resolution>1 cm</Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="D_MA_MARGIN">
+        <Detail>Allowed margin for the vehicle to stop before the end of the MA.</Detail>
+        <Length>2</Length>
+        <Min>0</Min>
+        <Max>65535</Max>
+        <Resolution>1 cm</Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Illegal>0</Illegal>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="D_MAX_DIST">
+        <Detail>Max distance for balise search</Detail>
+        <Length>3</Length>
+        <Min>-8388608</Min>
+        <Max>8388607</Max>
+        <Resolution>1 cm</Resolution>
+        <Format>INT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="D_OVERLAP">
+        <Detail>Margin between the end of MA and the point of conflict.</Detail>
+        <Length>2</Length>
+        <Min>0</Min>
+        <Max>65535</Max>
+        <Resolution>1 cm</Resolution>
+        <Format>UINT</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="D_POSITION">
+        <Detail>Position within NID_TRACK_ECTION track section.</Detail>
+        <Length>4</Length>
+        <Min>-2147483647</Min>
+        <Max>2147483648</Max>
+        <Resolution>1 cm</Resolution>
+        <Format>INT</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="D_WINDOW">
+        <Detail>Currently calculated tolerance in position determination.</Detail>
+        <Length>2</Length>
+        <Min>0</Min>
+        <Max>65535</Max>
+        <Resolution>1 cm</Resolution>
+        <Format>UINT</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="G_GRADIENT">
+        <Detail>New gradient</Detail>
+        <Length>1</Length>
+        <Min>-128</Min>
+        <Max>127</Max>
+        <Resolution>1 per mill</Resolution>
+        <Format>INT</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="L_LOCOMOTIVE">
+        <Detail>Length of the locomotive</Detail>
+        <Length>2</Length>
+        <Min>0</Min>
+        <Max>65535</Max>
+        <Resolution>1 cm</Resolution>
+        <Format>UINT</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="L_TRAIN">
+        <Detail>Total length of the train (locomotive and all cars)</Detail>
+        <Length>3</Length>
+        <Min>0</Min>
+        <Max>1677721</Max>
+        <Resolution>1 cm</Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Illegal>0</Illegal>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+	<FieldDescription type="M_BRAKE_SYSTEM">
+        <Detail>Defines the type of brake system in use</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>2</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+		    <Fields>
+                <Field value="0">Undefined</Field>
+                <Field value="1">Pneumatic brake system</Field>
+				<Field value="2">ECPB</Field>
+            </Fields>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+	<FieldDescription type="M_END_OF_MESSAGE">
+        <Detail>End of message for variable length messages</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+	<FieldDescription type="M_LOADED">
+        <Detail>Indication if train is loaded or empty</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>1</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Train is empty</Field>
+                <Field value="1">Train is loaded</Field>
+            </Fields>
+        </Special>
+        <Default>1</Default>
+    </FieldDescription>
+	<FieldDescription type="M_VERSION">
+        <Detail>Version</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+	<FieldDescription type="M_TEXT">
+        <Detail>Text string</Detail>
+        <Length>99</Length>
+        <Min></Min>
+        <Max></Max>
+        <Resolution></Resolution>
+        <Format>STRING</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+	<FieldDescription type="N_ADHESION">
+        <Detail>Brake ability in percent of normal brake ability</Detail>
+        <Length>1</Length>
+        <Min>50</Min>
+        <Max>100</Max>
+        <Resolution>1 %</Resolution>
+        <Format>UINT</Format>
+        <Special>
+        </Special>
+        <Default>100</Default>
+    </FieldDescription>
+    <FieldDescription type="N_LENGTH">
+        <Detail>Number of bytes of application data to/from external system</Detail>
+        <Length>2</Length>
+        <Min>1</Min>
+        <Max>65535</Max>
+        <Resolution>1</Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Illegal>0</Illegal>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+	<FieldDescription type="N_VALUE">
+        <Detail>Any value</Detail>
+        <Length>2</Length>
+        <Min>0</Min>
+        <Max>65535</Max>
+        <Resolution>1</Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+	<FieldDescription type="NID_AREA">
+        <Detail>Region area identification</Detail>
+        <Length>1</Length>
+        <Min>1</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="NID_BLOCK_TYPE">
+        <Detail>Data block identification</Detail>
+        <Length>1</Length>
+        <Min>1</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="NID_BG">
+        <Detail>Balise identification</Detail>
+        <Length>2</Length>
+        <Min>1</Min>
+        <Max>65535</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="NID_EVENT_NO">
+        <Detail>Numeric event code</Detail>
+        <Length>4</Length>
+        <Min>0</Min>
+        <Max>4294967295</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="NID_LOCATION_TYPE">
+        <Detail>Location type description</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="1">Manual handling location</Field>
+                <Field value="2">Remote load location</Field>
+                <Field value="3">Yard mode location</Field>
+                <Field value="4">Unload location</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+	<FieldDescription type="NID_MSG">
+        <Detail>Identification of the message</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+	<FieldDescription type="NID_MESSAGE_TYPE">
+        <Detail>Message type identification</Detail>
+        <Length>1</Length>
+        <Min>1</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="NID_PREVIOUS_TRACK">
+        <Detail>Identification of the previous track </Detail>
+        <Length>2</Length>
+        <Min>0</Min>
+        <Max>65535</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="NID_SYSTEM">
+        <Detail>External system identification</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="NID_TRACK">
+        <Detail>Track section identity</Detail>
+        <Length>2</Length>
+        <Min>0</Min>
+        <Max>65535</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="NID_VEHICLE">
+        <Detail>Numeric vehicle identififer</Detail>
+        <Length>2</Length>
+        <Min>0</Min>
+        <Max>65535</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="NID_VEHICLE_TYPE">
+        <Detail>Vehicle type identification</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="Q_ABORT">
+        <Detail>Further information regarding the set-up abort</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>1</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Aborted by AOS</Field>
+				<Field value="1">Aborted by driver</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+	<FieldDescription type="Q_ACKNOWLEDGE">
+        <Detail>Used for acknowledge of a request</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>1</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+				<Field value="0">Request not acknowledged</Field>
+                <Field value="1">Request acknowledged</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+	<FieldDescription type="Q_ALERT">
+        <Detail>Emergency alert code</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+				<Field value="1">Undefined</Field>
+                <Field value="1">Initiated by driver</Field>
+                <Field value="2">Initiated by dispatcher</Field>
+                <Field value="3">Position report outside set route</Field>
+                <Field value="4">Points inside set route in error</Field>
+                <Field value="5">Profile control triggered</Field>
+                <Field value="6">Powerless section</Field>
+                <Field value="7">Gate forced open</Field>
+                <Field value="8">Location closed</Field>
+                <Field value="9">Location error</Field>
+				<Field value="10">Location maintenance</Field>
+				<Field value="11">Location shutdown</Field>
+				<Field value="12">Location stopped</Field>
+				<Field value="13">Other train/Other train in error</Field>
+				<Field value="14">Route conflict</Field>
+				<Field value="15">Emergency Stop Area</Field>
+				<Field value="16">TIMS error</Field>
+            </Fields>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+    <FieldDescription type="Q_ATO_MODE">
+        <Detail>ATO Mode</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>4</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Undefined</Field>
+                <Field value="1">Manual</Field>
+                <Field value="2">Supervised automatic</Field>
+                <Field value="3">Automatic</Field>
+                <Field value="4">Remote control</Field>
+            </Fields>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+    <FieldDescription type="Q_ATP_MODE">
+        <Detail>ATP Mode</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>19</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Undefined</Field>
+                <Field value="1">Power Up</Field>
+                <Field value="2">Configuration</Field>
+                <Field value="3">Registration</Field>
+                <Field value="4">Balise Search</Field>
+                <Field value="5">Normal(Full ATP)</Field>
+                <Field value="6">Shunting</Field>
+                <Field value="7">Location</Field>
+                <Field value="8">Automatic Unload</Field>
+                <Field value="9">Yard Mode</Field>
+                <Field value="10">Unregistered</Field>
+                <Field value="11">Power Down</Field>
+                <Field value="12">Safety Halt (Fatal Failure)</Field>
+				<Field value="13">Sleeping</Field>
+				<Field value="14">Staff Responsible</Field>
+				<Field value="15">Shunting Route</Field>
+				<Field value="16">Possession</Field>
+				<Field value="17">Split</Field>
+				<Field value="18">Join</Field>
+				<Field value="19">Safe Brake to Stop</Field>
+            </Fields>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+	<FieldDescription type="Q_DIRECTION">
+        <Detail>Valid direction</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>3</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+				<Field value="0">Undefined</Field>
+                <Field value="1">Forward</Field>
+                <Field value="2">Reverse</Field>
+                <Field value="3">Both</Field>
+            </Fields>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+    <FieldDescription type="Q_LOGON_STATUS">
+        <Detail>Response from the stationary system, regarding driver logon</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Unsuccessful logon</Field>
+                <Field value="1">Successfull logon, operator</Field>
+            </Fields>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+	<FieldDescription type="Q_MESSAGE_STATUS">
+        <Detail>Response from AOS regarding message accepted or not.</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>1</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Message not accepted</Field>
+                <Field value="1">Message accepted</Field>
+            </Fields>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+	<FieldDescription type="Q_POSITION">
+        <Detail>Qualifier for the position in a PositionReport message</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>3</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Unknown</Field>
+                <Field value="1">Approximate</Field>
+                <Field value="2">Known</Field>
+				<Field value="3">Doubtful</Field>
+            </Fields>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+	    <FieldDescription type="Q_PROTOCOL_RESPONSE">
+        <Detail>Protocol version status</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>3</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Protocol check request (TCC request)</Field>
+                <Field value="1">Protocols match (AOS response)</Field>
+				<Field value="2">Protocols mismatch, waiting for new version (AOS response)</Field>
+                <Field value="3">Unrecoverable mismatch (TCC termination of link)</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="Q_ROUTE_TYPE">
+        <Detail>Description of route type.</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>9</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+				<Field value="0">Undefined</Field>
+                <Field value="1">Location start</Field>
+                <Field value="2">Location end</Field>
+                <Field value="3">Reregistration</Field>
+                <Field value="4">Shunting route</Field>
+                <Field value="5">Normal</Field>
+                <Field value="6">Join</Field>
+				<Field value="7">Split</Field>
+				<Field value="8">Staff Responsible (SR)</Field>
+				<Field value="9">Unconditional shortening of MA</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="Q_SETUP">
+        <Detail>Reason for TrainSetup mesage</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>3</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Registration</Field>
+                <Field value="1">Reconfiguration</Field>
+                <Field value="2">Reregistration</Field>
+                <Field value="3">Reposition</Field>
+            </Fields>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+    <FieldDescription type="Q_SIGNAL">
+        <Detail>Type of acoustic signal</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>3</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Undefined</Field>
+                <Field value="1">Sound type 1</Field>
+                <Field value="2">Sound type 2</Field>
+                <Field value="3">Sound type 3</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="Q_SPEED">
+        <Detail>Reason for change in ceiling speed</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Undefined</Field>
+                <Field value="1">Points straight</Field>
+                <Field value="2">Points curve</Field>
+                <Field value="3">Points passed</Field>
+                <Field value="4">Location</Field>
+                <Field value="5">Temporary speed restriction</Field>
+                <Field value="255">Other</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="Q_STOP">
+        <Detail>Reason for stop message</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>1</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Undefined</Field>
+                <Field value="1">Order cancelled</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="Q_TIC_AVAILABLE">
+        <Detail>Indication if TIC is available in the train</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>1</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">TIC not available, manual configuration</Field>
+                <Field value="1">TIC is available, automatic configuration</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="Q_TIMS_AVAILABLE">
+        <Detail>Indication if TIMS is available/shall be used</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>1</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">TIMS not available/shall not be used</Field>
+                <Field value="1">TIMS available/shall be used</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="Q_TRACK_DATA_TYPE">
+        <Detail>Defines type of track data.</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Not valid</Field>
+                <Field value="1">Power section limit</Field>
+                <Field value="2">Wheel lubrication start</Field>
+                <Field value="3">Wheel lubrication end</Field>
+                <Field value="4">Odometer invalid start</Field>
+                <Field value="5">Odometer invalid end</Field>
+                <Field value="6">Free rolling start</Field>
+                <Field value="7">Free rolling end</Field>
+				<Field value="8">Safety Margin</Field>
+                <Field value="9">Adhesion changed</Field>
+                <Field value="10">Acoustic signal</Field>
+                <Field value="11">Allow Yard mode</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="Q_TRAIN_END">
+        <Detail>Defines type of track data.</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>1</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Rear of train (train length delay)</Field>
+                <Field value="1">Front of train</Field>
+            </Fields>
+        </Special>
+		<Default></Default>
+    </FieldDescription>
+	<FieldDescription type="Q_TS_STATE">
+        <Detail>Indicates the state of the train setup</Detail>
+        <Length>1</Length>
+        <Min>1</Min>
+        <Max>2</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="1">Temporary</Field>
+				<Field value="2">Permanent</Field>
+            </Fields>
+        </Special>
+		<Default>0</Default>
+    </FieldDescription>
+    <FieldDescription type="Q_UNREGISTRATION">
+        <Detail>Why the Stationary system has unregistered the train.</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>9</Max>
+        <Resolution></Resolution>
+        <Format>UINT</Format>
+        <Special>
+            <Fields>
+                <Field value="0">Unregistered by dispatcher</Field>
+                <Field value="1">Configuration rejected, unknown vehicle in train</Field>
+                <Field value="2">Configuration rejected, a vehicle is part of another train</Field>
+                <Field value="3">Registration rejected, unexpected balise identity</Field>
+                <Field value="4">Registration rejected, conflict with another train route</Field>
+                <Field value="5">Registration aborted by driver or ATP</Field>
+                <Field value="6">Registration rejected, wrong driving direction</Field>
+                <Field value="7">Registration rejected, not possible to set route</Field>
+                <Field value="8">Configuration rejected, to many cars in train</Field>
+                <Field value="9">Configuration rejected, duplicated car identities</Field>
+            </Fields>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="T_CLOCK">
+        <Detail>Number of seconds since 00:00 GMT 1970-01-01, with adjustment for local time zone</Detail>
+        <Length>4</Length>
+        <Min>891514000</Min>
+        <Max>4294967295</Max>
+        <Resolution>Seconds</Resolution>
+        <Format>UINT</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="T_REMOTE">
+        <Detail>Time limit for remote order</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution>Seconds</Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="T_VALID">
+        <Detail>Timeout for execution of the Movement Authority</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution>minutes</Resolution>
+        <Format>UINT</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="T_WAITING_TIME">
+        <Detail>Time to wait</Detail>
+        <Length>1</Length>
+        <Min>0</Min>
+        <Max>255</Max>
+        <Resolution>minutes</Resolution>
+        <Format>UINT</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="TID_DRIVER">
+        <Detail>Driver identification code</Detail>
+        <Length>20</Length>
+        <Min></Min>
+        <Max></Max>
+        <Resolution></Resolution>
+        <Format>STRING</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="TID_LOCATION">
+        <Detail>Location identification</Detail>
+        <Length>20</Length>
+        <Min></Min>
+        <Max></Max>
+        <Resolution></Resolution>
+        <Format>STRING</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="TID_PASSWORD">
+        <Detail>Driver password</Detail>
+        <Length>20</Length>
+        <Min></Min>
+        <Max></Max>
+        <Resolution></Resolution>
+        <Format>STRING</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+	<FieldDescription type="TID_TEXT_STRING">
+        <Detail>String for parameters, events etc.</Detail>
+        <Length>10</Length>
+        <Min></Min>
+        <Max></Max>
+        <Resolution></Resolution>
+        <Format>STRING</Format>
+        <Special></Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="TID_TRAIN_NAME">
+        <Detail>Name of the train defined in the stationary system, used for presentation on the DMI.</Detail>
+        <Length>20</Length>
+        <Min></Min>
+        <Max></Max>
+        <Resolution></Resolution>
+        <Format>STRING</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="TID_VEHICLE_NAME">
+        <Detail>Name of the vehicle.</Detail>
+        <Length>20</Length>
+        <Min></Min>
+        <Max></Max>
+        <Resolution></Resolution>
+        <Format>STRING</Format>
+        <Special>
+        </Special>
+        <Default></Default>
+    </FieldDescription>
+    <FieldDescription type="V_SPEED">
+        <Detail>Speed data in cm/s </Detail>
+        <Length>2</Length>
+        <Min>0</Min>
+        <Max>65535</Max>
+        <Resolution>1 cm/s</Resolution>
+        <Format>UINT</Format>
+        <Special></Special>
+        <Default>0</Default>
+    </FieldDescription>
+	<FieldDescription type="W_WEIGHT">
+        <Detail>Weight in Mg (1000000 g)</Detail>
+        <Length>2</Length>
+        <Min>0</Min>
+        <Max>65535</Max>
+        <Resolution>1 Mg</Resolution>
+        <Format>UINT</Format>
+        <Special>
+        </Special>
+        <Default>0</Default>
+    </FieldDescription>
+    <!-- <FieldDescription type="Q_REASON">
+    <Detail></Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription> -->
+   <!-- <FieldDescription type="M_END_OF_MESSAGE">
+    </FieldDescription> -->
+</FieldDescriptions>

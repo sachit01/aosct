@@ -1,0 +1,258 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atp_bhp\impl\event_handler
+BEGIN_RECORD event_handler.cpp
+CHECKSUM 2579615062
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC12EventHandlerFv
+   __vcrt_va_start_verify_argument_type__tm__25_P21__crt_locale_pointers__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__26_CP21__crt_locale_pointers__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__4_PCw__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__5_CPCc__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__5_CPCw__Fv_v
+   getMaxEventActiveTime__Q2_3ATC12EventHandlerCFQ3_3ATC5Event9EventType
+   instance__Q2_3ATC12EventHandlerSFv
+CALLED_OBJECTS
+   _Alloc_proxy__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   _Free_proxy__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   _Nw__Q2_3std18_Vb_val__tm__4_Z1ZSFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_type
+   _Orphan_all__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFv
+   _Rechecked__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFPCZ1Z
+   _Unchecked__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZCFv
+   _Xbad_alloc__3stdFv
+   _Xlength_error__3stdFPCc
+   _Xout_of_range__3stdFPCc
+   __CPR128___Move_alloc__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRQ3_3stdJ51J5_Alty
+   __CPR129___Copy_alloc__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRCQ3_3stdJ51J5_Alty
+   __CPR134___Move_alloc__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRQ3_3stdJ51J5_Alty
+   __CPR135___Copy_alloc__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRCQ3_3stdJ51J5_Alty
+   __CPR149____ct__Q2_3std131vector__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ39JJ61JFv
+   __CPR151___Swap_all__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRQ2_3stdJ18J
+   __CPR157___Swap_all__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRQ2_3stdJ18J
+   __CPR191____ct__Q2_3std173_Vector_alloc__tm__151_Q2_3std140_Vec_base_types__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ81JJ103JFv
+   __CPR195____ct__Q2_3std131vector__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ39JJ61JFRCQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __CPR208____ct__Q2_3std72vector__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATCJ39JFEQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_AllocRCQ3_3stdJ123JJ154J
+   __CPR209____ct__Q2_3std72vector__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATCJ39JFRCQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_AllocRCQ3_3stdJ124JJ155J
+   __CPR221____ct__Q2_3std131vector__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ39JJ61JFEQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __CPR222____ct__Q2_3std131vector__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ39JJ61JFRCQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __CPR268____ct__Q2_3std131vector__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ39JJ61JFEQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_AllocRCQ3_3stdJ183JJ214J
+   __CPR269____ct__Q2_3std131vector__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ39JJ61JFRCQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_AllocRCQ3_3stdJ184JJ215J
+   __CPR271____ct__Q2_3std131vector__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ39JJ61JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_type
+   __CPR296____ct__Q2_3std72vector__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATCJ39JFQ2_3std151initializer_list__tm__126_Q3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc10value_typeRCQ3_3stdJ199JJ230J
+   __CPR338____ct__Q2_3std72vector__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATCJ39JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_typeRCQ3_3stdJ95J10value_type
+   __CPR356____ct__Q2_3std131vector__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ39JJ61JFQ2_3std151initializer_list__tm__126_Q3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc10value_typeRCQ3_3stdJ259JJ290J
+   __CPR385____ct__Q2_3std72vector__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATCJ39JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_typeRCQ3_3stdJ95J10value_typeRCQ3_3stdJ163JJ194J
+   __CPR398____ct__Q2_3std131vector__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ39JJ61JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_typeRCQ3_3stdJ155J10value_type
+   __CPR445____ct__Q2_3std131vector__tm__116_Q3_3ATC20AbstractEventHandler13EventListItemQ2_3std62allocator__tm__45_Q3_3ATCJ39JJ61JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_typeRCQ3_3stdJ155J10value_typeRCQ3_3stdJ223JJ254J
+   __CPR62____ct__Q2_3std18_Vb_val__tm__4_Z1ZFEQ2_3stdJ13J
+   __CPR63____ct__Q2_3std18_Vb_val__tm__4_Z1ZFRCQ2_3stdJ13J
+   __CPR67____ct__Q2_3std18_Vb_val__tm__4_Z1ZFEQ2_3stdJ13JRCZ1Z
+   __CPR68____ct__Q2_3std18_Vb_val__tm__4_Z1ZFRCQ2_3stdJ13JRCZ1Z
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ExceptionPtrAssign__FPvPCv
+   __ExceptionPtrCompare__FPCvT1
+   __ExceptionPtrCopyException__FPvPCvT2
+   __ExceptionPtrCopy__FPvPCv
+   __ExceptionPtrCreate__FPv
+   __ExceptionPtrCurrentException__FPv
+   __ExceptionPtrDestroy__FPv
+   __ExceptionPtrRethrow__FPCv
+   __ExceptionPtrSwap__FPvT1
+   __ExceptionPtrToBool__FPCv
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC12EventHandlerFRCQ2_3ATC12EventHandler
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC18AbstractConfigBaseFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21b
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATP14AbstractConfigFv
+   __ct__Q2_3std112_Vector_alloc__tm__91_Q2_3std81_Vec_base_types__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATC5EventFv
+   __ct__Q2_3std18_Vb_val__tm__4_Z1ZFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_typeRCb
+   __ct__Q2_3std18_Vb_val__tm__4_Z1ZFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_typeRCbRCZ1Z
+   __ct__Q2_3std33allocator__tm__16_PCQ2_3ATC5EventFRCQ2_3std20allocator__tm__4_Z1Z
+   __ct__Q2_3std33allocator__tm__16_PCQ2_3ATC5EventFv
+   __ct__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFPCZ1ZUi
+   __ct__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFv
+   __ct__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFv
+   __ct__Q2_3std62_Wrap_alloc__tm__43_Q2_3std33allocator__tm__16_PCQ2_3ATC5EventFEQ2_3std22_Wrap_alloc__tm__4_Z1Z
+   __ct__Q2_3std62_Wrap_alloc__tm__43_Q2_3std33allocator__tm__16_PCQ2_3ATC5EventFRCQ2_3std22_Wrap_alloc__tm__4_Z1Z
+   __ct__Q2_3std62_Wrap_alloc__tm__43_Q2_3std33allocator__tm__16_PCQ2_3ATC5EventFv
+   __ct__Q2_3std62allocator__tm__45_Q3_3ATC20AbstractEventHandler13EventListItemFRCQ2_3std20allocator__tm__4_Z1Z
+   __ct__Q2_3std62allocator__tm__45_Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFv
+   __ct__Q2_3std66_Vector_val__tm__47_Q2_3std37_Simple_types__tm__16_PCQ2_3ATC5EventFv
+   __ct__Q2_3std72vector__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATC5EventFEQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __ct__Q2_3std72vector__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATC5EventFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_type
+   __ct__Q2_3std72vector__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATC5EventFRCQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __ct__Q2_3std72vector__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATC5EventFRCQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __ct__Q2_3std72vector__tm__58_PCQ2_3ATC5EventQ2_3std33allocator__tm__16_PCQ2_3ATC5EventFv
+   __ct__Q2_3std91_Wrap_alloc__tm__72_Q2_3std62allocator__tm__45_Q3_3ATC20AbstractEventHandler13EventListItemFEQ2_3std22_Wrap_alloc__tm__4_Z1Z
+   __ct__Q2_3std91_Wrap_alloc__tm__72_Q2_3std62allocator__tm__45_Q3_3ATC20AbstractEventHandler13EventListItemFRCQ2_3std22_Wrap_alloc__tm__4_Z1Z
+   __ct__Q2_3std91_Wrap_alloc__tm__72_Q2_3std62allocator__tm__45_Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q2_3std95_Vector_val__tm__76_Q2_3std66_Simple_types__tm__45_Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__tm__11_Z1_2ZZ2_2Z__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFEZ1_2Z
+   __ct__tm__11_Z1_2ZZ2_2Z__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFEZ1_2Z
+   __dl__FPv
+   __dl__FPvUi
+   __dt__Q2_3ATC14BaseConfigItemFv
+   __dt__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __nw__FUi
+   __nw__FUiRCQ2_3std9nothrow_t
+   __std_exception_copy
+   __std_exception_destroy
+   __vcrt_va_start_verify_argument_type__tm__4_PCc__Fv_v
+   _get_unexpected
+   _m_packssdw
+   _m_packsswb
+   _m_pcmpgtb
+   _m_pcmpgtw
+   _m_punpckhwd
+   _m_punpcklbw
+   _m_punpcklwd
+   _mm_cvt_pi2ps
+   _mm_cvt_ps2pi
+   _mm_movehl_ps
+   _mm_movelh_ps
+   _mm_setzero_ps
+   _mm_setzero_si64
+   corePtr__Q2_3ATP14AbstractConfigSFv
+   getEventKeepActiveTime__Q2_3ATP14AbstractConfigCFv
+   getStandstillEventKeepActiveTime__Q2_3ATP14AbstractConfigCFv
+   memchr
+   memcmp
+   memcpy
+   memmove
+   memset
+   strchr
+   strrchr
+   strstr
+   wcschr
+   wcsrchr
+   wcsstr
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+   npos__Q2_3std78basic_string__tm__58_cQ2_3std20char_traits__tm__2_cQ2_3std18allocator__tm__2_c
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+   nothrow__3std
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::EventHandler
+   ATP::TrackAndPos
+   std::_Bitwise_hash<__int64>
+   std::_Bitwise_hash<__wchar_t>
+   std::_Bitwise_hash<bool>
+   std::_Bitwise_hash<char16_t>
+   std::_Bitwise_hash<char32_t>
+   std::_Bitwise_hash<char>
+   std::_Bitwise_hash<double>
+   std::_Bitwise_hash<float>
+   std::_Bitwise_hash<int>
+   std::_Bitwise_hash<long double>
+   std::_Bitwise_hash<long>
+   std::_Bitwise_hash<short>
+   std::_Bitwise_hash<signed char>
+   std::_Bitwise_hash<unsigned __int64>
+   std::_Bitwise_hash<unsigned char>
+   std::_Bitwise_hash<unsigned long>
+   std::_Bitwise_hash<unsigned short>
+   std::_Bitwise_hash<unsigned>
+   std::_Char_traits<char16_t, unsigned short>
+   std::_Char_traits<char32_t, unsigned>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>, std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>::value_type>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<char>>, std::_String_val<std::_Simple_types<char>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<const ATC::Event *>>, std::_Vector_val<std::_Simple_types<const ATC::Event *>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Container_base0
+   std::_Container_base12
+   std::_Container_proxy
+   std::_Iterator_base0
+   std::_Iterator_base12
+   std::_Lockit
+   std::_String_alloc<std::_String_base_types<char, std::allocator<char>>>
+   std::_String_val<std::_Simple_types<char>>
+   std::_String_val<std::_Simple_types<char>>::_Bxty
+   std::_Vector_alloc<std::_Vec_base_types<ATC::AbstractEventHandler::EventListItem, std::allocator<ATC::AbstractEventHandler::EventListItem>>>
+   std::_Vector_alloc<std::_Vec_base_types<const ATC::Event *, std::allocator<const ATC::Event *>>>
+   std::_Vector_val<std::_Simple_types<const ATC::Event *>>
+   std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>::value_type>>
+   std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::_Wrap_alloc<std::allocator<char>>
+   std::_Wrap_alloc<std::allocator<const ATC::Event *>>
+   std::_Wrap_int
+   std::allocator<ATC::AbstractEventHandler::EventListItem>
+   std::allocator<char>
+   std::allocator<const ATC::Event *>
+   std::allocator<void>
+   std::allocator_traits<std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::allocator_traits<std::allocator<char>>
+   std::allocator_traits<std::allocator<const ATC::Event *>>
+   std::bad_alloc
+   std::bad_array_new_length
+   std::bad_exception
+   std::basic_string<char, std::char_traits<char>, std::allocator<char>>
+   std::char_traits<__wchar_t>
+   std::char_traits<char>
+   std::char_traits<unsigned short>
+   std::domain_error
+   std::exception
+   std::exception_ptr
+   std::hash<double>
+   std::hash<float>
+   std::hash<long double>
+   std::initializer_list<bool>
+   std::integral_constant<bool, false>
+   std::integral_constant<bool, true>
+   std::integral_constant<unsigned, 0U>
+   std::integral_constant<unsigned, 1U>
+   std::integral_constant<unsigned, 2U>
+   std::integral_constant<unsigned, 4U>
+   std::integral_constant<unsigned, 8U>
+   std::invalid_argument
+   std::length_error
+   std::logic_error
+   std::nested_exception
+   std::numeric_limits<__int64>
+   std::numeric_limits<__wchar_t>
+   std::numeric_limits<bool>
+   std::numeric_limits<char16_t>
+   std::numeric_limits<char32_t>
+   std::numeric_limits<char>
+   std::numeric_limits<double>
+   std::numeric_limits<float>
+   std::numeric_limits<int>
+   std::numeric_limits<long double>
+   std::numeric_limits<long>
+   std::numeric_limits<short>
+   std::numeric_limits<signed char>
+   std::numeric_limits<unsigned __int64>
+   std::numeric_limits<unsigned char>
+   std::numeric_limits<unsigned long>
+   std::numeric_limits<unsigned short>
+   std::numeric_limits<unsigned>
+   std::out_of_range
+   std::overflow_error
+   std::range_error
+   std::runtime_error
+   std::underflow_error
+   std::vector<ATC::AbstractEventHandler::EventListItem, std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::vector<const ATC::Event *, std::allocator<const ATC::Event *>>
+DEFAULT_TESTABLE_CLASSES
+   ATC::EventHandler
+INCLUDES
+END_RECORD event_handler.cpp

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="ATC::AbstractConfigBase">
+    <Position X="4.5" Y="0.5" Width="3.5" />
+    <Members>
+      <Field Name="buffSize" Hidden="true" />
+      <Field Name="configItems" Hidden="true" />
+      <Field Name="configParamIds" Hidden="true" />
+      <Field Name="expectedNumberOfConfigItemsToReadFromFile" Hidden="true" />
+      <Method Name="getConfigInfo" Hidden="true" />
+      <Field Name="isAnyRunTimeConfigUpdated" Hidden="true" />
+      <Field Name="memAreaCommon" Hidden="true" />
+      <Field Name="memAreaDisp" Hidden="true" />
+      <Field Name="memAreaInstance" Hidden="true" />
+      <Field Name="memAreaMaint" Hidden="true" />
+      <Field Name="memAreaRuntime" Hidden="true" />
+      <Field Name="memAreaType" Hidden="true" />
+      <Field Name="numberOfConfigItems" Hidden="true" />
+      <Field Name="numConfigItemsRead" Hidden="true" />
+      <Method Name="readConfigParameters" Hidden="true" />
+      <Method Name="saveRunTimeParameters" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="ATC::AbstractConfigBase::ConfigState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\config\abstract_config_base.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IAcCkiQAgAgACAhACEAAgYASBgEDmkIGDAAKqNQCgEg=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\abstract_config_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent">
+    <Position X="1.25" Y="3" Width="2.25" />
+    <Members>
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="1.25" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="~BaseComponent" Hidden="true" />
+      <Field Name="compId" Hidden="true" />
+      <Method Name="consoleCall" Hidden="true" />
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="getShortName" Hidden="true" />
+      <Method Name="getTrace" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="shortName" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Method Name="writeToLog" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

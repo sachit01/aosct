@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="ATP::DS::ErrorHandler">
+    <Position X="11.25" Y="7.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\tracks\abstract_tracks.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::AbstractTracks">
+    <Position X="3.75" Y="0.75" Width="6.5" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Typedef Name="ATP::DS::AbstractTracks::TrackListType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\tracks\abstract_tracks.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="ATP::DS::AbstractTracks::TrackListIteratorType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\tracks\abstract_tracks.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="ATP::DS::AbstractTracks::ConstTrackListIteratorType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\tracks\abstract_tracks.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="ATP::DS::AbstractTracks::BaliseListType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\tracks\abstract_tracks.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="ATP::DS::AbstractTracks::BaliseListIteratorType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\tracks\abstract_tracks.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="ATP::DS::AbstractTracks::ConstBaliseListIteratorType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\tracks\abstract_tracks.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IIEGAiFAgABAIhFACMgGAECAIQKFgAJAgAZdQRQlQSA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\tracks\abstract_tracks.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="11.25" Y="2" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="11.25" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::Track">
+    <Position X="0.5" Y="1" Width="3" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AkCKAAAAAEIAAFBAAAAAIYEAAICBAEBAIEBoAACggAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\tracks\track.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::Balise">
+    <Position X="11.25" Y="3.25" Width="3" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACCIEFAAAAAAAEAAAAAIQAAAIAAAAAAAAAoAAAgAQE=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\tracks\balise.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

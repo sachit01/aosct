@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AOSConnections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Unitconnections>
+    <Name>ATP_BHP</Name>
+    <Ip>127.0.0.1</Ip>
+    <Port>30160</Port>
+    <Graphsetup />
+  </Unitconnections>
+  <Unitconnections>
+    <Name>ATO_Hardware</Name>
+    <Ip>192.168.30.12</Ip>
+    <Port>55180</Port>
+    <Graphsetup />
+  </Unitconnections>
+</AOSConnections>

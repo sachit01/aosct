@@ -1,0 +1,10 @@
+# Version of Configuration Parameters Specification:
+Version 1.0
+
+# Parameters:
+LastBtmTestTimeId 166
+LastBtmTestTime 0
+LastBrakeTestTimeId 169
+LastBrakeTestTime 0
+BrakeTestReasonId 177
+BrakeTestReason 0

@@ -1,0 +1,54 @@
+/* numbering headings */
+body
+{/* Create the counter for H1 */
+    counter-reset: H1 figures;
+}
+
+div.textblock h1:before
+{
+    content: counter(H1) ". ";   /* Print the H1 number */
+    counter-increment: H1;       /* Add 1 to next H1 */
+}
+
+div.textblock h1
+{
+    counter-reset: H2;
+}
+
+div.textblock h2:before
+{
+    content: counter(H1) "." counter(H2) " ";
+    counter-increment: H2;
+}
+
+div.textblock h2
+{
+    counter-reset: H3;
+}
+
+div.textblock h3:before
+{
+    content: counter(H1) "." counter(H2) "." counter(H3) " ";
+    counter-increment:H3;
+}
+
+div.textblock h3
+{
+    counter-reset: H4;
+}
+
+div.textblock h4:before
+{
+    content: counter(H1) "." counter(H2) "." counter(H3) "." counter(H4) " ";
+    counter-increment:H4;
+}
+
+div.textblock .caption
+{
+    counter-increment: figures;
+}
+
+div.textblock .caption:before
+{
+    content: "Fig. " counter(figures) " - ";
+}

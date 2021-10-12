@@ -1,0 +1,172 @@
+// %name: vio_project.lnt %
+// %version: 1 %
+// %created_by: bhermans %
+// %date_created: 2015-04-28 10:59 %
+// %Creation date of original object: Fri Nov 17 13:53:54 2000 %
+// history:
+// 1.23    2015-01-30    azacher     move stackfilesettings and -vm to startLintAll.sh
+//                                   reduce number of suppressions
+//                                   take size options from file
+
+
+
+
+
+-width(136,4)  // characters per line in output , lines output per message 
+//+ffn         // full file names in output - not good for wine
+//-vm            // verbose module name
++summary       
+//+stack( &file=stacklnt.tmp )
+-passes(2)
+//-si4
+//-sp4
+//-sl4
+//-sll8
+
++e900
++e974          // stack
++e956          // global
+//+e958          // padding 
++estring(958,member)   // member in struct shall be flagged
+-estring(958,variable) // auto variables shall not be flagged
++e967
+
++fpn           // enable paranoid pointer checking
++e952          // pedantic const checking
++e953          // pedantic const checking
++e954          // pedantic const checking
+
++esym(960,110) // flag Bit fields 
+
+//+fll         // MISRA ADC R8 allow long long - enabled automatically by -sll in size options
+
+-emacro((910),NULL) // to fulfil MISRA 4-10-2 - do it in file
+--emacro((910),NULL) // to fulfil MISRA 4-10-2 - do it in file
+                                     // VFW macros cannot be changed inside VIO Software
+-emacro( {717},VFW_HALT,VFW_ASSERT,VFW_ASSERT_VERSION)   // tribute to MISRA 2004 do while zero
+-emacro( {640},VFW_HALT,VFW_ASSERT,VFW_ASSERT_VERSION)   // missing strong types in macro
+-emacro( {953},VFW_HALT,VFW_ASSERT,VFW_ASSERT_VERSION)   // could be const 
+//-emacro({9132},VFW_HALT,VFW_ASSERT,VFW_ASSERT_VERSION) // array type passed to function expecting a pointer [MISRA C++ Rule 5-2-12]
+-emacro({1960},VFW_UNIQ_ID_LEN)                          // 2-13-4, Lower case literal suffix: u  
+//-emacro({1963},VFW_ASSERT)                             // Dependence placed on C's operator precedence.[MISRA C++ Rule 5-0-2] LINT version < 9.0.L
+//-emacro({9050},VFW_ASSERT)                             // Dependence placed on C's operator precedence.[MISRA C++ Rule 5-0-2] LINT version > 9.0.K
+-emacro( {944},VFW_ASSERT)                               // Defensive Programming always evaluates to ...
+-emacro( {948},VFW_ASSERT)                               // Defensive Programming always evaluates to ... 
+-emacro( {774},VFW_ASSERT)                               // Defensive Programming always evaluates to ...
+-emacro( {506},VFW_ASSERT)                               // Defensive Programming always evaluates to ... 
+
+-sem(VFW_HALT,r_no)
+
+                                     // macros used in kernel driver cannot be changed inside vio software
+//-emacro({1960},VIU_GETVER,VIU_PCISTS,VIU_GETV,VOU_GETVER,VOU_SETV,VOU_SETV,VOU_PCISTS,VOU_GETFB,AIOU_SETV,AIOU_GETVER)
+//-emacro({1960},AIOU_PCISTS,AIOU_GETV,OSU_GETVER,OSU_PCISTS,OSU_GETV,AIOU_IN_CH*,AIOU_OUT_CH*,AIOU_IN_CH*,O_RDWR,VOU_OUT_*)
+//-emacro({1960},I2CRDWR,I2C_SLAVE,OSU_OPENCH,OSU_SETCONFCH,OSU_CLOSECH,OSU_CHKCONFCH,OSU_RCVTLG,OSUDRV_SP*,OSU_TXTLG) 
+//-emacro({1960},VIU_SCPTF,VIU_SCPRD,VIU_SCPWR,OSUDRV_SPERR,OSU_RXERR,AIOU_SCPTF,AIOU_SCPRD,AIOU_SCPWR,VOU_SCPRD,VOU_SCPWR,VOU_SCPTF) 
+// MISRA C++ 2008 Required Rule 5-8-1,  out of bounds value for right hand side of shift operator
+// MISRA C++ 2008 Required Rule 5-0-21, Bitwise operator applied to signed underlying type: <<
+// MISRA C++ 2008 Required Rule 5-0-10, Operators '~' and '<<' require recasting to underlying type for sub-integers   
+// MISRA C++ 2008 Required Rule 5-0-4,  Implicit conversion changes signedness                                     
+
+-emacro({91??},VIU_GETVER,VIU_PCISTS,VIU_GETV,VOU_GETVER,VOU_SETV,VOU_SETV,VOU_PCISTS,VOU_GETFB,AIOU_SETV,AIOU_GETVER)
+-emacro({91??},AIOU_PCISTS,AIOU_GETV,OSU_GETVER,OSU_PCISTS,OSU_GETV,AIOU_IN_CH*,AIOU_OUT_CH*,AIOU_IN_CH*,O_RDWR,VOU_OUT_*)
+-emacro({91??},I2CRDWR,I2C_SLAVE,OSU_OPENCH,OSU_SETCONFCH,OSU_CLOSECH,OSU_CHKCONFCH,OSU_RCVTLG,OSUDRV_SP*,OSU_TXTLG) 
+
+-estring(586,errno)
+
+//-emacro({1924},VIU_GETVER,VIU_PCISTS,VIU_GETV,VOU_GETVER,VOU_SETV,VOU_SETV,VOU_PCISTS,VOU_GETFB,AIOU_SETV,AIOU_GETVER)
+//-emacro({1924},AIOU_PCISTS,AIOU_GETV,OSU_GETVER,OSU_PCISTS,OSU_GETV,I2CRDWR,OSU_CHKCONFCH,OSU_OPENCH,OSU_CLOSECH)
+//-emacro({1924},OSU_SETCONFCH,OSUDRV_SPCFG,OSUDRV_SPDATA,OSU_RCVTLG,OSU_IOCTL_MAJOR,IOCPARM_MASK)
+//-emacro({1924},VIU_SCPWR,VIU_SCPTF,VIU_SCPRD,OSU_RXERR,AIOU_SCPTF,AIOU_SCPRD,AIOU_SCPWR,VOU_SCPRD,VOU_SCPWR,VOU_SCPTF) 
+-emacro({1923},AIOU_IN_CH*,AIOU_OUT_CH*) 
+-emacro({1960},AIOU_IN_CH*,AIOU_OUT_CH*) 
+//-emacro( {835},VIU_GETVER,VIU_PCISTS,VIU_GETV,VOU_GETVER,VOU_SETV,VOU_SETV,VOU_PCISTS,VOU_GETFB,AIOU_SETV,AIOU_GETVER)
+//-emacro( {835},AIOU_PCISTS,AIOU_GETV,OSU_GETVER,OSU_PCISTS,OSU_GETV,OSU_OPENCH,OSU_SETCONFCH,OSU_CLOSECH,OSU_CHKCONFCH,OSU_RCVTLG,OSU_TXTLG) 
+//-emacro( {835},VIU_SCPTF,VIU_SCPRD,VIU_SCPWR,OSU_RXERR, AIOU_SCPTF, AIOU_SCPRD,AIOU_SCPWR,VOU_SCPRD,VOU_SCPWR,VOU_SCPTF) 
+//-emacro( {845},VIU_GETVER,AIOU_GETVER,OSU_GETVER,VOU_GETVER) 
+
+-emacro({1924},_IORW,_IOR,_IOW,IOC_INOUT,`*_IOCTL_MAJOR,OSU_RCVTLG,IOCPARM_MASK,OSU_CHKCONFCH,OSU_RXERR,*DRV_IOBUF,VOU_GETFB,AIOU_GETV)
+-emacro( {835},_IORW,_IOR,_IOW,_IOC_TYPESHIFT)
+-emacro({1960},_IORW,_IOR,_IOW,_IOC_TYPESHIFT,O_RDWR,`*_IOCTL_MAJOR,IOCPARM_MASK,IOCPARM_SHIFT,OSU_RCVTLG,OSU_CHKCONFCH,AIOU_GETV,OSU_RXERR,*DRV_IOBUF,VOU_GETFB,AIOU_GETV)
+-emacro( {845},_IORW,_IOR,_IOW)
+-emacro( {970},_IORW,_IOR,_IOW,_IOC,IOC_INOUT,`*_IOCTL_MAJOR) 
+
+//-emacro( {970},VIU_GETVER,VIU_PCISTS,VIU_GETV,VOU_GETVER,VOU_SETV,VOU_SETV,VOU_PCISTS,VOU_GETFB,AIOU_SETV,AIOU_GETVER)
+//-emacro( {970},AIOU_PCISTS,AIOU_GETV,OSU_GETVER,OSU_PCISTS,OSU_GETV,I2CRDWR,OSU_CHKCONFCH,OSU_OPENCH,OSU_CLOSECH)
+//-emacro( {970},OSU_SETCONFCH,OSUDRV_SPCFG,OSUDRV_SPDATA,OSU_RCVTLG,SU_IOCTL_MAJOR,IOCPARM_MASK)
+//-emacro( {970},VIU_SCPWR,VIU_SCPTF,VIU_SCPRD,OSU_RXERR,AIOU_SCPTF,AIOU_SCPRD,AIOU_SCPWR,VOU_SCPRD,VOU_SCPWR,VOU_SCPTF) 
+
+-esym(755,VIU_*,VOU_*,OSU_*,AIOU_*,OSUDRV_P* ) //unused from driver library header files
+// 1924 C style cast in BSD kernel driver macros
+// 1923 macro could be const
+//  970 standard types without typedef in BSD kernel driver macros
+//  835 zero argument to operator in ioctl kernel driver macros
+
+
+// lint 714,759,765
+// the wrapper is something like a library provided for other c programs
+//  - provided functions are intentionally not referenced inside the library   
+//  - cannot be made static inside the library 
+//  - cannot be moved from library header to module 
+//  
+
+
+-esym(765,newVIOHClient, VOUGetState, VOUGetDeviceState, VOUGetRevisionId, VOUGetHWConf, GetSwVersion)
+-esym(765,VIOHClientInit, VIOHClientInit2SyncDeact, VIURegister, VIURegisterResult, CrossCompare)
+-esym(765,OSUReadSerial, OSURegisterSerial, OSURegisterSerialResult, Update, OSUSetBreakSerial, deleteVIOHClient)
+-esym(765,VIUGetState, VIUGetDeviceState, VIUGetRevisionId, VIUGetHWConf, Status, VOURegister, VOURegisterResult, VOUSetOutput)
+-esym(765,AIOUGetState, AIOUGetDeviceState, AIOUGetRevisionId, AIOURegister, AIOURegisterResult, AIOURegisterSync, AIOUSetOutput)
+-esym(765,OSUGetDeviceState, OSUGetRevisionId, OSUGetSerialRXState, OSUWriteSerial)
+-esym(765,GPIODisplayIsBusy, GPIOGetSVDState, GPIOGetRevisionId, GPIORegisterDisplay, GPIORegisterDisplayResult)
+-esym(765,GPIORegisterSVD, GPIORegisterSVDResult, GPIOSetDisplay, GPIOTriggerSVD)
+
+-esym(765,myCyclicCallback)
+
+-esym(759,newVIOHClient, VOUGetState, VOUGetDeviceState, VOUGetRevisionId, VOUGetHWConf, GetSwVersion)
+-esym(759,VIOHClientInit, VIOHClientInit2SyncDeact, VIURegister, VIURegisterResult, CrossCompare)
+-esym(759,OSUReadSerial, OSURegisterSerial, OSURegisterSerialResult, Update, OSUSetBreakSerial, deleteVIOHClient)
+-esym(759,VIUGetState, VIUGetDeviceState, VIUGetRevisionId, VIUGetHWConf, Status, VOURegister, VOURegisterResult, VOUSetOutput)
+-esym(759,AIOUGetState, AIOUGetDeviceState, AIOUGetRevisionId, AIOURegister, AIOURegisterResult, AIOURegisterSync, AIOUSetOutput)
+-esym(759,OSUGetDeviceState, OSUGetRevisionId, OSUGetSerialRXState, OSUWriteSerial)
+-esym(759,GPIODisplayIsBusy, GPIOGetSVDState, GPIOGetRevisionId, GPIORegisterDisplay, GPIORegisterDisplayResult)
+-esym(759,GPIORegisterSVD, GPIORegisterSVDResult, GPIOSetDisplay, GPIOTriggerSVD)
+
+-esym(714,newVIOHClient, VOUGetState, VOUGetDeviceState, VOUGetRevisionId, VOUGetHWConf, GetSwVersion)
+-esym(714,VIOHClientInit, VIOHClientInit2SyncDeact, VIURegister, VIURegisterResult, CrossCompare)
+-esym(714,OSUReadSerial, OSURegisterSerial, OSURegisterSerialResult, Update, OSUSetBreakSerial, deleteVIOHClient)
+-esym(714,VIUGetState, VIUGetDeviceState, VIUGetRevisionId, VIUGetHWConf, Status, VOURegister, VOURegisterResult, VOUSetOutput)
+-esym(714,AIOUGetState, AIOUGetDeviceState, AIOUGetRevisionId, AIOURegister, AIOURegisterResult, AIOURegisterSync, AIOUSetOutput)
+-esym(714,OSUGetDeviceState, OSUGetRevisionId, OSUGetSerialRXState, OSUWriteSerial)
+-esym(714,GPIODisplayIsBusy, GPIOGetSVDState, GPIOGetRevisionId, GPIORegisterDisplay, GPIORegisterDisplayResult)
+-esym(714,GPIORegisterSVD, GPIORegisterSVDResult, GPIOSetDisplay, GPIOTriggerSVD)
+
+-esym(1704,VIOHnames::VIOHServer::VIOHServer,VIOHnames::VIOHClient::VIOHClient)  // private constructor intended here
+-esym(1914,VIOHnames::VIOHServer::VIOHServer,VIOHnames::VIOHClient::VIOHClient)  // default constructor intentionally not referenced
+
+
+//-estring(1963,"std::basic_ostream<char>::operator<<","std::operator<<")
+
+-esym(1960,5-2-12)    // Array type passed to function expecting a pointer
+-estring(1960,"*Array type passed to function expecting a pointer*")
+-esym(1960,0-1-8)     // Void return type for function without external side-effects:
+//////-estring(1960,"*Void return type for function without external side-effects:*")
+// 2-13-4, Lower case literal suffix: u
+
++libclass()
+//+libdir(c:\prog\mingw-4.7.1\bin\../lib/gcc/mingw32/4.7.1/include)
+//+libdir(c:\prog\mingw-4.7.1\bin\..\lib\gcc\mingw32\4.7.1\include\)
+//+libdir(D:\rcs\vio\VFW\VFW_SW\implementation\source\util\)
++libh(stdlib.h,stdint.h,stddef.h,lint_cppmac.h,stdio.h,co-gcc.h,fcntl.h,i2c-dev.h)
++libh(vfw_*.h,viudrv.h,voudrv.h,aioudrv.h,osudrv.h,vio_types.h,vio_config.h)
+//) 
+
+-wlib(3)
+
+-strong(B,bool_t)
+
+-esym(768,*padding*,*reserve*) // intentionally unused
+
+-esym(970,char) 
+-elibsym(970)
+
+// will be solved in 9.0L -esym(1960,7-3-1)
+// Note 1960: Violates MISRA C++ 2008 Required Rule 5-2-12, Array type passed to function expecting a pointer will be solved in 9.0L

@@ -1,0 +1,10 @@
+LIBRARY     MMICL.DLL
+
+EXPORTS
+    _MMICL_exit                    @5   
+    _MMICL_getErrors               @2   
+    _MMICL_getNextMsgFromATP       @1   
+    _MMICL_init                    @4   
+    _MMICL_putMMI_ToATP_Data       @3   
+    _MMICL_putMessageToATP         @7   
+    __DebuggerHookData             @6   

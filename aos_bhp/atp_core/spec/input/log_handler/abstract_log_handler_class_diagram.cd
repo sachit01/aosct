@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATC::AbstractLogHandler">
+    <Position X="4.5" Y="2.75" Width="3.5" />
+    <Members>
+      <Field Name="bdsLevel" Hidden="true" />
+      <Field Name="bdsSeqNumber" Hidden="true" />
+      <Method Name="extractFileName" Hidden="true" />
+      <Method Name="getCompShortName" Hidden="true" />
+      <Method Name="getEventTypeStr" Hidden="true" />
+      <Field Name="initBdsDone" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="initNjruConnectionDone" Hidden="true" />
+      <Field Name="initRuConnectionDone" Hidden="true" />
+      <Method Name="isLegalLogLevel" Hidden="true" />
+      <Field Name="maxMsgSeparatorSize" Hidden="true" />
+      <Field Name="messageNotSentBdsCounter" Hidden="true" />
+      <Field Name="messageNotSentNjruCounter" Hidden="true" />
+      <Field Name="messageNotSentRuCounter" Hidden="true" />
+      <Field Name="messageSentBdsCounter" Hidden="true" />
+      <Field Name="messageSentNjruCounter" Hidden="true" />
+      <Field Name="messageSentRuCounter" Hidden="true" />
+      <Field Name="msgSeparator" Hidden="true" />
+      <Field Name="msgSeparatorLength" Hidden="true" />
+      <Field Name="njruBuffer" Hidden="true" />
+      <Field Name="njruLevel" Hidden="true" />
+      <Field Name="ruBuffer" Hidden="true" />
+      <Method Name="writeToBDS" Hidden="true" />
+      <Method Name="writeToNJRU" Hidden="true" />
+      <Method Name="writeToRU" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="ATC::AbstractLogHandler::InterfaceId" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\log_handler\abstract_log_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Enum Name="ATC::AbstractLogHandler::InterfaceDir" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\log_handler\abstract_log_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="ATC::AbstractLogHandler::CharBuffer&lt;maxSize&gt;" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\log_handler\abstract_log_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Typedef Name="ATC::AbstractLogHandler::LineBuffer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\log_handler\abstract_log_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IBABAgIQQIEBYAICQMEIMAAmAAETIAIBIAAEEAAhAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\log_handler\abstract_log_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

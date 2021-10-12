@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATP::TG::TIMS">
+    <Position X="4.25" Y="2.75" Width="2.5" />
+    <Members>
+      <Method Name="checkBrakePressureLastCar" Hidden="true" />
+      <Method Name="checkBrakePressureLoco" Hidden="true" />
+      <Method Name="checkECPBInput" Hidden="true" />
+      <Method Name="checkOBRDInput" Hidden="true" />
+      <Method Name="checkObrdPosition" Hidden="true" />
+      <Field Name="ecpbConfirmedTime" Hidden="true" />
+      <Field Name="ecpbIsUsed" Hidden="true" />
+      <Field Name="ecpbReportReceived" Hidden="true" />
+      <Field Name="ecpbStatusReportTime" Hidden="true" />
+      <Field Name="invalidObrdEvent" Hidden="true" />
+      <Field Name="obrdReportReceived" Hidden="true" />
+      <Field Name="obrdStatusReport" Hidden="true" />
+      <Field Name="obrdStatusReportTime" Hidden="true" />
+      <Method Name="TIMS" Hidden="true" />
+      <Method Name="updateECBPStatus" Hidden="true" />
+      <Method Name="updateOBRDStatus" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>DIAGAhACQAAAAAQgYAACAIAAAABEAAKAAQBAgAAAUgA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\tims\tims.hpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="obrdMessageHandler" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ATP::TG::AbstractTIMS">
+    <Position X="0.5" Y="0.75" Width="2.75" />
+    <Members>
+      <Method Name="AbstractTIMS" Hidden="true" />
+      <Method Name="getAutomatedReportTime" Hidden="true" />
+      <Method Name="getLocoPosAtTime" Hidden="true" />
+      <Method Name="handleDmiActions" Hidden="true" />
+      <Field Name="historySize" Hidden="true" />
+      <Field Name="inhibitButtonPressed" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="isRouteTypeJoin" Hidden="true" />
+      <Field Name="lastCarBaliseWindow" Hidden="true" />
+      <Field Name="lastCarPosition" Hidden="true" />
+      <Field Name="lastMovementDir" Hidden="true" />
+      <Field Name="latestPositionIndex" Hidden="true" />
+      <Field Name="manualConfirmationReceived" Hidden="true" />
+      <Field Name="manualConfirmationStartTime" Hidden="true" />
+      <Field Name="maxHistorySize" Hidden="true" />
+      <Field Name="positionHistory" Hidden="true" />
+      <Field Name="positionReport" Hidden="true" />
+      <Field Name="prevTIMSStatus" Hidden="true" />
+      <Field Name="rearPosition" Hidden="true" />
+      <Field Name="resumeButtonPressed" Hidden="true" />
+      <Method Name="setTimsAvailable" Hidden="true" />
+      <Method Name="setTimsConfirmed" Hidden="true" />
+      <Method Name="setTimsStatus" Hidden="true" />
+      <Field Name="timsAvailable" Hidden="true" />
+      <Field Name="timsBrokenEvent" Hidden="true" />
+      <Field Name="timsConfirmed" Hidden="true" />
+      <Field Name="timsIntactEvent" Hidden="true" />
+      <Field Name="timsStatus" Hidden="true" />
+      <Field Name="timsSupervision" Hidden="true" />
+      <Method Name="updatePositionHistory" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ATP::TG::AbstractTIMS::PositionSample" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::TG::AbstractTIMS::PositionReport" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::TG::AbstractTIMS::OdoPositionData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CABCAokGVKiBoACiLEBARAAGEECIQRIAAkAACggVUgA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::OBRDMessageHandler">
+    <Position X="8.5" Y="2.75" Width="2" />
+    <Members>
+      <Method Name="assembleMessageData" Hidden="true" />
+      <Method Name="calculateCRC" Hidden="true" />
+      <Field Name="channelStatistics" Hidden="true" />
+      <Field Name="connectedToOBRD" Hidden="true" />
+      <Field Name="connectionLossTimeout" Hidden="true" />
+      <Field Name="connectionTimeoutWithOBRD" Hidden="true" />
+      <Field Name="crcInitValue" Hidden="true" />
+      <Field Name="crossCompareWriteChannel" Hidden="true" />
+      <Field Name="defaultTRef" Hidden="true" />
+      <Field Name="establishedConnectionWithOBRD" Hidden="true" />
+      <Method Name="extractMessage" Hidden="true" />
+      <Method Name="findStartOfTelegram" Hidden="true" />
+      <Field Name="inBuf" Hidden="true" />
+      <Field Name="inBufReadIndex" Hidden="true" />
+      <Field Name="inBufWriteIndex" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="isUnitStatusReportRecv" Hidden="true" />
+      <Field Name="lastMessageReceivedTime" Hidden="true" />
+      <Field Name="lostConnectionWithOBRD" Hidden="true" />
+      <Field Name="numVfwChannelsOBRDMessage" Hidden="true" />
+      <Method Name="OBRDMessageHandler" Hidden="true" />
+      <Field Name="obrdReadChannelName" Hidden="true" />
+      <Field Name="obrdWriteChannelName" Hidden="true" />
+      <Method Name="packMessage" Hidden="true" />
+      <Field Name="parserNullPtr" Hidden="true" />
+      <Field Name="protocolVersionCreator" Hidden="true" />
+      <Field Name="protocolVersionMatched" Hidden="true" />
+      <Field Name="protocolVersionParser" Hidden="true" />
+      <Field Name="rejectionReason" Hidden="true" />
+      <Field Name="rejectMessageCreator" Hidden="true" />
+      <Field Name="sendProtocolVersionMessage" Hidden="true" />
+      <Field Name="sendRejectMessage" Hidden="true" />
+      <Field Name="statusReport" Hidden="true" />
+      <Field Name="syncChannelReadDesc" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Field Name="unitStatusParser" Hidden="true" />
+      <Field Name="validationIncomingMessageFailed" Hidden="true" />
+      <Field Name="wrongOBRDProtocolVersionRecvd" Hidden="true" />
+      <Field Name="wrongOBRDTypeMessageRecvd" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>xABaAASABAgQAhAgYCQEBQgBNICAAAIEQAEBAAgRVAE=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\tims\obrd_message_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ATP::TG::TIMSStatus">
+    <Position X="4.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ATP::TG::TIMSSupervision">
+    <Position X="8.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

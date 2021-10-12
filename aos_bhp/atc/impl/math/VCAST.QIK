@@ -1,0 +1,66 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atc\impl\math
+BEGIN_RECORD atc_math.cpp
+CHECKSUM 3819833191
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC7ATCMathFv
+   absDiff__Q2_3ATC7ATCMathSFUiT1
+   absDiff__Q2_3ATC7ATCMathSFUsT1
+   absolute__Q2_3ATC7ATCMathCFiPCcT1
+   convCmpsTo100mph__Q2_3ATC7ATCMathSFUi
+   convCmpsToKmph__Q2_3ATC7ATCMathSFUi
+   convKmphToCmps__Q2_3ATC7ATCMathSFUi
+   instance__Q2_3ATC7ATCMathSFv
+   maximum__Q2_3ATC7ATCMathSFUiT1
+   maximum__Q2_3ATC7ATCMathSFUsT1
+   maximum__Q2_3ATC7ATCMathSFiT1
+   minimum__Q2_3ATC7ATCMathSFUcT1
+   minimum__Q2_3ATC7ATCMathSFUiT1
+   minimum__Q2_3ATC7ATCMathSFUsT1
+   minimum__Q2_3ATC7ATCMathSFiT1
+   signDiv__Q2_3ATC7ATCMathCFLiPCcT2
+   signDiv__Q2_3ATC7ATCMathCFiT1PCcT1
+   signMul__Q2_3ATC7ATCMathCFUiT1PCci
+   signMul__Q2_3ATC7ATCMathCFUiiPCcT2
+   signMul__Q2_3ATC7ATCMathCFiT1PCcT1
+   signMul__Q2_3ATC7ATCMathCFiUiPCcT1
+   sqrtr__Q2_3ATC7ATCMathSFUL
+   sqrtr__Q2_3ATC7ATCMathSFUi
+   unsignDivRoundUp__Q2_3ATC7ATCMathCFUiT1PCci
+   unsignDiv__Q2_3ATC7ATCMathCFULUiPCci
+   unsignDiv__Q2_3ATC7ATCMathCFUiT1PCci
+CALLED_OBJECTS
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC7ATCMathFRCQ2_3ATC7ATCMath
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   createSafetyHaltEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10EBReleaserT1PCcb
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::ATCMath
+   ATC::BaseComponent
+DEFAULT_TESTABLE_CLASSES
+   ATC::ATCMath
+INCLUDES
+END_RECORD atc_math.cpp

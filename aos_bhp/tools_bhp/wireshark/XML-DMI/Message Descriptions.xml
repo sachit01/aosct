@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MessageDescriptions>
+  <Comment String="Complies to IF-SPEC ATP-DMI"></Comment>
+
+  <Message type="ATP_mode_and_states" value="1">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="ATP_Mode" Pos="Data0"/>
+    <FieldType Name="ATP_State" Pos="Data1"/>
+    <FieldType Name="ATP_Mode_Extra" Pos="Data2"/>
+    <FieldType Name="Driver_Verification_State" Pos="Data3"/>
+    <FieldType Name="Train_State" Pos="Data4"/>
+    <FieldType Name="Locomotive_State" Pos="Data5-8"/>
+    <FieldType Name="ATO_Mode" Pos="Data9"/>
+    <FieldType Name="ATO_SwitchPos" Pos="Data10"/>
+    <FieldType Name="AdditionalStatus1" Pos="Data11"/>
+    <FieldType Name="AdditionalStatus2" Pos="Data12"/>
+    <FieldType Name="Confirm_change" Pos="Data13"/>
+    <FieldType Name="Allow" Pos="Data14"/>
+    <FieldType Name="BreakStatus" Pos="Data15"/>
+    <FieldType Name="RemainToNextBreak" Type="UINT16" Pos="Data16-17"><Display>Remaining time to next mandatory Brake Test</Display></FieldType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="Driver_info" value="3">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="PermittedDirection" Pos="Data0"/>
+    <FieldType Name="PermittedSpeed"         Type="UINT8" Pos="Data1"><Display>Permitted speed</Display></FieldType>
+    <FieldType Name="TargetSpeed"            Type="UINT8" Pos="Data2"><Display>Target speed</Display></FieldType>
+    <FieldType Name="TimeToIntervene"        Type="UINT8" Pos="Data3"><Display>Time to intervention</Display></FieldType>
+    <FieldType Name="RemainDistanceToTarget" Type="UINT16" Pos="Data4-5"><Display>Remaining distance to target point</Display></FieldType>
+    <FieldType Name="RemainDistanceToBCA"    Type="UINT16" Pos="Data6-7"><Display>Remaining distance to BCA </Display></FieldType>
+    <FieldType Name="PredictDistanceToStillLocation"    Type="UINT16" Pos="Data8-9"><Display>Predicted distance to stand still location </Display></FieldType>
+    <FieldType Name="PredictRelativeSpeedAtBreakTarget" Type="UINT8"  Pos="Data10"><Display>Predicted relative speed at brake target</Display></FieldType>
+    <FieldType Name="StatusSignals"    Pos="Data11"/>
+    <FieldType Name="VisibibleSignals" Pos="Data12"/>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="Speed_distance" value="5">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="CurrentSpeed"      Type="UINT16"  Pos="Data0-1"><Display>Current speed</Display></FieldType>
+    <FieldType Name="CurrentOdometer"   Type="INT16"   Pos="Data2-3"><Display>Current Odometer</Display></FieldType>
+    <FieldType Name="LeadTrackSection"  Type="UINT16"  Pos="Data4-5"><Display>Leading track section</Display></FieldType>
+    <FieldType Name="LeadingPosition1"  Type="UINT16"  Pos="Data6-7"><Display>Leading position1</Display></FieldType>
+    <FieldType Name="LeadingPosition2"  Type="UINT16"  Pos="Data8-9"><Display>Leading position2</Display></FieldType>
+    <FieldType Name="TrailingTrackSection" Type="UINT16" Pos="Data10-11"><Display>Trailing track section</Display></FieldType>
+    <FieldType Name="TrailingPosition1" Type="UINT16"  Pos="Data12-13"><Display>Trailing position1</Display></FieldType>
+    <FieldType Name="TrailingPosition2" Type="UINT16"  Pos="Data14-15"><Display>Trailing position2</Display></FieldType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="TrainConfigData" value="8">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="TrainName" Type="CHAR20" Pos="Data0-19"><Display>Train name</Display></FieldType>
+    <FieldType Name="TrainLength" Type="UINT16" Pos="Data20-21"><Display>Train length</Display></FieldType>
+    <FieldType Name="TimsRequired" Pos="Data22"/>
+    <FieldType Name="DistanceFromBaliseToTrainFront" Type="UINT16" Pos="Data23-24"/>
+    <FieldType Name="DistanceFromBaliseToTrainEnd"   Type="UINT16" Pos="Data25-26"/>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="Error_messages" value="10">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="ErrorBlock" Pos="Data0"/>
+    <FieldType Name="ErrorNumber" Type="UINT8" Pos="Data1"><Display>Error number</Display></FieldType>
+    <FieldType Name="LineNumber" Type="UINT16" Pos="Data2-3"><Display>LineNo </Display></FieldType>
+    <FieldType Name="TimeStamp" Type="UINT32" Pos="Data4-7"><Display>Time stamp</Display></FieldType>
+    <FieldType Name="ErrorGrade" Pos="Data8"/>
+    <FieldType Name="TextType" Type="UINT8" Pos="Data9"><Display>Text Type</Display></FieldType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="ManualConfigSelected" value="13">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="Time_Message" value="18">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Time" Type="UINT32" Pos="Data0-3"><Display>Timevalue</Display></FieldType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="CarNameList" value="19">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="CarNameListCnt" Type="UINT16" Pos="Data0-1" BlockCnt="CarNameListEntry" />
+    <BlockType Name="CarNameListEntry" Numeric="1" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="TrainVsTrackDirWanted" value="20">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="DMI_Status" value="22">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="DMIStatusWord" Type="UINT16" Pos="Data0-1"><Display> DMI status word </Display></FieldType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="CarListAnswer_CarList" value="23">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="AcceptStatus" Pos="Data0" />
+    <FieldType Name="CarListCnt" Type="UINT16" Pos="Data1-2" BlockCnt="CarListEntry" />
+    <BlockType Name="CarListEntry" Numeric="2" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="Confirmation" value="26">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Confirm" Pos="Data0" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="DriverIDandPassword" value="27">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="DriverID" Type="CHAR20" Pos="Data0-19" />
+    <FieldType Name="Password" Type="CHAR10" Pos="Data20-29" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="LocoVsTrainDir" value="33">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <Filtered>Undef</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="DMI_ToATP_Data" value="34">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="DMIButtonStatus" Pos="Data0" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="SubMenuButton" value="36">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <Filtered>Undef</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="TrainVsTrackDir" value="39">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="RegistrationArea" value="49">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="ErasePlanningArea" value="40">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="TextMessage" value="42">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="CarStatusList" value="44">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="CarStatusCnt" Type="UINT16" Pos="Data0-1" BlockCnt="CarStatus" />
+    <BlockType Name="CarStatus" Numeric="6" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="CeilingSpeedList" value="46">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="SpeedBlockCnt" Type="UINT16" Pos="Data0-1" BlockCnt="SpeedBlock" />
+    <BlockType Name="SpeedBlock" Numeric="3" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="GradientDataList" value="47">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="GradientBlockCnt" Type="UINT16" Pos="Data0-1" BlockCnt="GradientBlock" />
+    <BlockType Name="GradientBlock" Numeric="4" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="DMIStartup" value="48">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="DMIStartupStatus" Type="UINT16" Pos="Data0-1"/>
+    <FieldType Name="CompatVersion"    Type="UINT8"  Pos="Data2"/>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="ReConfigurationSelected" value="51">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="ReconfigTims" Type="UINT8" Pos="Data0"/>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="TrainName" value="52">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="TrainName" Type="CHAR20" Pos="Data0-19"/>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="PredefinedTextMessage" value="57">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="ConfirmationRequest" Type="UINT8" Pos="Data0"/>
+    <FieldType Name="TextMessageID"       Type="UINT8" Pos="Data1"/>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="AtpNotification" value="58">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="AtpNotificationMode" Type="UINT8"   Pos="Data0"/>
+    <FieldType Name="AtpNotificationText" Type="CHAR100" Pos="Data1-100"/>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="StartUpHistory" value="60">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="HistoryCnt" Type="UINT16" Pos="Data0-1" BlockCnt="HistoryBlock" />
+    <BlockType Name="HistoryBlock" Numeric="4" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="Version" value="61">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="CompatVersion" Type="UINT8" Pos="Data0" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="AreaRequest" value="62">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="AreaCnt" Type="UINT16" Pos="Data0-1" BlockCnt="AreaBlock" />
+    <BlockType Name="AreaBlock" Numeric="5" />
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+</MessageDescriptions>

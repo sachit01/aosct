@@ -1,0 +1,6 @@
+# Version of Instance Specific Parameters Specification:
+Version 1.0
+
+# Parameters
+RadioIdId 102
+RadioId 1

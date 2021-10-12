@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="ATP::Kernel::ATPApplication">
+    <Position X="10.25" Y="1.75" Width="4.25" />
+    <Members>
+      <Method Name="ATPApplication" Hidden="true" />
+      <Method Name="convertEventListToXmlAndXlsx" Hidden="true" />
+      <Field Name="initConfig" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="initStage1" Hidden="true" />
+      <Field Name="initStage2" Hidden="true" />
+      <Field Name="initState" Hidden="true" />
+      <Field Name="lastCycleExecutionTime" Hidden="true" />
+      <Field Name="maxExecutionTime" Hidden="true" />
+      <Field Name="minExecutionTime" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="viohClientHandle" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgEAAIAAACCEIEBIAkgEFAFAgAIAFAAgAAAZwBA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\kernel\atp_application\atp_application.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::AbstractATPApplication">
+    <Position X="4.5" Y="4" Width="4" />
+    <InheritanceLine Type="ATC::AbstractApplicationBase" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.625" Y="2.95" />
+        <Point X="6.625" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAIAAAAAAAAgAAAAAAIAIAAAAAACAAABA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\kernel\atp_application\abstract_atp_application.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::AbstractApplicationBase">
+    <Position X="4.75" Y="0.5" Width="3.75" />
+    <Members>
+      <Method Name="AbstractApplicationBase" Hidden="true" />
+      <Field Name="blockNr" Hidden="true" />
+      <Field Name="compList" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACCIAAECAAAAAEAAAQAAAAAAAAEAAAIEgA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\application\abstract_application_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

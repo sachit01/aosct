@@ -1,0 +1,18 @@
+--i"/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2"
+--i"/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux"
+--i"/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/backward"
+--i"/usr/local/include"
+--i"/usr/lib/gcc/x86_64-redhat-linux/4.1.2/include"
+--i"/usr/include"
+--i"/localProducts/CoVP_CoHP_Dev-1.0_T10/CoVP_CoHP_Dev/distribution/Linux_ppc/include"
+--i"/localProducts/CoVP_CoHP_Dev-1.0_T10/CoVP_CoHP_Dev/distribution/Linux_ppc/lib"
+--i"/localProducts/CoVP_CoHP_Dev-1.0_T10/CoVP_CoHP_Dev/distribution/Linux_ppc/bin"
+--i"X86"
+
+
+-i"../Client"
+-i"../Server"
+-i"../Common"
+
+-e679 // inadequate Warning 679: Suspicious Truncation in arithmetic expression combining with pointer together with -sp8
+-e747 //

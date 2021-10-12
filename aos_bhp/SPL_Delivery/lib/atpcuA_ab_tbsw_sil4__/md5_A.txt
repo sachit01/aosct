@@ -1,0 +1,1 @@
+c662118dd1ee9a44da83a04be9e30ed0  libsplA.a

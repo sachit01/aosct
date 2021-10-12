@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::AnalyzerIF">
+    <Position X="8" Y="5.75" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAACAACAAAAAAAAQBAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\analyzer_if\analyzer_if.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::AbstractAnalyzerIF">
+    <Position X="3.75" Y="4.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ATC::AbstractAnalyzerIF::EnumValueGetter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\analyzer_if\abstract_analyzer_if.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Typedef Name="ATC::AbstractAnalyzerIF::InputBuffer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\analyzer_if\abstract_analyzer_if.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="ATC::AbstractAnalyzerIF::OutputBuffer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\analyzer_if\abstract_analyzer_if.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Enum Name="ATC::AbstractAnalyzerIF::AIFStates" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\analyzer_if\abstract_analyzer_if.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Typedef Name="ATC::AbstractAnalyzerIF::ValueRange" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\analyzer_if\abstract_analyzer_if.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="ATC::AbstractAnalyzerIF::MeasureValuePtr" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\analyzer_if\abstract_analyzer_if.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Enum Name="ATC::AbstractAnalyzerIF::MeasurementTypeEnum" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\analyzer_if\abstract_analyzer_if.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="ATC::AbstractAnalyzerIF::MeasurementDataList" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\analyzer_if\abstract_analyzer_if.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgAAoAAIgIAIAQAIEAQGAAFAQgAAAIAABAAAAABAQg=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\analyzer_if\abstract_analyzer_if.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent">
+    <Position X="4.25" Y="2.75" Width="2.25" />
+    <Members>
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="ProcComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.75" />
+    <Members>
+      <Method Name="BaseComponent" Hidden="true" />
+      <Field Name="compId" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="shortName" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Method Name="writeToLog" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Protected" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

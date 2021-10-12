@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::DS::AbstractTSetup">
+    <Position X="6.5" Y="4.25" Width="4.75" />
+    <Members>
+      <Field Name="eventModConfFailAbstTSetup" Hidden="true" />
+      <Field Name="eventOutOfRangeAbstTSetup" Hidden="true" />
+      <Field Name="eventStorgeNotValAbstTSetup" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Method Name="isAnyFieldOutOfRange" Hidden="true" />
+      <Method Name="isAnyTSetUpFieldChange" Hidden="true" />
+      <Field Name="oldChangeCounter" Hidden="true" />
+      <Field Name="oldSbResponseTime" Hidden="true" />
+      <Field Name="trainLoadedStatus" Hidden="true" />
+      <Field Name="trainNameStorage" Hidden="true" />
+      <Field Name="trainWeightEmpty" Hidden="true" />
+      <Field Name="trainWeightLoaded" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ATP::DS::AbstractTSetup::VehicleSetupStorage" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\tsetup\abstract_tsetup.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ATP::DS::AbstractTSetup::TrainSetupStorage" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\tsetup\abstract_tsetup.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ATP::DS::AbstractTSetup::TrainNameStorage" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\tsetup\abstract_tsetup.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAUcAkCAgIIFIY4AJMFEwJKwEAIAAIIRBCIJogABVEA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\tsetup\abstract_tsetup.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="1.25" Y="5.5" Width="3.25" />
+    <InheritanceLine Type="ATC::BaseComponent">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.068" Y="0.258" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="1.25" Y="4.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

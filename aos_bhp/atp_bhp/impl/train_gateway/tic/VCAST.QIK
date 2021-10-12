@@ -1,0 +1,331 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atp_bhp\impl\train_gateway\tic
+BEGIN_RECORD tic.cpp
+CHECKSUM 1933255286
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATP2TG3TICFv
+   __vcrt_va_start_verify_argument_type__tm__25_P21__crt_locale_pointers__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__26_CP21__crt_locale_pointers__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__4_PCw__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__5_CPCc__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__5_CPCw__Fv_v
+   evaluateConfigReqStatus__Q3_3ATP2TG3TICFv
+   evaluateTICAvailable__Q3_3ATP2TG3TICFv
+   getLocoOrientationAvailable__Q3_3ATP2TG3TICCFv
+   initCrossCompare__Q3_3ATP2TG3TICCFv
+   instance__Q3_3ATP2TG3TICSFv
+CALLED_OBJECTS
+   _Alloc_proxy__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   _Free_proxy__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   _Nw__Q2_3std18_Vb_val__tm__4_Z1ZSFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_type
+   _Orphan_all__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFv
+   _Rechecked__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFPCZ1Z
+   _Unchecked__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZCFv
+   _Xbad_alloc__3stdFv
+   _Xlength_error__3stdFPCc
+   _Xout_of_range__3stdFPCc
+   __CPR107____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFv
+   __CPR107____dt__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFv
+   __CPR128___Move_alloc__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRQ3_3stdJ51J5_Alty
+   __CPR129___Copy_alloc__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRCQ3_3stdJ51J5_Alty
+   __CPR134___Move_alloc__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRQ3_3stdJ51J5_Alty
+   __CPR135___Copy_alloc__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRCQ3_3stdJ51J5_Alty
+   __CPR149____ct__Q2_3std131_Vector_alloc__tm__109_Q2_3std99_Vec_base_types__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ80JFv
+   __CPR151___Swap_all__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRQ2_3stdJ18J
+   __CPR153____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFRCQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __CPR157___Swap_all__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRQ2_3stdJ18J
+   __CPR179____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFEQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __CPR180____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFRCQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __CPR226____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFEQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_AllocRCQ3_3stdJ141JJ172J
+   __CPR227____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFRCQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_AllocRCQ3_3stdJ142JJ173J
+   __CPR229____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_type
+   __CPR314____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFQ2_3std151initializer_list__tm__126_Q3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc10value_typeRCQ3_3stdJ217JJ248J
+   __CPR356____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_typeRCQ3_3stdJ113J10value_type
+   __CPR403____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_typeRCQ3_3stdJ113J10value_typeRCQ3_3stdJ181JJ212J
+   __CPR62____ct__Q2_3std18_Vb_val__tm__4_Z1ZFEQ2_3stdJ13J
+   __CPR63____ct__Q2_3std18_Vb_val__tm__4_Z1ZFRCQ2_3stdJ13J
+   __CPR67____ct__Q2_3std18_Vb_val__tm__4_Z1ZFEQ2_3stdJ13JRCZ1Z
+   __CPR68____ct__Q2_3std18_Vb_val__tm__4_Z1ZFRCQ2_3stdJ13JRCZ1Z
+   __CPR83____ct__Q3_3ATP7Support20AbstractCrossCompareFRCQ3_3ATPJ13JJ21J
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ExceptionPtrAssign__FPvPCv
+   __ExceptionPtrCompare__FPCvT1
+   __ExceptionPtrCopyException__FPvPCvT2
+   __ExceptionPtrCopy__FPvPCv
+   __ExceptionPtrCreate__FPv
+   __ExceptionPtrCurrentException__FPv
+   __ExceptionPtrDestroy__FPv
+   __ExceptionPtrRethrow__FPCv
+   __ExceptionPtrSwap__FPvT1
+   __ExceptionPtrToBool__FPCv
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC11IOComponentFRCQ2_3ATC11IOComponent
+   __ct__Q2_3ATC11IOComponentFUsPCcT2
+   __ct__Q2_3ATC11IOComponentFv
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC18AbstractConfigBaseFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATP14AbstractConfigFv
+   __ct__Q2_3ATP6ConfigFRCQ2_3ATP6Config
+   __ct__Q2_3ATP6ConfigFv
+   __ct__Q2_3std18_Vb_val__tm__4_Z1ZFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_typeRCb
+   __ct__Q2_3std18_Vb_val__tm__4_Z1ZFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_typeRCbRCZ1Z
+   __ct__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFPCZ1ZUi
+   __ct__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFv
+   __ct__Q2_3std42allocator__tm__25_PQ2_3ATC14TraceInterfaceFRCQ2_3std20allocator__tm__4_Z1Z
+   __ct__Q2_3std42allocator__tm__25_PQ2_3ATC14TraceInterfaceFv
+   __ct__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFv
+   __ct__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFv
+   __ct__Q2_3std71_Wrap_alloc__tm__52_Q2_3std42allocator__tm__25_PQ2_3ATC14TraceInterfaceFEQ2_3std22_Wrap_alloc__tm__4_Z1Z
+   __ct__Q2_3std71_Wrap_alloc__tm__52_Q2_3std42allocator__tm__25_PQ2_3ATC14TraceInterfaceFRCQ2_3std22_Wrap_alloc__tm__4_Z1Z
+   __ct__Q2_3std71_Wrap_alloc__tm__52_Q2_3std42allocator__tm__25_PQ2_3ATC14TraceInterfaceFv
+   __ct__Q2_3std75_Vector_val__tm__56_Q2_3std46_Simple_types__tm__25_PQ2_3ATC14TraceInterfaceFv
+   __ct__Q3_3ATP2TG10VehicleComFv
+   __ct__Q3_3ATP2TG11AbstractTICFv
+   __ct__Q3_3ATP2TG17LCSMessageHandlerFPCcT1
+   __ct__Q3_3ATP2TG17LCSMessageHandlerFv
+   __ct__Q3_3ATP2TG18AbstractVehicleComFv
+   __ct__Q3_3ATP2TG18LCSTrainStatusTypeFv
+   __ct__Q3_3ATP2TG20AbstractLCSMessageInFQ3_3ATP2TG14LCSMessageTypeUcb
+   __ct__Q3_3ATP2TG20AbstractLCSMessageInFv
+   __ct__Q3_3ATP2TG21AbstractLCSMessageOutFQ3_3ATP2TG14LCSMessageTypeUcb
+   __ct__Q3_3ATP2TG21AbstractLCSMessageOutFv
+   __ct__Q3_3ATP2TG6EmpMsgFv
+   __ct__Q3_3ATP7Support18CrossCompareObjectFv
+   __ct__Q3_3ATP7Support18CrossCompareOutputFv
+   __ct__Q3_3ATP7Support20AbstractCrossCompareFv
+   __ct__Q3_3ATP7Support25CrossCompareOutputChannelFv
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_LFPCZ1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_LFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__tm__11_Z1_2ZZ2_2Z__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFEZ1_2Z
+   __ct__tm__11_Z1_2ZZ2_2Z__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFEZ1_2Z
+   __dl__FPv
+   __dl__FPvUi
+   __dt__Q2_3ATC14BaseConfigItemFv
+   __dt__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   __dt__Q3_3ATP2TG20AbstractLCSMessageInFv
+   __dt__Q3_3ATP2TG21AbstractLCSMessageOutFv
+   __dt__Q3_3ATP7Support18CrossCompareObjectFv
+   __dt__Q3_3ATP7Support18CrossCompareOutputFv
+   __dt__Q3_3ATP7Support20AbstractCrossCompareFv
+   __dt__Q3_3ATP7Support25CrossCompareOutputChannelFv
+   __dt__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_LFv
+   __nw__FUi
+   __nw__FUiRCQ2_3std9nothrow_t
+   __std_exception_copy
+   __std_exception_destroy
+   __vcrt_va_start_verify_argument_type__tm__4_PCc__Fv_v
+   _get_unexpected
+   _m_packssdw
+   _m_packsswb
+   _m_pcmpgtb
+   _m_pcmpgtw
+   _m_punpckhwd
+   _m_punpcklbw
+   _m_punpcklwd
+   _mm_cvt_pi2ps
+   _mm_cvt_ps2pi
+   _mm_movehl_ps
+   _mm_movelh_ps
+   _mm_setzero_ps
+   _mm_setzero_si64
+   addCrossCompareData__Q3_3ATP7Support20AbstractCrossCompareFPQ3_3ATP7Support18CrossCompareObject
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q3_3ATP7Support20AbstractCrossCompareSFv
+   getBrakeSystem__Q3_3ATP2TG10VehicleComCFv
+   getECPBTrainComposition__Q3_3ATP2TG10VehicleComCFRQ3_3ATP2TG24ECPBTrainCompositionType
+   getEcpbOperatingModes__Q3_3ATP2TG10VehicleComCFRQ3_3ATP2TG22EcpbOperatingModesType
+   getEcpbSequenceStatus__Q3_3ATP2TG10VehicleComCFRQ3_3ATP2TG22EcpbSequenceStatusType
+   getLocoType__Q2_3ATP14AbstractConfigCFv
+   getTicInitToRunTimeout__Q2_3ATP6ConfigCFv
+   initCrossCompare__Q3_3ATP2TG11AbstractTICCFv
+   instance__Q2_3ATP6ConfigSFv
+   instance__Q3_3ATP2TG10VehicleComSFv
+   memchr
+   memcmp
+   memcpy
+   memmove
+   memset
+   strchr
+   strrchr
+   strstr
+   vfwGetReferenceTime
+   wcschr
+   wcsrchr
+   wcsstr
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+   npos__Q2_3std78basic_string__tm__58_cQ2_3std20char_traits__tm__2_cQ2_3std18allocator__tm__2_c
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+   nothrow__3std
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::IO::BtmTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATP::DS::ErrorHandler
+   ATP::IO::ErrorHandler
+   ATP::TG::TIC
+   ATP::TrackAndPos
+   std::_Bitwise_hash<__int64>
+   std::_Bitwise_hash<__wchar_t>
+   std::_Bitwise_hash<bool>
+   std::_Bitwise_hash<char16_t>
+   std::_Bitwise_hash<char32_t>
+   std::_Bitwise_hash<char>
+   std::_Bitwise_hash<double>
+   std::_Bitwise_hash<float>
+   std::_Bitwise_hash<int>
+   std::_Bitwise_hash<long double>
+   std::_Bitwise_hash<long>
+   std::_Bitwise_hash<short>
+   std::_Bitwise_hash<signed char>
+   std::_Bitwise_hash<unsigned __int64>
+   std::_Bitwise_hash<unsigned char>
+   std::_Bitwise_hash<unsigned long>
+   std::_Bitwise_hash<unsigned short>
+   std::_Bitwise_hash<unsigned>
+   std::_Char_traits<char16_t, unsigned short>
+   std::_Char_traits<char32_t, unsigned>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>, std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>::value_type>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATC::BaseComponent *>>, std::_Vector_val<std::_Simple_types<ATC::BaseComponent *>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATC::TraceInterface *>>, std::_Vector_val<std::_Simple_types<ATC::TraceInterface *>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATP::Kernel::TrackData>>, std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATP::Kernel::TrackData>>::value_type>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATP::Kernel::baliseIdentity>>, std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATP::Kernel::baliseIdentity>>::value_type>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>, std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>::value_type>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<char>>, std::_String_val<std::_Simple_types<char>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<const ATC::Event *>>, std::_Vector_val<std::_Simple_types<const ATC::Event *>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<unsigned short>>, std::_Vector_val<std::_Simple_types<unsigned short>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Container_base0
+   std::_Container_base12
+   std::_Container_proxy
+   std::_Iterator_base0
+   std::_Iterator_base12
+   std::_Lockit
+   std::_String_alloc<std::_String_base_types<char, std::allocator<char>>>
+   std::_String_val<std::_Simple_types<char>>
+   std::_String_val<std::_Simple_types<char>>::_Bxty
+   std::_Vector_alloc<std::_Vec_base_types<ATC::AbstractEventHandler::EventListItem, std::allocator<ATC::AbstractEventHandler::EventListItem>>>
+   std::_Vector_alloc<std::_Vec_base_types<ATC::BaseComponent *, std::allocator<ATC::BaseComponent *>>>
+   std::_Vector_alloc<std::_Vec_base_types<ATC::TraceInterface *, std::allocator<ATC::TraceInterface *>>>
+   std::_Vector_alloc<std::_Vec_base_types<ATP::Kernel::TrackData, std::allocator<ATP::Kernel::TrackData>>>
+   std::_Vector_alloc<std::_Vec_base_types<ATP::Kernel::baliseIdentity, std::allocator<ATP::Kernel::baliseIdentity>>>
+   std::_Vector_alloc<std::_Vec_base_types<ATP::Pos::AbstractDecode::BaliseInfo, std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>>
+   std::_Vector_alloc<std::_Vec_base_types<const ATC::Event *, std::allocator<const ATC::Event *>>>
+   std::_Vector_alloc<std::_Vec_base_types<unsigned short, std::allocator<unsigned short>>>
+   std::_Vector_val<std::_Simple_types<ATC::BaseComponent *>>
+   std::_Vector_val<std::_Simple_types<ATC::TraceInterface *>>
+   std::_Vector_val<std::_Simple_types<const ATC::Event *>>
+   std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>::value_type>>
+   std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATP::Kernel::TrackData>>::value_type>>
+   std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATP::Kernel::baliseIdentity>>::value_type>>
+   std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>::value_type>>
+   std::_Vector_val<std::_Simple_types<unsigned short>>
+   std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::_Wrap_alloc<std::allocator<ATC::BaseComponent *>>
+   std::_Wrap_alloc<std::allocator<ATC::TraceInterface *>>
+   std::_Wrap_alloc<std::allocator<ATP::Kernel::TrackData>>
+   std::_Wrap_alloc<std::allocator<ATP::Kernel::baliseIdentity>>
+   std::_Wrap_alloc<std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>
+   std::_Wrap_alloc<std::allocator<char>>
+   std::_Wrap_alloc<std::allocator<const ATC::Event *>>
+   std::_Wrap_alloc<std::allocator<unsigned short>>
+   std::_Wrap_int
+   std::allocator<ATC::AbstractEventHandler::EventListItem>
+   std::allocator<ATC::BaseComponent *>
+   std::allocator<ATC::TraceInterface *>
+   std::allocator<ATP::Kernel::TrackData>
+   std::allocator<ATP::Kernel::baliseIdentity>
+   std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>
+   std::allocator<char>
+   std::allocator<const ATC::Event *>
+   std::allocator<unsigned short>
+   std::allocator<void>
+   std::allocator_traits<std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::allocator_traits<std::allocator<ATC::BaseComponent *>>
+   std::allocator_traits<std::allocator<ATC::TraceInterface *>>
+   std::allocator_traits<std::allocator<ATP::Kernel::TrackData>>
+   std::allocator_traits<std::allocator<ATP::Kernel::baliseIdentity>>
+   std::allocator_traits<std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>
+   std::allocator_traits<std::allocator<char>>
+   std::allocator_traits<std::allocator<const ATC::Event *>>
+   std::allocator_traits<std::allocator<unsigned short>>
+   std::bad_alloc
+   std::bad_array_new_length
+   std::bad_exception
+   std::basic_string<char, std::char_traits<char>, std::allocator<char>>
+   std::char_traits<__wchar_t>
+   std::char_traits<char>
+   std::char_traits<unsigned short>
+   std::domain_error
+   std::exception
+   std::exception_ptr
+   std::hash<double>
+   std::hash<float>
+   std::hash<long double>
+   std::initializer_list<bool>
+   std::integral_constant<bool, false>
+   std::integral_constant<bool, true>
+   std::integral_constant<unsigned, 0U>
+   std::integral_constant<unsigned, 1U>
+   std::integral_constant<unsigned, 2U>
+   std::integral_constant<unsigned, 4U>
+   std::integral_constant<unsigned, 8U>
+   std::invalid_argument
+   std::length_error
+   std::logic_error
+   std::nested_exception
+   std::numeric_limits<__int64>
+   std::numeric_limits<__wchar_t>
+   std::numeric_limits<bool>
+   std::numeric_limits<char16_t>
+   std::numeric_limits<char32_t>
+   std::numeric_limits<char>
+   std::numeric_limits<double>
+   std::numeric_limits<float>
+   std::numeric_limits<int>
+   std::numeric_limits<long double>
+   std::numeric_limits<long>
+   std::numeric_limits<short>
+   std::numeric_limits<signed char>
+   std::numeric_limits<unsigned __int64>
+   std::numeric_limits<unsigned char>
+   std::numeric_limits<unsigned long>
+   std::numeric_limits<unsigned short>
+   std::numeric_limits<unsigned>
+   std::out_of_range
+   std::overflow_error
+   std::range_error
+   std::runtime_error
+   std::underflow_error
+   std::vector<ATC::AbstractEventHandler::EventListItem, std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::vector<ATC::BaseComponent *, std::allocator<ATC::BaseComponent *>>
+   std::vector<ATC::TraceInterface *, std::allocator<ATC::TraceInterface *>>
+   std::vector<ATP::Kernel::TrackData, std::allocator<ATP::Kernel::TrackData>>
+   std::vector<ATP::Kernel::baliseIdentity, std::allocator<ATP::Kernel::baliseIdentity>>
+   std::vector<ATP::Pos::AbstractDecode::BaliseInfo, std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>
+   std::vector<const ATC::Event *, std::allocator<const ATC::Event *>>
+   std::vector<unsigned short, std::allocator<unsigned short>>
+DEFAULT_TESTABLE_CLASSES
+   ATP::TG::TIC
+INCLUDES
+END_RECORD tic.cpp

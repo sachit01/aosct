@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ATP::IO::AbstractBTMHandler">
+    <Position X="3.25" Y="0.5" Width="3" />
+    <Members>
+      <Method Name="AbstractBTMHandler" Hidden="true" />
+      <Field Name="antennaPowerState" Hidden="true" />
+      <Field Name="balisePresentAtStandStill" Hidden="true" />
+      <Field Name="balisePresentAtStandStillPos" Hidden="true" />
+      <Field Name="baliseServiceAvailable" Hidden="true" />
+      <Field Name="baliseServiceState" Hidden="true" />
+      <Field Name="bsaCounter" Hidden="true" />
+      <Field Name="btmCmdMsg" Hidden="true" />
+      <Field Name="btmCommandOptions" Hidden="true" />
+      <Field Name="btmStatusMessageOptions" Hidden="true" />
+      <Field Name="btmStatusMsg" Hidden="true" />
+      <Field Name="btmTgmList" Hidden="true" />
+      <Field Name="commandTelegramSentTimeout" Hidden="true" />
+      <Field Name="errorSequenceOrBaliseNumber" Hidden="true" />
+      <Field Name="eventBalisePresentAtStandstill" Hidden="true" />
+      <Field Name="eventBtmAvailabilityIsGreen" Hidden="true" />
+      <Field Name="eventBtmCouldBeFaulty" Hidden="true" />
+      <Field Name="eventBtmCouldBeFaultyReported" Hidden="true" />
+      <Field Name="eventErrorBtmSupervisionFailed" Hidden="true" />
+      <Field Name="eventMandatoryRoutineTestFailed" Hidden="true" />
+      <Field Name="eventRoutineTestFailed" Hidden="true" />
+      <Field Name="eventRoutineTestInProgress" Hidden="true" />
+      <Field Name="eventRoutineTestMandatory" Hidden="true" />
+      <Field Name="eventRoutineTestSucceded" Hidden="true" />
+      <Field Name="eventSporadicErrorOccurred" Hidden="true" />
+      <Field Name="forceStopAndTest" Hidden="true" />
+      <Method Name="handleBtmStatusMessage" Hidden="true" />
+      <Field Name="informDriverFailedBtm" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="isRoutineTestPossible" Hidden="true" />
+      <Field Name="lastReceivedBaliseTelegram" Hidden="true" />
+      <Field Name="lastTgmSequenceNum" Hidden="true" />
+      <Field Name="maxDistanceFromStandStill" Hidden="true" />
+      <Field Name="opcReferenceTimeOffset" Hidden="true" />
+      <Method Name="populateAndSendBtmCommand" Hidden="true" />
+      <Method Name="populateAndSendOdoCommand" Hidden="true" />
+      <Field Name="postponeTest" Hidden="true" />
+      <Field Name="previousTimeStamp" Hidden="true" />
+      <Field Name="remainingTimeToMandatoryRoutineTest" Hidden="true" />
+      <Method Name="routineTestFailed" Hidden="true" />
+      <Field Name="routineTestState" Hidden="true" />
+      <Field Name="routineTestTimeout" Hidden="true" />
+      <Method Name="runAntennaPowerStateMachine" Hidden="true" />
+      <Method Name="runRoutineTestStateMachine" Hidden="true" />
+      <Method Name="setBaliseServiceFailed" Hidden="true" />
+      <Field Name="splhConnected" Hidden="true" />
+      <Field Name="sporadicErrorTimeout" Hidden="true" />
+      <Method Name="startRoutineTest" Hidden="true" />
+      <Field Name="telePoweringOn" Hidden="true" />
+      <Field Name="timeBalisePresent" Hidden="true" />
+      <Field Name="timeDirControllerInNeutral" Hidden="true" />
+      <Field Name="timeLastRoutineTestPassed" Hidden="true" />
+      <Field Name="timeoutValueBalisePresent" Hidden="true" />
+      <Field Name="timeoutValueCommandSupervision" Hidden="true" />
+      <Field Name="timeoutValueDirectionController" Hidden="true" />
+      <Field Name="timeoutValueRoutineTest" Hidden="true" />
+      <Field Name="timeTelePoweringChanged" Hidden="true" />
+      <Method Name="validateOpcVersion" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ATP::IO::AbstractBTMHandler::BtmAntennaPowerState">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\input_output\btm_handler\abstract_btm_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::IO::AbstractBTMHandler::BtmRoutineTestState">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\input_output\btm_handler\abstract_btm_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::IO::AbstractBTMHandler::BtmServiceState">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\input_output\btm_handler\abstract_btm_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Typedef Name="ATP::IO::AbstractBTMHandler::BtmTelegramListType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\input_output\btm_handler\abstract_btm_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BBRiEICGAEAFcAmA4GikBAikoCRAxJII4RuSgrATcEA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\input_output\btm_handler\abstract_btm_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::IOComponent">
+    <Position X="0.5" Y="2.5" Width="2" />
+    <Members>
+      <Method Name="IOComponent" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Members>
+      <Method Name="~BaseComponent" Hidden="true" />
+      <Method Name="BaseComponent" Hidden="true" />
+      <Field Name="compId" Hidden="true" />
+      <Method Name="consoleCall" Hidden="true" />
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="getShortName" Hidden="true" />
+      <Method Name="getTrace" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="preInit" Hidden="true" />
+      <Field Name="shortName" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Method Name="writeToLog" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::IO::BtmTelegram">
+    <Position X="7" Y="0.5" Width="2.75" />
+    <Members>
+      <Field Name="baliseNumber" Hidden="true" />
+      <Field Name="beginMvbTime" Hidden="true" />
+      <Field Name="beginTimeStamp" Hidden="true" />
+      <Field Name="btmPacket" Hidden="true" />
+      <Field Name="btmTgmPortSafetyDataSize" Hidden="true" />
+      <Field Name="btmTgmPortSize" Hidden="true" />
+      <Field Name="classBaliseDetectFSK" Hidden="true" />
+      <Field Name="classValid210Telegram" Hidden="true" />
+      <Field Name="classValid830Telegram" Hidden="true" />
+      <Field Name="endMvbTime" Hidden="true" />
+      <Field Name="endTimeStamp" Hidden="true" />
+      <Field Name="finalReport" Hidden="true" />
+      <Field Name="telegramClass" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BABAAyAgAAAAAEAAAQEAkCAAAQgAABMQABDAAAACAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\input_output\btm_handler\btm_telegram.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::IO::SplHandler">
+    <Position X="10.25" Y="0.5" Width="2.5" />
+    <Members>
+      <Field Name="appStatusError" Hidden="true" />
+      <Field Name="appStatusRunning" Hidden="true" />
+      <Field Name="appStatusSourceUnitOpc" Hidden="true" />
+      <Field Name="atpLifeSignUnitId" Hidden="true" />
+      <Field Name="atpServiceActionCalendarTime" Hidden="true" />
+      <Field Name="atpServiceNumberCalendarTime" Hidden="true" />
+      <Field Name="atpServiceSourceUnitDmi" Hidden="true" />
+      <Field Name="atpToOpcClockSyncOutputChannel" Hidden="true" />
+      <Field Name="atpToOpcSap19OutputChannel" Hidden="true" />
+      <Field Name="clockSapId" Hidden="true" />
+      <Field Name="currentTigrisTimeOffset" Hidden="true" />
+      <Field Name="cycleTime" Hidden="true" />
+      <Field Name="eventErrorOpcSupervisionFailed" Hidden="true" />
+      <Field Name="gapActualizationFactor" Hidden="true" />
+      <Method Name="handleLifeSign" Hidden="true" />
+      <Method Name="handleMvbInput" Hidden="true" />
+      <Method Name="handleOpcSplClockSynchronizing" Hidden="true" />
+      <Method Name="handleOpcSplConnected" Hidden="true" />
+      <Method Name="handleOpcSplConnecting" Hidden="true" />
+      <Method Name="handleOpcSplSendClockSync" Hidden="true" />
+      <Method Name="handleOpcSplWaitForLeavingIdle" Hidden="true" />
+      <Method Name="handleVersionReply" Hidden="true" />
+      <Field Name="highestStationAddress" Hidden="true" />
+      <Field Name="idleTime" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Method Name="initProfibus" Hidden="true" />
+      <Method Name="initReferenceClock" Hidden="true" />
+      <Method Name="initSplConnection" Hidden="true" />
+      <Field Name="lifesignStatus" Hidden="true" />
+      <Field Name="lifesignStatusIdle" Hidden="true" />
+      <Field Name="lifesignStatusRunning" Hidden="true" />
+      <Field Name="lifesignStatusUnconditionalStoppingFailure" Hidden="true" />
+      <Field Name="lifeSignTimeoutValue" Hidden="true" />
+      <Field Name="lifesignTimestamp" Hidden="true" />
+      <Field Name="localClockInaccuracy" Hidden="true" />
+      <Field Name="maximumStationDelayOfResponders" Hidden="true" />
+      <Field Name="maxRetryLimit" Hidden="true" />
+      <Field Name="minimumStationDelayOfResponders" Hidden="true" />
+      <Field Name="mvbSapId" Hidden="true" />
+      <Field Name="nidAppStatus" Hidden="true" />
+      <Field Name="nidAtpService" Hidden="true" />
+      <Field Name="nidBtm1" Hidden="true" />
+      <Field Name="nidBtmH2Btm" Hidden="true" />
+      <Field Name="nidBtmStatus2BtmH" Hidden="true" />
+      <Field Name="nidBtmTgm2BtmH" Hidden="true" />
+      <Field Name="nidLifesign" Hidden="true" />
+      <Field Name="nidOdoH2Opc" Hidden="true" />
+      <Field Name="nidTigrisOffset" Hidden="true" />
+      <Field Name="nidVersionReply" Hidden="true" />
+      <Field Name="nidVersionRequest" Hidden="true" />
+      <Field Name="opcAppStatus" Hidden="true" />
+      <Field Name="opcLifeSignUnitId" Hidden="true" />
+      <Field Name="opcProfibusAddress" Hidden="true" />
+      <Field Name="opcSplSendClockSyncCounter" Hidden="true" />
+      <Field Name="opcSplSendConnectCounterDelay" Hidden="true" />
+      <Field Name="opcSplState" Hidden="true" />
+      <Field Name="opcToAtpAppStatusSyncChannel" Hidden="true" />
+      <Field Name="opcToAtpSap19SyncChannel" Hidden="true" />
+      <Field Name="opcVersionString" Hidden="true" />
+      <Field Name="ourProfibusAdress" Hidden="true" />
+      <Field Name="packetLengthAppStatus" Hidden="true" />
+      <Field Name="packetLengthAtpService" Hidden="true" />
+      <Field Name="packetLengthBtmH2Btm" Hidden="true" />
+      <Field Name="packetLengthBtmStatus2BtmH" Hidden="true" />
+      <Field Name="packetLengthBtmTgm2BtmH" Hidden="true" />
+      <Field Name="packetLengthLifesign" Hidden="true" />
+      <Field Name="packetLengthOdoH2Opc" Hidden="true" />
+      <Field Name="packetLengthTigrisOffset" Hidden="true" />
+      <Field Name="packetLengthVersionReply" Hidden="true" />
+      <Field Name="packetLengthVersionRequest" Hidden="true" />
+      <Method Name="packLifeSignPacket" Hidden="true" />
+      <Method Name="packVersionRequest" Hidden="true" />
+      <Field Name="phase1Duration" Hidden="true" />
+      <Field Name="phase1Frequency" Hidden="true" />
+      <Field Name="phase2Frequency" Hidden="true" />
+      <Field Name="qItemStatusSet" Hidden="true" />
+      <Field Name="quietTime" Hidden="true" />
+      <Method Name="readAppStatus" Hidden="true" />
+      <Method Name="readTigrisOffset" Hidden="true" />
+      <Method Name="runSplConnectedIn" Hidden="true" />
+      <Method Name="sendSplOutput" Hidden="true" />
+      <Field Name="setupTime" Hidden="true" />
+      <Field Name="slotTime" Hidden="true" />
+      <Field Name="splConnection" Hidden="true" />
+      <Method Name="SplHandler" Hidden="true" />
+      <Field Name="splHeaderSize" Hidden="true" />
+      <Field Name="splMaster" Hidden="true" />
+      <Field Name="splOutBuffer" Hidden="true" />
+      <Field Name="splOutRawBuffer" Hidden="true" />
+      <Field Name="tigisOffsetReceivedCycleCounter" Hidden="true" />
+      <Field Name="tigrisOffsetCycleCounter" Hidden="true" />
+      <Field Name="tigrisOffsetSyncChannel" Hidden="true" />
+      <Field Name="timeTargetRotation" Hidden="true" />
+      <Field Name="tokenValue" Hidden="true" />
+      <Field Name="udpInputBuffer" Hidden="true" />
+      <Field Name="udpInputRawBuffer" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="ATP::IO::SplHandler::OpcSplState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\input_output\btm_handler\spl_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>LIuuYeABIgCzRAjA+4gFQpjAMEpjIAIw+VADgugyUjE=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\input_output\btm_handler\spl_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::IO::BtmStatusMessage">
+    <Position X="7" Y="4.25" Width="2.75" />
+    <Members>
+      <Field Name="balisePresent" Hidden="true" />
+      <Field Name="baliseServiceAvailable" Hidden="true" />
+      <Field Name="bsaCounter" Hidden="true" />
+      <Field Name="btmOptions" Hidden="true" />
+      <Field Name="btmTestOk" Hidden="true" />
+      <Field Name="enabledTelegramFormat" Hidden="true" />
+      <Field Name="preliminaryAvailabilityTestStatus" Hidden="true" />
+      <Field Name="telepoweringStatus" Hidden="true" />
+      <Field Name="telepoweringSwitchOffRequest" Hidden="true" />
+      <Field Name="usedProtocol" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAgwIggAAhAAAAAICICgAAAQAAEAEEhQAAAgAARgA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\input_output\btm_handler\btm_status_message.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::IO::BtmCommandMessage">
+    <Position X="10.25" Y="5.25" Width="2.5" />
+    <Members>
+      <Field Name="btmOptions" Hidden="true" />
+      <Field Name="isBtmCmdDataChanged" Hidden="true" />
+      <Field Name="preliminaryAvailabilityTestEnable" Hidden="true" />
+      <Field Name="routineTest" Hidden="true" />
+      <Field Name="telePoweringCmd" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAhAAAAAAAQAAAEAAAAAgEAEAgCAAABAAAA4AA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\input_output\btm_handler\btm_command_message.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

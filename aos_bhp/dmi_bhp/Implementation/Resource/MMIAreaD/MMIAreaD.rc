@@ -1,0 +1,33 @@
+/*****************************************************************************
+*           © COPYRIGHT Bombardier Transportation AB, SWEDEN 2012.           *
+*           ======================================================           *
+*                                                                            *
+*    The copyright to the computer program herein is the                     *
+*    property of Bombardier Transportation AB, Sweden. All rights reserved.  *
+*    The program may be used and/or copied only with the                     *
+*    written permission from Bombardier Transportation AB,                   *
+*    or in accordance with the terms and conditions stipulated in the        *
+*    agreement/contract under which the program has been supplied.           *
+*                                                                            *
+*    NAME:  MMIAreaD.rc                                                      *
+*                                                                            *
+*    PROJECT:  LKAB, InterFlow TrainBorne                                    *
+*                                                                            *
+*    Ver    Author           Date    Reason                                  *
+*    ---    ------           ------  ------                                  *
+*           Bo Hermansson    120511  Created                                 *
+*                                                                            *
+*    DESCRIPTION: Resources accessed from MMI Area D                         *
+*                                                                            *
+*    INTERFACE:                                                              *
+******************************************************************************/
+
+
+SPEED_DECREASE BITMAP SPEED_DECREASE.bmp
+SPEED_DECREASE_DIMM BITMAP SPEED_DECREASE_DIMM.bmp
+SPEED_INCREASE BITMAP SPEED_INCREASE.bmp
+SPEED_INCREASE_DIMM BITMAP SPEED_INCREASE_DIMM.bmp
+SPEED_ZERO BITMAP SPEED_ZERO.bmp
+SPEED_ZERO_DIMM BITMAP SPEED_ZERO_DIMM.bmp
+
+

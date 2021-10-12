@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::DMICom::AbstractDMIMessageOut">
+    <Position X="6" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIQACAAABAIABAAEAAAAFAAQAAAAAAAAEAQAAAg=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_out.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutAreaRequest" Collapsed="true">
+    <Position X="1.75" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAgAABAAAAAAAAAAAAQAwAAAAAAAAAAAEIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_area_request.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutATPModesAndStatus" Collapsed="true">
+    <Position X="1.75" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAgIAAIAgEhAQAACAAAEgACAAQAIAAQCADAAAAJAk=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutAtpNotification" Collapsed="true">
+    <Position X="1.75" Y="5.5" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="5.875" />
+        <Point X="4.5" Y="5.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABAAAAAAACAAgAAAQAAAIAAAAAAAAIBA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_notification.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutCeilingSpeedList" Collapsed="true">
+    <Position X="1.75" Y="7" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="7.375" />
+        <Point X="4.5" Y="7.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAAAYBAAAAAAAAAAAABAQAAAAAAACAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutDMIStartupHistory" Collapsed="true">
+    <Position X="1.75" Y="8.5" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="8.875" />
+        <Point X="4.5" Y="8.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QAIAAIAAAAAABAAAAAAAAAAAAAAQAAAAAAEAAABAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_dmi_startup_history.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutDriverInfo" Collapsed="true">
+    <Position X="1.75" Y="10" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="10.375" />
+        <Point X="4.5" Y="10.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAACwIIAAAAABIAAAEAAAAAAQAUQABkAACAABAAAKAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_driver_info.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutErasePlanningArea" Collapsed="true">
+    <Position X="11.25" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_erase_planning_area.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutGradientDataList" Collapsed="true">
+    <Position X="11.25" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAIAAAEAABAAAAAACAAAAAAAQAAAAAAACAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_gradient_data_list.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutLocationData" Collapsed="true">
+    <Position X="11.25" Y="4" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAACBgAAAAAAAAAAAAAUAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_location_data.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutLocoVsTrainDir" Collapsed="true">
+    <Position X="11.25" Y="5.5" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="5.875" />
+        <Point X="11.25" Y="5.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIIAAAAABAAAIAAAAAAAAAAQAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_loco_vs_train_dir.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutManualConfigSelected" Collapsed="true">
+    <Position X="11.25" Y="7" Width="3" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="7.375" />
+        <Point X="11.25" Y="7.375" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.162" Y="0.059" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAABAAABAAAAAAAAAAAAAAUAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_manual_config_selected.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutPredefinedTextMessage" Collapsed="true">
+    <Position X="11.25" Y="8.5" Width="3" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="8.875" />
+        <Point X="11.25" Y="8.875" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.143" Y="0.1" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACAAIAAAAAABAAAAAAAAAAAAAAQABAAAAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_predefined_text_message.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutReRegSelected" Collapsed="true">
+    <Position X="11.25" Y="10" Width="3" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="10.375" />
+        <Point X="11.25" Y="10.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABAAAAAgAAAgAAAAQAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_rereg_selected.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutTextMessage" Collapsed="true">
+    <Position X="11.25" Y="15" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="15.375" />
+        <Point X="11.25" Y="15.375" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.058" Y="0.185" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAKAAAAAABAAAAAAgAAAAAAAQAAAABAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_text_message.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutTime" Collapsed="true">
+    <Position X="11.25" Y="17.25" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" ManuallyRouted="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="16.54" />
+        <Point X="12.625" Y="16.54" />
+        <Point X="12.625" Y="17.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABAACAAAAAAAAAAAQAAAAAAAAIAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_time.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutTrainConfigData" Collapsed="true">
+    <Position X="1.75" Y="11.5" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="11.875" />
+        <Point X="4.5" Y="11.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAFgAAAAgQAAAAAAAYAAAAAAAAEAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_config_data.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutTrainName" Collapsed="true">
+    <Position X="1.75" Y="13.25" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="13.562" />
+        <Point X="4.5" Y="13.562" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAIAABAAAAAAAAAAAAAAYAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_name.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutTrainVsTrackDirWanted" Collapsed="true">
+    <Position X="11.25" Y="13.25" Width="3" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.815" />
+        <Point X="8" Y="13.562" />
+        <Point X="11.25" Y="13.562" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.089" Y="0.164" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABAAAAAAAAAAAAAAQAAAAAIAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_vs_track_dir_wanted.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutVehicleData" Collapsed="true">
+    <Position X="1.75" Y="15" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="15.375" />
+        <Point X="4.5" Y="15.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABgAAAAAAAAAQAAAQAAABAAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_vehicle_data.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutVehicleTypes" Collapsed="true">
+    <Position X="6.75" Y="17.25" Width="2.5" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.152" Y="0.05" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAAAAABAAAAAAAAAAQAAAQAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_vehicle_types.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutVersion" Collapsed="true">
+    <Position X="2" Y="17.25" Width="2.75" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="16.571" />
+        <Point X="3.438" Y="16.571" />
+        <Point X="3.438" Y="17.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAgABAAAAAAAAAAAAAAQAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_version.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutSpeedAndDistance" Collapsed="true">
+    <Position X="11.25" Y="11.5" Width="3" />
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.814" />
+        <Point X="8" Y="11.875" />
+        <Point X="11.25" Y="11.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AgAAgIAABAAQBAAAAAAAAAAAARAQAAAAAAgAAoAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_speed_and_distance.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ATP::DMICom::DMIDataProcessState">
+    <Position X="2" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_out.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

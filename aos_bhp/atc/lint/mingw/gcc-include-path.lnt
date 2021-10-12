@@ -1,0 +1,13 @@
+--i"%CROSS_COMPILER_DIR%\include"
+--i"%CROSS_COMPILER_DIR%\lib\gcc\mingw32\4.8.1\include"
+
+-i"P:\SPL_Delivery\inc\"
+-i"C:\MinGW\include"
+-i"C:\MinGW\lib\gcc\mingw32\4.8.1\include\c++"
+-i"C:\MinGW\lib\gcc\mingw32\4.8.1\include\c++\mingw32"
+-i"C:\CoVP_CoHP\Linux_ppc\include"
+-i"C:\VitalIO_Handler\Implementation\Common"
+-i"C:\VitalIO_Handler\Implementation\Client"
+-i"C:\BDS_IF"
+-i"C:\GSP_2\Software\Development\BDS\include"
+-i"C:\GSP_2\Software\Development\VitalIO_Handler\include"

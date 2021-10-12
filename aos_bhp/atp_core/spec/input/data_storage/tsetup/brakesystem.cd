@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::DS::BrakeabilityBrakeSystem">
+    <Position X="5" Y="2" Width="3" />
+    <Members>
+      <Method Name="BrakeabilityBrakeSystem" Hidden="true" />
+      <Field Name="changeCounter" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="thisBrakeSystemType" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABQAgAAAAAAEFAgAQAAFAAAQAAAAAAIBBAggAAAQYAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\tsetup\brakeability_brake_system.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::BrakeabilityBrakeSystemDefault">
+    <Position X="2.75" Y="7.5" Width="3.25" />
+    <Members>
+      <Method Name="BrakeabilityBrakeSystemDefault" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAAEAAgAAAAEAAAQAAAAAAIBAAggAAAAAEA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\tsetup\brakeability_brake_system_default.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::BrakeabilityBrakeSystemSteps">
+    <Position X="6.75" Y="7.5" Width="3.25" />
+    <Members>
+      <Method Name="BrakeabilityBrakeSystemSteps" Hidden="true" />
+      <Field Name="brakeWeightLocomotiveArray" Hidden="true" />
+      <Field Name="currentBrakeabilityStepsArray" Hidden="true" />
+      <Field Name="currentEmergencyBrakeDelay" Hidden="true" />
+      <Field Name="currentServiceBrakeDelay" Hidden="true" />
+      <Field Name="dynamicWeightTrainArray" Hidden="true" />
+      <Field Name="loadedIndex" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="percentageOfOperativeBrakes" Hidden="true" />
+      <Field Name="sumOfbrakeWeightCarsArray" Hidden="true" />
+      <Field Name="validBrakeData" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgQEggEAAABEBKgAAAIEAEAQAAAAAAABAAggAEgQSNA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\tsetup\brakeability_brake_system_steps.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::BrakeabilityBrakeSystemStepsBhp">
+    <Position X="11.5" Y="8.25" Width="3.5" />
+    <Members>
+      <Method Name="BrakeabilityBrakeSystemStepsBhp" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\data_storage\tsetup\brakeability_brake_system_steps_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

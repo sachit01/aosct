@@ -1,0 +1,947 @@
+﻿<FieldDescriptions>
+  <FieldDescription type="A_BRAKEABILITY">
+    <Detail>Deceleration capability</Detail>
+    <Length>2</Length>
+    <Min>1</Min>
+    <Max>65535</Max>
+    <Resolution>0.01cm/s²</Resolution>
+    <Format>UINT</Format>
+    <Special>0 Illegal</Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="B_DIRECTION">
+    <Detail>Orientation and travel direction of the train as a bitmask.</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>7</Max>
+    <Resolution></Resolution>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+        <Bit value="0">Driving direction.</Bit>
+        <Bit value="1">Orientation in track section.</Bit>
+        <Bit value="2">Locomotive orientation.</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="B_TRAIN_STATUS">
+    <Detail>Status of the train as a bitmask.</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution></Resolution>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+        <Bit value="0">Fatal ATP error</Bit>
+        <Bit value="1">Emergency alert from driver</Bit>
+        <Bit value="2">Last car error</Bit>
+        <Bit value="3">Minor ATP error</Bit>
+        <Bit value="4">Handling done</Bit>
+        <Bit value="5">At station and within location limits.</Bit>
+        <Bit value="6">Train Idling</Bit>
+        <Bit value="7">Last car error manual overrid from MMI</Bit>
+        <Bit value="8">MA time out</Bit>
+        <Bit value="9">ATP reset</Bit>
+        <Bit value="10">ATP needs to be reset</Bit>
+        <Bit value="11">ATP intervention</Bit>
+        <Bit value="12">Internal ATC use (derailing detected)</Bit>
+        <Bit value="13">Internal ATC use (driving forward)</Bit>
+        <Bit value="14">Internal ATC use (car platform error)</Bit>
+        <Bit value="15">Slip detected</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="B_TIC_STATUS">
+    <Detail>TIC unit status</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution></Resolution>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+        <Bit value="0">Derail, front right</Bit>
+        <Bit value="1">Derail, front left</Bit>
+        <Bit value="2">Derail, rear right</Bit>
+        <Bit value="3">Derail, rear left</Bit>
+        <Bit value="4">Car dump bottom</Bit>
+        <Bit value="5">Car dump top</Bit>
+        <Bit value="6">Car dump closed</Bit>
+        <Bit value="7">Load weight bad</Bit>
+        <Bit value="8">Train config input</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="D_MA_MARGIN">
+    <Detail>Allowed margin for the vehicle to stop before the end of the MA.</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>cm</Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Illegal>0</Illegal>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="D_OVERLAP">
+    <Detail>Margin between the end of MA and the point of conflict.</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>cm</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="D_POSITION">
+    <Detail>Position within NID_TRACK_ECTION track section.</Detail>
+    <Length>3</Length>
+    <Min>-8388608</Min>
+    <Max>8388607</Max>
+    <Resolution>cm</Resolution>
+    <Format>INT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="D_PREVIOUS_BG">
+    <Detail>Distance from previous balise, if the accuracy is adequate for wheel calibration.</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>cm</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="D_REVERSE">
+    <Detail>Maximum distance which the train is allowed to move from the point here a Profile stop indication is recieved.</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="D_WINDOW">
+    <Detail>Currently calculated tolerance in position determination.</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>cm</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="G_GRADIENT">
+    <Detail>New gradient</Detail>
+    <Length>1</Length>
+    <Min>-128</Min>
+    <Max>127</Max>
+    <Resolution>1 per mill</Resolution>
+    <Format>INT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="L_LOCOMOTIVE">
+    <Detail>Length of the locomotive</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>cm</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="L_TRAIN">
+    <Detail>Total length of the train (locomotive and all cars)</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>cm</Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Illegal>0</Illegal>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="M_END_OF_MESSAGE">
+    <Detail>End of message for variable length messages</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>0</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+  <FieldDescription type="N_LENGTH">
+    <Detail>Number of bytes of application data to/from external system</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Illegal>0</Illegal>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="NID_BLOCK_TYPE">
+    <Detail>Data block identification</Detail>
+    <Length>1</Length>
+    <Min>1</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default>1</Default>
+  </FieldDescription>
+  <FieldDescription type="NID_BG">
+    <Detail>Balise identification</Detail>
+    <Length>2</Length>
+    <Min>0x1111</Min>
+    <Max>0xEEEE</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Illegal>0</Illegal>
+      <Illegal>>16382</Illegal>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="NID_ERROR_NO">
+    <Detail>Numeric code for the error</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="NID_LOCATION_TYPE">
+    <Detail>Location type description</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special></Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="NID_MESSAGE_TYPE">
+    <Detail>Message type identification</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="NID_PREVIOUS_TS">
+    <Detail>Identification of the previous track section</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="NID_SYSTEM">
+    <Detail>External system identification</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="NID_TRACK_SECTION">
+    <Detail>Track section identity</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="NID_VEHICLE">
+    <Detail>Numeric vehicle identififer</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="NID_VEHICLE_TYPE">
+    <Detail>Vehicle type identification</Detail>
+    <Length>1</Length>
+    <Min>1</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_ABORT">
+    <Detail>Further information regarding the setup abort</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="1">Aborted by driver</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_ALERT">
+    <Detail>Emergency alert code</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="1">Initiated by driver</Field>
+        <Field value="2">Initiated by dispatcher</Field>
+        <Field value="3">Position report outside set route</Field>
+        <Field value="4">Points inside set route in error</Field>
+        <Field value="5">Profile control triggered</Field>
+        <Field value="6">Powerless section</Field>
+        <Field value="7">Gate forced open</Field>
+        <Field value="8">Too many CRC errors on radio channel</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_ATO_MODE">
+    <Detail>Emergency alert code</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>4</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="1">Manual</Field>
+        <Field value="2">Supervised automatic</Field>
+        <Field value="3">Automatic</Field>
+        <Field value="4">Remote control</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_ERROR_LEVEL">
+    <Detail>Error classification</Detail>
+    <Length>1</Length>
+    <Min>1</Min>
+    <Max>3</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="1">Fatal</Field>
+        <Field value="2">Minor</Field>
+        <Field value="3">Log</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_LOGON_STATUS">
+    <Detail>Response from the stationary system, regarding driver logon</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_POSITION">
+    <Detail>Position of pantograph</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>1</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Centre</Field>
+        <Field value="1">Off centre</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_POWER">
+    <Detail>Locomotive power up or down request from stationary</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>1</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Power down</Field>
+        <Field value="1">Power up</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_PRESSURE_SENSOR">
+    <Detail>If the car have a pressure sensor</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>1</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Pressure sensor not available</Field>
+        <Field value="1">Pressure sensor available</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_PROFILE">
+    <Detail>Status of profile gauger</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>1</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Profile control released</Field>
+        <Field value="1">Profile control triggered</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_ROUTE_TYPE">
+    <Detail>Description of route type.</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="1">Location start</Field>
+        <Field value="2">Location end</Field>
+        <Field value="3">Re-registration</Field>
+        <Field value="4">Shunting</Field>
+        <Field value="5">Normal</Field>
+        <Field value="6">Re-registration after ATP reset in automatic mode</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_SETUP">
+    <Detail>Reason for TrainSetup mesage</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>3</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Train registration</Field>
+        <Field value="1">Reconfiguration</Field>
+        <Field value="2">ATP reset</Field>
+        <Field value="3">ATP reset in automatic mode</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_SIGNAL">
+    <Detail>Type of acoustic signal</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>3</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Undefined</Field>
+        <Field value="1">Sound type 1</Field>
+        <Field value="2">Sound type 2</Field>
+        <Field value="3">Sound type 3</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_SPEED">
+    <Detail>Reason for change in ceiling speed</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Undefined</Field>
+        <Field value="1">Points straight</Field>
+        <Field value="2">Points curve</Field>
+        <Field value="3">Points passed</Field>
+        <Field value="4">Location</Field>
+        <Field value="5">Temporary speed restriction</Field>
+        <Field value="255">Other</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_STOP">
+    <Detail>Reason for stop message</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Undefined</Field>
+        <Field value="1">Order cancelled</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_TIC_AVAILABLE">
+    <Detail>Indication if TIC is available in the train</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>1</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Request to register train without TIC</Field>
+        <Field value="1">TIC is available, normal operation</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_TIC_DISABLED">
+    <Detail>Indicates if the TIC system is to be ignored.</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>1</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">TIC is to be used.</Field>
+        <Field value="1">TIC is to be disabled.</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_TRACK_DATA_TYPE">
+    <Detail>Defines type of track data.</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>1</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Not valid</Field>
+        <Field value="1">Power section limit.</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_TRAIN_END">
+    <Detail>Defines type of track data.</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>1</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Rear of train (train length delay)</Field>
+        <Field value="1">Front of train</Field>
+      </Fields>
+    </Special>
+  </FieldDescription>
+  <FieldDescription type="Q_UNREGISTRATION">
+    <Detail>Why the Stationary system has unregistered the train.</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="0">Unregistered by dispatcher</Field>
+        <Field value="1">Registration rejected, unknown vehicle in train</Field>
+        <Field value="2">Registration rejected, a vehicle is part of another train</Field>
+        <Field value="3">Registration rejected, unexpected balise identity</Field>
+        <Field value="4">Registration rejected, conflict with another train route</Field>
+        <Field value="5">Registration aborted by driver or ATP</Field>
+        <Field value="6">Registration rejected, wrong driving direction</Field>
+        <Field value="7">Registration rejected, not possible to set route</Field>
+        <Field value="8">Registration rejected, to many cars in train</Field>
+        <Field value="9">Registration rejected, duplicated car identities</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="T_BRAKE_RESPONSE">
+    <Detail>Reaction time for brake application.</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>milliseconds</Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Illegal>0</Illegal>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="T_CLOCK">
+    <Detail>Number of seconds since 00:00 GMT 1970-01-01, with adjustment for local time zone</Detail>
+    <Length>4</Length>
+    <Min>891514000</Min>
+    <Max>4294967295</Max>
+    <Resolution>Seconds</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="T_MAX_PLATFORM_UP">
+    <Detail>Maximum time for the platform to reach its upper position</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution>Seconds</Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Illegal>0</Illegal>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="T_PLATFORM_UPPER">
+    <Detail>Time for the platform to stay in the upper position</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution>seconds</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="T_PRE_PRESSURISATION">
+    <Detail>Time for the platform pre-pressurization</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution>seconds</Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Illegal>0</Illegal>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="T_UNLOAD_ACTION">
+    <Detail>Timeout for unload action</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution>seconds</Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Illegal>0</Illegal>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="T_UNLOAD_HATCH_OPEN">
+    <Detail>Time for the unload hatch to be open</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution>seconds</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="T_VALID">
+    <Detail>Timeout for execution of the Movement Authority</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution>minutes</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="T_WAITING_TIME">
+    <Detail>Time to wait</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution>minutes</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="TID_DRIVER">
+    <Detail>Driver identification code</Detail>
+    <Length>20</Length>
+    <Min></Min>
+    <Max></Max>
+    <Resolution></Resolution>
+    <Format>STRING</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="TID_LOCATION">
+    <Detail>Location identification</Detail>
+    <Length>10</Length>
+    <Min></Min>
+    <Max></Max>
+    <Resolution></Resolution>
+    <Format>STRING</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="TID_PASSWORD">
+    <Detail>Driver password</Detail>
+    <Length>10</Length>
+    <Min></Min>
+    <Max></Max>
+    <Resolution></Resolution>
+    <Format>STRING</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="TID_TRAIN_NAME">
+    <Detail>Name of the train defined in the stationary system, used for presentation on the MMI.</Detail>
+    <Length>10</Length>
+    <Min></Min>
+    <Max></Max>
+    <Resolution></Resolution>
+    <Format>STRING</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="TID_VEHICLE_NAME">
+    <Detail>Name of the vehicle.</Detail>
+    <Length>10</Length>
+    <Min></Min>
+    <Max></Max>
+    <Resolution></Resolution>
+    <Format>STRING</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="V_ATO_SPEED">
+    <Detail>The requested velocity of the train in cm/s</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>cm/s</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="V_CEILING_SPEED">
+    <Detail>The current maximum velocity of the train in cm/s</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>cm/s</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="V_TRAIN_SPEED">
+    <Detail>The current velocity of the train in cm/s</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>cm/s</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="V_TRAINMAX">
+    <Detail>Maximum permitted train speed cm/s</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution>cm/s</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="M_TEXT">
+    <Detail></Detail>
+    <Length>20</Length>
+    <Min></Min>
+    <Max></Max>
+    <Resolution></Resolution>
+    <Format>STRING</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_REASON">
+    <Detail></Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="B_LOCOMOTIVE_STATUS">
+    <Detail></Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution></Resolution>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+        <Bit value="0">Unknown</Bit>
+        <Bit value="1">Unknown</Bit>
+      </Bits>
+    </Special>
+  </FieldDescription>
+  
+  <!-- Test fields-->
+  <FieldDescription type="D_BUG">
+    <Detail>Debuging field</Detail>
+    <Length>2</Length>
+    <Min>1</Min>
+    <Max>65535</Max>
+    <Resolution>0.01cm/s²</Resolution>
+    <Format>UINT</Format>
+    <Special>0 Illegal</Special>
+    <Default></Default>
+  </FieldDescription>
+
+  <FieldDescription type="NID_BLOCK_TYPE">
+    <Detail>Lolol</Detail>
+  </FieldDescription>
+  <FieldDescription type="Q_BLOCK_FIELD1">
+    <Detail>Length aoeu</Detail>
+    <Length>1</Length>
+    <Min>-128</Min>
+    <Max>127</Max>
+    <Resolution>0.01cm/s²</Resolution>
+    <Format>INT</Format>
+    <Special>
+      <Illegal value="0" />
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="D_BLOCK_FIELD2">
+    <Detail></Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Max>65535</Max>
+    <Resolution></Resolution>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+        <Bit value="0">Apa</Bit>
+        <Bit value="1">Bepa</Bit>
+        <Bit value="2">Cepa</Bit>
+        <Bit value="3"></Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_BLOCK_FIELD3">
+    <Detail></Detail>
+    <Length>2</Length>
+    <Min>0x1111</Min>
+    <Max>0xEEEE</Max>
+    <Resolution>0.01cm/s²</Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_BLOCK_FIELD4">
+    <Detail></Detail>
+    <Length>2</Length>
+    <Min>1</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+        <Field value="1">Location start</Field>
+        <Field value="2">Location end</Field>
+      </Fields>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <FieldDescription type="Q_BLOCK_FIELD5">
+    <Detail>Text input lolololol</Detail>
+    <Length>5</Length>
+    <Min>0x1111</Min>
+    <Max>0xEEEE</Max>
+    <Resolution></Resolution>
+    <Format>STRING</Format>
+    <Special>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  <!-- End test fields-->
+  <FieldDescription type="M_END_OF_MESSAGE">
+    
+  </FieldDescription>
+</FieldDescriptions>

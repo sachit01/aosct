@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Supv::AbstractBrake">
+    <Position X="4.5" Y="3.25" Width="2.75" />
+    <Members>
+      <Method Name="abortBrakeTest" Hidden="true" />
+      <Method Name="AbstractBrake" Hidden="true" />
+      <Method Name="addGradToConstAcc" Hidden="true" />
+      <Field Name="additionalBrakeOrders" Hidden="true" />
+      <Field Name="brakeRelayFeedbackErr" Hidden="true" />
+      <Field Name="brakeTestAborted" Hidden="true" />
+      <Field Name="brakeTestAbortedByDriver" Hidden="true" />
+      <Field Name="brakeTestExecTimeout" Hidden="true" />
+      <Field Name="brakeTestFailed" Hidden="true" />
+      <Field Name="brakeTestFailedEbInternal" Hidden="true" />
+      <Field Name="brakeTestInProgress" Hidden="true" />
+      <Field Name="brakeTestSequenceStep" Hidden="true" />
+      <Field Name="BrakeTestSequenceStepInit" Hidden="true" />
+      <Field Name="brakeTestStarted" Hidden="true" />
+      <Field Name="brakeTestStatus" Hidden="true" />
+      <Field Name="brakeTestSuccessful" Hidden="true" />
+      <Field Name="bSlipSideDetected" Hidden="true" />
+      <Field Name="cabinDeactivated" Hidden="true" />
+      <Method Name="checkAndApplyEBrakeReq" Hidden="true" />
+      <Method Name="checkAndApplySBrakeReq" Hidden="true" />
+      <Method Name="checkEbFeedback" Hidden="true" />
+      <Method Name="checkTcoFeedback" Hidden="true" />
+      <Field Name="cntLowRetSamplesInOneEB" Hidden="true" />
+      <Field Name="cntLowRetSamplesInOneSB" Hidden="true" />
+      <Field Name="cntLowRetSamplesInRowEB" Hidden="true" />
+      <Field Name="cntLowRetSamplesInRowSB" Hidden="true" />
+      <Field Name="currentBrakeTestCycle" Hidden="true" />
+      <Field Name="currentEBReleaser" Hidden="true" />
+      <Field Name="currentSBReleaser" Hidden="true" />
+      <Field Name="eb1TestApplied" Hidden="true" />
+      <Field Name="eb2TestApplied" Hidden="true" />
+      <Field Name="ebApplied" Hidden="true" />
+      <Field Name="ebBadReadingErrAcceleration" Hidden="true" />
+      <Field Name="ebReleaseEnable" Hidden="true" />
+      <Field Name="ebWhenInsufficientSBDeceleration" Hidden="true" />
+      <Field Name="emergencyAlertActive" Hidden="true" />
+      <Field Name="feedbackWaitCycle" Hidden="true" />
+      <Method Name="getBrakeRelReqATOSB" Hidden="true" />
+      <Method Name="getBrakeRelReqDispatcherEB" Hidden="true" />
+      <Method Name="getBrakeRelReqDispatcherSB" Hidden="true" />
+      <Method Name="getBrakeRelReqDriverEB" Hidden="true" />
+      <Method Name="getBrakeRelReqDriverSB" Hidden="true" />
+      <Method Name="getCurrentEBReleaser" Hidden="true" />
+      <Method Name="getcurrentSBReleaser" Hidden="true" />
+      <Method Name="getExpectedDeceleration" Hidden="true" />
+      <Method Name="getMaxInternalRelaysFbWaitCycle" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Method Name="isEBReleaseReqActive" Hidden="true" />
+      <Method Name="isSBReleaseReqActive" Hidden="true" />
+      <Field Name="maxBrakeTestExecCycle" Hidden="true" />
+      <Field Name="noOfCyclePerSecond" Hidden="true" />
+      <Field Name="numberOfBrakeTestSteps" Hidden="true" />
+      <Field Name="percentageMultiplier" Hidden="true" />
+      <Method Name="performBrakeTest" Hidden="true" />
+      <Method Name="performEBrakeDecControl" Hidden="true" />
+      <Method Name="performEBrakeReleaseControl" Hidden="true" />
+      <Method Name="performSBrakeDecControl" Hidden="true" />
+      <Method Name="performSBrakeReleaseControl" Hidden="true" />
+      <Method Name="performVitalDriverTest" Hidden="true" />
+      <Method Name="processBrakeTestStateMachine" Hidden="true" />
+      <Method Name="processEbCutOut" Hidden="true" />
+      <Method Name="processEmergencyBrake" Hidden="true" />
+      <Method Name="processServiceBrake" Hidden="true" />
+      <Method Name="processTco" Hidden="true" />
+      <Method Name="resetBrakeTestStateMachine" Hidden="true" />
+      <Method Name="resetEBParams" Hidden="true" />
+      <Method Name="resetSBParams" Hidden="true" />
+      <Field Name="sbApplied" Hidden="true" />
+      <Field Name="sbEscalatedToEB" Hidden="true" />
+      <Field Name="sbReleaseEnable" Hidden="true" />
+      <Field Name="startingBrakeTest" Hidden="true" />
+      <Field Name="tebDecMaxTime" Hidden="true" />
+      <Field Name="tebEBRDecMaxTime" Hidden="true" />
+      <Field Name="tebStartTime" Hidden="true" />
+      <Field Name="timeEbV0AddInZoneD" Hidden="true" />
+      <Field Name="timeSbV0AddInZoneD" Hidden="true" />
+      <Field Name="tInhibitTime" Hidden="true" />
+      <Field Name="tMaxSlipSide" Hidden="true" />
+      <Field Name="tMinSlipSide" Hidden="true" />
+      <Field Name="trainStopVelocity" Hidden="true" />
+      <Field Name="tsbDecMaxTime" Hidden="true" />
+      <Field Name="unableToStartBrakeTest" Hidden="true" />
+      <Method Name="verifyBrakeTestFeedback" Hidden="true" />
+      <Method Name="verifyInternalEbRelays" Hidden="true" />
+      <Field Name="vitalDriverTestCycleCounter" Hidden="true" />
+      <Field Name="vitalDriverTestState" Hidden="true" />
+      <Method Name="waitForVitalOutputDeactivation" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ATP::Supv::AbstractBrake::BrakeTestOrderStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\supervision\brake\abstract_brake.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="ATP::Supv::AbstractBrake::VitalDriverTestState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\supervision\brake\abstract_brake.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <InheritanceLine Type="ATC::ProcComponent" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.812" Y="2.502" />
+        <Point X="5.812" Y="2.624" />
+        <Point X="5.812" Y="2.624" />
+        <Point X="5.812" Y="3.25" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.162" Y="0.164" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>wCIGEgCEQ3HAYYUDhNpgKgBWAxACoBLsgf9BCQsFQDA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\supervision\brake\abstract_brake.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent">
+    <Position X="4.5" Y="0.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ATP::Supv::BrakeTestStatus">
+    <Position X="1.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAIAAAAAAAAAAACAAAAAAAAAAAAEAAE=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\supervision\brake\abstract_brake.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

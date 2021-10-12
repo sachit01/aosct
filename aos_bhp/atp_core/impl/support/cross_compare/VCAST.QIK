@@ -1,0 +1,106 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atp_core\impl\support\cross_compare
+BEGIN_RECORD cross_compare_object.cpp
+CHECKSUM 3484882126
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __CPR81__setNext__Q3_3ATP7Support18CrossCompareObjectFPQ3_3ATPJ16JJ24J
+   __ct__Q3_3ATP7Support18CrossCompareObjectFv
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_LFPCZ1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFPCZ1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_iFPCZ1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_sFPCZ1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ScFPCZ1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ULFPCZ1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UcFPCZ1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UiFPCZ1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsFPCZ1Z
+   __dt__Q3_3ATP7Support18CrossCompareObjectFv
+   __dt__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_LFv
+   __dt__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFv
+   __dt__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_iFv
+   __dt__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_sFv
+   __dt__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ScFv
+   __dt__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ULFv
+   __dt__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UcFv
+   __dt__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UiFv
+   __dt__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsFv
+   getMaxDataSize__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_LCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_iCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_sCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ScCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ULCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UcCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UiCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsCFv_Ui
+   getNext__Q3_3ATP7Support18CrossCompareObjectCFv
+   writeBuffer__Q3_3ATP7Support18CrossCompareObjectCFP14VFW_BufferNodeL
+   writeBuffer__Q3_3ATP7Support18CrossCompareObjectCFP14VFW_BufferNodeSc
+   writeBuffer__Q3_3ATP7Support18CrossCompareObjectCFP14VFW_BufferNodeUL
+   writeBuffer__Q3_3ATP7Support18CrossCompareObjectCFP14VFW_BufferNodeUc
+   writeBuffer__Q3_3ATP7Support18CrossCompareObjectCFP14VFW_BufferNodeUi
+   writeBuffer__Q3_3ATP7Support18CrossCompareObjectCFP14VFW_BufferNodeUs
+   writeBuffer__Q3_3ATP7Support18CrossCompareObjectCFP14VFW_BufferNodeb
+   writeBuffer__Q3_3ATP7Support18CrossCompareObjectCFP14VFW_BufferNodec
+   writeBuffer__Q3_3ATP7Support18CrossCompareObjectCFP14VFW_BufferNodei
+   writeBuffer__Q3_3ATP7Support18CrossCompareObjectCFP14VFW_BufferNodes
+   writeDataBinary__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_LCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_iCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_sCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ScCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ULCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UcCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UiCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsCFP14VFW_BufferNode_v
+CALLED_OBJECTS
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_LFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_iFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_sFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ScFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ULFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UcFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UiFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   aosHalt__3ATCFPCciT1
+   vfwPutI16
+   vfwPutI32
+   vfwPutI64
+   vfwPutI8
+   vfwPutU16
+   vfwPutU32
+   vfwPutU64
+   vfwPutU8
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATP::Support::CrossCompareObject
+   ATP::Support::CrossCompareSimpleType<__int64>
+   ATP::Support::CrossCompareSimpleType<bool>
+   ATP::Support::CrossCompareSimpleType<int>
+   ATP::Support::CrossCompareSimpleType<short>
+   ATP::Support::CrossCompareSimpleType<signed char>
+   ATP::Support::CrossCompareSimpleType<unsigned __int64>
+   ATP::Support::CrossCompareSimpleType<unsigned char>
+   ATP::Support::CrossCompareSimpleType<unsigned short>
+   ATP::Support::CrossCompareSimpleType<unsigned>
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::Support::CrossCompareObject
+   ATP::Support::CrossCompareSimpleType<__int64>
+   ATP::Support::CrossCompareSimpleType<bool>
+   ATP::Support::CrossCompareSimpleType<int>
+   ATP::Support::CrossCompareSimpleType<short>
+   ATP::Support::CrossCompareSimpleType<signed char>
+   ATP::Support::CrossCompareSimpleType<unsigned __int64>
+   ATP::Support::CrossCompareSimpleType<unsigned char>
+   ATP::Support::CrossCompareSimpleType<unsigned short>
+   ATP::Support::CrossCompareSimpleType<unsigned>
+INCLUDES
+END_RECORD cross_compare_object.cpp

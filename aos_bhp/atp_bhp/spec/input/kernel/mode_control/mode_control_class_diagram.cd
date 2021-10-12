@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Kernel::ModeControl">
+    <Position X="0.5" Y="2.25" Width="3.5" />
+    <Members>
+      <Field Name="adsVersionMismatch" Hidden="true" />
+      <Field Name="bhpbConfigVersion" Hidden="true" />
+      <Field Name="commonConfigNameAndVersion" Hidden="true" />
+      <Field Name="dispatcherConfigNameAndVersion" Hidden="true" />
+      <Field Name="dispatcherNameAndVersion" Hidden="true" />
+      <Field Name="hwAnalogInputNameAndVersion" Hidden="true" />
+      <Field Name="hwDigitalInputNameAndVersion" Hidden="true" />
+      <Field Name="hwDigitalOutputNameAndVersion" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="instanceConfigNameAndVersion" Hidden="true" />
+      <Field Name="maintConfigNameAndVersion" Hidden="true" />
+      <Method Name="ModeControl" Hidden="true" />
+      <Field Name="opcVersionEvent" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="runtimeConfigNameAndVersion" Hidden="true" />
+      <Field Name="sdpNameAndVersion" Hidden="true" />
+      <Field Name="swNameAndVersion" Hidden="true" />
+      <Field Name="typeConfigNameAndVersion" Hidden="true" />
+      <Field Name="viohClientNameAndVersion" Hidden="true" />
+      <Field Name="viohServerNameAndVersion" Hidden="true" />
+      <Field Name="vitalframeworkNameAndVersion" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>sBCAABBAgAADCAAAAAQAAEAAACDBAIIAAABgAAxLWKA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\kernel\mode_control\mode_control.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::AbstractModeControl" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>D7XKXmnBHBgMOgRkMFCNpQOhObeZAD/YS/8aAT4sb0k=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\kernel\mode_control\abstract_mode_control.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

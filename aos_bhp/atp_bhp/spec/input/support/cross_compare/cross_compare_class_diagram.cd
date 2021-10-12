@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Support::CrossCompare">
+    <Position X="6" Y="6.25" Width="2.25" />
+    <InheritanceLine Type="ATP::Support::AbstractCrossCompare">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.1" Y="0.248" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\support\cross_compare\cross_compare.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Support::AbstractCrossCompare">
+    <Position X="5.5" Y="3.25" Width="3.25" />
+    <Members>
+      <Method Name="~AbstractCrossCompare" Hidden="true" />
+      <Method Name="AbstractCrossCompare" Hidden="true" />
+      <Method Name="compareCrossCompareDataIn" Hidden="true" />
+      <Method Name="compareCrossCompareDataOut" Hidden="true" />
+      <Method Name="compareCrossCompareVersionCheck" Hidden="true" />
+      <Method Name="corePtr" Hidden="true" />
+      <Field Name="crossCompareErrorOccured_" Hidden="true" />
+      <Field Name="crossComparePointInput" Hidden="true" />
+      <Field Name="crossComparePointOutput" Hidden="true" />
+      <Field Name="crossComparePointVersion" Hidden="true" />
+      <Field Name="eventCouldNotAddIOSafetyHalt_" Hidden="true" />
+      <Field Name="eventCouldNotWriteSafetyHalt_" Hidden="true" />
+      <Field Name="eventMismatchSafetyHalt_" Hidden="true" />
+      <Method Name="initDone" Hidden="true" />
+      <Field Name="initHasFinished" Hidden="true" />
+      <Field Name="inputBufferPos_" Hidden="true" />
+      <Field Name="inputOutputCrossCompareBuffer_" Hidden="true" />
+      <Field Name="isVersionSentForCrossCompare_" Hidden="true" />
+      <Field Name="maxCrcDataSize" Hidden="true" />
+      <Field Name="maxLowFrequencyCount" Hidden="true" />
+      <Field Name="maxVersionLength" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="pCrossCompareHandle_" Hidden="true" />
+      <Field Name="pCrossCompareOutputHandle_" Hidden="true" />
+      <Field Name="pCurrentLowFrequencyCrossCompare_" Hidden="true" />
+      <Method Name="receiveCrossCompareDataCallbackIn" Hidden="true" />
+      <Method Name="receiveCrossCompareDataCallbackOut" Hidden="true" />
+      <Method Name="receiveCrossCompareVersionCheck" Hidden="true" />
+      <Method Name="writeCrossCompareDataCallbackRunIn" Hidden="true" />
+      <Method Name="writeCrossCompareDataCallbackRunOut" Hidden="true" />
+      <Method Name="writeCrossCompareDataCallbackVersionCheck" Hidden="true" />
+      <Method Name="writeCrossCompareDataLow_" Hidden="true" />
+      <Method Name="writeCrossCompareDataOutput_" Hidden="true" />
+      <Method Name="writeCrossCompareDataRunIn" Hidden="true" />
+      <Method Name="writeCrossCompareDataRunOut" Hidden="true" />
+      <Method Name="writeCrossCompareVersionCheck" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::IOComponent">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.048" Y="0.175" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>RYAiDIAEAYgAIQAAMAQAAEAISgABkAIMAAQigAAVECY=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\abstract_cross_compare.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::IOComponent" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="2.75" />
+    <InheritanceLine Type="ATC::BaseComponent">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.1" Y="0.143" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

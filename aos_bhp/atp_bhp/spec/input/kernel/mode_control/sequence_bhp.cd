@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Kernel::DriverLoginSeqBHP">
+    <Position X="9.5" Y="2.5" Width="4.25" />
+    <Members>
+      <Field Name="loginVerficationWaitCycleCount" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAACAAAAAAAAAAAAAIAAAEAAAAAAAAAQAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\kernel\mode_control\driver_login_seq_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::DriverLoginSeq">
+    <Position X="4.5" Y="1.75" Width="3" />
+    <Members>
+      <Field Name="driverLoginNotAuthorizedStandstill" Hidden="true" />
+      <Field Name="driverLogoutEvent" Hidden="true" />
+      <Field Name="driverNotAuthStandstill" Hidden="true" />
+      <Field Name="isLogInFromYardWithoutTCC" Hidden="true" />
+      <Field Name="loginFailedCycleCount" Hidden="true" />
+      <Field Name="maxLoginFailedCycles" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QACCIgAAAQoAKAAAAAAABAAAAAAAsAEAAABQgAAAYAQ=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\kernel\mode_control\driver_login_seq.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

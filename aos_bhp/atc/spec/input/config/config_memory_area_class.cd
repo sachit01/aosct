@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ATC::ConfigMemoryArea">
+    <Position X="4" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAIAYAAgAAAAFAAAAAAADAAAAABAQAIAAAACAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\config_memory_area.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

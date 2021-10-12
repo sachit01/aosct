@@ -1,0 +1,20 @@
+================================================================== 
+================================================================== 
+Mingw.bat report 
+date:17.02.2014 
+time:17:16:25,45 
+user:jkrupp 
+your command: vcu.bat sudp a css sil0 clean   
+------------------------------------------------------------------ 
+"Target or code type have changed. Rebuild all!!" 
+no more parameters 
+================================================================== 
+================================================================== 
+Mingw.bat report 
+date:17.02.2014 
+time:17:16:28,38 
+user:jkrupp 
+your command: vcu.bat sudp a css sil0    
+------------------------------------------------------------------ 
+all was successfully rebuilt.  
+no more parameters 

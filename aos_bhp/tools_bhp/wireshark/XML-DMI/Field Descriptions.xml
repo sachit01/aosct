@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FieldDescriptions>
+
+  <!-- ATP_mode_and_states fields -->
+
+  <FieldDescription type="ATP_Mode">
+    <Detail>ATP mode</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>19</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">Undefined</Field>
+	<Field value="2">Power up </Field>
+	<Field value="2">Train configuration</Field>
+	<Field value="3">Train registration</Field>
+	<Field value="4">Balise Search</Field>
+	<Field value="5">Normal</Field>
+	<Field value="6">Shunting</Field>
+	<Field value="7">Location</Field>
+	<Field value="8">AutomaticUnload</Field>
+	<Field value="9">Yard</Field>
+	<Field value="10">Unregistered</Field>
+	<Field value="11">PoweringDown</Field>
+	<Field value="12">SafetyHalt</Field>
+	<Field value="13">Sleeping</Field>
+	<Field value="14">StaffResponsible</Field>
+	<Field value="15">ShuntingRoute</Field>
+	<Field value="16">Possession</Field>
+	<Field value="17">Split</Field>
+	<Field value="18">Join</Field>
+	<Field value="19">SafeBrakeToStop</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+
+  <FieldDescription type="ATP_State">
+    <Detail>ATP state</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>19</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">Undefined</Field>
+	<Field value="1">BasicSystemStartUp </Field>
+	<Field value="2">ApplicationStartUp </Field>
+	<Field value="3">Inactive </Field>
+	<Field value="4">ActivationInitiation</Field> 
+	<Field value="5">ActivationTest </Field>
+	<Field value="6">Active </Field>
+	<Field value="7">FatalFailureState</Field>
+	<Field value="8">SystemRestart</Field>
+	<Field value="9">Power down</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+
+  <FieldDescription type="ATP_Mode_Extra">
+    <Detail>ATP mode extra</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>2</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">Undefined</Field>
+	<Field value="1">Manual/Allow driver to Select Mode Configuration, Yard</Field>
+	<Field value="2">ReConfig </Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>  
+
+  <FieldDescription type="Driver_Verification_State">
+    <Detail>Driver verification state</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>5</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">Undefined</Field>
+	<Field value="1">NoActionState</Field>
+	<Field value="2">InputState</Field>
+	<Field value="3">VerificationState</Field>
+	<Field value="4">RedoInputState</Field>
+	<Field value="5">Logged on</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+  
+  <FieldDescription type="Train_State">
+    <Detail>Train state</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+	<Bit value="0"> Radio available</Bit>
+	<Bit value="1"> TIMS available</Bit>
+	<Bit value="2"> TIMS Ok</Bit>
+	<Bit value="3"> Odometer invalid</Bit>
+	<Bit value="4"> Stop Train request</Bit>
+	<Bit value="5"> Configuration rejected</Bit>
+	<Bit value="6"> Train integrity granted by driver</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  
+  <FieldDescription type="Locomotive_State">
+    <Detail>Locomotive status</Detail>
+    <Length>4</Length>
+    <Min>0</Min>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+	<Bit value="0">Safety Halt</Bit>
+	<Bit value="1">EmergencyAlert from driver</Bit>
+	<Bit value="2">TIMS Integrity Broken</Bit>
+	<Bit value="3">Braking event</Bit>
+	<Bit value="4">HandlingDone</Bit>
+	<Bit value="5">TrainIdling</Bit>
+	<Bit value="6">TIMS Integrity Manual Override from Driver</Bit>
+	<Bit value="7">MA Timeout</Bit>
+	<Bit value="8">ATP Reset</Bit>
+	<Bit value="9">ATP_needs to be reset</Bit>
+	<Bit value="10">ATP intervention</Bit>
+	<Bit value="11">Brake release requested</Bit>
+	<Bit value="12">Manual TIMS confirmation</Bit>
+	<Bit value="13">Slip detected </Bit>
+	<Bit value="14">Free rolling</Bit>
+	<Bit value="15">Emergency Alert active</Bit>
+	<Bit value="16">AttentionNeeded (ATO) </Bit>
+	<Bit value="17">Not ready to drive (ATO)</Bit>
+	<Bit value="18">Safe for boarding (ATO)</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+
+  <FieldDescription type="ATO_Mode">
+    <Detail>ATO Mode</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>5</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">ATOModeUndefined</Field>
+	<Field value="1">ATOModeManual</Field>
+	<Field value="2">ATOModeSupervisedAutomatic</Field>
+	<Field value="3">ATOModeAutomatic</Field>
+	<Field value="4">ATOModeRemote</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+
+  <FieldDescription type="ATO_SwitchPos">
+    <Detail>Wanted ATO switch position</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>4</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">Undefined</Field>
+	<Field value="1">Manual</Field>
+	<Field value="2">Supervised Automatic</Field>
+	<Field value="3">Automatic</Field>
+	<Field value="4">Illegal</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+  
+  <FieldDescription type="AdditionalStatus1">
+    <Detail>Additional status-bits 1</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+	<Bit value="0">ATO Enable</Bit>
+	<Bit value="1">Driving forward</Bit>
+	<Bit value="2">Standstill Event active</Bit>
+	<Bit value="3">Brake Test possible</Bit>
+	<Bit value="4">Brake Test notification</Bit>
+	<Bit value="5">Brake Test mandatory</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  
+  <FieldDescription type="AdditionalStatus2">
+    <Detail>Additional status-bits 2</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+	<Bit value="0" len="2" Note="todo">Com status</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+
+  <FieldDescription type="Confirm_change">
+    <Detail>Confirm change to mode needed</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>5</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">Nothing to confirm</Field>
+	<Field value="1">Yard</Field>
+	<Field value="2">Shunting Route</Field>
+	<Field value="3">Staff Responsible</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+
+  <FieldDescription type="Allow">
+    <Detail>Allowed  to bit definitions</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+	<Bit value="0">Allowed to login</Bit>
+	<Bit value="1">Allowed to enter Yard mode</Bit>
+	<Bit value="2">Allowed to enter Possession</Bit>
+	<Bit value="3">Allowed to enter Shunting</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+  
+  <FieldDescription type="BreakStatus">
+    <Detail>Brake Test status values</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>5</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">No status</Field>
+	<Field value="1">Brake Test in progress</Field>
+	<Field value="2">Brake Test aborted</Field>
+	<Field value="3">Brake Test failed</Field>
+	<Field value="4">Brake Test successful</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+
+  <!-- Driver_info -->
+  
+  <FieldDescription type="PermittedDirection">
+    <Detail>Permitted driving direction</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>4</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">Undefined</Field>
+	<Field value="1">None</Field>
+	<Field value="2">Forward</Field>
+	<Field value="3">Reverse</Field>
+	<Field value="4">Both</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>  
+  
+  <FieldDescription type="StatusSignals">
+    <Detail>StatusSignals</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+	<Bit value="0">In BCA</Bit>
+	<Bit value="1">ATP Warning</Bit>
+	<Bit value="2">ATP Intervention</Bit>
+	<Bit value="3">Flash SB Brake button </Bit>
+	<Bit value="4">Radio Available</Bit>
+	<Bit value="5">Service Brakes applied</Bit>
+	<Bit value="6">Emergency Brakes applied</Bit>
+	<Bit value="7">Flash EB Brake button</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+
+  <FieldDescription type="VisibibleSignals">
+    <Detail>VisibibleSignals</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+	<Bit value="0">Indicate Permitted direction</Bit>
+	<Bit value="1">Indicate Permitted speed</Bit>
+	<Bit value="2">Indicate Target speed</Bit>
+	<Bit value="3">Indicate Remaining distance to target point</Bit>
+	<Bit value="4">Indicate Remaining distance to BCA</Bit>
+	<Bit value="5">Indicate Predicted distance to stand still location</Bit>
+	<Bit value="6">Indicate Predicted speed at brake target</Bit>
+	<Bit value="7">Indicate Time to intervention</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+
+  <!-- Speed_distance -->
+  
+  <!-- TrainConfigData -->
+
+  <FieldDescription type="TimsRequired">
+    <Detail>Tims</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+	<Bit value="0">TIMS Required</Bit>
+	<Bit value="1">Cars connected at B == 0, Cars connected at A == 1</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+
+  <!-- Error messages -->
+
+  <FieldDescription type="ErrorBlock">
+    <Detail>Error type</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>4</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> UndefBlock</Field>
+	<Field value="1"> ACT</Field>
+	<Field value="2"> BRK</Field>
+	<Field value="3"> CARH</Field>
+	<Field value="4"> COM</Field>
+	<Field value="5"> COMATO</Field>
+	<Field value="6"> COMMMI</Field>
+	<Field value="7"> LOG</Field>
+	<Field value="8"> ELOG</Field>
+	<Field value="9"> MMICL</Field>
+	<Field value="10"> MON100</Field>
+	<Field value="11"> MON250</Field>
+	<Field value="12"> MON500</Field>
+	<Field value="13"> RCOND</Field>
+	<Field value="14"> SEL</Field>
+	<Field value="15"> START</Field>
+	<Field value="16"> SUP</Field>
+	<Field value="17"> VCOM</Field>
+	<Field value="18"> COMATP2</Field>
+	<Field value="19"> CONFIG</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>  
+
+  <FieldDescription type="ErrorGrade">
+    <Detail>Error grade</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>4</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> Undefined</Field>
+	<Field value="1"> Fatal error A</Field>
+	<Field value="2"> Fatal error B</Field>
+	<Field value="3"> Fatal error C</Field>
+	<Field value="4"> Minor error A</Field>
+	<Field value="5"> Minor error B</Field>
+	<Field value="6"> Minor error C</Field>
+	<Field value="7"> Log error A</Field>
+	<Field value="8"> Log error B</Field>
+	<Field value="9"> Log error C</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>  
+
+
+  <!-- CarListAnswer_CarList --> 
+
+  <FieldDescription type="AcceptStatus">
+    <Detail>Accept Status</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+	<Bit value="0">Accepted without TIMS</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+
+  <!-- Confirmation -->
+  
+  <FieldDescription type="Confirm">
+    <Detail>Confirmation</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>4</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">Undefined</Field>
+	<Field value="1">OK</Field>
+	<Field value="2">Not OK</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>  
+
+  <!-- DMI_ToATP_Data -->
+  
+  <FieldDescription type="DMIButtonStatus">
+    <Detail>DMI button status</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>23</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> Undefined</Field>
+	<Field value="1"> BrakeRelease, 2 = TICConfirmation, 3 = DerailInhibit, 4 = TrainConfig,</Field>
+	<Field value="5"> ManualHandling,</Field>
+	<Field value="6"> HandlingDone,</Field>
+	<Field value="7"> EnterYardMode,</Field>
+	<Field value="8"> AlertButton,</Field>
+	<Field value="9"> Test,</Field>
+	<Field value="10"> ResetATP,</Field>
+	<Field value="11"> RetryConfig</Field>
+	<Field value="12"> Spare</Field>
+	<Field value="13"> DriverLogout</Field>
+	<Field value="14"> Possession</Field>
+	<Field value="15"> Shunting</Field>
+	<Field value="16"> Spare</Field>
+	<Field value="17"> Start Brake Test</Field>
+	<Field value="18"> Abort Brake Test</Field>
+	<Field value="19"> Spare</Field>
+	<Field value="20"> Spare</Field>
+	<Field value="21"> Confirm change to Yard </Field>
+	<Field value="22"> Confirm change to Shunting Route</Field>
+	<Field value="23"> Confirm change to Staff Responsible</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>  
+  
+
+  <!-- block SpeedBlock -->
+  <FieldDescription type="SpeedReason">
+    <Detail>Reason</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">Undefined</Field>
+	<Field value="1">Point Straight</Field>
+	<Field value="2">Point Curve</Field>
+	<Field value="3">Point Passed</Field>
+	<Field value="4">Location</Field>
+	<Field value="5">Other</Field>
+	<Field value="6">End of MA</Field>
+	<Field value="7">TSR (temporary speed restriction)</Field>
+	<Field value="8">Conditional target (e.g. pantograph shift)</Field>
+	<Field value="9">Pantograph shift to none</Field>
+	<Field value="10">Pantograph shift to roof</Field>
+	<Field value="11">Pantograph shift to side</Field>
+	<Field value="255">reference for odometer value</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>  
+
+
+
+  <!-- block CarStatus -->
+
+  <FieldDescription type="TicStatus">
+    <Detail>TIC Status</Detail>
+    <Length>2</Length>
+    <Min>0</Min>
+    <Format>BITMASK</Format>
+    <Special>
+      <Bits>
+	<Bit value="0">TIC_TrainConfigInput</Bit>
+	<Bit value="1">TIC_DerailInhibit</Bit>
+	<Bit value="2">TIC_Derail</Bit>
+	<Bit value="3">TIC_PlatformError</Bit>
+	<Bit value="8">TIC_FrontRightDerail</Bit>
+	<Bit value="9">TIC_FrontLeftDerail</Bit>
+	<Bit value="10">TIC_RearRightDerail</Bit>
+	<Bit value="11">TIC_RearLeftDerail</Bit>
+	<Bit value="12">TIC_CarDumpBottom</Bit>
+	<Bit value="13">TIC_CarDumpTop	</Bit>
+	<Bit value="14">TIC_CarDumpClosed</Bit>
+	<Bit value="15">TIC_LoadWeightBad</Bit>
+      </Bits>
+    </Special>
+    <Default></Default>
+  </FieldDescription>
+
+  
+  <FieldDescription type="PlatformStatus">
+    <Detail>Platform Status</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>23</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0">cpsUndefined</Field>
+	<Field value="1">cpsDOWN</Field>
+	<Field value="2">cpsGoingUP</Field>
+	<Field value="3">cpsUP</Field>
+	<Field value="4">cpsGoingDOWN</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>  
+
+  <FieldDescription type="M_END_OF_MESSAGE">
+    <Detail>End of message for variable length messages</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>0</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+  
+</FieldDescriptions>

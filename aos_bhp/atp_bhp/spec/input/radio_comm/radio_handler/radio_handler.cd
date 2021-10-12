@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATP::RadioCom::RadioHandler">
+    <Position X="6.75" Y="5" Width="2.25" />
+    <Members>
+      <Field Name="chnlStatus1" Hidden="true" />
+      <Field Name="chnlStatus2" Hidden="true" />
+      <Field Name="chnlStatus3" Hidden="true" />
+      <Field Name="crossCompareInitialized" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="radioChannel1" Hidden="true" />
+      <Field Name="radioChannel2" Hidden="true" />
+      <Field Name="radioChannel3" Hidden="true" />
+      <Method Name="RadioHandler" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AABwAAAAAAAAAAAAIAAAAAAAAABAAAMQAAAggAAISAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\radio_comm\radio_handler\radio_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::RadioCom::AbstractRadioHandler">
+    <Position X="2.75" Y="4.25" Width="2.5" />
+    <Members>
+      <Method Name="AbstractRadioHandler" Hidden="true" />
+      <Method Name="handleCentral" Hidden="true" />
+      <Method Name="handleRegion" Hidden="true" />
+      <Field Name="idxResponseInProVerMsg" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="isYardModeCounterExpired" Hidden="true" />
+      <Field Name="lastRefTimeTCCTimeout" Hidden="true" />
+      <Field Name="numPositionMessages" Hidden="true" />
+      <Field Name="radioChannels" Hidden="true" />
+      <Field Name="tccTimeoutStatus" Hidden="true" />
+      <Field Name="yardModeCounter" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BBAAMgAAAAAAICAAACAAAAACAMAAYAAAQABAgACAQRA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\radio_comm\radio_handler\abstract_radio_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="3.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

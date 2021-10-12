@@ -1,0 +1,23 @@
+*** Ver 2.6.3 2011-08-25 ***
+Version generated with Visual Studio 2008
+Only TCP/IP supported
+Still compatible with old (T8) protocol
+Source-code for Windows only
+
+*** Ver 2.7.0 2011-10-04 ***
+New LK protocol
+
+*** Ver 2.7.1 2012-03-28 ***
+Retransmission of acknowledged message corrected if ack not received within timeout
+
+*** Ver 2.7.2 2017-08-22 ***
+Removed dependency of bs_types.h to prepare for migration to BHP
+
+*** Ver 2.7.3 2017-08-22 ***
+Increased Max package size from 512 to 8500
+
+*** Ver 2.8.0 2017-08-22 ***
+Migrated to Visual Studio 2015
+
+*** Ver 2.8.1 2019-08-28 ***
+Increased Max package size from 8500 to 8787 to accomodate 350 cars

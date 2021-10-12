@@ -1,0 +1,8 @@
+Package: aos
+Version: ${VERSION}
+Maintainer: https://www.bombardier.com
+Architecture: arm
+Description: Automatic Train Protection
+ Copyright: Bombardier Transportation
+ Automatic Train Protection (Linux ARM, CPU-B)
+Provides: Automatic_Train_Protection

@@ -1,0 +1,20 @@
+================================================================== 
+================================================================== 
+Mingw.bat report 
+date:17.02.2014 
+time:17:14:03,67 
+user:jkrupp 
+your command: vcu.bat udp ab tbsw sil4 clean   
+------------------------------------------------------------------ 
+"Target or code type have changed. Rebuild all!!" 
+no more parameters 
+================================================================== 
+================================================================== 
+Mingw.bat report 
+date:17.02.2014 
+time:17:14:07,17 
+user:jkrupp 
+your command: vcu.bat udp ab tbsw sil4    
+------------------------------------------------------------------ 
+all was successfully rebuilt.  
+no more parameters 

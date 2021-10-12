@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Kernel::AbstractMode">
+    <Position X="22.5" Y="0.75" Width="3.5" />
+    <Members>
+      <Field Name="idleTrainStateStandstill" Hidden="true" />
+      <Field Name="maTimeout" Hidden="true" />
+      <Field Name="nextMode" Hidden="true" />
+      <Field Name="odometerInvalidSB" Hidden="true" />
+      <Field Name="stopTrainRequested" Hidden="true" />
+      <Field Name="tccConnectionLost" Hidden="true" />
+      <Field Name="tccConnectionLostInStandstill" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>DAxAAIAAQCYAAICEAAEBEEAAUAAIAKsQCAQIwBBBSIA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\abstract_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::YardMode">
+    <Position X="16.25" Y="22.75" Width="3.5" />
+    <Members>
+      <Field Name="modeState" Hidden="true" />
+      <Field Name="prevTravelDirection" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="22.344" />
+        <Point X="18" Y="22.344" />
+        <Point X="18" Y="22.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAA4AADAAAAAACABAAEAEAABQAAAEAgQAAQAaAACSAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\yard_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::UnregisteredMode">
+    <Position X="33.75" Y="9.5" Width="2.75" />
+    <Members>
+      <Field Name="modeState" Hidden="true" />
+      <Field Name="standstillInUnregisteredMode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAEAgAAACAAAAEAEAAAAAAAAAgQAAQAYAAASAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\unregistered_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::TrainRegistrationMode">
+    <Position X="11.25" Y="22.75" Width="4.75" />
+    <Members>
+      <Field Name="dmiTravelDir" Hidden="true" />
+      <Field Name="emergencyAlertInRegistrationMode" Hidden="true" />
+      <Field Name="incorrectQsetupAndPosCombination" Hidden="true" />
+      <Field Name="inValidMAReceivedInReRegistration" Hidden="true" />
+      <Field Name="inValidTsetupInREG" Hidden="true" />
+      <Field Name="modeState" Hidden="true" />
+      <Field Name="noMovementinREG" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="22.363" />
+        <Point X="13.625" Y="22.363" />
+        <Point X="13.625" Y="22.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>hAAAAAgAAAEICKAkhEEIEAAIAQAgCQgQAEQAQQQCSQA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\train_registration_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::StaffResponsibleMode">
+    <Position X="28.75" Y="9.5" Width="4.75" />
+    <Members>
+      <Field Name="modeState" Hidden="true" />
+      <Field Name="standStillWaitSRConfirm" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BiAgEBAAAAAAgCAAAAEEFAAgAAAQgAgAAAQAAVAASEA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\staff_responsible_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::SplitMode">
+    <Position X="12" Y="9.5" Width="3.25" />
+    <Members>
+      <Field Name="modeState" Hidden="true" />
+      <Field Name="standstillWaitForConfirm" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="9.093" />
+        <Point X="13.625" Y="9.093" />
+        <Point X="13.625" Y="9.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BACAAAAAAAAAACIAAQEAEQAEAAAAgAiAAAQgABAAyAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\split_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::SleepingMode">
+    <Position X="15.5" Y="9.5" Width="4.25" />
+    <Members>
+      <Field Name="modeState" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="9.1" />
+        <Point X="17.625" Y="9.1" />
+        <Point X="17.625" Y="9.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAICAEAAAACCAAAEAEIAAQAQAAQgQAQQAQAAASAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\sleeping_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::ShuntingRouteMode">
+    <Position X="24.5" Y="17" Width="5" />
+    <Members>
+      <Field Name="standStillShuntingRouteConfirm" Hidden="true" />
+      <Field Name="subModeState" Hidden="true" />
+      <Field Name="unKnownStateInShuntRoute" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="16.125" />
+        <Point X="27" Y="16.125" />
+        <Point X="27" Y="17" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAIAAAABEACAAAAMAEgAAAAAgAAgBAgwCAJAASAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\shunting_route_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::ShuntingMode">
+    <Position X="29.75" Y="17" Width="4" />
+    <Members>
+      <Field Name="modeState" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAggAACAAAAEAEAAAQAAgAYiQAAQAUAAASAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\shunting_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::SafetyHaltMode">
+    <Position X="19.5" Y="17" Width="4.5" />
+    <Members>
+      <Field Name="maxTimeToggleAOSStatus" Hidden="true" />
+      <Field Name="modeState" Hidden="true" />
+      <Field Name="safetyHaltModeEvent" Hidden="true" />
+      <Field Name="toggleFrequency" Hidden="true" />
+      <Field Name="toggleWaitCycle" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="16.108" />
+        <Point X="21.562" Y="16.108" />
+        <Point X="21.562" Y="17" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQIAEAAACAAAAEAGAABAAAAAAgQAAQEUgAISAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\safety_halt_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::SafeBrakeToStopMode">
+    <Position X="20" Y="9.5" Width="4" />
+    <Members>
+      <Field Name="safetyHaltInvalidTSetup" Hidden="true" />
+      <Field Name="sbInSafeBrakeToStopMode" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="9.127" />
+        <Point X="22" Y="9.127" />
+        <Point X="22" Y="9.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAgQAABAAICAAAAEAEIAQAAAAAEgQRAQAAAAASAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\safe_brake_to_stop_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::PowerUpMode">
+    <Position X="24.5" Y="9.5" Width="4" />
+    <Members>
+      <Field Name="dispatcherVersionMismatch" Hidden="true" />
+      <Field Name="ebWaitCycle" Hidden="true" />
+      <Field Name="modeState" Hidden="true" />
+      <Field Name="noMovementInPOU" Hidden="true" />
+      <Field Name="powerUpSequenceStarted" Hidden="true" />
+      <Field Name="safetyHaltInPOU" Hidden="true" />
+      <Method Name="startUpTestAndHealthSup" Hidden="true" />
+      <Field Name="supTestWaitCycle" Hidden="true" />
+      <Field Name="supTestVehicleComWaitCycle" Hidden="true" />
+      <Field Name="toggleWaitCycle" Hidden="true" />
+      <Field Name="waitCycle" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAgMQARAEBEQiAAAAEAGAAAAAAAFCiQBIUAQAMQWAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\power_up_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::PowerDownMode">
+    <Position X="34" Y="17" Width="2.25" />
+    <Members>
+      <Method Name="blink" Hidden="true" />
+      <Field Name="blinkLastToggle" Hidden="true" />
+      <Field Name="fPowerDownRequested" Hidden="true" />
+      <Field Name="lastNumPositionMessages" Hidden="true" />
+      <Field Name="lastNumPositionMessagesTime" Hidden="true" />
+      <Field Name="lastOffIn" Hidden="true" />
+      <Field Name="lastOffInValid" Hidden="true" />
+      <Field Name="modeState" Hidden="true" />
+      <Field Name="offInPressTimerActive" Hidden="true" />
+      <Field Name="offInPressTimerStart" Hidden="true" />
+      <Field Name="powerDownSequenceStarted" Hidden="true" />
+      <Field Name="standstillInPowerDownMode" Hidden="true" />
+      <Field Name="statusSent" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="ATP::Kernel::PowerDownMode::PowerDownModeState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\kernel\mode_control\power_down_mode.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="16.113" />
+        <Point X="35.125" Y="16.113" />
+        <Point X="35.125" Y="17" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAACAAAAMAEAAAAECIBJgQAQFgQAAgQEA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\power_down_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::LocationMode">
+    <Position X="28.25" Y="22.75" Width="4" />
+    <Members>
+      <Method Name="handleGradInLocation" Hidden="true" />
+      <Method Name="handleModeChangeCondition" Hidden="true" />
+      <Method Name="handleStandStillCondition" Hidden="true" />
+      <Field Name="maxAllowedSpeeInLoc" Hidden="true" />
+      <Field Name="modeState" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="22.332" />
+        <Point X="30.688" Y="22.332" />
+        <Point X="30.688" Y="22.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>hDBIAJAAAAQygqAACAEiEAAAQBAAAAkQAAQAQBABSBA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\location_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::TrainConfigMode">
+    <Position X="32.5" Y="22.75" Width="4.5" />
+    <Members>
+      <Field Name="isNewConfig" Hidden="true" />
+      <Field Name="isTsetupAcceptedByDriverInReReg" Hidden="true" />
+      <Field Name="noMovementInConf" Hidden="true" />
+      <Field Name="unKnownStateInConf" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="22.332" />
+        <Point X="34.625" Y="22.332" />
+        <Point X="34.625" Y="22.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>SCgAQAEAECAABOgAABmgmMkoEABCQAgYAGSMwAAAzdQ=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\train_config_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::NormalMode">
+    <Position X="12.75" Y="17" Width="2.75" />
+    <Members>
+      <Method Name="handleModeChangeRequest" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="16.128" />
+        <Point X="14.125" Y="16.128" />
+        <Point X="14.125" Y="17" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAQBAAABA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\normal_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::BaliseSearchMode">
+    <Position X="23.75" Y="22.75" Width="4.25" />
+    <Members>
+      <Field Name="baliseNotFoundInBS" Hidden="true" />
+      <Field Name="baliseSearchOdometerReReg" Hidden="true" />
+      <Field Name="emergencyAlertInBS" Hidden="true" />
+      <Field Name="exceededBalSearchDistForSecBal" Hidden="true" />
+      <Field Name="inCorrectRouteTypeInBS" Hidden="true" />
+      <Field Name="logFirstBalise" Hidden="true" />
+      <Field Name="logSecondBalise" Hidden="true" />
+      <Field Name="modeState" Hidden="true" />
+      <Field Name="secondBaliseFoundBeforeMA" Hidden="true" />
+      <Field Name="secondBaliseInfo" Hidden="true" />
+      <Field Name="unConditionalShortInBS" Hidden="true" />
+      <Field Name="unknownState" Hidden="true" />
+      <Field Name="unRegMsgSBEvent" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="22.352" />
+        <Point X="25.875" Y="22.352" />
+        <Point X="25.875" Y="22.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>TAAADAAABAQIImBEBgEAUADAAQApAAkwAISBwBCASAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\balise_search_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::PossessionMode">
+    <Position X="15.75" Y="17" Width="3.5" />
+    <Members>
+      <Field Name="modeState" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="16.119" />
+        <Point X="17.5" Y="16.119" />
+        <Point X="17.5" Y="17" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAACAAAAEAECAAQAAABAgQACQAQQAASAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\possession_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::JoinMode">
+    <Position X="20" Y="22.75" Width="3.5" />
+    <Members>
+      <Field Name="joinCommandReceived" Hidden="true" />
+      <Field Name="standstillWaitJoinConfirm" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Kernel::AbstractMode" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="24.25" Y="8.459" />
+        <Point X="24.25" Y="22.352" />
+        <Point X="21.75" Y="22.352" />
+        <Point X="21.75" Y="22.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAFAAACAAAAISIAAAEAGAAAAAIAgAgIAUQghBAASUA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\join_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

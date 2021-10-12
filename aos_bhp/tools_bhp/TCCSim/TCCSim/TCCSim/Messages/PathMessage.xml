@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Path value="17">
+  <V_SPEED>694</V_SPEED>
+  <NID_TRACK>2</NID_TRACK>
+  <D_POSITION>10000</D_POSITION>
+  <Block type="TRACKS" value="41" />
+  <NID_TRACK>1</NID_TRACK>
+  <Block type="TRACKS" value="41" />
+  <NID_TRACK>2</NID_TRACK>
+  <Block type="TRACKS" value="41" />
+  <NID_TRACK>3</NID_TRACK>
+  <M_END_OF_MESSAGE></M_END_OF_MESSAGE>
+</Path>

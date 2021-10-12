@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*******************************************************************************
+*
+* (C) COPYRIGHT Bombardier Transportation (Signal) Sweden AB, 2011
+* 
+* We reserve all rights in this file and in the information 
+* contained therein. Reproduction, use or disclosure to third 
+* parties without written authority is strictly forbidden.
+*
+*  %name:          Message Descriptions.xml %
+*
+*  %version:       1 %
+*
+*  %created_by:    akushwah %
+*
+*  %date_created:  2017-03-07 12:31 %
+*
+*  DESCRIPTION: 
+*              
+*
+******************************************************************************/
+
+/*******************************************************************************
+*
+* REVISION HISTORY :
+*
+* Date          Name        Changes
+* 2011-09-26    Antbäck     NID_TRACK_SECTION -> NID_TRACK
+*                           TRACK_SECTION_DATA -> TRACK_DATA
+*                           Added RevokeEmergencyAlert
+*                           Removed D_MA_MARGIN from TrainSetup
+* 2011-10-03    Hidaji      Added B_Direction to TrainSetup and Startup message
+*							Q_ATP_MODE and Q_ATO_MODE to PR
+* 2011-11-22    Antbäck     Implemented KEEP_TRACK_DATA/MAX_SEARCH_DIST
+* 2011-11-24    Antbäck     Added more descriptive texts to PR
+* 2011-12-07    Antbäck     Added Q_TIMS_AVAILABLE, removed Q_TIC_DISABLED
+* 2011-01-06    Hidaji      Added AOS_VERSION block to PR
+* 2012-03-08    Antbäck     Added T_CLOCK_OFFSET
+* 2013-11-07    Hidaji      Added PANTO_START_POSITION
+* 2014-08-15    Antbäck     Added version info as XML data 
+* 2016-06-22    akushwah    Added/Updated message for BHP projects
+* 2017-02-14    akushwah    Added/Updated message according to FFFIS AOS TCC Ver5.5
+*******************************************************************************/
+-->
+<MessageDescriptions>
+  <VersionData>
+    <Name>%name:          Message Descriptions.xml %</Name>
+    <Version>%version:       1 %</Version>
+    <CreatedBy>%created_by:    akushwah %</CreatedBy>
+    <Date>%date_created:  2017-03-07 12:31 %</Date>
+  </VersionData>
+  <Comment String="Complies to FFFIS v5.5"></Comment>
+  <Message type="ApproximatePosition" value="10">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="NID_MSG" />
+    <FieldType Name="NID_TRACK">
+      <Display>Train front Position, Track</Display>
+    </FieldType>
+    <FieldType Name="D_POSITION">
+      <Display>Train front Position, Distance</Display>
+    </FieldType>
+    <BlockType Name="TRACK_DATA" Numeric="3">
+      <Min>0</Min>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="AreaRequest" value="19">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <BlockType Name="AREAS" Numeric="42">
+      <Min>1</Min>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="ATORemoteControl" value="7">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="V_SPEED">
+      <Display>ATO speed</Display>
+    </FieldType>
+    <FieldType Name="T_REMOTE" />
+    <FieldType Name="B_DIRECTION" />
+    <BlockType Name="LOAD_FINISHED" Numeric="13">
+      <Max>1</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="CommandMessage" value="16">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <BlockType Name="TRAIN_NAME" Numeric="7">
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="SET_TIME" Numeric="8">
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="RELEASE_BRAKE" Numeric="12">
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="SAFE_FOR_BOARDING_ACTIVATE" Numeric="21">
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="TEXT_MESSAGE" Numeric="14">
+      <Max>1</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="ConfigurationData" value="15">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+	<FieldType Name="NID_MSG" />
+    <BlockType Name="CONFIGURATION_DATA" Numeric="38">
+      <Min>1</Min>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="DriverLogonStatus" value="2">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_LOGON_STATUS" />
+    <BlockType Name="SET_TIME" Numeric="8">
+      <Min>1</Min>
+      <Max>1</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="EmergencyAlert" value="3">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_ALERT" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="ExternalData" value="14">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <BlockType Name="EXTERNAL_DATA" Numeric="33" >
+      <Min>1</Min>
+      <Max>1</Max>
+    </BlockType>
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="JoinCommand" value="13">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="MovementAuthority" value="4">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="NID_MSG" />
+    <FieldType Name="T_VALID" />
+    <FieldType Name="V_SPEED">
+      <Display>Target speed</Display>
+    </FieldType>
+    <FieldType Name="G_GRADIENT" />
+    <FieldType Name="M_LOADED" />
+	<FieldType Name="N_ADHESION" />
+    <FieldType Name="B_DIRECTION" />
+    <FieldType Name="Q_ROUTE_TYPE" />
+    <FieldType Name="NID_TRACK" />
+    <FieldType Name="D_POSITION" />
+		<Display>End of MA, Track</Display>
+	<FieldType Name="NID_TRACK" />
+		<Display>End of MA,Distance</Display>
+    <FieldType Name="D_POSITION" />
+		<Display>Start of MA, Track</Display>
+    <FieldType Name="D_MA_MARGIN" />
+		<Display>Start of MA,Distance</Display>
+    <FieldType Name="D_OVERLAP" />
+	<BlockType Name="DEPARTURE_WARNING" Numeric="22">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="KEEP_TRACK_DATA" Numeric="18">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="PARTLY_MA" Numeric="19">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="MAX_SEARCH_DIST" Numeric="17">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="LOCATION_DATA" Numeric="1">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="ATO_STOP_POSITION" Numeric="10">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="TRACK_DATA" Numeric="3">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="BALISE_DATA" Numeric="4">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="GRADIENT_DATA" Numeric="5">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="CEILING_SPEED_DATA" Numeric="6">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="TRACK_DATA_ITEM" Numeric="16">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="Path" value="17">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="V_SPEED" />
+	<FieldType Name="NID_TRACK">
+      <Display>Next target, Track Id</Display>
+    </FieldType>
+    <FieldType Name="D_POSITION">
+      <Display>Next target, Distance on Track</Display>
+    </FieldType>
+	<BlockType Name="TRACKS" Numeric="41">
+      <Min>1</Min>
+    </BlockType>
+	<BlockType Name="ETA_REQUEST" Numeric="39">
+      <Max>1</Max>
+    </BlockType>
+	<BlockType Name="SPEED_CHANGE_POSITION" Numeric="40">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="PositionReportRequest" value="1">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <BlockType Name="WAITING_TIME" Numeric="15">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="CONFIRM_CONFIG" Numeric="34">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="PossessionAcknowledge" value="11">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_ACKNOWLEDGE" />
+    <FieldType Name="V_SPEED" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="RejectConfiguration" value="18">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_UNREGISTRATION" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="RevokeEmergencyAlert" value="9">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="ShuntingAcknowledge" value="12">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_ACKNOWLEDGE" />
+    <FieldType Name="V_SPEED" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="StopTrain" value="8">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_STOP" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="TrainSetup" value="5">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="NID_MSG" />
+    <FieldType Name="Q_SETUP" />
+	<FieldType Name="Q_TS_STATE" />
+    <FieldType Name="V_SPEED" />
+    <FieldType Name="L_TRAIN" />
+    <FieldType Name="Q_TIC_AVAILABLE" />
+    <FieldType Name="Q_TIMS_AVAILABLE" />
+    <FieldType Name="B_DIRECTION" />
+	<FieldType Name="M_BRAKE_SYSTEM" />
+    <BlockType Name="TRAIN_NAME" Numeric="7">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+	<BlockType Name="VEHICLE_TYPE_DATA" Numeric="31">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="VEHICLE_ID_DATA" Numeric="23">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="VEHICLE_LIST_DATA" Numeric="36">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="Unregistration" value="6">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_UNREGISTRATION" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+    <Message type="YardAcknowledge" value="20">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_ACKNOWLEDGE" />
+	<FieldType Name="V_SPEED" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="AbortSetup" value="130">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_ABORT" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="DriverInformation" value="128">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="TID_DRIVER" />
+    <FieldType Name="TID_PASSWORD" />
+	<BlockType Name="CANCEL_AREA" Numeric="25">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="MessageAcknowledge" value="133">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="NID_MSG" />
+    <FieldType Name="Q_MESSAGE_STATUS" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="PositionReport" value="132">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>True</Filtered>
+    <FieldType Name="NID_TRACK">
+      <Display>Trailing position, Track</Display>
+    </FieldType>
+    <FieldType Name="D_POSITION">
+      <Display>Position of Trailing end of train in Track</Display>
+    </FieldType>
+    <FieldType Name="NID_TRACK">
+      <Display>Leading position, Track</Display>
+    </FieldType>
+    <FieldType Name="D_POSITION">
+      <Display>Position of Leading end of train in Track</Display>
+    </FieldType>
+    <FieldType Name="Q_POSITION" />
+    <FieldType Name="B_DIRECTION" />
+    <FieldType Name="V_SPEED">
+      <Display>Current speed</Display>
+    </FieldType>
+    <FieldType Name="B_TRAIN_CORE_STATUS" />
+    <FieldType Name="D_WINDOW" />
+    <FieldType Name="NID_TRACK">
+      <Display>Target track</Display>
+    </FieldType>
+    <FieldType Name="D_POSITION">
+      <Display>Target position</Display>
+    </FieldType>
+    <FieldType Name="Q_ATP_MODE" />
+    <FieldType Name="Q_ATO_MODE" />
+	<FieldType Name="M_BRAKE_SYSTEM" />
+	<FieldType Name="D_BRAKE_DISTANCE" />
+    <BlockType Name="POSSESSION_REQUEST" Numeric="28">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="SHUNTING_REQUEST" Numeric="29">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+	<BlockType Name="YARD_REQUEST" Numeric="32">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="LAST_BALISE" Numeric="27">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="AOS_VERSION" Numeric="26">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+	<BlockType Name="TRAIN_NAME" Numeric="7">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="ETA_CONFIRMATION" Numeric="20">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="EVENT_DATA" Numeric="30">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+	<BlockType Name="EVENT_DATA_TEXT" Numeric="24">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="EXTERNAL_DATA" Numeric="33">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="RegistrationArea" value="134">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="NID_AREA" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="StartUpMessage" value="129">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="B_TRAIN_CORE_STATUS" />
+    <FieldType Name="L_LOCOMOTIVE" />
+    <FieldType Name="Q_TIC_AVAILABLE" />
+    <FieldType Name="Q_TIMS_AVAILABLE" />
+    <FieldType Name="B_DIRECTION" />
+	<FieldType Name="M_BRAKE_SYSTEM" />
+	<BlockType Name="CONFIG_CONFIRMATION" Numeric="37">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="VEHICLE_ID_DATA" Numeric="23">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+	<BlockType Name="VEHICLE_LIST_DATA" Numeric="36">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="TrainRegistrationInformation" value="131">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="NID_BG" />
+    <FieldType Name="B_DIRECTION" />
+	<FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+</MessageDescriptions>

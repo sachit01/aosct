@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::AtpMain">
+    <Position X="5.25" Y="1.75" Width="4.25" />
+    <NestedTypes>
+      <Enum Name="ATP::AtpMain::ATPMainStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_bhp\impl\atp_main\atp_main.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQCIAAAAAIAAAAAgAABIBAAAQEAAJHAgAAwII=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\atp_main\atp_main.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

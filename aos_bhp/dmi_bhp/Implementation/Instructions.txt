@@ -1,0 +1,43 @@
+Instructions for checking out and building MMI:
+
+First time You have to install the MMI packages.
+1/ Compile components:
+  [Menu] File-->Open
+  ....\IF_TB_MMI_sw-sigxxx\IF_TB_MMI_sw\Components\MMi_area.dpk
+  Press the compile button and MMi_area.bpl will be created.
+
+  [Menu] File-->Open
+  ....\IF_TB_MMI_sw-sigxxx\IF_TB_MMI_sw\Components\Color button\Cbuttonp.dpk
+  Press the compile button and Cbuttonp.bpl will be created.
+
+  [Menu] File-->Open
+  ....\IF_TB_MMI_sw-sigxxx\IF_TB_MMI_sw\Components\panel\panel.dpk
+  Press the compile button and panel.bpl will be created.
+
+  [Menu] File-->Open
+  ....\IF_TB_MMI_sw-sigxxx\IF_TB_MMI_sw\Components\TModBevel\modbevelp.dpk
+  Press the compile button and modbevelp.bpl will be created.
+
+2/ Install packages
+  [Menu] Component-->Install Packages-->Add
+  Following packages shall be installed;
+  ....\IF_TB_MMI_sw-sigxxx\IF_TB_MMI_sw\Components\MMi_area.bpl
+  ....\IF_TB_MMI_sw-sigxxx\IF_TB_MMI_sw\Components\Color button\Cbuttonp.bpl
+  ....\IF_TB_MMI_sw-sigxxx\IF_TB_MMI_sw\Components\panel\panel.bpl
+  ....\IF_TB_MMI_sw-sigxxx\IF_TB_MMI_sw\Components\TModBevel\modbevelp.bpl
+
+---------------------------------------------------------------------------
+When modifing and building MMI following files must be checked out:
+MMI.dpr
+MMI.dof
+MMI.res
+MMI.cfg
+
+and ofcourse the pas files that you modifies.
+
+//sigjkg 011108
+
+NOTE: 	Delphi4 must be used.
+	(Use of Delphi6 results in problems with system resources and 
+	list handling.)
+// Antbäck 2010-09-17

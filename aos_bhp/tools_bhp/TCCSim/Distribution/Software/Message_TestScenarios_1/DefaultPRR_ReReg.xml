@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PositionReportRequest value="1">
+  <Block type="WAITING_TIME" value="15" />
+  <T_WAITING_TIME>0</T_WAITING_TIME>
+  <Block type="INITIATE_CONFIG" value="34" />
+  <Q_INITIATE>1</Q_INITIATE>
+  <M_END_OF_MESSAGE></M_END_OF_MESSAGE>
+</PositionReportRequest>

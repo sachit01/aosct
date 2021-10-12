@@ -1,0 +1,133 @@
+#!/bin/bash
+
+##################################################################
+#
+# (C) COPYRIGHT Bombardier Transportation Signal Sweden AB, 2020
+#
+# We reserve all rights in this file and in the information
+# contained therein. Reproduction, use or disclosure to third
+# parties without express authority is strictly forbidden.
+#
+# Description: AOS front end script for NVSHFT
+#
+##################################################################
+
+set -e
+
+BIN_DIR=/optdata/data/aos
+DEF_DIR=/optdata/data/aos
+TXT_DIR=/optdata/data/aos/cfg
+CFG_BASE_NAMES="cfg dispatcher instance mnt rt type"
+
+if [ $# -eq 0 ] || [ "$1" == "-h" ]; then
+    echo "Usage: $0 [options]"
+    echo "Options:"
+    echo "-n       Write parameter file(s)"
+    echo
+    echo "-c       Write common parameter file only"
+    echo "-d       Write dispatcher parameter file only"
+    echo "-i       Write instance parameter file only"
+    echo "-m       Write maintenance parameter file only"
+    echo "-r       Write runtime parameter file only"
+    echo "-ts      Write type parameter file only"
+    echo
+    echo "-b path  Path to binary files (default is '${BIN_DIR}')"
+    echo "-g path  Path to definition files (default is '${DEF_DIR}')"
+    echo "-p path  Path to parameter files (default is '${TXT_DIR}')"
+    echo "-h       Print this help"
+    echo "-v       Print version"
+    exit 1
+fi
+
+while [[ $# -gt 0 ]]
+do
+    case "$1" in
+    -n)
+        # Do nothing
+        ;;
+    -c)
+        CFG_BASE_NAMES=cfg
+        ;;
+    -d)
+        CFG_BASE_NAMES=dispatcher
+        ;;
+    -i)
+        CFG_BASE_NAMES=instance
+        ;;
+    -m)
+        CFG_BASE_NAMES=mnt
+        ;;
+    -r)
+        CFG_BASE_NAMES=rt
+        ;;
+    -t)
+        CFG_BASE_NAMES=type
+        ;;
+    -ts)
+        CFG_BASE_NAMES=type
+        ;;
+    -b)
+        if [[ $# -gt 1 ]]; then
+            BIN_DIR=$2
+            shift
+        else
+            echo "NVSHFT: Missing value for $1 option"
+            exit 1
+        fi
+        ;;
+    -g)
+        if [[ $# -gt 1 ]]; then
+            DEF_DIR=$2
+            shift
+        else
+            echo "NVSHFT: Missing value for $1 option"
+            exit 1
+        fi
+        ;;
+    -p)
+        if [[ $# -gt 1 ]]; then
+            TXT_DIR=$2
+            shift
+        else
+            echo "NVSHFT: Missing value for $1 option"
+            exit 1
+        fi
+        ;;
+    -v)
+        echo "NVSHFT version 2.0.0"
+        echo "This version of NVSHFT is compatible with the version 1 of NVSH file interface"
+        exit 0
+        ;;
+    *)
+        echo "NVSHFT: Illegal option '$1'"
+        exit 1
+        ;;
+    esac
+
+    shift
+done
+
+export LD_LIBRARY_PATH=\${LD_LIBRARY_PATH}:/opt/vfw/lib
+
+EXE_FILE=./nvshft_generic
+
+if [ ! -f ${EXE_FILE} ]; then
+    EXE_FILE=`dirname $0`/nvshft_generic
+fi
+
+for CFG_BASE_NAME in ${CFG_BASE_NAMES}; do
+    BIN_FILE=${CFG_BASE_NAME}_data.bin
+    TXT_FILE=$(echo "${CFG_BASE_NAME}" | tr '[:lower:]' '[:upper:]')_DATA.txt
+    DEF_FILE=${CFG_BASE_NAME}_data_def.txt
+    OPTIONS=""
+
+    if [ ${CFG_BASE_NAME} == dispatcher ]; then
+        OPTIONS=--dispatcher
+    elif [ ${CFG_BASE_NAME} == rt ]; then
+        OPTIONS=--runtime
+    fi
+
+    COMMAND="${EXE_FILE} ${OPTIONS} ${DEF_DIR}/${DEF_FILE} ${TXT_DIR}/${TXT_FILE} ${BIN_DIR}/${BIN_FILE}"
+
+    ${COMMAND}
+done

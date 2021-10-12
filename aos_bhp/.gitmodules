@@ -1,0 +1,18 @@
+[submodule "atc"]
+	path = atc
+	url = ../atc
+[submodule "atp_core"]
+	path = atp_core
+	url = ../atp_core
+[submodule "atp_bhp"]
+	path = atp_bhp
+	url = ../atp_bhp
+[submodule "dispatcher"]
+	path = dispatcher
+	url = ../dispatcher
+[submodule "dmi_bhp"]
+	path = dmi_bhp
+	url = ../dmi_bhp
+[submodule "tools_bhp"]
+	path = tools_bhp
+	url = ../tools_bhp

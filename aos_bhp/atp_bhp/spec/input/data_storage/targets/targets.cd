@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::DS::TrackDataItemTargetBHP">
+    <Position X="6.5" Y="3" Width="2.5" />
+    <Members>
+      <Method Name="calcApproachSpeed" Hidden="true" />
+      <Method Name="TrackDataItemTargetBHP" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>DACAAAAAAAAAAAAIgAAAAQAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\data_storage\targets\track_data_item_target_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::TrackDataItemTarget" Collapsed="true">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CADgAAAAAAEAAAAQAAAAAQBAAABBIAAAIAAAAAAgAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\track_data_item_target.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::Targets">
+    <Position X="2.25" Y="2.25" Width="2.75" />
+    <Members>
+      <Field Name="approachingLevelCrossing" Hidden="true" />
+      <Field Name="approachingSpeedLevelCrossing" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="maxNumberOfTrackDataItemTargetBHP" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="Targets" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAAAACIAAEAAAAAAAAAAAAAAAABAAEIAAAAgAAAJQEA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\data_storage\targets\targets.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::AbstractTargets" Collapsed="true">
+    <Position X="2.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QJgvxjpCzEAVMhBBEHIBGAni06SOnBKQw69vgF4qQS4=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::BaseTarget" Collapsed="true">
+    <Position X="10.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEACIAgCAKEAgACAEIAgAABAEABIAAAAAACIAEGBAgA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\base_target.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

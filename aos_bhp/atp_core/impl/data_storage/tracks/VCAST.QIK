@@ -1,0 +1,355 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atp_core\impl\data_storage\tracks
+BEGIN_RECORD abstract_tracks.cpp
+CHECKSUM  2392112666
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __CPR193____ct__Q2_3ATC171GPListIterator__tm__148_PQ3_3ATP2DS5TrackXCUsL_3_100RPQ3_3ATP2DSJ51JPQ2_3ATC67GPList__tm__53_PQ3_3ATP2DSJ51JXCUsL_3_100Q3_3ATP2DS12ErrorHandlerQ3_3ATP2DSJ149JFZ4ZUs
+   __CPR195____ct__Q2_3ATC173GPListIterator__tm__150_PQ3_3ATP2DS5TrackXCUsL_3_100RCPQ3_3ATP2DSJ51JPCQ2_3ATC67GPList__tm__53_PQ3_3ATP2DSJ51JXCUsL_3_100Q3_3ATP2DS12ErrorHandlerQ3_3ATP2DSJ151JFZ4ZUs
+   __CPR196____ct__Q2_3ATC174GPListIterator__tm__151_PQ3_3ATP2DS6BaliseXCUsL_3_200RPQ3_3ATP2DSJ51JPQ2_3ATC68GPList__tm__54_PQ3_3ATP2DSJ51JXCUsL_3_200Q3_3ATP2DS12ErrorHandlerQ3_3ATP2DSJ152JFZ4ZUs
+   __CPR198____ct__Q2_3ATC176GPListIterator__tm__153_PQ3_3ATP2DS6BaliseXCUsL_3_200RCPQ3_3ATP2DSJ51JPCQ2_3ATC68GPList__tm__54_PQ3_3ATP2DSJ51JXCUsL_3_200Q3_3ATP2DS12ErrorHandlerQ3_3ATP2DSJ154JFZ4ZUs
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q3_3ATP2DS14AbstractTracksFv
+   __ct__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventFPCZ1Z
+   __ct__Q3_3ATP7Support42CrossCompareEnum__tm__18_Q2_3ATP9TravelDirFPCZ1Z
+   __ct__Q3_3ATP7Support54CrossCompareComplex__tm__27_Q3_3ATP2DS14AbstractTracksFPCZ1Z
+   __dt__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventFv
+   __dt__Q3_3ATP7Support42CrossCompareEnum__tm__18_Q2_3ATP9TravelDirFv
+   __dt__Q3_3ATP7Support54CrossCompareComplex__tm__27_Q3_3ATP2DS14AbstractTracksFv
+   addBalise__Q3_3ATP2DS14AbstractTracksFRCQ3_3ATP2DS6Balise
+   addPossessionBalise__Q3_3ATP2DS14AbstractTracksFUs
+   addTrack__Q3_3ATP2DS14AbstractTracksFRCQ3_3ATP2DS5Track
+   calculateTrackAndPos__Q3_3ATP2DS14AbstractTracksCFi
+   checkOdoPos__Q3_3ATP2DS14AbstractTracksCFi
+   checkTrackAndPos__Q3_3ATP2DS14AbstractTracksCFRCQ2_3ATP11TrackAndPos
+   clearPossessionBaliseList__Q3_3ATP2DS14AbstractTracksFv
+   consoleCall__Q3_3ATP2DS14AbstractTracksFUiPA30_Cc
+   corePtr__Q3_3ATP2DS14AbstractTracksSFv
+   getBaliseIterEnd__Q3_3ATP2DS14AbstractTracksCFv
+   getBaliseIter__Q3_3ATP2DS14AbstractTracksCFv
+   getBalise__Q3_3ATP2DS14AbstractTracksCFRCQ2_3ATP11TrackAndPos
+   getBalise__Q3_3ATP2DS14AbstractTracksCFUs
+   getLastTrack__Q3_3ATP2DS14AbstractTracksCFv
+   getMaxDataSize__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support42CrossCompareEnum__tm__18_Q2_3ATP9TravelDirCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support54CrossCompareComplex__tm__27_Q3_3ATP2DS14AbstractTracksCFv_Ui
+   getOdoPos__Q3_3ATP2DS14AbstractTracksCFRCQ2_3ATP11TrackAndPosRi
+   getTrack__Q3_3ATP2DS14AbstractTracksCFUs
+   getTracksIterEnd__Q3_3ATP2DS14AbstractTracksCFv
+   getTracksIter__Q3_3ATP2DS14AbstractTracksCFv
+   getTravelDirection__Q3_3ATP2DS14AbstractTracksCFv
+   getWriteCrossCompareMaxSize__Q3_3ATP2DS14AbstractTracksCFv
+   initCrossCompare__Q3_3ATP2DS14AbstractTracksCFv
+   init__Q3_3ATP2DS14AbstractTracksFv
+   isBaliseInPossessionList__Q3_3ATP2DS14AbstractTracksCFUs
+   isTrackListEmpty__Q3_3ATP2DS14AbstractTracksCFv
+   removeAll__Q3_3ATP2DS14AbstractTracksFv
+   removeBalise__Q3_3ATP2DS14AbstractTracksFUs
+   removeNotCovered__Q3_3ATP2DS14AbstractTracksFRCQ2_3ATP11TrackAndPosT1
+   removeNotCovered__Q3_3ATP2DS14AbstractTracksFRCiT1
+   removePassed__Q3_3ATP2DS14AbstractTracksFRCQ2_3ATP11TrackAndPos
+   removePassed__Q3_3ATP2DS14AbstractTracksFRCi
+   removeTrack__Q3_3ATP2DS14AbstractTracksFUs
+   run__Q3_3ATP2DS14AbstractTracksFv
+   setTravelDirection__Q3_3ATP2DS14AbstractTracksFQ2_3ATP9TravelDir
+   writeCrossCompare__Q3_3ATP2DS14AbstractTracksCFP14VFW_BufferNode
+   writeDataBinary__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support42CrossCompareEnum__tm__18_Q2_3ATP9TravelDirCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support54CrossCompareComplex__tm__27_Q3_3ATP2DS14AbstractTracksCFP14VFW_BufferNode_v
+CALLED_OBJECTS
+   __CPR83____ct__Q3_3ATP7Support20AbstractCrossCompareFRCQ3_3ATPJ13JJ21J
+   __ct__Q2_3ATC11IOComponentFRCQ2_3ATC11IOComponent
+   __ct__Q2_3ATC11IOComponentFUsPCcT2
+   __ct__Q2_3ATC11IOComponentFv
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21b
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q3_3ATP2DS5TrackFUsQ2_3ATP9TravelDirT1UiQ2_3ATP6OdoDir
+   __ct__Q3_3ATP2DS5TrackFv
+   __ct__Q3_3ATP2DS6BaliseFUsT1Ui
+   __ct__Q3_3ATP2DS6BaliseFv
+   __ct__Q3_3ATP6Kernel14ModeRequestSeqFv
+   __ct__Q3_3ATP7Support18CrossCompareObjectFv
+   __ct__Q3_3ATP7Support18CrossCompareOutputFv
+   __ct__Q3_3ATP7Support20AbstractCrossCompareFv
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFPCZ1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ScFPCZ1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ScFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsFPCZ1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventFRCQ3_3ATP7Support30CrossCompareComplex__tm__4_Z1Z
+   __ct__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventFv
+   __ct__Q3_3ATP7Support42CrossCompareEnum__tm__18_Q2_3ATP9TravelDirFRCQ3_3ATP7Support27CrossCompareEnum__tm__4_Z1Z
+   __ct__Q3_3ATP7Support54CrossCompareComplex__tm__27_Q3_3ATP2DS14AbstractTracksFRCQ3_3ATP7Support30CrossCompareComplex__tm__4_Z1Z
+   __ct__Q3_3ATP7Support54CrossCompareComplex__tm__27_Q3_3ATP2DS14AbstractTracksFv
+   __dl__Q3_3ATP2DS5TrackSFPv
+   __dl__Q3_3ATP2DS6BaliseSFPv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __dt__Q3_3ATP2DS5TrackFv
+   __dt__Q3_3ATP2DS6BaliseFv
+   __dt__Q3_3ATP6Kernel14ModeRequestSeqFv
+   __dt__Q3_3ATP7Support18CrossCompareObjectFv
+   __dt__Q3_3ATP7Support18CrossCompareOutputFv
+   __dt__Q3_3ATP7Support20AbstractCrossCompareFv
+   __dt__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFv
+   __dt__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_ScFv
+   __dt__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsFv
+   __eq__Q3_3ATP2DS5TrackCFRCQ3_3ATP2DS5Track
+   __nw__Q3_3ATP2DS5TrackSFUi
+   __nw__Q3_3ATP2DS6BaliseSFUi
+   addCrossCompareData__Q3_3ATP7Support20AbstractCrossCompareFPQ3_3ATP7Support18CrossCompareObject
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   corePtr__Q3_3ATP7Support20AbstractCrossCompareSFv
+   createSafeBrakeSBEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10SBReleaserT1PCcb
+   createSafetyHaltEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10EBReleaserT1PCcb
+   getBaliseId__Q3_3ATP2DS6BaliseCFv
+   getIncomingTrackId__Q3_3ATP2DS5TrackCFv
+   getOdoAt0Cm__Q3_3ATP2DS5TrackCFv
+   getOdoDirection__Q3_3ATP2DS5TrackCFv
+   getOdoPosition__Q3_3ATP2DS6BaliseCFv
+   getPosition__Q3_3ATP2DS6BaliseCFv
+   getTrackId__Q3_3ATP2DS5TrackCFv
+   getTrackLength__Q3_3ATP2DS5TrackCFv
+   getTravelDirection__Q3_3ATP2DS5TrackCFv
+   getWriteCrossCompareMaxSize__Q2_3ATC5EventCFv
+   getWriteCrossCompareMaxSize__Q3_3ATP2DS5TrackCFv
+   getWriteCrossCompareMaxSize__Q3_3ATP2DS6BaliseCFv
+   initMemPoolSize__Q3_3ATP2DS5TrackSFUi
+   initMemPoolSize__Q3_3ATP2DS6BaliseSFUi
+   isOdoPosInTrack__Q3_3ATP2DS5TrackCFi
+   isTandPInTrack__Q3_3ATP2DS5TrackCFRCQ2_3ATP11TrackAndPos
+   isTextMatch__3ATCFPCcT1Ui
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+   vfwPutU32
+   vfwVisitCheckPoint
+   writeCrossCompare__Q2_3ATC5EventCFP14VFW_BufferNode
+   writeCrossCompare__Q3_3ATP2DS5TrackCFP14VFW_BufferNode
+   writeCrossCompare__Q3_3ATP2DS6BaliseCFP14VFW_BufferNode
+   writeWithNewline__Q2_3ATC15AbstractConsoleFPCc
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::IO::BtmTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATC::GPListIterator<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::Balise *&, ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler> *, ATP::DS::ErrorHandler>
+   ATC::GPListIterator<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::Balise *const &, const ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler> *, ATP::DS::ErrorHandler>
+   ATC::GPListIterator<ATP::DS::Track *, (unsigned short)100U, ATP::DS::Track *&, ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler> *, ATP::DS::ErrorHandler>
+   ATC::GPListIterator<ATP::DS::Track *, (unsigned short)100U, ATP::DS::Track *const &, const ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler> *, ATP::DS::ErrorHandler>
+   ATC::GPListRevIterator<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::Balise *&, ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler> *, ATP::DS::ErrorHandler>
+   ATC::GPListRevIterator<ATP::DS::Track *, (unsigned short)100U, ATP::DS::Track *&, ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler> *, ATP::DS::ErrorHandler>
+   ATP::DS::AbstractTracks
+   ATP::DS::ErrorHandler
+   ATP::IO::ErrorHandler
+   ATP::Kernel::ConfigModeRequestSeq
+   ATP::Kernel::DriverLoginSeq
+   ATP::Kernel::PosModeRequestSeq
+   ATP::Kernel::ShuntModeRequestSeq
+   ATP::Kernel::YardModeRequestSeq
+   ATP::RadioMessage
+   ATP::Support::CrossCompareComplex<ATC::Event>
+   ATP::Support::CrossCompareComplex<ATP::DS::AbstractTracks>
+   ATP::Support::CrossCompareEnum<ATP::TravelDir>
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::AbstractTracks
+INCLUDES
+END_RECORD abstract_tracks.cpp
+BEGIN_RECORD balise.cpp
+CHECKSUM 2009512839
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __as__Q3_3ATP2DS6BaliseFRCQ3_3ATP2DS6Balise
+   __ct__Q3_3ATP2DS6BaliseFUsT1Ui
+   __ct__Q3_3ATP2DS6BaliseFv
+   __dl__Q3_3ATP2DS6BaliseSFPv
+   __dt__Q3_3ATP2DS6BaliseFv
+   __eq__Q3_3ATP2DS6BaliseCFRCQ3_3ATP2DS6Balise
+   __nw__Q3_3ATP2DS6BaliseSFUi
+   getBaliseId__Q3_3ATP2DS6BaliseCFv
+   getOdoPosition__Q3_3ATP2DS6BaliseCFv
+   getPosition__Q3_3ATP2DS6BaliseCFv
+   getWriteCrossCompareMaxSize__Q3_3ATP2DS6BaliseCFv
+   initMemPoolSize__Q3_3ATP2DS6BaliseSFUi
+   writeCrossCompare__Q3_3ATP2DS6BaliseCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __ct__Q3_3ATP2DS14AbstractTracksFv
+   __ct__Q3_3ATP2DS5TrackFUsQ2_3ATP9TravelDirT1UiQ2_3ATP6OdoDir
+   __ct__Q3_3ATP2DS5TrackFv
+   __dt__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __dt__Q3_3ATP2DS5TrackFv
+   allocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q3_3ATP2DS14AbstractTracksSFv
+   createPool__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFUiUs
+   deAllocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFPv
+   getOdoPos__Q3_3ATP2DS14AbstractTracksCFRCQ2_3ATP11TrackAndPosRi
+   poolBlockSize__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   poolCreatedOk__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   vfwPutI32
+   vfwPutU16
+   vfwPutU32
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+   baliseMemPool__Q3_3ATP2DS6Balise
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::IO::BtmTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATP::DS::Balise
+   ATP::DS::ErrorHandler
+   ATP::IO::ErrorHandler
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::Balise
+INCLUDES
+END_RECORD balise.cpp
+BEGIN_RECORD track.cpp
+CHECKSUM  1369754807
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __as__Q3_3ATP2DS5TrackFRCQ3_3ATP2DS5Track
+   __ct__Q3_3ATP2DS5TrackFUsQ2_3ATP9TravelDirT1UiQ2_3ATP6OdoDir
+   __ct__Q3_3ATP2DS5TrackFv
+   __dl__Q3_3ATP2DS5TrackSFPv
+   __dt__Q3_3ATP2DS5TrackFv
+   __eq__Q3_3ATP2DS5TrackCFRCQ3_3ATP2DS5Track
+   __nw__Q3_3ATP2DS5TrackSFUi
+   calculateTrackOdo__Q3_3ATP2DS5TrackCFUsQ2_3ATP9TravelDirQ2_3ATP6OdoDirUiT1
+   getIncomingTrackId__Q3_3ATP2DS5TrackCFv
+   getOdoAt0Cm__Q3_3ATP2DS5TrackCFv
+   getOdoAtNexTrackLimit__Q3_3ATP2DS5TrackCFv
+   getOdoAtPrevTrackLimit__Q3_3ATP2DS5TrackCFv
+   getOdoDirection__Q3_3ATP2DS5TrackCFv
+   getTrackId__Q3_3ATP2DS5TrackCFv
+   getTrackLength__Q3_3ATP2DS5TrackCFv
+   getTravelDirection__Q3_3ATP2DS5TrackCFv
+   getWriteCrossCompareMaxSize__Q3_3ATP2DS5TrackCFv
+   initMemPoolSize__Q3_3ATP2DS5TrackSFUi
+   isOdoPosInTrack__Q3_3ATP2DS5TrackCFi
+   isTandPInTrack__Q3_3ATP2DS5TrackCFRCQ2_3ATP11TrackAndPos
+   writeCrossCompare__Q3_3ATP2DS5TrackCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21b
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __ct__Q3_3ATP2DS14AbstractTracksFv
+   __ct__Q3_3ATP2DS6BaliseFUsT1Ui
+   __ct__Q3_3ATP2DS6BaliseFv
+   __ct__Q3_3ATP3Pos16AbstractPositionFv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __dt__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __dt__Q3_3ATP2DS6BaliseFv
+   allocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   corePtr__Q3_3ATP2DS14AbstractTracksSFv
+   corePtr__Q3_3ATP3Pos16AbstractPositionSFv
+   createPool__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFUiUs
+   createSafetyHaltEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10EBReleaserT1PCcb
+   deAllocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFPv
+   getCurrAntennaPosOdo__Q3_3ATP3Pos16AbstractPositionCFv
+   getLastTrack__Q3_3ATP2DS14AbstractTracksCFv
+   getTrack__Q3_3ATP2DS14AbstractTracksCFUs
+   getTracksIterEnd__Q3_3ATP2DS14AbstractTracksCFv
+   getTracksIter__Q3_3ATP2DS14AbstractTracksCFv
+   isTrackListEmpty__Q3_3ATP2DS14AbstractTracksCFv
+   poolBlockSize__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   poolCreatedOk__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+   vfwPutI32
+   vfwPutU16
+   vfwPutU32
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   trackMemPool__28__N_12_TU_track_cpp_e6e2abc1
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::IO::BtmTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATC::GPListIterator<ATP::DS::Track *, (unsigned short)100U, ATP::DS::Track *const &, const ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler> *, ATP::DS::ErrorHandler>
+   ATP::DS::ErrorHandler
+   ATP::DS::Track
+   ATP::IO::ErrorHandler
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::Track
+INCLUDES
+END_RECORD track.cpp

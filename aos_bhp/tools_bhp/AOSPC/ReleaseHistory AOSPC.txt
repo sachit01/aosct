@@ -1,0 +1,50 @@
+Release History AOSPC
+=====================
+
+Please add summary of changes here related to version of EXE/DLL-file.
+(Newest at the top.)
+
+Project         Version Date        Sign            Summary
+-------         ------- ----------  ------------    -------
+AOSPC           2.1.15  2017-07-13  Amar            Incorporated the review comment for Analog Signal Input Support 
+AOSPC           2.1.14  2017-07-12  Martin          Updated LCS Simulator
+AOSPC           2.1.13  2017-07-10  Amar            Analog Signal Input Support
+AOSPC           2.1.11  2017-06-14  Amar            New TIMS Simulator for BHP
+AOSPC           2.1.4   2017-02-27  Martin          New LCS Simulator for BHP
+AOSPC           2.1.2   2016-10-18  Martin          Fixed copy to clipboard bug
+AOSPC           2.1.1   2016-10-16  Martin          Changes in Startup/Status/Console for BHP
+LocoSimDLL      2.1.0   2016-10-04  Martin          Changes in I/O for BHP
+AOSPC           2.1.0   2015-03-12  Antbäck         Merge of AOS 3.5.2 and 3.5.3 development
+AOSPC           2.0.0   2015-02-26  Antbäck         New numbering to separate from parallell track
+AOSPC           1.7.1   2015-02-17  Bo H            BHP Demo specific <= NOT PART OF THIS BRANCH
+AOSPC           1.7.0   2014-12-18  Antbäck         Form handling, Save/Load Setup1/2, LCSSim extended status use
+AOSPC           1.6.1   2014-12-17  Antbäck         Updated tab order on GUI's
+                                                    Disabled text edit to set registration balise in LocoSim GUI, 
+                                                    only available in Params tab.
+AOSPC           1.6.0   2014-08-14  Bo H            LcsSim GUI:  Rearranged form to make space for the LowBattery checkBox
+AOSPC           1.5.0   2014-04-03                  LocoSim GUI: Added balise simulation file setting
+                                                    LCSSim GUI:  Added Enable com check box
+                                                    ATxCon GUI:  Display full last line when sending command to ATx process
+                                                    All GUI's:   Added DoubleBuffered=true (did not sort flickering, caused no trouble thus kept)
+                            
+LocoSimDLL      2.0.0   2015-02-26  Antbäck         New numbering to separate from parallell track
+LocoSimDLL      1.6.0   2014-04-14  Antbäck         Reworked implementation of ReReg balise id handling
+LocoSimDLL      1.5.0   2014-04-10  Babak           Fixed a bug in AOSPC that changing the direction command 
+                                                    resulted in immediate change in drivedirection from TAC. 
+LocoSimDLL      1.4.0   2014-04-03                  Added parameter handling of balise simulation file
+
+LCSSimDLL       1.6.1   2015-02-06  Antbäck         Corrected handling of DriverIntervention
+LCSSimDLL       1.6.0   2014-12-17  Antbäck         Implemented CurrentStatus byte in exchange with ATO
+                                                    Corrected use of checkbox LowBattery
+                                                    
+LCSSimDLL       2.1.0   2015-03-12  Antbäck         Merge of AOS 3.5.2 and 3.5.3 development
+LCSSimDLL       2.0.0   2015-02-26  Antbäck         New numbering to separate from parallell track
+LCSSimDLL       1.5.1   2014-12-17  Antbäck         Improved UDP stability
+LCSSimDLL       1.5.0   2014-07-04  Babak           Added support for Site Data Extract
+LCSSimDLL       1.4.0   2014-04-03                  Added support to enable/disable communication to ATO/LocoSim
+
+TimsSimDLL      1.0.0   2017-06-14   Amar           New TIMS Simulator for BHP
+    
+SiteDataExtDLL  1.1.0   2014-12-17  Antbäck         Added support for trackId in XML file
+SiteDataExtDLL  1.0.0   2014-07-01  Babak           Added support for Site Data Extract    
+LocoSimDLL      1.6.0   2014-04-14  Antbäck         Reworked implementation of ReReg balise id handling

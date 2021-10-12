@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATP::Pos::AbstractOdometry">
+    <Position X="6" Y="2.75" Width="2" />
+    <Members>
+      <Field Name="absNomSpeed" Hidden="true" />
+      <Method Name="AbstractOdometry" Hidden="true" />
+      <Field Name="bwCurrent" Hidden="true" />
+      <Field Name="bwRaw" Hidden="true" />
+      <Field Name="chstat" Hidden="true" />
+      <Field Name="configFailure" Hidden="true" />
+      <Field Name="crossCompareConfigChannel" Hidden="true" />
+      <Field Name="dirMultiplier" Hidden="true" />
+      <Field Name="dMaxOld" Hidden="true" />
+      <Field Name="dMinOld" Hidden="true" />
+      <Field Name="dNomOld" Hidden="true" />
+      <Field Name="driverDirection" Hidden="true" />
+      <Field Name="driverDirectionPrev" Hidden="true" />
+      <Field Name="exceededBaliseWindow" Hidden="true" />
+      <Method Name="handleDriverDirectionChange" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="invalidState" Hidden="true" />
+      <Field Name="isSlipClear" Hidden="true" />
+      <Field Name="isTrainStandStillFlag" Hidden="true" />
+      <Field Name="lastLogCODDetails" Hidden="true" />
+      <Field Name="maDirection" Hidden="true" />
+      <Field Name="maxCountTrainStandStill" Hidden="true" />
+      <Field Name="noConfigResponse" Hidden="true" />
+      <Field Name="noMeasurementDataTelegram" Hidden="true" />
+      <Field Name="numVfwChannelsOdo" Hidden="true" />
+      <Field Name="odoData" Hidden="true" />
+      <Field Name="odoDataRaw" Hidden="true" />
+      <Field Name="odoDataStatus" Hidden="true" />
+      <Field Name="odoDynamicConfig" Hidden="true" />
+      <Field Name="odoNom" Hidden="true" />
+      <Field Name="odoPositionPrev" Hidden="true" />
+      <Field Name="odoValForAnalyser" Hidden="true" />
+      <Field Name="offset" Hidden="true" />
+      <Method Name="processMeasurementData" Hidden="true" />
+      <Method Name="processSlipSlideCheck" Hidden="true" />
+      <Method Name="readConfigResponse" Hidden="true" />
+      <Method Name="readMeasurementData" Hidden="true" />
+      <Field Name="safetyIssueCodData" Hidden="true" />
+      <Field Name="safetyMarginCrossedFlag" Hidden="true" />
+      <Field Name="sdpMajorVersion" Hidden="true" />
+      <Field Name="sdpMiddleVersion" Hidden="true" />
+      <Field Name="sdpMinorVersion" Hidden="true" />
+      <Method Name="sendDynamicConfig" Hidden="true" />
+      <Method Name="sendStaticConfig" Hidden="true" />
+      <Method Name="setSDPVersion" Hidden="true" />
+      <Field Name="slipSlideData" Hidden="true" />
+      <Field Name="stateOdometer" Hidden="true" />
+      <Field Name="syncConfigResponseChannel" Hidden="true" />
+      <Field Name="syncDataChannel" Hidden="true" />
+      <Field Name="trainNotAtStandStillCounter" Hidden="true" />
+      <Method Name="trainStandStillCalculation" Hidden="true" />
+      <Field Name="trainStandStillCounter" Hidden="true" />
+      <Field Name="travelledDistanceSinceLastBalise" Hidden="true" />
+      <Method Name="updateBaliseWindow" Hidden="true" />
+      <Field Name="versionCODMismatch" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ATP::Pos::AbstractOdometry::OdoData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::Pos::AbstractOdometry::OdoDataRaw" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::Pos::AbstractOdometry::OdoDataStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::Pos::AbstractOdometry::ConfigResponse" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Class Name="ATP::Pos::AbstractOdometry::OdoDynamicConfig" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Struct Name="ATP::Pos::AbstractOdometry::SlipSlideData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>XFDmQhRBAFJZZhEAIEeAESJAKNGJQEMBgAAAAazJQAw=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ATP::Pos::InitStateMachineSteps">
+    <Position X="3" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AASBAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="ATP::IO::AbstractLocoIO">
+    <Position X="0.5" Y="1.5" Width="7.5" />
+    <Members>
+      <Field Name="analogOutputs" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ATP::IO::AbstractLocoIO::VIOStates" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::IO::AbstractLocoIO::ValidityState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="ATP::IO::AbstractLocoIO::AnalogOutput" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="ATP::IO::AbstractLocoIO::CoreDigitalOutputs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::IO::AbstractLocoIO::CoreDigitalInputs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::IO::AbstractLocoIO::CoreAnalogInputs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="ATP::IO::AbstractLocoIO::AnalogInput" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ATP::IO::AbstractLocoIO::DigitalInput" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ATP::IO::AbstractLocoIO::DigitalOutput" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="ATP::IO::AbstractLocoIO::IOInitState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>FLmCjyuFgWAYdGNqPullGQScMNNhzodhQQhYAQDsXGA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::IOComponent">
+    <Position X="9" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="11.5" Y="2" Width="4.5" />
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

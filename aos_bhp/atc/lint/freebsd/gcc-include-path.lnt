@@ -1,0 +1,20 @@
+// /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/../lib/gcc/arm-unknown-freebsd8/4.2.1/include
+// /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/../lib/gcc/arm-unknown-freebsd8/4.2.1/../../../../arm-unknown-freebsd8/include
+// /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/../sysroot/usr/include
+
+ 
+-i"/appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/../lib/gcc/arm-unknown-freebsd8/4.2.1/../../../../arm-unknown-freebsd8/include/c++/4.2.1"
+//-i"/appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/../lib/gcc/arm-unknown-freebsd8/4.2.1/../../../../arm-unknown-freebsd8/include/c++/4.2.1/tr1"
+-i"/appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/../lib/gcc/arm-unknown-freebsd8/4.2.1/../../../../arm-unknown-freebsd8/include/c++/4.2.1/arm-unknown-freebsd8"
+-i"/appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/../lib/gcc/arm-unknown-freebsd8/4.2.1/../../../../arm-unknown-freebsd8/include/c++/4.2.1/backward"
+-i"/appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/../lib/gcc/arm-unknown-freebsd8/4.2.1/include"
+-i"/appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/../lib/gcc/arm-unknown-freebsd8/4.2.1/../../../../arm-unknown-freebsd8/include"
+--i"/appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/../sysroot/usr/include"
+
+--i"/localProducts/CoVP_CoHP_Dev-1.0/CoVP_CoHP_Dev/distribution/Linux_ppc/include"
+--i"freeBSD"
+
+
+-i"../Client"
+-i"../Server"
+-i"../Common"

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ButtonSets>
+  <ButtonSet Name="Default">
+    <Button Name="Release Brakes">Messages\Dispatcher_ReleaseSB.xml</Button>
+    <Button Name="Stop Train">Messages\Dispatcher_StopTrain.xml</Button>
+    <Button Name=""></Button>
+    <Button Name="BHP Re-Reg">Scripts\bhp_rereg.py</Button>
+    <Button Name="BHP Reg">Scripts\bhp_reg.py</Button>
+    <Button Name="Ma Ext Repeat Dist">Scripts\ma_ext_repeat_dist.py</Button>
+    <Button Name="MA-Reg AutoControl">Scripts\bhp_reg_autocontrol.py</Button>
+    <Button Name="MA Rev">Messages\MA_Rev.xml</Button>
+    <Button Name="Ma Forw">Messages\MA_Forw.xml</Button>
+  </ButtonSet>
+  <ButtonSet Name="RemOp">
+    <Button Name=""></Button>
+    <Button Name=""></Button>
+    <Button Name="RemOp Done Reverse">Messages\RemoteOp\Dispatcher_RemOp_Rev_Done.xml</Button>
+    <Button Name="RemOp Done Forward">Messages\RemoteOp\Dispatcher_RemOp_Forw_Done.xml</Button>
+    <Button Name="RemOp Reverse">Messages\RemoteOp\Dispatcher_RemOp_Rev_120s.xml</Button>
+    <Button Name="RemOp Stop Reverse">Messages\RemoteOp\Dispatcher_RemOp_Rev_Stop.xml</Button>
+    <Button Name="RemOp Stop Forward">Messages\RemoteOp\Dispatcher_RemOp_Forw_Stop.xml</Button>
+    <Button Name="RemOp Forward">Messages\RemoteOp\Dispatcher_RemOp_Forw_120s.xml</Button>
+    <Button Name=""></Button>
+  </ButtonSet>
+</ButtonSets>

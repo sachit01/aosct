@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATC::AbstractEventHandler" Collapsed="true">
+    <Position X="3.75" Y="3" Width="2" />
+    <Members>
+      <Method Name="AbstractEventHandler" Hidden="true" />
+      <Field Name="activeEventList" Hidden="true" />
+      <Field Name="applyEB" Hidden="true" />
+      <Field Name="applySB" Hidden="true" />
+      <Method Name="consoleCall" Hidden="true" />
+      <Method Name="corePtr" Hidden="true" />
+      <Field Name="dmiEvents" Hidden="true" />
+      <Field Name="ebReleaser" Hidden="true" />
+      <Method Name="getEbReleaser" Hidden="true" />
+      <Method Name="getMaxEventActiveTime" Hidden="true" />
+      <Method Name="getNextDmiEvent" Hidden="true" />
+      <Method Name="getSbReleaser" Hidden="true" />
+      <Method Name="init" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Method Name="isApplyEb" Hidden="true" />
+      <Method Name="isApplySb" Hidden="true" />
+      <Method Name="isModeChangeToSafeBrakeToStop" Hidden="true" />
+      <Method Name="isModeChangeToSafetyHalt" Hidden="true" />
+      <Method Name="isStandstillEventActive" Hidden="true" />
+      <Method Name="logEvent" Hidden="true" />
+      <Field Name="logEventRelease" Hidden="true" />
+      <Field Name="maxActiveEvents" Hidden="true" />
+      <Field Name="maxDMIEvents" Hidden="true" />
+      <Field Name="maxTCCEvents" Hidden="true" />
+      <Field Name="modeChangeToSBS" Hidden="true" />
+      <Field Name="modeChangeToSHT" Hidden="true" />
+      <Method Name="reportEvent" Hidden="true" />
+      <Method Name="run" Hidden="true" />
+      <Field Name="sbReleaser" Hidden="true" />
+      <Field Name="standstillEventActive" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ATC::AbstractEventHandler::EventListItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\event_handler\abstract_event_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAJEAgAEAQCEIBIAAGgAIABCBEACAAIREFAABAAFCBE=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\event_handler\abstract_event_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::EventHandler">
+    <Position X="3.25" Y="4.5" Width="3" />
+    <Members>
+      <Method Name="EventHandler" Hidden="true" />
+      <Method Name="getMaxEventActiveTime" Hidden="true" />
+      <Field Name="isLogEventRelease" Hidden="true" />
+      <Field Name="maxActiveEventCount" Hidden="true" />
+      <Field Name="maxDMIEventCount" Hidden="true" />
+      <Field Name="maxTCCEventCount" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAEAAAAAAAABAAAAAEAAgEAAACAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\event_handler\event_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

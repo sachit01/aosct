@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATC::AbstractBasicIP">
+    <Position X="5.75" Y="1" Width="3.75" />
+    <Members>
+      <Method Name="AbstractBasicIP" Hidden="true" />
+      <Method Name="acceptSocket" Hidden="true" />
+      <Method Name="bindSocket" Hidden="true" />
+      <Method Name="closeSocket" Hidden="true" />
+      <Method Name="collectConnectionStatistics" Hidden="true" />
+      <Field Name="connection" Hidden="true" />
+      <Method Name="connectionStatusStr" Hidden="true" />
+      <Method Name="connectionTypeStr" Hidden="true" />
+      <Method Name="connectSocket" Hidden="true" />
+      <Method Name="handleConnection" Hidden="true" />
+      <Method Name="handleConnections" Hidden="true" />
+      <Method Name="handleTcpClientConnection" Hidden="true" />
+      <Method Name="handleTcpHostConnection" Hidden="true" />
+      <Method Name="handleUdpClientConnection" Hidden="true" />
+      <Method Name="handleUdpHostConnection" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Method Name="isConnectedSocket" Hidden="true" />
+      <Method Name="listenSocket" Hidden="true" />
+      <Field Name="numConnections" Hidden="true" />
+      <Method Name="openSocket" Hidden="true" />
+      <Method Name="readFromSocket" Hidden="true" />
+      <Method Name="readSocket" Hidden="true" />
+      <Method Name="setKeepAliveSocket" Hidden="true" />
+      <Method Name="setNonBlockingSocket" Hidden="true" />
+      <Method Name="setSocketOption" Hidden="true" />
+      <Method Name="setTCPNoDelay" Hidden="true" />
+      <Method Name="setTCPRecvBufSize" Hidden="true" />
+      <Method Name="setTCPSendBufSize" Hidden="true" />
+      <Method Name="shutdownSocket" Hidden="true" />
+      <Method Name="writeSocket" Hidden="true" />
+      <Method Name="writeToSocket" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ATC::AbstractBasicIP::IPConnectionType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\basic_ip\abstract_basic_ip.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATC::AbstractBasicIP::IPConnectionStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\basic_ip\abstract_basic_ip.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="ATC::AbstractBasicIP::ConnectionStatistics" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\basic_ip\abstract_basic_ip.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="ATC::AbstractBasicIP::SocketAddress" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\basic_ip\abstract_basic_ip.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="ATC::AbstractBasicIP::ConnectionControlBlock" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\basic_ip\abstract_basic_ip.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>RAOgEgiAAQhEsAJAJsFBAACBGQBQADIIAIhSACABNAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\basic_ip\abstract_basic_ip.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="2.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="ATC::SOCKET" Collapsed="true">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\basic_ip\abstract_basic_ip.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

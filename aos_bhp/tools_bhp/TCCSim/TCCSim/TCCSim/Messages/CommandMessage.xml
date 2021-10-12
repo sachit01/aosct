@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandMessage value="16">
+  <Block type="SET_TIME" value="8" />
+  <T_CLOCK>0</T_CLOCK>
+  <Block type="RELEASE_BRAKE" value="12" />
+  <M_END_OF_MESSAGE></M_END_OF_MESSAGE>
+</CommandMessage>

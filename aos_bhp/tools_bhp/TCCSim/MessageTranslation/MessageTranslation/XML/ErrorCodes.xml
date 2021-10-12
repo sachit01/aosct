@@ -1,0 +1,3279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Row>
+		<ST_Error_Code>50000</ST_Error_Code>
+		<Description>Invalid bool </Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50259</ST_Error_Code>
+		<Description>All A/B missmatches in ACT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50265</ST_Error_Code>
+		<Description>Balise outside window (slip detected)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50281</ST_Error_Code>
+		<Description>Stop train rec. in not allowed mode!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50289</ST_Error_Code>
+		<Description>First missed balise</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50314</ST_Error_Code>
+		<Description>Shunting not possible for special vehicle</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50326</ST_Error_Code>
+		<Description>Fire Alarm Locomotive</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50516</ST_Error_Code>
+		<Description>A/B diff, serviceBrakeFlag</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50517</ST_Error_Code>
+		<Description>A/B diff, emergencyBrakeFlag</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50518</ST_Error_Code>
+		<Description>A/B diff, flashBrakeButtonFlag</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50519</ST_Error_Code>
+		<Description>A/B diff, emergencyBrakeFlag</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50520</ST_Error_Code>
+		<Description>A/B diff, flashBrakeButtonFlag</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50522</ST_Error_Code>
+		<Description>A/B diff, mmiReleasableFlag</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50523</ST_Error_Code>
+		<Description>A/B diff, dispReleasableFlag</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50524</ST_Error_Code>
+		<Description>A/B diff, atoReleasableFlag</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50525</ST_Error_Code>
+		<Description>A/B diff, mmiReleasable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50526</ST_Error_Code>
+		<Description>A/B diff, dispReleasable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50527</ST_Error_Code>
+		<Description>A/B diff, atoReleasable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50531</ST_Error_Code>
+		<Description>Dispatcher brake release needed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>50793</ST_Error_Code>
+		<Description>Undefined MMI button</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51025</ST_Error_Code>
+		<Description>Error in bs_getClock()</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51036</ST_Error_Code>
+		<Description>Internal queue error 1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51037</ST_Error_Code>
+		<Description>Internal queue error 2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51038</ST_Error_Code>
+		<Description>Internal queue error 3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51039</ST_Error_Code>
+		<Description>Basic system token error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51283</ST_Error_Code>
+		<Description>Data from RCOND not in groups of 3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51285</ST_Error_Code>
+		<Description>Invalid message number received</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51286</ST_Error_Code>
+		<Description>Too long message received on sink port</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51287</ST_Error_Code>
+		<Description>Incoming sink data buffer overrun</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51288</ST_Error_Code>
+		<Description>One or more messages from LCS are lost</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51289</ST_Error_Code>
+		<Description>One or more messages from LCS are lost</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51537</ST_Error_Code>
+		<Description>BTIU invalid telegram class</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51538</ST_Error_Code>
+		<Description>BTIU unknown balise type</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51539</ST_Error_Code>
+		<Description>BTIU error in balise format</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51540</ST_Error_Code>
+		<Description>BTIU 0/f nibble error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51587</ST_Error_Code>
+		<Description>BTIU channel dropout</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51834</ST_Error_Code>
+		<Description>sequenceNumber error==falseA  (Also generated from glue_btiu_b_sink)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51837</ST_Error_Code>
+		<Description>A/B diff, transmissionQuality</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51838</ST_Error_Code>
+		<Description>A/B diff, telegramClass</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51840</ST_Error_Code>
+		<Description>A/B diff, beginTimeStamp</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51841</ST_Error_Code>
+		<Description>A/B diff, endTimeStamp</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51842</ST_Error_Code>
+		<Description>A/B diff, baliseServiceAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51848</ST_Error_Code>
+		<Description>A/B diff, speedServiceAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51849</ST_Error_Code>
+		<Description>A/B diff, odometerServiceAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51850</ST_Error_Code>
+		<Description>A/B diff, antennaCommand</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51852</ST_Error_Code>
+		<Description>A/B diff, telegramValid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51854</ST_Error_Code>
+		<Description>BaliseAntennaError  (Also generated from glue_btiu_b_sink)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51855</ST_Error_Code>
+		<Description>BaliseAntennaError  (Also generated from glue_btiu_b_sink)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51857</ST_Error_Code>
+		<Description>A/B diff, antennaActive</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51858</ST_Error_Code>
+		<Description>A/B diff, bsaToStart</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51878</ST_Error_Code>
+		<Description>A/B diff, antennaControl</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51902</ST_Error_Code>
+		<Description>BaliseAntennaError, timeout (On)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51903</ST_Error_Code>
+		<Description>BaliseAntennaError, timeout (Off)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51904</ST_Error_Code>
+		<Description>sequenceNumbersEqual==falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51907</ST_Error_Code>
+		<Description>BTM Telepowering overheating, will be switched off</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51909</ST_Error_Code>
+		<Description>BTM Telegram configuration error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51912</ST_Error_Code>
+		<Description>seqNumber error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51913</ST_Error_Code>
+		<Description>BaliseAntennaError, timeout (On)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51914</ST_Error_Code>
+		<Description>BaliseAntennaError, timeout (Off)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51917</ST_Error_Code>
+		<Description>BTM Telepowering overheating, will be switched off</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51919</ST_Error_Code>
+		<Description>BTM Telegram configuration error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51923</ST_Error_Code>
+		<Description>A/B diff, transmissionQuality</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51924</ST_Error_Code>
+		<Description>A/B diff, telegramClass</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51926</ST_Error_Code>
+		<Description>A/B diff, beginTimeStamp</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51927</ST_Error_Code>
+		<Description>A/B diff, endTimeStamp</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51928</ST_Error_Code>
+		<Description>A/B diff, baliseServiceAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51930</ST_Error_Code>
+		<Description>A/B diff, antennaCommand</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51931</ST_Error_Code>
+		<Description>A/B diff, antennaActive</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51933</ST_Error_Code>
+		<Description>A/B diff, bsaToStart</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51934</ST_Error_Code>
+		<Description>A/B diff, telegramValid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51943</ST_Error_Code>
+		<Description>A/B diff, transmissionQuality</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51944</ST_Error_Code>
+		<Description>A/B diff, telegramClass</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51946</ST_Error_Code>
+		<Description>A/B diff, beginTimeStamp</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51947</ST_Error_Code>
+		<Description>A/B diff, endTimeStamp</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51948</ST_Error_Code>
+		<Description>A/B diff, baliseServiceAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51950</ST_Error_Code>
+		<Description>A/B diff, antennaCmd</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51951</ST_Error_Code>
+		<Description>A/B diff, antennaActive</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51953</ST_Error_Code>
+		<Description>A/B diff, BSA_ToStart</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51954</ST_Error_Code>
+		<Description>A/B diff, telegramValid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51977</ST_Error_Code>
+		<Description>A/B diff, antennaControl</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>51984</ST_Error_Code>
+		<Description>A/B diff, speedServiceAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>52051</ST_Error_Code>
+		<Description>Log state undefined!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>52052</ST_Error_Code>
+		<Description>Internal buffer overrun!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>52053</ST_Error_Code>
+		<Description>Error using bs_getClock!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>52054</ST_Error_Code>
+		<Description>Token error in bs_getReferenceTime!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>52055</ST_Error_Code>
+		<Description>Buffer not expected to be empty.</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>52374</ST_Error_Code>
+		<Description>Com buffer overflow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>52578</ST_Error_Code>
+		<Description>Message to MMI too long</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53159</ST_Error_Code>
+		<Description>CRC error on rec msg</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53341</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.trainLengthDelay</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53642</ST_Error_Code>
+		<Description>DirCtrl undefined</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53643</ST_Error_Code>
+		<Description>ChairPos invalid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53684</ST_Error_Code>
+		<Description>VDX.in1.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53685</ST_Error_Code>
+		<Description>VDX.in2.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53686</ST_Error_Code>
+		<Description>VDX.fs.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53687</ST_Error_Code>
+		<Description>VDX.hr1.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53703</ST_Error_Code>
+		<Description>EBrelay applied</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53704</ST_Error_Code>
+		<Description>EBrelay applied</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53705</ST_Error_Code>
+		<Description>EBrelay not applied</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53713</ST_Error_Code>
+		<Description>Traindata fromGLUE not valid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53714</ST_Error_Code>
+		<Description>Traindata.wheelSize2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53715</ST_Error_Code>
+		<Description>Traindata.wheelSize3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53716</ST_Error_Code>
+		<Description>trainDataA.startUpSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53717</ST_Error_Code>
+		<Description>trainDataA.baliseSearchSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53718</ST_Error_Code>
+		<Description>trainDataA.baliseSearchDistance</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53719</ST_Error_Code>
+		<Description>trainDataA.baliseWindow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53720</ST_Error_Code>
+		<Description>trainDataA.baliseAntennaPositionEnd</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53721</ST_Error_Code>
+		<Description>trainDataA.baliseAntennaPositionFront</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53722</ST_Error_Code>
+		<Description>24 hour ATP reset</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53728</ST_Error_Code>
+		<Description>ATO Manual mode selected</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53729</ST_Error_Code>
+		<Description>ATO Supervised mode selected</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53730</ST_Error_Code>
+		<Description>ATO Automatic mode selected</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53731</ST_Error_Code>
+		<Description>ATP Started, v2.3.1 - v2.4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53732</ST_Error_Code>
+		<Description>ATP reset, not enough work hours left for shift</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53744</ST_Error_Code>
+		<Description>ATP Started, Test SW Running</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53745</ST_Error_Code>
+		<Description>ATP Started, v2.5 Running</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53746</ST_Error_Code>
+		<Description>ATP Started, Future release 1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53747</ST_Error_Code>
+		<Description>ATP Started, Future release 2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53748</ST_Error_Code>
+		<Description>ATP Started, Future release 3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53749</ST_Error_Code>
+		<Description>ATP Started, Future release 4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53750</ST_Error_Code>
+		<Description>ATP Started, Future release 5</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53751</ST_Error_Code>
+		<Description>ATP Started, Future release 6</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53752</ST_Error_Code>
+		<Description>ATP Started, Future release 7</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53753</ST_Error_Code>
+		<Description>ATP Started, Future release 8</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53754</ST_Error_Code>
+		<Description>ATP Started, Future release 9</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53755</ST_Error_Code>
+		<Description>ATP Started, Future release 10</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53756</ST_Error_Code>
+		<Description>ATP Started, Future release 11</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53757</ST_Error_Code>
+		<Description>ATP Started, Future release 12</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53758</ST_Error_Code>
+		<Description>ATP Started, Future release 13</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53759</ST_Error_Code>
+		<Description>ATP Started, Future release 14</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53760</ST_Error_Code>
+		<Description>ATP Started, Future release 15</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53761</ST_Error_Code>
+		<Description>ATP Started, Future release 16</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53762</ST_Error_Code>
+		<Description>ATP Started, Future release 17</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53763</ST_Error_Code>
+		<Description>ATP Started, Future release 18</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53764</ST_Error_Code>
+		<Description>ATP Started, Future release 19</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53765</ST_Error_Code>
+		<Description>ATP Started, Future release 20</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>53849</ST_Error_Code>
+		<Description>Invalid permitted speed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54103</ST_Error_Code>
+		<Description>TxBufferOverflow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54116</ST_Error_Code>
+		<Description>Receive error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54352</ST_Error_Code>
+		<Description>Undefined allowedDrivingDir</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54353</ST_Error_Code>
+		<Description>validRotDir==falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54354</ST_Error_Code>
+		<Description>validRotDir==falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54360</ST_Error_Code>
+		<Description>WheelSizeError</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54362</ST_Error_Code>
+		<Description>A/B diff, Speed missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54363</ST_Error_Code>
+		<Description>A/B diff, R-Speed missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54364</ST_Error_Code>
+		<Description>A/B diff, S-Speed missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54365</ST_Error_Code>
+		<Description>A/B diff, T-Speed missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54366</ST_Error_Code>
+		<Description>A/B diff, Acceleration missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54367</ST_Error_Code>
+		<Description>A/B diff, Slipslide missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54368</ST_Error_Code>
+		<Description>A/B diff, R-Slipslide missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54369</ST_Error_Code>
+		<Description>A/B diff, S-Slipslide missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54370</ST_Error_Code>
+		<Description>A/B diff, T-Slipslide missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54371</ST_Error_Code>
+		<Description>A/B diff, Odometer missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54373</ST_Error_Code>
+		<Description>A/B diff, speedServiceAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54374</ST_Error_Code>
+		<Description>A/B diff, odometerServiceAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54375</ST_Error_Code>
+		<Description>A/B diff, SpeedLastPulseTime</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54376</ST_Error_Code>
+		<Description>A/B diff, odometerLastPulseTime</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54378</ST_Error_Code>
+		<Description>A/B diff, NoPulsesError</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54379</ST_Error_Code>
+		<Description>noPulsesError</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54382</ST_Error_Code>
+		<Description>A/B diff, Speed missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54384</ST_Error_Code>
+		<Description>A/B diff, inSB_Req</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54385</ST_Error_Code>
+		<Description>A/B diff, Odometer missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54386</ST_Error_Code>
+		<Description>A/B diff, newWheelSize2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54393</ST_Error_Code>
+		<Description>A/B diff, maxTachoErrorDiff</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54394</ST_Error_Code>
+		<Description>A/B diff, slip request tacho error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54612</ST_Error_Code>
+		<Description>NoCarListAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54613</ST_Error_Code>
+		<Description>NoCarStatusAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54614</ST_Error_Code>
+		<Description>Derailing</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54615</ST_Error_Code>
+		<Description>BadDerailingSensor</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54617</ST_Error_Code>
+		<Description>TooLongForCarGoingUp</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54633</ST_Error_Code>
+		<Description>SIOXerrorCode13</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54636</ST_Error_Code>
+		<Description>T44ComError</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54637</ST_Error_Code>
+		<Description>UnexpectedTicAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54638</ST_Error_Code>
+		<Description>UnexpectedTicAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54641</ST_Error_Code>
+		<Description>CarPositionSensorInconsistency</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54644</ST_Error_Code>
+		<Description>A/B diff, t44Reboot</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54649</ST_Error_Code>
+		<Description>NoCarConfigPossible</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54650</ST_Error_Code>
+		<Description>NoCarStatusAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54651</ST_Error_Code>
+		<Description>NoCarStatusAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54652</ST_Error_Code>
+		<Description>NoCarStatusAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54653</ST_Error_Code>
+		<Description>NoCarStatusAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54659</ST_Error_Code>
+		<Description>DataInconsistency</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54661</ST_Error_Code>
+		<Description>DataDiffers</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54665</ST_Error_Code>
+		<Description>CarPositionSensorInconsistency</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54668</ST_Error_Code>
+		<Description>A/B diff, ticAvailRequest</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54669</ST_Error_Code>
+		<Description>A/B diff, ticAvailableValid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54670</ST_Error_Code>
+		<Description>A/B diff, ticIsAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54671</ST_Error_Code>
+		<Description>A/B diff, startConfigRequest</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54672</ST_Error_Code>
+		<Description>A/B diff, getCarListRequest</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54673</ST_Error_Code>
+		<Description>A/B diff, getCarStatusRequest</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54674</ST_Error_Code>
+		<Description>A/B diff, getCarStatusRequestAdr</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54675</ST_Error_Code>
+		<Description>A/B diff, carListIsCompleted</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54676</ST_Error_Code>
+		<Description>A/B diff, trainConfigOutputAHigh</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54677</ST_Error_Code>
+		<Description>A/B diff, trainConfigOutputBHigh</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54681</ST_Error_Code>
+		<Description>A/B diff, handlingIsDone</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54684</ST_Error_Code>
+		<Description>A/B diff, getLastCarStatusReq</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54693</ST_Error_Code>
+		<Description>TIC-door is open</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54694</ST_Error_Code>
+		<Description>Data differs</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54864</ST_Error_Code>
+		<Description>in1.status == LowA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54865</ST_Error_Code>
+		<Description>in2.status == LowA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54866</ST_Error_Code>
+		<Description>in3.status == LowA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54867</ST_Error_Code>
+		<Description>A/B diff, hr1.state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54868</ST_Error_Code>
+		<Description>A/B diff, hr2.state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54869</ST_Error_Code>
+		<Description>A/B diff, EB_Requested</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54870</ST_Error_Code>
+		<Description>A/B diff, EB_RelayApplied</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>54871</ST_Error_Code>
+		<Description>A/B diff, ModeSwitch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55220</ST_Error_Code>
+		<Description>Converter alarm</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55221</ST_Error_Code>
+		<Description>Travel drive alarm</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55222</ST_Error_Code>
+		<Description>Compressor alarm</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55223</ST_Error_Code>
+		<Description>Short circuiter temperature</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55224</ST_Error_Code>
+		<Description>Main input re-actance tem-perature</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55225</ST_Error_Code>
+		<Description>24V DC/DC converter fault</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55226</ST_Error_Code>
+		<Description>Car brake sys-tem monitoring</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55227</ST_Error_Code>
+		<Description>Loco brake system moni-toring</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55228</ST_Error_Code>
+		<Description>Circuit breakers and fuses</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55229</ST_Error_Code>
+		<Description>Main contactor tripped</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55230</ST_Error_Code>
+		<Description>Driver Interven-tion</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55231</ST_Error_Code>
+		<Description>Sand level low</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55232</ST_Error_Code>
+		<Description>Control request not accepted</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55889</ST_Error_Code>
+		<Description>NETVOLTAGE_MAX</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55890</ST_Error_Code>
+		<Description>NETVOLTAGE_WARNING_MIN</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55891</ST_Error_Code>
+		<Description>NETVOLTAGE_FAULT_MIN</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55892</ST_Error_Code>
+		<Description>PRESSURE_START_UP_LOW</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55893</ST_Error_Code>
+		<Description>REACTANCE_COIL_TEMP_150</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55894</ST_Error_Code>
+		<Description>REACTANCE_COIL_TEMP_170</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55895</ST_Error_Code>
+		<Description>MAIN_SWITCH_FUSE</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55896</ST_Error_Code>
+		<Description>MAIN_SWITCH_TRIPPT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55897</ST_Error_Code>
+		<Description>SHORTCIRCUITER_TEMP_60</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55898</ST_Error_Code>
+		<Description>SHORTCIRCUITER_TEMP_90</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55899</ST_Error_Code>
+		<Description>PANTOGRAPH_FUSE</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55900</ST_Error_Code>
+		<Description>PANTOGRAPH_TD1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55901</ST_Error_Code>
+		<Description>PANTOGRAPH_TD2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55902</ST_Error_Code>
+		<Description>EMERGENCY_FUSE</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55903</ST_Error_Code>
+		<Description>EMERGENCY_STOP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55904</ST_Error_Code>
+		<Description>EMERGENCY_STOP_TD1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55905</ST_Error_Code>
+		<Description>EMERGENCY_STOP_TD2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55906</ST_Error_Code>
+		<Description>DADMAN</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55907</ST_Error_Code>
+		<Description>OILPUMP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55908</ST_Error_Code>
+		<Description>EMERGENCY_LAST_CAR</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55909</ST_Error_Code>
+		<Description>ARC_SYSTEM_OFF</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55910</ST_Error_Code>
+		<Description>ARC_DETECTED</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55911</ST_Error_Code>
+		<Description>FIRE_SYSTEM_OFF</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55912</ST_Error_Code>
+		<Description>FIRE_LINE_1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55913</ST_Error_Code>
+		<Description>CONTROL_SYSTEM_LINE_1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55914</ST_Error_Code>
+		<Description>IGNITION_LINE_1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55915</ST_Error_Code>
+		<Description>FIRE_LINE_2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55916</ST_Error_Code>
+		<Description>CONTROL_SYSTEM_LINE_2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55917</ST_Error_Code>
+		<Description>IGNITION_LINE_2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55918</ST_Error_Code>
+		<Description>INV_400V_INVERTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55919</ST_Error_Code>
+		<Description>INV_400V_PROFIBUS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55920</ST_Error_Code>
+		<Description>INV_400V_FUSE</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55921</ST_Error_Code>
+		<Description>INV_24V_INV</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55922</ST_Error_Code>
+		<Description>INV_24V_PROFIBUS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55923</ST_Error_Code>
+		<Description>INV_24V_FUSE_1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55924</ST_Error_Code>
+		<Description>INV_24V_FUSE_2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55925</ST_Error_Code>
+		<Description>INV_BRAKE_FILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55926</ST_Error_Code>
+		<Description>INV_BRAKE_INVERTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55927</ST_Error_Code>
+		<Description>INV_BRAKE_POFIBUS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55928</ST_Error_Code>
+		<Description>INV_BRAKE_Q_FAN_1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55929</ST_Error_Code>
+		<Description>INV_BRAKE_Q_FAN_2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55930</ST_Error_Code>
+		<Description>INV_BRAKE_PRESS_SUCK_IN</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55931</ST_Error_Code>
+		<Description>INV_BRAKE_PRESS_OIL_SEP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55932</ST_Error_Code>
+		<Description>INV_BRAKE_OIL_TEMP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55933</ST_Error_Code>
+		<Description>INV_BRAKE_AIR_DRAINING</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55934</ST_Error_Code>
+		<Description>INV_DUMP_FILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55935</ST_Error_Code>
+		<Description>INV_DUMP_INVERTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55936</ST_Error_Code>
+		<Description>INV_DUMP_POFIBUS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55937</ST_Error_Code>
+		<Description>INV_DUMP_Q_FAN_1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55938</ST_Error_Code>
+		<Description>INV_DUMP_Q_FAN_2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55939</ST_Error_Code>
+		<Description>INV_DUMP_PRESS_SUCK_IN</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55940</ST_Error_Code>
+		<Description>INV_DUMP_PRESS_OIL_SEP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55941</ST_Error_Code>
+		<Description>INV_DUMP_OIL_TEMPERATUR</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55942</ST_Error_Code>
+		<Description>INV_DUMP_AIR_DRAINING</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55943</ST_Error_Code>
+		<Description>INV_TD1_INVERTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55944</ST_Error_Code>
+		<Description>INV_TD1_PROFIBUS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55945</ST_Error_Code>
+		<Description>WARNING_TEMP_MOTOR_2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55946</ST_Error_Code>
+		<Description>ERROR_TEMP_MOTOR_2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55947</ST_Error_Code>
+		<Description>INV_TD2_INVERTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55948</ST_Error_Code>
+		<Description>INV_TD2_PROFIBUS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55949</ST_Error_Code>
+		<Description>WARNING_TEMP_MOTOR_4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55950</ST_Error_Code>
+		<Description>ERROR_TEMP_MOTOR_4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55951</ST_Error_Code>
+		<Description>INV_TD3_INVERTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55952</ST_Error_Code>
+		<Description>INV_TD3_PROFIBUS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55953</ST_Error_Code>
+		<Description>WARNING_TEMP_MOTOR_6</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55954</ST_Error_Code>
+		<Description>ERROR_TEMP_MOTOR_6</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55955</ST_Error_Code>
+		<Description>INV_TD4_INVERTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55956</ST_Error_Code>
+		<Description>INV_TD4_PROFIBUS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55957</ST_Error_Code>
+		<Description>WARNING_TEMP_MOTOR_8</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55958</ST_Error_Code>
+		<Description>ERROR_TEMP_MOTOR_8</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55959</ST_Error_Code>
+		<Description>COOL_INV_TD1_Q_PUMP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55960</ST_Error_Code>
+		<Description>COOL_INV_TD1_Q_FAN</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55961</ST_Error_Code>
+		<Description>COOL_INV_TD1_FLOWMONITOR</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55962</ST_Error_Code>
+		<Description>COOL_INV_TD1_FILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55963</ST_Error_Code>
+		<Description>COOL_INV_TD1_OVERHEAT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55964</ST_Error_Code>
+		<Description>COOL_INV_TD2_Q_PUMP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55965</ST_Error_Code>
+		<Description>COOL_INV_TD2_Q_FAN</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55966</ST_Error_Code>
+		<Description>COOL_INV_TD2_FLOWMONITOR</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55967</ST_Error_Code>
+		<Description>COOL_INV_TD2_FILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55968</ST_Error_Code>
+		<Description>COOL_INV_TD2_OVERHEAT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55969</ST_Error_Code>
+		<Description>COOL_MOTOR_TD1_Q_PUMP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55970</ST_Error_Code>
+		<Description>COOL_MOTOR_TD1_Q_FANS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55971</ST_Error_Code>
+		<Description>COOL_MOTOR_TD1_FLOWM</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55972</ST_Error_Code>
+		<Description>COOL_MOTOR_TD1_FILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55973</ST_Error_Code>
+		<Description>COOL_MOTOR_TD1_OVERHEAT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55974</ST_Error_Code>
+		<Description>COOL_MOTOR_TD2_Q_PUMP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55975</ST_Error_Code>
+		<Description>COOL_MOTOR_TD2_Q_FANS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55976</ST_Error_Code>
+		<Description>COOL_MOTOR_TD2_FLOW</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55977</ST_Error_Code>
+		<Description>COOL_MOTOR_TD2_FILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55978</ST_Error_Code>
+		<Description>COOL_MOTOR_TD2_OVERHEAT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55979</ST_Error_Code>
+		<Description>COOL_REACTANCE_Q_PUMP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55980</ST_Error_Code>
+		<Description>COOL_REACTANCE_Q_FAN</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55981</ST_Error_Code>
+		<Description>COOL_REACTANCE_FLOW</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55982</ST_Error_Code>
+		<Description>COOL_REACTANCE_FILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55983</ST_Error_Code>
+		<Description>COOL_REACTANCE_OVERHEAT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55984</ST_Error_Code>
+		<Description>HEATING_TD2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55985</ST_Error_Code>
+		<Description>VENTILATION_TD2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55986</ST_Error_Code>
+		<Description>FILTER_TD2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55987</ST_Error_Code>
+		<Description>WINDOWHEATING_TD2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55988</ST_Error_Code>
+		<Description>FILTER_E_CAB_BRAKING</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55989</ST_Error_Code>
+		<Description>Q_FAN_E_CAB_BRAKING</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55990</ST_Error_Code>
+		<Description>EXTERIOR_LIGHTING</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55991</ST_Error_Code>
+		<Description>INTERIOR_LIGHTING</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55992</ST_Error_Code>
+		<Description>HEATING_TD1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55993</ST_Error_Code>
+		<Description>VENTILATION_TD1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55994</ST_Error_Code>
+		<Description>FILTER_TD1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55995</ST_Error_Code>
+		<Description>WINDOWHEATING_TD1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55996</ST_Error_Code>
+		<Description>FILTER_E_CAB_DUMPING</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55997</ST_Error_Code>
+		<Description>Q_FAN_E_CAB_DUMPING</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55998</ST_Error_Code>
+		<Description>DOOR_CUBICAL_41</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>55999</ST_Error_Code>
+		<Description>DOOR_CUBICAL_42</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56000</ST_Error_Code>
+		<Description>Train in Supervised ATO mode</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56001</ST_Error_Code>
+		<Description>DOOR_CUBICAL_11_RIGHT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56002</ST_Error_Code>
+		<Description>Train in manual mode ATP</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56003</ST_Error_Code>
+		<Description>DOOR_CUBICAL_61_RIGHT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56004</ST_Error_Code>
+		<Description>DOOR_CUBICAL_30</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56005</ST_Error_Code>
+		<Description>DOOR_CUBICAL_31</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56006</ST_Error_Code>
+		<Description>DOOR_CUBICAL_32</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56007</ST_Error_Code>
+		<Description>DOOR_CUBICAL_40</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56008</ST_Error_Code>
+		<Description>SANDING_LEVEL_LEFT_TD2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56009</ST_Error_Code>
+		<Description>SANDING_LEVEL_RIGHT_TD2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56010</ST_Error_Code>
+		<Description>SANDING_LEVEL_LEFT_TD1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56011</ST_Error_Code>
+		<Description>SANDING_LEVEL_RIGHT_TD1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56012</ST_Error_Code>
+		<Description>SANDING_SAND_OFF_TD1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56013</ST_Error_Code>
+		<Description>SANDING_SAND_OFF_TD2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56014</ST_Error_Code>
+		<Description>PLC_BATTERY_EMPTY</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56015</ST_Error_Code>
+		<Description>G_BOX_1_WARN_TEMP_OIL</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56016</ST_Error_Code>
+		<Description>G_BOX_1_FAULT_TEMP_OIL</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56017</ST_Error_Code>
+		<Description>G_BOX_1_WARN_TEMP_INT_1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56018</ST_Error_Code>
+		<Description>G_BOX_1_FAULT_TEMP_INT_1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56019</ST_Error_Code>
+		<Description>G_BOX_1_WARN_TEMP_INT_2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56020</ST_Error_Code>
+		<Description>G_BOX_1_FAULT_TEMP_INT_2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56021</ST_Error_Code>
+		<Description>G_BOX_1_MOTORPROTECTION</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56022</ST_Error_Code>
+		<Description>G_BOX_1_OILPRESSURE</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56023</ST_Error_Code>
+		<Description>G_BOX_1_OILFILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56024</ST_Error_Code>
+		<Description>G_BOX_2_WARNING_TEMP_OIL</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56025</ST_Error_Code>
+		<Description>G_BOX_2_FAULT_TEMP_OIL</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56026</ST_Error_Code>
+		<Description>G_BOX_2_WARN_TEMP_INT_3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56027</ST_Error_Code>
+		<Description>G_BOX_2_FAULT_TEMP_INT_3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56028</ST_Error_Code>
+		<Description>G_BOX_2_WARN_TEMP_INT_4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56029</ST_Error_Code>
+		<Description>G_BOX_2_FAULT_TEMP_INT_4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56030</ST_Error_Code>
+		<Description>G_BOX_2_OILPRESSURE</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56031</ST_Error_Code>
+		<Description>G_BOX_2_OILFILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56032</ST_Error_Code>
+		<Description>G_BOX_3_WARNING_TEMP_OIL</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56033</ST_Error_Code>
+		<Description>G_BOX_3_FAULT_TEMP_OIL</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56034</ST_Error_Code>
+		<Description>G_BOX_3_WARN_TEMP_INT_5</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56035</ST_Error_Code>
+		<Description>G_BOX_3_FAULT_TEMP_INT_5</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56036</ST_Error_Code>
+		<Description>G_BOX_3_WARN_TEMP_INT_6</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56037</ST_Error_Code>
+		<Description>G_BOX_3_FAULT_TEMP_INT_6</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56038</ST_Error_Code>
+		<Description>G_BOX_3_MOTORPROTECTION</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56039</ST_Error_Code>
+		<Description>G_BOX_3_OILPRESSURE</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56040</ST_Error_Code>
+		<Description>G_BOX_3_OILFILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56041</ST_Error_Code>
+		<Description>G_BOX_4_WARNING_TEMP_OIL</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56042</ST_Error_Code>
+		<Description>G_BOX_4_FAULT_TEMP_OIL</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56043</ST_Error_Code>
+		<Description>G_BOX_4_WARN_TEMP_INT_7</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56044</ST_Error_Code>
+		<Description>G_BOX_4_FAULT_TEMP_IN_7</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56045</ST_Error_Code>
+		<Description>G_BOX_4_WARN_TEMP_IN_8</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56046</ST_Error_Code>
+		<Description>G_BOX_4_FAULT_TEMP_INT_8</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56047</ST_Error_Code>
+		<Description>G_BOX_4_OILPRESSURE</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>56048</ST_Error_Code>
+		<Description>G_BOX_4_OILFILTER</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60258</ST_Error_Code>
+		<Description>Undefined MMI confirmation</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60259</ST_Error_Code>
+		<Description>All A/B missmatches in ACT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60264</ST_Error_Code>
+		<Description>BaliseDataChannel not available</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60268</ST_Error_Code>
+		<Description>Undefined trackdirection in posreport</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60270</ST_Error_Code>
+		<Description>MA timeout</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60275</ST_Error_Code>
+		<Description>Direction control Undefined</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60286</ST_Error_Code>
+		<Description>Tracksection not found in posreport</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60308</ST_Error_Code>
+		<Description>Service brake pressure test failure</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60309</ST_Error_Code>
+		<Description>Service brake pressure test failure</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60310</ST_Error_Code>
+		<Description>Service brake pressure test failure</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60513</ST_Error_Code>
+		<Description>Servicebrake, insufficient deceleration</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60528</ST_Error_Code>
+		<Description>Servicebrake, insufficient deceleration</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60530</ST_Error_Code>
+		<Description>Service brake  failure</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60791</ST_Error_Code>
+		<Description>Invalid T44 MessageHeader</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60795</ST_Error_Code>
+		<Description>Invalid CAR number</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60796</ST_Error_Code>
+		<Description>Invalid MMI message</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60801</ST_Error_Code>
+		<Description>Invalid T44 MessageHeader</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60802</ST_Error_Code>
+		<Description>Invalid T44 MessageHeader</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60803</ST_Error_Code>
+		<Description>Invalid T44 MessageHeader</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60804</ST_Error_Code>
+		<Description>Invalid T44 MessageHeader</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60805</ST_Error_Code>
+		<Description>Invalid T44 MessageHeader</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60806</ST_Error_Code>
+		<Description>Invalid T44 MessageHeader</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>60807</ST_Error_Code>
+		<Description>Invalid MMI message</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61544</ST_Error_Code>
+		<Description>A/B diff, baliseInfo.odometer!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61545</ST_Error_Code>
+		<Description>A/B diff, BTIU Available!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61588</ST_Error_Code>
+		<Description>BTIU MVB transfer error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61844</ST_Error_Code>
+		<Description>A/B diff, currentSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61845</ST_Error_Code>
+		<Description>A/B diff, speedTimeStamp</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61846</ST_Error_Code>
+		<Description>A/B diff, odometer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61847</ST_Error_Code>
+		<Description>A/B diff, odometerTimeStamp</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61851</ST_Error_Code>
+		<Description>A/B diff, direction</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61863</ST_Error_Code>
+		<Description>A/B diff, tachoPulsesR</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61864</ST_Error_Code>
+		<Description>A/B diff, pulseTimeR</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61865</ST_Error_Code>
+		<Description>A/B diff, tachoPulsesS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61866</ST_Error_Code>
+		<Description>A/B diff, pulseTimeS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61867</ST_Error_Code>
+		<Description>A/B diff, tachoPulsesT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61868</ST_Error_Code>
+		<Description>A/B diff, pulseTimeT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61869</ST_Error_Code>
+		<Description>A/B diff, tachoVoltageR</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61870</ST_Error_Code>
+		<Description>A/B diff, tachoVoltageS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61871</ST_Error_Code>
+		<Description>A/B diff, tachoVoltageT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61872</ST_Error_Code>
+		<Description>A/B diff, rotationDirection</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61873</ST_Error_Code>
+		<Description>A/B diff, inputStatus.validR</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61874</ST_Error_Code>
+		<Description>A/B diff, inputStatus.validS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61875</ST_Error_Code>
+		<Description>A/B diff, inputStatus.validT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61876</ST_Error_Code>
+		<Description>A/B diff, inputStatus.validRotDir</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61905</ST_Error_Code>
+		<Description>BTM Routine test not approved     </Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61906</ST_Error_Code>
+		<Description>BTM Protocol version difference    </Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61908</ST_Error_Code>
+		<Description>BTM Telegram configuration error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61915</ST_Error_Code>
+		<Description>BTM Routine test not approved</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61916</ST_Error_Code>
+		<Description>BTM Protocol version difference</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>61918</ST_Error_Code>
+		<Description>BTM Telegram configuration error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>62016</ST_Error_Code>
+		<Description>A/B diff, trainData from ICM!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>62019</ST_Error_Code>
+		<Description>A/B diff, trainData to ICM!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>62020</ST_Error_Code>
+		<Description>A/B diff, wheelSize1 to ICM!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>62021</ST_Error_Code>
+		<Description>A/B diff, wheelSize2 to ICM!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>62354</ST_Error_Code>
+		<Description>Wrong input parameter</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>62565</ST_Error_Code>
+		<Description>MMI queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>62566</ST_Error_Code>
+		<Description>MMI Msg length error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>62567</ST_Error_Code>
+		<Description>MMI queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63328</ST_Error_Code>
+		<Description>Inclination to large for train setup</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63329</ST_Error_Code>
+		<Description>A/B diff, ceilingSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63331</ST_Error_Code>
+		<Description>A/B diff, sbRequested</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63334</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.timeoutMamS</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63337</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.targetSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63338</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.ceilingSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63340</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.brakeAbility</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63342</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.targetPointOdometer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63343</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.sbTargetPointOdometer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63344</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.ebTargetPointOdometer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63351</ST_Error_Code>
+		<Description>Position Beyond Target</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63624</ST_Error_Code>
+		<Description>DX transmission not valid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63625</ST_Error_Code>
+		<Description>DX transmission not valid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63626</ST_Error_Code>
+		<Description>DX inputStatus0</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63627</ST_Error_Code>
+		<Description>DX inputStatus1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63628</ST_Error_Code>
+		<Description>DX inputStatus2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63629</ST_Error_Code>
+		<Description>DX inputStatus3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63630</ST_Error_Code>
+		<Description>DX inputStatus4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63631</ST_Error_Code>
+		<Description>DX inputStatus5</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63632</ST_Error_Code>
+		<Description>DX inputStatus6</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63633</ST_Error_Code>
+		<Description>DX inputStatus7</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63635</ST_Error_Code>
+		<Description>DX outputStatus0</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63636</ST_Error_Code>
+		<Description>DX outputStatus1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63637</ST_Error_Code>
+		<Description>DX outputStatus2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63638</ST_Error_Code>
+		<Description>DX outputStatus3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63639</ST_Error_Code>
+		<Description>DX outputStatus4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63640</ST_Error_Code>
+		<Description>DX outputStatus5</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63644</ST_Error_Code>
+		<Description>MMI not valid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63645</ST_Error_Code>
+		<Description>MMI error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63664</ST_Error_Code>
+		<Description>TachometerError ch 001</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63665</ST_Error_Code>
+		<Description>TachometerError ch 010</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63666</ST_Error_Code>
+		<Description>TachometerError ch 011</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63667</ST_Error_Code>
+		<Description>TachometerError ch 100</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63668</ST_Error_Code>
+		<Description>TachometerError ch 101</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63669</ST_Error_Code>
+		<Description>TachometerError ch 110</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63670</ST_Error_Code>
+		<Description>TachometerError ch 111</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63671</ST_Error_Code>
+		<Description>Tachometer Invalid rotation dir</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63672</ST_Error_Code>
+		<Description>Tachometer faulty rotation dir</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63703</ST_Error_Code>
+		<Description>EBrelay applied</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63704</ST_Error_Code>
+		<Description>EBrelay applied</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63705</ST_Error_Code>
+		<Description>EBrelay not applied</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63723</ST_Error_Code>
+		<Description>ATO minor failure</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63840</ST_Error_Code>
+		<Description>Internal mathematic error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63842</ST_Error_Code>
+		<Description>A/B diff, SB_Requested</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63846</ST_Error_Code>
+		<Description>Position beyond target</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63851</ST_Error_Code>
+		<Description>A/B diff, EB_Requested</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63852</ST_Error_Code>
+		<Description>A/B diff, alarmRequest</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63853</ST_Error_Code>
+		<Description>A/B diff, targetInfo</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63854</ST_Error_Code>
+		<Description>A/B diff, intervention flag</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>63855</ST_Error_Code>
+		<Description>trainDirection invalid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64104</ST_Error_Code>
+		<Description>RxBufferOverflow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64354</ST_Error_Code>
+		<Description>validRotDir==falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64355</ST_Error_Code>
+		<Description>validR==falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64356</ST_Error_Code>
+		<Description>validS==falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64357</ST_Error_Code>
+		<Description>validT==falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64358</ST_Error_Code>
+		<Description>validR|validS|validT==falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64359</ST_Error_Code>
+		<Description>WheelSizeError</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64372</ST_Error_Code>
+		<Description>A/B diff, drivingDir missmatch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64381</ST_Error_Code>
+		<Description>Error in locoVsTrainDir</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64383</ST_Error_Code>
+		<Description>A/B diff, drivingDirection</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64387</ST_Error_Code>
+		<Description>WheelSize1 differs from wheelSize2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64389</ST_Error_Code>
+		<Description>Error in tacho configuration</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64614</ST_Error_Code>
+		<Description>Derailing</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64618</ST_Error_Code>
+		<Description>NotDownAtUnloadEnd</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64619</ST_Error_Code>
+		<Description>NoLastCarStatusAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64620</ST_Error_Code>
+		<Description>LastCarEmergencyStopButtonPressed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64621</ST_Error_Code>
+		<Description>LastCarMissing</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64622</ST_Error_Code>
+		<Description>LastCarSignature</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64623</ST_Error_Code>
+		<Description>SIOXerrorCode00</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64624</ST_Error_Code>
+		<Description>SIOXerrorCode01</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64625</ST_Error_Code>
+		<Description>SIOXerrorCode02</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64626</ST_Error_Code>
+		<Description>SIOXerrorCode03</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64627</ST_Error_Code>
+		<Description>SIOXerrorCode04</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64628</ST_Error_Code>
+		<Description>SIOXerrorCode10_S45</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64630</ST_Error_Code>
+		<Description>SIOXerrorCode11</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64632</ST_Error_Code>
+		<Description>SIOXerrorCode12</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64635</ST_Error_Code>
+		<Description>DataInconsistency</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64639</ST_Error_Code>
+		<Description>UnexpectedTicAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64640</ST_Error_Code>
+		<Description>CarNotInTravellingPosition</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64641</ST_Error_Code>
+		<Description>CarPositionSensorInconsistency</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64653</ST_Error_Code>
+		<Description>NoCarStatusAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64654</ST_Error_Code>
+		<Description>LastCarEmergencyStopButtonPressed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64655</ST_Error_Code>
+		<Description>DataInconsistency</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64656</ST_Error_Code>
+		<Description>DataInconsistency</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64657</ST_Error_Code>
+		<Description>DataInconsistency</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64658</ST_Error_Code>
+		<Description>Error determining locoVsTrainDir</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64660</ST_Error_Code>
+		<Description>DataDiffers</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64663</ST_Error_Code>
+		<Description>CarNotInTravellingPosition</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64664</ST_Error_Code>
+		<Description>CarNotInTravellingPosition</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64665</ST_Error_Code>
+		<Description>CarPositionSensorInconsistency</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64678</ST_Error_Code>
+		<Description>A/B diff, locoVsTrainDir</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64679</ST_Error_Code>
+		<Description>A/B diff, isDerailing</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64680</ST_Error_Code>
+		<Description>A/B diff, isCarPlatformError</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64682</ST_Error_Code>
+		<Description>A/B diff, carPlatformCommand</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64683</ST_Error_Code>
+		<Description>A/B diff, derailPowerCommand</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64685</ST_Error_Code>
+		<Description>A/B diff, lastCarConfigOutputCommand</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64686</ST_Error_Code>
+		<Description>A/B diff, lastCarLightCommand</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64687</ST_Error_Code>
+		<Description>A/B diff, lastCarWarningSignalCommand</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64688</ST_Error_Code>
+		<Description>A/B diff, lastCarIsPresent</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64689</ST_Error_Code>
+		<Description>A/B diff, lastCarEmsButton</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64690</ST_Error_Code>
+		<Description>A/B diff, sbRequested</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64692</ST_Error_Code>
+		<Description>UnexpectedTicAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64695</ST_Error_Code>
+		<Description>A/B diff, pSensAvailValid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64696</ST_Error_Code>
+		<Description>A/B diff, pressureSensorAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64697</ST_Error_Code>
+		<Description>A/B diff, lastCarBrakePressure</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64698</ST_Error_Code>
+		<Description>A/B diff, textMsgToMMI</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64699</ST_Error_Code>
+		<Description>A/B diff, ticActivateEBValid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64700</ST_Error_Code>
+		<Description>A/B diff, ticActivateEB</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64701</ST_Error_Code>
+		<Description>A/B diff, getCarPreloadCommandListLen</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64702</ST_Error_Code>
+		<Description>A/B diff, getCarPreloadCommandList</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64703</ST_Error_Code>
+		<Description>locationEndCeilingSpeedNotValid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64704</ST_Error_Code>
+		<Description>Plattform error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64706</ST_Error_Code>
+		<Description>A/B diff, firstCarIsLoco</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64873</ST_Error_Code>
+		<Description>vdxPortInvalid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64874</ST_Error_Code>
+		<Description>A/B diff, in1.state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64875</ST_Error_Code>
+		<Description>A/B diff, in1.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64876</ST_Error_Code>
+		<Description>A/B diff, in2.state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64877</ST_Error_Code>
+		<Description>A/B diff, in2.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64878</ST_Error_Code>
+		<Description>A/B diff, in3.state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64879</ST_Error_Code>
+		<Description>A/B diff, in3.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64880</ST_Error_Code>
+		<Description>A/B diff, hr1_Status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64881</ST_Error_Code>
+		<Description>A/B diff, hr2_Status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>64882</ST_Error_Code>
+		<Description>A/B diff, fs_Status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70257</ST_Error_Code>
+		<Description>Undefined ATP mode</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70259</ST_Error_Code>
+		<Description>All A/B missmatches in ACT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70260</ST_Error_Code>
+		<Description>Ceiling list overflow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70261</ST_Error_Code>
+		<Description>Tracksection not found</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70262</ST_Error_Code>
+		<Description>Tracksection list link error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70263</ST_Error_Code>
+		<Description>Invalid direction in target</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70266</ST_Error_Code>
+		<Description>Unexpected Balise</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70267</ST_Error_Code>
+		<Description>Second missed balise</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70269</ST_Error_Code>
+		<Description>Error in registration MA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70271</ST_Error_Code>
+		<Description>Non matching balise</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70272</ST_Error_Code>
+		<Description>Target type error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70273</ST_Error_Code>
+		<Description>Route type error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70274</ST_Error_Code>
+		<Description>Invalid location type</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70276</ST_Error_Code>
+		<Description>Underconsumtion, targetList</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70277</ST_Error_Code>
+		<Description>Overconsumtion, targetList</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70278</ST_Error_Code>
+		<Description>BaliseWindow &gt; Safetymargin</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70279</ST_Error_Code>
+		<Description>Not allowed reason in Unreg message</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70280</ST_Error_Code>
+		<Description>Calculated wheelsize outside limits</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70282</ST_Error_Code>
+		<Description>Tracksection list overflow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70283</ST_Error_Code>
+		<Description>Balise list overflow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70284</ST_Error_Code>
+		<Description>Gradient list overflow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70285</ST_Error_Code>
+		<Description>Tracksection not found</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70287</ST_Error_Code>
+		<Description>Driving direction not equal in all tracksections</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70288</ST_Error_Code>
+		<Description>Undefined target type</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70290</ST_Error_Code>
+		<Description>Balise missed in balise search mode</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70291</ST_Error_Code>
+		<Description>Exported target list not empty</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70292</ST_Error_Code>
+		<Description>Non matching balise</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70293</ST_Error_Code>
+		<Description>Wrong routetype</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70295</ST_Error_Code>
+		<Description>Undefined direction in MA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70296</ST_Error_Code>
+		<Description>Undefined route type in MA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70297</ST_Error_Code>
+		<Description>Invalid route type in MA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70298</ST_Error_Code>
+		<Description>MA start from scratch</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70299</ST_Error_Code>
+		<Description>Invalid target type</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70300</ST_Error_Code>
+		<Description>Invalid target type</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70301</ST_Error_Code>
+		<Description>Invalid route type</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70302</ST_Error_Code>
+		<Description>No location data available</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70303</ST_Error_Code>
+		<Description>Configuration error, stationary requests TIC</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70304</ST_Error_Code>
+		<Description>Configuration error, number of cars</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70305</ST_Error_Code>
+		<Description>Balise outside window</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70306</ST_Error_Code>
+		<Description>Undefined ATP mode</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70307</ST_Error_Code>
+		<Description>No balise in MA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70311</ST_Error_Code>
+		<Description>Wrong routetype in reregMa</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70312</ST_Error_Code>
+		<Description>Jumbo configuration error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70313</ST_Error_Code>
+		<Description>Jumbo configuration error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70317</ST_Error_Code>
+		<Description>Bombardier Debug Ts Not Found ACT 1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70318</ST_Error_Code>
+		<Description>Bombardier Debug Ts Not Found ACT 2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70319</ST_Error_Code>
+		<Description>Bombardier Debug Ts Not Found ACT 3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70320</ST_Error_Code>
+		<Description>Bombardier Debug Ts Not Found ACT 4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70321</ST_Error_Code>
+		<Description>Bombardier Debug Ts Not Found ACT 5</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70322</ST_Error_Code>
+		<Description>Bombardier Debug Ts Not Found ACT 6</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70323</ST_Error_Code>
+		<Description>Bombardier Debug Ts Not Found ACT 7</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70324</ST_Error_Code>
+		<Description>Bombardier Debug Ts Not Found ACT 8</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70325</ST_Error_Code>
+		<Description>Bombardier Debug Ts Not Found ACT 9</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70514</ST_Error_Code>
+		<Description>EB, insufficient deceleration</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70515</ST_Error_Code>
+		<Description>Error EB relay feedback</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70521</ST_Error_Code>
+		<Description>Underconsumtion, EmergencyBrakeFlag</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70529</ST_Error_Code>
+		<Description>EB, insufficient deceleration</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70769</ST_Error_Code>
+		<Description>Token error at bs_readPort</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70770</ST_Error_Code>
+		<Description>Token error at bs_readPort</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70772</ST_Error_Code>
+		<Description>Error at queue initialisation!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70773</ST_Error_Code>
+		<Description>Car status answer queue full!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70774</ST_Error_Code>
+		<Description>DX TransmissionValid1=falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70775</ST_Error_Code>
+		<Description>DX TransmissionValid2=falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70776</ST_Error_Code>
+		<Description>DX selfTestToggleBit error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70777</ST_Error_Code>
+		<Description>DX SelfTestInputStatus0</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70778</ST_Error_Code>
+		<Description>DX SelfTestInputStatus1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70779</ST_Error_Code>
+		<Description>DX SelfTestInputStatus2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70780</ST_Error_Code>
+		<Description>DX SelfTestInputStatus3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70781</ST_Error_Code>
+		<Description>DX SelfTestInputStatus4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70782</ST_Error_Code>
+		<Description>DX SelfTestInputStatus5</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70783</ST_Error_Code>
+		<Description>DX SelfTestInputStatus6</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70784</ST_Error_Code>
+		<Description>DX SelfTestInputStatus7</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70785</ST_Error_Code>
+		<Description>DX SelfTestOutputStatus0</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70786</ST_Error_Code>
+		<Description>DX SelfTestOutputStatus1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70787</ST_Error_Code>
+		<Description>DX SelfTestOutputStatus2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70788</ST_Error_Code>
+		<Description>DX SelfTestOutputStatus3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70789</ST_Error_Code>
+		<Description>DX SelfTestOutputStatus4</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70790</ST_Error_Code>
+		<Description>DX SelfTestOutputStatus5</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70792</ST_Error_Code>
+		<Description>Error in T44 Message!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70794</ST_Error_Code>
+		<Description>Undefined MMI button</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70797</ST_Error_Code>
+		<Description>Invalid MmiInvalidLocoVsTrainDir</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70799</ST_Error_Code>
+		<Description>DX SelfTestInputStatus8</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70800</ST_Error_Code>
+		<Description>DX SelfTestInputStatus9</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70808</ST_Error_Code>
+		<Description>Last Car status answer queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70809</ST_Error_Code>
+		<Description>LastCar status report queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70810</ST_Error_Code>
+		<Description>SIOX ParameterRead answer queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70811</ST_Error_Code>
+		<Description>TIC error report queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70812</ST_Error_Code>
+		<Description>Car config report queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70813</ST_Error_Code>
+		<Description>Car status report queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70814</ST_Error_Code>
+		<Description>Car status answer queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70815</ST_Error_Code>
+		<Description>Last Car status answer queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70816</ST_Error_Code>
+		<Description>LastCar status report queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70817</ST_Error_Code>
+		<Description>Car status report queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70820</ST_Error_Code>
+		<Description>ATP to MMI buffer overrun</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>70821</ST_Error_Code>
+		<Description>Bundle to MMI exceeded max size</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71027</ST_Error_Code>
+		<Description>Wrong speedtarget sequence nbr from ACT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71028</ST_Error_Code>
+		<Description>Speed target buffer overrun</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71029</ST_Error_Code>
+		<Description>Wrong horn sequence number from ACT</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71030</ST_Error_Code>
+		<Description>Horn target buffer overrun</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71031</ST_Error_Code>
+		<Description>Cancel target buffer overrun</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71032</ST_Error_Code>
+		<Description>Remote control buffer overrun</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71033</ST_Error_Code>
+		<Description>Loco power buffer overrun</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71281</ST_Error_Code>
+		<Description>Basic system token error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71282</ST_Error_Code>
+		<Description>Data to LCS buffer overrun</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71536</ST_Error_Code>
+		<Description>balise buffer overflow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71541</ST_Error_Code>
+		<Description>Tachometer error detected by BTIU</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71542</ST_Error_Code>
+		<Description>A/B diff, baliseInfo.newInfo!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71543</ST_Error_Code>
+		<Description>A/B diff, baliseInfo.baliseID!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71546</ST_Error_Code>
+		<Description>ATP detected tachometer failure (Tgm)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71547</ST_Error_Code>
+		<Description>ATP detected tachometer failure (Detect)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71548</ST_Error_Code>
+		<Description>Balise time in future</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71567</ST_Error_Code>
+		<Description>BTIU timestamp error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71568</ST_Error_Code>
+		<Description>BTIU seqNo error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71792</ST_Error_Code>
+		<Description>Invalid telegramClass  (Also generated from glue_btiu_b_sink)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71832</ST_Error_Code>
+		<Description>Token error at bs_readPort</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71833</ST_Error_Code>
+		<Description>Token error at bs_readPort</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71835</ST_Error_Code>
+		<Description>A/B diff, newTelegram</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71836</ST_Error_Code>
+		<Description>A/B diff, btiuDataForCOUT_A.seqNo</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71839</ST_Error_Code>
+		<Description>A/B diff, telegram[i]</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71843</ST_Error_Code>
+		<Description>A/B diff, bsaCounter</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71853</ST_Error_Code>
+		<Description>BTIU writeFifo overflow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71856</ST_Error_Code>
+		<Description>A/B diff, resetFIFO</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71862</ST_Error_Code>
+		<Description>Token error at bs_readPort</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71877</ST_Error_Code>
+		<Description>Token error at bs_getReferenceTime</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71879</ST_Error_Code>
+		<Description>Token error at bs_readPort</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71880</ST_Error_Code>
+		<Description>Token error at bs_readPort</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71892</ST_Error_Code>
+		<Description>Token error at bs_readPort!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71893</ST_Error_Code>
+		<Description>Token error at bs_readPort!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71894</ST_Error_Code>
+		<Description>Token error at bs_readPort!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71910</ST_Error_Code>
+		<Description>Illegal BSA from BTM</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71920</ST_Error_Code>
+		<Description>Illegal BSA from BTM</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71922</ST_Error_Code>
+		<Description>A/B diff, newTelegram</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71925</ST_Error_Code>
+		<Description>A/B diff, telegram[i]</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71929</ST_Error_Code>
+		<Description>A/B diff, bsaCounter</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71932</ST_Error_Code>
+		<Description>A/B diff, resetFIFO</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71935</ST_Error_Code>
+		<Description>A/B diff, seqNo</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71942</ST_Error_Code>
+		<Description>A/B diff, newTelegram</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71945</ST_Error_Code>
+		<Description>A/B diff, Telegram</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71949</ST_Error_Code>
+		<Description>A/B diff, bsaCounter</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71952</ST_Error_Code>
+		<Description>A/B diff, resetFIFO</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71955</ST_Error_Code>
+		<Description>A/B diff, seqNo</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71959</ST_Error_Code>
+		<Description>BTM Sink writeFifo overflow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71971</ST_Error_Code>
+		<Description>A/B diff, Failure 1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71972</ST_Error_Code>
+		<Description>A/B diff, Failure 2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71973</ST_Error_Code>
+		<Description>A/B diff, Failure 3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71983</ST_Error_Code>
+		<Description>A/B diff, Q_Version</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71986</ST_Error_Code>
+		<Description>A/B diff, Odo Time</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71987</ST_Error_Code>
+		<Description>A/B diff, Odo</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71988</ST_Error_Code>
+		<Description>A/B diff, Direction</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71989</ST_Error_Code>
+		<Description>A/B diff, Speed Time</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71990</ST_Error_Code>
+		<Description>A/B diff, Speed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71992</ST_Error_Code>
+		<Description>Token error at bs_isSystemRunning</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71997</ST_Error_Code>
+		<Description>COut BTM Command failed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>71998</ST_Error_Code>
+		<Description>COut Odo/Speed failed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72012</ST_Error_Code>
+		<Description>Error at bs_readNVMem</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72013</ST_Error_Code>
+		<Description>Error at bs_readNVMem</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72014</ST_Error_Code>
+		<Description>Error at bs_writeNVMem!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72015</ST_Error_Code>
+		<Description>Error at bs_writeNVMem</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72017</ST_Error_Code>
+		<Description>Error taking semaphore!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72018</ST_Error_Code>
+		<Description>Error giving semaphore!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72022</ST_Error_Code>
+		<Description>Failed to create semaphore!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72023</ST_Error_Code>
+		<Description>Error taking semaphore</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72024</ST_Error_Code>
+		<Description>Error giving semaphore</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72025</ST_Error_Code>
+		<Description>Error giving semaphore</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72026</ST_Error_Code>
+		<Description>Error taking semaphore</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72049</ST_Error_Code>
+		<Description>Error allocating buffer!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72050</ST_Error_Code>
+		<Description>Error creating semaphore!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72304</ST_Error_Code>
+		<Description>Unable to create semaphore</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72314</ST_Error_Code>
+		<Description>A/B diff, Overflow in MISC_signedMulA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72324</ST_Error_Code>
+		<Description>Overflow in division</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72334</ST_Error_Code>
+		<Description>Overflow in MISC_mulA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72344</ST_Error_Code>
+		<Description>Division with zero</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72364</ST_Error_Code>
+		<Description>Undefined error grade</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72394</ST_Error_Code>
+		<Description>Log failure unknown</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72561</ST_Error_Code>
+		<Description>MMI queue init error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72562</ST_Error_Code>
+		<Description>MMI ACK queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72563</ST_Error_Code>
+		<Description>MMI: error at queue drop</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72564</ST_Error_Code>
+		<Description>MMI queue init error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72568</ST_Error_Code>
+		<Description>MMI: error at queue drop</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72569</ST_Error_Code>
+		<Description>MMI: error at queue get</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72579</ST_Error_Code>
+		<Description>MMI: ACK queue full</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72580</ST_Error_Code>
+		<Description>MMI queue init error</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72826</ST_Error_Code>
+		<Description>Undefined ATP state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72836</ST_Error_Code>
+		<Description>Undefined ATP state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>72846</ST_Error_Code>
+		<Description>Undefined ATP state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73160</ST_Error_Code>
+		<Description>Too many CRC errors on rec msg</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73161</ST_Error_Code>
+		<Description>Radio message too long</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73177</ST_Error_Code>
+		<Description>Failed to create semaphore</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73178</ST_Error_Code>
+		<Description>Failed to create semaphore</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73330</ST_Error_Code>
+		<Description>A/B diff, atpIdling</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73332</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.dataValid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73333</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.targetType</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73335</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.trainDirection</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73336</ST_Error_Code>
+		<Description>A/B diff, selectedTarget..trackSection</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73339</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.routeType!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73345</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.stopPointDistance</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73346</ST_Error_Code>
+		<Description>A/B diff, selectedTarget.targetGradient</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73347</ST_Error_Code>
+		<Description>Invalid trainDirection in primary target</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73348</ST_Error_Code>
+		<Description>Unable to get brakeAbility</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73349</ST_Error_Code>
+		<Description>Invalid primary target</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73350</ST_Error_Code>
+		<Description>Invalid primary target</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73352</ST_Error_Code>
+		<Description>No target selected, but targets exists</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73353</ST_Error_Code>
+		<Description>Underconsumption sbRequested</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73354</ST_Error_Code>
+		<Description>Underconsumption ceilingSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73355</ST_Error_Code>
+		<Description>Underconsumption Target</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73356</ST_Error_Code>
+		<Description>Overconsumption CeilingSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73357</ST_Error_Code>
+		<Description>Overconsumption Target</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73642</ST_Error_Code>
+		<Description>DirCtrl undefined</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73643</ST_Error_Code>
+		<Description>ChairPos invalid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73674</ST_Error_Code>
+		<Description>baliseServiceAvailable</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73684</ST_Error_Code>
+		<Description>VDX.in1.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73685</ST_Error_Code>
+		<Description>VDX.in2.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73686</ST_Error_Code>
+		<Description>VDX.fs.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73687</ST_Error_Code>
+		<Description>VDX.hr1.status</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73703</ST_Error_Code>
+		<Description>EBrelay applied</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73704</ST_Error_Code>
+		<Description>EBrelay applied</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73705</ST_Error_Code>
+		<Description>EBrelay not applied</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73713</ST_Error_Code>
+		<Description>Traindata fromGLUE not valid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73714</ST_Error_Code>
+		<Description>Traindata.wheelSize1</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73715</ST_Error_Code>
+		<Description>Traindata.wheelSize2</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73716</ST_Error_Code>
+		<Description>trainDataA.startUpSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73717</ST_Error_Code>
+		<Description>trainDataA.baliseSearchSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73718</ST_Error_Code>
+		<Description>trainDataA.baliseSearchDistance</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73719</ST_Error_Code>
+		<Description>trainDataA.baliseWindow</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73720</ST_Error_Code>
+		<Description>trainDataA.baliseAntennaPositionEnd</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73721</ST_Error_Code>
+		<Description>trainDataA.baliseAntennaPositionFront</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73784</ST_Error_Code>
+		<Description>Internal error, invalid state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73841</ST_Error_Code>
+		<Description>Gradient exceeds brakeability</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73843</ST_Error_Code>
+		<Description>TrainSetup not Valid</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73844</ST_Error_Code>
+		<Description>InvalidCeilingSpeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73845</ST_Error_Code>
+		<Description>Invalid target position</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73847</ST_Error_Code>
+		<Description>Invalid target gradient</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73848</ST_Error_Code>
+		<Description>Invalid targetspeed</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73850</ST_Error_Code>
+		<Description>Underconsumption sbRequest</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73856</ST_Error_Code>
+		<Description>Invalid traindirection</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73857</ST_Error_Code>
+		<Description>alarmRequest undefined</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>73858</ST_Error_Code>
+		<Description>Underconsumption ebRequest</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74097</ST_Error_Code>
+		<Description>messLen(front)&lt;3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74105</ST_Error_Code>
+		<Description>messLen(rear)&lt;3</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74106</ST_Error_Code>
+		<Description>Error at bs_openDevice</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74109</ST_Error_Code>
+		<Description>Error at init</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74110</ST_Error_Code>
+		<Description>COM-message to long</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74111</ST_Error_Code>
+		<Description>message &gt; MAX_BUNDLE_SIZE</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74112</ST_Error_Code>
+		<Description>unknown COM-message</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74113</ST_Error_Code>
+		<Description>queuePtr == NULL</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74358</ST_Error_Code>
+		<Description>validR|validS|validT==falseA</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74380</ST_Error_Code>
+		<Description>TachometerError</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74388</ST_Error_Code>
+		<Description>Tacho configuration undefined</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74390</ST_Error_Code>
+		<Description>Tachometer hardware failure!</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74392</ST_Error_Code>
+		<Description>Tacho1 (S/R) rec no pulses (T in speed)</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74610</ST_Error_Code>
+		<Description>NoCarListCompletedAnswer</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74634</ST_Error_Code>
+		<Description>SIOXerrorCode20</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74642</ST_Error_Code>
+		<Description>Default state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74646</ST_Error_Code>
+		<Description>Underconsumption</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74666</ST_Error_Code>
+		<Description>Default state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74667</ST_Error_Code>
+		<Description>TIC02 default state</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74691</ST_Error_Code>
+		<Description>Underconsumption, sbRequest</Description>
+	</Row>
+	<Row>
+		<ST_Error_Code>74872</ST_Error_Code>
+		<Description>Token error at bs_readPort</Description>
+	</Row>
+</Root>

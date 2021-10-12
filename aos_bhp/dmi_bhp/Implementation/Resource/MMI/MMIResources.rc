@@ -1,0 +1,107 @@
+/*****************************************************************************
+*           © COPYRIGHT Bombardier Transportation AB, SWEDEN 2012.           *
+*           ======================================================           *
+*                                                                            *
+*    The copyright to the computer program herein is the                     *
+*    property of Bombardier Transportation AB, Sweden. All rights reserved.  *
+*    The program may be used and/or copied only with the                     *
+*    written permission from Bombardier Transportation AB,                   *
+*    or in accordance with the terms and conditions stipulated in the        *
+*    agreement/contract under which the program has been supplied.           *
+*                                                                            *
+*    NAME:  MMIResources.rc                                                  *
+*                                                                            *
+*    PROJECT:  LKAB, InterFlow TrainBorne                                    *
+*                                                                            *
+*    Ver    Author           Date    Reason                                  *
+*    ---    ------           ------  ------                                  *
+*           Bo Hermansson    120511  Created                                 *
+*           Bo Hermansson    121024  Conditional target                      *
+*           Bo Hermansson    121030  Odometer invalid                        *
+*           Bo Hermansson    130917  ssrPantoShiftToNone/Roof/Side           *	    	
+*           Bo Hermansson    140326  HiRes images for 1024 * 768             *	    	
+*                                                                            *
+*    DESCRIPTION: Common resources accessed from MMI       		     *
+*		Font : SansSerif , Bold, 				     *	
+*		Size : e.g. 20 (ATO) 36 (M)				     *
+*               System Icon Bitmaps  : (800 * 600), 56 * 84	     	     *
+*               System Icon Bitmaps  : HiRes (1024 * 768), 74 * 108	     *
+*                     							     *
+*                                                                            *
+*    INTERFACE:                                                              *
+******************************************************************************/
+
+
+256BMP BITMAP 256bmp.bmp
+
+QUESTION_MARK BITMAP Question.bmp
+
+CAR_CONNECTEDA BITMAP CarConnectedA.bmp
+CAR_CONNECTEDB BITMAP CarConnectedB.bmp
+HIRES_CAR_CONNECTEDA BITMAP HiRes_CarConnectedA.bmp
+HIRES_CAR_CONNECTEDB BITMAP HiRes_CarConnectedB.bmp
+
+ACCEPT_WITHOUT_TIMS BITMAP AcceptWithoutTIMS.bmp
+EMPTY_BUTTON BITMAP EmptyButton.bmp
+
+IDLE BITMAP idle.bmp
+HIRES_IDLE BITMAP HiRes_idle.bmp
+
+ATO_AUTOMATIC BITMAP ato_automatic.bmp
+HIRES_ATO_AUTOMATIC BITMAP HiRes_ato_automatic.bmp
+ATO_MANUAL BITMAP ato_manual.bmp
+HIRES_ATO_MANUAL BITMAP HiRes_ato_manual.bmp
+ATO_REMOTE BITMAP ato_remote.bmp
+HIRES_ATO_REMOTE BITMAP HiRes_ato_remote.bmp
+ATO_SUPERVISED BITMAP ato_supervised.bmp
+HIRES_ATO_SUPERVISED BITMAP HiRes_ato_supervised.bmp
+
+ATO_UNDEFINED BITMAP ato_undefined.bmp
+
+EMERGENCYALERT BITMAP emergencyalert.bmp
+HIRES_EMERGENCYALERT BITMAP HiRes_emergencyalert.bmp
+INTEGRITYALERT BITMAP integrityalert.bmp
+CONFIRMINTEGRITY BITMAP confirm_intergrity.bmp
+HIRES_INTEGRITYALERT BITMAP HiRes_integrityalert.bmp
+BRAKETEST_POSSIBLE BITMAP braketest_possible.bmp
+BRAKETEST_NOTIFICATION BITMAP braketest_notification.bmp
+BRAKETEST_MANDATORY BITMAP braketest_mandatory.bmp
+BRAKETEST_ABORT BITMAP braketest_abort.bmp
+BTMTEST_POSSIBLE BITMAP btmtest_possible.bmp
+BTMTEST_NOTIFICATION BITMAP btmtest_notification.bmp
+BTMTEST_MANDATORY BITMAP btmtest_mandatory.bmp
+STANDSTILL BITMAP standstill_vertical.bmp
+RESUME_SUPERVISION BITMAP resume_supervision.bmp
+ODOMETER_INVALID BITMAP odometer_invalid.bmp
+RADIOZAPP BITMAP radio_comm_avail.bmp
+RADIONOTCON BITMAP radio_comm_notavail.bmp
+
+SERVICEBRAKE BITMAP servicebrake.bmp
+SERVICEBRAKE_YELLOW BITMAP servicebrake_yellow.bmp
+HIRES_SERVICEBRAKE BITMAP HiRes_servicebrake.bmp
+HIRES_SERVICEBRAKE_YELLOW BITMAP HiRes_servicebrake_yellow.bmp
+EMERGENCYBRAKE BITMAP emergencybrake.bmp
+EMERGENCYBRAKE_YELLOW BITMAP emergencybrake_yellow.bmp
+HIRES_EMERGENCYBRAKE BITMAP HiRes_emergencybrake.bmp
+HIRES_EMERGENCYBRAKE_YELLOW BITMAP HiRes_emergencybrake_yellow.bmp
+
+SSRENDOFMA BITMAP ssrendofma.bmp
+SSRCONDTARGET BITMAP ssrcondtarget.bmp
+SSRPantoShiftToNone BITMAP ssrPantoShiftToNone.bmp
+SSRPantoShiftToRoof BITMAP ssrPantoShiftToRoof.bmp
+SSRPantoShiftToSide BITMAP ssrPantoShiftToSide.bmp
+SSRLOCATION BITMAP ssrlocation.bmp
+SSRMENATWORK BITMAP ssrmenatwork.bmp
+SSROTHER BITMAP ssrother.bmp
+SSRPOINTCURVE BITMAP ssrpointcurve.bmp
+SSRPOINTPASSED BITMAP ssrpointpassed.bmp
+SSRPOINTSTRAIGHT BITMAP ssrpointstraight.bmp
+SSRUNDEFINED BITMAP ssrundefined.bmp
+SWITCH BITMAP switch.bmp
+TRAIN_LOADED BITMAP HiRes_LoadedTrain.bmp
+LEVEL_CROSSING_ANN BITMAP Level_crossing_ann.bmp
+BRAKESYSTEM_ECPB BITMAP ecpb_braketype.bmp
+BRAKESYSTEM_PB BITMAP  pneumatic_braketype.bmp
+LCS_COMM_DISCONNECTED BITMAP LcsCommDisconnected.bmp
+TACHOMETER_FAILURE BITMAP tachometer_failure.bmp
+DOPPLER_FAILURE BITMAP DopplerRadarFailure.bmp

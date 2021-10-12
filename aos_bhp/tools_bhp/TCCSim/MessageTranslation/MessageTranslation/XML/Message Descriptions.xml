@@ -1,0 +1,335 @@
+<MessageDescriptions>
+  <!--<Message type="ATORemoteControl" value="7">
+    <FieldType>
+      <Name>V_ATO_SPEED</Name>
+      <Size>2</Size>
+      <Description>Requested speed(0 for stop)</Description>
+    </FieldType>
+    <FieldType>
+      <Name>T_CLOCK</Name>
+      <Size>4</Size>
+      <Description>Time limit for speed order</Description>
+    </FieldType>
+    <BlockType>
+      <Numeric>13</Numeric>
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType>
+      <Numeric>15</Numeric>
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <FieldType>
+      <Name>M_END_OF_MESSAGE</Name>
+      <Description>End of message identifier</Description>
+      <Size>1</Size>      
+    </FieldType>
+  </Message>
+  <Message type="StopTrain" value="8">
+    <FieldType>
+      <Name>Q_STOP</Name>
+      <Description>Reason for stop</Description>
+      <Size>1</Size>
+    </FieldType>
+  </Message>
+  <Message type="DriverLogonStatus" value="2">
+    <FieldType>
+      <Name>Q_LOGON_STATUS</Name>
+      <Description>Result of driver logon</Description>
+      <Size>1</Size>
+    </FieldType>
+    <BlockType>
+      <Numeric>9</Numeric>
+    </BlockType>
+    <FieldType>
+      <Name>M_END_OF_MESSAGE</Name>
+      <Description>End of message identifier</Description>
+    </FieldType>
+  </Message>
+  <Message type="EmergencyAlert" value="3">
+    <FieldType>
+      <Name>Q_ALERT</Name>
+      <Size>1</Size>
+      <Description>Alert code</Description>
+    </FieldType>
+  </Message>-->
+  <Message type="ATORemoteControl" value="7">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="V_ATO_SPEED"/>
+    <FieldType Name="T_CLOCK"/>
+    <FieldType Name="B_DIRECTION"/>
+    <BlockType Name="ATO_PROFILE_CONTROL" Numeric="13">
+      <Max>10</Max>
+    </BlockType>
+    <BlockType Name="LOAD_FINISHED" Numeric="15">
+      <Max>1</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE"/>
+  </Message>
+  <Message type="ATORemoteLolololol" value="7">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="V_ATO_SPEED"/>
+    <BlockType Name="ATO_PROFILE_CONTROL" Numeric="13">
+      <Max>10</Max>
+    </BlockType>
+    <BlockType Name="LOAD_FINISHED" Numeric="15">
+      <Max>1</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE"/>
+  </Message>
+  <Message type="DriverLogonStatus" value="2">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_LOGON_STATUS"/>
+    <BlockType Name="SET_TIME" Numeric="9">
+      <Min>1</Min>
+      <Max>1</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE"/>
+  </Message>
+  <Message type="EmergencyAlert" value="3">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_ALERT"/>
+  </Message>
+  <Message type="MovementAuthority" value="4">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="T_VALID" />
+    <FieldType Name="V_CEILING_SPEED" />
+    <FieldType Name="G_GRADIENT" />
+    <FieldType Name="A_BRAKEABILITY" />
+    <FieldType Name="B_DIRECTION" />
+    <FieldType Name="Q_ROUTE_TYPE" />
+    <FieldType Name="NID_TRACK_SECTION" />
+    <FieldType Name="D_POSITION" />
+    <BlockType Name="REQ_CAR_STATUS" Numeric="10">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="TRAIN_NAME" Numeric="8">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="RELEASE_BRAKE" Numeric="14">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="LOCATION_DATA" Numeric="1">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="ATO_STOP_POSITION" Numeric="11">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="CAR_UNLOAD_DATA" Numeric="2">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="TRACK_SECTION_DATA" Numeric="3">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="BALISE_DATA" Numeric="4">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="GRADIENT_DATA" Numeric="5">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="CEILING_SPEED_DATA" Numeric="6">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="ACOUSTIC_SIGNAL" Numeric="12">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="PANTOGRAPH_SHIFT" Numeric="17">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="TEXT_MESSAGE" Numeric="20">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="EXTERNAL_DATA" Numeric="196">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="TRACK_DATA_ITEM" Numeric="22">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="PositionReportRequest" value="1">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <BlockType Name="REQ_CAR_STATUS" Numeric="10">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="TRAIN_NAME" Numeric="8">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="SET_TIME" Numeric="9">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="RELEASE_BREAK" Numeric="14">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="LOCOMOTIVE_POWER" Numeric="16">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="WAITING_TIME" Numeric="21">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="TEXT_MESSAGE" Numeric="20">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="EXTERNAL_DATA" Numeric="196">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="StopTrain" value="8">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_STOP" />
+  </Message>
+  <Message type="TrainSetup" value="5">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="NID_VEHICLE_TYPE" />
+    <FieldType Name="Q_SETUP" />
+    <FieldType Name="V_TRAINMAX" />
+    <FieldType Name="T_BRAKE_RESPONSE" />
+    <FieldType Name="A_BRAKEABILITY" />
+    <FieldType Name="L_TRAIN" />
+    <FieldType Name="D_MA_MARGIN" />
+    <FieldType Name="D_OVERLAP" />
+    <FieldType Name="Q_TIC_DISABLED" />
+    <BlockType Name="TRAIN_NAME" Numeric="8">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="VEHICLE_ID_DATA" Numeric="128">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="CAR1_CONFIG_DATA" Numeric="7">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="CAR2_CONFIG_DATA" Numeric="18">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="CAR3_CONFIG_DATA" Numeric="19">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="Unregistration" value="6">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_UNREGISTRATION" />
+  </Message>
+  <Message type="AbortSetup" value="130">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="Q_ABORT" />
+  </Message>
+  <Message type="DriverInformation" value="128">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="TID_DRIVER" />
+    <FieldType Name="TID_PASSWORD" />
+  </Message>
+  <Message type="PositionReport" value="132">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="NID_TRACK_SECTION" />
+    <FieldType Name="D_POSITION" />
+    <FieldType Name="B_DIRECTION" />
+    <FieldType Name="V_TRAIN_SPEED" />
+    <FieldType Name="B_TRAIN_STATUS" />
+    <FieldType Name="D_WINDOW" />
+    <FieldType Name="NID_TRACK_SECTION" />
+    <FieldType Name="D_POSITION" />
+    <BlockType Name="ERROR_MESSAGE_DATA" Numeric="129">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="CAR_STATUS_DATA" Numeric="130">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <BlockType Name="ATO_MODE" Numeric="131">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <BlockType Name="EXTERNAL_DATA" Numeric="196">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="StartUpMessage" value="129">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="B_LOCOMOTIVE_STATUS" />
+    <FieldType Name="L_LOCOMOTIVE" />
+    <FieldType Name="Q_TIC_AVAILABLE" />
+    <BlockType Name="VEHICLE_ID_DATA" Numeric="128">
+      <Min>0</Min>
+      <Max>0</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  <Message type="TrainRegistrationInformation" value="131">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="NID_BG" />
+    <FieldType Name="B_DIRECTION" />
+  </Message>
+  
+  <Message type="TEST_MESSAGE" value="120">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="D_BUG"/>
+    <BlockType Name="DEBUG_BLOCK" Numeric="1"/>
+    <BlockType Name="BEBUG_BLOCK2" Numeric="2">
+      <Min>0</Min>
+      <Max>1</Max>
+    </BlockType>
+    <FieldType Name="M_END_OF_MESSAGE"/>
+  </Message>
+  
+  <Message type="PRR" value="68">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+  </Message>
+  <Message type="PR" value="153">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+  </Message>
+  <Message type="PR2" value="170">
+    <StationaryMessage>False</StationaryMessage>
+    <Filtered>False</Filtered>
+  </Message>
+</MessageDescriptions>

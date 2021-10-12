@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATP::DMICom::AbstractDMIMessageOut">
+    <Position X="6.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgIQACAAABAIABAAEAAAAFAAQAAAAAAAAEAQAAAg=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_out.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutETABHP">
+    <Position X="2" Y="5.75" Width="3" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="3.276" />
+        <Point X="8" Y="6.937" />
+        <Point X="5" Y="6.937" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="1.435" Y="0.11" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAJAAAAAAAAAAAAAAQAAAAAAAAgAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\dmi_comm\dmi_handler\dmi_message_out_eta_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutRadioChannelBHP">
+    <Position X="2" Y="2.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.664" Y="0.131" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABAAAAAAAAgAAAAAQAAAAAAAAAAAAICA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\dmi_comm\dmi_handler\dmi_message_out_radio_channel_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutTrainWeightBHP">
+    <Position X="2" Y="9.25" Width="3" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="3.276" />
+        <Point X="8" Y="10.5" />
+        <Point X="5" Y="10.5" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.914" Y="0.131" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAJAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAAACIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\dmi_comm\dmi_handler\dmi_message_out_train_weight_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutTypicalConfigBHP">
+    <Position X="2" Y="12.75" Width="3" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="3.276" />
+        <Point X="8" Y="14.125" />
+        <Point X="5" Y="14.125" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="1.164" Y="0.193" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAABAIAAAAAABABAAAAAAQAAAAAQAAAAAAAABAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\dmi_comm\dmi_handler\dmi_message_out_typical_config_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutCeilingSpeedListBHP">
+    <Position X="11.75" Y="12.75" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="ATP::DMICom::DMIMessageOutCeilingSpeedList">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.956" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAABCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutCeilingSpeedList">
+    <Position X="11.75" Y="9.25" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="ATP::DMICom::AbstractDMIMessageOut" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="3.276" />
+        <Point X="8" Y="10.5" />
+        <Point X="11.75" Y="10.5" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.977" Y="0.152" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAAAYBAAAAAAAAAAAABAQAAAAAAACAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutATPModesAndStatusBHP">
+    <Position X="11.75" Y="5.75" Width="4" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="ATP::DMICom::DMIMessageOutATPModesAndStatus" FixedToPoint="true">
+      <Path>
+        <Point X="13.75" Y="3.28" />
+        <Point X="13.75" Y="5.75" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.193" Y="0.622" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAQAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DMICom::DMIMessageOutATPModesAndStatus">
+    <Position X="11.75" Y="0.5" Width="4" />
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ATP::DMICom::DMIMessageOutATPModesAndStatus::DmiData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAAAgIAAIAgEhAQAACAAAEgACAAQAIAAQCADAAAAJAk=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ATP::DMICom::DMIDataProcessState">
+    <Position X="2" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_out.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

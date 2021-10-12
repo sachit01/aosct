@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <!-- Connection dialog default data-->
+  <TrainID>1</TrainID>
+  <SiteID>6</SiteID>
+  <RegionID>8</RegionID>
+  <!--<Connect>10.160.241.92:45000</Connect>-->
+  <Connect>127.0.0.1:30133</Connect>
+  <Timer>1</Timer>
+  <Timeout>10</Timeout>
+  <!-- All values below are necessary for TCCSim to work properly -->
+  <!-- Default PRR message in Messages folder -->
+  <PRRMessage>DefaultPRR.xml</PRRMessage>
+  <!-- Default Protocol version message in Messages folder -->
+  <ProtocolMessage>ProtocolVersion.xml</ProtocolMessage>
+  <!-- DriverLogonStatus message in Messages folder -->
+  <DLSMessage>DefaultDriverLogonStatus.xml</DLSMessage>
+  <DIValue>128</DIValue>
+  <!-- PositionReport value and error block -->
+  <!--<PRValue>PositionReport</PRValue>-->
+  <PRValue>132</PRValue>
+  <PRErrorBlock>ERROR_MESSAGE_DATA</PRErrorBlock>
+  <!-- Max length of received messages. Safety header + Message + CRC.
+       This is not bound to the length of outbound messages -->
+  <BufferLength>9000</BufferLength>
+  <!-- Should TCCSim autoconnect to saved properties upon startup. -->
+  <AutoConnect>True</AutoConnect>
+  <!-- Crc to use, the port selected in "Connect" must support this crc -->
+  <Crc>Region</Crc>
+  <!-- Minimum time that may be sent via the CommandMessage -->
+  <T_CLOCK_min>891514000</T_CLOCK_min>
+  <!-- AOSPC Remote control IP-->
+  <AOSRemoteInterfaceIP>127.0.0.1</AOSRemoteInterfaceIP>
+  <!-- AOSPC Remote control Port-->
+  <AOSRemoteInterfacePort>30198</AOSRemoteInterfacePort>
+</Config>

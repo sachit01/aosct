@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Class Name="ATP::Kernel::AbstractATPApplication">
+    <Position X="8" Y="3" Width="3.25" />
+    <Members>
+      <Method Name="AbstractATPApplication" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAIAAAAAAAAgAAAAAAIAIAAAAAACAAABA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\kernel\atp_application\abstract_atp_application.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::AbstractApplicationBase">
+    <Position X="3.25" Y="3" Width="3" />
+    <Members>
+      <Method Name="AbstractApplicationBase" Hidden="true" />
+      <Field Name="blockNr" Hidden="true" />
+      <Field Name="compList" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACCIAAECAAAAAEAAAQAAAAAAAAEAAAIEgA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\application\abstract_application_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

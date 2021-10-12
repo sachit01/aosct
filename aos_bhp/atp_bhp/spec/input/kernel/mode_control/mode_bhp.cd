@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Kernel::LocationModeBHP">
+    <Position X="0.75" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAQAACAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\kernel\mode_control\location_mode_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::TrainConfigModeBHP">
+    <Position X="3.75" Y="3.5" Width="4.5" />
+    <Members>
+      <Field Name="abortLastCarBrakeTestButtonPressed" Hidden="true" />
+      <Field Name="abortLastCarBrakeTestConfirmed" Hidden="true" />
+      <Field Name="brakePressureDidDrop" Hidden="true" />
+      <Field Name="brakePressureDidNotDrop" Hidden="true" />
+      <Method Name="checkBrakePressureLocoBelowPsb" Hidden="true" />
+      <Field Name="confirmTrainLoadedStateNeeded" Hidden="true" />
+      <Field Name="confirmTrainLoadedWaitCycles" Hidden="true" />
+      <Method Name="getBrakePressureDropTimeout" Hidden="true" />
+      <Method Name="handleAbortBrakeTestActions" Hidden="true" />
+      <Method Name="handleTrainLoadedConfirmation" Hidden="true" />
+      <Field Name="lastCarBrakeTestIsPending" Hidden="true" />
+      <Field Name="lastCarBrakeTestPending" Hidden="true" />
+      <Field Name="startTimeToConfirmAbortOfLastCarBrakeTest" Hidden="true" />
+      <Field Name="trainLoadedStatusRequested" Hidden="true" />
+      <Field Name="waitForBrakePressureTimer" Hidden="true" />
+      <Field Name="waitingFeedbackFromOBRD" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>SgAACBgAAIQABOAggAAggAEEEBABAoDACEgAAEAASAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\kernel\mode_control\train_config_mode_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::LocationMode" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hDBIAJAAAAQygqAACAEiEAAAQBAAAAkQAAQAQBABSBA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\kernel\mode_control\location_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::TrainConfigMode" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SCgAQAEAECAABOgAABmgmMkoEABCQAgYAGSMwAAAzdQ=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\kernel\mode_control\train_config_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::AbstractMode" Collapsed="true">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAxAAIAAQCYAAICEAAEBEEAAUAAIAKsQCAQIwBBBSIA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\kernel\mode_control\abstract_mode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

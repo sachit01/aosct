@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATC::AbstractEventHandler">
+    <Position X="3.5" Y="1" Width="3" />
+    <Members>
+      <Method Name="AbstractEventHandler" Hidden="true" />
+      <Field Name="activeEventList" Hidden="true" />
+      <Field Name="applyEB" Hidden="true" />
+      <Field Name="applySB" Hidden="true" />
+      <Field Name="dmiEvents" Hidden="true" />
+      <Field Name="ebReleaser" Hidden="true" />
+      <Method Name="getMaxEventActiveTime" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Method Name="logEvent" Hidden="true" />
+      <Field Name="logEventRelease" Hidden="true" />
+      <Field Name="maxActiveEvents" Hidden="true" />
+      <Field Name="maxDMIEvents" Hidden="true" />
+      <Field Name="maxTCCEvents" Hidden="true" />
+      <Field Name="modeChangeToSBS" Hidden="true" />
+      <Field Name="modeChangeToSHT" Hidden="true" />
+      <Field Name="sbReleaser" Hidden="true" />
+      <Field Name="standstillEventActiveCounter" Hidden="true" />
+      <Field Name="tcc2Events" Hidden="true" />
+      <Field Name="tcc3Events" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Struct Name="ATC::AbstractEventHandler::EventListItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\event_handler\abstract_event_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAJECgAEAQCEIBIAAGgAIABABEACAAIREFAABAAFCBE=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\event_handler\abstract_event_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent">
+    <Position X="7.75" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="ProcComponent" Hidden="true" />
+      <Method Name="run" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

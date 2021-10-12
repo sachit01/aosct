@@ -1,0 +1,274 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{8bfc0e21-8464-450a-9573-cc19da06c389}</ProjectGuid>
+			<MainSource>Dmi.dpr</MainSource>
+			<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<DCC_DependencyCheckOutputName>output\Mmi.exe</DCC_DependencyCheckOutputName>
+			<ProjectVersion>12.3</ProjectVersion>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Release</Config>
+			<Platform>Win32</Platform>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UsePackage>vclimg;vcl;vclx;dbrtl;Rave90VCL;bdertl;VclSmp;rtl;svnui;svn;TeeUI;TeeDB;Tee;vclactnband;vcldb;vcldbx;vcltouch;xmlrtl;dsnap;dsnapcon;vclib;ibxpress;adortl;IndyCore;IndySystem;IndyProtocols;inet;intrawebdb_110_150;Intraweb_110_150;vclie;inetdb;webdsnap;websnap;inetdbbde;inetdbxpress;soaprtl;vclribbon;dbexpress;DbxCommonDriver;DbxClientDriver;AzureCloud;DBXInterBaseDriver;DBXMySQLDriver;dbxcds;CodeSiteExpressVcl;mmi;CButtonp;panel;modbevelp</DCC_UsePackage>
+			<DCC_ExeOutput>output</DCC_ExeOutput>
+			<DCC_UnitSearchPath>Components\Color button\dcu;Components\TModBevel\dcu;Components\panel\dcu;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_DcuOutput>dcu</DCC_DcuOutput>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<Version>7.0</Version>
+			<DCC_DebugInformation>False</DCC_DebugInformation>
+			<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<Version>7.0</Version>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_ResourcePath>Components\Color button\dcu;Components\TModBevel\dcu;Components\panel\dcu;$(DCC_ResourcePath)</DCC_ResourcePath>
+			<DCC_ObjPath>Components\Color button\dcu;Components\TModBevel\dcu;Components\panel\dcu;$(DCC_ObjPath)</DCC_ObjPath>
+			<DCC_IncludePath>Components\Color button\dcu;Components\TModBevel\dcu;Components\panel\dcu;$(DCC_IncludePath)</DCC_IncludePath>
+			<DCC_ObjOutput>dcu</DCC_ObjOutput>
+			<DCC_HppOutput>dcu</DCC_HppOutput>
+		</PropertyGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Parameters>
+						<Parameters Name="HostApplication">P:\aos_bhp\dmi_bhp\Implementation\output\Dmi.exe</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">4</VersionInfo>
+						<VersionInfo Name="MinorVer">2</VersionInfo>
+						<VersionInfo Name="Release">68</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1053</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Bombardier Transportation</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">MMI</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">4.2.68.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName">MMI Interflow</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright">Bombardier Transportation Signal AB</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename">MMI.exe</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductName">MMI</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments">Trainborne driver panel</VersionInfoKeys>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">Dmi.dpr</Source>
+					</Source>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k150.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp150.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+				<ModelSupport>False</ModelSupport>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<ItemGroup>
+			<DelphiCompile Include="Dmi.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<RcCompile Include="Resource\MMIAreaB\MMIAreaB.rc">
+				<ContainerId>RC</ContainerId>
+				<ContainerId>RC</ContainerId>
+				<Form>MMIAreaB.res</Form>
+			</RcCompile>
+			<RcCompile Include="Resource\MMIAreaD\MMIAreaD.rc">
+				<ContainerId>RC</ContainerId>
+				<ContainerId>RC</ContainerId>
+				<Form>MMIAreaD.res</Form>
+			</RcCompile>
+			<RcCompile Include="Resource\MMI\MMIResources.rc">
+				<ContainerId>RC</ContainerId>
+				<ContainerId>RC</ContainerId>
+				<Form>MMIResources.res</Form>
+			</RcCompile>
+			<DCCReference Include="UnitFullScreenMsg.pas">
+				<Form>FormFullScreenMsg</Form>
+			</DCCReference>
+			<DCCReference Include="UnitFlash.pas">
+				<Form>FormFlash</Form>
+			</DCCReference>
+			<DCCReference Include="MMIStd.pas"/>
+			<DCCReference Include="MMITypes.pas"/>
+			<DCCReference Include="UnitExchange.pas"/>
+			<DCCReference Include="MMIareaA.pas"/>
+			<DCCReference Include="MMIareaB.pas"/>
+			<DCCReference Include="MMIareaC.pas"/>
+			<DCCReference Include="MMIareaD.pas"/>
+			<DCCReference Include="UnitTrainVsTrack.pas">
+				<Form>FormTrainVsTrack</Form>
+			</DCCReference>
+			<DCCReference Include="KeyboardUnitNumeric.pas">
+				<Form>OSDKeyboardNumericWinControl</Form>
+			</DCCReference>
+			<DCCReference Include="UnitViewLog.pas">
+				<Form>FormViewLog</Form>
+			</DCCReference>
+			<DCCReference Include="UnitMMIFrame.pas">
+				<Form>FormMMIFrame</Form>
+			</DCCReference>
+			<DCCReference Include="KeyboardUnit.pas">
+				<Form>OSDKeyboardWinControl</Form>
+			</DCCReference>
+			<DCCReference Include="UnitUnregForm.pas">
+				<Form>FormUnreg</Form>
+			</DCCReference>
+			<DCCReference Include="UnitStartupHistory.pas">
+				<Form>FormStartUpHistory</Form>
+			</DCCReference>
+			<DCCReference Include="UnitChangeLogLevel.pas">
+				<Form>FormChangeLogLevel</Form>
+			</DCCReference>
+			<DCCReference Include="UnitCommLost.pas">
+				<Form>FormCommLost</Form>
+			</DCCReference>
+			<DCCReference Include="UnitSelectArea.pas">
+				<Form>FormSelectArea</Form>
+			</DCCReference>
+			<DCCReference Include="UnitMainLayer1.pas">
+				<Form>FormMainLayer1</Form>
+			</DCCReference>
+			<DCCReference Include="UnitDMIDataModule.pas">
+				<Form>DataModuleDMI</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UnitNewTrainName.pas">
+				<Form>FormNewTrainName</Form>
+			</DCCReference>
+			<DCCReference Include="UnitMainLayer2.pas">
+				<Form>FormMainLayer2</Form>
+			</DCCReference>
+			<DCCReference Include="UnitMainArea.pas">
+				<Form>FormMainArea</Form>
+			</DCCReference>
+			<DCCReference Include="UnitMainLayer3.pas">
+				<Form>FormMainLayer3</Form>
+			</DCCReference>
+			<DCCReference Include="UnitNoMAControlled.pas">
+				<Form>FormNoMAControlled</Form>
+			</DCCReference>
+			<DCCReference Include="UnitLogin.pas">
+				<Form>FormLogin</Form>
+			</DCCReference>
+			<DCCReference Include="UnitManualConfiguration.pas">
+				<Form>FormManualConfiguration</Form>
+			</DCCReference>
+			<DCCReference Include="UnitReReg.pas">
+				<Form>FormReRegistration</Form>
+			</DCCReference>
+			<DCCReference Include="UnitAtpMessages.pas">
+				<Form>FormAtpMessages</Form>
+			</DCCReference>
+			<DCCReference Include="UnitPowerDown.pas">
+				<Form>FormPowerDown</Form>
+			</DCCReference>
+			<DCCReference Include="UnitSafetyHalt.pas">
+				<Form>FormSafetyHalt</Form>
+			</DCCReference>
+			<DCCReference Include="UnitTrainComposition.pas">
+				<Form>FormTrainComposition</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmSleepModeExit.pas">
+				<Form>FormConfirmExitSleepingMode</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmCancelRegArea.pas">
+				<Form>FormConfirmCancelRegArea</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmFreeRollingClear.pas">
+				<Form>FormConfirmFreeRollingClear</Form>
+			</DCCReference>
+			<DCCReference Include="UnitSleepingModeForm.pas">
+				<Form>FormSleepingMode</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmRejectSetup.pas">
+				<Form>FormConfirmRejectSetup</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmATPMode.pas">
+				<Form>FormConfirmNewATPMode</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmMAAccept.pas">
+				<Form>FormConfirmMAAccept</Form>
+			</DCCReference>
+			<DCCReference Include="UnitAutomaticConfiguration.pas">
+				<Form>FormAutomaticConfiguration</Form>
+			</DCCReference>
+			<DCCReference Include="UnitRadioChannel.pas">
+				<Form>FormRadioChannel</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmDepartureTest.pas">
+				<Form>FormConfirmDepartureTest</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmBrakeTest.pas">
+				<Form>FormConfirmBrakeTest</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmTrainIntegrity.pas">
+				<Form>FormConfirmTrainIntegrity</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmLoadedStatus.pas">
+				<Form>FormConfirmLoadedStatus</Form>
+			</DCCReference>
+			<DCCReference Include="UnitAbortLastCarBrakeTest.pas">
+				<Form>FormAbortLastCarBrakeTest</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmAbortLastCarBrakeTest.pas">
+				<Form>FormConfirmAbortLastCarBrake</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmTachometer1Failure.pas">
+				<Form>FormConfirmTachometer1Failure</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmTachometer2Failure.pas">
+				<Form>FormConfirmTachometer2Failure</Form>
+			</DCCReference>
+			<DCCReference Include="UnitConfirmDopplerRadarFailure.pas">
+				<Form>FormConfirmDopplerRadarFailure</Form>
+			</DCCReference>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	</Project>

@@ -1,0 +1,68 @@
+*** 2011-12-08 Ver 2.0.0 ***
+
+
+- New layout with tab-sheets etc. 
+
+- The columns Timestamp and Source (Tabsheet Log) are no longer visible unless specified visible in Ini-file. 
+[View] 
+Timestamp=0 
+Source=0 
+
+- The log-file path is now configurable in Ini-file. Default is same path as application. 
+- The log-files are automatically deleted when older than PurgeDays (specified in Ini-file) 
+[Log] 
+Path=d:\log 
+PurgeDays=30 
+
+- The text in the visible log is now displayed using a font with fixed-width characters in order to preserve columns in log-text. 
+
+- RU pos,size and state is now saved in Ini-file (instead of Dsk-file) 
+
+
+*** 2011-12-09 Ver 2.0.1 ***
+- Rebuilt for .Net 3.5
+- Minor text changes
+
+*** 2012-01-12 Ver 2.0.2 ***
+- Changed to "Courier New" - font in listview because the "Arial monospaced" previously used 
+is not available in most computers.
+
+*** 2012-01-26 Ver 2.0.3 ***
+- Fixed formatted timestamps for clients as YYYY-MM-DD HH:MM:SS
+- Changed column widths for Clients view
+- Set keep-alive option on sockets in order to detect "dead" remote sockets.
+
+*** 2012-03-21 Ver 2.0.4 ***
+- Increased MAX_CLIENT_CONNECTIONS 10->20  
+- Cleaned up parsing of received log-lines
+
+*** 2013-05-30 Ver 2.1.0 ***
+New items on popup-menu and tool-bar:
+CopyToClipboard - Copy selected lines to clipboard
+Select all - Select all lines 
+
+Logged line:
+ini-file option 
+[Log]
+Source=0 
+
+to include/exclude(default) Source IP from logged line. 
+
+*** 2013-12-17 Ver 2.1.1 ***
+Write RU signature (including version) to log-file 
+- at RU startup
+- at the beginning of each daily file
+
+
+*** 2018-05-04 Ver 3.0.0 ***
+Version 3.0, extended with support for RU. Name change from N-JRU to RU
+
+
+*** 2019-03-14 Ver 3.0.0 ***
+Bugfix - Clear button
+Added allowed range for LogPurgeDays paramters (1-180 days) and changed default value to 7 days
+
+*** 2020-03-25 Ver 3.2 ***
+Produces a log message if gzip cannot be run.
+Corrected to delete all old RU .log and .gz files.
+The RU log files are now named like "RU_2020-03-25_12.00.log".

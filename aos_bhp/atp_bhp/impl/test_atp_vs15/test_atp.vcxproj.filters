@@ -1,0 +1,2276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ATPShared">
+      <UniqueIdentifier>{9858ebf8-9d2f-42f9-944f-f5608ec8831d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ATC">
+      <UniqueIdentifier>{70772da1-6f00-40ba-953c-67abd83af1c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ATC\Simulation">
+      <UniqueIdentifier>{e4a312bb-62c4-491b-90bf-47f6226cf023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ATC\Simulation\VIOH Sim">
+      <UniqueIdentifier>{978cf778-618a-461c-890f-f95dc35d6129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ATC\Simulation\COD Sim">
+      <UniqueIdentifier>{3d945545-d092-4562-8250-3ac3e477d49f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Position">
+      <UniqueIdentifier>{3cbec5b7-860b-4a3f-97c8-5e8517e1d744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Position\Position">
+      <UniqueIdentifier>{62f41496-8075-4ab8-a576-fd2289572cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Position\Decode">
+      <UniqueIdentifier>{75e5a9bf-0901-4a87-b922-a1eb07aeb1b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Position\Odometry">
+      <UniqueIdentifier>{45b65177-eed1-400b-99d5-0c479e6d0e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Supervision">
+      <UniqueIdentifier>{71fbc530-389a-4dd6-aa24-3a7057f774da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Supervision\Brake">
+      <UniqueIdentifier>{f127b9f6-c5a9-4241-a33f-34224d4b2ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data Storage">
+      <UniqueIdentifier>{83cca420-92f1-41b5-8f9c-1365a34721da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data Storage\Targets">
+      <UniqueIdentifier>{0c6984a0-f2be-4973-8e15-9e39495b6b9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data Storage\TSetup">
+      <UniqueIdentifier>{df00a6cc-67e7-4250-ad9c-0ed141fb730c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data Storage\Tracks">
+      <UniqueIdentifier>{b9883d13-b519-43b5-bec5-5c3c153df8a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel">
+      <UniqueIdentifier>{0cb8f2f0-f09c-49a3-a490-d669ef6d27d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Message Handler">
+      <UniqueIdentifier>{cf6e94be-5587-42a3-b28d-172383c3fe06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\ATPApplication">
+      <UniqueIdentifier>{d893749b-9a45-4eb8-b519-bfef8586d183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\ModeControl">
+      <UniqueIdentifier>{2ecab05c-6f81-4c63-a310-063f84b76b34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BasicIP">
+      <UniqueIdentifier>{26356b0d-57e2-4b94-a707-ab2154b93f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{a2104ca6-e06c-4553-a003-46a6a1d586d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO\LocoIO">
+      <UniqueIdentifier>{3cc36b67-ba9f-44e7-a823-dee357a291fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event Handler">
+      <UniqueIdentifier>{8b2ee30f-4a0d-4928-8ad4-a1b603c48f0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ATPMain">
+      <UniqueIdentifier>{5c6607d1-fc50-4fb3-a619-7327bc9df9c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config">
+      <UniqueIdentifier>{8286be0e-5b01-4ba7-ab89-8d4e938821e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config\ConfigItem">
+      <UniqueIdentifier>{363988a8-33ef-4d7c-9fec-d9d550e260a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Console">
+      <UniqueIdentifier>{453d17f7-fee1-44a8-97bb-6ad28b97c1a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Log Handler">
+      <UniqueIdentifier>{01fbd609-8907-4d2c-a2cc-66432887f6ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{4cbf7f71-370a-41e4-9c4c-9894034a8a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO\BTMHandler">
+      <UniqueIdentifier>{acc2317d-d7b4-4a8d-bdb2-812c01d738f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ATC\Simulation\OPC Sim">
+      <UniqueIdentifier>{2596b927-c2a3-4800-9d24-2f166bd9135d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DMI Comm">
+      <UniqueIdentifier>{571aa996-9eb1-457c-a96a-e22d4742d9f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DMI Comm\DMIChannel">
+      <UniqueIdentifier>{cc053ac2-5a86-440f-a38a-fb644cbe9d08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DMI Comm\DMIHandler">
+      <UniqueIdentifier>{e58e2752-526a-47b2-b795-9b5406214590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Supervision\TargetCalculation">
+      <UniqueIdentifier>{45f0e3eb-b281-4c84-b1d4-282abf6bff04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Supervision\Supervise">
+      <UniqueIdentifier>{cd008a81-7929-4ffa-989a-484d7d243fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Supervision\BrakeCurveCalculations">
+      <UniqueIdentifier>{96fb73dc-9122-4051-8e76-16e823a3e3e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ATC\Math">
+      <UniqueIdentifier>{be66e0da-a263-4b21-b52c-72de9b0cbee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Support">
+      <UniqueIdentifier>{bae56b6b-a3ed-4484-948e-056fa6849415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Support\Cross Compare">
+      <UniqueIdentifier>{783cdd3e-8e23-4c80-9ca9-720562a29050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AnalyzerIF">
+      <UniqueIdentifier>{8f623b08-cb37-47da-9afb-496aafb24e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Train Gateway">
+      <UniqueIdentifier>{fea5f44a-2b32-4d8f-9a5f-b16afd058cc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Train Gateway\VehicleCom">
+      <UniqueIdentifier>{c1e4cd67-a96c-480b-a3b5-cb29b8a1ab26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Train Gateway\TIMS">
+      <UniqueIdentifier>{74991446-30a1-46f2-b01b-0f9cc712fad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Train Gateway\TIC">
+      <UniqueIdentifier>{d3dacda4-5e36-41ad-96d6-3fa6ad8ddd33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Radio Comm">
+      <UniqueIdentifier>{bf54c349-388b-413b-a007-3573ddfc9084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Radio Comm\RadioChannel">
+      <UniqueIdentifier>{46952acb-1016-401f-9e49-7669ce76f387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Radio Comm\RadioHandler">
+      <UniqueIdentifier>{5ad389ca-b3e5-490a-a538-7addddf808a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Message Handler\Class Diagrams">
+      <UniqueIdentifier>{05a38f4b-7eff-4050-8618-6a2fa1e8bb42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Position\Odometry\Class Diagrams">
+      <UniqueIdentifier>{b98d8d87-c01e-4650-8660-efa449353467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Train Gateway\TIC\ClassDiagram">
+      <UniqueIdentifier>{063397a6-cc12-47ca-9f85-d57a39106b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AnalyzerIF\Class Diagrams">
+      <UniqueIdentifier>{f4ed33da-1901-42d6-866c-93896fb27e9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Console\Class Diagrams">
+      <UniqueIdentifier>{3915e2e9-d969-4ba0-94e2-0bc9c24dbdfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config\Class Diagrams">
+      <UniqueIdentifier>{f8ae4af7-fc66-4669-b479-d263da2990e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO\LocoIO\ClassDiagrams">
+      <UniqueIdentifier>{0c00beff-a3b7-4258-9075-2d6d9ad9496a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data Storage\Tracks\Class Diagram">
+      <UniqueIdentifier>{a5c08d0f-058f-4254-b26e-d05720351524}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_atp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\coding_templates\abstract_source_template.cpp">
+      <Filter>Source Files\ATPShared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\coding_templates\source_template.cpp">
+      <Filter>Source Files\ATPShared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\fixed_size_mempool\fixed_size_pool_manager.cpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\vfw_sim\vfw_sim.cpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\simulation\vioh_sim\vioh_client_sim.cpp">
+      <Filter>Source Files\ATC\Simulation\VIOH Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\simulation\vioh_sim\vioh_sim.cpp">
+      <Filter>Source Files\ATC\Simulation\VIOH Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\simulation\cod_sim\cod_sim.cpp">
+      <Filter>Source Files\ATC\Simulation\COD Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\radio_comm\radio_channel\radio_channel.cpp">
+      <Filter>Source Files\Radio Comm\RadioChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\radio_comm\radio_handler\abstract_radio_handler.cpp">
+      <Filter>Source Files\Radio Comm\RadioHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\radio_comm\radio_handler\radio_handler.cpp">
+      <Filter>Source Files\Radio Comm\RadioHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\position\position\abstract_position.cpp">
+      <Filter>Source Files\Position\Position</Filter>
+    </ClCompile>
+    <ClCompile Include="..\position\position\position.cpp">
+      <Filter>Source Files\Position\Position</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\position\decode\abstract_decode.cpp">
+      <Filter>Source Files\Position\Decode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\position\decode\decode.cpp">
+      <Filter>Source Files\Position\Decode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\position\odometry\abstract_odometry.cpp">
+      <Filter>Source Files\Position\Odometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\position\odometry\odometry.cpp">
+      <Filter>Source Files\Position\Odometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\supervision\brake\abstract_brake.cpp">
+      <Filter>Source Files\Supervision\Brake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\supervision\brake\brake.cpp">
+      <Filter>Source Files\Supervision\Brake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\abstract_targets.cpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\base_target.cpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\conditional_target.cpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\gradient_target.cpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\primary_target.cpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\speed_target.cpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\data_storage\targets\targets.cpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\track_data_item_target.cpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\abstract_tsetup.cpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_bhp\impl\data_storage\tsetup\tsetup.cpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tracks\abstract_tracks.cpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tracks\balise.cpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tracks\track.cpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\data_storage\tracks\tracks.cpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_message_handler.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_in.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_out.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\message_handler\message_handler.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_em_alert.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_driver_information.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\atp_application\abstract_atp_application.cpp">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\atp_application\atp_application.cpp">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\abstract_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\abstract_mode_control.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\balise_search_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\driver_login_seq.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\emergency_alert_seq.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\mode_control\mode_control.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\normal_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\power_up_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\train_config_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\train_registration_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\basic_ip\abstract_basic_ip.cpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_bhp\impl\basic_ip\basic_ip.cpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\loco_io\abstract_loco_io.cpp">
+      <Filter>Source Files\IO\LocoIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\input_output\loco_io\loco_io.cpp">
+      <Filter>Source Files\IO\LocoIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\event_handler\abstract_event_handler.cpp">
+      <Filter>Source Files\Event Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\event_handler\event.cpp">
+      <Filter>Source Files\Event Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event_handler\event_handler.cpp">
+      <Filter>Source Files\Event Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\atp_main\atp_main.cpp">
+      <Filter>Source Files\ATPMain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\config\abstract_config.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\abstract_config_base.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\config.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\base_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\bool_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\int16_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\int32_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\int64_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\int8_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\string_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\uint16_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\uint32_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\uint64_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\uint8_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\console\abstract_console.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\console\console.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\console\trace_interface.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\log_handler\abstract_log_handler.cpp">
+      <Filter>Source Files\Log Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\log_handler\log_handler.cpp">
+      <Filter>Source Files\Log Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\util\atc_util.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\bds_sim\bds_sim.cpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\abstract_btm_handler.cpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_command_message.cpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_status_message.cpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_telegram.cpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_bhp\impl\input_output\btm_handler\btm_handler.cpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\simulation\opc_sim\opc_sim.cpp">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_handler.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_channel\dmi_channel.cpp">
+      <Filter>Source Files\DMI Comm\DMIChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_in.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_out.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_startup.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_version.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_driver_id_and_password.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_handler.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\supervision\target_calculation\target_calculation.cpp">
+      <Filter>Source Files\Supervision\TargetCalculation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\supervision\supervise\supervise.cpp">
+      <Filter>Source Files\Supervision\Supervise</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\supervision\supervise\abstract_supervise.cpp">
+      <Filter>Source Files\Supervision\Supervise</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\supervision\target_calculation\abstract_target_calculation.cpp">
+      <Filter>Source Files\Supervision\TargetCalculation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\supervision\brake_curve_calculations\brake_calculations.cpp">
+      <Filter>Source Files\Supervision\BrakeCurveCalculations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_common.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_command_message.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_driver_logon_status.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_movement_authority.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_position_report_request.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_revoke_em_alert.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_stop_train.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_train_setup.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_unregistration.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_driver_info.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_manual_config_selected.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_loco_vs_train_dir.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_vs_track_dir_wanted.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_config_data.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_abort_setup.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_position_report.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_registration_area.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_startup_message.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_train_registration_information.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\math\atc_math.cpp">
+      <Filter>Source Files\ATC\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_erase_planning_area.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_name.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_status.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_to_atp_data.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_loco_vs_train_dir.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_confirmation.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_vs_track_dir.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_speed_and_distance.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\power_down_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\unregistered_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\atc_base\atc_base.cpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_gradient_data_list.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_notification.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\application\abstract_application_base.cpp">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_dmi_startup_history.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\safe_brake_to_stop_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\support\cross_compare\cross_compare.cpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\safety_halt_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\support\cross_compare\abstract_cross_compare.cpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\yard_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_object.cpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\analyzer_if\abstract_analyzer_if.cpp">
+      <Filter>Source Files\AnalyzerIF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\analyzer_if\analyzer_if.cpp">
+      <Filter>Source Files\AnalyzerIF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\abstract_lcs_message_in.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\abstract_lcs_message_out.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_common.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_handler.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_in_train_status.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_status.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\vehicle_com.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\train_gateway\vehicle_com\abstract_vehicle_com.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\emp_message.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\ipaddress_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_output.cpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_output_channel.cpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\bs_wrapper.cpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\cc_wrapper.cpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dispatcher\impl\class_d\class_d_transceiver.cpp">
+      <Filter>Source Files\Train Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="vfw_sim_atp_bhp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_approximate_position.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_area_request.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_ato_remote_control.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_configuration_data.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_external_data.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_join_command.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_path.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_possession_acknowledge.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_protocol_version.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_reject_configuration.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_shunting_acknowledge.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_yard_acknowledge.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_protocol_version.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_area_request.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_ato_remote_control.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_configuration_data.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_external_data.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_join_command.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_path.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_possession_acknowledge.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_protocol_version.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_reject_configuration.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_shunting_acknowledge.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_yard_acknowledge.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_protocol_version.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_predefined_text_message.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\spl_handler.cpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_text_message.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_area_request.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_registration_area.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\simulation\opc_sim\otelib_spl_stub.cpp">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\simulation\opc_sim\otelib_spl_sim_api.cpp">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\possession_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\location_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\staff_responsible_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_route_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\sleeping_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_atp_command.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\tims\tims.cpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_ma.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\train_gateway\tims\abstract_tims.cpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_path.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_time.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\train_gateway\tic\abstract_tic.cpp">
+      <Filter>Source Files\Train Gateway\TIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\util\atc_bit_unpacker.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\tic\tic.cpp">
+      <Filter>Source Files\Train Gateway\TIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_in_ecpb_train_composition.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_train_composition.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\join_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\split_mode.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\radio_comm\radio_channel\radio_channel_central.cpp">
+      <Filter>Source Files\Radio Comm\RadioChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_rereg_selected.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\mode_request_seq.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_name.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\config_mode_request_seq.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\possession_mode_request_seq.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_mode_request_seq.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\yard_mode_request_seq.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_warning_curve.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\train_setup.cpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_vehicle_data.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_vehicle_types.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_vehicle_data.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\message_handler\radio_message_in_movement_authority_bhp.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\message_handler\radio_message_in_command_message_bhp.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\message_handler\radio_message_in_path_bhp.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\message_handler\radio_message_in_train_setup_bhp.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\message_handler\radio_message_out_position_report_bhp.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\mode_control\train_config_mode_bhp.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\mode_control\location_mode_bhp.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_location_data.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability.cpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\data_storage\tsetup\brakeability_bhp.cpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system.cpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system_steps.cpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system_default.cpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\vehicle_setup.cpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states_bhp.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_train_weight_bhp.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_eta_bhp.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_unconditional_shortening.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_radio_channel_bhp.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\tims\obrd_message_handler.cpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\tims\obrd_message_in.cpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\tims\obrd_message_in_protocol_version.cpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\tims\obrd_message_in_obrd_unit_status.cpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\tims\obrd_message_out.cpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\tims\obrd_message_out_protocol_version.cpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\tims\obrd_message_out_reject_message.cpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\tims\obrd_message_common.cpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_loaded.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\supervised_target.cpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\message_handler\radio_message_out_startup_message_bhp.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_typical_config_bhp.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\message_handler\radio_message_in_configuration_data_bhp.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\data_storage\targets\track_data_item_target_bhp.cpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list_bhp.cpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_types.cpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\config_file.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel\mode_control\driver_login_seq_bhp.cpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\data_storage\tsetup\brakeability_brake_system_steps_bhp.cpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_in_rcl_status.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_rcl_information.cpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\atp_core\impl\atp_shared\atp_base.hpp">
+      <Filter>Source Files\ATPShared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\atp_shared\atp_types.hpp">
+      <Filter>Source Files\ATPShared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\atc_base\atc_base.hpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\atc_types\atc_types.hpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\fixed_size_mempool\fixed_size_pool_manager.hpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\vioh_sim\vioh_sim.hpp">
+      <Filter>Source Files\ATC\Simulation\VIOH Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\cod_sim\cod_sim.hpp">
+      <Filter>Source Files\ATC\Simulation\COD Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\cod_sim\config_response.hpp">
+      <Filter>Source Files\ATC\Simulation\COD Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\cod_sim\simulated_movement.hpp">
+      <Filter>Source Files\ATC\Simulation\COD Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\radio_comm\radio_channel\radio_channel.hpp">
+      <Filter>Source Files\Radio Comm\RadioChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\radio_comm\radio_channel\radio_message.hpp">
+      <Filter>Source Files\Radio Comm\RadioChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\radio_comm\radio_handler\abstract_radio_handler.hpp">
+      <Filter>Source Files\Radio Comm\RadioHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\radio_comm\radio_handler\radio_handler.hpp">
+      <Filter>Source Files\Radio Comm\RadioHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\position\position\abstract_position.hpp">
+      <Filter>Source Files\Position\Position</Filter>
+    </ClInclude>
+    <ClInclude Include="..\position\position\position.hpp">
+      <Filter>Source Files\Position\Position</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\position\decode\abstract_decode.hpp">
+      <Filter>Source Files\Position\Decode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\position\decode\decode.hpp">
+      <Filter>Source Files\Position\Decode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\position\odometry\abstract_odometry.hpp">
+      <Filter>Source Files\Position\Odometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\position\odometry\odometry.hpp">
+      <Filter>Source Files\Position\Odometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\brake\abstract_brake.hpp">
+      <Filter>Source Files\Supervision\Brake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\supervision\brake\brake.hpp">
+      <Filter>Source Files\Supervision\Brake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\abstract_targets.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\base_target.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\conditional_target.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\gradient_target.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\primary_target.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\speed_target.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data_storage\targets\targets.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\track_data_item_target.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\abstract_tsetup.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\train_setup.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_bhp\impl\data_storage\tsetup\tsetup.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tracks\abstract_tracks.hpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\data_storage\tracks\abstract_tracks_specification.hpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tracks\balise.hpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tracks\track.hpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data_storage\tracks\tracks.hpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\data_storage\tracks\tracks_specification.hpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_message_handler.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_in.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_out.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\message_handler\message_handler.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_em_alert.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_driver_information.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\atp_application\abstract_atp_application.hpp">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\atp_application\atp_application.hpp">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\kernel\atp_application\atp_application_specification.hpp">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\abstract_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\abstract_mode_control.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\kernel\mode_control\abstract_mode_control_specification.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\balise_search_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\driver_login_seq.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\emergency_alert_seq.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\mode_control\mode_control.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\kernel\mode_control\mode_control_specification.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\normal_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\power_up_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\train_config_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\train_registration_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\basic_ip\abstract_basic_ip.hpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_bhp\impl\basic_ip\basic_ip.hpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp">
+      <Filter>Source Files\IO\LocoIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\event_handler\abstract_event_handler.hpp">
+      <Filter>Source Files\Event Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\event_handler\abstract_event_handler_specification.hpp">
+      <Filter>Source Files\Event Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\event_handler\event.hpp">
+      <Filter>Source Files\Event Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\event_handler\event_handler.hpp">
+      <Filter>Source Files\Event Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\event_handler\event_handler_specification.hpp">
+      <Filter>Source Files\Event Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\config\abstract_config.hpp">
+      <Filter>Source Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\abstract_config_base.hpp">
+      <Filter>Source Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\config\config.hpp">
+      <Filter>Source Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\base_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\uint8_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\console\abstract_console.hpp">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\console\console.hpp">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\console\trace_interface.hpp">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\log_handler\abstract_log_handler.hpp">
+      <Filter>Source Files\Log Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\log_handler\log_handler.hpp">
+      <Filter>Source Files\Log Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\log_handler\log_handler_specification.hpp">
+      <Filter>Source Files\Log Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>System header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>System header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\util\atc_util.hpp">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\abstract_btm_handler.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_command_message.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_status_message.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_telegram.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_types.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_bhp\impl\input_output\btm_handler\btm_handler.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\input_output\btm_handler\btm_handler_specification.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\input_output\btm_handler\abstract_btm_handler_specification.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\opc_sim\opc_sim.hpp">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_channel\dmi_channel.hpp">
+      <Filter>Source Files\DMI Comm\DMIChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\opc_sim\simulated_btm_messages.hpp">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_channel\dmi_message.hpp">
+      <Filter>Source Files\DMI Comm\DMIChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_handler.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_handler.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\supervision\target_calculation\target_calculation.hpp">
+      <Filter>Source Files\Supervision\TargetCalculation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\supervision\supervise\supervise.hpp">
+      <Filter>Source Files\Supervision\Supervise</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\supervision\target_calculation\target_calculation_specification.hpp">
+      <Filter>Source Files\Supervision\TargetCalculation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\supervision\supervise\supervise_specification.hpp">
+      <Filter>Source Files\Supervision\Supervise</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\supervise\abstract_supervise.hpp">
+      <Filter>Source Files\Supervision\Supervise</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\target_calculation\abstract_target_calculation.hpp">
+      <Filter>Source Files\Supervision\TargetCalculation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\brake_curve_calculations\brake_calculations.hpp">
+      <Filter>Source Files\Supervision\BrakeCurveCalculations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\supervision\supervise\abstract_supervise_specification.hpp">
+      <Filter>Source Files\Supervision\Supervise</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\supervision\target_calculation\abstract_target_calculation_specification.hpp">
+      <Filter>Source Files\Supervision\TargetCalculation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\dmi_comm\dmi_handler\abstract_dmi_handler_specification.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\dmi_comm\dmi_handler\dmi_handler_specification.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_in.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_out.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_startup.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_version.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_driver_id_and_password.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\vfw\channel_config.hpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_common.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_command_message.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_driver_logon_status.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_movement_authority.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_position_report_request.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_revoke_em_alert.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_stop_train.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_train_setup.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_unregistration.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_driver_info.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_manual_config_selected.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_loco_vs_train_dir.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_vs_track_dir_wanted.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_config_data.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_abort_setup.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_position_report.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_registration_area.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_startup_message.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_train_registration_information.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_erase_planning_area.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_name.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_status.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_to_atp_data.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_loco_vs_train_dir.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_confirmation.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_vs_track_dir.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_speed_and_distance.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_types.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\math\atc_math.hpp">
+      <Filter>Source Files\ATC\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\vfw_sim\vfw_sim.hpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\power_down_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\unregistered_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_notification.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\application\abstract_application_base.hpp">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_gradient_data_list.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\application\abstract_application_base_specification.hpp">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\kernel\atp_application\abstract_atp_application_specification.hpp">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_dmi_startup_history.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\safe_brake_to_stop_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\support\cross_compare\cross_compare.hpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\safety_halt_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\abstract_cross_compare.hpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\yard_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_object.hpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\crc32\crc32.hpp">
+      <Filter>System header Files</Filter>
+      <Filter>System header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\radio_comm\radio_handler\abstract_radio_handler_specification.hpp">
+      <Filter>Source Files\Radio Comm\RadioHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\radio_comm\radio_handler\radio_handler_specification.hpp">
+      <Filter>Source Files\Radio Comm\RadioHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\position\position\abstract_position_specification.hpp">
+      <Filter>Source Files\Position\Position</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\position\position\position_specification.hpp">
+      <Filter>Source Files\Position\Position</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\radio_comm\radio_channel\radio_channel_specification.hpp">
+      <Filter>Source Files\Radio Comm\RadioChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\support\cross_compare\abstract_cross_compare_specification.hpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\abstract_lcs_message_in.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\abstract_lcs_message_out.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_common.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_handler.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_in_train_status.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_status.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\vehicle_com.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\train_gateway\vehicle_com\abstract_vehicle_com.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\emp_message.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\ipaddress_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\support\cross_compare\cross_compare_specification.hpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_output.hpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_output_channel.hpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\bs_wrapper.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\cc_wrapper.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\dispatcher\impl\class_d\class_d_transceiver.hpp">
+      <Filter>Source Files\Train Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\dispatcher\impl\class_d\class_d_types.hpp">
+      <Filter>Source Files\Train Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_approximate_position.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_area_request.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_ato_remote_control.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_configuration_data.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_external_data.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_join_command.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_path.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_possession_acknowledge.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_protocol_version.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_reject_configuration.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_shunting_acknowledge.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_yard_acknowledge.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_protocol_version.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_area_request.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_ato_remote_control.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_configuration_data.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_external_data.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_join_command.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_path.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_possession_acknowledge.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_protocol_version.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_reject_configuration.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_shunting_acknowledge.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_yard_acknowledge.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_protocol_version.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_predefined_text_message.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_text_message.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_area_request.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_registration_area.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\possession_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\otelib_splstub.h">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\pl_driver_types.h">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\spl_a_errorcodes.h">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\spl_api_interface.h">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\spl_sim_api_interface.h">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\spla_protocol_parameters.h">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\FFFIS_Types.h">
+      <Filter>System header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\location_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\staff_responsible_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_route_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\sleeping_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\kernel\message_handler\abstract_message_handler_specification.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\atc_types\dmi_atc_event_codes.hpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\kernel\message_handler\message_handler_specification.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_event_codes.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_atp_command.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_bhp_event_codes.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_ma.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\data_storage\tsetup\abstract_tsetup_specification.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_path.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\data_storage\tsetup\tsetup_specification.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\train_gateway\vehicle_com\vehicle_com_specification.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\data_storage\targets\targets_specification.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tims\tims.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\train_gateway\tims\abstract_tims.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\train_gateway\tims\abstract_tims_specification.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\train_gateway\tims\tims_specification.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_time.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\util\atc_bit_unpacker.hpp">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\train_gateway\tic\abstract_tic_specification.hpp">
+      <Filter>Source Files\Train Gateway\TIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\train_gateway\tic\abstract_tic.hpp">
+      <Filter>Source Files\Train Gateway\TIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\train_gateway\tic\tic_specification.hpp">
+      <Filter>Source Files\Train Gateway\TIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tic\tic.hpp">
+      <Filter>Source Files\Train Gateway\TIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_in_ecpb_train_composition.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_train_composition.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\join_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\split_mode.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\input_output\loco_io\abstract_loco_io_specification.hpp">
+      <Filter>Source Files\IO\LocoIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\input_output\loco_io\loco_io_specification.hpp">
+      <Filter>Source Files\IO\LocoIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\radio_comm\radio_channel\radio_channel_central.hpp">
+      <Filter>Source Files\Radio Comm\RadioChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\console\abstract_console_specification.hpp">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\console\console_specification.hpp">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\dmi_comm\dmi_channel\dmi_channel_specification.hpp">
+      <Filter>Source Files\DMI Comm\DMIChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\position\decode\abstract_decode_specification.hpp">
+      <Filter>Source Files\Position\Decode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\position\decode\decode_specification.hpp">
+      <Filter>Source Files\Position\Decode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\position\odometry\odometry_specification.hpp">
+      <Filter>Source Files\Position\Odometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\position\odometry\abstract_odometry_specification.hpp">
+      <Filter>Source Files\Position\Odometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\data_storage\targets\targets_specification.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\supervision\brake\brake_specification.hpp">
+      <Filter>Source Files\Supervision\Brake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\supervision\brake\abstract_brake_specification.hpp">
+      <Filter>Source Files\Supervision\Brake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\basic_ip\abstract_basic_ip_specification.hpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\log_handler\abstract_log_handler_specification.hpp">
+      <Filter>Source Files\Log Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\train_gateway\vehicle_com\abstract_vehicle_com_specification.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_rereg_selected.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_name.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\mode_request_seq.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\analyzer_if\abstract_analyzer_if.hpp">
+      <Filter>Source Files\AnalyzerIF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\spl_handler.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\analyzer_if\analyzer_if.hpp">
+      <Filter>Source Files\AnalyzerIF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\config_mode_request_seq.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\possession_mode_request_seq.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_mode_request_seq.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\yard_mode_request_seq.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_array.hpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_complex.hpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_warning_curve.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\message_handler\radio_message_in_movement_authority_bhp.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\message_handler\radio_message_types_bhp.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\message_handler\radio_message_in_command_message_bhp.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\message_handler\radio_message_in_path_bhp.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\message_handler\radio_message_in_train_setup_bhp.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\message_handler\radio_message_out_position_report_bhp.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_vehicle_data.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_vehicle_types.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_vehicle_data.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\mode_control\train_config_mode_bhp.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_location_data.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\mode_control\location_mode_bhp.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data_storage\tsetup\brakeability_bhp.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\vehicle_setup.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states_bhp.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\analyzer_if\abstract_analyzer_if_event_ids.hpp">
+      <Filter>Source Files\AnalyzerIF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\math\atc_math_event_ids.hpp">
+      <Filter>Source Files\ATC\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\cod_sim\cod_sim_event_ids.hpp">
+      <Filter>Source Files\ATC\Simulation\COD Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\opc_sim\opc_sim_event_ids.hpp">
+      <Filter>Source Files\ATC\Simulation\OPC Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\simulation\vioh_sim\vioh_sim_event_ids.hpp">
+      <Filter>Source Files\ATC\Simulation\VIOH Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tracks\abstract_tracks_event_ids.hpp">
+      <Filter>Source Files\Data Storage\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\abstract_tsetup_event_ids.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data_storage\tsetup\tsetup_event_ids.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_handler_event_ids.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\abstract_btm_handler_event_ids.hpp">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\loco_io\abstract_loco_io_event_ids.hpp">
+      <Filter>Source Files\IO\LocoIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\input_output\loco_io\loco_io_event_ids.hpp">
+      <Filter>Source Files\IO\LocoIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_message_handler_event_ids.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\abstract_mode_control_event_ids.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\mode_control\mode_control_event_ids.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\position\decode\abstract_decode_event_ids.hpp">
+      <Filter>Source Files\Position\Decode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\position\odometry\abstract_odometry_event_ids.hpp">
+      <Filter>Source Files\Position\Odometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\position\position\abstract_position_event_ids.hpp">
+      <Filter>Source Files\Position\Position</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\brake\abstract_brake_event_ids.hpp">
+      <Filter>Source Files\Supervision\Brake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\supervision\brake\brake_event_ids.hpp">
+      <Filter>Source Files\Supervision\Brake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\brake_curve_calculations\brake_calculations_event_ids.hpp">
+      <Filter>Source Files\Supervision\BrakeCurveCalculations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\supervise\abstract_supervise_event_ids.hpp">
+      <Filter>Source Files\Supervision\Supervise</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\target_calculation\abstract_target_calculation_event_ids.hpp">
+      <Filter>Source Files\Supervision\TargetCalculation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\supervision\target_calculation\target_calculation_event_ids.hpp">
+      <Filter>Source Files\Supervision\TargetCalculation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\abstract_cross_compare_event_ids.hpp">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\train_gateway\tic\abstract_tic_event_ids.hpp">
+      <Filter>Source Files\Train Gateway\TIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\vehicle_com_event_ids.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_train_weight_bhp.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_eta_bhp.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_radio_channel_bhp.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_unconditional_shortening.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tims\obrd_message_handler.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tims\obrd_message_in.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tims\obrd_message_in_protocol_version.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tims\obrd_message_in_obrd_unit_status.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tims\obrd_message_out.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tims\obrd_message_out_protocol_version.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tims\obrd_message_common.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tims\obrd_message_out_reject_message.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\tims\tims_event_ids.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_loaded.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\train_gateway\tims\abstract_tims_event_ids.hpp">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\supervised_target.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\message_handler\radio_message_out_startup_message_bhp.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_typical_config_bhp.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\message_handler\radio_message_in_configuration_data_bhp.hpp">
+      <Filter>Source Files\Kernel\Message Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\basic_ip\basic_ip_specification.hpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data_storage\targets\track_data_item_target_bhp.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list_bhp.hpp">
+      <Filter>Source Files\DMI Comm\DMIHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\console\atp_version.hpp">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\atp_main\atp_main.hpp">
+      <Filter>Source Files\ATPMain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\atp_main\atp_main_specification.hpp">
+      <Filter>Source Files\ATPMain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\spl_handler.h">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\analyzer_if\analyzer_if_specification.hpp">
+      <Filter>Source Files\AnalyzerIF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\analyzer_if\abstract_analyzer_if_specification.hpp">
+      <Filter>Source Files\AnalyzerIF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\atc_all\atc_all_specification.hpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\atp_core_all\atp_core_all_specification.hpp">
+      <Filter>Source Files\ATPShared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\atp_bhp_all\atp_bhp_all_specification.hpp">
+      <Filter>Source Files\ATPShared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\atp_application\atp_version.hpp">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\template\template_specification.hpp">
+      <Filter>Source Files\ATPShared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\config_file.hpp">
+      <Filter>Source Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel\mode_control\driver_login_seq_bhp.hpp">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_in_rcl_status.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_in_train_status.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_rcl_information.hpp">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system_default.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system_steps.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data_storage\tsetup\brakeability_brake_system_steps_bhp.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system.hpp">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\util\atc_bit_checker.hpp">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\atc\impl\coding_templates\abstract_header_template.hpp">
+      <Filter>Source Files\ATPShared</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\coding_templates\header_template.hpp">
+      <Filter>Source Files\ATPShared</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\coding_templates\task_description_template.txt">
+      <Filter>Source Files\ATPShared</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\input_output\loco_io\loco_io.hpp">
+      <Filter>Source Files\IO\LocoIO</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\spec\input\config\abstract_config_base_specification.hpp">
+      <Filter>Source Files\Config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atp_core\spec\input\config\abstract_config_specification.hpp">
+      <Filter>Source Files\Config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\spec\input\config\config_specification.hpp">
+      <Filter>Source Files\Config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\config\bool_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\config\int16_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\config\int32_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\config\int64_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\config\int8_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\config\string_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\config\uint16_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\config\uint32_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\config\uint64_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atp_core\spec\input\data_storage\targets\abstract_targets_specification.hpp">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\coding_templates\task_description_template.txt">
+      <Filter>Source Files\Data Storage\Targets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\spec\input\kernel\message_handler\message_handler_class_diagram.cd">
+      <Filter>Source Files\Kernel\Message Handler\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\spec\input\data_storage\tsetup\tsetup.cd">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\data_storage\tsetup\abstract_tsetup.cd">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </None>
+    <None Include="..\..\spec\input\config\config.cd">
+      <Filter>Source Files\Config\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\config\abstract_config_class.cd">
+      <Filter>Source Files\Config\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\..\atc\spec\input\config\abstract_config_base_class.cd">
+      <Filter>Source Files\Config\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\..\atc\spec\input\config\config_item_classes.cd">
+      <Filter>Source Files\Config\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\..\atc\spec\input\analyzer_if\abstract_analyzer_if_class_diagram.cd">
+      <Filter>Source Files\AnalyzerIF\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\spec\input\analyzer_if\analyzerif_class_diagram.cd">
+      <Filter>Source Files\AnalyzerIF\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\train_gateway\tic\abstract_tic_class_diagram.cd">
+      <Filter>Source Files\Train Gateway\TIC\ClassDiagram</Filter>
+    </None>
+    <None Include="..\..\spec\input\train_gateway\tic\tic_class_diagram.cd">
+      <Filter>Source Files\Train Gateway\TIC\ClassDiagram</Filter>
+    </None>
+    <None Include="..\..\spec\input\console\console_class_diagram.cd">
+      <Filter>Source Files\Console\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\..\atc\spec\input\console\abstract_console_class_diagram.cd">
+      <Filter>Source Files\Console\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\spec\input\supervision\supervise\supervise_class_diagram.cd">
+      <Filter>Source Files\Supervision\Supervise</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\support\cross_compare\abstract_cross_compare_class_diagram.cd">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </None>
+    <None Include="..\..\spec\input\support\cross_compare\cross_compare_class_diagram.cd">
+      <Filter>Source Files\Support\Cross Compare</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\supervision\supervise\abstract_supervise_class_diagram.cd">
+      <Filter>Source Files\Supervision\Supervise</Filter>
+    </None>
+    <None Include="..\..\spec\input\radio_comm\radio_handler\radio_handler.cd">
+      <Filter>Source Files\Radio Comm\RadioHandler</Filter>
+    </None>
+    <None Include="..\..\spec\input\train_gateway\vehicle_com\lcs_message_handler_class_diagram.cd">
+      <Filter>Source Files\Train Gateway\VehicleCom</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\supervision\supervise\brake_calculations_class_diagram.cd">
+      <Filter>Source Files\Supervision\BrakeCurveCalculations</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\input_output\btm_handler\abstract_btm_handler_class_diagram.cd">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </None>
+    <None Include="..\..\spec\input\input_output\btm_handler\btm_handler_class_diagram.cd">
+      <Filter>Source Files\IO\BTMHandler</Filter>
+    </None>
+    <None Include="..\..\spec\input\input_output\loco_io\loco_io_class_diagram.cd">
+      <Filter>Source Files\IO\LocoIO\ClassDiagrams</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\impl\input_output\loco_io\abstract_loco_io_class_diagram.cd">
+      <Filter>Source Files\IO\LocoIO\ClassDiagrams</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\position\decode\abstract_decode_class_diagram.cd">
+      <Filter>Source Files\Position\Decode</Filter>
+    </None>
+    <None Include="..\..\spec\input\position\decode\decode_class_diagram.cd">
+      <Filter>Source Files\Position\Decode</Filter>
+    </None>
+    <None Include="..\..\..\atc\spec\input\log_handler\abstract_log_handler_class_diagram.cd">
+      <Filter>Source Files\Log Handler</Filter>
+    </None>
+    <None Include="..\..\spec\input\log_handler\log_handler_class_diagram.cd">
+      <Filter>Source Files\Log Handler</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\train_gateway\tims\abstract_tims_class_diagram.cd">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </None>
+    <None Include="..\..\spec\input\train_gateway\tims\tims_class_diagram.cd">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\kernel\atp_application\abstract_atp_application.cd">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </None>
+    <None Include="..\..\spec\input\kernel\atp_application\atp_application_component.cd">
+      <Filter>Source Files\Kernel\ATPApplication</Filter>
+    </None>
+    <None Include="P:\aos_bhp\atp_bhp\spec\input\data_storage\tracks\tracks_class_diagram.cd">
+      <Filter>Source Files\Data Storage\Tracks\Class Diagram</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\data_storage\tracks\abstract_tracks_class_diagram.cd">
+      <Filter>Source Files\Data Storage\Tracks\Class Diagram</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\data_storage\tsetup\breakeability.cd">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\data_storage\tsetup\brakesystem.cd">
+      <Filter>Source Files\Data Storage\TSetup</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\position\odometry\abstract_odometry_class_diagram.cd">
+      <Filter>Source Files\Position\Odometry\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\spec\input\position\odometry\odometry_class_diagram.cd">
+      <Filter>Source Files\Position\Odometry\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\spec\input\train_gateway\tims\obrd_message_handler_class_diagram.cd">
+      <Filter>Source Files\Train Gateway\TIMS</Filter>
+    </None>
+    <None Include="..\..\spec\input\kernel\mode_control\mode_bhp.cd">
+      <Filter>Source Files\Kernel\ModeControl</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\radio_comm\radio_handler\abstract_radio_handler.cd">
+      <Filter>Source Files\Radio Comm\RadioHandler</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\radio_comm\radio_channel\radio_channel_Class_Diagram.cd">
+      <Filter>Source Files\Radio Comm\RadioChannel</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\kernel\message_handler\abstract_message_handler_class_diagram.cd">
+      <Filter>Source Files\Kernel\Message Handler\Class Diagrams</Filter>
+    </None>
+    <None Include="..\..\..\atp_core\spec\input\supervision\target_calculation\abstract_target_calculation_class_diagram.cd">
+      <Filter>Source Files\Supervision\TargetCalculation</Filter>
+    </None>
+    <None Include="..\..\spec\input\supervision\target_calculation\target_calculation_class_diagram.cd">
+      <Filter>Source Files\Supervision\TargetCalculation</Filter>
+    </None>
+  </ItemGroup>
+</Project>

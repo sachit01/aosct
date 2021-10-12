@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AreaRequest value="19">
+  <Block type="AREAS" value="42" />
+  <NID_AREA>1</NID_AREA>
+  <Block type="AREAS" value="42" />
+  <NID_AREA>2</NID_AREA>
+  <M_END_OF_MESSAGE></M_END_OF_MESSAGE>
+</AreaRequest>

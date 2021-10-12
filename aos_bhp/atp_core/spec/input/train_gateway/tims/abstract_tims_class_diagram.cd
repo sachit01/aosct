@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATP::TG::AbstractTIMS">
+    <Position X="3" Y="0.5" Width="2.5" />
+    <Members>
+      <Method Name="AbstractTIMS" Hidden="true" />
+      <Field Name="historySize" Hidden="true" />
+      <Field Name="inhibitButtonPressed" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="isRouteTypeJoin" Hidden="true" />
+      <Field Name="lastCarBaliseWindow" Hidden="true" />
+      <Field Name="lastCarPosition" Hidden="true" />
+      <Field Name="lastMovementDir" Hidden="true" />
+      <Field Name="latestPositionIndex" Hidden="true" />
+      <Field Name="manualConfirmationReceived" Hidden="true" />
+      <Field Name="manualConfirmationStartTime" Hidden="true" />
+      <Field Name="maxHistorySize" Hidden="true" />
+      <Field Name="positionHistory" Hidden="true" />
+      <Field Name="positionReport" Hidden="true" />
+      <Field Name="prevTIMSStatus" Hidden="true" />
+      <Field Name="rearPosition" Hidden="true" />
+      <Field Name="resumeButtonPressed" Hidden="true" />
+      <Method Name="setTimsAvailable" Hidden="true" />
+      <Method Name="setTimsConfirmed" Hidden="true" />
+      <Method Name="setTimsStatus" Hidden="true" />
+      <Field Name="timsAvailable" Hidden="true" />
+      <Field Name="timsBrokenEvent" Hidden="true" />
+      <Field Name="timsConfirmed" Hidden="true" />
+      <Field Name="timsIntactEvent" Hidden="true" />
+      <Field Name="timsStatus" Hidden="true" />
+      <Field Name="timsSupervision" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ATP::TG::AbstractTIMS::PositionSample" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::TG::AbstractTIMS::PositionReport" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::TG::AbstractTIMS::OdoPositionData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AABCAokGVKiJoACiLEBATAAGEECIQRIAAkAACggVWAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <Members>
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="ProcComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ATP::TG::TIMSStatus">
+    <Position X="6.25" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ATP::TG::TIMSSupervision">
+    <Position X="6.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\train_gateway\tims\abstract_tims.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

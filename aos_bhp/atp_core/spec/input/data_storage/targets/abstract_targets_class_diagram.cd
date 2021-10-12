@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::DS::TargetErrorHandler">
+    <Position X="6.25" Y="7.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::AbstractTargets">
+    <Position X="0.5" Y="1.75" Width="4.25" />
+    <Members>
+      <Method Name="AbstractTargets" Hidden="true" />
+      <Field Name="adhesionValue" Hidden="true" />
+      <Field Name="baseTargetNULLError" Hidden="true" />
+      <Field Name="contSizeExceeded" Hidden="true" />
+      <Field Name="coreInitDone" Hidden="true" />
+      <Field Name="curCeilingSpeed" Hidden="true" />
+      <Field Name="curEBCeilingSpeed" Hidden="true" />
+      <Field Name="curFWCeilingSpeed" Hidden="true" />
+      <Field Name="curGradient" Hidden="true" />
+      <Field Name="currentSafetyMargin" Hidden="true" />
+      <Field Name="curSBCeilingSpeed" Hidden="true" />
+      <Field Name="curSWCeilingSpeed" Hidden="true" />
+      <Field Name="curTrackGradient" Hidden="true" />
+      <Field Name="delTargetAtStandStill" Hidden="true" />
+      <Field Name="freeBlocksGrad" Hidden="true" />
+      <Field Name="freeBlocksPrim" Hidden="true" />
+      <Field Name="freeBlocksSpeed" Hidden="true" />
+      <Field Name="freeBlocksSupervised" Hidden="true" />
+      <Field Name="freeBlocksTDI" Hidden="true" />
+      <Field Name="freeRollingTargetActive" Hidden="true" />
+      <Field Name="inconsistencyTargetTrack" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initNotDone" Hidden="true" />
+      <Method Name="insertMaTargetInList" Hidden="true" />
+      <Method Name="insertMaTargetInListInternal" Hidden="true" />
+      <Method Name="insertSupvTargetInList" Hidden="true" />
+      <Method Name="insertSupvTargetInListInternal" Hidden="true" />
+      <Field Name="isTargetDeletedInList" Hidden="true" />
+      <Method Name="manageEMSInput" Hidden="true" />
+      <Field Name="maTargetList" Hidden="true" />
+      <Field Name="nullPointerAcess" Hidden="true" />
+      <Field Name="odometerInvalidTargetActive" Hidden="true" />
+      <Field Name="oldFreeBlocksGrad" Hidden="true" />
+      <Field Name="oldFreeBlocksPrim" Hidden="true" />
+      <Field Name="oldFreeBlocksSpeed" Hidden="true" />
+      <Field Name="oldFreeBlocksSupervised" Hidden="true" />
+      <Field Name="oldFreeBlocksTDI" Hidden="true" />
+      <Field Name="reachedPrimaryTarget" Hidden="true" />
+      <Field Name="sameTargetIdError" Hidden="true" />
+      <Field Name="smSpeedRestriction" Hidden="true" />
+      <Field Name="supposedTravelDir" Hidden="true" />
+      <Field Name="supvTargetList" Hidden="true" />
+      <Field Name="targetListChanged" Hidden="true" />
+      <Field Name="targetListFullError" Hidden="true" />
+      <Field Name="targetListReversed" Hidden="true" />
+      <Method Name="traceLog" Hidden="true" />
+      <Field Name="twoSupGradAtSamePos" Hidden="true" />
+      <Field Name="unknownTargetDirectionError" Hidden="true" />
+      <Method Name="veryDetailedLog" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QJgvxjpCzEAVMhBBEHIBGAni06SOnBKQw69vgF4qQS4=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="ATP::DS::maTargetPtr" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::DS::MaTargetList" Collapsed="true">
+    <Position X="6.25" Y="5" Width="6" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::DS::ConstMaTargetIterator" Collapsed="true">
+    <Position X="6.25" Y="1" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::DS::MaTargetIterator" Collapsed="true">
+    <Position X="10.5" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::DS::MaTargetRevIterator" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::DS::supervisedTargetPtr" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::DS::SupervisedTargetList" Collapsed="true">
+    <Position X="6.25" Y="4.25" Width="7.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::DS::ConstSupervisedTargetIterator" Collapsed="true">
+    <Position X="6.25" Y="6.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::DS::SupervisedTargetIterator" Collapsed="true">
+    <Position X="6.25" Y="5.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::DS::SupervisedTargetRevIterator" Collapsed="true">
+    <Position X="6.25" Y="2.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\abstract_targets.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

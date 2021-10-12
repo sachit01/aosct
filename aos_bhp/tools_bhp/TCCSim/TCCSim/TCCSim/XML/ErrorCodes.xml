@@ -1,0 +1,3242 @@
+<Root>
+<Row>
+<ST_Error_Code>3212123</ST_Error_Code>
+<Description>Log Event vsprintf Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>3212126</ST_Error_Code>
+<Description>Unknown IP_Cmd in YardMode: %s</Description>
+</Row>
+<Row>
+<ST_Error_Code>3212117</ST_Error_Code>
+<Description>printf Buffer 250ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256918</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>Error taking semaphore,(AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256914</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3252793</ST_Error_Code>
+<Description>Config data is not valid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3232792</ST_Error_Code>
+<Description>Config data is not valid,startup</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236926</ST_Error_Code>
+<Description>bs_writePAMem busy!</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>%s boundary check failed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256920</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236690</ST_Error_Code>
+<Description>Error taking semaphore,(AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>3212112</ST_Error_Code>
+<Description>Log Event Buffer 100ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>3232794</ST_Error_Code>
+<Description>Config data Unit Id mismatch,startup</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256924</ST_Error_Code>
+<Description>Failed to create semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256919</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3216278</ST_Error_Code>
+<Description>MMI buffer overflow</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>Error giving semaphore (AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>3195729</ST_Error_Code>
+<Description>Failed to create semaphore,(AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>3212114</ST_Error_Code>
+<Description>Log Event Buffer 500ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>3212319</ST_Error_Code>
+<Description>local_safe_sprintf vsprintf Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236268</ST_Error_Code>
+<Description>Undefined error grade</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236927</ST_Error_Code>
+<Description>Error at bs_readPAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236925</ST_Error_Code>
+<Description>bs_writePAMem busy!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3246921</ST_Error_Code>
+<Description>A/B diff,config data to PAMEM!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256910</ST_Error_Code>
+<Description>Error at bs_writePAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3212124</ST_Error_Code>
+<Description>Trace vsprintf Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>3212118</ST_Error_Code>
+<Description>printf Buffer 500ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236298</ST_Error_Code>
+<Description>Log failure unknown.</Description>
+</Row>
+<Row>
+<ST_Error_Code>3252795</ST_Error_Code>
+<Description>Config data Unit Id mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256908</ST_Error_Code>
+<Description>Error at bs_readPAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236928</ST_Error_Code>
+<Description>bs_readPAMem busy!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3195729</ST_Error_Code>
+<Description>Invalid boolB!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3252797</ST_Error_Code>
+<Description>Config data Version mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256911</ST_Error_Code>
+<Description>Error at bs_writePAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236929</ST_Error_Code>
+<Description>PAMEM data invalid or version or unit mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256915</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256916</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3212113</ST_Error_Code>
+<Description>Log Event Buffer 250ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>3232796</ST_Error_Code>
+<Description>Config data Version mismatch,startup</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256912</ST_Error_Code>
+<Description>A/B diff,config data from PAMEM!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256917</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256913</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3246922</ST_Error_Code>
+<Description>A/B diff,In config data stored to main buffer!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3256909</ST_Error_Code>
+<Description>Error at bs_readPAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236691</ST_Error_Code>
+<Description>Error giving semaphore (AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236931</ST_Error_Code>
+<Description>Pon Help String almost Full</Description>
+</Row>
+<Row>
+<ST_Error_Code>3236930</ST_Error_Code>
+<Description>Block Help String almost Full</Description>
+</Row>
+<Row>
+<ST_Error_Code>3195730</ST_Error_Code>
+<Description>Invalid boolA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3226258</ST_Error_Code>
+<Description>Wrong input parameter.</Description>
+</Row>
+<Row>
+<ST_Error_Code>3212116</ST_Error_Code>
+<Description>printf Buffer 100ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>Clearing alarm.</Description>
+</Row>
+<Row>
+<ST_Error_Code>3209825</ST_Error_Code>
+<Description>Pantograph Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>3252593</ST_Error_Code>
+<Description>Undefined ATP state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3209827</ST_Error_Code>
+<Description>Pantograph Moving Time-out</Description>
+</Row>
+<Row>
+<ST_Error_Code>3230305</ST_Error_Code>
+<Description>Unable to initialize connection to LCS</Description>
+</Row>
+<Row>
+<ST_Error_Code>3238500</ST_Error_Code>
+<Description>Unable to initialize connection to NJRU</Description>
+</Row>
+<Row>
+<ST_Error_Code>3209829</ST_Error_Code>
+<Description>LCS Battery power fail</Description>
+</Row>
+<Row>
+<ST_Error_Code>3252594</ST_Error_Code>
+<Description>Undefined ATP state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3199826</ST_Error_Code>
+<Description>Low Battery</Description>
+</Row>
+<Row>
+<ST_Error_Code>3209830</ST_Error_Code>
+<Description>Un-defined ATO mode</Description>
+</Row>
+<Row>
+<ST_Error_Code>3209828</ST_Error_Code>
+<Description>Trolley power Fail</Description>
+</Row>
+<Row>
+<ST_Error_Code>3218021</ST_Error_Code>
+<Description>Not connected to LCS!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3199832</ST_Error_Code>
+<Description>No usable VRef in freeroll.</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>Forwarding alarm to stationary.</Description>
+</Row>
+<Row>
+<ST_Error_Code>3240306</ST_Error_Code>
+<Description>Undefined ATO state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3232595</ST_Error_Code>
+<Description>debugText</Description>
+</Row>
+<Row>
+<ST_Error_Code>3238502</ST_Error_Code>
+<Description>Unable to initialize connection to Analyzer interface</Description>
+</Row>
+<Row>
+<ST_Error_Code>3208022</ST_Error_Code>
+<Description>LCS IP_write error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3244403</ST_Error_Code>
+<Description>Undefined ATO state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>3238501</ST_Error_Code>
+<Description>Unable to initialize connection to Yardmode</Description>
+</Row>
+<Row>
+<ST_Error_Code>1127259</ST_Error_Code>
+<Description>Log Event vsprintf Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>1127262</ST_Error_Code>
+<Description>Unknown IP_Cmd in YardMode: %s</Description>
+</Row>
+<Row>
+<ST_Error_Code>1127253</ST_Error_Code>
+<Description>printf Buffer 250ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200726</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>Error taking semaphore,(AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200722</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180217</ST_Error_Code>
+<Description>Config data is not valid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160216</ST_Error_Code>
+<Description>Config data is not valid,startup</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180734</ST_Error_Code>
+<Description>bs_writePAMem busy!</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>%s boundary check failed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200728</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180498</ST_Error_Code>
+<Description>Error taking semaphore,(AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>1127248</ST_Error_Code>
+<Description>Log Event Buffer 100ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160218</ST_Error_Code>
+<Description>Config data Unit Id mismatch,startup</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200732</ST_Error_Code>
+<Description>Failed to create semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200727</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1131414</ST_Error_Code>
+<Description>MMI buffer overflow</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>Error giving semaphore (AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>1098577</ST_Error_Code>
+<Description>Failed to create semaphore,(AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>1127250</ST_Error_Code>
+<Description>Log Event Buffer 500ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>1127455</ST_Error_Code>
+<Description>local_safe_sprintf vsprintf Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151404</ST_Error_Code>
+<Description>Undefined error grade</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180735</ST_Error_Code>
+<Description>Error at bs_readPAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180733</ST_Error_Code>
+<Description>bs_writePAMem busy!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1190729</ST_Error_Code>
+<Description>A/B diff,config data to PAMEM!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200718</ST_Error_Code>
+<Description>Error at bs_writePAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1127260</ST_Error_Code>
+<Description>Trace vsprintf Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>1127254</ST_Error_Code>
+<Description>printf Buffer 500ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151434</ST_Error_Code>
+<Description>Log failure unknown.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180219</ST_Error_Code>
+<Description>Config data Unit Id mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200716</ST_Error_Code>
+<Description>Error at bs_readPAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180736</ST_Error_Code>
+<Description>bs_readPAMem busy!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1098577</ST_Error_Code>
+<Description>Invalid boolB!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180221</ST_Error_Code>
+<Description>Config data Version mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200719</ST_Error_Code>
+<Description>Error at bs_writePAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180737</ST_Error_Code>
+<Description>PAMEM data invalid or version or unit mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200723</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200724</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1127249</ST_Error_Code>
+<Description>Log Event Buffer 250ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160220</ST_Error_Code>
+<Description>Config data Version mismatch,startup</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200720</ST_Error_Code>
+<Description>A/B diff,config data from PAMEM!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200725</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200721</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1190730</ST_Error_Code>
+<Description>A/B diff,In config data stored to main buffer!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1200717</ST_Error_Code>
+<Description>Error at bs_readPAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180499</ST_Error_Code>
+<Description>Error giving semaphore (AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180739</ST_Error_Code>
+<Description>Pon Help String almost Full</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180738</ST_Error_Code>
+<Description>Block Help String almost Full</Description>
+</Row>
+<Row>
+<ST_Error_Code>1098578</ST_Error_Code>
+<Description>Invalid boolA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1141394</ST_Error_Code>
+<Description>Wrong input parameter.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1127252</ST_Error_Code>
+<Description>printf Buffer 100ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122778</ST_Error_Code>
+<Description>Odometer calibration not performed in time</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122759</ST_Error_Code>
+<Description>Configuration error,TCC requests TIC (not available)</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175931</ST_Error_Code>
+<Description>A/B diff,selectedTarget.routeType!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151947</ST_Error_Code>
+<Description>YardMode illegal message: Train Setup</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170041</ST_Error_Code>
+<Description>DX 2 outputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122830</ST_Error_Code>
+<Description>Unregister during re-registration!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134977</ST_Error_Code>
+<Description>DX selfTestToggleBit error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102723</ST_Error_Code>
+<Description>A/B diff,reConfigSelected!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122677</ST_Error_Code>
+<Description>A/B mismatch,manualConfigSelected!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1133156</ST_Error_Code>
+<Description>Invalid MMI message!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1155452</ST_Error_Code>
+<Description>queue init error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170043</ST_Error_Code>
+<Description>DX 4 outputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112734</ST_Error_Code>
+<Description>A/B diff,trainIntegrityGrantedByDriver!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170021</ST_Error_Code>
+<Description>ATO minor failure</Description>
+</Row>
+<Row>
+<ST_Error_Code>1145449</ST_Error_Code>
+<Description>queue full!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1139062</ST_Error_Code>
+<Description>Horn target buffer overrun.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106783</ST_Error_Code>
+<Description>A/B diff,atoReleasable</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106773</ST_Error_Code>
+<Description>A/B diff,emergencyBrakeFlag!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171916</ST_Error_Code>
+<Description>Recieved shunting MA in ATP mode OnLocation</Description>
+</Row>
+<Row>
+<ST_Error_Code>1172310</ST_Error_Code>
+<Description>A/B diff,EB_Requested!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134969</ST_Error_Code>
+<Description>DX SelfTestInputStatus8</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122674</ST_Error_Code>
+<Description>Second missed balise!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171927</ST_Error_Code>
+<Description>Rcv Train Setup when not in PowerUp or TrainConfig</Description>
+</Row>
+<Row>
+<ST_Error_Code>1172309</ST_Error_Code>
+<Description>A/B diff,hr2.state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196402</ST_Error_Code>
+<Description>A/B diff,BTIU Available!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122822</ST_Error_Code>
+<Description>Invalid target type!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130875</ST_Error_Code>
+<Description>A/B mismatch,CarStatusChangeTime</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112715</ST_Error_Code>
+<Description>A/B diff,staticSpeedList!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112733</ST_Error_Code>
+<Description>A/B diff,hornID!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122790</ST_Error_Code>
+<Description>Invalid direction in target!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122774</ST_Error_Code>
+<Description>Undefined route type in MA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122706</ST_Error_Code>
+<Description>A/B diff,trainConfigData!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1176432</ST_Error_Code>
+<Description>Error in bs_getClock().</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112742</ST_Error_Code>
+<Description>Odometer Invalid active mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196411</ST_Error_Code>
+<Description>A/B diff,drivingDir mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175941</ST_Error_Code>
+<Description>Invalid primary target!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130868</ST_Error_Code>
+<Description>A/B mismatch,timsAvailable</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170048</ST_Error_Code>
+<Description>Emergency Brake relay applied!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112727</ST_Error_Code>
+<Description>A/B diff,atoTargetList!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1143158</ST_Error_Code>
+<Description>ATP to MMI buffer overrun! Mem overwritten!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1184127</ST_Error_Code>
+<Description>Invalid targetspeed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175922</ST_Error_Code>
+<Description>A/B diff,atpIdling!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122764</ST_Error_Code>
+<Description>Route type error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160059</ST_Error_Code>
+<Description>VDX.in2.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122762</ST_Error_Code>
+<Description>Configuration error,TCC requests TIMS (not available)</Description>
+</Row>
+<Row>
+<ST_Error_Code>1126777</ST_Error_Code>
+<Description>Underconsumtion,EmergencyBrakeFlag!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102825</ST_Error_Code>
+<Description>Stop train rec. in not allowed mode!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122806</ST_Error_Code>
+<Description>Tracksection not found,next seq num</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170033</ST_Error_Code>
+<Description>DX 2 inputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1116769</ST_Error_Code>
+<Description>Servicebrake,insufficient deceleration!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112726</ST_Error_Code>
+<Description>A/B diff,atoTargetListLen!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160058</ST_Error_Code>
+<Description>VDX.hr1.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1157729</ST_Error_Code>
+<Description>Unable to initialize connection to Analyzer interface</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196427</ST_Error_Code>
+<Description>A/B diff,timsEmAlert!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122687</ST_Error_Code>
+<Description>A/B mismatch,targetListLen!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1143155</ST_Error_Code>
+<Description>Invalid MmiInvalidLocoVsTrainDir!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1119071</ST_Error_Code>
+<Description>Basic system token error.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175947</ST_Error_Code>
+<Description>Underconsumption Target!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122758</ST_Error_Code>
+<Description>Not allowed reason in Unreg message!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112725</ST_Error_Code>
+<Description>A/B diff,atoDrivingData!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112754</ST_Error_Code>
+<Description>BaliseDataChannel not available!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151920</ST_Error_Code>
+<Description>YardMode illegal message: Driver Logon</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134962</ST_Error_Code>
+<Description>DX SelfTestInputStatus1</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122685</ST_Error_Code>
+<Description>A/B mismatch,trainSetup!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1145450</ST_Error_Code>
+<Description>inbuf full!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122805</ST_Error_Code>
+<Description>Tracksection not found,odometer value</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170042</ST_Error_Code>
+<Description>DX 3 outputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130874</ST_Error_Code>
+<Description>A/B mismatch,carStatusList/Len</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122678</ST_Error_Code>
+<Description>A/B mismatch,locoVsTrainDir!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1116784</ST_Error_Code>
+<Description>Servicebrake,insufficient deceleration!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106781</ST_Error_Code>
+<Description>A/B diff,mmiReleasable</Description>
+</Row>
+<Row>
+<ST_Error_Code>1133164</ST_Error_Code>
+<Description>TICL_CarStatusListCount out of range!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170031</ST_Error_Code>
+<Description>DX 0 inputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151922</ST_Error_Code>
+<Description>YardMode illegal message: Movement Authority</Description>
+</Row>
+<Row>
+<ST_Error_Code>1176425</ST_Error_Code>
+<Description>COMATP2: TCC Error Log Buffer OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196416</ST_Error_Code>
+<Description>A/B diff,Odometer mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102694</ST_Error_Code>
+<Description>A/B mismatch,targetList(trainLengthDelay)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170040</ST_Error_Code>
+<Description>DX 1 outputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112735</ST_Error_Code>
+<Description>A/B diff,locationEndCeilingSpeedValid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122772</ST_Error_Code>
+<Description>Wrong routetype!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112692</ST_Error_Code>
+<Description>A/B mismatch,targetList(ceilingSpeed)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1172308</ST_Error_Code>
+<Description>A/B diff,hr1.state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134971</ST_Error_Code>
+<Description>DX SelfTestOutputStatus0</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171871</ST_Error_Code>
+<Description>Failed to create semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175938</ST_Error_Code>
+<Description>A/B diff,selectedTarget.targetGradient!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196401</ST_Error_Code>
+<Description>A/B diff,ATP2 State mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180057</ST_Error_Code>
+<Description>VDX.in2.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112679</ST_Error_Code>
+<Description>A/B mismatch,startUpMessageReady!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180047</ST_Error_Code>
+<Description>Emergency Brake relay applied!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122784</ST_Error_Code>
+<Description>Error in registration MA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122820</ST_Error_Code>
+<Description>Target type error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165932</ST_Error_Code>
+<Description>A/B diff,selectedTarget.brakeAbility!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122765</ST_Error_Code>
+<Description>Invalid route type!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122826</ST_Error_Code>
+<Description>Undef caller in convertTandPtoOdometer()</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122751</ST_Error_Code>
+<Description>Balise outside window!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134979</ST_Error_Code>
+<Description>Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160030</ST_Error_Code>
+<Description>Driver Logged Out</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106786</ST_Error_Code>
+<Description>Dispatcher release wanted.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130869</ST_Error_Code>
+<Description>A/B mismatch,timsOk</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122773</ST_Error_Code>
+<Description>Undefined direction in MA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112714</ST_Error_Code>
+<Description>A/B diff,staticSpeedListLen!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112794</ST_Error_Code>
+<Description>TIMS broken detected</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122832</ST_Error_Code>
+<Description>A/B diff,trailing position!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151891</ST_Error_Code>
+<Description>Power Up ignore message: Unregister</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122757</ST_Error_Code>
+<Description>Ceiling list overflow!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180060</ST_Error_Code>
+<Description>Emergency Brake relay applied!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165923</ST_Error_Code>
+<Description>A/B diff,sbRequested!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196430</ST_Error_Code>
+<Description>COMATP2Source: A/B diff ATP1_Status Mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196419</ST_Error_Code>
+<Description>A/B diff,TAC_SB_Req!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1135448</ST_Error_Code>
+<Description>Acknowledged MMI message queue full!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122821</ST_Error_Code>
+<Description>Invalid target type!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180046</ST_Error_Code>
+<Description>Emergency Brake relay not applied!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151919</ST_Error_Code>
+<Description>YardMode illegal message: ATORemoteControl</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102684</ST_Error_Code>
+<Description>A/B mismatch,carConfigListChanged!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196413</ST_Error_Code>
+<Description>A/B diff,Elog_MinorIssued!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1139070</ST_Error_Code>
+<Description>Wrong speedtarget sequence nbr from ACT!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1139074</ST_Error_Code>
+<Description>Track data buffer overrun.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112695</ST_Error_Code>
+<Description>A/B diff,targetList(targetPointOdometer)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112736</ST_Error_Code>
+<Description>A/B diff,locationEndCeilingSpeed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1133162</ST_Error_Code>
+<Description>TICL_CarStatusListCount out of range!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130870</ST_Error_Code>
+<Description>A/B mismatch,timsConfigured</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102720</ST_Error_Code>
+<Description>A/B diff,atpNotification!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171889</ST_Error_Code>
+<Description>External Data within the received PRR</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196420</ST_Error_Code>
+<Description>COMATP2 Vital Data Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134961</ST_Error_Code>
+<Description>DX SelfTestInputStatus0</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112690</ST_Error_Code>
+<Description>A/B mismatch,targetList(timeoutTimeStamp)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1119064</ST_Error_Code>
+<Description>Internal queue error 1.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196409</ST_Error_Code>
+<Description>A/B diff,slipTachoError_Req!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122816</ST_Error_Code>
+<Description>Undefined ATP mode!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151893</ST_Error_Code>
+<Description>Unregister message received in full ATP and idling</Description>
+</Row>
+<Row>
+<ST_Error_Code>1172311</ST_Error_Code>
+<Description>A/B diff,EB_RelayApplied!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134966</ST_Error_Code>
+<Description>DX SelfTestInputStatus5</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165936</ST_Error_Code>
+<Description>A/B diff,selectedTarget.ebTargetPointOdometer!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122813</ST_Error_Code>
+<Description>Tracksection not found in posreport!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165928</ST_Error_Code>
+<Description>Internal mathematic error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175942</ST_Error_Code>
+<Description>Invalid primary target!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1123157</ST_Error_Code>
+<Description>Undefined MMI button!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1155933</ST_Error_Code>
+<Description>A/B diff,selectedTarget.trainLengthDelay!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170034</ST_Error_Code>
+<Description>DX 3 inputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134972</ST_Error_Code>
+<Description>DX SelfTestOutputStatus1</Description>
+</Row>
+<Row>
+<ST_Error_Code>1174116</ST_Error_Code>
+<Description>A/B diff,targetInfo!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196408</ST_Error_Code>
+<Description>A/B diff,ResetVibrationSlipSlideAck mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160054</ST_Error_Code>
+<Description>VDX.in1.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170045</ST_Error_Code>
+<Description>DX transmission not valid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112711</ST_Error_Code>
+<Description>A/B diff,Reset Slip Indication!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151868</ST_Error_Code>
+<Description>CRC error on rec msg!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175928</ST_Error_Code>
+<Description>A/B diff,selectedTarget..trackSection!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122675</ST_Error_Code>
+<Description>A/B mismatch,atpMode!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171937</ST_Error_Code>
+<Description>Underconsumption of rec msg!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1143160</ST_Error_Code>
+<Description>Bundle to MMI exceeded MAX_COMMMI_BUNDLE!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122804</ST_Error_Code>
+<Description>Tracksection not found,odometer value</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106787</ST_Error_Code>
+<Description>Dispatcher release wanted.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1119065</ST_Error_Code>
+<Description>Internal queue error 2.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122708</ST_Error_Code>
+<Description>A/B diff,trainRegBlock!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1176421</ST_Error_Code>
+<Description>COMATP2 Non Vital Data Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112738</ST_Error_Code>
+<Description>A/B diff,trackItemListCount!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170062</ST_Error_Code>
+<Description>Emergency Brake relay not applied!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175924</ST_Error_Code>
+<Description>A/B diff,selectedTarget.dataValid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122785</ST_Error_Code>
+<Description>Exported target list not empty!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196429</ST_Error_Code>
+<Description>A/B diff,Start up test seq no mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1139068</ST_Error_Code>
+<Description>Remote control buffer overrun.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182314</ST_Error_Code>
+<Description>vdxPortInvalid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196401</ST_Error_Code>
+<Description>A/B diff,ATP2 Fatal Failure!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112781</ST_Error_Code>
+<Description>Pantograph in wrong position</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112691</ST_Error_Code>
+<Description>A/B mismatch,targetList(targetSpeed)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165943</ST_Error_Code>
+<Description>Position Beyond Target!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112737</ST_Error_Code>
+<Description>A/B diff,emergencyAlertStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1119061</ST_Error_Code>
+<Description>Error in bs_getClock().</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165935</ST_Error_Code>
+<Description>A/B diff,selectedTarget.sbTargetPointOdometer!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1164124</ST_Error_Code>
+<Description>Invalid permitted speed</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180053</ST_Error_Code>
+<Description>VDX.in1.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122783</ST_Error_Code>
+<Description>Panto target list overflow!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102722</ST_Error_Code>
+<Description>A/B diff,restartConfig!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112817</ST_Error_Code>
+<Description>Direction control Undefined!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130871</ST_Error_Code>
+<Description>A/B mismatch,timsEmAlert</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165934</ST_Error_Code>
+<Description>A/B diff,selectedTarget.targetPointOdometer!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122721</ST_Error_Code>
+<Description>A/B diff,disableTIC!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122776</ST_Error_Code>
+<Description>MA start from scratch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151923</ST_Error_Code>
+<Description>YardMode illegal message: Revoke EA</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122814</ST_Error_Code>
+<Description>Tracksection not found in posreport!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112689</ST_Error_Code>
+<Description>A/B mismatch,targetList(timeoutMamS)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182321</ST_Error_Code>
+<Description>A/B diff,hr1_Status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134965</ST_Error_Code>
+<Description>DX SelfTestInputStatus4</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175948</ST_Error_Code>
+<Description>Overconsumption CeilingSpeed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122792</ST_Error_Code>
+<Description>Target position outside track data</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134973</ST_Error_Code>
+<Description>DX SelfTestOutputStatus2</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122815</ST_Error_Code>
+<Description>Undefined ATPmode!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196417</ST_Error_Code>
+<Description>A/B diff,Slipslide mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151924</ST_Error_Code>
+<Description>YardMode illegal message: Stop Train</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151925</ST_Error_Code>
+<Description>YardMode illegal message: Unregister</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122775</ST_Error_Code>
+<Description>Invalid route type in MA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122827</ST_Error_Code>
+<Description>Invalid direction in target!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122803</ST_Error_Code>
+<Description>Tracksection not found,odometer value</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112696</ST_Error_Code>
+<Description>A/B diff,targetList(sbTargetPointOdometer)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122709</ST_Error_Code>
+<Description>A/B diff,odometerCalibration!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134978</ST_Error_Code>
+<Description>DX TransmissionValid=falseA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1119066</ST_Error_Code>
+<Description>Internal queue error 3.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182320</ST_Error_Code>
+<Description>A/B diff,in3.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170035</ST_Error_Code>
+<Description>DX 4 inputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112724</ST_Error_Code>
+<Description>A/B diff,odometerOffset!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196406</ST_Error_Code>
+<Description>A/B diff,Last Odometer Calibration Seq Mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170044</ST_Error_Code>
+<Description>DX 5 outputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1157732</ST_Error_Code>
+<Description>Unable to initialize connection to Yardmode</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175946</ST_Error_Code>
+<Description>Underconsumption ceilingSpeed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122787</ST_Error_Code>
+<Description>BaliseWindow > Safetymargin!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122760</ST_Error_Code>
+<Description>Configuration error,number of cars!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1143159</ST_Error_Code>
+<Description>Illegal length of ATP to MMI buffer!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160022</ST_Error_Code>
+<Description>ATO Supervised mode selected</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175927</ST_Error_Code>
+<Description>A/B diff,selectedTarget.trainDirection!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1174115</ST_Error_Code>
+<Description>A/B diff,alarmRequest!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122676</ST_Error_Code>
+<Description>A/B mismatch,locomotiveStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196426</ST_Error_Code>
+<Description>A/B diff,TIMSAvailable!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1184130</ST_Error_Code>
+<Description>Invalid traindirection!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196404</ST_Error_Code>
+<Description>A/B diff,Balise Seq mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122766</ST_Error_Code>
+<Description>FreeRoll not active when entering OdoInv</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130872</ST_Error_Code>
+<Description>A/B mismatch,locoVsTrainDir</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171929</ST_Error_Code>
+<Description>Unregister message received in wrong mode</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122705</ST_Error_Code>
+<Description>A/B diff,trainVsTrackDirWanted!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112739</ST_Error_Code>
+<Description>A/B diff,atoStationData!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122799</ST_Error_Code>
+<Description>Tracksection not found!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122702</ST_Error_Code>
+<Description>A/B diff,leadingOdometer!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180051</ST_Error_Code>
+<Description>VDX.fs.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1126771</ST_Error_Code>
+<Description>Error EB relay feedback!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122768</ST_Error_Code>
+<Description>Invalid location type!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112829</ST_Error_Code>
+<Description>keepTrackData mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122782</ST_Error_Code>
+<Description>Panto target list overflow!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1184132</ST_Error_Code>
+<Description>Underconsumption sbRequest!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151892</ST_Error_Code>
+<Description>Unregistered mode ignore message: Unregister</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102673</ST_Error_Code>
+<Description>First missed balise, ID=%d</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182315</ST_Error_Code>
+<Description>A/B diff,in1.state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160019</ST_Error_Code>
+<Description>ATO Automatic mode selected</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122681</ST_Error_Code>
+<Description>A/B mismatch,carCfgList(vital parts)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122753</ST_Error_Code>
+<Description>Balise missed in balise search mode!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122833</ST_Error_Code>
+<Description>A/B diff,manualLocation!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130867</ST_Error_Code>
+<Description>A/B mismatch,ticCarPlatformError</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171918</ST_Error_Code>
+<Description>Recieved none shunting MA in ATP mode shunting</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134974</ST_Error_Code>
+<Description>DX SelfTestOutputStatus3</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182319</ST_Error_Code>
+<Description>A/B diff,in3.state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1149538</ST_Error_Code>
+<Description>Unable to initialize connection to MMI</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112730</ST_Error_Code>
+<Description>A/B diff,stopTrain!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102719</ST_Error_Code>
+<Description>A/B diff,mmiTextMsg!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102756</ST_Error_Code>
+<Description>Calibration Value more than maximum sword</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175949</ST_Error_Code>
+<Description>Overconsumption Target!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182307</ST_Error_Code>
+<Description>in3.status == LowA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122786</ST_Error_Code>
+<Description>ReReg MA missing MaxSearchDist</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182306</ST_Error_Code>
+<Description>in2.status == LowA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112697</ST_Error_Code>
+<Description>A/B diff,targetList(ebTargetPointOdometer)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122788</ST_Error_Code>
+<Description>Shunting not allowed with keepTrackData</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180028</ST_Error_Code>
+<Description>Internal error,invalid state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1161931</ST_Error_Code>
+<Description>Unable to initialize connection to TCC</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122802</ST_Error_Code>
+<Description>Tracksection not found,unload end</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171917</ST_Error_Code>
+<Description>Rcv shuntig MA when not in fullATP/shunting</Description>
+</Row>
+<Row>
+<ST_Error_Code>1139075</ST_Error_Code>
+<Description>ATO station data buffer overrun.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182318</ST_Error_Code>
+<Description>A/B diff,in2.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171869</ST_Error_Code>
+<Description>Too many CRC errors on rec msg!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106774</ST_Error_Code>
+<Description>A/B diff,flashBrakeButtonFlag!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1151921</ST_Error_Code>
+<Description>YardMode illegal message: Emergency Alert</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122703</ST_Error_Code>
+<Description>A/B diff,abortTrainSetup!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165926</ST_Error_Code>
+<Description>A/B diff,selectedTarget.timeoutMamS!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112818</ST_Error_Code>
+<Description>Undefined trackdirection in posreport.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1184123</ST_Error_Code>
+<Description>InvalidCeilingSpeed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134968</ST_Error_Code>
+<Description>DX SelfTestInputStatus7</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170061</ST_Error_Code>
+<Description>Emergency Brake relay applied!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122769</ST_Error_Code>
+<Description>No location data available!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196415</ST_Error_Code>
+<Description>A/B diff,maxTachoErrorDistance!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170037</ST_Error_Code>
+<Description>DX 6 inputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1139067</ST_Error_Code>
+<Description>Loco power buffer overrun.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196418</ST_Error_Code>
+<Description>A/B diff,Speed mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1133163</ST_Error_Code>
+<Description>ACTcarListCount out of range!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171928</ST_Error_Code>
+<Description>Unregister message received in wrong mode</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112740</ST_Error_Code>
+<Description>A/B diff,brakeabilityChangePoint!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1174119</ST_Error_Code>
+<Description>Internal mathematic error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122795</ST_Error_Code>
+<Description>Track data item list overflow!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106779</ST_Error_Code>
+<Description>A/B diff,dispReleasableFlag!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182322</ST_Error_Code>
+<Description>A/B diff,hr2_Status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130865</ST_Error_Code>
+<Description>A/B mismatch,ticAvailableValid</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196405</ST_Error_Code>
+<Description>A/B diff,InterFlow Info!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165921</ST_Error_Code>
+<Description>A/B diff,ceilingSpeed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106780</ST_Error_Code>
+<Description>A/B diff,atoReleasableFlag!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180023</ST_Error_Code>
+<Description>ATP2 not following state transition</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102750</ST_Error_Code>
+<Description>Balise outside window (slip detected).</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122798</ST_Error_Code>
+<Description>Tracksection list overflow!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102683</ST_Error_Code>
+<Description>A/B mismatch,carCfgList(stayOpenTimeS)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122771</ST_Error_Code>
+<Description>Non matching balise!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1172312</ST_Error_Code>
+<Description>A/B diff,ModeSwitch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102682</ST_Error_Code>
+<Description>A/B mismatch,carCfgList(maxOpeningTimeS)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1174117</ST_Error_Code>
+<Description>A/B diff,intervention flag!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122710</ST_Error_Code>
+<Description>A/B diff,odometer Calibration Seq!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122752</ST_Error_Code>
+<Description>Balise list overflow!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1139069</ST_Error_Code>
+<Description>Speed target buffer overrun.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122688</ST_Error_Code>
+<Description>A/B mismatch,targetList(vital parts)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180052</ST_Error_Code>
+<Description>VDX.hr1.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122800</ST_Error_Code>
+<Description>Tracksection not found,normal targets.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122824</ST_Error_Code>
+<Description>Unexpected Balise!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165929</ST_Error_Code>
+<Description>Internal mathematic error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165929</ST_Error_Code>
+<Description>A/B diff,selectedTarget.targetSpeed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1192313</ST_Error_Code>
+<Description>Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182323</ST_Error_Code>
+<Description>A/B diff,fs_Status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170039</ST_Error_Code>
+<Description>DX 0 outputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1184122</ST_Error_Code>
+<Description>Internal math error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122777</ST_Error_Code>
+<Description>No balise in MA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1155445</ST_Error_Code>
+<Description>error at queue drop!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1155451</ST_Error_Code>
+<Description>queue init error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170038</ST_Error_Code>
+<Description>DX 7 inputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160056</ST_Error_Code>
+<Description>VDX.fs.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1176407</ST_Error_Code>
+<Description>COMATP2: MMI Error Log Buffer OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122779</ST_Error_Code>
+<Description>OdoInv active when ending FreeRoll</Description>
+</Row>
+<Row>
+<ST_Error_Code>1102755</ST_Error_Code>
+<Description>Calibration Value less than minimum sword</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182305</ST_Error_Code>
+<Description>in1.status == LowA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1133154</ST_Error_Code>
+<Description>Invalid CAR number!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134967</ST_Error_Code>
+<Description>DX SelfTestInputStatus6</Description>
+</Row>
+<Row>
+<ST_Error_Code>1174114</ST_Error_Code>
+<Description>A/B diff,EB_Requested!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122801</ST_Error_Code>
+<Description>Tracksection not found,unload start</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170036</ST_Error_Code>
+<Description>DX 5 inputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1174128</ST_Error_Code>
+<Description>Position beyond target!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112741</ST_Error_Code>
+<Description>Free Rolling active mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165930</ST_Error_Code>
+<Description>A/B diff,selectedTarget.ceilingSpeed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1133161</ST_Error_Code>
+<Description>NrOfCarNames out of range!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1139060</ST_Error_Code>
+<Description>Cancel target buffer overrun.</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196410</ST_Error_Code>
+<Description>A/B diff,Acceleration mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112707</ST_Error_Code>
+<Description>A/B diff,sbRequested!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196423</ST_Error_Code>
+<Description>COMATP2 ATP1_Packet Token error at bs_writePort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196428</ST_Error_Code>
+<Description>A/B diff,TIMSOk!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196412</ST_Error_Code>
+<Description>A/B diff,Elog_EB_Req!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122808</ST_Error_Code>
+<Description>Tracksection not found,horn target</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122704</ST_Error_Code>
+<Description>A/B diff,allowedDrivingDir!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1192324</ST_Error_Code>
+<Description>Err in Em brake relay,Failed to apply</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160024</ST_Error_Code>
+<Description>Battery Status: %s voltage: %d</Description>
+</Row>
+<Row>
+<ST_Error_Code>1184131</ST_Error_Code>
+<Description>TrainSetup not Valid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106782</ST_Error_Code>
+<Description>A/B diff,dispReleasable</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112743</ST_Error_Code>
+<Description>'Allow Yard Mode' mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134976</ST_Error_Code>
+<Description>DX SelfTestOutputStatus5</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171890</ST_Error_Code>
+<Description>External Data within the received MA</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>ATP SW started</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112731</ST_Error_Code>
+<Description>A/B diff,cancelAtoTargets!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112716</ST_Error_Code>
+<Description>A/B diff,gradientListLen!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182316</ST_Error_Code>
+<Description>A/B diff,in1.status!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1119072</ST_Error_Code>
+<Description>TCC Error Log Buffer OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122791</ST_Error_Code>
+<Description>Undefined target type!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1174129</ST_Error_Code>
+<Description>trainDirection invalid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1135443</ST_Error_Code>
+<Description>Msg length error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112745</ST_Error_Code>
+<Description>'Reset Request' mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>1186431</ST_Error_Code>
+<Description>ATP2 telegram Invalid,Unit failure!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122767</ST_Error_Code>
+<Description>Gradient list overflow!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106772</ST_Error_Code>
+<Description>A/B diff,serviceBrakeFlag!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196414</ST_Error_Code>
+<Description>A/B diff,Elog_SB_Req!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171887</ST_Error_Code>
+<Description>Radio message too long!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130866</ST_Error_Code>
+<Description>A/B mismatch,ticHandlingDone</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160055</ST_Error_Code>
+<Description>DirCtrl undefined!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134980</ST_Error_Code>
+<Description>Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1184118</ST_Error_Code>
+<Description>alarmRequest undefined!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112729</ST_Error_Code>
+<Description>A/B diff,hornTargetList!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196403</ST_Error_Code>
+<Description>Balise Buffer OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>1159541</ST_Error_Code>
+<Description>Undefined ATP state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160050</ST_Error_Code>
+<Description>Powering down not allowed</Description>
+</Row>
+<Row>
+<ST_Error_Code>1163638</ST_Error_Code>
+<Description>Undefined ATP state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1130873</ST_Error_Code>
+<Description>A/B mismatch,carListCompleted</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112693</ST_Error_Code>
+<Description>A/B mismatch,targetList(brakeAbility)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122680</ST_Error_Code>
+<Description>A/B mismatch,carConfigListLen!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134964</ST_Error_Code>
+<Description>DX SelfTestInputStatus3</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175940</ST_Error_Code>
+<Description>Invalid trainDirection in primary target!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122780</ST_Error_Code>
+<Description>Overconsumtion,targetList!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1196422</ST_Error_Code>
+<Description>COMATP2 ATP1_Status Token error at bs_writePort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106776</ST_Error_Code>
+<Description>A/B diff,flashBrakeButtonFlag</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106778</ST_Error_Code>
+<Description>A/B diff,mmiReleasableFlag!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1155447</ST_Error_Code>
+<Description>ACK queue full!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1184125</ST_Error_Code>
+<Description>Invalid target gradient!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1184126</ST_Error_Code>
+<Description>Invalid target position!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112698</ST_Error_Code>
+<Description>A/B diff,targetList(targetGradient)!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1123169</ST_Error_Code>
+<Description>Error in bs_getClock().</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122763</ST_Error_Code>
+<Description>Train setup direction is not matching</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175945</ST_Error_Code>
+<Description>Underconsumption sbRequested!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1184133</ST_Error_Code>
+<Description>Underconsumption ebRequest!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1192325</ST_Error_Code>
+<Description>Err in Em brake relay,failed to release</Description>
+</Row>
+<Row>
+<ST_Error_Code>1174113</ST_Error_Code>
+<Description>A/B diff,SB_Requested!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1139063</ST_Error_Code>
+<Description>Wrong horn sequence number from ACT!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134970</ST_Error_Code>
+<Description>DX SelfTestInputStatus9</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160049</ST_Error_Code>
+<Description>Powering down due to driver request</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122789</ST_Error_Code>
+<Description>Shunting not allowed with active location items</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134975</ST_Error_Code>
+<Description>DX SelfTestOutputStatus4</Description>
+</Row>
+<Row>
+<ST_Error_Code>1157731</ST_Error_Code>
+<Description>Unable to initialize connection to NJRU</Description>
+</Row>
+<Row>
+<ST_Error_Code>1129057</ST_Error_Code>
+<Description>ATO telegram Invalid,Unit failure</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122831</ST_Error_Code>
+<Description>A/B diff,leading position!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122701</ST_Error_Code>
+<Description>A/B diff,locationData!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1155446</ST_Error_Code>
+<Description>error at queue drop!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1135444</ST_Error_Code>
+<Description>Message to MMI too long(%d bytes) for sending, skipped! MsgType:%d</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112732</ST_Error_Code>
+<Description>A/B diff,targetID!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175944</ST_Error_Code>
+<Description>No target selected,but targets exists!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1182317</ST_Error_Code>
+<Description>A/B diff,in2.state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1134963</ST_Error_Code>
+<Description>DX SelfTestInputStatus2</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122797</ST_Error_Code>
+<Description>Tracksection list link error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112717</ST_Error_Code>
+<Description>A/B diff,gradientList!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122712</ST_Error_Code>
+<Description>A/B diff,positionAndSpeed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1165939</ST_Error_Code>
+<Description>Internal mathematic error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180027</ST_Error_Code>
+<Description>DirCtrl undefined!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112744</ST_Error_Code>
+<Description>EB Request mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>1170032</ST_Error_Code>
+<Description>DX 1 inputStatus!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122713</ST_Error_Code>
+<Description>A/B diff,loc position!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1126770</ST_Error_Code>
+<Description>EB,insufficient deceleration!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112728</ST_Error_Code>
+<Description>A/B diff,hornTargetListLen!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1171870</ST_Error_Code>
+<Description>Failed to create semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160063</ST_Error_Code>
+<Description>Driver Logged Out due to loco on signal reset</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122770</ST_Error_Code>
+<Description>Non matching balise!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1112718</ST_Error_Code>
+<Description>A/B diff,erasePlanningArea!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1126785</ST_Error_Code>
+<Description>EB,insufficient deceleration!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1167735</ST_Error_Code>
+<Description>Undefined ATP state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122796</ST_Error_Code>
+<Description>Driving direction not equal in all tracksections!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1106775</ST_Error_Code>
+<Description>A/B diff,emergencyBrakeFlag</Description>
+</Row>
+<Row>
+<ST_Error_Code>1160020</ST_Error_Code>
+<Description>ATO Manual mode selected</Description>
+</Row>
+<Row>
+<ST_Error_Code>1175925</ST_Error_Code>
+<Description>A/B diff,selectedTarget.targetType!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1180025</ST_Error_Code>
+<Description>Token error at bs_isSystemRunning!</Description>
+</Row>
+<Row>
+<ST_Error_Code>1122823</ST_Error_Code>
+<Description>Underconsumtion,targetList!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2216342</ST_Error_Code>
+<Description>TachometerError!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175357</ST_Error_Code>
+<Description>COMATP1 Vital Data Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187682</ST_Error_Code>
+<Description>A/B diff,bsaCounter!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2198113</ST_Error_Code>
+<Description>Unable to initialize connection to Analyzer interface</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177717</ST_Error_Code>
+<Description>A/B diff,inputStatus.validR!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177639</ST_Error_Code>
+<Description>BTM Routine test not approved</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167644</ST_Error_Code>
+<Description>BaliseAntennaError!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2220408</ST_Error_Code>
+<Description>SIOX Command %d is not supported</Description>
+</Row>
+<Row>
+<ST_Error_Code>2165356</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,Reset Slip Indication mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2200416</ST_Error_Code>
+<Description>Error in flashlamp(s). Lamp is on when supposed to be off</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177725</ST_Error_Code>
+<Description>A/B diff,pulseTimeR!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187688</ST_Error_Code>
+<Description>A/B diff,Telegram!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177731</ST_Error_Code>
+<Description>A/B diff,rotationDirection!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196344</ST_Error_Code>
+<Description>Reversing protection active</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167663</ST_Error_Code>
+<Description>A/B diff,telegramClass!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177635</ST_Error_Code>
+<Description>BTM Protocol version difference</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177720</ST_Error_Code>
+<Description>A/B diff,inputStatus.validRotDir!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167692</ST_Error_Code>
+<Description>A/B diff,antennaControl!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167652</ST_Error_Code>
+<Description>A/B diff,antennaActive!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2183544</ST_Error_Code>
+<Description>BTIU seqNo error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196333</ST_Error_Code>
+<Description>Tacho rotation dir detection problem (validRotDir)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167690</ST_Error_Code>
+<Description>A/B diff,telegramValid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177740</ST_Error_Code>
+<Description>A/B diff,tachoPulsesT!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167683</ST_Error_Code>
+<Description>A/B diff,BSA_ToStart_A!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2183537</ST_Error_Code>
+<Description>A/B diff,baliseInfo.newInfo!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2204021</ST_Error_Code>
+<Description>Undefined ATP state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175362</ST_Error_Code>
+<Description>COMATP1 non Vital Data Token error at bs_writePort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177745</ST_Error_Code>
+<Description>A/B diff,tachoVoltageS!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196323</ST_Error_Code>
+<Description>A/B diff,R-Slipslide missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2173543</ST_Error_Code>
+<Description>BTIU MVB transfer error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196343</ST_Error_Code>
+<Description>Roll away protection active</Description>
+</Row>
+<Row>
+<ST_Error_Code>2210410</ST_Error_Code>
+<Description>Error both flash lamps feedback</Description>
+</Row>
+<Row>
+<ST_Error_Code>2200403</ST_Error_Code>
+<Description>IP write to ES2 failed</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196311</ST_Error_Code>
+<Description>A/B diff,Speed missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187710</ST_Error_Code>
+<Description>Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187662</ST_Error_Code>
+<Description>A/B diff,telegram[i]!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167640</ST_Error_Code>
+<Description>sequenceNumbersEqual==falseA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2165359</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,ATO Mode mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187752</ST_Error_Code>
+<Description>Seq no. fail! Curr: %u, Prev : %u</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167681</ST_Error_Code>
+<Description>A/B diff,beginTimeStamp!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187646</ST_Error_Code>
+<Description>Illegal BSA from BTM</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167657</ST_Error_Code>
+<Description>A/B diff,bsaToStart!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187638</ST_Error_Code>
+<Description>Illegal BSA from BTM</Description>
+</Row>
+<Row>
+<ST_Error_Code>2163552</ST_Error_Code>
+<Description>Euro Balise NID_PACKET error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2192222</ST_Error_Code>
+<Description>Battery Status: %s voltage: %d</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177728</ST_Error_Code>
+<Description>A/B diff,pulseTimeS!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2163554</ST_Error_Code>
+<Description>BTIU invalid telegram class!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177746</ST_Error_Code>
+<Description>A/B diff,tachoVoltageT!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175352</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,Last Rec Balise Sequence number mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187674</ST_Error_Code>
+<Description>A/B diff,Failure 3</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167655</ST_Error_Code>
+<Description>A/B diff,beginTimeStamp!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167645</ST_Error_Code>
+<Description>BaliseAntennaError!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187643</ST_Error_Code>
+<Description>Bal no. fail! Curr: %u, Prev: %u</Description>
+</Row>
+<Row>
+<ST_Error_Code>2179442</ST_Error_Code>
+<Description>Unable to initialize connection to ATO (LCS)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167653</ST_Error_Code>
+<Description>A/B diff,antennaCommand!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177734</ST_Error_Code>
+<Description>A/B diff,sdu_ok!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167651</ST_Error_Code>
+<Description>BTM Telegram configuration error</Description>
+</Row>
+<Row>
+<ST_Error_Code>2208118</ST_Error_Code>
+<Description>Undefined ATP state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175348</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,ATP State mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2159443</ST_Error_Code>
+<Description>Failed to transfer Driving Status data from LCS to ATO</Description>
+</Row>
+<Row>
+<ST_Error_Code>2202218</ST_Error_Code>
+<Description>Tachometer channel errors</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175347</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,atpMode mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177730</ST_Error_Code>
+<Description>A/B diff,pulseTimeT!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196327</ST_Error_Code>
+<Description>A/B diff,slipTachoError_Req!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196328</ST_Error_Code>
+<Description>A/B diff,Slipslide missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2163551</ST_Error_Code>
+<Description>EuroBalise Header err! BaliseID %d NID_C %d</Description>
+</Row>
+<Row>
+<ST_Error_Code>2183545</ST_Error_Code>
+<Description>BTIU timestamp error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187672</ST_Error_Code>
+<Description>A/B diff,Failure 1</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177647</ST_Error_Code>
+<Description>BTM Routine test not approved</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196335</ST_Error_Code>
+<Description>Undefined allowedDrivingDir!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2202219</ST_Error_Code>
+<Description>Tachometer channel errors</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187659</ST_Error_Code>
+<Description>A/B diff,newTelegram!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2202213</ST_Error_Code>
+<Description>Tachometer channel errors,undef</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187633</ST_Error_Code>
+<Description>Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187660</ST_Error_Code>
+<Description>A/B diff,resetFIFO!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196330</ST_Error_Code>
+<Description>A/B diff,T-Slipslide missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167654</ST_Error_Code>
+<Description>A/B diff,baliseServiceAvailable!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2200414</ST_Error_Code>
+<Description>TIMS Missing SEP</Description>
+</Row>
+<Row>
+<ST_Error_Code>2206340</ST_Error_Code>
+<Description>WheelSizeError!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2206338</ST_Error_Code>
+<Description>validS==falseA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2216317</ST_Error_Code>
+<Description>Tacho1 (S/R) rec no pulses (T in speed)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2155358</ST_Error_Code>
+<Description>COMATP1 Non Vital Data Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177719</ST_Error_Code>
+<Description>A/B diff,inputStatus.validRotDir!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187715</ST_Error_Code>
+<Description>Token error at bs_getReferenceTime!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175354</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,Odometer Calibration value mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187687</ST_Error_Code>
+<Description>A/B diff,seqNo!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175363</ST_Error_Code>
+<Description>COMATP1 Vital Data Token error at bs_writePort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2202215</ST_Error_Code>
+<Description>Tachometer channel errors</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177724</ST_Error_Code>
+<Description>A/B diff,inputStatus.validT!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187748</ST_Error_Code>
+<Description>BSA counter fail! Curr: %d, Prev: %d</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175345</ST_Error_Code>
+<Description>Balise Buffer OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>2212211</ST_Error_Code>
+<Description>Internal error,invalid state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2163546</ST_Error_Code>
+<Description>BTIU channel dropout</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177741</ST_Error_Code>
+<Description>A/B diff,tachoPulsesT!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175366</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,ato enable mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196313</ST_Error_Code>
+<Description>A/B diff,DECO odometer missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2210407</ST_Error_Code>
+<Description>Em Alert Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>2212209</ST_Error_Code>
+<Description>baliseServiceAvailable!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187695</ST_Error_Code>
+<Description>A/B diff,Odo</Description>
+</Row>
+<Row>
+<ST_Error_Code>2183549</ST_Error_Code>
+<Description>ATP detected tachometer failure (Tgm)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177733</ST_Error_Code>
+<Description>SDU telegram ErrorInTimeA,Unit failure!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196331</ST_Error_Code>
+<Description>A/B diff,T-Speed missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187713</ST_Error_Code>
+<Description>Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196315</ST_Error_Code>
+<Description>A/B diff,inSB_Req!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175355</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,current position mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177721</ST_Error_Code>
+<Description>A/B diff,inputStatus.validS!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2210406</ST_Error_Code>
+<Description>Em Alert Activated</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177738</ST_Error_Code>
+<Description>A/B diff,tachoPulsesS!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196318</ST_Error_Code>
+<Description>A/B diff,maxTachoErrorDistance!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2183555</ST_Error_Code>
+<Description>Tachometer error detected by BTIU!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196322</ST_Error_Code>
+<Description>A/B diff,Odometer missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187685</ST_Error_Code>
+<Description>A/B diff,newTelegram!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2206306</ST_Error_Code>
+<Description>A/B diff,drivingDirection!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2206321</ST_Error_Code>
+<Description>A/B diff,Odometer calibration sequence missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177718</ST_Error_Code>
+<Description>A/B diff,inputStatus.validR!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2183548</ST_Error_Code>
+<Description>ATP detected tachometer failure (Detect)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167665</ST_Error_Code>
+<Description>A/B diff,transmissionQuality!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2173540</ST_Error_Code>
+<Description>A/B diff,BTIU Available!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187686</ST_Error_Code>
+<Description>A/B diff,resetFIFO_A!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196312</ST_Error_Code>
+<Description>A/B diff,speedServiceAvailable!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2210411</ST_Error_Code>
+<Description>ES2 check Failed. Read value %x config %d</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177736</ST_Error_Code>
+<Description>A/B diff,tachoPulsesR!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196320</ST_Error_Code>
+<Description>A/B diff,NoPulsesError!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2202212</ST_Error_Code>
+<Description>Tachometer error: Invalid rotation direction</Description>
+</Row>
+<Row>
+<ST_Error_Code>2206336</ST_Error_Code>
+<Description>validR|validS|validT==falseA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177732</ST_Error_Code>
+<Description>A/B diff,rotationDirection!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2200412</ST_Error_Code>
+<Description>Error one flash lamp feedback</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187673</ST_Error_Code>
+<Description>A/B diff,Failure 2</Description>
+</Row>
+<Row>
+<ST_Error_Code>2198115</ST_Error_Code>
+<Description>Unable to initialize connection to Yardmode</Description>
+</Row>
+<Row>
+<ST_Error_Code>2202216</ST_Error_Code>
+<Description>Tachometer channel errors</Description>
+</Row>
+<Row>
+<ST_Error_Code>2206332</ST_Error_Code>
+<Description>Tacho rotation dir detection error (validRotDir)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187708</ST_Error_Code>
+<Description>COut Odo/Speed failed</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167679</ST_Error_Code>
+<Description>A/B diff,antennaCmd!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196309</ST_Error_Code>
+<Description>A/B diff,odometerServiceAvailable!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177722</ST_Error_Code>
+<Description>A/B diff,inputStatus.validS!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175351</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,Odometer Calibration Sequence number mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187661</ST_Error_Code>
+<Description>A/B diff,seqNo!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196308</ST_Error_Code>
+<Description>A/B diff,Odometer missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177742</ST_Error_Code>
+<Description>A/B diff,tachoVoltageR!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175349</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,Allowed Driving Direction mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2206316</ST_Error_Code>
+<Description>Error in locoVsTrainDir!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2206314</ST_Error_Code>
+<Description>A/B diff,drivingDir missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2183547</ST_Error_Code>
+<Description>Balise time in future</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167684</ST_Error_Code>
+<Description>A/B diff,endTimeStamp!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167702</ST_Error_Code>
+<Description>A/B diff,speedServiceAvailable!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175353</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,Loco Vs Train Direction mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2179441</ST_Error_Code>
+<Description>Unable to initialize connection to LCS</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167691</ST_Error_Code>
+<Description>A/B diff,transmissionQuality!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2159444</ST_Error_Code>
+<Description>Failed to transfer Control Data data from ATO to LCS</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167664</ST_Error_Code>
+<Description>A/B diff,telegramValid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187711</ST_Error_Code>
+<Description>Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187714</ST_Error_Code>
+<Description>Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177735</ST_Error_Code>
+<Description>A/B diff,sdu_ok!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187703</ST_Error_Code>
+<Description>A/B diff,Speed Time</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196325</ST_Error_Code>
+<Description>A/B diff,S-Slipslide missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187701</ST_Error_Code>
+<Description>A/B diff,Speed</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187749</ST_Error_Code>
+<Description>Seq no. fail! Curr: %u, Prev : %u</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167637</ST_Error_Code>
+<Description>BaliseAntennaError!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187694</ST_Error_Code>
+<Description>A/B diff,Direction</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196319</ST_Error_Code>
+<Description>noPulsesError!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175361</ST_Error_Code>
+<Description>COMATP1 Vital Data Token error at bs_writePort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2165360</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,lcs Direction mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196326</ST_Error_Code>
+<Description>A/B diff,S-Speed missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177744</ST_Error_Code>
+<Description>A/B diff,tachoVoltageS!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167648</ST_Error_Code>
+<Description>seqNumber error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2200415</ST_Error_Code>
+<Description>TIMS Illegal checksum</Description>
+</Row>
+<Row>
+<ST_Error_Code>2202214</ST_Error_Code>
+<Description>Tachometer channel errors</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175346</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,Odometer invalid mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177737</ST_Error_Code>
+<Description>A/B diff,tachoPulsesR!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187750</ST_Error_Code>
+<Description>Bal no. fail! Curr: %u, Prev: %u</Description>
+</Row>
+<Row>
+<ST_Error_Code>2206339</ST_Error_Code>
+<Description>validT==falseA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177642</ST_Error_Code>
+<Description>BTM Telegram configuration error</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177729</ST_Error_Code>
+<Description>A/B diff,pulseTimeT!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2220404</ST_Error_Code>
+<Description>TIMS writebuffer mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177739</ST_Error_Code>
+<Description>A/B diff,tachoPulsesS!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177747</ST_Error_Code>
+<Description>A/B diff,tachoVoltageT!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167658</ST_Error_Code>
+<Description>A/B diff,endTimeStamp!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196324</ST_Error_Code>
+<Description>A/B diff,R-Speed missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177723</ST_Error_Code>
+<Description>A/B diff,inputStatus.validT!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177650</ST_Error_Code>
+<Description>BTM Telegram configuration error</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196310</ST_Error_Code>
+<Description>A/B diff,SpeedLastPulseTime!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2202217</ST_Error_Code>
+<Description>Tachometer channel errors</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177634</ST_Error_Code>
+<Description>BTM Protocol version difference</Description>
+</Row>
+<Row>
+<ST_Error_Code>2179445</ST_Error_Code>
+<Description>A/B mismatch,ATO to LCS WriteBuffer</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167678</ST_Error_Code>
+<Description>A/B diff,antennaActive!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187706</ST_Error_Code>
+<Description>BTM Sink writeFifo overflow!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187699</ST_Error_Code>
+<Description>A/B diff,Q_Version</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196305</ST_Error_Code>
+<Description>A/B diff,Acceleration missmatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2188114</ST_Error_Code>
+<Description>Unable to initialize connection to NJRU</Description>
+</Row>
+<Row>
+<ST_Error_Code>2202220</ST_Error_Code>
+<Description>Tachometer channel errors</Description>
+</Row>
+<Row>
+<ST_Error_Code>2155350</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,Direction Control mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167680</ST_Error_Code>
+<Description>A/B diff,baliseServiceAvailable!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187697</ST_Error_Code>
+<Description>A/B diff,Odo Time</Description>
+</Row>
+<Row>
+<ST_Error_Code>2220401</ST_Error_Code>
+<Description>Unable to initialize connection to ES2 TIMS</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175364</ST_Error_Code>
+<Description>COMATP1Sink: A/B diff,Test sequence number mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2220413</ST_Error_Code>
+<Description>TIMS writebuffer mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>2202221</ST_Error_Code>
+<Description>Tachometer error: Invalid rotation direction</Description>
+</Row>
+<Row>
+<ST_Error_Code>2183550</ST_Error_Code>
+<Description>balise buffer overflow!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2220409</ST_Error_Code>
+<Description>SIOX Command not supported</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196329</ST_Error_Code>
+<Description>A/B diff,Speed mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187707</ST_Error_Code>
+<Description>COut BTM Command failed</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167689</ST_Error_Code>
+<Description>A/B diff,telegramClass!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2199924</ST_Error_Code>
+<Description>Undefined ATP state!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177726</ST_Error_Code>
+<Description>A/B diff,pulseTimeR!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2220405</ST_Error_Code>
+<Description>TIMS output mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>2206337</ST_Error_Code>
+<Description>validR==falseA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2183541</ST_Error_Code>
+<Description>A/B diff,baliseInfo.yardModeAllowed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2163553</ST_Error_Code>
+<Description>Euro Balise danger for shunting info packet error!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2216334</ST_Error_Code>
+<Description>Tachometer hardware failure!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177743</ST_Error_Code>
+<Description>A/B diff,tachoVoltageR!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167636</ST_Error_Code>
+<Description>BaliseAntennaError!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187716</ST_Error_Code>
+<Description>conv8BitTo32Bit Invalid PID!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167649</ST_Error_Code>
+<Description>BTM Telepowering overheating,will be switched off</Description>
+</Row>
+<Row>
+<ST_Error_Code>2177727</ST_Error_Code>
+<Description>A/B diff,pulseTimeS!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2167641</ST_Error_Code>
+<Description>BTM Telepowering overheating,will be switched off</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187751</ST_Error_Code>
+<Description>BSA counter fail! Curr: %u, Prev: %u</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187712</ST_Error_Code>
+<Description>Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175365</ST_Error_Code>
+<Description>COMATP1Source: A/B diff,ATP2_Status !</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187656</ST_Error_Code>
+<Description>A/B diff,bsaCounter!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2187709</ST_Error_Code>
+<Description>Token error at bs_readPort!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2173539</ST_Error_Code>
+<Description>A/B diff,baliseInfo.odometer!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196307</ST_Error_Code>
+<Description>A/B diff,odometerLastPulseTime!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2212223</ST_Error_Code>
+<Description>Token error at bs_isSystemRunning!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2183538</ST_Error_Code>
+<Description>A/B diff,baliseInfo.baliseID!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2196341</ST_Error_Code>
+<Description>WheelSizeError8!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2171739</ST_Error_Code>
+<Description>Log Event vsprintf Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>2171742</ST_Error_Code>
+<Description>Unknown IP_Cmd in YardMode: %s</Description>
+</Row>
+<Row>
+<ST_Error_Code>2171733</ST_Error_Code>
+<Description>printf Buffer 250ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224726</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>Error taking semaphore,(AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224722</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2212409</ST_Error_Code>
+<Description>Config data is not valid!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2192408</ST_Error_Code>
+<Description>Config data is not valid,startup</Description>
+</Row>
+<Row>
+<ST_Error_Code>2204734</ST_Error_Code>
+<Description>bs_writePAMem busy!</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>%s boundary check failed!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224728</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2204498</ST_Error_Code>
+<Description>Error taking semaphore,(AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2171728</ST_Error_Code>
+<Description>Log Event Buffer 100ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>2192410</ST_Error_Code>
+<Description>Config data Unit Id mismatch,startup</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224732</ST_Error_Code>
+<Description>Failed to create semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224727</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2175894</ST_Error_Code>
+<Description>MMI buffer overflow</Description>
+</Row>
+<Row>
+<ST_Error_Code></ST_Error_Code>
+<Description>Error giving semaphore (AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2147153</ST_Error_Code>
+<Description>Failed to create semaphore,(AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2171730</ST_Error_Code>
+<Description>Log Event Buffer 500ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>2171935</ST_Error_Code>
+<Description>local_safe_sprintf vsprintf Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>2195884</ST_Error_Code>
+<Description>Undefined error grade</Description>
+</Row>
+<Row>
+<ST_Error_Code>2204735</ST_Error_Code>
+<Description>Error at bs_readPAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2204733</ST_Error_Code>
+<Description>bs_writePAMem busy!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2214729</ST_Error_Code>
+<Description>A/B diff,config data to PAMEM!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224718</ST_Error_Code>
+<Description>Error at bs_writePAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2171740</ST_Error_Code>
+<Description>Trace vsprintf Error</Description>
+</Row>
+<Row>
+<ST_Error_Code>2171734</ST_Error_Code>
+<Description>printf Buffer 500ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>2195914</ST_Error_Code>
+<Description>Log failure unknown.</Description>
+</Row>
+<Row>
+<ST_Error_Code>2212411</ST_Error_Code>
+<Description>Config data Unit Id mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224716</ST_Error_Code>
+<Description>Error at bs_readPAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2204736</ST_Error_Code>
+<Description>bs_readPAMem busy!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2147153</ST_Error_Code>
+<Description>Invalid boolB!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2212413</ST_Error_Code>
+<Description>Config data Version mismatch!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224719</ST_Error_Code>
+<Description>Error at bs_writePAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2204737</ST_Error_Code>
+<Description>PAMEM data invalid or version or unit mismatch</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224723</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224724</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2171729</ST_Error_Code>
+<Description>Log Event Buffer 250ms OverFlow</Description>
+</Row>
+<Row>
+<ST_Error_Code>2192412</ST_Error_Code>
+<Description>Config data Version mismatch,startup</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224720</ST_Error_Code>
+<Description>A/B diff,config data from PAMEM!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224725</ST_Error_Code>
+<Description>Error giving semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224721</ST_Error_Code>
+<Description>Error taking semaphore!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2214730</ST_Error_Code>
+<Description>A/B diff,In config data stored to main buffer!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2224717</ST_Error_Code>
+<Description>Error at bs_readPAMem!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2204499</ST_Error_Code>
+<Description>Error giving semaphore (AIF)</Description>
+</Row>
+<Row>
+<ST_Error_Code>2204739</ST_Error_Code>
+<Description>Pon Help String almost Full</Description>
+</Row>
+<Row>
+<ST_Error_Code>2204738</ST_Error_Code>
+<Description>Block Help String almost Full</Description>
+</Row>
+<Row>
+<ST_Error_Code>2147154</ST_Error_Code>
+<Description>Invalid boolA!</Description>
+</Row>
+<Row>
+<ST_Error_Code>2185874</ST_Error_Code>
+<Description>Wrong input parameter.</Description>
+</Row>
+<Row>
+<ST_Error_Code>2171732</ST_Error_Code>
+<Description>printf Buffer 100ms OverFlow</Description>
+</Row>
+</Root>

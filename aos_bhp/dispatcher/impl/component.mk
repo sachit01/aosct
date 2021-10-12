@@ -1,0 +1,9 @@
+DISP_MODULES += $(DISP_ROOT)/impl/basic_ip/
+DISP_MODULES += $(DISP_ROOT)/impl/config/
+DISP_MODULES += $(DISP_ROOT)/impl/console/
+DISP_MODULES += $(DISP_ROOT)/impl/disp_application/
+DISP_MODULES += $(DISP_ROOT)/impl/disp_main/
+DISP_MODULES += $(DISP_ROOT)/impl/event_handler/
+DISP_MODULES += $(DISP_ROOT)/impl/log_handler/
+DISP_MODULES += $(DISP_ROOT)/impl/class_d/
+DISP_MODULES += $(DISP_ROOT)/impl/message_dispatcher/

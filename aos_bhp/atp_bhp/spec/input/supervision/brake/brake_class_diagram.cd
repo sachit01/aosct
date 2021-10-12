@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Supv::Brake">
+    <Position X="3" Y="3.75" Width="4.25" />
+    <Members>
+      <Method Name="abortBrakeTest" Hidden="true" />
+      <Field Name="adaptationInitDone" Hidden="true" />
+      <Field Name="bpFeedbackInaccurate" Hidden="true" />
+      <Field Name="bpFeedbackInconsistent" Hidden="true" />
+      <Field Name="bpFeedbackInvalid" Hidden="true" />
+      <Method Name="Brake" Hidden="true" />
+      <Field Name="brakeTestFailedEbExternal" Hidden="true" />
+      <Field Name="brakeTestFailedTcoExternal" Hidden="true" />
+      <Field Name="brakeTestFailedTcoInternal" Hidden="true" />
+      <Method Name="checkEbFeedback" Hidden="true" />
+      <Method Name="checkTcoFeedback" Hidden="true" />
+      <Field Name="cycleInconsistentBpCnt" Hidden="true" />
+      <Field Name="cycleRapidLossCnt" Hidden="true" />
+      <Field Name="ebFeedbackBrakePressureFailed" Hidden="true" />
+      <Field Name="ebFeedbackOkCount" Hidden="true" />
+      <Field Name="ebPressureBuildUpActive" Hidden="true" />
+      <Field Name="ebTcoFeedbackMeassurement" Hidden="true" />
+      <Field Name="ebTcoOrderMeassurement" Hidden="true" />
+      <Field Name="emergencyBrakesCutOut" Hidden="true" />
+      <Field Name="errorReadingEbCutOutInputs" Hidden="true" />
+      <Method Name="evaluateBrakePressureFeedbackNoEB" Hidden="true" />
+      <Method Name="evaluateEbFeedback" Hidden="true" />
+      <Method Name="evaluateRapidPressureLoss" Hidden="true" />
+      <Method Name="getMaxEbFbWaitCycle" Hidden="true" />
+      <Method Name="getMaxTcoFbWaitCycle" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="invalidBrakePressureVal" Hidden="true" />
+      <Method Name="isApplyTco" Hidden="true" />
+      <Field Name="numberOfBrakeTestStepsAdap" Hidden="true" />
+      <Field Name="numberOfConsecutiveReadingsFeedback" Hidden="true" />
+      <Field Name="oldBrakeTestSequenceStep" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="previousCycleExpectedEbValue" Hidden="true" />
+      <Field Name="previousCycleExpectedTcoValue" Hidden="true" />
+      <Method Name="processBrakeTestStateMachine" Hidden="true" />
+      <Method Name="processEbCutOut" Hidden="true" />
+      <Method Name="processTco" Hidden="true" />
+      <Field Name="rapidPressureLossDetected" Hidden="true" />
+      <Method Name="resetBrakeTestStateMachine" Hidden="true" />
+      <Field Name="savedBP1" Hidden="true" />
+      <Field Name="savedBP2" Hidden="true" />
+      <Field Name="tcoApplied" Hidden="true" />
+      <Field Name="tcoFeedbackFailed" Hidden="true" />
+      <Field Name="tcoFeedbackOkCount" Hidden="true" />
+      <Field Name="tcoRelayFeedbackErr" Hidden="true" />
+      <Field Name="tcoStartTime" Hidden="true" />
+      <Field Name="tcoTestApplied" Hidden="true" />
+      <Method Name="verifyBrakeTestFeedback" Hidden="true" />
+      <Method Name="verifyExternalEbFeedback" Hidden="true" />
+      <Method Name="verifyExternalTcoFeedback" Hidden="true" />
+      <Method Name="verifyInternalTCORelays" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QEAECgAiqQMEAGAQAF0CLJAlAGhgNAKHCZCkCAgQQBQ=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\supervision\brake\brake.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Supv::AbstractBrake" Collapsed="true">
+    <Position X="4.25" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>wCIGEgCEQ3HAYYUDhNpgKgBWAxACoBLsgf9BCQsFQDA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\supervision\brake\abstract_brake.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ATP::Supv::BrakeTestOrderStatusAdap">
+    <Position X="7.75" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAQAAAAQBAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\supervision\brake\brake.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="ATP::Supv::FeedbackTestResult">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\supervision\brake\brake.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

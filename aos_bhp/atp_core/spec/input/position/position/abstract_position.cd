@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Pos::AbstractPosition">
+    <Position X="6.5" Y="3.5" Width="4" />
+    <Members>
+      <Method Name="AbstractPosition" Hidden="true" />
+      <Field Name="accuracyState" Hidden="true" />
+      <Field Name="baliseAirGap" Hidden="true" />
+      <Field Name="baliseDetectedIrrelevantMode" Hidden="true" />
+      <Field Name="baliseReadTimeDelay" Hidden="true" />
+      <Method Name="checkMissedBaliseOnDetection" Hidden="true" />
+      <Method Name="checkMissedBaliseOnMovement" Hidden="true" />
+      <Field Name="currentPosNominalLeading" Hidden="true" />
+      <Field Name="currOdoPos" Hidden="true" />
+      <Field Name="currPosAntenna" Hidden="true" />
+      <Field Name="dirAtLastBalise" Hidden="true" />
+      <Field Name="dirAtPrevBalise" Hidden="true" />
+      <Method Name="findNextExpectedBalise" Hidden="true" />
+      <Field Name="firstBaliseInfo" Hidden="true" />
+      <Method Name="getLeadingPosForDirectionOdo" Hidden="true" />
+      <Method Name="getTrailingPosForDirectionOdo" Hidden="true" />
+      <Method Name="handleBaliseSearch" Hidden="true" />
+      <Method Name="handlePossession" Hidden="true" />
+      <Method Name="handleRegistration" Hidden="true" />
+      <Method Name="handleSafeBrakeToStop" Hidden="true" />
+      <Field Name="identicalBaliseFoundError" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="invalidBalInPossession" Hidden="true" />
+      <Field Name="invalidBaliseId" Hidden="true" />
+      <Field Name="invalidBaliseInBalisesearch" Hidden="true" />
+      <Field Name="isBaliseReceived" Hidden="true" />
+      <Field Name="isFirstBaliseFound" Hidden="true" />
+      <Field Name="lastDetectedBaliseInfo" Hidden="true" />
+      <Field Name="missedBaliseFound" Hidden="true" />
+      <Field Name="missedFirstBalise" Hidden="true" />
+      <Field Name="nextBaliseInfo" Hidden="true" />
+      <Field Name="numOfMissedBalise" Hidden="true" />
+      <Field Name="odoOffset" Hidden="true" />
+      <Field Name="outOfLimitBoundaries" Hidden="true" />
+      <Field Name="outSideBaliseFound" Hidden="true" />
+      <Field Name="prevBaliseInfo" Hidden="true" />
+      <Field Name="prevOdoPos" Hidden="true" />
+      <Field Name="prevPosAntenna" Hidden="true" />
+      <Method Name="readBalises" Hidden="true" />
+      <Field Name="rearOrFrontEndoutOfLimit" Hidden="true" />
+      <Method Name="reportMissedBalise" Hidden="true" />
+      <Field Name="secBalFoundBeforeMA" Hidden="true" />
+      <Field Name="secBaliseFoundBeforeMA" Hidden="true" />
+      <Field Name="thirdBalFound" Hidden="true" />
+      <Field Name="unDefATPMode" Hidden="true" />
+      <Field Name="unKnownBaliseFound" Hidden="true" />
+      <Method Name="updateCurrentOdoPos" Hidden="true" />
+      <Method Name="updateCurrentPos" Hidden="true" />
+      <Method Name="updatePrevAndNextBaliseInfo" Hidden="true" />
+      <Field Name="yardOrShuntingModeNotAllowed" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QRkAWkACAYLDYQEABmBCUQGEDCUFILIgAEgIEiIR5ho=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\position\position\abstract_position.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ATP::Pos::PosAccuracyState">
+    <Position X="4" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAgAgAAAACAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\position\position\abstract_position.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

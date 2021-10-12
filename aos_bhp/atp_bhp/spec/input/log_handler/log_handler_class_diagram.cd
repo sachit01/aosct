@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::LogHandler">
+    <Position X="9.75" Y="3.5" Width="2.75" />
+    <Members>
+      <Method Name="LogHandler" Hidden="true" />
+      <Field Name="maximumTCCBufferSize" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="ATC::AbstractLogHandler">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.32" Y="0.016" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IAAQgAAAAAAAAAAAAIAAAAAIAABAAAAEAAAgAAAAgAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\log_handler\log_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::AbstractLogHandler">
+    <Position X="6" Y="3.5" Width="2.75" />
+    <Members>
+      <Field Name="bdsLevel" Hidden="true" />
+      <Field Name="bdsSeqNumber" Hidden="true" />
+      <Method Name="extractFileName" Hidden="true" />
+      <Method Name="getCompShortName" Hidden="true" />
+      <Method Name="getEventTypeStr" Hidden="true" />
+      <Field Name="initBdsDone" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="initNjruConnectionDone" Hidden="true" />
+      <Field Name="initRuConnectionDone" Hidden="true" />
+      <Method Name="isLegalLogLevel" Hidden="true" />
+      <Field Name="maxMsgSeparatorSize" Hidden="true" />
+      <Field Name="messageNotSentBdsCounter" Hidden="true" />
+      <Field Name="messageNotSentNjruCounter" Hidden="true" />
+      <Field Name="messageNotSentRuCounter" Hidden="true" />
+      <Field Name="messageSentBdsCounter" Hidden="true" />
+      <Field Name="messageSentNjruCounter" Hidden="true" />
+      <Field Name="messageSentRuCounter" Hidden="true" />
+      <Field Name="msgSeparator" Hidden="true" />
+      <Field Name="msgSeparatorLength" Hidden="true" />
+      <Field Name="njruBuffer" Hidden="true" />
+      <Field Name="njruLevel" Hidden="true" />
+      <Field Name="ruBuffer" Hidden="true" />
+      <Method Name="writeToBDS" Hidden="true" />
+      <Method Name="writeToNJRU" Hidden="true" />
+      <Method Name="writeToRU" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Typedef Name="ATC::AbstractLogHandler::InterfaceId" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\log_handler\abstract_log_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Enum Name="ATC::AbstractLogHandler::InterfaceDir" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\log_handler\abstract_log_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="ATC::AbstractLogHandler::CharBuffer&lt;maxSize&gt;" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\log_handler\abstract_log_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Typedef Name="ATC::AbstractLogHandler::LineBuffer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\log_handler\abstract_log_handler.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <InheritanceLine Type="ATC::ProcComponent" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="7.375" Y="2.941" />
+        <Point X="7.375" Y="3.014" />
+        <Point X="7.375" Y="3.014" />
+        <Point X="7.375" Y="3.5" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.037" Y="0.164" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IBABggIQQIEBYAICQMEIMAAmAAETIAIBIAAEEAAhAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\log_handler\abstract_log_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="6" Y="2.25" Width="2.75" />
+    <InheritanceLine Type="ATC::BaseComponent">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.006" Y="0.133" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="6" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

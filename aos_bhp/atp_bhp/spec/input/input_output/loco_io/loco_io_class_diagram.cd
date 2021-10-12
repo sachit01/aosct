@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATP::IO::LocoIO">
+    <Position X="5" Y="1" Width="2.75" />
+    <Members>
+      <Field Name="errorHiRailConfigInvalidState" Hidden="true" />
+      <Field Name="errorHiRailConfigRoadTransitionState" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="scaledBP1Measurement" Hidden="true" />
+      <Field Name="scaledBP2Measurement" Hidden="true" />
+      <Field Name="tcoFBMeassurement" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ATP::IO::LocoIO::AdapDigitalOutputs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_bhp\impl\input_output\loco_io\loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::IO::LocoIO::AdapDigitalInputs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_bhp\impl\input_output\loco_io\loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::IO::LocoIO::AdapAnalogInputs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_bhp\impl\input_output\loco_io\loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BAAKAAAAAAAAAABAAEACCAQGAABAAQIIAAAgAAABVAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_bhp\impl\input_output\loco_io\loco_io.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::IO::AbstractLocoIO">
+    <Position X="8.75" Y="1" Width="2.5" />
+    <Members>
+      <Method Name="AbstractLocoIO" Hidden="true" />
+      <Field Name="aiouRevisionId" Hidden="true" />
+      <Field Name="ambiguousTravelDir" Hidden="true" />
+      <Field Name="ambiguousTravelDirCounter" Hidden="true" />
+      <Field Name="analogInputs" Hidden="true" />
+      <Field Name="analogOutputs" Hidden="true" />
+      <Field Name="atoModeSwitchPos" Hidden="true" />
+      <Field Name="atoSwitchModeCounter" Hidden="true" />
+      <Field Name="atoSwitchModeTolerance" Hidden="true" />
+      <Field Name="buzzerActive" Hidden="true" />
+      <Field Name="buzzerCounter" Hidden="true" />
+      <Field Name="buzzerType" Hidden="true" />
+      <Method Name="calculateATOModeSwitchPosition" Hidden="true" />
+      <Method Name="calculateDrivingDirection" Hidden="true" />
+      <Field Name="currentSVDCounter" Hidden="true" />
+      <Field Name="digitalInputs" Hidden="true" />
+      <Field Name="digitalOutputs" Hidden="true" />
+      <Field Name="dirMeassurement" Hidden="true" />
+      <Field Name="displaySetupTimeout" Hidden="true" />
+      <Field Name="ebBrakeInfoForAnalyzer" Hidden="true" />
+      <Field Name="errorCannotGetGPIORegisterSVDResult" Hidden="true" />
+      <Field Name="errorDigitalOutputOutOfRange" Hidden="true" />
+      <Field Name="errorGPIORegisterSVDFail" Hidden="true" />
+      <Field Name="errorGPIORegisterSVDResultCallFail" Hidden="true" />
+      <Field Name="errorInputDeviceStateFail" Hidden="true" />
+      <Field Name="errorInputHwConfIncorrect" Hidden="true" />
+      <Field Name="errorInputRegisterFail" Hidden="true" />
+      <Field Name="errorInputRegisterResultFail" Hidden="true" />
+      <Field Name="errorInputRegisterResultIncorrect" Hidden="true" />
+      <Field Name="errorInputRevIdIncorrect" Hidden="true" />
+      <Field Name="errorOutputDeviceStateFail" Hidden="true" />
+      <Field Name="errorOutputHwConfIncorrect" Hidden="true" />
+      <Field Name="errorOutputRegisterFail" Hidden="true" />
+      <Field Name="errorOutputRegisterResultFail" Hidden="true" />
+      <Field Name="errorOutputRegisterResultIncorrect" Hidden="true" />
+      <Field Name="errorOutputRevIdIncorrect" Hidden="true" />
+      <Field Name="errorSVDAlreadyTriggered" Hidden="true" />
+      <Field Name="errorSVDTrigger" Hidden="true" />
+      <Field Name="errorVIOCrossCompareFailed" Hidden="true" />
+      <Field Name="errorWritingVIOH" Hidden="true" />
+      <Method Name="fillDisplayText" Hidden="true" />
+      <Method Name="getAnalogInputRawValue" Hidden="true" />
+      <Method Name="getCounterToWaitForAmbiguousTravelDir" Hidden="true" />
+      <Method Name="getDigitalInputValue" Hidden="true" />
+      <Method Name="getDigitalOutputValue" Hidden="true" />
+      <Method Name="getSbApplied" Hidden="true" />
+      <Method Name="initAnalogInputs" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Method Name="initDigitalInputs" Hidden="true" />
+      <Method Name="initDigitalOutputs" Hidden="true" />
+      <Method Name="initGPIO" Hidden="true" />
+      <Field Name="initMeasurementsDone" Hidden="true" />
+      <Field Name="ioInitState" Hidden="true" />
+      <Field Name="isolationSwitchNotInRunMode" Hidden="true" />
+      <Field Name="lcsReadyInactiveStandstill" Hidden="true" />
+      <Field Name="locoTravelDirection" Hidden="true" />
+      <Method Name="manageBuzzerStatus" Hidden="true" />
+      <Field Name="MaxCountReqForTriggeringSVD" Hidden="true" />
+      <Field Name="maxNumAllowedWarnings" Hidden="true" />
+      <Field Name="nextCrossCompare" Hidden="true" />
+      <Field Name="noOrMoreThanOneATOSwitchModeSelected" Hidden="true" />
+      <Field Name="numOfAnalogInputs" Hidden="true" />
+      <Field Name="numOfAnalogOutputs" Hidden="true" />
+      <Field Name="numOfDigitalInputs" Hidden="true" />
+      <Field Name="numOfDigitalOutputs" Hidden="true" />
+      <Method Name="processIsolationSwitch" Hidden="true" />
+      <Method Name="readAnalogInput" Hidden="true" />
+      <Method Name="readDigitalInput" Hidden="true" />
+      <Method Name="readInputs" Hidden="true" />
+      <Method Name="readInputsBeforeStartUpPassed" Hidden="true" />
+      <Method Name="readOutputFeedback" Hidden="true" />
+      <Method Name="runVIOCrossCompare" Hidden="true" />
+      <Field Name="sbBrakeInfoForAnalyzer" Hidden="true" />
+      <Method Name="setCoreDigitalOutputValue" Hidden="true" />
+      <Method Name="setDisplayText" Hidden="true" />
+      <Method Name="setInitDone" Hidden="true" />
+      <Field Name="standStillDrivingDirNotSet" Hidden="true" />
+      <Field Name="stateAnalogInputInit" Hidden="true" />
+      <Field Name="stateDigitalInputInit" Hidden="true" />
+      <Field Name="stateDigitalOutputInit" Hidden="true" />
+      <Field Name="stateSVDInit" Hidden="true" />
+      <Method Name="superviseVitalDriverHealthState" Hidden="true" />
+      <Field Name="triggerIsolNotInRunCounter" Hidden="true" />
+      <Method Name="validateViohVersion" Hidden="true" />
+      <Method Name="validStateStr" Hidden="true" />
+      <Field Name="viohClientHandle" Hidden="true" />
+      <Field Name="viohClientVersionString" Hidden="true" />
+      <Field Name="viohServerVersionString" Hidden="true" />
+      <Field Name="viohVersionStringLength" Hidden="true" />
+      <Field Name="vitalDriverFailure" Hidden="true" />
+      <Field Name="vitalDriverFeedbackError" Hidden="true" />
+      <Field Name="vitalDriverFeedbackFailure" Hidden="true" />
+      <Field Name="vitalDriverIsActiveFeedback" Hidden="true" />
+      <Field Name="vitalDriverIsActiveOrder" Hidden="true" />
+      <Field Name="vitalDriverOutputError" Hidden="true" />
+      <Field Name="vitalDriverOutputFailure" Hidden="true" />
+      <Field Name="vitalDriverReadError" Hidden="true" />
+      <Field Name="vitalDriverReadFailure" Hidden="true" />
+      <Field Name="vitalDriverTimestamp" Hidden="true" />
+      <Field Name="vitalDriverValidityState" Hidden="true" />
+      <Field Name="vitalDriverVersionMismatch" Hidden="true" />
+      <Field Name="viuRevisionId" Hidden="true" />
+      <Field Name="vouRevisionId" Hidden="true" />
+      <Method Name="writeOutputs" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Protected" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ATP::IO::AbstractLocoIO::VIOStates" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::IO::AbstractLocoIO::ValidityState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="ATP::IO::AbstractLocoIO::AnalogOutput" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="ATP::IO::AbstractLocoIO::CoreDigitalOutputs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::IO::AbstractLocoIO::CoreDigitalInputs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::IO::AbstractLocoIO::CoreAnalogInputs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="ATP::IO::AbstractLocoIO::AnalogInput" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ATP::IO::AbstractLocoIO::DigitalInput" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ATP::IO::AbstractLocoIO::DigitalOutput" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="ATP::IO::AbstractLocoIO::IOInitState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>FLmCjyuFgWAYdGNqPullGQScMNNhzodhQQhYAQDsXGA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::IOComponent">
+    <Position X="11.75" Y="1" Width="1.5" />
+    <Members>
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAEAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="14" Y="1" Width="2.25" />
+    <Members>
+      <Method Name="~BaseComponent" Hidden="true" />
+      <Method Name="BaseComponent" Hidden="true" />
+      <Field Name="compId" Hidden="true" />
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="getShortName" Hidden="true" />
+      <Method Name="getTrace" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="shortName" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

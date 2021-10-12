@@ -1,0 +1,941 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atc\impl\config
+BEGIN_RECORD abstract_config_base.cpp
+CHECKSUM  106174836
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC18AbstractConfigBaseFv
+   addBoolConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22bPQ2_3ATC10ConfigFile
+   addConfigItem__Q2_3ATC18AbstractConfigBaseFPQ2_3ATC14BaseConfigItem
+   addIPaddrConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN32PQ2_3ATC10ConfigFile
+   addInt16ConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22sN25PQ2_3ATC10ConfigFile
+   addInt32ConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22iN25PQ2_3ATC10ConfigFile
+   addInt64ConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22LN25PQ2_3ATC10ConfigFile
+   addInt8ConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22ScN25PQ2_3ATC10ConfigFile
+   addStringConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22UcT5T2PQ2_3ATC10ConfigFile
+   addUint16ConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22N31PQ2_3ATC10ConfigFile
+   addUint32ConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22UiN25PQ2_3ATC10ConfigFile
+   addUint64ConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22ULN25PQ2_3ATC10ConfigFile
+   addUint8ConfigItem__Q2_3ATC18AbstractConfigBaseFUsPCcN22UcN25PQ2_3ATC10ConfigFile
+   basePtr__Q2_3ATC18AbstractConfigBaseSFv
+   consoleCall__Q2_3ATC18AbstractConfigBaseFUiPA30_Cc
+   crossCompareVersions__Q2_3ATC18AbstractConfigBaseCFP14VFW_BufferNode
+   displayAllConfigItems__Q2_3ATC18AbstractConfigBaseCFv
+   displayConfigItem__Q2_3ATC18AbstractConfigBaseCFUs
+   dynamicCast__tm__51_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC14BoolConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__51_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC14Int8ConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__51_PQ2_3ATC14BaseConfigItemPQ2_3ATC16Uint32ConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__52_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC15Int16ConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__52_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC15Int32ConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__52_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC15Int64ConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__52_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC15Uint8ConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__53_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC16StringConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__53_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC16Uint16ConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__53_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC16Uint32ConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__53_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC16Uint64ConfigItem__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__56_PCQ2_3ATC14BaseConfigItemPCQ2_3ATC19IPaddressConfigItem__3ATCFZ1ZPCci_Z2Z
+   getBdsLevel__Q2_3ATC18AbstractConfigBaseCFv
+   getBdsPort__Q2_3ATC18AbstractConfigBaseCFv
+   getConfigInfo__Q2_3ATC18AbstractConfigBaseCFUsRPCcRQ2_3ATC11ValueBufferT2
+   getConfigInfo__Q2_3ATC18AbstractConfigBaseCFUsRPCcT2RQ2_3ATC11ValueBufferT2N24
+   getConfigItem__Q2_3ATC18AbstractConfigBaseCFUs
+   getConfigItem__Q2_3ATC18AbstractConfigBaseFUs
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRL
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRPCc
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRSc
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRUL
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRUc
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRUi
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRUs
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRb
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRi
+   getConfig__Q2_3ATC18AbstractConfigBaseCFUsRs
+   getConsolePort__Q2_3ATC18AbstractConfigBaseCFv
+   getItemInfoForVfwSim__Q2_3ATC18AbstractConfigBaseFUsRPCcRQ3_3ATC14BaseConfigItem12ItemDatatypeRPQ2_3ATC10ConfigFile
+   getNjruIp__Q2_3ATC18AbstractConfigBaseCFv
+   getNjruLevel__Q2_3ATC18AbstractConfigBaseCFv
+   getNjruPort__Q2_3ATC18AbstractConfigBaseCFv
+   getRuIp__Q2_3ATC18AbstractConfigBaseCFv
+   getRuLogDynValuePeriod__Q2_3ATC18AbstractConfigBaseCFv
+   getRuLogValueDiff__Q2_3ATC18AbstractConfigBaseCFv
+   getRuPort__Q2_3ATC18AbstractConfigBaseCFv
+   getWriteCrossCompareMaxSize__Q2_3ATC18AbstractConfigBaseCFv
+   init__Q2_3ATC18AbstractConfigBaseFv
+   putConfigString__Q2_3ATC18AbstractConfigBaseFUsPCc
+   readConfigParameters__Q2_3ATC18AbstractConfigBaseFP20vfw_i_NvshDescriptorP14VFW_BufferNodeb
+   readConfigParameters__Q2_3ATC18AbstractConfigBaseSFPCcP20vfw_i_NvshDescriptorP14VFW_BufferNode
+   reportConfigError__Q2_3ATC18AbstractConfigBaseSFPCciT1
+   run__Q2_3ATC18AbstractConfigBaseFv
+   saveRunTimeParameters__Q2_3ATC18AbstractConfigBaseCFv
+   setGlobalNameToConfigParameter__Q2_3ATC18AbstractConfigBaseFUsPCc
+   setRunTimeConfigValue__Q2_3ATC18AbstractConfigBaseFUsUi
+   writeCrossCompareVersions__Q2_3ATC18AbstractConfigBaseCFP14VFW_BufferNode
+   writeCrossCompare__Q2_3ATC18AbstractConfigBaseCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR59____ct__Q2_3ATC16StringConfigItemFRCQ2_3ATCJ13J
+   __CPR65____ct__Q2_3ATC19IPaddressConfigItemFRCQ2_3ATCJ13J
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14BoolConfigItemFUsPCcN22bPQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC14BoolConfigItemFv
+   __ct__Q2_3ATC14Int8ConfigItemFUsPCcN22ScN25PQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC14Int8ConfigItemFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC15Int16ConfigItemFUsPCcN22sN25PQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC15Int16ConfigItemFv
+   __ct__Q2_3ATC15Int32ConfigItemFUsPCcN22iN25PQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC15Int32ConfigItemFv
+   __ct__Q2_3ATC15Int64ConfigItemFUsPCcN22LN25PQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC15Int64ConfigItemFv
+   __ct__Q2_3ATC15Uint8ConfigItemFUsPCcN22UcN25PQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC15Uint8ConfigItemFv
+   __ct__Q2_3ATC16StringConfigItemFUsPCcN22UiT5T2PQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC16StringConfigItemFv
+   __ct__Q2_3ATC16Uint16ConfigItemFUsPCcN22N31PQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC16Uint16ConfigItemFv
+   __ct__Q2_3ATC16Uint32ConfigItemFUsPCcN22UiN25PQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC16Uint32ConfigItemFv
+   __ct__Q2_3ATC16Uint64ConfigItemFUsPCcN22ULN25PQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC16Uint64ConfigItemFv
+   __ct__Q2_3ATC19IPaddressConfigItemFUsPCcN22UiT5T2PQ2_3ATC10ConfigFile
+   __ct__Q2_3ATC19IPaddressConfigItemFv
+   __ct__Q2_3ATC23AbstractApplicationBaseFQ2_3ATC14ComponentBlock
+   __ct__Q2_3ATC23AbstractApplicationBaseFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   __dt__Q2_3ATC23AbstractApplicationBaseFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC23AbstractApplicationBaseSFv
+   crossCompareVersion__Q2_3ATC10ConfigFileCFP14VFW_BufferNode
+   debugInfo__3ATCFPCc
+   getBlockNr__Q2_3ATC23AbstractApplicationBaseCFv
+   getConfigFile__Q2_3ATC14BaseConfigItemCFv
+   getConfigFile__Q2_3ATC14BaseConfigItemFv
+   getConfigItemId__Q2_3ATC14BaseConfigItemCFv
+   getDatatype__Q2_3ATC14BaseConfigItemCFv
+   getDescriptiveText__Q2_3ATC14BaseConfigItemCFv
+   getExpectedMajorVersion__Q2_3ATC10ConfigFileCFv
+   getExpectedMinorVersion__Q2_3ATC10ConfigFileCFv
+   getName__Q2_3ATC14BaseConfigItemCFv
+   getNvshHandle__Q2_3ATC10ConfigFileFv
+   getUnitString__Q2_3ATC14BaseConfigItemCFv
+   getValueString__Q2_3ATC14BoolConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueString__Q2_3ATC14Int8ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueString__Q2_3ATC15Int16ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueString__Q2_3ATC15Int32ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueString__Q2_3ATC15Int64ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueString__Q2_3ATC15Uint8ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueString__Q2_3ATC16StringConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueString__Q2_3ATC16Uint16ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueString__Q2_3ATC16Uint32ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueString__Q2_3ATC16Uint64ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueString__Q2_3ATC19IPaddressConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC14BoolConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValueStrings__Q2_3ATC14Int8ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValueStrings__Q2_3ATC15Int16ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValueStrings__Q2_3ATC15Int32ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValueStrings__Q2_3ATC15Int64ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValueStrings__Q2_3ATC15Uint8ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValueStrings__Q2_3ATC16StringConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValueStrings__Q2_3ATC16Uint16ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValueStrings__Q2_3ATC16Uint32ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValueStrings__Q2_3ATC16Uint64ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValueStrings__Q2_3ATC19IPaddressConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC14BoolConfigItemCFv
+   getValue__Q2_3ATC14Int8ConfigItemCFv
+   getValue__Q2_3ATC15Int16ConfigItemCFv
+   getValue__Q2_3ATC15Int32ConfigItemCFv
+   getValue__Q2_3ATC15Int64ConfigItemCFv
+   getValue__Q2_3ATC15Uint8ConfigItemCFv
+   getValue__Q2_3ATC16StringConfigItemCFv
+   getValue__Q2_3ATC16Uint16ConfigItemCFv
+   getValue__Q2_3ATC16Uint32ConfigItemCFv
+   getValue__Q2_3ATC16Uint64ConfigItemCFv
+   getValue__Q2_3ATC19IPaddressConfigItemCFv
+   isReadFlagConfigID__Q2_3ATC14BaseConfigItemCFv
+   isTextMatch__3ATCFPCcT1Ui
+   parseStringToValue__Q2_3ATC14BoolConfigItemFPCc
+   parseStringToValue__Q2_3ATC14Int8ConfigItemFPCc
+   parseStringToValue__Q2_3ATC15Int16ConfigItemFPCc
+   parseStringToValue__Q2_3ATC15Int32ConfigItemFPCc
+   parseStringToValue__Q2_3ATC15Int64ConfigItemFPCc
+   parseStringToValue__Q2_3ATC15Uint8ConfigItemFPCc
+   parseStringToValue__Q2_3ATC16StringConfigItemFPCc
+   parseStringToValue__Q2_3ATC16Uint16ConfigItemFPCc
+   parseStringToValue__Q2_3ATC16Uint32ConfigItemFPCc
+   parseStringToValue__Q2_3ATC16Uint64ConfigItemFPCc
+   parseStringToValue__Q2_3ATC19IPaddressConfigItemFPCc
+   readAndVerifyVersion__Q2_3ATC10ConfigFileFP14VFW_BufferNode
+   readParameters__Q2_3ATC10ConfigFileCFv
+   readValueFromBuffer__Q2_3ATC14BoolConfigItemFP14VFW_BufferNode
+   readValueFromBuffer__Q2_3ATC14Int8ConfigItemFP14VFW_BufferNode
+   readValueFromBuffer__Q2_3ATC15Int16ConfigItemFP14VFW_BufferNode
+   readValueFromBuffer__Q2_3ATC15Int32ConfigItemFP14VFW_BufferNode
+   readValueFromBuffer__Q2_3ATC15Int64ConfigItemFP14VFW_BufferNode
+   readValueFromBuffer__Q2_3ATC15Uint8ConfigItemFP14VFW_BufferNode
+   readValueFromBuffer__Q2_3ATC16StringConfigItemFP14VFW_BufferNode
+   readValueFromBuffer__Q2_3ATC16Uint16ConfigItemFP14VFW_BufferNode
+   readValueFromBuffer__Q2_3ATC16Uint32ConfigItemFP14VFW_BufferNode
+   readValueFromBuffer__Q2_3ATC16Uint64ConfigItemFP14VFW_BufferNode
+   readValueFromBuffer__Q2_3ATC19IPaddressConfigItemFP14VFW_BufferNode
+   setGlobalName__Q2_3ATC14BaseConfigItemFPCc
+   setReadFlagConfigID__Q2_3ATC14BaseConfigItemFv
+   setReadHandler__Q2_3ATC10ConfigFileSFPFPCcP20vfw_i_NvshDescriptorP14VFW_BufferNode_v
+   setValue__Q2_3ATC16Uint32ConfigItemFUi
+   vfwGetU16
+   vfwGetValidSize
+   vfwInitBuffer
+   vfwPutU16
+   vfwPutU32
+   vfwPutU8
+   vfwSetFullBuffer
+   vfwVisitCheckPoint
+   writeCrossCompareVersion__Q2_3ATC10ConfigFileCFP14VFW_BufferNode
+   writeParameters__Q2_3ATC10ConfigFileFP14VFW_BufferNode
+   writeToLog__Q2_3ATC13BaseComponentCFQ2_3ATC8LogLevelPCcT2i
+   writeWithNewline__Q2_3ATC15AbstractConsoleFPCc
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+   configFileCommon__Q2_3ATC18AbstractConfigBase
+   configFileDisp__Q2_3ATC18AbstractConfigBase
+   configFileInstance__Q2_3ATC18AbstractConfigBase
+   configFileMaint__Q2_3ATC18AbstractConfigBase
+   configFileRuntime__Q2_3ATC18AbstractConfigBase
+   configFileType__Q2_3ATC18AbstractConfigBase
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::AbstractConfigBase
+   ATC::BaseComponent
+DEFAULT_TESTABLE_CLASSES
+   ATC::AbstractConfigBase
+INCLUDES
+END_RECORD abstract_config_base.cpp
+BEGIN_RECORD base_config_item.cpp
+CHECKSUM 3605642288
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __dt__Q2_3ATC14BaseConfigItemFv
+   copyTo__Q2_3ATC14BaseConfigItemSFRQ2_3ATC11ValueBufferPCc
+   getConfigFile__Q2_3ATC14BaseConfigItemCFv
+   getConfigFile__Q2_3ATC14BaseConfigItemFv
+   getConfigItemId__Q2_3ATC14BaseConfigItemCFv
+   getDatatype__Q2_3ATC14BaseConfigItemCFv
+   getDescriptiveText__Q2_3ATC14BaseConfigItemCFv
+   getGlobalName__Q2_3ATC14BaseConfigItemCFv
+   getName__Q2_3ATC14BaseConfigItemCFv
+   getUnitString__Q2_3ATC14BaseConfigItemCFv
+   getWriteCrossCompareMaxSize__Q2_3ATC14BaseConfigItemCFv
+   isReadFlagConfigID__Q2_3ATC14BaseConfigItemCFv
+   setGlobalName__Q2_3ATC14BaseConfigItemFPCc
+   setReadFlagConfigID__Q2_3ATC14BaseConfigItemFv
+   writeCrossCompareBool__Q2_3ATC14BaseConfigItemCFP14VFW_BufferNodeb
+   writeCrossCompare__Q2_3ATC14BaseConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   vfwPutString
+   vfwPutU16
+   vfwPutU32
+   vfwPutU8
+   vfw_strlcpy
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::BaseConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::BaseConfigItem
+INCLUDES
+END_RECORD base_config_item.cpp
+BEGIN_RECORD bool_config_item.cpp
+CHECKSUM 2786758758
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC14BoolConfigItemFUsPCcN22bPQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC14BoolConfigItemCFv
+   getValueString__Q2_3ATC14BoolConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC14BoolConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC14BoolConfigItemCFv
+   parseStringToValue__Q2_3ATC14BoolConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC14BoolConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC14BoolConfigItemFb
+   writeCrossCompareSubClass__Q2_3ATC14BoolConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14BoolConfigItemFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   copyTo__Q2_3ATC14BaseConfigItemSFRQ2_3ATC11ValueBufferPCc
+   vfwGetBOOL
+   writeCrossCompareBool__Q2_3ATC14BaseConfigItemCFP14VFW_BufferNodeb
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::BoolConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::BoolConfigItem
+INCLUDES
+END_RECORD bool_config_item.cpp
+BEGIN_RECORD config_file.cpp
+CHECKSUM  711215576
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   crossCompareVersion__Q2_3ATC10ConfigFileCFP14VFW_BufferNode
+   getExpectedMajorVersion__Q2_3ATC10ConfigFileCFv
+   getExpectedMinorVersion__Q2_3ATC10ConfigFileCFv
+   getNvshHandle__Q2_3ATC10ConfigFileFv
+   getWriteCrossCompareMaxSize__Q2_3ATC10ConfigFileCFv
+   nvshConsistencyHandler__Q2_3ATC10ConfigFileSFP20vfw_i_NvshDescriptor24VFW_NvshConsistencyState
+   nvshErrorCallback__Q2_3ATC10ConfigFileSFP20vfw_i_NvshDescriptor13VFW_NvshError
+   nvshReadCallback__Q2_3ATC10ConfigFileSFP20vfw_i_NvshDescriptorP14VFW_BufferNode
+   readAndVerifyVersion__Q2_3ATC10ConfigFileFP14VFW_BufferNode
+   readParameters__Q2_3ATC10ConfigFileCFv
+   setReadHandler__Q2_3ATC10ConfigFileSFPFPCcP20vfw_i_NvshDescriptorP14VFW_BufferNode_v
+   verifyVersion__Q2_3ATC10ConfigFileCFUcT1
+   writeCrossCompareVersion__Q2_3ATC10ConfigFileCFP14VFW_BufferNode
+   writeCrossCompare__Q2_3ATC10ConfigFileCFP14VFW_BufferNode
+   writeParameters__Q2_3ATC10ConfigFileFP14VFW_BufferNode
+CALLED_OBJECTS
+   __ct__Q2_3ATC10ConfigFileFv
+   aosHalt__3ATCFPCciT1
+   debugInfo__3ATCFPCc
+   vfwGetU8
+   vfwNvshAllocateConfiguration
+   vfwNvshGetFilename
+   vfwNvshReadRequest
+   vfwNvshWrite
+   vfwPutU8
+   vfwVisitCheckPoint
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+   readHandler__Q2_3ATC10ConfigFile
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::ConfigFile
+DEFAULT_TESTABLE_CLASSES
+   ATC::ConfigFile
+INCLUDES
+END_RECORD config_file.cpp
+BEGIN_RECORD config_memory_area.cpp
+CHECKSUM 4293985946
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __CPR128____ct__Q2_3ATC16ConfigMemoryAreaFUibPCcT3T1PFP20vfw_i_NvshDescriptor13VFW_NvshError_vPFPJ45JP14VFW_BufferNode_v
+   __vcrt_va_start_verify_argument_type__tm__25_P21__crt_locale_pointers__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__26_CP21__crt_locale_pointers__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__4_PCw__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__5_CPCc__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__5_CPCw__Fv_v
+   getNvshHandle__Q2_3ATC16ConfigMemoryAreaFv
+   getWriteCrossCompareMaxSize__Q2_3ATC16ConfigMemoryAreaCFv
+   writeCrossCompare__Q2_3ATC16ConfigMemoryAreaCFP14VFW_BufferNode
+CALLED_OBJECTS
+   _Alloc_proxy__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   _Free_proxy__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   _Nw__Q2_3std18_Vb_val__tm__4_Z1ZSFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_type
+   _Orphan_all__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFv
+   _Rechecked__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFPCZ1Z
+   _Unchecked__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZCFv
+   _Xbad_alloc__3stdFv
+   _Xlength_error__3stdFPCc
+   _Xout_of_range__3stdFPCc
+   __CPR128___Move_alloc__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRQ3_3stdJ51J5_Alty
+   __CPR129___Copy_alloc__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRCQ3_3stdJ51J5_Alty
+   __CPR134___Move_alloc__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRQ3_3stdJ51J5_Alty
+   __CPR135___Copy_alloc__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRCQ3_3stdJ51J5_Alty
+   __CPR151___Swap_all__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRQ2_3stdJ18J
+   __CPR157___Swap_all__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRQ2_3stdJ18J
+   __CPR62____ct__Q2_3std18_Vb_val__tm__4_Z1ZFEQ2_3stdJ13J
+   __CPR63____ct__Q2_3std18_Vb_val__tm__4_Z1ZFRCQ2_3stdJ13J
+   __CPR67____ct__Q2_3std18_Vb_val__tm__4_Z1ZFEQ2_3stdJ13JRCZ1Z
+   __CPR68____ct__Q2_3std18_Vb_val__tm__4_Z1ZFRCQ2_3stdJ13JRCZ1Z
+   __ExceptionPtrAssign__FPvPCv
+   __ExceptionPtrCompare__FPCvT1
+   __ExceptionPtrCopyException__FPvPCvT2
+   __ExceptionPtrCopy__FPvPCv
+   __ExceptionPtrCreate__FPv
+   __ExceptionPtrCurrentException__FPv
+   __ExceptionPtrDestroy__FPv
+   __ExceptionPtrRethrow__FPCv
+   __ExceptionPtrSwap__FPvT1
+   __ExceptionPtrToBool__FPCv
+   __ct__Q2_3ATC16ConfigMemoryAreaFv
+   __ct__Q2_3std18_Vb_val__tm__4_Z1ZFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_typeRCb
+   __ct__Q2_3std18_Vb_val__tm__4_Z1ZFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_typeRCbRCZ1Z
+   __ct__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFPCZ1ZUi
+   __ct__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFv
+   __ct__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFv
+   __ct__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFv
+   __ct__tm__11_Z1_2ZZ2_2Z__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFEZ1_2Z
+   __ct__tm__11_Z1_2ZZ2_2Z__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFEZ1_2Z
+   __dl__FPv
+   __dl__FPvUi
+   __dt__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   __nw__FUi
+   __nw__FUiRCQ2_3std9nothrow_t
+   __std_exception_copy
+   __std_exception_destroy
+   __vcrt_va_start_verify_argument_type__tm__4_PCc__Fv_v
+   _get_unexpected
+   _m_packssdw
+   _m_packsswb
+   _m_pcmpgtb
+   _m_pcmpgtw
+   _m_punpckhwd
+   _m_punpcklbw
+   _m_punpcklwd
+   _mm_cvt_pi2ps
+   _mm_cvt_ps2pi
+   _mm_movehl_ps
+   _mm_movelh_ps
+   _mm_setzero_ps
+   _mm_setzero_si64
+   memchr
+   memcmp
+   memcpy
+   memmove
+   memset
+   strchr
+   strrchr
+   strstr
+   vfwNvshAllocateConfiguration
+   vfwPutU32
+   vfwPutU8
+   wcschr
+   wcsrchr
+   wcsstr
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+   npos__Q2_3std78basic_string__tm__58_cQ2_3std20char_traits__tm__2_cQ2_3std18allocator__tm__2_c
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+   nothrow__3std
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::ConfigMemoryArea
+   std::_Bitwise_hash<__int64>
+   std::_Bitwise_hash<__wchar_t>
+   std::_Bitwise_hash<bool>
+   std::_Bitwise_hash<char16_t>
+   std::_Bitwise_hash<char32_t>
+   std::_Bitwise_hash<char>
+   std::_Bitwise_hash<double>
+   std::_Bitwise_hash<float>
+   std::_Bitwise_hash<int>
+   std::_Bitwise_hash<long double>
+   std::_Bitwise_hash<long>
+   std::_Bitwise_hash<short>
+   std::_Bitwise_hash<signed char>
+   std::_Bitwise_hash<unsigned __int64>
+   std::_Bitwise_hash<unsigned char>
+   std::_Bitwise_hash<unsigned long>
+   std::_Bitwise_hash<unsigned short>
+   std::_Bitwise_hash<unsigned>
+   std::_Char_traits<char16_t, unsigned short>
+   std::_Char_traits<char32_t, unsigned>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>, std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>::value_type>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<char>>, std::_String_val<std::_Simple_types<char>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<const ATC::Event *>>, std::_Vector_val<std::_Simple_types<const ATC::Event *>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Container_base0
+   std::_Container_base12
+   std::_Container_proxy
+   std::_Iterator_base0
+   std::_Iterator_base12
+   std::_Lockit
+   std::_String_alloc<std::_String_base_types<char, std::allocator<char>>>
+   std::_String_val<std::_Simple_types<char>>
+   std::_String_val<std::_Simple_types<char>>::_Bxty
+   std::_Vector_alloc<std::_Vec_base_types<ATC::AbstractEventHandler::EventListItem, std::allocator<ATC::AbstractEventHandler::EventListItem>>>
+   std::_Vector_alloc<std::_Vec_base_types<const ATC::Event *, std::allocator<const ATC::Event *>>>
+   std::_Vector_val<std::_Simple_types<const ATC::Event *>>
+   std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>::value_type>>
+   std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::_Wrap_alloc<std::allocator<char>>
+   std::_Wrap_alloc<std::allocator<const ATC::Event *>>
+   std::_Wrap_int
+   std::allocator<ATC::AbstractEventHandler::EventListItem>
+   std::allocator<char>
+   std::allocator<const ATC::Event *>
+   std::allocator<void>
+   std::allocator_traits<std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::allocator_traits<std::allocator<char>>
+   std::allocator_traits<std::allocator<const ATC::Event *>>
+   std::bad_alloc
+   std::bad_array_new_length
+   std::bad_exception
+   std::basic_string<char, std::char_traits<char>, std::allocator<char>>
+   std::char_traits<__wchar_t>
+   std::char_traits<char>
+   std::char_traits<unsigned short>
+   std::domain_error
+   std::exception
+   std::exception_ptr
+   std::hash<double>
+   std::hash<float>
+   std::hash<long double>
+   std::initializer_list<bool>
+   std::integral_constant<bool, false>
+   std::integral_constant<bool, true>
+   std::integral_constant<unsigned, 0U>
+   std::integral_constant<unsigned, 1U>
+   std::integral_constant<unsigned, 2U>
+   std::integral_constant<unsigned, 4U>
+   std::integral_constant<unsigned, 8U>
+   std::invalid_argument
+   std::length_error
+   std::logic_error
+   std::nested_exception
+   std::numeric_limits<__int64>
+   std::numeric_limits<__wchar_t>
+   std::numeric_limits<bool>
+   std::numeric_limits<char16_t>
+   std::numeric_limits<char32_t>
+   std::numeric_limits<char>
+   std::numeric_limits<double>
+   std::numeric_limits<float>
+   std::numeric_limits<int>
+   std::numeric_limits<long double>
+   std::numeric_limits<long>
+   std::numeric_limits<short>
+   std::numeric_limits<signed char>
+   std::numeric_limits<unsigned __int64>
+   std::numeric_limits<unsigned char>
+   std::numeric_limits<unsigned long>
+   std::numeric_limits<unsigned short>
+   std::numeric_limits<unsigned>
+   std::out_of_range
+   std::overflow_error
+   std::range_error
+   std::runtime_error
+   std::underflow_error
+   std::vector<ATC::AbstractEventHandler::EventListItem, std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::vector<const ATC::Event *, std::allocator<const ATC::Event *>>
+DEFAULT_TESTABLE_CLASSES
+   ATC::ConfigMemoryArea
+INCLUDES
+END_RECORD config_memory_area.cpp
+BEGIN_RECORD int16_config_item.cpp
+CHECKSUM 389503366
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC15Int16ConfigItemFUsPCcN22sN25PQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC15Int16ConfigItemCFv
+   getValueString__Q2_3ATC15Int16ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC15Int16ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC15Int16ConfigItemCFv
+   parseStringToValue__Q2_3ATC15Int16ConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC15Int16ConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC15Int16ConfigItemFs
+   writeCrossCompareSubClass__Q2_3ATC15Int16ConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC15Int16ConfigItemFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   aosHalt__3ATCFPCciT1
+   vfwGetI16
+   vfwPutI16
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::Int16ConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::Int16ConfigItem
+INCLUDES
+END_RECORD int16_config_item.cpp
+BEGIN_RECORD int32_config_item.cpp
+CHECKSUM 2122766686
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC15Int32ConfigItemFUsPCcN22iN25PQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC15Int32ConfigItemCFv
+   getValueString__Q2_3ATC15Int32ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC15Int32ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC15Int32ConfigItemCFv
+   parseStringToValue__Q2_3ATC15Int32ConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC15Int32ConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC15Int32ConfigItemFi
+   writeCrossCompareSubClass__Q2_3ATC15Int32ConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC15Int32ConfigItemFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   aosHalt__3ATCFPCciT1
+   vfwGetI32
+   vfwPutI32
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::Int32ConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::Int32ConfigItem
+INCLUDES
+END_RECORD int32_config_item.cpp
+BEGIN_RECORD int64_config_item.cpp
+CHECKSUM 956834596
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC15Int64ConfigItemFUsPCcN22LN25PQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC15Int64ConfigItemCFv
+   getValueString__Q2_3ATC15Int64ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC15Int64ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC15Int64ConfigItemCFv
+   parseStringToValue__Q2_3ATC15Int64ConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC15Int64ConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC15Int64ConfigItemFL
+   writeCrossCompareSubClass__Q2_3ATC15Int64ConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC15Int64ConfigItemFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   aosHalt__3ATCFPCciT1
+   vfwGetI64
+   vfwPutI64
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::Int64ConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::Int64ConfigItem
+INCLUDES
+END_RECORD int64_config_item.cpp
+BEGIN_RECORD int8_config_item.cpp
+CHECKSUM 2148236503
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC14Int8ConfigItemFUsPCcN22ScN25PQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC14Int8ConfigItemCFv
+   getValueString__Q2_3ATC14Int8ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC14Int8ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC14Int8ConfigItemCFv
+   parseStringToValue__Q2_3ATC14Int8ConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC14Int8ConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC14Int8ConfigItemFSc
+   writeCrossCompareSubClass__Q2_3ATC14Int8ConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14Int8ConfigItemFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   aosHalt__3ATCFPCciT1
+   vfwGetI8
+   vfwPutI8
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::Int8ConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::Int8ConfigItem
+INCLUDES
+END_RECORD int8_config_item.cpp
+BEGIN_RECORD ipaddress_config_item.cpp
+CHECKSUM 1005540876
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC19IPaddressConfigItemFUsPCcN22UiT5T2PQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC19IPaddressConfigItemCFv
+   getValueString__Q2_3ATC19IPaddressConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC19IPaddressConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC19IPaddressConfigItemCFv
+   parseStringToValue__Q2_3ATC19IPaddressConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC19IPaddressConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC19IPaddressConfigItemFPCc
+   writeCrossCompareSubClass__Q2_3ATC19IPaddressConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR65____ct__Q2_3ATC19IPaddressConfigItemFRCQ2_3ATCJ13J
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC18AbstractConfigBaseFv
+   __ct__Q2_3ATC19IPaddressConfigItemFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   aosHalt__3ATCFPCciT1
+   basePtr__Q2_3ATC18AbstractConfigBaseSFv
+   copyTo__Q2_3ATC14BaseConfigItemSFRQ2_3ATC11ValueBufferPCc
+   getTrace__Q2_3ATC13BaseComponentFv
+   vfwGetU8
+   vfwPutU32
+   vfwPutU8
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::IPaddressConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::IPaddressConfigItem
+INCLUDES
+END_RECORD ipaddress_config_item.cpp
+BEGIN_RECORD string_config_item.cpp
+CHECKSUM 4151764187
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC16StringConfigItemFUsPCcN22UiT5T2PQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC16StringConfigItemCFv
+   getValueString__Q2_3ATC16StringConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC16StringConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC16StringConfigItemCFv
+   parseStringToValue__Q2_3ATC16StringConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC16StringConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC16StringConfigItemFPCc
+   writeCrossCompareSubClass__Q2_3ATC16StringConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR59____ct__Q2_3ATC16StringConfigItemFRCQ2_3ATCJ13J
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC16StringConfigItemFv
+   __ct__Q2_3ATC18AbstractConfigBaseFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   aosHalt__3ATCFPCciT1
+   basePtr__Q2_3ATC18AbstractConfigBaseSFv
+   copyTo__Q2_3ATC14BaseConfigItemSFRQ2_3ATC11ValueBufferPCc
+   getTrace__Q2_3ATC13BaseComponentFv
+   vfwGetString
+   vfwPutString
+   vfwPutU32
+   write__Q2_3ATC14TraceInterfaceCFUcPCcUib
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::StringConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::StringConfigItem
+INCLUDES
+END_RECORD string_config_item.cpp
+BEGIN_RECORD uint16_config_item.cpp
+CHECKSUM 4218871700
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC16Uint16ConfigItemFUsPCcN22N31PQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC16Uint16ConfigItemCFv
+   getValueString__Q2_3ATC16Uint16ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC16Uint16ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC16Uint16ConfigItemCFv
+   parseStringToValue__Q2_3ATC16Uint16ConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC16Uint16ConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC16Uint16ConfigItemFUs
+   writeCrossCompareSubClass__Q2_3ATC16Uint16ConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC16Uint16ConfigItemFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   aosHalt__3ATCFPCciT1
+   vfwGetU16
+   vfwPutU16
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::Uint16ConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::Uint16ConfigItem
+INCLUDES
+END_RECORD uint16_config_item.cpp
+BEGIN_RECORD uint32_config_item.cpp
+CHECKSUM 3905504644
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC16Uint32ConfigItemFUsPCcN22UiN25PQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC16Uint32ConfigItemCFv
+   getValueString__Q2_3ATC16Uint32ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC16Uint32ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC16Uint32ConfigItemCFv
+   parseStringToValue__Q2_3ATC16Uint32ConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC16Uint32ConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC16Uint32ConfigItemFUi
+   writeCrossCompareSubClass__Q2_3ATC16Uint32ConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC16Uint32ConfigItemFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   aosHalt__3ATCFPCciT1
+   vfwGetU32
+   vfwPutU32
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::Uint32ConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::Uint32ConfigItem
+INCLUDES
+END_RECORD uint32_config_item.cpp
+BEGIN_RECORD uint64_config_item.cpp
+CHECKSUM 2643335769
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC16Uint64ConfigItemFUsPCcN22ULN25PQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC16Uint64ConfigItemCFv
+   getValueString__Q2_3ATC16Uint64ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC16Uint64ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC16Uint64ConfigItemCFv
+   parseStringToValue__Q2_3ATC16Uint64ConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC16Uint64ConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC16Uint64ConfigItemFUL
+   writeCrossCompareSubClass__Q2_3ATC16Uint64ConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC16Uint64ConfigItemFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   aosHalt__3ATCFPCciT1
+   vfwGetU64
+   vfwPutU64
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::Uint64ConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::Uint64ConfigItem
+INCLUDES
+END_RECORD uint64_config_item.cpp
+BEGIN_RECORD uint8_config_item.cpp
+CHECKSUM 406232249
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC15Uint8ConfigItemFUsPCcN22UcN25PQ2_3ATC10ConfigFile
+   getDefault__Q2_3ATC15Uint8ConfigItemCFv
+   getValueString__Q2_3ATC15Uint8ConfigItemCFRQ2_3ATC11ValueBuffer
+   getValueStrings__Q2_3ATC15Uint8ConfigItemCFRQ2_3ATC11ValueBufferN21
+   getValue__Q2_3ATC15Uint8ConfigItemCFv
+   parseStringToValue__Q2_3ATC15Uint8ConfigItemFPCc
+   readValueFromBuffer__Q2_3ATC15Uint8ConfigItemFP14VFW_BufferNode
+   setValue__Q2_3ATC15Uint8ConfigItemFUc
+   writeCrossCompareSubClass__Q2_3ATC15Uint8ConfigItemCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC15Uint8ConfigItemFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   aosHalt__3ATCFPCciT1
+   vfwGetU8
+   vfwPutU8
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::Uint8ConfigItem
+DEFAULT_TESTABLE_CLASSES
+   ATC::Uint8ConfigItem
+INCLUDES
+END_RECORD uint8_config_item.cpp

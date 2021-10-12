@@ -1,0 +1,40 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atp_bhp\impl\position\odometry
+BEGIN_RECORD odometry.cpp
+CHECKSUM 1445727251
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATP3Pos8OdometryFv
+   instance__Q3_3ATP3Pos8OdometrySFv
+   validateSdpVersion__Q3_3ATP3Pos8OdometryCFUcN21
+CALLED_OBJECTS
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q3_3ATP3Pos16AbstractOdometryFv
+   __ct__Q3_3ATP3Pos8OdometryFRCQ3_3ATP3Pos8Odometry
+   __ct__Q3_3ATP7Support18CrossCompareOutputFv
+   __ct__Q3_3ATP7Support25CrossCompareOutputChannelFv
+   __dt__Q3_3ATP7Support18CrossCompareOutputFv
+   __dt__Q3_3ATP7Support25CrossCompareOutputChannelFv
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATP::Pos::Odometry
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::Pos::Odometry
+INCLUDES
+END_RECORD odometry.cpp

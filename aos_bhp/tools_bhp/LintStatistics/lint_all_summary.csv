@@ -1,0 +1,1636 @@
+Lint Error;Count;Description
+1960 Rule:5-0-15;346;Pointer arithmetic other than array indexing used.
+586;270;"   String 'Name' is deprecated. String -- The Name has been
+      deprecated by some use of the deprecate option.  See Section
+      "
+537;240;"   Repeated include file 'FileName' -- The file whose inclusion
+      within a module is being requested has already been included in
+      this compilation.  The file is processed normally even if the
+      message is given.  If it is your standard practice to repeat
+      included files then simply suppress this message.
+
+"
+114;238;"   Inconsistent structure declaration for tag 'Symbol' -- The
+      sequence of members within a structure (or union) is inconsistent
+      with another structure (usually in some other module) having the
+      same name.
+
+"
+831;211;"   Reference cited in prior message -- Message 831 is similar to
+      message 830 in that it is a vehicle to convey in 'canonical form'
+      location information embedded within some other message.  In the
+      case of Info 831 the information is 'Reference' information.
+      This is a sequence of 1 or more locations that support a
+      particular message.  For example, consider the (somewhat
+      simplified) message:
+
+     
+          file y.c line 701:  Possible divide by 0 [Reference: file z.c lines 22, 23]
+     
+
+      Accompanying this message will be two Info 831 messages, one for
+      each of the references cited in the message.  Without this it
+      would be a relatively tedious matter to locate each one of the
+      references to determine just why there is a potential divide by
+      0.  With these additional messages, editors and IDE's can
+      automatically position the focus of editing to the nominal
+      locations of the message.
+
+"
+613;182;"   Possible use of null pointer 'Symbol' in [left/right] argument to
+      operator 'String' Reference -- From information gleaned from
+      earlier statements, it is possible that a null pointer (a pointer
+      whose value is 0) can be used in a context where null pointers
+      are inappropriate.  Such contexts include:  Unary *, pointer
+      increment (++) or decrement(--), addition of pointer to numeric,
+      and subtraction of two pointers.  In the case of binary
+      operators, one of the words 'left' or 'right' is used to
+      designate which operand is null.  Symbol identifies the pointer
+      variable that may be NULL.  See also messages 413 and 794.
+
+"
+1960 Rule:5-0-4;128; Implicit conversion changes signedness.
+830;122;"   Location cited in prior message -- Message 830 is a vehicle to
+      convey in 'canonical form' the location information embedded
+      within some other message.  For example, consider the (somewhat
+      simplified) message:
+
+     
+      file x.c line 37:  Declaration for 'x' conflicts with line 22
+     
+
+      This contains the location (""line 22"") embedded in the text of
+      the message.  Embedded location information is not normally
+      understood by editors and IDE's (Interactive Development
+      Environments) which can only position to the nominal location
+      (line 37 in this example).  By adding this additional message
+      with the nominal location of line 22 the user can, by stepping to
+      the next message and, in this case, see what the 'conflict' is
+      all about.  This message and message 831 below do not follow the
+      ordinary rules for message suppression.  If they did then when
+      the option -w2 was employed to turn the warning level down to 2
+      these messages (at level 3) would also vanish.  Instead they
+      continue to function as expected.  To inhibit them you need to
+      explicitly turn them off using one of:
+     
+          -e830
+          -e831
+     
+      They may be restored via +e830 and +e831;  they state of
+      suppression can be saved and restored via the -save -restore
+      options.  Options such as -e8* and -e{831} will have no effect.
+
+"
+18;121;"    Symbol 'Symbol' redeclared (TypeDiff) conflicts with Location --
+      A symbol is being redeclared.  The parameter TypeDiff provides
+      further information on how the types differ.  Location is the
+      location of the previous definition.
+
+"
+1039;113;"  Symbol 'Symbol' is not a member of class 'String' -- In a
+      declaration for the symbol X::Y, Y was not previously established
+      as a member of X.  [11, 10.4]
+
+"
+929;104;"   Cast from pointer to pointer -- A cast is being made to convert
+      one pointer to another that does not fall into one of the
+      classifications described in 925 through 928 above.  This could
+      be nonportable on machines that distinguish between pointer to
+      char and pointer to word.  Consider casting a pointer to pointer
+      to char to a pointer to pointer to word.  The indirect bit
+      pattern remains unchanged.
+
+"
+1938;77;"  constructor 'Symbol' accesses global data. -- A constructor is
+      accessing global data.  It is generally not a good idea for
+      constructors to access global data because order of
+      initialization dependencies can be created.  If the global data
+      is itself initialized in another module and if the constructor is
+      accessed during initialization, a 'race' condition is
+      established.  [12, Item 47]
+
+"
+829;59;"   A +headerwarn option was previously issued for header 'Symbol --
+      Some coding standards discourage or even prohibit the use of
+      certain header files.  PC-lint can guard against their use if we
+      by activating the lint option +headerwarn(Symbol).  Later, if the
+      file is used, we will then issue this message.
+
+"
+713;49;"   Loss of precision (Context) (Type to Type) -- An assignment (or
+      implied assignment, see Context) is being made from an unsigned
+      quantity to a signed quantity, that will result in the possible
+      loss of one bit of integral precision such as converting from
+      unsigned int to int.  A cast will suppress the message.
+
+"
+1960 Rule:5-0-3;49; Implicit conversion of cvalue.
+534;46;"   Ignoring return value of function 'Symbol' (compare with
+      Location) -- A function that returns a value is called just for
+      side effects as, for example, in a statement by itself or the
+      left-hand side of a comma operator.  Try: (void) function( ); to
+      call a function and ignore its return value.  See also the fvr,
+      fvo and fdr flags.
+
+"
+1762;40;"  Member function 'Symbol' could be made const -- The indicated
+      (non-static) member function did not modify member data and did
+      not call non-const functions.  Moreover, it does not make any
+      deep modification to the class member.  A modification is
+      considered deep if it modifies information indirectly through a
+      class member pointer.  Therefore it could and probably should be
+      declared as a const member function.  See also Info 1763 and
+      Elective Note 1962.
+
+"
+1960 Rule:5-2-12;38;Array-pointer decay when passing the array to a function.
+1963 Rule:5-0-2;34; Dependence placed on C's operator precedence.
+1023;33;"  Call String(String) is ambiguous; candidates: String -- A call to
+      an overloaded function or operator is ambiguous.  The candidates
+      of choice are provided in the message.  [11, 13.2]
+
+"
+1703;33;"  Function 'String' arbitrarily selected.  Refer to Error 'Integer'
+      -- This informational message is given with error numbers 1023,
+      1024, 1025 and 1026.  These are issued when an error is
+      encountered during the overload resolution process, and is issued
+      merely to indicate which function was arbitrarily selected.  [11,
+      13.2]
+
+"
+1025;32;"  No function matches invocation 'Name' on arg no. Integer -- A
+      call to an overloaded function could not be resolved because each
+      declared function has a type incompatibility with the indicated
+      argument.  [11, 13.2]
+
+"
+926;31;"   Cast from pointer to pointer -- A cast is being made to convert a
+      char pointer to a char pointer (one or both of the char's may be
+      unsigned).  This is considered a 'safe' cast.
+
+"
+641;21;"   Converting enum to int -- An enumeration type was used in a
+      context that required a computation such as an argument to an
+      arithmetic operator or was compared with an integral argument.
+      This warning will be suppressed if you use the integer model of
+      enumeration (+fie) but you will lose some valuable type-checking
+      in doing so.  An intermediate policy is to simply turn off this
+      warning.  Assignment of int to enum will still be caught.
+
+      This warning is not issued for a tagless enum without variables.
+      For example
+
+            enum {false,true};
+
+      This cannot be used as a separate type.  PC-lint/FlexeLint
+      recognizes this and treats false and true as arithmetic
+      constants.
+
+"
+1729;19;"  Initializer inversion detected for member 'Symbol' -- In a
+      constructor initializer the order of evaluation is determined by
+      the member order not the order in which the initializers are
+      given.  At least one of the initializers was given out of order.
+      Was there a reason for this?  Did the programmer think that by
+      changing the order that he/she would affect the order of
+      evaluation?  Place the initializers in the order of their
+      occurrence within the class so that there can be no mistaken
+      assumptions.  [12, Item 13]
+
+"
+1960 Rule:11-0-1;17;Non-private data member within a no-POD structure.
+925;17;"   Cast from pointer to pointer -- A cast is being made to convert
+      one pointer to another such that one of the pointers is a pointer
+      to void.  Such conversions are considered harmless and normally
+      do not even need a cast.
+
+"
+952;17;"   Parameter 'Symbol' (Location) could be declared const -- A
+      parameter is not modified by a function.  For example:
+
+        int f( char *p, int n ) { return *p = n; }
+
+      can be redeclared as:
+
+        int f( char * const p, const int n ) { return *p = n; }
+
+      There are few advantages to declaring an unchanging parameter a
+      const.  It signals to the person reading the code that a
+      parameter is unchanging, but, in the estimate of most, reduces
+      legibility.  For this reason the message has been given an
+      Elective Note status.
+
+      However, there is a style of programming that encourages
+      declaring parameters const.  For the above example, this style
+      would declare f as
+
+          int f( char * p, int n);
+
+      and would use the const qualifier only in the definition.  Note
+      that the two forms are compatible according to the standard.  The
+      declaration is considered the interface specification where the
+      const's do not matter.  The const's do matter in the definition
+      of the function which is considered the implementation.  Message
+      952 could be used to support this style.
+
+      Marking a parameter as const does not affect the type of argument
+      that can be passed to the parameter.  In particular, it does not
+      mean that only const arguments may be passed.  This is in
+      contrast to declaring a parameter as pointer to const or
+      reference to const.  For these situations, Informational messages
+      are issued (818 and 1764 respectively) and these do affect the
+      kinds of arguments that may be passed.  See also messages 953 and
+      954.
+
+"
+1960 Rule:5-14-1;16;Side effects on right hand side of logical operator.
+1960 Rule:5-0-11;13;Disallowed use of non-character value.
+774;13;"   Boolean within 'String' always evaluates to [True/False] -- The
+      indicated clause (String is one of if, while or for (2nd
+      expression)) has an argument that appears to always evaluate to
+      either 'True' or 'False' (as indicated in the message).
+      Information is gleaned from a variety of sources including prior
+      assignment statements and initializers.  Compare this with
+      message 506 which is based on testing constants or combinations
+      of constants.  Also compare with the Elective Note 944 which can
+      sometimes provide more detailed information.
+
+"
+40;12;"    Undeclared identifier 'Name' -- Within an expression, an
+      identifier was encountered that had not previously been declared
+      and was not followed by a left parenthesis.  Name is the name of
+      the identifier.
+
+"
+759;12;"   header declaration for symbol 'Symbol' (Location) could be moved
+      from header to module -- This message is given for declarations,
+      within non-library header files, that are not referenced outside
+      the defining module.  Hence, it can be moved inside the module
+      and thereby 'lighten the load' on all modules using the header.
+      This message is only given when more than one module is being
+      linted.
+
+"
+765;12;"   external 'Symbol' (Location) could be made static -- An external
+      symbol was referenced in only one module.  It was not declared
+      static (and its type is not qualified with the Microsoft keyword
+      __export).  Some programmers like to make static every symbol
+      they can, because this lightens the load on the linker.  It also
+      represents good documentation.  On the other hand, you may want
+      the symbol to remain external because debuggers often work only
+      on external names.  It's possible, using macros, to have the best
+      of both worlds.
+
+"
+429;11;"   Custodial pointer 'Symbol' (Location) has not been freed or
+      returned -- A pointer of auto storage class was allocated storage
+      which was neither freed nor returned to the caller.  This
+      represents a ""memory leak"".  A pointer is considered custodial if
+      it uniquely points to the storage area.  It is not considered
+      custodial if it has been copied.  Thus:
+     
+            int *p = new int[20];  // p is a custodial pointer
+            int *q = p;            // p is no longer custodial
+            p = new int[20];       // p again becomes custodial
+            q = p + 0;             // p remains custodial
+
+      Here p does not lose its custodial property by merely
+      participating in an arithmetic operation.
+
+      A pointer can lose its custodial property by passing the pointer
+      to a function.  If the parameter of the function is typed pointer
+      to const or if the function is a library function, that
+      assumption is not made.  For example
+     
+            p = malloc(10);
+            strcpy (p, ""hello"");
+
+      Then p still has custody of storage allocated.
+
+      It is possible to indicate via semantic options that a function
+      will take custody of a pointer.
+
+"
+944;11;"   [left/right/] argument for operator 'String' always evaluates to
+      [True/False] -- The indicated operator (given by String has an
+      argument that appears to always evaluate to either 'True' or
+      'False' (as indicated in the message).  This is given for Boolean
+      operators (||and &amp;&amp; and for Unary operator !) and information is
+      gleaned from a variety of sources including prior assignment
+      statements and initializers.  Compare this with message 506 which
+      is based on testing constants or combinations of constants.
+
+"
+714;11;"   Symbol 'Symbol' (Location) not referenced -- The named external
+      variable or external function was defined but not referenced.
+      This message is suppressed for unit checkout (-u option).
+
+"
+768;11;"   global struct member 'Symbol' (Location) not referenced -- A
+      member (name provided as Symbol) of a struct or union appeared in
+      a non-library header file but was not used in any module
+      comprising the program.  This message is suppressed for unit
+      checkout.  Since struct's may be replicated in storage, finding
+      an unused member can pay handsome storage dividends.  However,
+      many structures merely reflect an agreed upon convention for
+      accessing storage and for any one program many members are
+      unused.  In this case, receiving this message can be a nuisance.
+      One convenient way to avoid unwanted messages (other than the
+      usual -e and -esym) is to always place such structures in library
+      header files.  Alternatively, you can place the struct within a
+      ++flb ... --flb sandwich to force it to be considered library.
+
+"
+1924;10;"  C-style cast -- A C-style cast was detected.  This can be
+      replaced by one of the newer C++ casts having the form:
+      Name"
+1960 Rule:7-3-1;10;" Global declarations other than main(), namespace declarations, extern ""C"" declarations and arithmetic typedefs."
+904;10;"   Return statement before end of function 'Symbol' -- A return
+      statement was found before the end of a function definition.
+      Many programming standards require that functions contain a
+      single exit point located at the end of the function.  This can
+      enhance readability and may make subsequent modification less
+      error prone.
+
+"
+525;9;"   Negative indentation from Location -- The current line was found
+      to be negatively indented (i.e., not indented as much) from the
+      indicated line.  The latter corresponds to a clause introducing a
+      control structure and statements and other control clauses and
+      braces within its scope are expected to have no less indentation.
+      If tabs within your program are other than 8 blanks you should
+      use the -t option.
+
+"
+732;9;"   Loss of sign (Context) (Type to Type) -- An assignment (or
+      implied assignment, see Context) is made from a signed quantity
+      to an unsigned quantity.  Also, it could not be determined that
+      the signed quantity had no sign.  For example:
+
+            u  =  n;      /* Info 732 */
+            u  =  4;      /*  OK      */
+
+      where u is unsigned and n is not, warrants a message only for the
+      first assignment, even though the constant 4 is nominally a
+      signed int.
+
+      Make sure that this is not an error (that the assigned value is
+      never negative) and then use a cast (to unsigned) to remove the
+      message.
+
+"
+1960 Rule:5-2-1;9; Non-postfix expression used with logical operator.
+752;9;"   local declarator 'Symbol' (Location) not referenced -- A 'local'
+      declarator symbol is one declared in a declaration which appeared
+      in the module file itself as opposed to a header file.  The
+      symbol may have file scope or may have block scope.  But it
+      wasn't referenced.
+
+"
+1715;9;"  static member 'Symbol' (Location) not referenced -- A static data
+      member of a class was not referenced.  This message is
+      automatically suppressed for unit checkout (-u) and for members
+      of a library class.
+
+"
+438;8;"   Last value assigned to variable 'Symbol' not used -- A value had
+      been assigned to a variable that was not subsequently used.  The
+      message is issued either at a return statement or at the end of a
+      block when the variable goes out of scope.  For example, consider
+      the following function:
+     
+              void f( int n )
+                  {
+                  int x = 0, y = 1;
+                  if( n &gt; 0 )
+                      {
+                      int z;
+                      z = x + y;
+                      if( n &gt; z ) { x = 3; return; }
+                      z = 12;
+                      }
+                  }
+     
+      Here we can report that x was assigned a value that had not been
+      used by the time the return statement had been encountered.  We
+      also report that the most recently assigned value to z is unused
+      at the point that z goes out of scope.  See message 838 in
+      Section "
+545;8;"   Suspicious use of &amp; -- An attempt was made to take the address of
+      an array name.  At one time such an expression was officially
+      illegal (K&amp;R C [1]), was not consistently implemented, and was,
+      therefore, suspect.  However, the expression is legal in ANSI C
+      and designates a pointer to an array.  For example, given
+
+           int a[10];
+           int (*p) [10];
+
+      Then a and &amp;a, as pointers, both represent the same bit pattern,
+      but whereas a is a pointer to int, &amp;a is a pointer to array 10 of
+      int.  Of the two only &amp;a may be assigned to p without complaint.
+      If you are using the &amp; operator in this way, we recommend that
+      you disable this message.
+
+"
+1960 Rule:5-0-9;7; Cast of cvalue changes signedness.
+661;7;"   possible access of out-of-bounds pointer ('Integer' beyond end of
+      data) by operator 'String' -- An out-of-bounds pointer may have
+      been accessed.  See message 415 for a description of the
+      parameters Integer and String.  For example:
+     
+            int a[10];
+            if( n &lt;= 10 ) a[n] = 0;
+
+      Here the programmer presumably should have written n&lt;10.  This
+      message is similar to messages 415 and 796 but differs from them
+      by the degree of probability.
+
+"
+662;7;"   possible creation of out-of-bounds pointer ('Integer' beyond end
+      of data) by operator 'String' -- An out-of-bounds pointer may
+      have been created.  See message 415 for a description of the
+      parameters Integer and String.  For example:
+     
+            int a[10];
+            if( n &lt;= 20 ) f( a + n );
+
+      Here, it appears as though an illicit pointer is being created,
+      but PC-lint/FlexeLint cannot be certain.  See also messages 416
+      and 797.
+
+"
+970;7;"   Use of modifier or type 'Name' outside of a typedef -- Some
+      standards require the use of type names (defined in typedef's) in
+      preference to raw names used within the text of the program.  For
+      example they may want you to use INT32 rather than int where
+      INT32 is typedef's as:
+
+            typedef int INT32;
+
+      This message is normally issued for the standard intrinsic types:
+      bool, char, wchar_t, int, float, double, and for modifiers
+      unsigned, signed, short and long.  You may enable this message
+      and then suppress the message for individual types to obtain
+      special effects.  For example the following will enable the
+      message for all but bool.
+
+            +e970  -esym(970,bool)
+
+"
+838;7;"   Previously assigned value to variable 'Symbol' has not been used
+      -- An assignment statement was encountered that apparently
+      obliterated a previously assigned value that had never had the
+      opportunity of being used.  For example, consider the following
+      code fragment:
+     
+              y = 1;
+              if( n &gt; 0 ) y = 2;
+              y = 4;              // Info 838
+              ...
+     
+      Here we can report that the assignment of 4 to y obliterates
+      previously assigned values that were not used.  We, of course,
+      cannot report anything unusual about the assignment of 2.  This
+      will assign over a prior value of 1 that so far had not been used
+      but the existence of an alternative path means that the value of
+      1 can still be employed later in the code and is accepted for the
+      time being as reasonable.  It is only the final assignment that
+      raises alarm bells.  See also "
+818;7;"   Pointer parameter 'Symbol' (Location) could be declared ptr to
+      const -- As an example:
+
+         int f( int *p ) { return *p; }
+
+      can be redeclared as:
+
+         int f( const int *p ) { return *p; }
+
+      Declaring a parameter a pointer to const offers advantages that a
+      mere pointer does not.  In particular, you can pass to such a
+      parameter the address of a const data item.  In addition it can
+      offer better documentation.
+
+      Other situations in which a const can be added to a declaration
+      are covered in messages 952, 953, 954 and 1764.
+
+"
+115;7;"   Struct/union not defined -- A reference to a structure or a union
+      was made that required a definition and there is no definition in
+      scope. For example, a reference to p-&gt;a where p is a pointer to a
+      struct that had not yet been defined in the current module.
+
+"
+1401;7;"  member 'Symbol' (Location) not initialized by constructor -- The
+      indicated member symbol was not initialized by a constructor.
+      Was this an oversight?
+
+"
+1960 Rule:3-2-3;6; Object/function previously declared in location.
+740;6;"   Unusual pointer cast (incompatible indirect types) -- A cast is
+      being made to convert one pointer to another such that neither of
+      the pointers is a generic pointer (neither is pointer to char,
+      unsigned char, or void) and the indirect types are truly
+      different.  The message will not be given if the indirect types
+      differ merely in signedness (e.g., pointer to unsigned versus
+      pointer to int) or in qualification (e.g., pointer to const int
+      versus pointer to int).  The message will also not be given if
+      one of the indirect types is a union.
+
+      The main purpose of this message is to report possible problems
+      for machines in which pointer to char is rendered differently
+      from pointer to word.  Consider casting a pointer to pointer to
+      char to a pointer to pointer to word.  The indirect bit pattern
+      remains unchanged.
+
+      A second reason is to identify those pointer casts in which the
+      indirect type doesn't seem to have the proper bit pattern such as
+      casting from a pointer to int to a pointer to double.
+
+      If you are not interested in running on machines in which char
+      pointers are fundamentally different from other pointers then you
+      may want to suppress this message.  You can also suppress this
+      message by first casting to char pointer or to void pointer but
+      this is only recommended if the underlying semantics are right.
+
+"
+1960 Rule:5-0-6;6; Implicit conversion to smaller type.
+1502;6;"  defined object 'Symbol' has no nonstatic data members -- A
+      variable (Symbol) is being instantiated that belongs to a class
+      that contains no data members (either directly or indirectly
+      through inheritance).  [11, 9]
+
+"
+788;6;"   enum constant 'Symbol' not used within defaulted switch -- A
+      switch expression is an enumerated type and at least one of the
+      enumerated constants was not present as a case label.  However,
+      unlike Info 787, a default case was provided.  This is a mild
+      form of the case reported by Info 787.  The user may thus elect
+      to inhibit this mild form while retaining Info 787.
+
+"
+1055;6;"  Symbol 'Symbol' undeclared, assumed to return int -- Whereas in C
+      you may call a function without a prior declaration, in C++ you
+      must supply such a declaration.  For C programs you would have
+      received an Informational message (718) in this event.  [11,
+      5.2.2]
+
+"
+751;6;"   local typedef 'Symbol' (Location) not referenced -- A 'local'
+      typedef symbol is one that is not defined in any header file.  It
+      may have file scope or block scope but it was not used through
+      its scope.
+
+"
+778;6;"   Constant expression evaluates to 0 in operation: String -- A
+      constant expression involving addition, subtraction,
+      multiplication, shifting, or negation resulted in a 0.  This
+      could be a purposeful computation but could also have been
+      unintended.  If this is intentional, suppress the message.  If
+      one of the operands is 0 Elective Note 941 may be issued rather
+      than a 778.
+
+"
+948;6;"   Operator 'String' always evaluates to [True/False] -- The
+      operator named in the message is one of four relational operators
+      or two equality operators in the list:
+     
+                &gt;    &gt;=    &lt;    &lt;=
+                ==   !=
+     
+      The arguments are such that it appears that the operator always
+      evaluates to either True or to False (as indicated in the
+      message).  This is similar to message 944.  Indeed there is some
+      overlap with that message.  Message 944 is issued in the context
+      where a Boolean is expected (such as the left hand side of a ?
+      operator) but may not involve a relational operator.  Message 948
+      is issued in the case of a relational (or equality) operator but
+      not necessarily in a situation that requires a Boolean.
+
+"
+725;6;"   Expected positive indentation from Location -- The current line
+      was found to be aligned with, rather than indented with respect
+      to, the indicated line.  The indicated line corresponds to a
+      clause introducing a control structure and statements within its
+      scope are expected to be indented with respect to it.  If tabs
+      within your program are other than 8 blanks you should use the -t
+      option.
+
+"
+526;6;"   'Symbol' (Location) not defined -- The named external was
+      referenced but not defined and did not appear declared in any
+      library header file nor did it appear in a Library Module.  This
+      message is suppressed for unit checkout (-u option).  Please note
+      that a declaration, even one bearing prototype information is not
+      a definition.  See the glossary at the beginning of this chapter.
+      If the Symbol is a library symbol, make sure that it is declared
+      in a header file that you're including.  Also make sure that the
+      header file is regarded by PC-lint/FlexeLint as a Library Header
+      file.  Alternatively, the symbol may be declared in a Library
+      Module.
+
+"
+628;6;"   no argument information provided for function 'Symbol' (Location)
+      -- The named function was called but there was no argument
+      information supplied.  Argument information can come from a
+      prototype or from a function definition.  This usually happens
+      when an old-style function declaration indicates that the
+      function is in a library but no prototype is given for the
+      function nor is any argument information provided in a standard
+      library file.  This message is suppressed if you are producing a
+      lint object module because presumably the object module will be
+      compared with a library file at some later time.
+
+"
+1714;6;"  Member function 'Symbol' (Location) not referenced -- A member
+      function was not referenced.  This message is automatically
+      suppressed for unit checkout (-u) and for members of a library
+      class.
+
+"
+1768;5;"  Virtual function 'Symbol' has an access (String) different from
+      the access (String) in the base class (String) -- An overriding
+      virtual function has an access (public, protected or private) in
+      the derived class different from the access of the overridden
+      virtual function in the base class.  Was this an oversight?
+      Since calls to the overriding virtual function are usually made
+      through the base class, making the access different is unusual
+      (though legal).
+
+"
+1536;5;"  Exposing low access member 'Symbol' -- A member function is
+      returning the non-const address of a member either directly or
+      via a reference.  Moreover, the member's access (such as private
+      or protected) is lower than the access of the function returning
+      the address.  For example:
+     
+                class X
+                    {
+                  private:
+                    int a;
+                  public:
+                    int *f( ) { return &amp;a; }
+                    };
+
+      This looks like a breach of the access system [12, Item 30].  You
+      may lower the access rights of the function, raise the
+      accessibility of the member or make the return value a const
+      pointer or reference.  In the above example you could change the
+      function to:
+     
+                const int *f( ) { return &amp;a; }
+
+"
+551;5;"   Symbol 'Symbol' (Location) not accessed -- A variable (declared
+      static at the module level) was not accessed though the variable
+      was referenced.  See the explanation under message 550 (above)
+      for a description of ""access"".
+
+"
+1960 Rule:17-0-2;5;Re-use of reserved identifier
+910;5;"   Implicit conversion (Context) from 0 to pointer -- A pointer was
+      assigned (or initialized) with a 0.  Some programmers prefer
+      other conventions such as NULL or nil.  This message will help
+      such programmers root out cavalier uses of 0.  This is relatively
+      easy in C since you can define NULL as follows:
+
+            #define NULL (void *)0
+
+      However, in C++, a void* cannot be assigned to other pointers
+      without a cast.  Instead, assuming that NULL is defined to be 0,
+      use the option:
+
+            --emacro((910),NULL)
+
+      This will inhibit message 910 in expressions which use NULL.
+      This method will also work in C.
+
+      Both methods assume that you expressly turn on this message with
+      a +e910 or equivalent.
+
+"
+737;5;"   Loss of sign in promotion from Type to Type -- An unsigned
+      quantity was joined with a signed quantity in a binary operator
+      (or 2nd and 3rd arguments to the conditional operator ? :) and
+      the signed quantity is implicitly converted to unsigned.  The
+      message will not be given if the signed quantity is an unsigned
+      constant, a Boolean, or an expression involving bit manipulation.
+      For example,
+
+             u  &amp;  ~0xFF 
+
+      where u is unsigned does not draw the message even though the
+      operand on the right is technically a signed integer constant.
+      It looks enough like an unsigned to warrant not giving the
+      message.
+
+      This mixed mode operation could also draw Warnings 573 or 574
+      depending upon which operator is involved.
+
+      You may suppress the message with a cast but you should first
+      determine whether the signed value could ever be negative or
+      whether the unsigned value can fit within the constraints of a
+      signed quantity.
+
+"
+746;4;"   call to function 'Name' not made in the presence of a prototype
+      -- A call to a function is not made in the presence of a
+      prototype.  This does not mean that PC-lint/FlexeLint is unaware
+      of any prototype; it means that a prototype is not in a position
+      for a compiler to see it.  If you have not adopted a strict
+      prototyping convention you will want to suppress this message
+      with -e746.
+
+"
+826;4;"   Suspicious pointer-to-pointer conversion (area too small) -- A
+      pointer was converted into another either implicitly or
+      explicitly.  The area pointed to by the destination pointer is
+      larger than the area that was designated by the source pointer.
+      For example:
+
+            long *f( char *p ) { return (long *) p; }
+
+"
+64;4;"    Type mismatch (Context) (TypeDiff) -- There was a mismatch in
+      types across an assignment (or implied assignment, see Context).
+      TypeDiff specifies the type difference.
+
+"
+1705;4;"  static class members may be accessed by the scoping operator -- A
+      static class member was accessed using a class object and -&gt; or .
+      notation.  For example:
+
+            s.member
+      or
+            p-&gt;member
+
+      But an instance of the object is not necessary.  It could just as
+      easily have been referenced as:
+
+            X::member
+
+      where X is the class name.  [10, 9.4]
+
+"
+834;4;"   Operator 'Name' followed by operator 'Name' is confusing.  Use
+      parentheses. -- Some combinations of operators seem to be
+      confusing.  For example
+
+             a = b - c - d;
+             a = b - c + d;
+             a = b / c / d;
+             a = b / c * d;
+
+      tend to befuddle the reader.  To reduce confusion we recommend
+      using parentheses to make the association of these operators
+      explicit.  For example:
+
+             a = (b - c) - d;
+             a = (b - c) + d;
+             a = (b / c) / d;
+             a = (b / c) * d;
+
+      in place of the above.
+
+"
+1914;4;"  Default constructor 'Symbol' (Location) not referenced -- A
+      default constructor was not referenced.  When a member function
+      of a class is not referenced, you will normally receive an
+      Informational message (1714) to that effect.  When the member
+      function is the default constructor, however, we give this
+      Elective Note instead.
+
+      The rationale for this different treatment lay in the fact that
+      many authors recommend defining a default constructor as a
+      general principle.  Indeed we give an Informational message
+      (1712) when a default constructor is not defined for a class.
+      Therefore, if you are following a modus operandi of not always
+      defining a default constructor you may want to turn off message
+      1712 and turn on message 1914 instead.
+
+"
+766;3;"   Header file FileName not used in module String -- The named
+      header file was directly #include'd in the named module but the
+      #include can be removed because it was not used in processing the
+      named module or in any header included by the module.  It
+      contained no macro, typedef, struct, union or enum tag or
+      component, or declaration referenced by the module.  One of the
+      reasons a particular #include can be removed is because it had
+      been included by an earlier header file.  Warning 537 can be used
+      to detect such cases.
+
+"
+1744;3;"  member 'Symbol' (Location) possibly not initialized by private
+      constructor -- The designated member was possibly not initialized
+      by a private constructor.  This message is similar to messages
+      1401, 1541 and 1741 which are given for ordinary (non private)
+      constructors.  It is given a special error number because a
+      private constructor may be one that, by design, is never called
+      and variables may be deliberately left uninitialized.  In that
+      case this message should be suppressed.
+
+"
+1960 Rule:5-8-1;3;
+529;3;"   Symbol 'Symbol' (Location) not subsequently referenced -- The
+      named variable was declared but not referenced in a function.
+
+"
+1960 Rule:8-4-1;3; Function has variable number of arguments.
+1916;3;"  Ellipsis encountered -- An ellipsis was encountered while
+      processing the prototype of some function declaration.  An
+      ellipsis is a way of breaking the typing system of C or C++.
+
+"
+1928;3;"  Symbol 'Name' did not appear in the constructor initializer list
+      -- A base class (identified by Symbol) did not appear in a
+      constructor initialization list.  If a constructor does not
+      appear, then the default constructor is called.  This may or may
+      not be valid behavior.  If a base class is missing from a copy
+      constructor's initializer list, then a more severe Warning (1538)
+      is issued.  [12, Item 12].
+
+"
+515;3;"   Symbol 'Symbol' has arg. count conflict (Integer vs. Integer)
+      with Location -- An inconsistency was found in the number of
+      actual arguments provided in a function call and either the
+      number of formal parameters in its definition or the number of
+      actual arguments in some other function call.  See the +fva
+      option to selectively suppress this message.
+
+"
+918;3;"   Prototype coercion (Context) of pointers -- Notes whenever a
+      pointer is implicitly converted because of a prototype.  Because
+      of prototype conversion, near pointers will otherwise be silently
+      mapped into far pointers.  far pointers mapped into near pointers
+      also generate message 619.
+
+"
+550;3;"   Symbol 'Symbol' (Location) not accessed -- A variable (local to
+      some function) was not accessed.  This means that the value of a
+      variable was never used.  Perhaps the variable was assigned a
+      value but was never used.  Note that a variable's value is not
+      considered accessed by autoincrementing or autodecrementing
+      unless the autoincrement/decrement appears within a larger
+      expression which uses the resulting value.  The same applies to a
+      construct of the form: var += expression.  If an address of a
+      variable is taken, its value is assumed to be accessed. An array,
+      struct or union is considered accessed if any portion thereof is
+      accessed.
+
+"
+1058;3;"  Initializing a non-const reference 'Symbol' with a non-lvalue --
+      A reference is normally initialized with an lvalue.  If you
+      attempt to initialize a reference with a non-lvalue, a temporary
+      is created to serve as a surrogate lvalue.  However,
+      modifications made to the temporary will be lost.  This was legal
+      at one time and is now illegal.  Make the reference a const if
+      you can.  You may be initializing a reference without realizing
+      it.  A member function has an implicit parameter which is taken
+      to be a reference to its object.  If this is the situation make
+      the member const.  That is, use void f(...) const; rather than
+      void f(...);
+
+"
+1514;3;"  Creating temporary to copy 'Type' to 'Type' (context: Context) --
+      A temporary was created in order to initialize (or pass a value
+      to or return a value to) a reference.  This is suspect because
+      any modification to the value will be a modification of this
+      temporary.  This message is not issued when initializing a const
+      reference.  [11, 12.2]
+
+"
+1960 Rule:5-0-10;3;"Recasting required for operators '~' and '&lt;&lt;'."
+734;3;"   Loss of precision (Context) (Integer bits to Integer bits) -- An
+      assignment is being made into an object smaller than an int.  The
+      information being assigned is derived from another object or
+      combination of objects in such a way that information could
+      potentially be lost.  The number of bits given does not count the
+      sign bit.  For example if ch is a char and n is an int then:
+
+            ch  =  n;
+
+      will trigger this message whereas:
+
+            ch  =  n &amp; 1;
+
+      will not.  To suppress the message a cast can be made as in:
+
+            ch  =  (char) n;
+
+      You may receive notices involving multiplication and shift
+      operators with subinteger variables.  For example:
+
+            ch = ch &lt;&lt; 2
+            ch = ch * ch
+
+      where, for example, ch is an unsigned char.  These can be
+      suppressed by using the flag +fpm (precision of an operator is
+      bound by the maximum of its operands).
+
+"
+1960 Rule:6-2-1;3;
+1065;3;"  Symbol 'Symbol' not declared as ""C"" conflicts with Location -- A
+      symbol previously declared as extern ""C"" in some other module is
+      not declared as extern ""C"" in this module.  This could be the
+      source of very mysterious linker diagnostics since a name
+      declared as extern ""C"" is not subject to the name mangling
+      procedures that strictly C++ functions are.  [11, 7.4]
+
+"
+1509;2;"  base class destructor for class 'Name' is not virtual -- The
+      indicated class is a base class for some derived class.  It has a
+      destructor which is not virtual.  Was this a mistake?  It is
+      conventional to virtualize destructors of base classes so that it
+      is safe to delete a base class pointer.  [19]
+
+"
+1960 Rule:8-4-4;2;" Function identifier used without '&amp;' or parenthisized parameter list."
+717;2;"   do ... while(0) -- Whereas this represents a constant in a
+      context expecting a Boolean, this construct is probably a
+      deliberate attempt on the part of the programmer to encapsulate a
+      sequence of statements into a single statement, and so it is
+      given a separate error message.  [22, 20.7]  For example:
+
+           #define f(k) do {n=k; m=n+1;} while(0)
+
+      allows f(k) to be used in conditional statements as in
+
+           if(n&gt;0) f(3);
+           else f(2);
+
+      Thus, if you are doing this deliberately use -e717
+
+"
+909;2;"   Implicit conversion from Type to bool -- A non-bool was tested as
+      a Boolean.  For example, in the following function:
+     
+        int f(int n)
+            {
+            if( n ) return n;
+            else return 0;
+            }
+
+      the programmer tests 'n' directly rather than using an explicit
+      Boolean expression such as 'n != 0'.  Some shops prefer the
+      explicit test.
+
+"
+527;2;"   Unreachable code at token Symbol -- A portion of the program
+      cannot be reached.
+
+"
+1960 Rule:4-5-3;2; Plain char used with prohibited operator.
+569;2;"   Loss of information (Context) (Integer bits to Integer bits) --
+      An assignment (or implied assignment, see Context) was made from
+      a constant to an integral variable that is not large enough to
+      hold the constant.  Examples include placing a hex constant whose
+      bit requirement is such as to require an unsigned int into a
+      variable typed as int.  The number of bits given does not count
+      the sign bit.
+
+"
+1541;2;"  member 'Symbol' (Location) possibly not initialized by
+      constructor -- The indicated member symbol may not have been
+      initialized by a constructor.  Was this an oversight?  Some of
+      the paths that the constructor takes do initialize the member.
+
+"
+1555;2;"  Direct pointer copy of member 'Symbol' within copy assignment
+      operator: 'Symbol' -- In a copy assignment operator a pointer was
+      merely copied rather than recreated with new storage.  This can
+      create a situation where two objects have the same data and this,
+      in turn, causes problems when these objects are deleted or
+      modified.  For example, the following class will draw this
+      warning:
+     
+            class X
+                {
+                char *p;
+                X&amp; operator=( const X &amp; x )
+                    { p = x.p; }
+                ...
+                };
+
+      Here, member p is expected to be recreated using new or some
+      variant.
+
+"
+1732;2;"  new in constructor for class 'Name' which has no assignment
+      operator -- Within a constructor for the cited class, there
+      appeared a new.  However, no assignment operator was declared for
+      this class.  Presumably some class member (or members) points to
+      dynamically allocated memory.  Such memory is not treated
+      properly by the default assignment operator.  Normally a custom
+      assignment operator would be needed.  Thus, if x and y are both
+      of type Symbol
+
+            x = y;
+
+      will result in pointer duplication.  A later delete would create
+      chaos.  [12, Item 11]
+
+"
+1733;2;"  new in constructor for class 'Name' which has no copy constructor
+      -- Within a constructor for the cited class, there appeared a
+      new.  However, no copy constructor was declared for this class.
+      Presumably, because of the new, some class member (or members)
+      points to dynamically allocated memory.  Such memory is not
+      treated properly by the default copy constructor.  Normally a
+      custom copy constructor would be needed.  [12, Item 11]
+
+"
+927;2;"   Cast from pointer to pointer -- A cast is being made to convert a
+      char (or unsigned char) pointer to a non-char pointer.  char
+      pointers are sometimes implemented differently from other
+      pointers and there could be an information loss in such a
+      conversion.
+
+"
+730;2;"   Boolean argument to function -- A Boolean was used as an argument
+      to a function.  Was this intended?  Or was the programmer
+      confused by a particularly complex conditional statement.
+      Experienced C programmers often suppress this message.  This
+      message is given only if the associated parameter is not declared
+      bool.
+
+"
+731;2;"   Boolean argument to equal/not equal -- A Boolean was used as an
+      argument to == or !=.  For example:
+
+            if( (a &gt; b) == (c &gt; d) ) ...
+
+      tests to see if the inequalities are of the same value.  This
+      could be an error as it is an unusual use of a Boolean (see
+      Warnings 503 and 514) but it may also be deliberate since this is
+      the only way to efficiently achieve equivalence or exclusive or.
+      Because of this possible use, the construct is given a relatively
+      mild 'informational' classification.  If the Boolean argument is
+      cast to some type, this message is not given.
+
+"
+1960 Rule:8-4-2;2; Function parameter list differs 
+1960 Rule:6-2-3;2; Null statement not in line by itself.
+616;2;"   control flows into case/default -- It is possible for flow of
+      control to fall into a case statement or a default statement from
+      above.  Was this deliberate or did the programmer forget to
+      insert a break statement?  If this was deliberate then place a
+      comment immediately before the statement that was flagged as in:
+
+            case 'a':  a = 0;
+               /* fall through */
+            case 'b':  a++;
+
+      Note that the message will not be given for a case that merely
+      follows another case without an intervening statement.  Also,
+      there must actually be a possibility for flow to occur from
+      above.
+
+"
+825;2;"   control flows into case/default without -fallthrough comment -- A
+      common programming mistake is to forget a break statement between
+      case statements of a switch.  For example:
+     
+        case 'a':  a = 0;
+        case 'b':  a++;
+
+      Is the fall through deliberate or is this a bug?  To signal that
+      this is intentional use the -fallthrough option within a lint
+      comment as in:
+     
+        case 'a':  a = 0;
+            //lint -fallthrough
+        case 'b':  a++;
+
+      This message is similar to Warning 616 (""control flows into
+      case/default"") and is intended to provide a stricter alternative.
+      Warning 616 is suppressed by any comment appearing between the
+      case's.  Thus, an accidental omission of a break can go
+      undetected by the insertion of a neutral comment.  This can be
+      hazardous to well-commented programs.
+
+"
+1960 Rule:6-4-5;2;
+578;2;"   Declaration of symbol 'Symbol' hides symbol 'Symbol' (Location)
+      -- A local symbol has the identical name as a global symbol ( or
+      possibly another local symbol).  This could be dangerous.  Was
+      this deliberate?  It is usually best to rename the local symbol.
+
+"
+1960 Rule:6-4-2;2; No 'else' at end of 'if ... else if' chain.
+1960 Rule:8-0-1;2; Multiple declarators in a declaration.
+1764;2;"  Reference parameter 'Symbol' (Location) could be declared const
+      reference -- As an example:
+
+            int f( int &amp; k ) { return k; }
+
+      can be redeclared as:
+
+            int f( const int &amp; k ) { return k; }
+
+      Declaring a parameter a reference to const offers advantages that
+      a mere reference does not.  In particular, you can pass
+      constants, temporaries and const types into such a parameter
+      where otherwise you may not.  In addition it can offer better
+      documentation.
+
+      Other situations in which a const can be added to a declaration
+      are covered in messages 818, 952, 953 and 954.
+
+"
+843;2;"   Variable 'Symbol' (Location) could be declared as const -- A
+      variable of static storage duration is initialized but never
+      modified thereafter.  Was this an oversight? If the intent of the
+      programmer is to not modify the variable, it could and should be
+      declared as const.  See [30, Item 3] in Section "
+1554;2;"  Direct pointer copy of member 'Symbol' within copy constructor:
+      'Symbol' -- In a copy constructor a pointer was merely copied
+      rather than recreated with new storage.  This can create a
+      situation where two objects have the same data and this, in turn,
+      causes problems when these objects are deleted or modified.  For
+      example, the following class will draw this warning:
+     
+            class X
+                {
+                char *p;
+                X( const X &amp; x )
+                    { p = x.p; }
+                ...
+                };
+
+      Here, member p is expected to be recreated using new or some
+      variant.
+
+"
+744;2;"   switch statement has no default -- A switch statement has no
+      section labeled default:.  Was this an oversight?  It is standard
+      practice in many programming groups to always have a default:
+      case.  This can lead to better (and earlier) error detection.
+      One way to suppress this message is by introducing a vacuous
+      default: break; statement.  If you think this adds too much
+      overhead to your program, think again.  In all cases tested so
+      far, the introduction of this statement added absolutely nothing
+      to the overall length of code.  If you accompany the vacuous
+      statement with a suitable comment, your code will at least be
+      more readable.
+
+      This message is not given if the control expression is an
+      enumerated type.  In this case, all enumerated constants are
+      expected to be represented by case statements, else 787 will be
+      issued.
+
+"
+1960 Rule:6-4-6;2;
+756;2;"   global typedef 'Symbol' (Location) not referenced -- This message
+      is given for a typedef symbol declared in a non-library header
+      file.  The symbol is not used in any of the modules comprising a
+      program.  This message is suppressed for unit checkout (-u
+      option).
+
+"
+1411;1;"  Member with different signature hides virtual member 'Symbol'
+      (Location) -- A member function has the same name as a virtual
+      member of a derived class but it has a different signature
+      (different parameter list).  This is legal but suspicious,
+      because it looks as though the function would override the
+      virtual function but doesn't.  You should either adjust the
+      parameters of the member so that the signatures conform or choose
+      a different name.  See also message 1511.
+
+"
+1960 Rule:5-0-8;1; Cast of cvalue to larger type.
+1790;1;"  Base class 'Symbol' has no non-destructor virtual functions -- A
+      public base class contained no virtual functions except possibly
+      virtual destructors.  There is a school of thought that public
+      inheritance should only be used to interject custom behavior at
+      the event of virtual function calls.  To quote from Marshall
+      Cline, ""Never inherit publicly to reuse code (in the base class);
+      inherit publicly in order to be reused (by code that uses base
+      objects polymorphically)"" [28, Item 22].
+
+"
+1511;1;"  Member hides non-virtual member 'Symbol' (Location) -- The named
+      member of a derived class hides a similarly named member of a
+      base class.  Moreover, the base class member is not virtual.  Is
+      this a mistake?  Was the base member supposed to have been
+      declared virtual?  By unnecessarily using the same name,
+      confusion could be created.
+
+"
+78;1;"    Symbol 'Symbol' typedef'ed at Location used in expression -- The
+      named symbol was defined in a typedef statement and is therefore
+      considered a type.  It was subsequently found in a context where
+      an expression was expected.
+
+"
+1048;1;"  expected a constant expression -- Within a template argument list
+      a constant expression was expected.  An expression of the form
+      T"
+1939;1;"  Down cast detected -- A down cast is a cast from a pointer (or
+      reference) to a base class to a pointer (or reference) to a
+      derived class.  A cast down the class hierarchy is fraught with
+      danger.  Are you sure that the alleged base class pointer really
+      points to an object in the derived class.  Some amount of down
+      casting is necessary but a wise programmer will reduce this to a
+      minimum.  [12, Item 39]
+
+"
+30;1;"    Expected a constant -- A constant was expected but not obtained.
+      This could be following a case keyword, an array dimension, bit
+      field length, enumeration value, #if expression, etc.
+
+"
+923;1;"   Cast from Type to Type -- A cast is being made either from a
+      pointer to a non-pointer or from a non-pointer to a pointer.
+
+"
+715;1;"   Symbol 'Symbol' (Location) not referenced -- The named formal
+      parameter was not referenced.
+
+"
+1960 Rule:5-3-1;1; Boolean expresion required for operator.
+716;1;"   while(1) ... -- A construct of the form while(1) ... was found.
+      Whereas this represents a constant in a context expecting a
+      Boolean, it may reflect a programming policy whereby infinite
+      loops are prefixed with this construct.  Hence it is given a
+      separate number and has been placed in the informational
+      category. The more conventional form of infinite loop prefix is
+      for(;;).
+
+"
+1960 Rule:16-0-4;1;Use of function-like macros is discouraged.
+1960 Rule:16-0-6;1;
+1960 Rule:2-13-3;1;
+1960 Rule:5-0-21;1;Bitwise operator applied to signed underlying type.
+775;1;"   non-negative quantity cannot be less than zero -- A non-negative
+      quantity is being compared for being &lt;=0.  This is a little
+      suspicious since a non-negative quantity can be equal to 0 but
+      never less than 0.  The non-negative quantity may be of type
+      unsigned or may have been promoted from an unsigned type or may
+      have been judged not to have a sign by virtue of it having been
+      AND'ed with a quantity known not to have a sign bit an enum that
+      may not be negative, etc.  See also Warning 568.
+
+"
+451;1;"   Header file 'FileName' repeatedly included but does not have a
+      standard include guard -- The file named in the message has
+      already been included in the current module.  Moreover it has
+      been determined that this header does not have a standard include
+      guard.  A standard include guard has the form
+     
+              #ifndef Name
+              #define Name
+               ...
+              #endif
+     
+      with nothing but comments before and after this sequence and
+      nothing but comments between the #ifndef and the #define Name.
+
+      This warning may also be accompanied by a 537 (repeated include
+      header).  Message 537 is often suppressed because if you are
+      working with include guards, it is not a helpful message.
+      However, the message 451 should be left on in order to check the
+      consistency of the include guards themselves.
+
+      See also Elective Note 967 in Section "
+706;1;"   (arg. no. Integer) indirect object inconsistent with format --
+      The type of an argument to scanf (or fscanf or sscanf) was
+      inappropriate to the format.  However, the argument was a pointer
+      and it pointed to a quantity of the expected size and similar,
+      but not expected type.
+
+"
+1960 Rule:2-13-4;1;Lower case literal suffix.
+796;1;"   Conceivable access of out-of-bounds pointer ('Integer' beyond end
+      of data) by operator 'String' -- An out-of-bounds pointer may
+      conceivably have been accessed.  See message 415 for a
+      description of the parameters Integer and String.  For example:
+     
+                int a[10];
+                int j = 100;
+                for( i = 0; i &lt; n; i++ )
+                    j = n;
+                a[j] = 0;
+
+      Here, the access to a[j] is flagged because it is conceivable
+      that the for loop is not executed leaving the unacceptable index
+      of 100 in variable j.  This message is similar to messages 415
+      and 661 but differing from them by the degree of probability.
+
+"
+797;1;"   Conceivable creation of out-of-bounds pointer ('Integer' beyond
+      end of data) by operator 'String' -- An out-of-bounds pointer is
+      potentially being created.  See message 415 for a description of
+      the parameters Integer and String.  See message 796 for an
+      example of how a probability can be considered 'conceivable'.
+
+"
+1702;1;"  operator 'Name' is both an ordinary function 'String' and a
+      member function 'String' -- In attempting to resolve the
+      definition of an operator it was found that the same operator was
+      declared as both a member function and a non-member function.
+      Was this intended?  Symmetric binary operators (such as '+', '-',
+      '==', '&gt;', etc.) are usually defined external to a class
+      definition so that they can support non-objects on the left hand
+      side.  [11, 13.4.2]
+
+"
+1524;1;"  new in constructor for class 'Name' which has no explicit
+      destructor -- A call to new has been found in a constructor for a
+      class for which no explicit destructor has been declared.  A
+      destructor was expected because how else can the storage be
+      freed?  [10, 12.5]
+
+"
+1551;1;"  function may throw exception 'Name' in destructor 'Symbol' -- A
+      call to a function (name given by the first Symbol) was made from
+      within a destructor.  The function was declared as potentially
+      throwing an exception.  Such exceptions need to be caught within
+      a try block because destructors should never throw exceptions.
+      [23, Item 11].
+
+"
+1579;1;"  Pointer member 'Symbol' (Location) might have been freed by a
+      separate function but no '-sem(Name,cleanup)' was seen -- A class
+      data member (whose name and location are indicated in the
+      message) was not directly freed by the class destructor.  There
+      was a chance that it was cleared by a separately called member
+      function.  If this is the case you may follow the advice given in
+      the message and use a semantic option to inform PC-lint/FlexeLint
+      that the separately called function is in fact a 'cleanup'
+      function.  For example:
+     
+              class A {
+                      int *p;
+                  public:
+                      void release_ptrs();
+                      ~A() { release_ptrs(); }
+                      };
+     
+      Here release_ptrs() is presumably serving as a cleanup function
+      for the destructor ~A::A().  To inform PC-lint/FlexeLint of this
+      situation, use the option:
+     
+              -sem( A::release_ptrs, cleanup )
+     
+      A separate message (Warning 1578) will be issued if the cleanup
+      function fails to clear all pointers.  See also Warning 1566.
+
+
+            ------ 19.10 C++ Informational Messages ------
+
+"
+1763;1;"  Member function 'Symbol' marked as const indirectly modifies
+      class -- The designated symbol is a member function declared as
+      const.  Though technically valid, the const may be misleading
+      because the member function modifies (or exposes) information
+      indirectly referenced by the object.  For example:
+     
+            class X
+                {
+                char *pc;
+                char &amp; get(int i) const { return pc[i]; }
+                };
+
+      results in Info 1763 for function X::get.  This is because the
+      function exposes information indirectly held by the class X.
+
+      Experts [24] recommend that a pair of functions be made available
+      in this situation:
+     
+            class X
+                {
+                char *pc;
+                const char &amp; get(int i) const { return pc[i]; }
+                char &amp; get(int i) { return pc[i]; }
+                };
+
+      In this way, if the object is const then only the const function
+      will be called which will return the protected reference.
+      Related messages are also 1762 and 1962.  See also [12, Item 29]
+      for a further description.
+
+"
+946;1;"   Relational or subtract operator applied to pointers -- A
+      relational operator (one of &gt;, &gt;=, &lt;, &lt;=) or the subtract
+      operator has been applied to a pair of pointers.  The reason this
+      is of note is that when large model pointers are compared (in one
+      of the four ways above) or subtracted, only the offset portion of
+      the pointers is subject to the arithmetic.  It is presumed that
+      the segment portion is the same.  If this presumption is not
+      accurate then disaster looms.  By enabling this message you can
+      focus in on the potential trouble spots.
+
+"
+947;1;"   Subtract operator applied to pointers -- An expression of the
+      form p - q was found where both p and q are pointers.  This is of
+      special importance in cases where the maximum pointer can
+      overflow the type that holds pointer differences.  For example,
+      suppose that the maximum pointer is 3 Gigabytes -1, and that
+      pointer differences are represented by a long, where the maximum
+      long is 2 Gigabytes -1.  Note that both of these quantities fit
+      within a 32 bit word.  Then subtracting a small pointer from a
+      very large pointer will produce an apparent negative value in the
+      long representing the pointer difference.  Conversely,
+      subtracting a very large pointer from a small pointer can produce
+      a positive quantity.
+
+      The alert reader will note that a potential problem exists
+      whenever the size of the type of a pointer difference equals the
+      size of a pointer.  But the problem doesn't usually manifest
+      itself since the highest pointer values are usually less than
+      what a pointer could theoretically hold.  For this reason, the
+      message cannot be given automatically based on scalar types and
+      hence has been made an Elective Note.
+
+      Compare this Note with that of 946 which was designed for a
+      slightly different pointer difference problem.
+
+"
+516;1;"   Symbol 'Symbol' has arg. type conflict (no. Integer -- TypeDiff)
+      with Location -- An inconsistency was found in the type of an
+      actual argument in a function call with either the type of the
+      corresponding formal parameter in the function definition or the
+      type of an actual argument in another call to the same function
+      or with the type specified for the argument in the function's
+      prototype.  The call is not made in the presence of a prototype.
+      See options -ean, -eau, -eas and -eai for selective suppression
+      of some kinds of type differences. If the conflict involves types
+      char or short then you may want to consider using the +fxc or
+      +fxs option.
+
+"
+1963 Rule:5-2-10;1;Increment or decrement combined with another operator.
+539;1;"   Did not expect positive indentation from Location -- The current
+      line was found to be positively indented from a clause that did
+      not control the line in question.  For example:
+     
+            if( n &gt; 0 )
+                x = 3;
+                y = 4;
+
+      will result in this warning being issued for y = 4;.  The
+      Location cited will be that of the if clause.
+
+"
+520;1;"   Highest operator or function lacks side-effects -- The first
+      expression of a for clause should either be one of the privileged
+      operators: assignment, increment, decrement or call to an impure
+      function or one modifying its argument(s).
+
+"
+1712;1;"  default constructor not defined for class 'Name' -- A class was
+      defined with one or more constructors but none of these could be
+      used as a (0 argument) default constructor.  Is this an omission?
+      The default constructor is used in declarations and for new when
+      no explicit initialization is given.  It is also used when the
+      class is a base class and no mem-initializer is given.  It is
+      used for arrays as well.  A default constructor should therefore
+      be omitted only for good reason.  If you have such a good reason
+      for class X you can employ option -esym(1712,X).  [19]
+
+
+"
+928;1;"   Cast from pointer to pointer -- A cast is being made from a
+      non-char pointer to a char pointer.  This is generally considered
+      to be a 'safe' conversion.
+
+"
+1960 Rule:6-4-1;1;Left brace expected for if, else, for, do, switch and while.
+835;1;"   A zero has been given as [left/right] argument to operator 'Name'
+      -- A 0 has been provided as an operand to an arithmetic operator.
+      The name of the operator is provided in the message as well as
+      the side of the operator (left or right) that had the unusual
+      value.  For example:
+     
+              n = n + 0 - m;
+     
+      will produce a message that the right hand operand of operator
+      '+' is zero.
+
+      In general the operators examined are the binary operators:
+     
+              + - * / % | &amp; ^ &lt;&lt; &gt;&gt;
+     
+      and the unary operators - and +.
+
+      An enumeration constant whose value is 0 is permitted with
+      operators:
+     
+              + - &gt;&gt; &lt;&lt;
+     
+      Otherwise a message is issued.  For example:
+     
+              enum color { red,
+                           blue = red+100,        /* ok */
+                           green= red*0x10        /* 835 */
+                         };
+     
+      The assignment operators that have an arithmetic or bitwise
+      component, such as |=, are also examined.  The message given is
+      equivalent to that given with the same operator without the
+      assignment component.
+
+"
+1506;1;"  Call to virtual function 'Symbol' within a constructor or
+      destructor -- A call to a virtual function was found in a
+      constructor or a destructor of a class.  If this class is a base
+      class of some other class (why else make a virtual call?), then
+      the function called is not the overriding function of the derived
+      class but rather the function associated with the base class.  If
+      you use an explicit scope operator this message will not be
+      produced.  [20, 9]
+
+"
+449;1;"   Pointer variable 'Symbol' previously deallocated -- A pointer
+      variable (designated in the message) was freed or deleted in an
+      earlier statement.
+
+"
+1746;1;"  parameter 'Symbol' of function 'Symbol' could be made const
+      reference -- The indicated parameter is a candidate to be
+      declared as a const reference.  For example:
+     
+                void f( X x )
+                    {
+                    // x not modified.
+                    }
+
+      Then the function definition can be replaced with:
+     
+                void f( const X &amp;x )
+                    {
+                    // x not modified.
+                    }
+
+      The result is more efficient since less information needs to be
+      placed onto the stack and a constructor need not be called.
+
+      The message is only given with class-like arguments (including
+      struct's and union's) and only if the parameter is not
+      subsequently modified or potentially modified by the function.
+      The parameter is potentially modified if it is passed to a
+      function whose corresponding parameter is a reference (not const)
+      or if its address is passed to a non-const pointer.  [12, Item
+      22].
+
+"
+701;1;"   Shift left of signed quantity (int) -- Shifts are normally
+      accomplished on unsigned operands.
+
+"
+1960 Rule:16-0-1;1;Only preprocessor statements and comments before '#include'.
+506;1;"   Constant value Boolean -- A Boolean, i.e., a quantity found in a
+      context that requires a Boolean such as an argument to &amp;&amp; or ||
+      or an if( ) or while( ) clause or ! was found to be a constant
+      and hence will evaluate the same way each time.
+
+"
+530;1;"   Symbol 'Symbol' (Location) not initialized -- An auto variable
+      was used before it was initialized.
+
+"
+1757;1;"  Discarded instance of post decrement/increment -- A postfix
+      increment or postfix decrement operator was used in a context in
+      which the result of the operation was discarded.  For example:
+     
+                X a;
+
+                ... 
+                a++;
+
+      In such contexts it is just as correct to use prefix
+      decrement/increment.  For example this could be replaced with:
+     
+                X a;
+
+                ... 
+                ++a;
+
+      The prefix form is (or should be) more efficient than the postfix
+      form because, in the case of user-defined types, it should return
+      a reference rather than a value (see 1758 and 1759).  This
+      presumes that the side effects of the postfix form are equivalent
+      to those of the prefix form.  If this is not the case then either
+      make them equivalent (the preferred choice) or turn this message
+      off.  [23, Item 6].
+
+"
+1711;1;"  class 'Symbol' (Location) has a virtual function but is not
+      inherited -- The given class has a virtual function but is not
+      the base class of any derivation.  Was this a mistake?  There is
+      no advantage to making member functions virtual unless their
+      class is the base of a derivation tree.  In fact, there is a
+      disadvantage because there is a time and space penalty for
+      virtual functions.  This message is not given for library classes
+      and is suppressed for unit checkout.  [13, 4]
+
+"
+1795;1;"  Defined template 'Symbol' was not instantiated. -- The named
+      template was defined but not instantiated.  As such, the template
+      either represents superfluous code or indicates a logic error.
+
+      The 'template' in the message could also be a temploid.  A
+      temploid is defined as either a template or a member of a
+      temploid.
+
+"
+Total:;3239;

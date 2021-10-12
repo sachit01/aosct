@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::RadioCom::RadioChannel">
+    <Position X="4.25" Y="6.5" Width="2" />
+    <Members>
+      <Method Name="calculateCRC" Hidden="true" />
+      <Field Name="chstat" Hidden="true" />
+      <Field Name="connected" Hidden="true" />
+      <Field Name="crcError" Hidden="true" />
+      <Field Name="crcErrorCount" Hidden="true" />
+      <Field Name="crcInitValue" Hidden="true" />
+      <Field Name="crossCompareChannelWriteDesc" Hidden="true" />
+      <Field Name="defaultTRef" Hidden="true" />
+      <Method Name="extractMessage" Hidden="true" />
+      <Method Name="findStartOfTelegram" Hidden="true" />
+      <Method Name="generateTimeStamp" Hidden="true" />
+      <Method Name="handleTxTimeStamps" Hidden="true" />
+      <Field Name="inBuf" Hidden="true" />
+      <Field Name="inBufIndex" Hidden="true" />
+      <Field Name="inBufIndexStart" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Method Name="isValidTimeStamp" Hidden="true" />
+      <Field Name="lastTimeMsgRecvFrmTCC" Hidden="true" />
+      <Field Name="lastTimeMsgSendToTCC" Hidden="true" />
+      <Method Name="logChannelRead" Hidden="true" />
+      <Field Name="maxMessageChunks" Hidden="true" />
+      <Field Name="maxRadioChannelEvent" Hidden="true" />
+      <Field Name="messageInQueue" Hidden="true" />
+      <Field Name="messageInQueueError" Hidden="true" />
+      <Field Name="messageOutQueue" Hidden="true" />
+      <Field Name="numVfwChannelsRadioChannels" Hidden="true" />
+      <Field Name="outBuf" Hidden="true" />
+      <Field Name="outBufLen" Hidden="true" />
+      <Method Name="packMessage" Hidden="true" />
+      <Field Name="popInQueueIndex" Hidden="true" />
+      <Method Name="popMessageFromOutQueue" Hidden="true" />
+      <Field Name="popOutQueueIndex" Hidden="true" />
+      <Field Name="prevPrevTx_tSender" Hidden="true" />
+      <Field Name="prevRx_tSender" Hidden="true" />
+      <Field Name="prevTimeCRCError" Hidden="true" />
+      <Field Name="prevTx_tSender" Hidden="true" />
+      <Field Name="pushInQueueIndex" Hidden="true" />
+      <Method Name="pushMessageToInQueue" Hidden="true" />
+      <Field Name="pushOutQueueIndex" Hidden="true" />
+      <Method Name="RadioChannel" Hidden="true" />
+      <Field Name="radioChannelID" Hidden="true" />
+      <Field Name="radioMessageInQueueSize" Hidden="true" />
+      <Field Name="radioMessageOutQueueSize" Hidden="true" />
+      <Field Name="radioReadChannelName" Hidden="true" />
+      <Field Name="radioWriteChannelName" Hidden="true" />
+      <Method Name="readFromChannel" Hidden="true" />
+      <Field Name="regionId" Hidden="true" />
+      <Method Name="setOutBufHeader" Hidden="true" />
+      <Field Name="syncChannelReadDesc" Hidden="true" />
+      <Field Name="txMode" Hidden="true" />
+      <Method Name="validateMessage" Hidden="true" />
+      <Field Name="writeMessageError" Hidden="true" />
+      <Method Name="writeToChannel" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ATP::RadioCom::RadioChannel::TxMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\radio_comm\radio_channel\radio_channel.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAIToBDAAIlAAcggckQEhDOANKESUAIEQAAVIKBBUgA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\radio_comm\radio_channel\radio_channel.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::IOComponent">
+    <Position X="4.25" Y="4.75" Width="2" />
+    <Members>
+      <Method Name="IOComponent" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="ATC::BaseComponent" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.125" Y="4.2" />
+        <Point X="5.125" Y="4.281" />
+        <Point X="5.125" Y="4.281" />
+        <Point X="5.125" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="4.25" Y="1.75" Width="1.75" />
+    <Members>
+      <Method Name="BaseComponent" Hidden="true" />
+      <Field Name="compId" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="shortName" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Method Name="writeToLog" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="ATP::RadioCom::RadioChannelPtr" Collapsed="true">
+    <Position X="6.75" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\radio_comm\radio_channel\radio_channel.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

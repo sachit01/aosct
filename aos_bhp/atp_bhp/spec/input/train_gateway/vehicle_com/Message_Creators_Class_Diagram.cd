@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::TG::AbstractLCSMessageOut">
+    <Position X="4" Y="4" Width="3" />
+    <Members>
+      <Field Name="dataProcessState" Hidden="true" />
+      <Method Name="getDataProcessState" Hidden="true" />
+      <Method Name="getTracer" Hidden="true" />
+      <Field Name="implemented" Hidden="true" />
+      <Field Name="messageType" Hidden="true" />
+      <Field Name="messageVersion" Hidden="true" />
+      <Method Name="setDataProcessState" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Method Name="traceAssembleData" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAEAgIQEAAAgBAAEQAAGAAAAEAAYAAAABAAAAAAAIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\abstract_lcs_message_out.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::LCSMessageOutATPCommand">
+    <Position X="0.75" Y="3" Width="2.5" />
+    <Members>
+      <Method Name="assembleMessageData" Hidden="true" />
+      <Field Name="atpCommand" Hidden="true" />
+      <Field Name="compositionRequestSentTime" Hidden="true" />
+      <Field Name="timeoutSendCompositionRequest" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAABABAAAAACAAAAACAIQAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_atp_command.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::LCSMessageOutMovementAuthority">
+    <Position X="4" Y="0.5" Width="3" />
+    <Members>
+      <Method Name="assembleMessageData" Hidden="true" />
+      <Field Name="lcsMovementAuthority" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::TG::AbstractLCSMessageOut" FixedFromPoint="true">
+      <Path>
+        <Point X="5.5" Y="4" />
+        <Point X="5.5" Y="2.31" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABAAAAAAAAABAAAAQAAAAAAAQAAgAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_ma.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::LCSMessageOutPath">
+    <Position X="6.25" Y="7.5" Width="2" />
+    <Members>
+      <Method Name="assembleMessageData" Hidden="true" />
+      <Field Name="lcsPath" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAKAQAAAABAAAAAAAAAAAAAAQAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_path.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::LCSMessageOutRclInformation">
+    <Position X="2.5" Y="7.5" Width="2.5" />
+    <Members>
+      <Method Name="assembleMessageData" Hidden="true" />
+      <Field Name="rclInfo" Hidden="true" />
+      <Field Name="sendRclInfoMessageCounter" Hidden="true" />
+      <Field Name="timeoutSendRclInfoMessage" Hidden="true" />
+      <Field Name="trainOrientationCarConnectedToAEnd" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAABABAACAAAAAAAAAAAQBAAIAAAAAAwAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_rcl_information.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::LCSMessageOutStatus">
+    <Position X="0.75" Y="5" Width="2" />
+    <Members>
+      <Field Name="aosStatus" Hidden="true" />
+      <Method Name="assembleMessageData" Hidden="true" />
+      <Method Name="getCabinSelector" Hidden="true" />
+      <Field Name="sendStatusMessageCounter" Hidden="true" />
+      <Field Name="timeoutSendStatusMessage" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAhIAAAAAABAAAIAAAAAAAIABQAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_status.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::LCSMessageOutTrainComposition">
+    <Position X="7.75" Y="3" Width="2.75" />
+    <Members>
+      <Method Name="assembleMessageData" Hidden="true" />
+      <Field Name="trainComposition" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABQAAAAAAABAAAAAQAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_train_composition.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::LCSMessageOutWarningCurve">
+    <Position X="11.25" Y="4.5" Width="2.5" />
+    <Members>
+      <Method Name="assembleMessageData" Hidden="true" />
+      <Field Name="lcsWarningCurve" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAASAIAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_warning_curve.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ATP::TG::LCSATPCommandType">
+    <Position X="0.5" Y="10.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAQAAAAABAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_atp_command.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ATP::TG::LCSMovementAuthorityType">
+    <Position X="5.5" Y="10.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAEAACAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_ma.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ATP::TG::SpeedChangePositionType">
+    <Position X="5.75" Y="17.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_path.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ATP::TG::LCSPathType">
+    <Position X="0.5" Y="13.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAQAQAAgAAAAAAAAAAYAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_path.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ATP::TG::LCSRclInformationType">
+    <Position X="0.5" Y="16.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAACAAAAAAIAACAAAAAAAAAAAiAAAACAAAAAAQAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_rcl_information.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ATP::TG::LCSAOSStatusType">
+    <Position X="5.5" Y="13.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAIAMAAAKAAAAABAAAAgAAQEEAAIAAAAAAABgAAABAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_status.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ATP::TG::TrainCompositionType">
+    <Position X="0.5" Y="12" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_train_composition.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ATP::TG::SpeedCurvePointType">
+    <Position X="8.25" Y="10.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_warning_curve.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ATP::TG::LCSWarningCurve">
+    <Position X="5.5" Y="12.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_warning_curve.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="ATP::TG::EcpbTrainCompReqStatus">
+    <Position X="11.5" Y="12" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_atp_command.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ATP::TG::HoldingBrakeReqStatus">
+    <Position X="11.5" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAI=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_atp_command.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ATP::TG::MADir">
+    <Position X="11.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_out_ma.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

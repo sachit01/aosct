@@ -1,0 +1,11 @@
+==================================================================
+==================================================================
+make report
+date: 2014-02-17
+time: 17:24:55
+user: jkrupp
+your command: /home/jkrupp/PROFIBUS-jkrupp_BS/PROFIBUS/gsp.sh A
+------------------------------------------------------------------
+platform GSP, target: PPC
+no more parameters
+library was successfully rebuilt.

@@ -1,0 +1,95 @@
+# Doxyfile 1.8.10
+
+@INCLUDE = P:\aos_bhp\atp_core\spec\input\atp_core_all\common_doxygen_params
+
+# The PROJECT_NAME tag is a single word (or a sequence of words surrounded by
+# double-quotes, unless you are using Doxywizard) that should identify the
+# project for which the documentation is generated. This name is used in the
+# title of most generated pages and in a few other places.
+# The default value is: My Project.
+
+PROJECT_NAME           = "SCDS ATP Core"
+
+# The PROJECT_NUMBER tag can be used to enter a project or revision number. This
+# could be handy for archiving the generated documentation or if some version
+# control system is used.
+
+PROJECT_NUMBER         = "1DOC-1038354"
+
+# The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
+# into which the generated documentation will be written. If a relative path is
+# entered, it will be relative to the location where doxygen was started. If
+# left blank the current directory will be used.
+
+OUTPUT_DIRECTORY       = P:\aos_bhp\atp_core\spec\output\atp_core_all
+
+# The INPUT tag is used to specify the files and/or directories that contain
+# documented source files. You may enter file names like myfile.cpp or
+# directories like /usr/src/myproject. Separate the files or directories with
+# spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
+# Note: If this tag is empty the current directory is searched.
+
+INPUT                  = P:\aos_bhp\atp_core\spec\input\atp_core_all 
+
+# The TAGFILES tag can be used to specify one or more tag files. For each tag
+# file the location of the external documentation should be added. The format of
+# a tag file without this location is as follows:
+# TAGFILES = file1 file2 ...
+# Adding location for the tag files is done as follows:
+# TAGFILES = file1=loc1 "file2 = loc2" ...
+# where loc1 and loc2 can be relative or absolute paths or URLs. See the
+# section "Linking to external documentation" for more information about the use
+# of tag files.
+# Note: Each tag file must have a unique name (where the name does NOT include
+# the path). If a tag file is not located in the directory in which doxygen is
+# run, you must also specify the path to the tagfile here.
+
+TAGFILES               = "app.tag = ..\kernel\atp_application\html" \
+                         "bk.tag = ..\supervision\brake\html" \
+                         "bh.tag = ..\input_output\btm_handler\html" \
+                         "cfg.tag = ..\config\html" \
+                         "cc.tag = ..\support\cross_compare\html" \
+                         "dec.tag = ..\position\decode\html" \
+                         "dc.tag = ..\dmi_comm\dmi_channel\html" \
+                         "dh.tag = ..\dmi_comm\dmi_handler\html" \
+                         "lio.tag = ..\input_output\loco_io\html" \
+                         "mh.tag = ..\kernel\message_handler\html" \
+                         "mc.tag = ..\kernel\mode_control\html" \
+                         "odo.tag = ..\position\odometry\html" \
+                         "pos.tag = ..\position\position\html" \
+                         "rc.tag = ..\radio_comm\radio_channel\html" \
+                         "rh.tag = ..\radio_comm\radio_handler\html" \
+                         "sup.tag = ..\supervision\supervise\html" \
+                         "tc.tag = ..\supervision\target_calculation\html" \
+                         "ti.tag = ..\train_gateway\tic\html" \
+                         "tm.tag = ..\train_gateway\tims\html" \
+                         "ta.tag = ..\data_storage\targets\html" \
+                         "trk.tag = ..\data_storage\tracks\html" \
+                         "ts.tag = ..\data_storage\tsetup\html" \
+                         "vc.tag = ..\train_gateway\vehicle_com\html"
+
+# The LAYOUT_FILE tag can be used to specify a layout file which will be parsed
+# by doxygen. The layout file controls the global structure of the generated
+# output files in an output format independent way. To create the layout file
+# that represents doxygen's defaults, run doxygen with the -l option. You can
+# optionally specify a file name after the option, if omitted DoxygenLayout.xml
+# will be used as the name of the layout file.
+#
+# Note that if you run doxygen from a directory containing a file called
+# DoxygenLayout.xml, doxygen will parse it automatically even if the LAYOUT_FILE
+# tag is left empty.
+
+LAYOUT_FILE            = DoxygenLayout.xml
+
+# If the GENERATE_LATEX tag is set to YES, doxygen will generate LaTeX output.
+# The default value is: YES.
+
+GENERATE_LATEX         = NO
+
+# The LATEX_OUTPUT tag is used to specify where the LaTeX docs will be put. If a
+# relative path is entered the value of OUTPUT_DIRECTORY will be put in front of
+# it.
+# The default directory is: latex.
+# This tag requires that the tag GENERATE_LATEX is set to YES.
+
+LATEX_OUTPUT           =

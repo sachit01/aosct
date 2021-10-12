@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\DispMain">
+      <UniqueIdentifier>{0bdc6fe1-e767-4664-b743-3ca4fb3ad220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BasicIP">
+      <UniqueIdentifier>{f4cd5a89-36c8-4453-83fe-49af1bfea7ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LogHandler">
+      <UniqueIdentifier>{f63f306f-f551-434a-b3aa-16771ebaa625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Console">
+      <UniqueIdentifier>{07f60d26-c4ed-453a-bd4e-562c621fbf88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DispApplication">
+      <UniqueIdentifier>{91fdb9ca-990f-4856-84b7-aa07f6393855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System Header Files">
+      <UniqueIdentifier>{cb13c180-2632-4353-bade-89cec76097e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ATC">
+      <UniqueIdentifier>{826e50e1-7692-4fa7-9da7-9bcf644a6aca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MessageDispatcher">
+      <UniqueIdentifier>{0ef2c0e4-bb78-4708-9207-97f9ead911dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EventHandler">
+      <UniqueIdentifier>{f49d90ed-1a3a-49d3-9437-d8f896ba3157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{ff34b7c4-44f0-48a9-8235-177670ff203e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config">
+      <UniqueIdentifier>{c5b3185f-e834-4604-a3c2-6ba3c716a072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config\ConfigItem">
+      <UniqueIdentifier>{92919d49-0750-4dc5-a8b5-a84010ab0ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ClassD">
+      <UniqueIdentifier>{ec06614e-1465-4c4f-8070-09fabfdd2494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{90f9193e-6fe5-481b-9e80-e604b2a34ae0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_disp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\disp_application\disp_application.cpp">
+      <Filter>Source Files\DispApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\disp_main\disp_main.cpp">
+      <Filter>Source Files\DispMain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\log_handler\log_handler.cpp">
+      <Filter>Source Files\LogHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic_ip\basic_ip.cpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\message_dispatcher\message_dispatcher.cpp">
+      <Filter>Source Files\MessageDispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\application\abstract_application_base.cpp">
+      <Filter>Source Files\DispApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\event_handler\abstract_event_handler.cpp">
+      <Filter>Source Files\EventHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\event_handler\event.cpp">
+      <Filter>Source Files\EventHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dispatcher\impl\event_handler\event_handler.cpp">
+      <Filter>Source Files\EventHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\atc_base\atc_base.cpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\basic_ip\abstract_basic_ip.cpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\log_handler\abstract_log_handler.cpp">
+      <Filter>Source Files\LogHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dispatcher\impl\console\console.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\console\abstract_console.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\console\trace_interface.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\util\atc_util.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dispatcher\impl\config\config.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\abstract_config_base.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\vfw_sim\vfw_sim.cpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\base_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\bool_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\int8_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\int16_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\int32_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\int64_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\string_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\uint8_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\uint16_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\uint32_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\uint64_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\bds_sim\bds_sim.cpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\ipaddress_config_item.cpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\class_d\class_d_transceiver.cpp">
+      <Filter>Source Files\ClassD</Filter>
+    </ClCompile>
+    <ClCompile Include="vfw_sim_disp_bhp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\math\atc_math.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\config_file.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="..\disp_application\disp_application.hpp">
+      <Filter>Source Files\DispApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\log_handler\log_handler.hpp">
+      <Filter>Source Files\LogHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>System Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\basic_ip\basic_ip.hpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\message_dispatcher\message_dispatcher.hpp">
+      <Filter>Source Files\MessageDispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\application\abstract_application_base.hpp">
+      <Filter>Source Files\DispApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\disp_application\disp_application_specification.hpp">
+      <Filter>Source Files\DispApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\event_handler\abstract_event_handler.hpp">
+      <Filter>Source Files\EventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\event_handler\event.hpp">
+      <Filter>Source Files\EventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\dispatcher\impl\event_handler\event_handler.hpp">
+      <Filter>Source Files\EventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\atc_base\atc_base.hpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\basic_ip\abstract_basic_ip.hpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\log_handler\abstract_log_handler.hpp">
+      <Filter>Source Files\LogHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\dispatcher\impl\console\console.hpp">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\console\abstract_console.hpp">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\console\trace_interface.hpp">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\util\atc_util.hpp">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\dispatcher\impl\config\config.hpp">
+      <Filter>Source Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\abstract_config_base.hpp">
+      <Filter>Source Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\vfw_sim\vfw_sim.hpp">
+      <Filter>Source Files\ATC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\base_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\bool_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\int8_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\int16_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\int32_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\int64_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\string_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\uint8_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\uint16_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\uint32_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\uint64_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\message_dispatcher\message_dispatcher_specification.hpp">
+      <Filter>Source Files\MessageDispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\message_dispatcher\channel_config_dispatcher.hpp">
+      <Filter>Source Files\MessageDispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\basic_ip\basic_ip_specification.hpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\log_handler\log_handler_specification.hpp">
+      <Filter>Source Files\LogHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\event_handler\event_handler_specification.hpp">
+      <Filter>Source Files\EventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\disp_main\disp_main_specification.hpp">
+      <Filter>Source Files\DispMain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\ipaddress_config_item.hpp">
+      <Filter>Source Files\Config\ConfigItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\class_d\class_d_transceiver.hpp">
+      <Filter>Source Files\ClassD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\class_d\class_d_types.hpp">
+      <Filter>Source Files\ClassD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\message_dispatcher\message_dispatcher_event_ids.hpp">
+      <Filter>Source Files\MessageDispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\basic_ip\abstract_basic_ip_event_ids.hpp">
+      <Filter>Source Files\BasicIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\abstract_config_base_event_ids.hpp">
+      <Filter>Source Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\disp_application\dispatcher_version.hpp">
+      <Filter>Source Files\DispApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\math\atc_math.hpp">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\math\atc_math_event_ids.hpp">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\impl\config\config_file.hpp">
+      <Filter>Source Files\Config</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

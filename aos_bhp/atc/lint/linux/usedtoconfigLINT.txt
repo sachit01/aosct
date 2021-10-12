@@ -1,0 +1,6 @@
+
+[azacher@storhl02 LINUX]$ /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_Linux_ppc-1.0/CROSS_RHEL4_x86_Linux_ppc/distribution/usr/bin/powerpc-linux-gcc-4.6.1 -E -dM empty.c >lint_cmac.h
+[azacher@storhl02 LINUX]$ /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_Linux_ppc-1.0/CROSS_RHEL4_x86_Linux_ppc/distribution/usr/bin/powerpc-linux-g++ -E -dM empty.c > lint_cppmac.h
+[azacher@storhl02 LINUX]$
+
+

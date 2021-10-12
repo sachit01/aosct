@@ -1,0 +1,970 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Sys_Int|Win32">
+      <Configuration>Release_Sys_Int</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CA380059-E5BC-4827-AD06-0D7734CEA527}</ProjectGuid>
+    <RootNamespace>test_atp</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\atp_bhp\impl\atp_main;..\..\..\atc\impl\simulation\splapi;..\..\..\atc\impl\vfw_sim;..\..\..\atp_bhp\impl\analyzer_if;..\..\..\atc\impl\analyzer_if;..\..\..\atc\impl\application;..\..\..\atc\impl\simulation\opc_sim;..\..\..\atc\impl\aos_template_library;..\..\..\atc\impl\atc_base;..\..\..\atc\impl\atc_types;..\..\..\atc\impl\basic_ip;..\..\..\atc\impl\bds_sim;..\..\..\atc\impl\config;..\..\..\atc\impl\console;..\..\..\atc\impl\math;..\..\..\atc\impl\crc32;..\..\..\atc\impl\event_handler;..\..\..\atc\impl\fixed_size_mempool;..\..\..\atc\impl\log_handler;..\..\..\atc\impl\simulation\cod_sim;..\..\..\atc\impl\simulation\common;..\..\..\atc\impl\simulation\tims_sim;..\..\..\atc\impl\simulation\vioh_sim;..\..\..\atc\impl\util;..\..\..\atc\impl\vfw;..\..\..\atc\impl\serialization;..\..\..\atp_bhp\impl\basic_ip;..\..\..\atp_bhp\impl\config;..\..\..\atp_bhp\impl\console;..\..\..\atp_bhp\impl\data_storage\targets;..\..\..\atp_bhp\impl\data_storage\tracks;..\..\..\atp_bhp\impl\data_storage\tsetup;..\..\..\atp_bhp\impl\dmi_comm\dmi_channel;..\..\..\atp_bhp\impl\dmi_comm\dmi_handler;..\..\..\atp_bhp\impl\event_handler;..\..\..\atp_bhp\impl\log_handler;..\..\..\atp_bhp\impl\input_output\btm_handler;..\..\..\atp_bhp\impl\input_output\loco_io;..\..\..\atp_bhp\impl\kernel\atp_application;..\..\..\atp_bhp\impl\kernel\message_handler;..\..\..\atp_bhp\impl\kernel\mode_control;..\..\..\atp_bhp\impl\position\decode;..\..\..\atp_bhp\impl\position\odometry;..\..\..\atp_bhp\impl\position\position\;..\..\..\atp_bhp\impl\radio_comm\radio_handler;..\..\..\atp_bhp\impl\supervision\target_calculation;..\..\..\atp_bhp\impl\supervision\supervise;..\..\..\atp_bhp\impl\supervision\brake;..\..\..\atp_bhp\impl\support\cross_compare;..\..\..\atp_bhp\impl\train_gateway\vehicle_com;..\..\..\atp_bhp\impl\train_gateway\tic;..\..\..\atp_bhp\impl\train_gateway\tims;..\..\..\atp_core\impl\atp_shared;..\..\..\atp_core\impl\config;..\..\..\atp_core\impl\data_storage\targets;..\..\..\atp_core\impl\data_storage\tracks;..\..\..\atp_core\impl\data_storage\tsetup;..\..\..\atp_core\impl\dmi_comm\dmi_channel;..\..\..\atp_core\impl\dmi_comm\dmi_handler;..\..\..\atp_core\impl\input_output\btm_handler;..\..\..\atp_core\impl\input_output\loco_io;..\..\..\atp_core\impl\kernel\atp_application;..\..\..\atp_core\impl\kernel\message_handler;..\..\..\atp_core\impl\kernel\mode_control;..\..\..\atp_core\impl\position\decode;..\..\..\atp_core\impl\position\odometry;..\..\..\atp_core\impl\position\position;..\..\..\atp_core\impl\radio_comm\radio_handler;..\..\..\atp_core\impl\radio_comm\radio_channel;..\..\..\atp_core\impl\supervision\target_calculation;..\..\..\atp_core\impl\supervision\supervise;..\..\..\atp_core\impl\supervision\brake_curve_calculations;..\..\..\atp_core\impl\supervision\brake;..\..\..\atp_core\impl\support\cross_compare;..\..\..\atp_core\impl\train_gateway\vehicle_com;..\..\..\atp_core\impl\train_gateway\tic;..\..\..\atp_core\impl\train_gateway\tims;..\..\..\dispatcher\impl\class_d;C:\CoVP_CoHP\Linux_ppc\include;C:\GSP_2\Software\Development\BDS\include;C:\GSP_2\Software\Development\VitalIO_Handler\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_SIL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_SIL;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>..\..\..\atp_bhp\impl\atp_main;..\..\..\atc\impl\vfw_sim;..\..\..\atc\impl\analyzer_if;..\..\..\atc\impl\application;..\..\..\atc\impl\aos_template_library;..\..\..\atc\impl\atc_base;..\..\..\atc\impl\atc_types;..\..\..\atc\impl\basic_ip;..\..\..\atc\impl\bds_sim;..\..\..\atc\impl\config;..\..\..\atc\impl\console;..\..\..\atc\impl\math;..\..\..\atc\impl\crc32;..\..\..\atc\impl\event_handler;..\..\..\atc\impl\fixed_size_mempool;..\..\..\atc\impl\log_handler;..\..\..\atc\impl\simulation\cod_sim;..\..\..\atc\impl\simulation\common;..\..\..\atc\impl\simulation\opc_sim;..\..\..\atc\impl\simulation\tims_sim;..\..\..\atc\impl\simulation\vioh_sim;..\..\..\atc\impl\simulation\splapi;..\..\..\atc\impl\util;..\..\..\atc\impl\vfw;..\..\..\atc\impl\serialization;..\..\..\atp_bhp\impl\analyzer_if;..\..\..\atp_bhp\impl\basic_ip;..\..\..\atp_bhp\impl\config;..\..\..\atp_bhp\impl\console;..\..\..\atp_bhp\impl\data_storage\targets;..\..\..\atp_bhp\impl\data_storage\tracks;..\..\..\atp_bhp\impl\data_storage\tsetup;..\..\..\atp_bhp\impl\dmi_comm\dmi_channel;..\..\..\atp_bhp\impl\dmi_comm\dmi_handler;..\..\..\atp_bhp\impl\event_handler;..\..\..\atp_bhp\impl\log_handler;..\..\..\atp_bhp\impl\input_output\btm_handler;..\..\..\atp_bhp\impl\input_output\loco_io;..\..\..\atp_bhp\impl\kernel\atp_application;..\..\..\atp_bhp\impl\kernel\message_handler;..\..\..\atp_bhp\impl\kernel\mode_control;..\..\..\atp_bhp\impl\position\decode;..\..\..\atp_bhp\impl\position\odometry;..\..\..\atp_bhp\impl\position\position\;..\..\..\atp_bhp\impl\radio_comm\radio_handler;..\..\..\atp_bhp\impl\supervision\target_calculation;..\..\..\atp_bhp\impl\supervision\supervise;..\..\..\atp_bhp\impl\supervision\brake;..\..\..\atp_bhp\impl\support\cross_compare;..\..\..\atp_bhp\impl\train_gateway\tic;..\..\..\atp_bhp\impl\train_gateway\tims;..\..\..\atp_bhp\impl\train_gateway\vehicle_com;..\..\..\atp_core\impl\atp_shared;..\..\..\atp_core\impl\config;..\..\..\atp_core\impl\data_storage\targets;..\..\..\atp_core\impl\data_storage\tracks;..\..\..\atp_core\impl\data_storage\tsetup;..\..\..\atp_core\impl\dmi_comm\dmi_channel;..\..\..\atp_core\impl\dmi_comm\dmi_handler;..\..\..\atp_core\impl\input_output\btm_handler;..\..\..\atp_core\impl\input_output\loco_io;..\..\..\atp_core\impl\kernel\atp_application;..\..\..\atp_core\impl\kernel\message_handler;..\..\..\atp_core\impl\kernel\mode_control;..\..\..\atp_core\impl\position\decode;..\..\..\atp_core\impl\position\odometry;..\..\..\atp_core\impl\position\position;..\..\..\atp_core\impl\radio_comm\radio_handler;..\..\..\atp_core\impl\radio_comm\radio_channel;..\..\..\atp_core\impl\supervision\target_calculation;..\..\..\atp_core\impl\supervision\supervise;..\..\..\atp_core\impl\supervision\brake_curve_calculations;..\..\..\atp_core\impl\supervision\brake;..\..\..\atp_core\impl\support\cross_compare;..\..\..\atp_core\impl\train_gateway\tic;..\..\..\atp_core\impl\train_gateway\tims;..\..\..\atp_core\impl\train_gateway\vehicle_com;..\..\..\dispatcher\impl\class_d;C:\CoVP_CoHP\Linux_ppc\include;C:\GSP_2\Software\Development\BDS\include;..\..\..\SPL_Delivery\inc;C:\GSP_2\Software\Development\VitalIO_Handler\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_SIL;_SYS_INT;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>..\..\..\atp_bhp\impl\atp_main;..\..\..\atc\impl\vfw_sim;..\..\..\atc\impl\analyzer_if;..\..\..\atc\impl\application;..\..\..\atc\impl\aos_template_library;..\..\..\atc\impl\atc_base;..\..\..\atc\impl\atc_types;..\..\..\atc\impl\basic_ip;..\..\..\atc\impl\bds_sim;..\..\..\atc\impl\config;..\..\..\atc\impl\console;..\..\..\atc\impl\math;..\..\..\atc\impl\crc32;..\..\..\atc\impl\event_handler;..\..\..\atc\impl\fixed_size_mempool;..\..\..\atc\impl\log_handler;..\..\..\atc\impl\simulation\cod_sim;..\..\..\atc\impl\simulation\common;..\..\..\atc\impl\simulation\opc_sim;..\..\..\atc\impl\simulation\tims_sim;..\..\..\atc\impl\simulation\vioh_sim;..\..\..\atc\impl\simulation\splapi;..\..\..\atc\impl\util;..\..\..\atc\impl\vfw;..\..\..\atc\impl\serialization;..\..\..\atp_bhp\impl\analyzer_if;..\..\..\atp_bhp\impl\basic_ip;..\..\..\atp_bhp\impl\config;..\..\..\atp_bhp\impl\console;..\..\..\atp_bhp\impl\data_storage\targets;..\..\..\atp_bhp\impl\data_storage\tracks;..\..\..\atp_bhp\impl\data_storage\tsetup;..\..\..\atp_bhp\impl\dmi_comm\dmi_channel;..\..\..\atp_bhp\impl\dmi_comm\dmi_handler;..\..\..\atp_bhp\impl\event_handler;..\..\..\atp_bhp\impl\log_handler;..\..\..\atp_bhp\impl\input_output\btm_handler;..\..\..\atp_bhp\impl\input_output\loco_io;..\..\..\atp_bhp\impl\kernel\atp_application;..\..\..\atp_bhp\impl\kernel\message_handler;..\..\..\atp_bhp\impl\kernel\mode_control;..\..\..\atp_bhp\impl\position\decode;..\..\..\atp_bhp\impl\position\odometry;..\..\..\atp_bhp\impl\position\position\;..\..\..\atp_bhp\impl\radio_comm\radio_handler;..\..\..\atp_bhp\impl\supervision\target_calculation;..\..\..\atp_bhp\impl\supervision\supervise;..\..\..\atp_bhp\impl\supervision\brake;..\..\..\atp_bhp\impl\support\cross_compare;..\..\..\atp_bhp\impl\train_gateway\tic;..\..\..\atp_bhp\impl\train_gateway\tims;..\..\..\atp_bhp\impl\train_gateway\vehicle_com;..\..\..\atp_core\impl\atp_shared;..\..\..\atp_core\impl\config;..\..\..\atp_core\impl\data_storage\targets;..\..\..\atp_core\impl\data_storage\tracks;..\..\..\atp_core\impl\data_storage\tsetup;..\..\..\atp_core\impl\dmi_comm\dmi_channel;..\..\..\atp_core\impl\dmi_comm\dmi_handler;..\..\..\atp_core\impl\input_output\btm_handler;..\..\..\atp_core\impl\input_output\loco_io;..\..\..\atp_core\impl\kernel\atp_application;..\..\..\atp_core\impl\kernel\message_handler;..\..\..\atp_core\impl\kernel\mode_control;..\..\..\atp_core\impl\position\decode;..\..\..\atp_core\impl\position\odometry;..\..\..\atp_core\impl\position\position;..\..\..\atp_core\impl\radio_comm\radio_handler;..\..\..\atp_core\impl\radio_comm\radio_channel;..\..\..\atp_core\impl\supervision\target_calculation;..\..\..\atp_core\impl\supervision\supervise;..\..\..\atp_core\impl\supervision\brake_curve_calculations;..\..\..\atp_core\impl\supervision\brake;..\..\..\atp_core\impl\support\cross_compare;..\..\..\atp_core\impl\train_gateway\tic;..\..\..\atp_core\impl\train_gateway\tims;..\..\..\atp_core\impl\train_gateway\vehicle_com;..\..\..\dispatcher\impl\class_d;C:\CoVP_CoHP\Linux_ppc\include;C:\GSP_2\Software\Development\BDS\include;..\..\..\SPL_Delivery\inc;C:\GSP_2\Software\Development\VitalIO_Handler\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\atc\impl\analyzer_if\abstract_analyzer_if.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\atc_base\atc_base.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\application\abstract_application_base.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\bds_sim\bds_sim.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\coding_templates\abstract_source_template.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\coding_templates\source_template.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\config\abstract_config_base.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\base_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\bool_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\config_file.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\int16_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\int32_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\int64_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\int8_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\ipaddress_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\string_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\uint16_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\uint32_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\uint64_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\config\uint8_config_item.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\console\abstract_console.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\console\trace_interface.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\event_handler\abstract_event_handler.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\event_handler\event.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\fixed_size_mempool\fixed_size_pool_manager.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\log_handler\abstract_log_handler.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\math\atc_math.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\simulation\opc_sim\opc_sim.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\simulation\opc_sim\otelib_spl_sim_api.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\simulation\opc_sim\otelib_spl_stub.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\util\atc_bit_unpacker.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\util\atc_util.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\config\abstract_config.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\abstract_targets.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\base_target.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\conditional_target.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\gradient_target.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\primary_target.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\speed_target.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\supervised_target.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\targets\track_data_item_target.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tracks\abstract_tracks.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tracks\balise.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tracks\track.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system_default.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system_steps.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\train_setup.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\vehicle_setup.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_channel\dmi_channel.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_handler.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_in.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_out.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_registration_area.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_loaded.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_name.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_area_request.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_location_data.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_predefined_text_message.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_text_message.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_vehicle_data.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_confirmation.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_startup.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_status.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_to_atp_data.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_driver_id_and_password.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_loco_vs_train_dir.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_vs_track_dir.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_notification.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_vehicle_data.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_dmi_startup_history.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_driver_info.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_erase_planning_area.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_gradient_data_list.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_loco_vs_train_dir.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_manual_config_selected.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_rereg_selected.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_speed_and_distance.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_time.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_config_data.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_name.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_vs_track_dir_wanted.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_vehicle_types.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_version.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\bs_wrapper.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\cc_wrapper.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\spl_handler.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\loco_io\abstract_loco_io.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\atp_application\abstract_atp_application.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_message_handler.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_common.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_in.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_out.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_approximate_position.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_area_request.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_ato_remote_control.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_command_message.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_configuration_data.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_driver_logon_status.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_em_alert.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_external_data.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_join_command.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_movement_authority.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_path.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_position_report_request.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_possession_acknowledge.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_protocol_version.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_reject_configuration.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_revoke_em_alert.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_shunting_acknowledge.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_stop_train.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_train_setup.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_unconditional_shortening.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_unregistration.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_yard_acknowledge.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_abort_setup.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_driver_information.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_position_report.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_protocol_version.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_registration_area.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_startup_message.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_train_registration_information.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_types.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\abstract_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\abstract_mode_control.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\balise_search_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\config_mode_request_seq.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\driver_login_seq.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\emergency_alert_seq.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\join_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\location_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\mode_request_seq.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\normal_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\possession_mode_request_seq.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\possession_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\power_down_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\power_up_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\safety_halt_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\safe_brake_to_stop_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_mode_request_seq.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\sleeping_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\split_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\staff_responsible_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_route_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\train_config_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\train_registration_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\unregistered_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\yard_mode_request_seq.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\kernel\mode_control\yard_mode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\position\decode\abstract_decode.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\position\odometry\abstract_odometry.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\position\position\abstract_position.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\radio_comm\radio_channel\radio_channel.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\radio_comm\radio_channel\radio_channel_central.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\radio_comm\radio_handler\abstract_radio_handler.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\supervision\brake\abstract_brake.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\supervision\brake_curve_calculations\brake_calculations.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\supervision\supervise\abstract_supervise.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\supervision\target_calculation\abstract_target_calculation.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\support\cross_compare\abstract_cross_compare.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_object.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_output.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_output_channel.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\train_gateway\tic\abstract_tic.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\train_gateway\tims\abstract_tims.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\train_gateway\vehicle_com\abstract_vehicle_com.cpp" />
+    <ClCompile Include="..\..\..\dispatcher\impl\class_d\class_d_transceiver.cpp" />
+    <ClCompile Include="..\analyzer_if\analyzer_if.cpp" />
+    <ClCompile Include="..\atp_main\atp_main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\config\config.cpp" />
+    <ClCompile Include="..\console\console.cpp" />
+    <ClCompile Include="..\data_storage\targets\targets.cpp" />
+    <ClCompile Include="..\data_storage\targets\track_data_item_target_bhp.cpp" />
+    <ClCompile Include="..\data_storage\tracks\tracks.cpp" />
+    <ClCompile Include="..\data_storage\tsetup\brakeability_bhp.cpp" />
+    <ClCompile Include="..\data_storage\tsetup\brakeability_brake_system_steps_bhp.cpp" />
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_handler.cpp" />
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states_bhp.cpp" />
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list_bhp.cpp" />
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_eta_bhp.cpp" />
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_radio_channel_bhp.cpp" />
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_train_weight_bhp.cpp" />
+    <ClCompile Include="..\dmi_comm\dmi_handler\dmi_message_out_typical_config_bhp.cpp" />
+    <ClCompile Include="..\event_handler\event_handler.cpp" />
+    <ClCompile Include="..\input_output\loco_io\loco_io.cpp" />
+    <ClCompile Include="..\kernel\atp_application\atp_application.cpp" />
+    <ClCompile Include="..\kernel\message_handler\message_handler.cpp" />
+    <ClCompile Include="..\kernel\message_handler\radio_message_in_command_message_bhp.cpp" />
+    <ClCompile Include="..\kernel\message_handler\radio_message_in_configuration_data_bhp.cpp" />
+    <ClCompile Include="..\kernel\message_handler\radio_message_in_movement_authority_bhp.cpp" />
+    <ClCompile Include="..\kernel\message_handler\radio_message_in_path_bhp.cpp" />
+    <ClCompile Include="..\kernel\message_handler\radio_message_in_train_setup_bhp.cpp" />
+    <ClCompile Include="..\kernel\message_handler\radio_message_out_position_report_bhp.cpp" />
+    <ClCompile Include="..\kernel\message_handler\radio_message_out_startup_message_bhp.cpp" />
+    <ClCompile Include="..\kernel\mode_control\driver_login_seq_bhp.cpp" />
+    <ClCompile Include="..\kernel\mode_control\location_mode_bhp.cpp" />
+    <ClCompile Include="..\kernel\mode_control\mode_control.cpp" />
+    <ClCompile Include="..\kernel\mode_control\train_config_mode_bhp.cpp" />
+    <ClCompile Include="..\log_handler\log_handler.cpp" />
+    <ClCompile Include="..\position\decode\decode.cpp" />
+    <ClCompile Include="..\position\odometry\odometry.cpp" />
+    <ClCompile Include="..\position\position\position.cpp" />
+    <ClCompile Include="..\radio_comm\radio_handler\radio_handler.cpp" />
+    <ClCompile Include="..\supervision\brake\brake.cpp" />
+    <ClCompile Include="..\supervision\supervise\supervise.cpp" />
+    <ClCompile Include="..\supervision\target_calculation\target_calculation.cpp" />
+    <ClCompile Include="..\support\cross_compare\cross_compare.cpp" />
+    <ClCompile Include="..\train_gateway\tic\tic.cpp" />
+    <ClCompile Include="..\train_gateway\tims\obrd_message_common.cpp" />
+    <ClCompile Include="..\train_gateway\tims\obrd_message_handler.cpp" />
+    <ClCompile Include="..\train_gateway\tims\obrd_message_in.cpp" />
+    <ClCompile Include="..\train_gateway\tims\obrd_message_in_obrd_unit_status.cpp" />
+    <ClCompile Include="..\train_gateway\tims\obrd_message_in_protocol_version.cpp" />
+    <ClCompile Include="..\train_gateway\tims\obrd_message_out.cpp" />
+    <ClCompile Include="..\train_gateway\tims\obrd_message_out_protocol_version.cpp" />
+    <ClCompile Include="..\train_gateway\tims\obrd_message_out_reject_message.cpp" />
+    <ClCompile Include="..\train_gateway\tims\tims.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\abstract_lcs_message_in.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\abstract_lcs_message_out.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\emp_message.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_common.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_handler.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_in_ecpb_train_composition.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_in_rcl_status.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_in_train_status.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_atp_command.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_ma.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_path.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_rcl_information.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_status.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_train_composition.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\lcs_message_out_warning_curve.cpp" />
+    <ClCompile Include="..\train_gateway\vehicle_com\vehicle_com.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\basic_ip\abstract_basic_ip.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_CONSOLE;_SIL;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\..\..\atc\impl\simulation\cod_sim\cod_sim.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\simulation\vioh_sim\vioh_client_sim.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\simulation\vioh_sim\vioh_sim.cpp" />
+    <ClCompile Include="..\..\..\atc\impl\vfw_sim\vfw_sim.cpp" />
+    <ClCompile Include="..\..\..\atp_bhp\impl\basic_ip\basic_ip.cpp" />
+    <ClCompile Include="..\..\..\atp_bhp\impl\data_storage\tsetup\tsetup.cpp" />
+    <ClCompile Include="..\..\..\atp_bhp\impl\input_output\btm_handler\btm_handler.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\data_storage\tsetup\abstract_tsetup.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\abstract_btm_handler.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_command_message.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_status_message.cpp" />
+    <ClCompile Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_telegram.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test_atp.cpp" />
+    <ClCompile Include="vfw_sim_atp_bhp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\atc\impl\analyzer_if\abstract_analyzer_if.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\analyzer_if\abstract_analyzer_if_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\application\abstract_application_base.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\atc_base\atc_base.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\atc_types\dmi_atc_event_codes.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\atc_types\atc_types.hpp" />
+    <CustomBuild Include="..\..\..\atc\impl\coding_templates\abstract_header_template.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atc\impl\coding_templates\header_template.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\..\..\atc\impl\config\abstract_config_base.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\base_config_item.hpp" />
+    <CustomBuild Include="..\..\..\atc\impl\config\bool_config_item.hpp" />
+    <CustomBuild Include="..\..\..\atc\impl\config\int16_config_item.hpp" />
+    <CustomBuild Include="..\..\..\atc\impl\config\int32_config_item.hpp" />
+    <CustomBuild Include="..\..\..\atc\impl\config\int64_config_item.hpp" />
+    <CustomBuild Include="..\..\..\atc\impl\config\int8_config_item.hpp" />
+    <CustomBuild Include="..\..\..\atc\impl\config\string_config_item.hpp" />
+    <CustomBuild Include="..\..\..\atc\impl\config\uint16_config_item.hpp" />
+    <CustomBuild Include="..\..\..\atc\impl\config\uint32_config_item.hpp" />
+    <CustomBuild Include="..\..\..\atc\impl\config\uint64_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\config_file.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\ipaddress_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\config\uint8_config_item.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\console\abstract_console.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\console\trace_interface.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\crc32\crc32.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\event_handler\abstract_event_handler.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\event_handler\event.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\fixed_size_mempool\fixed_size_pool_manager.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\log_handler\abstract_log_handler.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\math\atc_math.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\math\atc_math_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\cod_sim\cod_sim_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\opc_sim\opc_sim_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\opc_sim\opc_sim.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\opc_sim\simulated_btm_messages.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\FFFIS_Types.h" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\otelib_splstub.h" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\pl_driver_types.h" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\spla_protocol_parameters.h" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\spl_api_interface.h" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\spl_a_errorcodes.h" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\splapi\spl_sim_api_interface.h" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\vioh_sim\vioh_sim_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\util\atc_bit_checker.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\util\atc_bit_unpacker.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\util\atc_util.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\vfw\channel_config.hpp" />
+    <CustomBuild Include="..\..\..\atc\spec\input\config\abstract_config_base_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\..\..\atc\impl\vfw_sim\vfw_sim.hpp" />
+    <ClInclude Include="..\..\..\atc\spec\input\analyzer_if\abstract_analyzer_if_specification.hpp" />
+    <ClInclude Include="..\..\..\atc\spec\input\application\abstract_application_base_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\atc_all\atc_all_specification.hpp" />
+    <ClInclude Include="..\..\..\atc\spec\input\basic_ip\abstract_basic_ip_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\console\abstract_console_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\event_handler\abstract_event_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\log_handler\abstract_log_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atc\spec\input\template\template_specification.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\atp_shared\atp_base.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\atp_shared\atp_types.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\config\abstract_config.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\abstract_targets.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\base_target.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\conditional_target.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\gradient_target.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\primary_target.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\speed_target.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\supervised_target.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\targets\track_data_item_target.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tracks\abstract_tracks.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tracks\balise.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tracks\abstract_tracks_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tracks\track.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system_default.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\brakeability_brake_system_steps.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\abstract_tsetup_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_channel\dmi_channel.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_channel\dmi_message.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_handler.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_in.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_message_out.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_event_codes.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_registration_area.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_loaded.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_name.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_area_request.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_location_data.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_predefined_text_message.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_text_message.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_vehicle_data.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_confirmation.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_startup.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_status.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_dmi_to_atp_data.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_driver_id_and_password.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_loco_vs_train_dir.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_in_train_vs_track_dir.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_notification.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_vehicle_data.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_dmi_startup_history.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_driver_info.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_erase_planning_area.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_gradient_data_list.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_loco_vs_train_dir.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_manual_config_selected.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_rereg_selected.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_speed_and_distance.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_time.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_config_data.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_name.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_train_vs_track_dir_wanted.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_vehicle_types.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\dmi_message_out_version.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\dmi_comm\dmi_handler\abstract_dmi_handler_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\bs_wrapper.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\cc_wrapper.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\abstract_btm_handler_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\spl_handler.h" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\spl_handler.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\loco_io\abstract_loco_io.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\loco_io\abstract_loco_io_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\atp_application\abstract_atp_application.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_message_handler.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_common.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_in.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_radio_message_out.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\abstract_message_handler_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_approximate_position.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_area_request.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_ato_remote_control.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_command_message.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_configuration_data.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_driver_logon_status.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_em_alert.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_external_data.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_join_command.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_movement_authority.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_path.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_position_report_request.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_possession_acknowledge.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_protocol_version.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_reject_configuration.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_revoke_em_alert.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_shunting_acknowledge.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_stop_train.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_train_setup.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_unconditional_shortening.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_unregistration.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_in_yard_acknowledge.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_abort_setup.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_driver_information.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_position_report.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_protocol_version.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_registration_area.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_startup_message.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_out_train_registration_information.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\message_handler\radio_message_types.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\abstract_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\abstract_mode_control.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\balise_search_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\config_mode_request_seq.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\driver_login_seq.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\emergency_alert_seq.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\abstract_mode_control_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\join_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\location_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\mode_request_seq.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\normal_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\possession_mode_request_seq.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\possession_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\power_down_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\power_up_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\safety_halt_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\safe_brake_to_stop_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_mode_request_seq.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\shunting_route_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\sleeping_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\split_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\staff_responsible_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\train_config_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\train_registration_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\unregistered_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\yard_mode_request_seq.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\kernel\mode_control\yard_mode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\position\decode\abstract_decode.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\position\decode\abstract_decode_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\position\odometry\abstract_odometry.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\position\odometry\abstract_odometry_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\position\position\abstract_position.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\position\position\abstract_position_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\radio_comm\radio_channel\radio_channel.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\radio_comm\radio_channel\radio_channel_central.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\radio_comm\radio_channel\radio_message.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\radio_comm\radio_handler\abstract_radio_handler.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\brake\abstract_brake.hpp" />
+    <CustomBuild Include="..\..\..\atp_core\spec\input\config\abstract_config_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\atp_core\spec\input\data_storage\targets\abstract_targets_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\brake\abstract_brake_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\brake_curve_calculations\brake_calculations.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\brake_curve_calculations\brake_calculations_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\supervise\abstract_supervise.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\supervise\abstract_supervise_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\target_calculation\abstract_target_calculation.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\supervision\target_calculation\abstract_target_calculation_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\abstract_cross_compare.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_array.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_complex.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_object.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_output.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\cross_compare_output_channel.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\support\cross_compare\abstract_cross_compare_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\train_gateway\tic\abstract_tic.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\train_gateway\tic\abstract_tic_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\train_gateway\tims\abstract_tims.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\train_gateway\tims\abstract_tims_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\train_gateway\vehicle_com\abstract_vehicle_com.hpp" />
+    <ClInclude Include="..\..\..\atp_core\spec\input\atp_core_all\atp_core_all_specification.hpp" />
+    <ClInclude Include="..\..\..\atp_core\spec\input\data_storage\tracks\abstract_tracks_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\data_storage\tsetup\abstract_tsetup_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\dmi_comm\dmi_channel\dmi_channel_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\input_output\btm_handler\abstract_btm_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\dmi_comm\dmi_handler\abstract_dmi_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\input_output\loco_io\abstract_loco_io_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\kernel\atp_application\abstract_atp_application_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\kernel\message_handler\abstract_message_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\kernel\mode_control\abstract_mode_control_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\position\decode\abstract_decode_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <CustomBuild Include="..\..\spec\input\config\config_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\..\..\atp_core\spec\input\position\odometry\abstract_odometry_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\position\position\abstract_position_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\radio_comm\radio_channel\radio_channel_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\radio_comm\radio_handler\abstract_radio_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\supervision\brake\abstract_brake_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\supervision\supervise\abstract_supervise_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\supervision\target_calculation\abstract_target_calculation_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\support\cross_compare\abstract_cross_compare_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\train_gateway\tic\abstract_tic_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\train_gateway\tims\abstract_tims_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\atp_core\spec\input\train_gateway\vehicle_com\abstract_vehicle_com_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\dispatcher\impl\class_d\class_d_transceiver.hpp" />
+    <ClInclude Include="..\..\..\dispatcher\impl\class_d\class_d_types.hpp" />
+    <ClInclude Include="..\..\spec\input\analyzer_if\analyzer_if_specification.hpp" />
+    <ClInclude Include="..\..\spec\input\atp_bhp_all\atp_bhp_all_specification.hpp" />
+    <ClInclude Include="..\..\spec\input\atp_main\atp_main_specification.hpp" />
+    <ClInclude Include="..\..\spec\input\basic_ip\basic_ip_specification.hpp" />
+    <ClInclude Include="..\..\spec\input\console\console_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\data_storage\targets\targets_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\data_storage\tracks\tracks_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\data_storage\tsetup\tsetup_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\dmi_comm\dmi_handler\dmi_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\event_handler\event_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\input_output\btm_handler\btm_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\input_output\loco_io\loco_io_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\kernel\atp_application\atp_application_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\kernel\message_handler\message_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\kernel\mode_control\mode_control_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\log_handler\log_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\position\decode\decode_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\position\odometry\odometry_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\position\position\position_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\radio_comm\radio_handler\radio_handler_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\supervision\brake\brake_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\supervision\supervise\supervise_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\supervision\target_calculation\target_calculation_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\support\cross_compare\cross_compare_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\train_gateway\tic\tic_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\train_gateway\vehicle_com\vehicle_com_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\spec\input\train_gateway\tims\tims_specification.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\analyzer_if\analyzer_if.hpp" />
+    <ClInclude Include="..\atp_main\atp_main.hpp" />
+    <ClInclude Include="..\config\config.hpp" />
+    <ClInclude Include="..\console\atp_version.hpp" />
+    <ClInclude Include="..\console\console.hpp" />
+    <ClInclude Include="..\data_storage\targets\targets.hpp" />
+    <ClInclude Include="..\data_storage\targets\track_data_item_target_bhp.hpp" />
+    <ClInclude Include="..\data_storage\tracks\tracks.hpp" />
+    <ClInclude Include="..\data_storage\tsetup\brakeability_bhp.hpp" />
+    <ClInclude Include="..\data_storage\tsetup\brakeability_brake_system_steps_bhp.hpp" />
+    <ClInclude Include="..\data_storage\tsetup\tsetup_event_ids.hpp" />
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_bhp_event_codes.hpp" />
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_handler.hpp" />
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_atp_modes_and_states_bhp.hpp" />
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_ceiling_speed_list_bhp.hpp" />
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_eta_bhp.hpp" />
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_radio_channel_bhp.hpp" />
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_train_weight_bhp.hpp" />
+    <ClInclude Include="..\dmi_comm\dmi_handler\dmi_message_out_typical_config_bhp.hpp" />
+    <ClInclude Include="..\event_handler\event_handler.hpp" />
+    <CustomBuild Include="..\input_output\loco_io\loco_io.hpp" />
+    <ClInclude Include="..\input_output\loco_io\loco_io_event_ids.hpp" />
+    <ClInclude Include="..\kernel\atp_application\atp_application.hpp" />
+    <ClInclude Include="..\kernel\atp_application\atp_version.hpp" />
+    <ClInclude Include="..\kernel\message_handler\message_handler.hpp" />
+    <ClInclude Include="..\kernel\message_handler\radio_message_in_command_message_bhp.hpp" />
+    <ClInclude Include="..\kernel\message_handler\radio_message_in_configuration_data_bhp.hpp" />
+    <ClInclude Include="..\kernel\message_handler\radio_message_in_movement_authority_bhp.hpp" />
+    <ClInclude Include="..\kernel\message_handler\radio_message_in_path_bhp.hpp" />
+    <ClInclude Include="..\kernel\message_handler\radio_message_in_train_setup_bhp.hpp" />
+    <ClInclude Include="..\kernel\message_handler\radio_message_out_position_report_bhp.hpp" />
+    <ClInclude Include="..\kernel\message_handler\radio_message_out_startup_message_bhp.hpp" />
+    <ClInclude Include="..\kernel\message_handler\radio_message_types_bhp.hpp" />
+    <ClInclude Include="..\kernel\mode_control\driver_login_seq_bhp.hpp" />
+    <ClInclude Include="..\kernel\mode_control\location_mode_bhp.hpp" />
+    <ClInclude Include="..\kernel\mode_control\mode_control.hpp" />
+    <ClInclude Include="..\kernel\mode_control\mode_control_event_ids.hpp" />
+    <ClInclude Include="..\kernel\mode_control\train_config_mode_bhp.hpp" />
+    <ClInclude Include="..\log_handler\log_handler.hpp" />
+    <ClInclude Include="..\position\decode\decode.hpp" />
+    <ClInclude Include="..\position\odometry\odometry.hpp" />
+    <ClInclude Include="..\position\position\position.hpp" />
+    <ClInclude Include="..\radio_comm\radio_handler\radio_handler.hpp" />
+    <ClInclude Include="..\supervision\brake\brake.hpp" />
+    <ClInclude Include="..\supervision\brake\brake_event_ids.hpp" />
+    <ClInclude Include="..\supervision\supervise\supervise.hpp" />
+    <ClInclude Include="..\supervision\target_calculation\target_calculation.hpp" />
+    <ClInclude Include="..\supervision\target_calculation\target_calculation_event_ids.hpp" />
+    <ClInclude Include="..\support\cross_compare\cross_compare.hpp" />
+    <ClInclude Include="..\train_gateway\tic\tic.hpp" />
+    <ClInclude Include="..\train_gateway\tims\obrd_message_common.hpp" />
+    <ClInclude Include="..\train_gateway\tims\obrd_message_handler.hpp" />
+    <ClInclude Include="..\train_gateway\tims\obrd_message_in.hpp" />
+    <ClInclude Include="..\train_gateway\tims\obrd_message_in_obrd_unit_status.hpp" />
+    <ClInclude Include="..\train_gateway\tims\obrd_message_in_protocol_version.hpp" />
+    <ClInclude Include="..\train_gateway\tims\obrd_message_out.hpp" />
+    <ClInclude Include="..\train_gateway\tims\obrd_message_out_protocol_version.hpp" />
+    <ClInclude Include="..\train_gateway\tims\obrd_message_out_reject_message.hpp" />
+    <ClInclude Include="..\train_gateway\tims\tims.hpp" />
+    <ClInclude Include="..\train_gateway\tims\tims_event_ids.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\abstract_lcs_message_in.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\abstract_lcs_message_out.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\emp_message.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_common.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_handler.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_in_ecpb_train_composition.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_in_train_status.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_in_rcl_status.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_atp_command.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_ma.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_path.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_rcl_information.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_status.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_train_composition.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\lcs_message_out_warning_curve.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\vehicle_com.hpp" />
+    <ClInclude Include="..\train_gateway\vehicle_com\vehicle_com_event_ids.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\basic_ip\abstract_basic_ip.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\cod_sim\cod_sim.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\cod_sim\config_response.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\cod_sim\simulated_movement.hpp" />
+    <ClInclude Include="..\..\..\atc\impl\simulation\vioh_sim\vioh_sim.hpp" />
+    <ClInclude Include="..\..\..\atp_bhp\impl\basic_ip\basic_ip.hpp" />
+    <ClInclude Include="..\..\..\atp_bhp\impl\data_storage\tsetup\tsetup.hpp" />
+    <ClInclude Include="..\..\..\atp_bhp\impl\input_output\btm_handler\btm_handler.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\abstract_tsetup.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\vehicle_setup.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\data_storage\tsetup\train_setup.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\abstract_btm_handler.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_command_message.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_status_message.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_telegram.hpp" />
+    <ClInclude Include="..\..\..\atp_core\impl\input_output\btm_handler\btm_types.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\atc\impl\coding_templates\task_description_template.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Sys_Int|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\atc\spec\input\analyzer_if\abstract_analyzer_if_class_diagram.cd" />
+    <None Include="..\..\..\atc\spec\input\config\abstract_config_base_class.cd" />
+    <None Include="..\..\..\atc\spec\input\config\config_item_classes.cd" />
+    <None Include="..\..\..\atc\spec\input\console\abstract_console_class_diagram.cd" />
+    <None Include="..\..\..\atc\spec\input\log_handler\abstract_log_handler_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\impl\input_output\loco_io\abstract_loco_io_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\data_storage\tsetup\abstract_tsetup.cd" />
+    <None Include="..\..\..\atp_core\spec\input\config\abstract_config_class.cd" />
+    <None Include="..\..\..\atp_core\spec\input\data_storage\tsetup\brakesystem.cd" />
+    <None Include="..\..\..\atp_core\spec\input\data_storage\tsetup\breakeability.cd" />
+    <None Include="..\..\..\atp_core\spec\input\input_output\btm_handler\abstract_btm_handler_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\kernel\atp_application\abstract_atp_application.cd" />
+    <None Include="..\..\..\atp_core\spec\input\kernel\message_handler\abstract_message_handler_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\position\odometry\abstract_odometry_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\radio_comm\radio_channel\radio_channel_Class_Diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\radio_comm\radio_handler\abstract_radio_handler.cd" />
+    <None Include="..\..\..\atp_core\spec\input\supervision\target_calculation\abstract_target_calculation_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\support\cross_compare\abstract_cross_compare_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\supervision\supervise\brake_calculations_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\train_gateway\tic\abstract_tic_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\train_gateway\tims\abstract_tims_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\position\decode\abstract_decode_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\supervision\supervise\abstract_supervise_class_diagram.cd" />
+    <None Include="..\..\spec\input\analyzer_if\analyzerif_class_diagram.cd" />
+    <None Include="..\..\spec\input\config\config.cd" />
+    <None Include="..\..\spec\input\console\console_class_diagram.cd" />
+    <None Include="..\..\spec\input\input_output\btm_handler\btm_handler_class_diagram.cd" />
+    <None Include="..\..\spec\input\input_output\loco_io\loco_io_class_diagram.cd" />
+    <None Include="..\..\spec\input\kernel\atp_application\atp_application_component.cd" />
+    <None Include="..\..\spec\input\kernel\mode_control\mode_bhp.cd" />
+    <None Include="..\..\spec\input\log_handler\log_handler_class_diagram.cd" />
+    <None Include="..\..\spec\input\position\odometry\odometry_class_diagram.cd" />
+    <None Include="..\..\spec\input\data_storage\tsetup\tsetup.cd" />
+    <None Include="..\..\spec\input\radio_comm\radio_handler\radio_handler.cd" />
+    <None Include="..\..\spec\input\supervision\supervise\supervise_class_diagram.cd" />
+    <None Include="..\..\spec\input\supervision\target_calculation\target_calculation_class_diagram.cd" />
+    <None Include="..\..\spec\input\support\cross_compare\cross_compare_class_diagram.cd" />
+    <None Include="..\..\spec\input\train_gateway\tic\tic_class_diagram.cd" />
+    <None Include="..\..\spec\input\train_gateway\tims\obrd_message_handler_class_diagram.cd" />
+    <None Include="..\..\spec\input\train_gateway\tims\tims_class_diagram.cd" />
+    <None Include="..\..\spec\input\train_gateway\vehicle_com\lcs_message_handler_class_diagram.cd" />
+    <None Include="..\..\spec\input\position\decode\decode_class_diagram.cd" />
+    <None Include="P:\aos_bhp\atp_bhp\spec\input\data_storage\tracks\tracks_class_diagram.cd" />
+    <None Include="..\..\..\atp_core\spec\input\data_storage\tracks\abstract_tracks_class_diagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\spec\input\kernel\message_handler\message_handler_class_diagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

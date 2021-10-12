@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATP::Supv::TargetCalculation">
+    <Position X="6.5" Y="7.25" Width="2.5" />
+    <Members>
+      <Method Name="calcPermSpeedCurvePoints" Hidden="true" />
+      <Method Name="calSamplesForTarget" Hidden="true" />
+      <Method Name="clearSamplePoints" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="lastProcessedMRTId" Hidden="true" />
+      <Field Name="lastSampleOdoPos" Hidden="true" />
+      <Field Name="lcsWarningCurvePointsLimit" Hidden="true" />
+      <Field Name="nullPtrErr" Hidden="true" />
+      <Method Name="resetLastProcessedTargetPosition" Hidden="true" />
+      <Field Name="samplePointIdx" Hidden="true" />
+      <Field Name="samplePointStorage" Hidden="true" />
+      <Method Name="storeSample" Hidden="true" />
+      <Method Name="TargetCalculation" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEACggAAIAABAAAAABAEAAQAAABAAgIAAAAIAAAAQiA=</HashCode>
+      <FileName>C:\git\AOS_IF150_R4\aos_bhp\atp_bhp\impl\supervision\target_calculation\target_calculation.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Supv::AbstractTargetCalculation">
+    <Position X="6.5" Y="3.25" Width="2.5" />
+    <Members>
+      <Method Name="addSuperviseGradientTargets" Hidden="true" />
+      <Method Name="addSupvSpeedAndPrimaryTargets" Hidden="true" />
+      <Field Name="calcCeilingSpeed" Hidden="true" />
+      <Method Name="calcCurveSpeedUpdate" Hidden="true" />
+      <Method Name="calcDecSpeedAndSetCurveSpeeds" Hidden="true" />
+      <Method Name="calcGradient" Hidden="true" />
+      <Field Name="contSizeExceeded" Hidden="true" />
+      <Method Name="createSuperviseGradTargets" Hidden="true" />
+      <Field Name="ebVector" Hidden="true" />
+      <Method Name="findGradAndSupTargToProcess" Hidden="true" />
+      <Method Name="findNextCSTarget" Hidden="true" />
+      <Field Name="fwVector" Hidden="true" />
+      <Method Name="getMinCSinVector" Hidden="true" />
+      <Method Name="getSectionLength" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initialized" Hidden="true" />
+      <Field Name="lastSmTDI" Hidden="true" />
+      <Field Name="maHeadInvalid" Hidden="true" />
+      <Field Name="maStartFromScratch" Hidden="true" />
+      <Field Name="maStartPos" Hidden="true" />
+      <Field Name="maxSizeCurveVectors" Hidden="true" />
+      <Field Name="releaseSpEBPos" Hidden="true" />
+      <Field Name="releaseSpSBPos" Hidden="true" />
+      <Method Name="removeCsFromVector" Hidden="true" />
+      <Field Name="sbVector" Hidden="true" />
+      <Field Name="smDelta" Hidden="true" />
+      <Field Name="swVector" Hidden="true" />
+      <Method Name="updateCeilingSpeeds" Hidden="true" />
+      <Method Name="updateCurveSpeedsForTargets" Hidden="true" />
+      <Method Name="updateGradientAndCeilingSpeed" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Struct Name="ATP::Supv::AbstractTargetCalculation::SupGradInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\git\AOS_IF150_R4\aos_bhp\atp_core\impl\supervision\target_calculation\abstract_target_calculation.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IEAIQgAAARAAIABhAAAAFUgMAAEAIiIAABwAAEACYJM=</HashCode>
+      <FileName>C:\git\AOS_IF150_R4\aos_bhp\atp_core\impl\supervision\target_calculation\abstract_target_calculation.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="ProcComponent" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\git\AOS_IF150_R4\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

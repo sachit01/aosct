@@ -1,0 +1,10 @@
+# Version
+Version 1.0
+
+# Parameter name and type
+WheelSize1Id WORD_TYPE
+WheelSize1 WORD_TYPE
+WheelSize2Id WORD_TYPE
+WheelSize2 WORD_TYPE
+DopplerPulsesPerKmId WORD_TYPE
+DopplerPulsesPerKm DWORD_TYPE

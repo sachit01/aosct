@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<BlockDescriptions>
+  <Block type="ACOUSTIC_SIGNAL" value="12">
+    <FieldType Name="NID_TRACK_SECTION"/>
+    <FieldType Name="D_POSITION" />
+    <FieldType Name="Q_SIGNAL" />
+  </Block>
+  <Block type="ATO_MODE" value="131">
+    <FieldType Name="Q_ATO_MODE"/>
+  </Block>
+  <Block type="ATO_PROFILE_CONTROL" value="13">
+    <FieldType Name="Q_PROFILE"/>
+    <FieldType Name="D_REVERSE"/>
+    <FieldType Name="B_DIRECTION"/>
+  </Block>
+  <Block type="ATO_STOP_POSITION" value="11">
+    <FieldType Name="NID_TRACK_SECTION"/>
+    <FieldType Name="D_POSITION"/>
+  </Block>
+  <Block type="BALISE_DATA" value="4">
+    <FieldType Name="NID_TRACK_SECTION"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="NID_BG"/>
+    <FieldType Name="D_PREVIOUS_BG"/>
+  </Block>
+  <Block type="CAR1_CONFIG_DATA" value="7">
+    <FieldType Name="NID_VEHICLE"/>
+    <FieldType Name="Q_PRESSURE_SENSOR"/>
+    <FieldType Name="T_MAX_PLATFORM_UP"/>
+    <FieldType Name="T_PLATFORM_UPPER"/>
+    <FieldType Name="T_PRE_PRESSURISATION"/>
+  </Block>
+  <Block type="CAR2_CONFIG_DATA" value="18">
+    <FieldType Name="NID_VEHICLE"/>
+    <FieldType Name="Q_PRESSURE_SENSOR"/>
+  </Block>
+  <Block type="CAR3_CONFIG_DATA" value="19">
+    <FieldType Name="NID_VEHICLE"/>
+    <FieldType Name="Q_PRESSURE_SENSOR"/>
+    <FieldType Name="T_UNLOAD_ACTION"/>
+    <FieldType Name="T_UNLOAD_HATCH_OPEN"/>
+  </Block>
+  <Block type="CAR_STATUS_DATA" value="130">
+    <FieldType Name="NID_VEHICLE"/>
+    <FieldType Name="B_TIC_STATUS"/>
+  </Block>
+  <Block type="CAR_UNLOAD_DATA" value="2">
+    <FieldType Name="NID_VEHICLE"/>
+    <FieldType Name="NID_TRACK_SECTION"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="NID_TRACK_SECTION"/>
+    <FieldType Name="D_POSITION"/>
+  </Block>
+  <Block type="CEILING_SPEED_DATA" value="6">
+    <FieldType Name="NID_TRACK_SECTION"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="V_CEILING_SPEED"/>
+    <FieldType Name="Q_TRAIN_END"/>
+    <FieldType Name="Q_SPEED"/>
+  </Block>
+  <Block type="ERROR_MESSAGE_DATA" value="129">
+    <FieldType Name="Q_ERROR_LEVEL"/>
+    <FieldType Name="NID_ERROR_NO"/>
+  </Block>
+  <Block type="EXTERNAL_DATA" value="196">
+    <FieldType Name="NID_SYSTEM"/>
+    <FieldType Name="N_LENGTH"/>
+    <!-- Not implemented unspecified data field -->
+  </Block>
+  <Block type="GRADIENT_DATA" value="5">
+    <FieldType Name="NID_TRACK_SECTION"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="G_GRADIENT"/>
+  </Block>
+  <Block type="LOCATION_DATA" value="1">
+    <FieldType Name="TID_LOCATION"/>
+    <FieldType Name="NID_LOCATION_TYPE"/>
+  </Block>
+  <Block type="LOAD_FINISHED" value="15"></Block>
+  <Block type="LOCOMOTIVE_POWER" value="16">
+    <FieldType Name="Q_POWER"/>
+  </Block>
+  <Block type="PANTOGRAPH_SHIFT" value="17">
+    <FieldType Name="NID_TRACK_SECTION"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="Q_POSITION"/>
+    <FieldType Name="B_DIRECTION"/>
+  </Block>
+  <Block type="RELEASE_BREAK" value="14"></Block>
+  <Block type="REQ_CAR_STATUS" value="10"></Block>
+  <Block type="SET_TIME" value="9">
+    <FieldType Name="T_CLOCK"/>
+  </Block>
+  <Block type="TEXT_MESSAGE" value="20">
+    <FieldType Name="M_TEXT"/>
+    <FieldType Name="Q_REASON"/>
+  </Block>
+  <Block type="TRACK_DATA_ITEM" value="22">
+    <FieldType Name="Q_TRACK_DATA_TYPE"/>
+    <FieldType Name="NID_TRACK_SECTION"/>
+    <FieldType Name="D_POSITION"/>
+  </Block>
+  <Block type="TRACK_SECTION_DATA" value="3">
+    <FieldType Name="NID_TRACK_SECTION"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="B_DIRECTION"/>
+    <FieldType Name="NID_PREVIOUS_TS"/>
+  </Block>
+  <Block type="TRAIN_NAME" value="8">
+    <FieldType Name="TID_TRAIN_NAME"/>
+  </Block>
+  <Block type="VEHICLE_ID_DATA" value="128">
+    <FieldType Name="NID_VEHICLE_TYPE"/>
+    <FieldType Name="NID_VEHICLE"/>
+    <FieldType Name="TID_VEHICLE_NAME"/>
+  </Block>
+  <Block type="WAITING_TIME" value="21">
+    <FieldType Name="T_WAITING_TIME"/>
+  </Block>
+  
+  <!--
+  <Block type="DEBUG_BLOCK" value="1">
+    <FieldType Name="Q_BLOCK_FIELD1"/>
+    <FieldType Name="D_BLOCK_FIELD2"/>
+    <FieldType Name="Q_BLOCK_FIELD3" />
+    <FieldType Name="Q_BLOCK_FIELD4" />
+  </Block>
+  <Block type="DEBUG_BLOCK2" value="2">
+    <FieldType Name="Q_BLOCK_FIELD4"/>
+    <FieldType Name="Q_BLOCK_FIELD5"/>
+  </Block>
+  -->
+</BlockDescriptions>

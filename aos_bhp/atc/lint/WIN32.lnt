@@ -1,0 +1,5 @@
+/* Set WIN32 environment */
+-dWIN32
+-d_WIN32
+-d_X86_
+-du_long=uint32_t

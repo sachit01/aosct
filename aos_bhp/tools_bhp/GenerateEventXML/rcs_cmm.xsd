@@ -1,0 +1,4926 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2017 sp2 (x64) (http://www.altova.com) by Martin Karlsson (Bombardier Transportation Sweden AB) -->
+<xs:schema xmlns:rcs="http://www.transport.bombardier.com/2014/RcsCmm" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.transport.bombardier.com/2014/RcsCmm" version="1.6" xml:lang="en" vc:minVersion="1.0">
+	<!--Layer 1: Message Framework-->
+	<!--Root Element-->
+	<xs:element name="Message">
+		<xs:annotation>
+			<xs:documentation>The frame to be used by all messages</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Added "correlationId" element, element "timestamp" added to "hdr" element, allowed multiple instances of "content", removed "privilege", set "refBase" optional</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="hdr">
+					<xs:annotation>
+						<xs:documentation>Common message header</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="refBase" type="xs:anyURI" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>The base for relative resource references in the data part</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:choice>
+								<xs:element name="safety" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Safety message header</xs:documentation>
+									</xs:annotation>
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="source" type="rcs:tResourceRef">
+												<xs:annotation>
+													<xs:documentation>The system component producing the message</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+											<xs:element name="destination" type="rcs:tResourceRef">
+												<xs:annotation>
+													<xs:documentation>The receiving system component or message queue</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+											<xs:element name="seqNo" type="xs:unsignedLong">
+												<xs:annotation>
+													<xs:documentation>Sequential number of message on this source/destination channel</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+											<xs:element name="timestamp" type="xs:dateTime">
+												<xs:annotation>
+													<xs:documentation>Message creation time, in ms resolution</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+											<xs:element name="hashType">
+												<xs:annotation>
+													<xs:documentation>Algorithm used for hash string calculation</xs:documentation>
+												</xs:annotation>
+												<xs:simpleType>
+													<xs:union>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:enumeration value="MD5"/>
+																<xs:enumeration value="SHA-256"/>
+															</xs:restriction>
+														</xs:simpleType>
+														<xs:simpleType>
+															<xs:restriction base="xs:string"/>
+														</xs:simpleType>
+													</xs:union>
+												</xs:simpleType>
+											</xs:element>
+											<xs:element name="hash" type="xs:string">
+												<xs:annotation>
+													<xs:documentation>Hash value, calculated over message contents</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:sequence>
+									<xs:element name="source" type="rcs:tResourceRef" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>The system component producing the message</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="timestamp" type="xs:dateTime" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Message creation time, in ms resolution</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+							</xs:choice>
+							<xs:element name="replyTo" type="rcs:tMsqQueueRef" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>JMS queue for response message</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="messageId" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Identifier of the message in request-reply pattern.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="correlationId" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Identifier of the request message sent by the replier in the request-reply pattern. Value of "correlationId" is the same as the value of "messageId" received in the request.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="content" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Fully qualified names of the child elements to "data"</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="data">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Extension point for message content elements</xs:documentation>
+								</xs:annotation>
+							</xs:any>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--Simple types-->
+	<xs:simpleType name="tEmpty">
+		<xs:annotation>
+			<xs:documentation>An empty element (for boolean flags)</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="tMsqQueueRef">
+		<xs:annotation>
+			<xs:documentation>Identity of a JMS queue or topic</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="jms\.queue\..*"/>
+			<xs:pattern value="jms\.topic\..*"/>
+			<xs:pattern value=""/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="tResourceRef">
+		<xs:annotation>
+			<xs:documentation>Unique identity for an object or other entity handled by the system</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:anyURI"/>
+	</xs:simpleType>
+	<!--Complex types-->
+	<xs:complexType name="tDescription">
+		<xs:annotation>
+			<xs:documentation>A textual description tagged with a language code</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="desc" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Repeat for multiple languages</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="lang" type="xs:language" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>BCP 47 language code</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="text" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>The description text</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tDocumentation">
+		<xs:annotation>
+			<xs:documentation>A document link tagged with a language code</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="doc" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Repeat for multiple languages</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="lang" type="xs:language" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>BCP 47 language code</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="link" type="xs:anyURI">
+							<xs:annotation>
+								<xs:documentation>The document link</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tTimeSpan">
+		<xs:annotation>
+			<xs:documentation>Timespan type</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="startTime" type="xs:dateTime" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Start of time span</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="endTime" type="xs:dateTime" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>End of time span</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--Content Elements-->
+	<xs:element name="AcknowledgeRequest">
+		<xs:annotation>
+			<xs:documentation>A receiver of a command requests additional confirmation from the sender before executing</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="command">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:any processContents="lax" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Command payload to be confirmed</xs:documentation>
+								</xs:annotation>
+							</xs:any>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CommandConfirmation">
+		<xs:annotation>
+			<xs:documentation>Positive response to “AcknowledgeRequest”</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="command">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:any processContents="lax" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Command payload to be confirmed</xs:documentation>
+								</xs:annotation>
+							</xs:any>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GeneralResponse">
+		<xs:annotation>
+			<xs:documentation>A generic message, for application level response</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Option "nok", reference to response and free properties added</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="state">
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="ok"/>
+									<xs:enumeration value="nok"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="response" type="rcs:tResourceRef" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>References to static or dynamic response indication resources</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Heartbeat">
+		<xs:annotation>
+			<xs:documentation>Heartbeat message for communication supervision on application level</xs:documentation>
+			<xs:appinfo>V 1.3: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="interval" type="xs:duration">
+					<xs:annotation>
+						<xs:documentation>Maximum interval between messages with the same "Message/hdr/source" on this queue or topic</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RefreshRequest">
+		<xs:annotation>
+			<xs:documentation>Command to trigger data refresh</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="target" type="rcs:tResourceRef"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RefreshStatus">
+		<xs:annotation>
+			<xs:documentation>Status of refresh request</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="target" type="rcs:tResourceRef"/>
+				<xs:element name="state">
+					<xs:annotation>
+						<xs:documentation>State</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="refreshStarted"/>
+									<xs:enumeration value="refreshReady"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResourceInfoQuery">
+		<xs:annotation>
+			<xs:documentation>A generic request for static information, directed to any resource</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="resource" type="rcs:tResourceRef" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Reference to resource to be queried</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="pattern" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Pattern to match against resource identities</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResourceStatusQuery">
+		<xs:annotation>
+			<xs:documentation>A generic request for dynamic information, directed to any resource</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="resource" type="rcs:tResourceRef" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Reference to resource to be queried</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="pattern" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Pattern to match against resource identities</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--Layer 2: Topology-->
+	<!--Simple types-->
+	<xs:simpleType name="tTrackDirection">
+		<xs:annotation>
+			<xs:documentation>Direction relative to the direction of a track</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Added "both" option</xs:appinfo>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="normal"/>
+					<xs:enumeration value="reverse"/>
+					<xs:enumeration value="both"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<!--Complex types-->
+	<xs:complexType name="tArea">
+		<xs:annotation>
+			<xs:documentation>A delimited area in the railway layout</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Removed "id", "ref", "name" elements. Added "extent"</xs:appinfo>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="object" type="rcs:tResourceRef" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>All objects included in the area</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:sequence>
+				<xs:element name="border" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Positions or objects marking the area border</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:choice>
+							<xs:element name="position" type="rcs:tPosition">
+								<xs:annotation>
+									<xs:documentation>Border position, directed towards the area</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:sequence>
+								<xs:element name="object" type="rcs:tResourceRef">
+									<xs:annotation>
+										<xs:documentation>Border object</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="direction" type="rcs:tTrackDirection">
+									<xs:annotation>
+										<xs:documentation>Direction from object towards the area</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="internalTrack" type="rcs:tResourceRef" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Additional tracks, which are completely inside the area</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:element name="extent" type="rcs:tLinearExtent" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="tLinearExtent">
+		<xs:annotation>
+			<xs:documentation>An arbitrary contiguous segment of railway line</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="start" type="rcs:tPosition">
+				<xs:annotation>
+					<xs:documentation>Start position, directed along the extent</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="end" type="rcs:tPosition">
+				<xs:annotation>
+					<xs:documentation>End position</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="via" type="rcs:tResourceRef" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Intermediate tracks, in sequence</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="length" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Total length of the extent</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tLocation">
+		<xs:annotation>
+			<xs:documentation>A position or an area</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="position" type="rcs:tPosition"/>
+			<xs:element name="area" type="rcs:tArea"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="tPathConstraints">
+		<xs:annotation>
+			<xs:documentation>Directions for searching a path or route</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Added "train" element as start position</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:choice>
+				<xs:element name="startPos" type="rcs:tPosition">
+					<xs:annotation>
+						<xs:documentation>Start position for search, optionally directed</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:sequence>
+					<xs:element name="startObject" type="rcs:tResourceRef">
+						<xs:annotation>
+							<xs:documentation>Start search at the position of the referenced object</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="direction" type="rcs:tTrackDirection" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Optionally specified direction of search</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+				<xs:element name="train" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Start search at the position of the referenced train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:choice>
+				<xs:element name="endPos" type="rcs:tPosition">
+					<xs:annotation>
+						<xs:documentation>Target position</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="endObject" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Use position of the referenced object as target</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="via" type="rcs:tResourceRef" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Optional list of tracks to include in the path</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tPosition">
+		<xs:annotation>
+			<xs:documentation>A geographic position in the railway network</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="trackpos" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="track" type="rcs:tResourceRef">
+							<xs:annotation>
+								<xs:documentation>Reference to the track where the position is</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="pos">
+							<xs:annotation>
+								<xs:documentation>Distance in meters from start of track</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:minInclusive value="0"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="dir" type="rcs:tTrackDirection" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Direction vs direction of the track</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="absPos" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Kilometric position</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="km" type="xs:nonNegativeInteger"/>
+						<xs:element name="m">
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:minInclusive value="0"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="geoCoord" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>WGS 84 geodetic coordinates</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="x" type="xs:double"/>
+						<xs:element name="y" type="xs:double"/>
+						<xs:element name="z" type="xs:double" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="objectOffset" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Position related to a reference object</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="object" type="rcs:tResourceRef">
+							<xs:annotation>
+								<xs:documentation>Reference object</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="direction" type="rcs:tTrackDirection">
+							<xs:annotation>
+								<xs:documentation>Direction from object to position</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="distance" type="xs:decimal">
+							<xs:annotation>
+								<xs:documentation>Distance in meters </xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tProperty">
+		<xs:annotation>
+			<xs:documentation>A named property</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+			<xs:appinfo>V 1.2: Added elements "durationValue" and "dateTimeValue"</xs:appinfo>
+			<xs:appinfo>V 1.5: Changed to extension of "tVariable", added "format" element</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="rcs:tVariable">
+				<xs:sequence>
+					<xs:element name="description" type="rcs:tDescription" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Descriptive name</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="format" type="xs:string" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The printf style format specification</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="tVariable">
+		<xs:annotation>
+			<xs:documentation>To be used where the schema needs to support values of different types</xs:documentation>
+			<xs:appinfo>V 1.5: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="key" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Variable key</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:annotation>
+					<xs:documentation>Variable value</xs:documentation>
+				</xs:annotation>
+				<xs:element name="boolValue" type="xs:boolean"/>
+				<xs:element name="intValue" type="xs:integer"/>
+				<xs:element name="floatValue" type="xs:float"/>
+				<xs:element name="dateTimeValue" type="xs:dateTime"/>
+				<xs:element name="durationValue" type="xs:duration"/>
+				<xs:element name="stringValue" type="xs:string"/>
+				<xs:element name="positionValue" type="rcs:tPosition"/>
+				<xs:element name="refValue" type="rcs:tResourceRef"/>
+				<xs:element name="value" type="xs:anySimpleType">
+					<xs:annotation>
+						<xs:documentation>Deprecated element, included for backward compatibility</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tVariableSpecification">
+		<xs:annotation>
+			<xs:documentation>Description and data type of a key value</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+			<xs:appinfo>V 1.2: Added element "unit". Added alternatives "duration" and "dateTime" to element "dataType"</xs:appinfo>
+			<xs:appinfo>V 1.5: Added element "format", added alternatives "reference", "position" to element "dataType"</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="key" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The internal name of the variable</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="description" type="rcs:tDescription">
+				<xs:annotation>
+					<xs:documentation>Plain language description of the variable</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="dataType">
+					<xs:annotation>
+						<xs:documentation>Type of data, when variable is a simple data type</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="boolean"/>
+									<xs:enumeration value="integer"/>
+									<xs:enumeration value="float"/>
+									<xs:enumeration value="string"/>
+									<xs:enumeration value="duration"/>
+									<xs:enumeration value="dateTime"/>
+									<xs:enumeration value="reference"/>
+									<xs:enumeration value="position"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="enumValue" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Possible variable values</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="value" type="xs:anySimpleType">
+								<xs:annotation>
+									<xs:documentation>Logged value</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="description" type="rcs:tDescription">
+								<xs:annotation>
+									<xs:documentation>Plain language description of the significance of the value</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="unit" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Physical unit of variable value, e.g. "mA" or "km"</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="format" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The printf style format specification</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--Content Elements-->
+	<xs:element name="PathQuery">
+		<xs:annotation>
+			<xs:documentation>A request to locate all possible paths between two positions</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="constraints" type="rcs:tPathConstraints"/>
+				<xs:element name="maxLength" type="xs:integer" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Optional length limit for search</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PathQueryResponse">
+		<xs:annotation>
+			<xs:documentation>Response to PathQuery</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Updated element documentation</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="path" type="rcs:tLinearExtent" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--Layer 3: Common Logic-->
+	<!--Simple types-->
+	<xs:simpleType name="tCommonCommand">
+		<xs:annotation>
+			<xs:documentation>Common command</xs:documentation>
+			<xs:appinfo>V 1.5: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="inhibit"/>
+			<xs:enumeration value="noInhibit"/>
+			<xs:enumeration value="block"/>
+			<xs:enumeration value="unblock"/>
+			<xs:enumeration value="localRelease"/>
+			<xs:enumeration value="revokeLocalRelease"/>
+			<xs:enumeration value="activate"/>
+			<xs:enumeration value="deactivate"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="tLogEventSeverity">
+		<xs:annotation>
+			<xs:documentation>Severity of an event</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="debug"/>
+					<xs:enumeration value="info"/>
+					<xs:enumeration value="warning"/>
+					<xs:enumeration value="error"/>
+					<xs:enumeration value="systemFailure"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:simpleType name="tRequestSource">
+		<xs:annotation>
+			<xs:documentation>The source of a specific resource state</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="centralOperator"/>
+					<xs:enumeration value="centralAutomaton"/>
+					<xs:enumeration value="controlSystem"/>
+					<xs:enumeration value="localOperator"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<!--Complex types-->
+	<xs:complexType name="tEquipmentStatus">
+		<xs:annotation>
+			<xs:documentation>The status of any control equipment</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+			<xs:appinfo>V 1.1: Added option "noData" to element "state"</xs:appinfo>
+			<xs:appinfo>V 1.5: Added option "inhibited" to element "state"</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="state">
+				<xs:annotation>
+					<xs:documentation>Summary state</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:union>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="offline"/>
+								<xs:enumeration value="starting"/>
+								<xs:enumeration value="standby"/>
+								<xs:enumeration value="operational"/>
+								<xs:enumeration value="degraded"/>
+								<xs:enumeration value="noData"/>
+								<xs:enumeration value="inhibited"/>
+							</xs:restriction>
+						</xs:simpleType>
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:union>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="alarm" type="rcs:tResourceRef" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Active alarms for the unit, if any</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tNetworkElementStatus">
+		<xs:annotation>
+			<xs:documentation>Operational status of a part of the rail network</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Removed "state" elment, added "locked", "blocked", "manuallyLocked" and "local" elements</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="locked" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Locking state</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="blocked" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Blocking state</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="manuallyLocked" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indicates manual lock</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="local" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indicates local control</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="source" type="rcs:tRequestSource" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Requestor of current state, if applicable</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="alarm" type="rcs:tResourceRef" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Active alarms for the resource, if any</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tSection">
+		<xs:annotation>
+			<xs:documentation>Section of railway line with optional authorisation information</xs:documentation>
+			<xs:appinfo>V 1.5: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="extent" type="rcs:tLinearExtent">
+				<xs:annotation>
+					<xs:documentation>Section extent</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="authorisationType" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Type of authorisation</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tValidity">
+		<xs:annotation>
+			<xs:documentation>Validity time information for status data</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="changed" type="xs:dateTime" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Time when the status was latest changed, if known</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="confirmed" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Time when the status was latest confirmed</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="validUntil" type="xs:dateTime" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>An optional limit after which the status should be considered uncertain</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--Content Elements-->
+	<xs:element name="ConfigurationRequest">
+		<xs:annotation>
+			<xs:documentation>A component requests configuration file(s) from a central configuration service</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Component ID</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="version" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Version of component configuration</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="configs" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Path to requesting configs: * - for all available configs; test2.xml - for specific file; /path/to/dir/ - for all configs from path; test.xml,path/to/test2.xml – for specific files or hole paths</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConfigurationResponse">
+		<xs:annotation>
+			<xs:documentation>List of configuration file contents for a component</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Component ID</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="configs">
+					<xs:annotation>
+						<xs:documentation>List of configurations</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="config" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="path" type="xs:string"/>
+										<xs:element name="fileName" type="xs:string"/>
+										<xs:element name="file" type="xs:base64Binary">
+											<xs:annotation>
+												<xs:documentation>File content in binary form</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="mimeType" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>File format specification (IANA media type)</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConfigurationStatus">
+		<xs:annotation>
+			<xs:documentation>Notify components about a change in state of a configuration</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Component ID</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="version" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Version of configuration for component</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="state">
+					<xs:annotation>
+						<xs:documentation>Describes the last change which related to component configuration</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="added"/>
+									<xs:enumeration value="updated"/>
+									<xs:enumeration value="removed"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ControllerCommand">
+		<xs:annotation>
+			<xs:documentation>Commands to control the status of connected equipment</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "command" extended with a restriction of "tCommonCommand"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="controller" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the controller unit</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="command">
+					<xs:annotation>
+						<xs:documentation>Command to controller</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="start"/>
+									<xs:enumeration value="stop"/>
+									<xs:enumeration value="restart"/>
+									<xs:enumeration value="standby"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="rcs:tCommonCommand">
+									<xs:enumeration value="inhibit"/>
+									<xs:enumeration value="noInhibit"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ControllerStatus">
+		<xs:annotation>
+			<xs:documentation>Health indications from connected equipment</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "valid" made optional</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="controller" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the controller unit</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="state" type="rcs:tEquipmentStatus"/>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DerailerCommand">
+		<xs:annotation>
+			<xs:documentation>Commands to operate a derailer</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="derailer" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the derailer</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="command">
+					<xs:annotation>
+						<xs:documentation>Command to derailer</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="on"/>
+									<xs:enumeration value="off"/>
+									<xs:enumeration value="lock"/>
+									<xs:enumeration value="unlock"/>
+									<xs:enumeration value="lockOn"/>
+									<xs:enumeration value="lockOff"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="rcs:tCommonCommand">
+									<xs:enumeration value="localRelease"/>
+									<xs:enumeration value="revokeLocalRelease"/>
+									<xs:enumeration value="block"/>
+									<xs:enumeration value="unblock"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DerailerStatus">
+		<xs:annotation>
+			<xs:documentation>Status of a derailer</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="derailer" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the derailer</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="state">
+					<xs:annotation>
+						<xs:documentation>Current state</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="noData"/>
+									<xs:enumeration value="on"/>
+									<xs:enumeration value="off"/>
+									<xs:enumeration value="moving"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="operational" type="rcs:tNetworkElementStatus">
+					<xs:annotation>
+						<xs:documentation>Operational status</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="equipment" type="rcs:tEquipmentStatus">
+					<xs:annotation>
+						<xs:documentation>Equipment status</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="next" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Upcoming state, if moving</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="rcs:DerailerCommand"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DetectorStatus">
+		<xs:annotation>
+			<xs:documentation>Indications from wayside detector</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Value of "state" element changed to "tEquipmentStatus", element "valid" made optional</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="detector" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the detector unit</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="state" type="rcs:tEquipmentStatus"/>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EsaInfo">
+		<xs:annotation>
+			<xs:documentation>Static information about an Emergency Stop Area</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="esa" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the ESA</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="area" type="rcs:tArea"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EsaStatus">
+		<xs:annotation>
+			<xs:documentation>Status of an Emergency Stop Area</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="esa" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the ESA</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="active" type="xs:boolean"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EsaUpdateRequest">
+		<xs:annotation>
+			<xs:documentation>Modifies an Emergency Stop Area</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="esa" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the ESA</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="areaOperation">
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="rcs:tCommonCommand">
+									<xs:enumeration value="activate"/>
+									<xs:enumeration value="deactivate"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FormationCreateRequest">
+		<xs:annotation>
+			<xs:documentation>Creates a vehicle formation resource</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="formation" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the formation of vehicles</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="vehicle" type="rcs:tResourceRef" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Reference to the vehicles, contains lead engine at first position</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FormationDeleteInfo">
+		<xs:annotation>
+			<xs:documentation>Information that a vehicle formation resource has been removed</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="formation" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the formation of vehicles</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FormationDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>Remove a vehicle formation resource</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="formation" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the formation of vehicles</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FormationInfo">
+		<xs:annotation>
+			<xs:documentation>Information about a vehicle formation resource</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="formation" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the formation of vehicles</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="vehicle" type="rcs:tResourceRef" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Reference to the vehicles, contains lead engine at first position</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FormationUpdateRequest">
+		<xs:annotation>
+			<xs:documentation>Modifies a vehicle formation resource</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="formation" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the formation of vehicles</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="vehicle" type="rcs:tResourceRef" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Reference to the vehicles, contains lead engine at first position</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LevelCrossingCommand">
+		<xs:annotation>
+			<xs:documentation>Commands to operate a level crossing protection</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "command" extended with a rstriction of "tCommonCommand"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="lx" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the level crossing unit</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="command">
+					<xs:annotation>
+						<xs:documentation>Command to level crossing</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="open"/>
+									<xs:enumeration value="close"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="rcs:tCommonCommand">
+									<xs:enumeration value="localRelease"/>
+									<xs:enumeration value="revokeLocalRelease"/>
+									<xs:enumeration value="block"/>
+									<xs:enumeration value="unblock"/>
+									<xs:enumeration value="inhibit"/>
+									<xs:enumeration value="noInhibit"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="source" type="rcs:tRequestSource" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Source of request</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="time" type="xs:dateTime" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Time when operation is desired</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LevelCrossingStatus">
+		<xs:annotation>
+			<xs:documentation>Status of a level crossing protection</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "state" renamed to "operational", element "equipment" of "tEquipmentStatus" addded, element "valid" made optional, option "moving", "noData" added to "position" element</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="lx" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the level crossing unit</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="position">
+					<xs:annotation>
+						<xs:documentation>Current position</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="open"/>
+									<xs:enumeration value="closed"/>
+									<xs:enumeration value="opening"/>
+									<xs:enumeration value="closing"/>
+									<xs:enumeration value="moving"/>
+									<xs:enumeration value="noData"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="operational" type="rcs:tNetworkElementStatus">
+					<xs:annotation>
+						<xs:documentation>Generic state information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="next" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Requested state</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="rcs:LevelCrossingCommand"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="equipment" type="rcs:tEquipmentStatus">
+					<xs:annotation>
+						<xs:documentation>Equipment state information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogEventStatus">
+		<xs:annotation>
+			<xs:documentation>A log producer system logs an event</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.2: Added 'processContents="lax"' attribute to the "xs:any" element in "xmlData"</xs:appinfo>
+			<xs:appinfo>V 1.5: Value of "item" element changed to "tVariable"</xs:appinfo>
+			<xs:appinfo>V 1.6: Added element "location"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="event" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Unique identity for this event</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="eventType" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the EventType of this event</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="object" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to the source of the event</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="time" type="xs:dateTime">
+					<xs:annotation>
+						<xs:documentation>Time of occurrance (or logged state change)</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="state">
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="on"/>
+									<xs:enumeration value="off"/>
+									<xs:enumeration value="pulse"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="parent" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to the parent event, if this is a subevent</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="listData" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Optional attached data</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="item" type="rcs:tVariable" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="xmlData" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Optional attached data in arbitrary XML form</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:any processContents="lax"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="binaryData" type="xs:base64Binary" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Optional attached data in raw binary form</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="location" type="rcs:tLocation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Geographic location of log source (for moving objects)</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogEventStatusQuery">
+		<xs:annotation>
+			<xs:documentation>Ask for locally stored events to be sent</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.1: Element "device" changed to "object"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="object" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the device or system for which events are requested</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="from" type="xs:dateTime" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Start of interval for which logs are requested. If omitted, start from the oldest available</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="to" type="xs:dateTime" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>End of interval for which logs are requested. If omitted, end with the latest available</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="minSeverity" type="rcs:tLogEventSeverity">
+					<xs:annotation>
+						<xs:documentation>Send events with this severity or higher</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogEventTypeInfo">
+		<xs:annotation>
+			<xs:documentation>A log producer system registers an event type, for subsequent event logs</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.2: Added element "interpretation/list/text"</xs:appinfo>
+			<xs:appinfo>V 1.5: New version of "tVariableSpecification", added "supervision" element</xs:appinfo>
+			<xs:appinfo>V 1.6: Added element "keyword"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="eventType" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the event type</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="description" type="rcs:tDescription">
+					<xs:annotation>
+						<xs:documentation>Plain language event text</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="severity" type="rcs:tLogEventSeverity">
+					<xs:annotation>
+						<xs:documentation>Default value, may be overridden by local MDC configuration</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="operatorAck" type="rcs:tEmpty" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Indicates if operator acknowledge is required. Default value, may be overridden by local MDC configuration</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="juridical" type="rcs:tEmpty" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Indicates if events shall be logged in JRU. Default value, may be overridden by local MDC configuration</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="interpretation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Rules for presenting attached data, when applicable</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="java" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Java class for interpreting binary data</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="class" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>Fully qualified class name</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="jar" type="xs:anyURI" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>URL to JAR file location</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="xslt" type="xs:anyURI" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>URL to XSLT style sheet for interpreting XML data</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="list" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="item" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Specification of list values to be supplied</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="rcs:tVariableSpecification">
+														<xs:sequence>
+															<xs:element name="snmp" minOccurs="0">
+																<xs:complexType>
+																	<xs:sequence>
+																		<xs:element name="oid" type="xs:string">
+																			<xs:annotation>
+																				<xs:documentation>The SNMP OID of a variable attached to the trap</xs:documentation>
+																			</xs:annotation>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+														</xs:sequence>
+													</xs:extension>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="text" type="rcs:tDescription" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>A plain language text with placeholders to substitute for actual list values</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="documentation" type="rcs:tDocumentation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Hyperlink to event type documentation</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="snmp" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Information required if events are to be sent over SNMP</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="oid" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>The SNMP OID of the trap representing the event type</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="supervision" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Rules for alerting operator about unexpected values. List may be overridden or amended by local MDC configuration</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="rule">
+								<xs:annotation>
+									<xs:documentation>Type of rule (several of the same type may be listed, e.g. to get a "warning" and an "error" threshold)</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:union>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="maxCount"/>
+												<xs:enumeration value="maxInterval"/>
+												<xs:enumeration value="minInterval"/>
+												<xs:enumeration value="maxDuration"/>
+												<xs:enumeration value="minDuration"/>
+											</xs:restriction>
+										</xs:simpleType>
+										<xs:simpleType>
+											<xs:restriction base="xs:string"/>
+										</xs:simpleType>
+									</xs:union>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="threshold" type="xs:anySimpleType">
+								<xs:annotation>
+									<xs:documentation>Value to check rule against</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="eventType" type="rcs:tResourceRef">
+								<xs:annotation>
+									<xs:documentation>Event to generate when rule is violated</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="keyword" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Categorization tags</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogFacilityInfo">
+		<xs:annotation>
+			<xs:documentation>A log producer system identifies a logical or geographic facility, for grouping devices</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.6: Added element "keyword"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="facility" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the facility</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="name" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Presentation name for facility</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="location" type="rcs:tLocation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Geographic location</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="parent" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to a parent or containing facility</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="keyword" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Categorization tags</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogMeasurementStatus">
+		<xs:annotation>
+			<xs:documentation>A log producer system logs a measurement</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.1: Element "device" changed to "object"</xs:appinfo>
+			<xs:appinfo>V 1.5: Value of "measurementPoint" element changed to "tVariable"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="object" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the source device or system</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="time" type="xs:dateTime">
+					<xs:annotation>
+						<xs:documentation>Time of measurement</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="measurementPoint" type="rcs:tVariable" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogSourceCommand">
+		<xs:annotation>
+			<xs:documentation>Change measurement sample rate</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced, replacing "LogDeviceCommand"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="object" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the object or system</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="measurementPoint" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="key" type="rcs:tResourceRef">
+								<xs:annotation>
+									<xs:documentation>Measurement point identity</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="sampleInterval" type="xs:nonNegativeInteger">
+								<xs:annotation>
+									<xs:documentation>Interval in ms between measurements. 0 means no periodic measurements</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogSourceDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>A log producer system requests a log source object to be marked for deletion</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="object" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the object</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogSourceInfo">
+		<xs:annotation>
+			<xs:documentation>A log producer system identifies a connected object</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced, replacing "LogDeviceInfo" and "LogSystemInfo"</xs:appinfo>
+			<xs:appinfo>V 1.6: Added elements "keyword" and "currentState"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="object" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the object</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="name" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Presentation name for the object</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="identification" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Asset attributes of object</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="componentId" type="xs:string" minOccurs="0"/>
+							<xs:element name="hwVersion" type="xs:string" minOccurs="0"/>
+							<xs:element name="swVersion" type="xs:string" minOccurs="0"/>
+							<xs:element name="serialNo" type="xs:string" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional list of named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="sourceType" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the SourceType describing this object</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="owner" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to the LogSource to which this object belongs</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="facility" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to a LogFacility to which the object belongs</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="location" type="rcs:tLocation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Geographic location</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="snmp" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Information required if measurements and events are to be collected over SNMP</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ip" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>IP address of the object</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="context" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>SNMP context string, identifying the object among others on the same IP address</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="measurementPoint" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Any measurement points which will be retrieved from other physical units</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="key" type="rcs:tResourceRef">
+											<xs:annotation>
+												<xs:documentation>Measurement point identity, corresponding to a measurement point defined in LogSourceTypeInfo</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="oid" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>The SNMP OID of the variable containing the measurement</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="ip" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>IP address of the object holding the measurement, if different from the IP address of this object</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="context" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>SNMP context string, identifying the object among others on the same IP address</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="eventType" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Any traps related to this object, which will be sent by another object</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ref" type="rcs:tResourceRef">
+											<xs:annotation>
+												<xs:documentation>Reference to the event type</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="oid" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>The SNMP OID of the trap</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="ip" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>IP address of the object which will send the trap, if different from the IP address of this object</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="context" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>SNMP context string, identifying the object among others on the same IP address</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="alias" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to accumulating object, displaying combined data</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="currentState" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Initial state of the log source, i.e. values of all measurement points and list of any events in state "on"</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="time" type="xs:dateTime">
+								<xs:annotation>
+									<xs:documentation>Time of collecting source state</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="measurementPoint" type="rcs:tVariable" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="activeEvent" type="rcs:tResourceRef" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="keyword" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Categorization tags</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogSourceTypeInfo">
+		<xs:annotation>
+			<xs:documentation>A log producer system registers an object type, for subsequent object registrations</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced, replacing "LogDeviceTypeInfo" and "LogSystemTypeInfo"</xs:appinfo>
+			<xs:appinfo>V 1.6: Added element "keyword"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="sourceType" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the source type</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="description" type="rcs:tDescription">
+					<xs:annotation>
+						<xs:documentation>Plain language object description</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ownerType" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to the onwer type which this object type belongs to</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="parent" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>A category of object types, from which this type inherits additional characteristics</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="measurementPoint" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>The measurement points which exist in this object type</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="rcs:tVariableSpecification">
+								<xs:sequence>
+									<xs:element name="tolerance" type="xs:anySimpleType" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Optional difference threshold value for logging a measurement as a new value. Default value, may be overridden by local MDC configuration</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="supervision" minOccurs="0" maxOccurs="unbounded">
+										<xs:annotation>
+											<xs:documentation>Rules for alerting operator about unexpected values. List may be overridden or amended by local MDC configuration</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="rule">
+													<xs:annotation>
+														<xs:documentation>Type of rule (several of the same type may be listed, e.g. to get a "warning" and an "error" threshold)</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:union>
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:enumeration value="maxValue"/>
+																	<xs:enumeration value="minValue"/>
+																	<xs:enumeration value="blockValue"/>
+																	<xs:enumeration value="passValues"/>
+																	<xs:enumeration value="maxCount"/>
+																	<xs:enumeration value="maxInterval"/>
+																	<xs:enumeration value="minInterval"/>
+																	<xs:enumeration value="blockPattern"/>
+																	<xs:enumeration value="passPattern"/>
+																</xs:restriction>
+															</xs:simpleType>
+															<xs:simpleType>
+																<xs:restriction base="xs:string"/>
+															</xs:simpleType>
+														</xs:union>
+													</xs:simpleType>
+												</xs:element>
+												<xs:element name="threshold" type="xs:anySimpleType">
+													<xs:annotation>
+														<xs:documentation>Value to check rule against</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+												<xs:element name="eventType" type="rcs:tResourceRef">
+													<xs:annotation>
+														<xs:documentation>Event to generate when rule is violated</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="documentation" type="rcs:tDocumentation" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Hyperlink to measurement point documentation</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="snmp" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Information required if measurements are to be collected over SNMP</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="oid" type="xs:string">
+													<xs:annotation>
+														<xs:documentation>The SNMP OID of the variable containing the measurement</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+												<xs:element name="pollInterval">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="default" type="xs:nonNegativeInteger">
+																<xs:annotation>
+																	<xs:documentation>Default interval in ms to poll the variable. 0 means no polling</xs:documentation>
+																</xs:annotation>
+															</xs:element>
+															<xs:element name="min" type="xs:positiveInteger">
+																<xs:annotation>
+																	<xs:documentation>Minimum allowed interval in ms to poll the variable</xs:documentation>
+																</xs:annotation>
+															</xs:element>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="eventTypes" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>List of event types that this object type may log. Needed only when using the negotiated method for configuration transfer</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ref" type="rcs:tResourceRef" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Reference to the event type</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="documentation" type="rcs:tDocumentation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Hyperlink to object type documentation</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional list of named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="keyword" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Categorization tags</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="OperationalPointCommand">
+		<xs:annotation>
+			<xs:documentation>Traffic service commands for station or platform</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced, replacing OcpServiceCommand</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="operationalPoint" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the operational point</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="command">
+					<xs:annotation>
+						<xs:documentation>Requested state</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="normal"/>
+									<xs:enumeration value="outOfService"/>
+									<xs:enumeration value="holdTrain"/>
+									<xs:enumeration value="runThru"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="time" type="xs:dateTime" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Time when new state is desired</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="source" type="rcs:tRequestSource" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Source of request</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="OperationalPointStatus">
+		<xs:annotation>
+			<xs:documentation>Equipment status for station or platform</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced, replacing OcpServiceStatus and OcpStatus</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="operationalPoint" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the operational point</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="operationalStatus" type="rcs:tNetworkElementStatus"/>
+				<xs:element name="equipmentStatus" type="rcs:tEquipmentStatus"/>
+				<xs:element name="state">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="current">
+								<xs:annotation>
+									<xs:documentation>Current state</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:union>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="normal"/>
+												<xs:enumeration value="outOfService"/>
+												<xs:enumeration value="holdTrain"/>
+												<xs:enumeration value="runThru"/>
+											</xs:restriction>
+										</xs:simpleType>
+										<xs:simpleType>
+											<xs:restriction base="xs:string"/>
+										</xs:simpleType>
+									</xs:union>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="source" type="rcs:tRequestSource" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Source of current state</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="next" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Requested state</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="rcs:OperationalPointCommand"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="trains" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="current" type="rcs:tResourceRef" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Reference to a currently present train</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="departure" type="xs:dateTime" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Planned time of departure for current train</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="next" type="rcs:tResourceRef" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Reference to the next expected train</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="arrival" type="xs:dateTime" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Expected time of arrival for the next train</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="valid" type="rcs:tValidity">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PathCreateRequest">
+		<xs:annotation>
+			<xs:documentation>Creates a path for a train to a destination</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="path" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the path</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="constraints" type="rcs:tPathConstraints"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PathDeleteInfo">
+		<xs:annotation>
+			<xs:documentation>Information that a train path has been removed</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="path" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the path</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PathDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>Remove a train path</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="path" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the path</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PathStatus">
+		<xs:annotation>
+			<xs:documentation>Status of a train path</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="path" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the path</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="train" type="rcs:tResourceRef" minOccurs="0"/>
+				<xs:element name="segment" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="extent" type="rcs:tLinearExtent">
+								<xs:annotation>
+									<xs:documentation>Path extents</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="pathTarget" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="time" type="xs:dateTime">
+											<xs:annotation>
+												<xs:documentation>Target time</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="pathTargetType" type="xs:string"/>
+										<xs:element name="object" type="rcs:tResourceRef">
+											<xs:annotation>
+												<xs:documentation>Path target object</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PathUpdateRequest">
+		<xs:annotation>
+			<xs:documentation>Modifies a train path</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="path" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the path</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="constraints" type="rcs:tPathConstraints"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PossessionCreateRequest">
+		<xs:annotation>
+			<xs:documentation>Creates a possession</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="possession" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the possession</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="area" type="rcs:tArea">
+					<xs:annotation>
+						<xs:documentation>Area of the possession</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="timeFrame" type="rcs:tTimeSpan"/>
+				<xs:element name="reason" type="xs:string"/>
+				<xs:element name="suspendable" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="speed" type="xs:decimal"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PossessionDeleteInfo">
+		<xs:annotation>
+			<xs:documentation>Information that a possession has been removed</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="possession" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the possession</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PossessionDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>Remove a possession</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="possession" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the possession</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PossessionStatus">
+		<xs:annotation>
+			<xs:documentation>Status of a possession</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.6: Removed option “removed” from "state", instead use "PossessionDeleteInfo"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="possession" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the possession</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="area" type="rcs:tArea" minOccurs="0"/>
+				<xs:element name="state">
+					<xs:annotation>
+						<xs:documentation>Possesion state</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="deactivated"/>
+									<xs:enumeration value="defined"/>
+									<xs:enumeration value="active"/>
+									<xs:enumeration value="locked"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="timeFrame" type="rcs:tTimeSpan" minOccurs="0"/>
+				<xs:element name="reason" type="xs:string" minOccurs="0"/>
+				<xs:element name="suspendable" type="xs:boolean" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PossessionUpdateRequest">
+		<xs:annotation>
+			<xs:documentation>Modifies properties of a possession</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="possession" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the possession</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="timeFrame" type="rcs:tTimeSpan"/>
+					<xs:element name="reason" type="xs:string"/>
+					<xs:element name="suspendable" type="xs:boolean"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RouteCreateRequest">
+		<xs:annotation>
+			<xs:documentation>Command to create train routes</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Elements "reason" and "train" added, "routeType" changed to "xs:string"", updated element documentation</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="route" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Identity of the route to create</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="routeType" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Type of route/path requested</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="extent" type="rcs:tLinearExtent">
+						<xs:annotation>
+							<xs:documentation>Exact extent of the requested route</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="constraints" type="rcs:tPathConstraints">
+						<xs:annotation>
+							<xs:documentation>Route/path search constraints</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+				<xs:element name="reason" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reason for RouteCreateRequest</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="train" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RouteDeleteInfo">
+		<xs:annotation>
+			<xs:documentation>Information that a train route has been removed</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="route" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the route</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RouteDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>Remove a train route</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="route" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the route</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RouteStatus">
+		<xs:annotation>
+			<xs:documentation>Status of a train route</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "routeType" changed to "xs:string", "section" element replaced "extent", elements "train" and "reason" added, documentation section updated, element "valid" made optional</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="route" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the route</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="routeStatus">
+					<xs:annotation>
+						<xs:documentation>Status of the route/path</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="ok"/>
+									<xs:enumeration value="degraded"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="routeType" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Type of route/path</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="section" type="rcs:tSection" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Sections of route</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="train" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="reason" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reason</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RouteUpdateRequest">
+		<xs:annotation>
+			<xs:documentation>Command to extend or shorten train routes or paths</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "reason" added</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:annotation>
+					<xs:documentation>At least one element is required</xs:documentation>
+				</xs:annotation>
+				<xs:element name="route" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the route to modify</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice minOccurs="0">
+					<xs:element name="startPos" type="rcs:tPosition">
+						<xs:annotation>
+							<xs:documentation>New start position for release from start (normal release)</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="startObject" type="rcs:tResourceRef">
+						<xs:annotation>
+							<xs:documentation>Use the position of the referenced object as start</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+				<xs:choice minOccurs="0">
+					<xs:element name="endPos" type="rcs:tPosition">
+						<xs:annotation>
+							<xs:documentation>New target position in case of route shortening or emergency release</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="endObject" type="rcs:tResourceRef">
+						<xs:annotation>
+							<xs:documentation>Use position of the referenced object as target</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="extension" type="rcs:tLinearExtent">
+						<xs:annotation>
+							<xs:documentation>Exact extent of the requested route extension</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="extensionConstraints" type="rcs:tPathConstraints">
+						<xs:annotation>
+							<xs:documentation>Route/path search constraints for the requested extension</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="reason" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Reason for RouteCreateRequest</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ScheduleCreateRequest">
+		<xs:annotation>
+			<xs:documentation>Create a trip schedule for a train service</xs:documentation>
+			<xs:appinfo>V 1.1: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="schedule" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the schedule</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="trainStop" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Scheduled train stops</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="destination" type="rcs:tResourceRef">
+								<xs:annotation>
+									<xs:documentation>Reference to the operational control point, where the stop is to take place</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="arrival" type="xs:dateTime" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Scheduled time of arrival</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="departure" type="xs:dateTime" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Scheduled time of departure</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="minHoldTime" type="xs:duration" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Minimun time between actual arrival and departure</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="nextSchedule" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to the next schedule for the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ScheduleDeleteInfo">
+		<xs:annotation>
+			<xs:documentation>Information that a train service schedule has been removed</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="schedule" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the schedule</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ScheduleDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>Remove a train service schedule</xs:documentation>
+			<xs:appinfo>V 1.1: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="schedule" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the schedule</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ScheduleUpdateRequest">
+		<xs:annotation>
+			<xs:documentation>Replace a train service schedule</xs:documentation>
+			<xs:appinfo>V 1.1: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="schedule" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the schedule</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="trainStop" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Scheduled train stops</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="destination" type="rcs:tResourceRef">
+								<xs:annotation>
+									<xs:documentation>Reference to the operational control point, where the stop is to take place</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="arrival" type="xs:dateTime" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Scheduled time of arrival</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="departure" type="xs:dateTime" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Scheduled time of departure</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="minHoldTime" type="xs:duration" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Minimun time between actual arrival and departure</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="nextSchedule" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to the next schedule for the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SignalStatus">
+		<xs:annotation>
+			<xs:documentation>Status of signal</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="signal" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the signal</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="operational" type="rcs:tNetworkElementStatus">
+					<xs:annotation>
+						<xs:documentation>Operational status</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="equipment" type="rcs:tEquipmentStatus">
+					<xs:annotation>
+						<xs:documentation>Equipment status</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="aspect">
+					<xs:annotation>
+						<xs:documentation>Aspect</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="proceed"/>
+									<xs:enumeration value="stop"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SwitchCommand">
+		<xs:annotation>
+			<xs:documentation>Commands to operate a points machine</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "command" extended with a restriction of "tCommonCommand", "lock" and "unlock" options added to "command" element</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="switch" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the object</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="command">
+					<xs:annotation>
+						<xs:documentation>Command to switch</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="throwRight"/>
+									<xs:enumeration value="throwLeft"/>
+									<xs:enumeration value="lockRight"/>
+									<xs:enumeration value="lockLeft"/>
+									<xs:enumeration value="lock"/>
+									<xs:enumeration value="unlock"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="rcs:tCommonCommand">
+									<xs:enumeration value="localRelease"/>
+									<xs:enumeration value="revokeLocalRelease"/>
+									<xs:enumeration value="block"/>
+									<xs:enumeration value="unblock"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="source" type="rcs:tRequestSource" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SwitchStatus">
+		<xs:annotation>
+			<xs:documentation>Status of a points machine</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Option "noData" added to "course", element "valid" made optional</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="switch" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the object</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="course">
+					<xs:annotation>
+						<xs:documentation>Current travel direction when facing points</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="right"/>
+									<xs:enumeration value="left"/>
+									<xs:enumeration value="moving"/>
+									<xs:enumeration value="noData"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="operational" type="rcs:tNetworkElementStatus">
+					<xs:annotation>
+						<xs:documentation>Operational status</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="equipment" type="rcs:tEquipmentStatus">
+					<xs:annotation>
+						<xs:documentation>Equipment status</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="next" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Upcoming state, if moving</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="rcs:SwitchCommand"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrackMarkingCreateRequest">
+		<xs:annotation>
+			<xs:documentation>Set a marking at an area within the track layout</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="marking" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the marking</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="area" type="rcs:tArea">
+					<xs:annotation>
+						<xs:documentation>Area of the track</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="type" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Marking type</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="reason" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reason</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrackMarkingDeleteInfo">
+		<xs:annotation>
+			<xs:documentation>Information that a track marking has been removed</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="marking" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the marking</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrackMarkingDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>Remove a track marking</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="marking" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the marking</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrackMarkingStatus">
+		<xs:annotation>
+			<xs:documentation>Status of a track marking</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="marking" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the marking</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="area" type="rcs:tArea">
+					<xs:annotation>
+						<xs:documentation>Area of the track</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="type" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Marking type</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="reason" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reason</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrainCommand">
+		<xs:annotation>
+			<xs:documentation>Direct commands to a running train</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="train" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="command">
+						<xs:simpleType>
+							<xs:union>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="activateEmergencyAlert"/>
+										<xs:enumeration value="deactivateEmergencyAlert"/>
+									</xs:restriction>
+								</xs:simpleType>
+								<xs:simpleType>
+									<xs:restriction base="xs:string"/>
+								</xs:simpleType>
+							</xs:union>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="trainMessage">
+						<xs:annotation>
+							<xs:documentation>Message sent to train</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="plainText" type="xs:string"/>
+								<xs:element name="ackRequired" type="xs:boolean" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrainCreateRequest">
+		<xs:annotation>
+			<xs:documentation>Request to create a train resource</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "formation", "leadVehicle" are alternatives</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="train" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Identity of the new train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="formation" type="rcs:tResourceRef">
+						<xs:annotation>
+							<xs:documentation>Vehicle formation, for create and reconfigure</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="leadVehicle" type="rcs:tResourceRef">
+						<xs:annotation>
+							<xs:documentation>Leading locomotive, if known</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+				<xs:element name="location" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Optional operational point or area where train is located</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrainDeleteInfo">
+		<xs:annotation>
+			<xs:documentation>Information that a train was removed</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="train" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrainDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>Request to remove a train resource</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="train" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrainDetectionStatus">
+		<xs:annotation>
+			<xs:documentation>Indications from a trackside train detection device</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "valid" made optional</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="object" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the detector</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="indication">
+					<xs:annotation>
+						<xs:documentation>Currently reported state</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="free"/>
+									<xs:enumeration value="occupied"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="operational" type="rcs:tNetworkElementStatus">
+					<xs:annotation>
+						<xs:documentation>Operational status</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="equipment" type="rcs:tEquipmentStatus">
+					<xs:annotation>
+						<xs:documentation>Equipment status</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrainInfo">
+		<xs:annotation>
+			<xs:documentation>Information about the composition and static parameters of a train</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Replaced "leadVehicle" by "formationInfo", made "formation" and "formationInfo" alternatives, added "property"</xs:appinfo>
+			<xs:appinfo>V 1.6: At least one "vehicle" in "formationInfo"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="train" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="formation" type="rcs:tResourceRef">
+						<xs:annotation>
+							<xs:documentation>Reference to the formation of vehicles</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="formationInfo">
+						<xs:annotation>
+							<xs:documentation>In-line formation info</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="vehicle" type="rcs:tResourceRef" minOccurs="1" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation>Vehicle</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="connectionSide" type="xs:string"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+				<xs:element name="length">
+					<xs:annotation>
+						<xs:documentation>Train length, in meters</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:minExclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="axleLoad" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Axle load in metric tons, if known</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:minExclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="trainType" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>TBD</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="profile" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>TBD</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="traction" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>TBD</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrainServiceUpdateRequest">
+		<xs:annotation>
+			<xs:documentation>Commands related to the scheduling of a train</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="train" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="command">
+					<xs:annotation>
+						<xs:documentation>Operation requested</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="setSchedule"/>
+									<xs:enumeration value="hold"/>
+									<xs:enumeration value="release"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="schedule" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to schedule, when applicable</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="adjustment" type="xs:decimal" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Requested adjustment vs schedule, in minutes</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrainServiceStatus">
+		<xs:annotation>
+			<xs:documentation>A trains status in relation to its time tabled service</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "nextStop" added, element "valid" made optional</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="train" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="schedule" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to current schedule, if any</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="adjustment" type="xs:decimal" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Requested adjustment to schedule, in minutes</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="deviation" type="xs:decimal" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Current deviation to schedule (after adjustment), in minutes</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="nextStop" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Next train stop</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrainStatus">
+		<xs:annotation>
+			<xs:documentation>A trains position and other dynamic data</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Added "emergencyAlert", "route", "path", "timsStatus", "trainAction", "authorisation" elements, element "position" changed to "footprint", element "valid" made optional</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="train" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="footprint" type="rcs:tLinearExtent">
+					<xs:annotation>
+						<xs:documentation>Extent and direction of train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="status" type="rcs:tEquipmentStatus">
+					<xs:annotation>
+						<xs:documentation>Status of onboard equipment</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="speed" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Speed in km/h, if known</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="acceleration" type="xs:decimal" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Acceleration/deceleration in m/s2, if known</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="emergencyAlert" type="xs:boolean" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Status of emergency alert</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="timsStatus" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>TIMS status</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="noInfo"/>
+									<xs:enumeration value="tims"/>
+									<xs:enumeration value="driver"/>
+									<xs:enumeration value="integrityLost"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="trainAction" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Train action</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="srRouteRequest"/>
+									<xs:enumeration value="maRequest"/>
+									<xs:enumeration value="posRequired"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="route" type="rcs:tResourceRef" minOccurs="0"/>
+				<xs:element name="path" type="rcs:tResourceRef" minOccurs="0"/>
+				<xs:element name="authorisation" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="section" type="rcs:tSection" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrainUpdateRequest">
+		<xs:annotation>
+			<xs:documentation>Request to update the status of a train</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Rename "status" element to "operationalMode", element "formation", "leadVehicle" are alternatives</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="train" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the train to modify</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="operationalMode">
+					<xs:annotation>
+						<xs:documentation>Set in or out of service</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="inService"/>
+									<xs:enumeration value="outOfService"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="formation" type="rcs:tResourceRef">
+						<xs:annotation>
+							<xs:documentation>Vehicle formation, if changed</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="leadVehicle" type="rcs:tResourceRef">
+						<xs:annotation>
+							<xs:documentation>Leading locomotive, if changed</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+				<xs:element name="location" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Optional operational point or area where train is located when set in service</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsaCommand">
+		<xs:annotation>
+			<xs:documentation>Modifies a Temporary Shunting Area</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsa" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSA</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="areaOperation">
+						<xs:simpleType>
+							<xs:union>
+								<xs:simpleType>
+									<xs:restriction base="rcs:tCommonCommand">
+										<xs:enumeration value="activate"/>
+										<xs:enumeration value="deactivate"/>
+									</xs:restriction>
+								</xs:simpleType>
+								<xs:simpleType>
+									<xs:restriction base="xs:string"/>
+								</xs:simpleType>
+							</xs:union>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="removeUnit" type="rcs:tResourceRef">
+						<xs:annotation>
+							<xs:documentation>Reference to unit to be removed</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsaCreateRequest">
+		<xs:annotation>
+			<xs:documentation>Creates a Temporary Shunting Area</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsa" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSA</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="area" type="rcs:tArea">
+					<xs:annotation>
+						<xs:documentation>Area of the TSA</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="areaOperation">
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="rcs:tCommonCommand">
+									<xs:enumeration value="activate"/>
+									<xs:enumeration value="deactivate"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsaDeleteInfo">
+		<xs:annotation>
+			<xs:documentation>Information that a Temporary Shunting Area has been removed</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsa" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSA</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsaDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>Request to remove a Temporary Shunting Area</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsa" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSA</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsaInfo">
+		<xs:annotation>
+			<xs:documentation>Static information about a Temporary Shunting Area</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsa" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSA</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="area" type="rcs:tArea"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsaStatus">
+		<xs:annotation>
+			<xs:documentation>Status of a Temporary Shunting Area</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsa" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSA</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="active" type="xs:boolean"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsrCreateRequest">
+		<xs:annotation>
+			<xs:documentation>Command to create a Temporary Speed Restriction</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "trainLengthDelay", "timeFrame", "reason", "reasonDistance" added, element "extent" and "unidirectional" added as alternatives for the "area" element, "state" element replaced with "active" element</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsr" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSR</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="active" type="rcs:tEmpty" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Request to activate TSR</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="area" type="rcs:tArea"/>
+					<xs:sequence>
+						<xs:element name="extent" type="rcs:tLinearExtent"/>
+						<xs:element name="unidirectional" type="xs:boolean" minOccurs="0"/>
+					</xs:sequence>
+				</xs:choice>
+				<xs:element name="speed">
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:minExclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="source" type="rcs:tRequestSource" minOccurs="0"/>
+				<xs:element name="trainLengthDelay" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="timeFrame" type="rcs:tTimeSpan" minOccurs="0"/>
+				<xs:element name="reason" type="xs:string" minOccurs="0"/>
+				<xs:element name="reasonDistance" type="xs:int" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reason distance</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsrDeleteInfo">
+		<xs:annotation>
+			<xs:documentation>Information that a Temporary Speed Restriction has been removed</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsr" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSR</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsrDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>Remove a Temporary Speed Restriction</xs:documentation>
+			<xs:appinfo>V 1.6: Element introduced</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsr" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSR</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsrStatus">
+		<xs:annotation>
+			<xs:documentation>Status of a Temporary Speed Restriction</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "timeFrame", "trainLengthDelay", "reason" added, added "removed" to "state", element "valid" made optional</xs:appinfo>
+			<xs:appinfo>V 1.6: Removed option “removed” from "state", instead use "TsrDeleteInfo"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsr" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSR</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="state">
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="active"/>
+									<xs:enumeration value="inactive"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="source" type="rcs:tRequestSource" minOccurs="0"/>
+				<xs:element name="area" type="rcs:tArea" minOccurs="0"/>
+				<xs:element name="speed" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:minExclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="timeFrame" type="rcs:tTimeSpan" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Time frame of TSR</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="trainLengthDelay" type="xs:boolean" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Indicates train length delay</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="reason" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>TSR annotation</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TsrUpdateRequest">
+		<xs:annotation>
+			<xs:documentation>Command to modify a Temporary Speed Restriction</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "newArea" removed, all operations change are alterntive of choice element</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tsr" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the TSR</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="command">
+						<xs:annotation>
+							<xs:documentation>Command</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:union>
+								<xs:simpleType>
+									<xs:restriction base="rcs:tCommonCommand">
+										<xs:enumeration value="activate"/>
+										<xs:enumeration value="deactivate"/>
+									</xs:restriction>
+								</xs:simpleType>
+								<xs:simpleType>
+									<xs:restriction base="xs:string"/>
+								</xs:simpleType>
+							</xs:union>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="speed">
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:minExclusive value="0"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:choice>
+				<xs:element name="source" type="rcs:tRequestSource" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="VehicleStatus">
+		<xs:annotation>
+			<xs:documentation>Status of a single vehicle</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element "valid" made optional</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="vehicle" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the vehicle</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="state" type="rcs:tEquipmentStatus"/>
+				<xs:element name="valid" type="rcs:tValidity" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="formation" type="rcs:tResourceRef" minOccurs="0"/>
+				<xs:element name="train" type="rcs:tResourceRef" minOccurs="0"/>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--Deprecated definitions-->
+	<xs:simpleType name="tRouteType">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - The generic type of route, in request or status</xs:documentation>
+			<xs:appinfo>V 1.0: Type introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Type deprecated</xs:appinfo>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="trainRoute"/>
+					<xs:enumeration value="restrictedRoute"/>
+					<xs:enumeration value="trainPath"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="LogDeviceCommand">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - use LogSourceCommand</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.1: Element "device" changed to "object"</xs:appinfo>
+			<xs:appinfo>V 1.5: Element replaced by "LogSourceCommand"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="object" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the device or system</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="measurementPoint" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="identity" type="rcs:tResourceRef">
+								<xs:annotation>
+									<xs:documentation>Measurement point identity</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="sampleInterval" type="xs:nonNegativeInteger">
+								<xs:annotation>
+									<xs:documentation>Interval in ms between measurements. 0 means no periodic measurements</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogSystemTypeInfo">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - use LogSourceTypeInfo</xs:documentation>
+			<xs:appinfo>V 1.1: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.3: Changed enum set in "measurementPoint/supervision/rule"</xs:appinfo>
+			<xs:appinfo>V 1.5: Element replaced by "LogSourceTypeInfo"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="systemType" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the system type</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="description" type="rcs:tDescription">
+					<xs:annotation>
+						<xs:documentation>Plain language system description</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="parent" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>A category of system types, from which this type inherits additional characteristics</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="measurementPoint" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>The measurement points which exist in this system type</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="rcs:tVariableSpecification">
+								<xs:sequence>
+									<xs:element name="tolerance" type="xs:anySimpleType" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Optional difference threshold value for logging a measurement as a new value. Default value, may be overridden by local MDC configuration</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="supervision" minOccurs="0" maxOccurs="unbounded">
+										<xs:annotation>
+											<xs:documentation>Rules for alerting operator about unexpected values. List may be overridden or amended by local MDC configuration</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="rule">
+													<xs:annotation>
+														<xs:documentation>Type of rule (several of the same type may be listed, e.g. to get a "warning" and an "error" threshold)</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:union>
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:enumeration value="maxValue"/>
+																	<xs:enumeration value="minValue"/>
+																	<xs:enumeration value="blockValue"/>
+																	<xs:enumeration value="passValues"/>
+																	<xs:enumeration value="maxCount"/>
+																	<xs:enumeration value="maxInterval"/>
+																	<xs:enumeration value="minInterval"/>
+																	<xs:enumeration value="blockPattern"/>
+																	<xs:enumeration value="passPattern"/>
+																</xs:restriction>
+															</xs:simpleType>
+															<xs:simpleType>
+																<xs:restriction base="xs:string"/>
+															</xs:simpleType>
+														</xs:union>
+													</xs:simpleType>
+												</xs:element>
+												<xs:element name="threshold" type="xs:anySimpleType">
+													<xs:annotation>
+														<xs:documentation>Value to check rule against</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+												<xs:element name="eventType" type="rcs:tResourceRef">
+													<xs:annotation>
+														<xs:documentation>Event to generate when rule is violated</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="documentation" type="rcs:tDocumentation" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Hyperlink to measurement point documentation</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="snmp" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Information required if measurements are to be collected over SNMP</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="oid" type="xs:string">
+													<xs:annotation>
+														<xs:documentation>The SNMP OID of the variable containing the measurement</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+												<xs:element name="pollInterval">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="default" type="xs:nonNegativeInteger">
+																<xs:annotation>
+																	<xs:documentation>Default interval in ms to poll the variable. 0 means no polling</xs:documentation>
+																</xs:annotation>
+															</xs:element>
+															<xs:element name="min" type="xs:positiveInteger">
+																<xs:annotation>
+																	<xs:documentation>Minimum allowed interval in ms to poll the variable</xs:documentation>
+																</xs:annotation>
+															</xs:element>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="eventTypes" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>List of event types that this system type may log. Needed only when using the negotiated method for configuration transfer</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ref" type="rcs:tResourceRef" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Reference to the event type</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="documentation" type="rcs:tDocumentation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Hyperlink to system type documentation</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogDeviceTypeInfo">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - use LogSourceTypeInfo</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.1: Elements "systemType" and "parent" added</xs:appinfo>
+			<xs:appinfo>V 1.3: Changed enum set in "measurementPoint/supervision/rule"</xs:appinfo>
+			<xs:appinfo>V 1.5: Element replaced by "LogSourceTypeInfo"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="deviceType" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the device type</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="description" type="rcs:tDescription">
+					<xs:annotation>
+						<xs:documentation>Plain language device description</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="systemType" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the system type which this device type belongs to</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="parent" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>A category of device types, from which this type inherits additional characteristics</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="measurementPoint" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>The measurement points which exist in this device type</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="rcs:tVariableSpecification">
+								<xs:sequence>
+									<xs:element name="tolerance" type="xs:anySimpleType" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Optional difference threshold value for logging a measurement as a new value. Default value, may be overridden by local MDC configuration</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="supervision" minOccurs="0" maxOccurs="unbounded">
+										<xs:annotation>
+											<xs:documentation>Rules for alerting operator about unexpected values. List may be overridden or amended by local MDC configuration</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="rule">
+													<xs:annotation>
+														<xs:documentation>Type of rule (several of the same type may be listed, e.g. to get a "warning" and an "error" threshold)</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:union>
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:enumeration value="maxValue"/>
+																	<xs:enumeration value="minValue"/>
+																	<xs:enumeration value="blockValue"/>
+																	<xs:enumeration value="passValues"/>
+																	<xs:enumeration value="maxCount"/>
+																	<xs:enumeration value="maxInterval"/>
+																	<xs:enumeration value="minInterval"/>
+																	<xs:enumeration value="blockPattern"/>
+																	<xs:enumeration value="passPattern"/>
+																</xs:restriction>
+															</xs:simpleType>
+															<xs:simpleType>
+																<xs:restriction base="xs:string"/>
+															</xs:simpleType>
+														</xs:union>
+													</xs:simpleType>
+												</xs:element>
+												<xs:element name="threshold" type="xs:anySimpleType">
+													<xs:annotation>
+														<xs:documentation>Value to check rule against</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+												<xs:element name="eventType" type="rcs:tResourceRef">
+													<xs:annotation>
+														<xs:documentation>Event to generate when rule is violated</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="documentation" type="rcs:tDocumentation" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Hyperlink to measurement point documentation</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="snmp" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Information required if measurements are to be collected over SNMP</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="oid" type="xs:string">
+													<xs:annotation>
+														<xs:documentation>The SNMP OID of the variable containing the measurement</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+												<xs:element name="pollInterval">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="default" type="xs:nonNegativeInteger">
+																<xs:annotation>
+																	<xs:documentation>Default interval in ms to poll the variable. 0 means no polling</xs:documentation>
+																</xs:annotation>
+															</xs:element>
+															<xs:element name="min" type="xs:positiveInteger">
+																<xs:annotation>
+																	<xs:documentation>Minimum allowed interval in ms to poll the variable</xs:documentation>
+																</xs:annotation>
+															</xs:element>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="eventTypes" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>List of event types that this device type may log. Needed only when using the negotiated method for configuration transfer</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ref" type="rcs:tResourceRef" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Reference to the event type</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="documentation" type="rcs:tDocumentation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Hyperlink to device type documentation</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogSystemInfo">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - use LogSourceInfo</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.1: Elements "systemType" and "parent" added</xs:appinfo>
+			<xs:appinfo>V 1.3: Element "identification" added</xs:appinfo>
+			<xs:appinfo>V 1.5: Element replaced by "LogSourceInfo", changed "property" element to old "tProperty" content</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="system" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the system</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="name" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Presentation name for the system</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="systemType" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the system type of this system</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="parent" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>When applicable, reference to the Logsystem to which this subsystem belongs</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="facility" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to a LogFacility to which the system belongs</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="location" type="rcs:tLocation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Geographic information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="identification" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Asset attributes of system</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="componentId" type="xs:string" minOccurs="0"/>
+							<xs:element name="hwVersion" type="xs:string" minOccurs="0"/>
+							<xs:element name="swVersion" type="xs:string" minOccurs="0"/>
+							<xs:element name="serialNo" type="xs:string" minOccurs="0"/>
+							<xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Optional list of named properties</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="id" type="xs:token">
+											<xs:annotation>
+												<xs:documentation>A shorthand internal name</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="description" type="rcs:tDescription">
+											<xs:annotation>
+												<xs:documentation>Descriptive name</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:choice>
+											<xs:element name="intValue" type="xs:integer"/>
+											<xs:element name="boolValue" type="xs:boolean"/>
+											<xs:element name="floatValue" type="xs:float"/>
+											<xs:element name="stringValue" type="xs:string"/>
+											<xs:element name="durationValue" type="xs:duration"/>
+											<xs:element name="dateTimeValue" type="xs:dateTime"/>
+										</xs:choice>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogDeviceInfo">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - use LogSourceInfo</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element replaced by "LogSourceInfo", changed "property" element to old "tProperty" content</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="device" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the device</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="name" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Presentation name for the device</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="identification" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Asset attributes of device</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="componentId" type="xs:string" minOccurs="0"/>
+							<xs:element name="hwVersion" type="xs:string" minOccurs="0"/>
+							<xs:element name="swVersion" type="xs:string" minOccurs="0"/>
+							<xs:element name="serialNo" type="xs:string" minOccurs="0"/>
+							<xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Optional list of named properties</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="id" type="xs:token">
+											<xs:annotation>
+												<xs:documentation>A shorthand internal name</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="description" type="rcs:tDescription">
+											<xs:annotation>
+												<xs:documentation>Descriptive name</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:choice>
+											<xs:element name="intValue" type="xs:integer"/>
+											<xs:element name="boolValue" type="xs:boolean"/>
+											<xs:element name="floatValue" type="xs:float"/>
+											<xs:element name="stringValue" type="xs:string"/>
+											<xs:element name="durationValue" type="xs:duration"/>
+											<xs:element name="dateTimeValue" type="xs:dateTime"/>
+										</xs:choice>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="deviceType" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the DeviceType describing this device</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="parent" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the Logsystem or LogDevice to which this device belongs</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="facility" type="rcs:tResourceRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to a LogFacility to which the device belongs</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="location" type="rcs:tLocation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Geographic location</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="snmp" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Information required if measurements and events are to be collected over SNMP</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ip" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>IP address of the device</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="context" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>SNMP context string, identifying the device among others on the same IP address</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="measurementPoint" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Any measurement points which will be retrieved from other physical units</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="identity" type="rcs:tResourceRef">
+											<xs:annotation>
+												<xs:documentation>Measurement point identity, corresponding to a measurement point defined in LogDeviceTypeInfo</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="oid" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>The SNMP OID of the variable containing the measurement</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="ip" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>IP address of the device holding the measurement, if different from the IP address of this device</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="context" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>SNMP context string, identifying the device among others on the same IP address</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="eventType" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Any traps related to this device, which will be sent by another device</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ref" type="rcs:tResourceRef">
+											<xs:annotation>
+												<xs:documentation>Reference to the event type</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="oid" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>The SNMP OID of the trap</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="ip" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>IP address of the device which will send the trap, if different from the IP address of this device</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="context" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>SNMP context string, identifying the device among others on the same IP address</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="OcpServiceCommand">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - use OperationalPointCommand</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Replaced by "OperationalPointCommand"</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ocp" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the OCP</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="command">
+					<xs:annotation>
+						<xs:documentation>Requested state</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="normal"/>
+									<xs:enumeration value="outOfService"/>
+									<xs:enumeration value="holdTrain"/>
+									<xs:enumeration value="runThru"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="time" type="xs:dateTime" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Time when new state is desired</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="source" type="rcs:tRequestSource" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Source of request</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="OcpServiceStatus">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED- use OperationalPointStatus</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element deprecated, replaced by OperationalPointStatus</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ocp" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the OCP</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="state">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="current">
+								<xs:annotation>
+									<xs:documentation>Current state</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:union>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="normal"/>
+												<xs:enumeration value="outOfService"/>
+												<xs:enumeration value="holdTrain"/>
+												<xs:enumeration value="runThru"/>
+											</xs:restriction>
+										</xs:simpleType>
+										<xs:simpleType>
+											<xs:restriction base="xs:string"/>
+										</xs:simpleType>
+									</xs:union>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="source" type="rcs:tRequestSource" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Source of current state</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="next" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Requested state</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="rcs:OcpServiceCommand"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="valid" type="rcs:tValidity">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="trains" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="current" type="rcs:tResourceRef" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Reference to a currently present train</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="departure" type="xs:dateTime" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Planned time of departure for current train</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="next" type="rcs:tResourceRef" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Reference to the next expected train</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="arrival" type="xs:dateTime" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Expected time of arrival for the next train</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="OcpStatus">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED- use OperationalPointStatus</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.5: Element deprecated, replaced by OperationalPointStatus</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ocp" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to the OCP</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="operationalStatus" type="rcs:tNetworkElementStatus"/>
+				<xs:element name="equipmentStatus" type="rcs:tEquipmentStatus"/>
+				<xs:element name="valid" type="rcs:tValidity">
+					<xs:annotation>
+						<xs:documentation>State validity information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="property" type="rcs:tProperty" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Optional named properties</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResourceDeleteInfo">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - define resource type specific XxxDeleteInfo elements</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.6: Element deprecated, replaced by resource type specific XxxDeleteInfo elements</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="resource" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to resource which has been deleted</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResourceDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - define resource type specific XxxDeleteRequest elements</xs:documentation>
+			<xs:appinfo>V 1.0: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.6: Element deprecated, replaced by resource type specific XxxDeleteRequest elements</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="resource" type="rcs:tResourceRef">
+					<xs:annotation>
+						<xs:documentation>Reference to resource to be deleted</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrackStatus">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - use TrackMarkingStatus and TrackmarkingDeleteInfo</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.6: Element deprecated, replaced by TrackMarkingStatus and TrackMarkingdeleteInfo</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="area" type="rcs:tArea">
+					<xs:annotation>
+						<xs:documentation>Area of the track</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="state" type="rcs:tNetworkElementStatus">
+						<xs:annotation>
+							<xs:documentation>Current state</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="restriction">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="type" type="xs:string">
+									<xs:annotation>
+										<xs:documentation>Restriction type</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="reason" type="xs:string" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Reason of restriction</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="noRestriction" type="rcs:tEmpty">
+						<xs:annotation>
+							<xs:documentation>Indicates no restriction</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrackUpdateRequest">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED - use TrackMarkingCreateRequest and TrackMarkingDeleteRequest</xs:documentation>
+			<xs:appinfo>V 1.5: Element introduced</xs:appinfo>
+			<xs:appinfo>V 1.6: Element deprecated, replaced by TrackMarkingCreateRequest and TrackMarkingDeleteRequest</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="area" type="rcs:tArea">
+					<xs:annotation>
+						<xs:documentation>Area of the track</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="command">
+					<xs:annotation>
+						<xs:documentation>Aspect</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:union>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="set"/>
+									<xs:enumeration value="clear"/>
+								</xs:restriction>
+							</xs:simpleType>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:union>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="marking" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Marking type</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="reason" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reason</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

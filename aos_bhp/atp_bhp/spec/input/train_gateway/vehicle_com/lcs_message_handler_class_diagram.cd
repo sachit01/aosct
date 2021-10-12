@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::TG::LCSMessageHandler">
+    <Position X="5.5" Y="2.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AIiCCAKCAQABAAAA8EQQxAoAMACgSAIAQACBAAFBUAo=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\lcs_message_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

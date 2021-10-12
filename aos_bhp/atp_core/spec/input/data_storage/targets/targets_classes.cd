@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::DS::BaseTarget">
+    <Position X="5" Y="0.5" Width="4" />
+    <Members>
+      <Method Name="BaseTarget" Hidden="true" />
+      <Field Name="dir" Hidden="true" />
+      <Method Name="getWriteCrossCompareMaxSizeSubClass" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Field Name="odo" Hidden="true" />
+      <Field Name="refPos" Hidden="true" />
+      <Field Name="sentToATO" Hidden="true" />
+      <Field Name="targetType" Hidden="true" />
+      <Method Name="writeCrossCompareSubClass" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="ATP::DS::BaseTarget::CoreTargetType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\targets\base_target.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::DS::BaseTarget::LocationTargetType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\targets\base_target.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CEACIAgCAKEAgACAEIAgAABAEABIAAAAAACIAEGBAgA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\base_target.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::ConditionalTarget">
+    <Position X="10.25" Y="0.5" Width="2.75" />
+    <Members>
+      <Method Name="ConditionalTarget" Hidden="true" />
+      <Field Name="speed" Hidden="true" />
+      <Field Name="statusChanged" Hidden="true" />
+      <Field Name="supervised" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAEAEgAgAAgAgQAAAAAAAAQAAAAAAAAAEAAQ=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\conditional_target.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::GradientTarget">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Members>
+      <Method Name="getWriteCrossCompareMaxSizeSubClass" Hidden="true" />
+      <Method Name="GradientTarget" Hidden="true" />
+      <Method Name="operator new" Hidden="true" />
+      <Field Name="trackGradient" Hidden="true" />
+      <Method Name="writeCrossCompareSubClass" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CACAAAAAAAAAAAABAIAAAQBBAABAAAAAIAggAAAgAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\gradient_target.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::PrimaryTarget">
+    <Position X="8.75" Y="7.75" Width="3.5" />
+    <Members>
+      <Method Name="getWriteCrossCompareMaxSizeSubClass" Hidden="true" />
+      <Field Name="locationGradient" Hidden="true" />
+      <Field Name="locationType" Hidden="true" />
+      <Field Name="locName" Hidden="true" />
+      <Field Name="maId" Hidden="true" />
+      <Field Name="maMargin" Hidden="true" />
+      <Field Name="maTimeout" Hidden="true" />
+      <Field Name="maTimeoutTimeStamp" Hidden="true" />
+      <Method Name="operator new" Hidden="true" />
+      <Method Name="PrimaryTarget" Hidden="true" />
+      <Field Name="routeType" Hidden="true" />
+      <Method Name="writeCrossCompareSubClass" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CQCAgIECIAIAEACEAoAgAQBAAAFEAAAAIAAAAMAhAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\primary_target.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::SpeedTarget">
+    <Position X="0.5" Y="3.75" Width="3.5" />
+    <Members>
+      <Method Name="calcSupTargOdoOffset" Hidden="true" />
+      <Method Name="getWriteCrossCompareMaxSizeSubClass" Hidden="true" />
+      <Method Name="operator new" Hidden="true" />
+      <Field Name="reason" Hidden="true" />
+      <Field Name="speed" Hidden="true" />
+      <Method Name="SpeedTarget" Hidden="true" />
+      <Method Name="writeCrossCompareSubClass" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CACAAAAAQgAAAAAAAwAgIQBAEABAAQAAIAAAAAAgAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\speed_target.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::SupervisedTarget">
+    <Position X="2" Y="7.25" Width="3.5" />
+    <Members>
+      <Field Name="ceilingSpeed" Hidden="true" />
+      <Field Name="ebCeilingSpeed" Hidden="true" />
+      <Field Name="ebSpeed" Hidden="true" />
+      <Field Name="firstWarningSpeed" Hidden="true" />
+      <Field Name="fwCeilingSpeed" Hidden="true" />
+      <Method Name="getWriteCrossCompareMaxSizeSubClass" Hidden="true" />
+      <Field Name="gradient" Hidden="true" />
+      <Field Name="isValidGradient" Hidden="true" />
+      <Method Name="operator new" Hidden="true" />
+      <Field Name="parentTarget" Hidden="true" />
+      <Field Name="sbCeilingSpeed" Hidden="true" />
+      <Field Name="sbSpeed" Hidden="true" />
+      <Field Name="secondWarningSpeed" Hidden="true" />
+      <Method Name="SupervisedTarget" Hidden="true" />
+      <Field Name="swCeilingSpeed" Hidden="true" />
+      <Field Name="type" Hidden="true" />
+      <Method Name="writeCrossCompareSubClass" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="ATP::DS::SupervisedTarget::SupervisedTargetType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\data_storage\targets\supervised_target.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>DACQIAijQCQB0ABAZMABBQRABQBFBBAEYkAAAAUgAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\supervised_target.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::TrackDataItemTarget">
+    <Position X="10.5" Y="4" Width="2.5" />
+    <Members>
+      <Method Name="getWriteCrossCompareMaxSizeSubClass" Hidden="true" />
+      <Method Name="operator new" Hidden="true" />
+      <Method Name="TrackDataItemTarget" Hidden="true" />
+      <Field Name="trackDataItemValue" Hidden="true" />
+      <Field Name="type" Hidden="true" />
+      <Method Name="writeCrossCompareSubClass" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CADgAAAAAAEAAAAQAAAAAQBAAABBIAAAIAAAAAAgAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\targets\track_data_item_target.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

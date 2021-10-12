@@ -1,0 +1,1377 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atp_core\impl\data_storage\targets
+BEGIN_RECORD abstract_targets.cpp
+CHECKSUM 918815275
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __CPR223____ct__Q2_3ATC201GPListIterator__tm__178_PQ3_3ATP2DS10BaseTargetXCUsL_3_100RPQ3_3ATP2DSJ51JPQ2_3ATC79GPList__tm__65_PQ3_3ATP2DSJ51JXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerQ3_3ATP2DSJ167JFZ4ZUs
+   __CPR225____ct__Q2_3ATC203GPListIterator__tm__180_PQ3_3ATP2DS10BaseTargetXCUsL_3_100RCPQ3_3ATP2DSJ51JPCQ2_3ATC79GPList__tm__65_PQ3_3ATP2DSJ51JXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerQ3_3ATP2DSJ169JFZ4ZUs
+   __CPR226____ct__Q2_3ATC204GPListRevIterator__tm__178_PQ3_3ATP2DS10BaseTargetXCUsL_3_100RPQ3_3ATP2DSJ54JPQ2_3ATC79GPList__tm__65_PQ3_3ATP2DSJ54JXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerQ3_3ATP2DSJ170JFZ4ZUs
+   __CPR241____ct__Q2_3ATC219GPListIterator__tm__196_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_100RPQ3_3ATP2DSJ51JPQ2_3ATC85GPList__tm__71_PQ3_3ATP2DSJ51JXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerQ3_3ATP2DSJ185JFZ4ZUs
+   __CPR243____ct__Q2_3ATC221GPListIterator__tm__198_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_100RCPQ3_3ATP2DSJ51JPCQ2_3ATC85GPList__tm__71_PQ3_3ATP2DSJ51JXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerQ3_3ATP2DSJ187JFZ4ZUs
+   __CPR244____ct__Q2_3ATC222GPListRevIterator__tm__196_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_100RPQ3_3ATP2DSJ54JPQ2_3ATC85GPList__tm__71_PQ3_3ATP2DSJ54JXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerQ3_3ATP2DSJ188JFZ4ZUs
+   __CPR251__delTarget__Q3_3ATP2DS15AbstractTargetsFRQ2_3ATC201GPListIterator__tm__178_PQ3_3ATP2DS10BaseTargetXCUsL_3_100RPQ3_3ATP2DSJ85JPQ2_3ATC79GPList__tm__65_PQ3_3ATP2DSJ85JXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerQ3_3ATP2DSJ201J
+   __CPR269__delTarget__Q3_3ATP2DS15AbstractTargetsFRQ2_3ATC219GPListIterator__tm__196_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_100RPQ3_3ATP2DSJ85JPQ2_3ATC85GPList__tm__71_PQ3_3ATP2DSJ85JXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerQ3_3ATP2DSJ219J
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q3_3ATP2DS15AbstractTargetsFv
+   __ct__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventFPCZ1Z
+   __ct__Q3_3ATP7Support42CrossCompareEnum__tm__18_Q2_3ATP9TravelDirFPCZ1Z
+   __ct__Q3_3ATP7Support55CrossCompareComplex__tm__28_Q3_3ATP2DS15AbstractTargetsFPCZ1Z
+   __dt__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventFv
+   __dt__Q3_3ATP7Support42CrossCompareEnum__tm__18_Q2_3ATP9TravelDirFv
+   __dt__Q3_3ATP7Support55CrossCompareComplex__tm__28_Q3_3ATP2DS15AbstractTargetsFv
+   addTarget__Q3_3ATP2DS15AbstractTargetsFRCQ3_3ATP2DS11SpeedTarget
+   addTarget__Q3_3ATP2DS15AbstractTargetsFRCQ3_3ATP2DS13PrimaryTarget
+   addTarget__Q3_3ATP2DS15AbstractTargetsFRCQ3_3ATP2DS14GradientTarget
+   addTarget__Q3_3ATP2DS15AbstractTargetsFRCQ3_3ATP2DS16SupervisedTarget
+   addTarget__Q3_3ATP2DS15AbstractTargetsFRCQ3_3ATP2DS19TrackDataItemTarget
+   consoleCall__Q3_3ATP2DS15AbstractTargetsFUiPA30_Cc
+   corePtr__Q3_3ATP2DS15AbstractTargetsSFv
+   delAllRelatedSupvTarget__Q3_3ATP2DS15AbstractTargetsFPCQ3_3ATP2DS10BaseTarget
+   delTarget__Q3_3ATP2DS15AbstractTargetsFPCQ3_3ATP2DS10BaseTarget
+   delTarget__Q3_3ATP2DS15AbstractTargetsFPCQ3_3ATP2DS16SupervisedTarget
+   delTargetsInRange__Q3_3ATP2DS15AbstractTargetsFiT1
+   displayMaTarg__Q3_3ATP2DS15AbstractTargetsFv
+   displaySupTarg__Q3_3ATP2DS15AbstractTargetsFv
+   dynamicCast__tm__51_PQ3_3ATP2DS10BaseTargetPQ3_3ATP2DS14GradientTarget__3ATCFZ1ZPCci_Z2Z
+   dynamicCast__tm__54_PQ3_3ATP2DS10BaseTargetPQ3_3ATP2DS17ConditionalTarget__3ATCFZ1ZPCci_Z2Z
+   getAdhesionValue__Q3_3ATP2DS15AbstractTargetsCFv
+   getConstMATargetIterEnd__Q3_3ATP2DS15AbstractTargetsCFv
+   getConstMATargetIter__Q3_3ATP2DS15AbstractTargetsCFv
+   getConstSupervisedTargetIterEnd__Q3_3ATP2DS15AbstractTargetsCFv
+   getConstSupervisedTargetIter__Q3_3ATP2DS15AbstractTargetsCFv
+   getCurCeilingSpeed__Q3_3ATP2DS15AbstractTargetsCFv
+   getCurGradient__Q3_3ATP2DS15AbstractTargetsCFv
+   getCurTrackGradient__Q3_3ATP2DS15AbstractTargetsCFv
+   getCurrEbCeilingSpeed__Q3_3ATP2DS15AbstractTargetsCFv
+   getCurrFwCeilingSpeed__Q3_3ATP2DS15AbstractTargetsCFv
+   getCurrSbCeilingSpeed__Q3_3ATP2DS15AbstractTargetsCFv
+   getCurrSwCeilingSpeed__Q3_3ATP2DS15AbstractTargetsCFv
+   getFreeRollingTargetActive__Q3_3ATP2DS15AbstractTargetsCFv
+   getGradientTargetList__Q3_3ATP2DS15AbstractTargetsCFPPQ3_3ATP2DS14GradientTarget
+   getLocationEndTarget__Q3_3ATP2DS15AbstractTargetsFv
+   getLocationStartTarget__Q3_3ATP2DS15AbstractTargetsFv
+   getMARevTargetIterEnd__Q3_3ATP2DS15AbstractTargetsFv
+   getMARevTargetIter__Q3_3ATP2DS15AbstractTargetsFv
+   getMATargetIterEnd__Q3_3ATP2DS15AbstractTargetsFv
+   getMATargetIter__Q3_3ATP2DS15AbstractTargetsFv
+   getMaxDataSize__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support42CrossCompareEnum__tm__18_Q2_3ATP9TravelDirCFv_Ui
+   getMaxDataSize__Q3_3ATP7Support55CrossCompareComplex__tm__28_Q3_3ATP2DS15AbstractTargetsCFv_Ui
+   getOdometerInvalidTargetActive__Q3_3ATP2DS15AbstractTargetsCFv
+   getPrimaryTarget__Q3_3ATP2DS15AbstractTargetsFQ2_3ATP9TravelDir
+   getPrimaryTarget__Q3_3ATP2DS15AbstractTargetsFv
+   getSafetyMargin__Q3_3ATP2DS15AbstractTargetsCFv
+   getSupervisedRevTargetIterEnd__Q3_3ATP2DS15AbstractTargetsFv
+   getSupervisedRevTargetIter__Q3_3ATP2DS15AbstractTargetsFv
+   getSupervisedTargetIterEnd__Q3_3ATP2DS15AbstractTargetsFv
+   getSupervisedTargetIter__Q3_3ATP2DS15AbstractTargetsFv
+   getSupposedTravelDir__Q3_3ATP2DS15AbstractTargetsCFv
+   getTargetListChanged__Q3_3ATP2DS15AbstractTargetsCFv
+   getTarget__Q3_3ATP2DS15AbstractTargetsFUi
+   getWriteCrossCompareMaxSize__Q3_3ATP2DS15AbstractTargetsCFv
+   initCrossCompare__Q3_3ATP2DS15AbstractTargetsCFv
+   init__Q3_3ATP2DS15AbstractTargetsFv
+   insertTargetInListInternal__Q3_3ATP2DS15AbstractTargetsFPQ3_3ATP2DS10BaseTarget
+   insertTargetInListInternal__Q3_3ATP2DS15AbstractTargetsFPQ3_3ATP2DS16SupervisedTarget
+   insertTargetInList__Q3_3ATP2DS15AbstractTargetsFPQ3_3ATP2DS10BaseTarget
+   insertTargetInList__Q3_3ATP2DS15AbstractTargetsFPQ3_3ATP2DS16SupervisedTarget
+   isMATargetListEmpty__Q3_3ATP2DS15AbstractTargetsCFv
+   isSupervisedTargetListEmpty__Q3_3ATP2DS15AbstractTargetsCFv
+   isTargetDelInList__Q3_3ATP2DS15AbstractTargetsCFv
+   isTargetListReversed__Q3_3ATP2DS15AbstractTargetsCFv
+   manageEMSInput__Q3_3ATP2DS15AbstractTargetsFv
+   removeAllSupervisedTargets__Q3_3ATP2DS15AbstractTargetsFv
+   removeAll__Q3_3ATP2DS15AbstractTargetsFv
+   removeNormalPrimaryTargetInLocation__Q3_3ATP2DS15AbstractTargetsFv
+   removeTargetsAtStandStillInLocation__Q3_3ATP2DS15AbstractTargetsFv
+   reverse__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerFv_v
+   reverse__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerFv_v
+   run__Q3_3ATP2DS15AbstractTargetsFv
+   setAdhesionValue__Q3_3ATP2DS15AbstractTargetsFUc
+   setConditionalTargetSupervise__Q3_3ATP2DS15AbstractTargetsFUib
+   setCurCeilingSpeed__Q3_3ATP2DS15AbstractTargetsFUi
+   setCurGradient__Q3_3ATP2DS15AbstractTargetsFi
+   setCurTrackGradient__Q3_3ATP2DS15AbstractTargetsFi
+   setCurrEbCeilingSpeed__Q3_3ATP2DS15AbstractTargetsFUi
+   setCurrFwCeilingSpeed__Q3_3ATP2DS15AbstractTargetsFUi
+   setCurrSbCeilingSpeed__Q3_3ATP2DS15AbstractTargetsFUi
+   setCurrSwCeilingSpeed__Q3_3ATP2DS15AbstractTargetsFUi
+   setDelTargetAtStandStill__Q3_3ATP2DS15AbstractTargetsFb
+   setFreeRollingTargetActive__Q3_3ATP2DS15AbstractTargetsFb
+   setOdometerInvalidTargetActive__Q3_3ATP2DS15AbstractTargetsFb
+   setSafetyMarginChangeTargetActive__Q3_3ATP2DS15AbstractTargetsFUs
+   setSupposedTravelDir__Q3_3ATP2DS15AbstractTargetsFQ2_3ATP9TravelDir
+   traceLog__Q3_3ATP2DS15AbstractTargetsCFUcQ2_3ATC8LogLevelPCc
+   veryDetailedLog__Q3_3ATP2DS15AbstractTargetsCFv
+   writeCrossCompare__Q3_3ATP2DS15AbstractTargetsCFP14VFW_BufferNode
+   writeDataBinary__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support42CrossCompareEnum__tm__18_Q2_3ATP9TravelDirCFP14VFW_BufferNode_v
+   writeDataBinary__Q3_3ATP7Support55CrossCompareComplex__tm__28_Q3_3ATP2DS15AbstractTargetsCFP14VFW_BufferNode_v
+CALLED_OBJECTS
+   __CPR148____ct__Q3_3ATP2DS16SupervisedTargetFQ4_3ATP2DSJ16J20SupervisedTargetTypePQ3_3ATP2DS10BaseTargetRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __CPR59____ct__Q2_9VIOHnames10VIOHClientFRCQ2_J9JJ19J
+   __CPR83____ct__Q3_3ATP7Support20AbstractCrossCompareFRCQ3_3ATPJ13JJ21J
+   __ct__Q2_3ATC11IOComponentFRCQ2_3ATC11IOComponent
+   __ct__Q2_3ATC11IOComponentFUsPCcT2
+   __ct__Q2_3ATC11IOComponentFv
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC18AbstractAnalyzerIFFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21b
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC7ATCMathFv
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_9VIOHnames10VIOHClientFUiQ2_9VIOHnames13VIOH_taskTypeT1
+   __ct__Q2_9VIOHnames10VIOHClientFv
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q3_3ATP2DS10BaseTargetFQ4_3ATP2DS10BaseTarget14CoreTargetTypeRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS10BaseTargetFv
+   __ct__Q3_3ATP2DS10TrainSetupFv
+   __ct__Q3_3ATP2DS11SpeedTargetFUiT1RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS11SpeedTargetFv
+   __ct__Q3_3ATP2DS12VehicleSetupFv
+   __ct__Q3_3ATP2DS13PrimaryTargetFUiUcT1T2RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriPCcQ2_3ATP12LocationTypeSc
+   __ct__Q3_3ATP2DS13PrimaryTargetFv
+   __ct__Q3_3ATP2DS14AbstractTSetupFv
+   __ct__Q3_3ATP2DS14GradientTargetFScRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS14GradientTargetFv
+   __ct__Q3_3ATP2DS16SupervisedTargetFv
+   __ct__Q3_3ATP2DS17ConditionalTargetFbUiRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS17ConditionalTargetFv
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFUcRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriUs
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFv
+   __ct__Q3_3ATP2IO14AbstractLocoIOFUcN31
+   __ct__Q3_3ATP2IO14AbstractLocoIOFv
+   __ct__Q3_3ATP3Pos16AbstractOdometryFv
+   __ct__Q3_3ATP4Supv13AbstractBrakeFv
+   __ct__Q3_3ATP6Kernel12AbstractModeFv
+   __ct__Q3_3ATP6Kernel14DriverLoginSeqFv
+   __ct__Q3_3ATP6Kernel14ModeRequestSeqFv
+   __ct__Q3_3ATP6Kernel17EmergencyAlertSeqFv
+   __ct__Q3_3ATP6Kernel19AbstractModeControlFv
+   __ct__Q3_3ATP7Support18CrossCompareObjectFv
+   __ct__Q3_3ATP7Support18CrossCompareOutputFv
+   __ct__Q3_3ATP7Support20AbstractCrossCompareFv
+   __ct__Q3_3ATP7Support25CrossCompareOutputChannelFv
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFPCZ1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_iFPCZ1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_iFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UcFPCZ1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UcFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UiFPCZ1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UiFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsFPCZ1Z
+   __ct__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __ct__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventFRCQ3_3ATP7Support30CrossCompareComplex__tm__4_Z1Z
+   __ct__Q3_3ATP7Support41CrossCompareComplex__tm__14_Q2_3ATC5EventFv
+   __ct__Q3_3ATP7Support42CrossCompareEnum__tm__18_Q2_3ATP9TravelDirFRCQ3_3ATP7Support27CrossCompareEnum__tm__4_Z1Z
+   __ct__Q3_3ATP7Support55CrossCompareComplex__tm__28_Q3_3ATP2DS15AbstractTargetsFRCQ3_3ATP7Support30CrossCompareComplex__tm__4_Z1Z
+   __ct__Q3_3ATP7Support55CrossCompareComplex__tm__28_Q3_3ATP2DS15AbstractTargetsFv
+   __ct__Q4_3ATP2DS14AbstractTSetup17TrainSetupStorageFv
+   __ct__Q4_3ATP2DS14AbstractTSetup19VehicleSetupStorageFv
+   __ct__Q4_3ATP2IO14AbstractLocoIO11AnalogInputFv
+   __ct__Q4_3ATP2IO14AbstractLocoIO12AnalogOutputFv
+   __ct__Q4_3ATP2IO14AbstractLocoIO12DigitalInputFv
+   __ct__Q4_3ATP2IO14AbstractLocoIO13DigitalOutputFv
+   __dl__Q3_3ATP2DS11SpeedTargetSFPv
+   __dl__Q3_3ATP2DS13PrimaryTargetSFPv
+   __dl__Q3_3ATP2DS14GradientTargetSFPv
+   __dl__Q3_3ATP2DS16SupervisedTargetSFPv
+   __dl__Q3_3ATP2DS19TrackDataItemTargetSFPv
+   __dt__Q2_9VIOHnames10VIOHClientFv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __dt__Q3_3ATP2DS10BaseTargetFv
+   __dt__Q3_3ATP2DS10TrainSetupFv
+   __dt__Q3_3ATP2DS11SpeedTargetFv
+   __dt__Q3_3ATP2DS12VehicleSetupFv
+   __dt__Q3_3ATP2DS13PrimaryTargetFv
+   __dt__Q3_3ATP2DS14GradientTargetFv
+   __dt__Q3_3ATP2DS16SupervisedTargetFv
+   __dt__Q3_3ATP2DS17ConditionalTargetFv
+   __dt__Q3_3ATP2DS19TrackDataItemTargetFv
+   __dt__Q3_3ATP6Kernel12AbstractModeFv
+   __dt__Q3_3ATP6Kernel14ModeRequestSeqFv
+   __dt__Q3_3ATP6Kernel17EmergencyAlertSeqFv
+   __dt__Q3_3ATP7Support18CrossCompareObjectFv
+   __dt__Q3_3ATP7Support18CrossCompareOutputFv
+   __dt__Q3_3ATP7Support20AbstractCrossCompareFv
+   __dt__Q3_3ATP7Support25CrossCompareOutputChannelFv
+   __dt__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFv
+   __dt__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_iFv
+   __dt__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UcFv
+   __dt__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UiFv
+   __dt__Q3_3ATP7Support32CrossCompareSimpleType__tm__3_UsFv
+   __nw__Q3_3ATP2DS11SpeedTargetSFUi
+   __nw__Q3_3ATP2DS13PrimaryTargetSFUi
+   __nw__Q3_3ATP2DS14GradientTargetSFUi
+   __nw__Q3_3ATP2DS16SupervisedTargetSFUi
+   __nw__Q3_3ATP2DS19TrackDataItemTargetSFUi
+   addCrossCompareData__Q3_3ATP7Support20AbstractCrossCompareFPQ3_3ATP7Support18CrossCompareObject
+   aosHalt__3ATCFPCciT1
+   availableMemPool__Q3_3ATP2DS11SpeedTargetSFv
+   availableMemPool__Q3_3ATP2DS13PrimaryTargetSFv
+   availableMemPool__Q3_3ATP2DS14GradientTargetSFv
+   availableMemPool__Q3_3ATP2DS16SupervisedTargetSFv
+   availableMemPool__Q3_3ATP2DS19TrackDataItemTargetSFv
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC18AbstractAnalyzerIFSFv
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   corePtr__Q3_3ATP2DS14AbstractTSetupSFv
+   corePtr__Q3_3ATP2IO14AbstractLocoIOSFv
+   corePtr__Q3_3ATP3Pos16AbstractOdometrySFv
+   corePtr__Q3_3ATP4Supv13AbstractBrakeSFv
+   corePtr__Q3_3ATP6Kernel19AbstractModeControlSFv
+   corePtr__Q3_3ATP7Support20AbstractCrossCompareSFv
+   createSafetyHaltEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10EBReleaserT1PCcb
+   getCeilingSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getCurrentMode__Q3_3ATP6Kernel19AbstractModeControlCFv
+   getDirection__Q3_3ATP2DS10BaseTargetCFv
+   getEBSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getEbApplied__Q3_3ATP4Supv13AbstractBrakeCFv
+   getEbCeilingSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getEmergencyStopActiveAlert__Q3_3ATP2IO14AbstractLocoIOCFv
+   getFirstWarningSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getFreeRolling__Q3_3ATP6Kernel19AbstractModeControlCFv
+   getFwCeilingSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getGradient__Q3_3ATP2DS16SupervisedTargetCFv
+   getOdometer__Q3_3ATP2DS10BaseTargetCFv
+   getParentTarget__Q3_3ATP2DS16SupervisedTargetFv
+   getPosition__Q3_3ATP2DS10BaseTargetCFv
+   getRouteType__Q3_3ATP2DS10BaseTargetCFv
+   getRouteType__Q3_3ATP2DS13PrimaryTargetCFv
+   getSBSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getSbCeilingSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getSecondWarningSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getSupervisedTargetType__Q3_3ATP2DS16SupervisedTargetCFv
+   getSwCeilingSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getTargetId__Q3_3ATP2DS10BaseTargetCFv
+   getTargetType__Q3_3ATP2DS10BaseTargetCFv
+   getTraceDetails__Q2_3ATC14TraceInterfaceCFRUcRb
+   getTrainSetup__Q3_3ATP2DS14AbstractTSetupCFv
+   getWriteCrossCompareMaxSize__Q2_3ATC5EventCFv
+   getWriteCrossCompareMaxSize__Q3_3ATP2DS10BaseTargetCFv
+   initMemPoolSize__Q3_3ATP2DS11SpeedTargetSFUi
+   initMemPoolSize__Q3_3ATP2DS13PrimaryTargetSFUi
+   initMemPoolSize__Q3_3ATP2DS14GradientTargetSFUi
+   initMemPoolSize__Q3_3ATP2DS16SupervisedTargetSFUi
+   initMemPoolSize__Q3_3ATP2DS19TrackDataItemTargetSFUi
+   isTextMatch__3ATCFPCcT1Ui
+   isTrainStandStill__Q3_3ATP3Pos16AbstractOdometryCFv
+   minimum__Q2_3ATC7ATCMathSFUiT1
+   registerMeasurement__Q2_3ATC18AbstractAnalyzerIFFPCcN21UiT4PCUi
+   registerMeasurement__Q2_3ATC18AbstractAnalyzerIFFPCcN21iT4PCi
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+   resetStatusChanged__Q3_3ATP2DS17ConditionalTargetFv
+   setDynamicText__Q2_3ATC5EventCFUi
+   setGradient__Q3_3ATP2DS16SupervisedTargetFi
+   setSupervised__Q3_3ATP2DS17ConditionalTargetFb
+   vfwPutU32
+   vfwVisitCheckPoint
+   writeCrossCompare__Q2_3ATC5EventCFP14VFW_BufferNode
+   writeCrossCompare__Q3_3ATP2DS10BaseTargetCFP14VFW_BufferNode
+   writeToLog__Q2_3ATC13BaseComponentCFQ2_3ATC8LogLevelPCcT2i
+   writeToLog__Q2_3ATC13BaseComponentCFQ2_3ATC8LogLevelPCcUiT2i
+   writeWithNewline__Q2_3ATC15AbstractConsoleFPCc
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)100U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)100U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::IO::BTMTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATC::GPListIterator<ATP::DS::BaseTarget *, (unsigned short)100U, ATP::DS::BaseTarget *&, ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)100U, ATP::DS::TargetErrorHandler> *, ATP::DS::TargetErrorHandler>
+   ATC::GPListIterator<ATP::DS::BaseTarget *, (unsigned short)100U, ATP::DS::BaseTarget *const &, const ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)100U, ATP::DS::TargetErrorHandler> *, ATP::DS::TargetErrorHandler>
+   ATC::GPListIterator<ATP::DS::SupervisedTarget *, (unsigned short)100U, ATP::DS::SupervisedTarget *&, ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)100U, ATP::DS::TargetErrorHandler> *, ATP::DS::TargetErrorHandler>
+   ATC::GPListIterator<ATP::DS::SupervisedTarget *, (unsigned short)100U, ATP::DS::SupervisedTarget *const &, const ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)100U, ATP::DS::TargetErrorHandler> *, ATP::DS::TargetErrorHandler>
+   ATC::GPListRevIterator<ATP::DS::BaseTarget *, (unsigned short)100U, ATP::DS::BaseTarget *&, ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)100U, ATP::DS::TargetErrorHandler> *, ATP::DS::TargetErrorHandler>
+   ATC::GPListRevIterator<ATP::DS::SupervisedTarget *, (unsigned short)100U, ATP::DS::SupervisedTarget *&, ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)100U, ATP::DS::TargetErrorHandler> *, ATP::DS::TargetErrorHandler>
+   ATP::DS::AbstractTargets
+   ATP::DS::ErrorHandler
+   ATP::DS::TargetErrorHandler
+   ATP::IO::ErrorHandler
+   ATP::Kernel::ConfigModeRequestSeq
+   ATP::Kernel::DriverLoginSeq
+   ATP::Kernel::PosModeRequestSeq
+   ATP::Kernel::ShuntModeRequestSeq
+   ATP::Kernel::YardModeRequestSeq
+   ATP::Support::CrossCompareComplex<ATC::Event>
+   ATP::Support::CrossCompareComplex<ATP::DS::AbstractTargets>
+   ATP::Support::CrossCompareEnum<ATP::TravelDir>
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::AbstractTargets
+INCLUDES
+END_RECORD abstract_targets.cpp
+BEGIN_RECORD base_target.cpp
+CHECKSUM  1152542898
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATP2DS10BaseTargetFQ4_3ATP2DS10BaseTarget14CoreTargetTypeRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __dt__Q3_3ATP2DS10BaseTargetFv
+   getDirection__Q3_3ATP2DS10BaseTargetCFv
+   getLocGradValue__Q3_3ATP2DS10BaseTargetCFv
+   getMATimeout__Q3_3ATP2DS10BaseTargetCFv
+   getOdometer__Q3_3ATP2DS10BaseTargetCFv
+   getPosition__Q3_3ATP2DS10BaseTargetCFv
+   getRouteType__Q3_3ATP2DS10BaseTargetCFv
+   getSpeedChangeReason__Q3_3ATP2DS10BaseTargetCFv
+   getSpeedChange__Q3_3ATP2DS10BaseTargetCFv
+   getTDIType__Q3_3ATP2DS10BaseTargetCFv
+   getTargetId__Q3_3ATP2DS10BaseTargetCFv
+   getTargetType__Q3_3ATP2DS10BaseTargetCFv
+   getWriteCrossCompareMaxSize__Q3_3ATP2DS10BaseTargetCFv
+   getnextUniqueIdValue__34__N_18_TU_base_target_cpp_07638f1eFv
+   isPassedTargetHandled__Q3_3ATP2DS10BaseTargetCFv
+   isTargetPassed__Q3_3ATP2DS10BaseTargetCFv
+   writeCrossCompare__Q3_3ATP2DS10BaseTargetCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR148____ct__Q3_3ATP2DS16SupervisedTargetFQ4_3ATP2DSJ16J20SupervisedTargetTypePQ3_3ATP2DS10BaseTargetRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q3_3ATP2DS10BaseTargetFv
+   __ct__Q3_3ATP2DS11SpeedTargetFUiT1RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS11SpeedTargetFv
+   __ct__Q3_3ATP2DS13PrimaryTargetFUiUcT1T2RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriPCcQ2_3ATP12LocationTypeSc
+   __ct__Q3_3ATP2DS13PrimaryTargetFv
+   __ct__Q3_3ATP2DS14GradientTargetFScRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS14GradientTargetFv
+   __ct__Q3_3ATP2DS15AbstractTargetsFv
+   __ct__Q3_3ATP2DS16SupervisedTargetFv
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFUcRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriUs
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFv
+   __ct__Q3_3ATP3Pos16AbstractPositionFv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __dt__Q3_3ATP2DS11SpeedTargetFv
+   __dt__Q3_3ATP2DS13PrimaryTargetFv
+   __dt__Q3_3ATP2DS14GradientTargetFv
+   __dt__Q3_3ATP2DS16SupervisedTargetFv
+   __dt__Q3_3ATP2DS19TrackDataItemTargetFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   corePtr__Q3_3ATP2DS15AbstractTargetsSFv
+   corePtr__Q3_3ATP3Pos16AbstractPositionSFv
+   getLeadingPosOdo__Q3_3ATP3Pos16AbstractPositionCFv
+   getSupposedTravelDir__Q3_3ATP2DS15AbstractTargetsCFv
+   getWriteCrossCompareMaxSizeSubClass__Q3_3ATP2DS11SpeedTargetCFv
+   getWriteCrossCompareMaxSizeSubClass__Q3_3ATP2DS13PrimaryTargetCFv
+   getWriteCrossCompareMaxSizeSubClass__Q3_3ATP2DS14GradientTargetCFv
+   getWriteCrossCompareMaxSizeSubClass__Q3_3ATP2DS16SupervisedTargetCFv
+   getWriteCrossCompareMaxSizeSubClass__Q3_3ATP2DS19TrackDataItemTargetCFv
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+   vfwPutI32
+   vfwPutU16
+   vfwPutU32
+   vfwPutU8
+   writeCrossCompareSubClass__Q3_3ATP2DS11SpeedTargetCFP14VFW_BufferNode
+   writeCrossCompareSubClass__Q3_3ATP2DS13PrimaryTargetCFP14VFW_BufferNode
+   writeCrossCompareSubClass__Q3_3ATP2DS14GradientTargetCFP14VFW_BufferNode
+   writeCrossCompareSubClass__Q3_3ATP2DS16SupervisedTargetCFP14VFW_BufferNode
+   writeCrossCompareSubClass__Q3_3ATP2DS19TrackDataItemTargetCFP14VFW_BufferNode
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)153U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)462U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::IO::BtmTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATP::DS::BaseTarget
+   ATP::DS::TargetErrorHandler
+   ATP::IO::ErrorHandler
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::BaseTarget
+INCLUDES
+END_RECORD base_target.cpp
+BEGIN_RECORD conditional_target.cpp
+CHECKSUM 2289070400
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATP2DS17ConditionalTargetFbUiRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __dt__Q3_3ATP2DS17ConditionalTargetFv
+   __vcrt_va_start_verify_argument_type__tm__25_P21__crt_locale_pointers__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__26_CP21__crt_locale_pointers__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__4_PCw__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__5_CPCc__Fv_v
+   __vcrt_va_start_verify_argument_type__tm__5_CPCw__Fv_v
+   addRelatedSuperviseTargets__Q3_3ATP2DS17ConditionalTargetFv
+   getSpeedChange__Q3_3ATP2DS17ConditionalTargetCFv
+   getSupervisedStatus__Q3_3ATP2DS17ConditionalTargetCFv
+   isStatusChanged__Q3_3ATP2DS17ConditionalTargetCFv
+   resetStatusChanged__Q3_3ATP2DS17ConditionalTargetFv
+   setSupervised__Q3_3ATP2DS17ConditionalTargetFb
+CALLED_OBJECTS
+   _Alloc_proxy__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   _Free_proxy__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   _Nw__Q2_3std18_Vb_val__tm__4_Z1ZSFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_type
+   _Orphan_all__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFv
+   _Rechecked__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFPCZ1Z
+   _Unchecked__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZCFv
+   _Xbad_alloc__3stdFv
+   _Xlength_error__3stdFPCc
+   _Xout_of_range__3stdFPCc
+   __CPR101____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC16ConfigMemoryAreaQ3_3ATCJ13J12ItemDatatype
+   __CPR107____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFv
+   __CPR107____dt__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFv
+   __CPR128___Move_alloc__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRQ3_3stdJ51J5_Alty
+   __CPR128____ct__Q2_3ATC16ConfigMemoryAreaFUibPCcT3T1PFP20vfw_i_NvshDescriptor13VFW_NvshError_vPFPJ45JP14VFW_BufferNode_v
+   __CPR129___Copy_alloc__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRCQ3_3stdJ51J5_Alty
+   __CPR134___Move_alloc__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRQ3_3stdJ51J5_Alty
+   __CPR135___Copy_alloc__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRCQ3_3stdJ51J5_Alty
+   __CPR148____ct__Q3_3ATP2DS16SupervisedTargetFQ4_3ATP2DSJ16J20SupervisedTargetTypePQ3_3ATP2DS10BaseTargetRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __CPR149____ct__Q2_3std131_Vector_alloc__tm__109_Q2_3std99_Vec_base_types__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ80JFv
+   __CPR151___Swap_all__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFRQ2_3stdJ18J
+   __CPR153____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFRCQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __CPR157___Swap_all__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFRQ2_3stdJ18J
+   __CPR179____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFEQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __CPR180____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFRCQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc
+   __CPR226____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFEQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_AllocRCQ3_3stdJ141JJ172J
+   __CPR227____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFRCQ2_3std63vector__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_AllocRCQ3_3stdJ142JJ173J
+   __CPR229____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_type
+   __CPR314____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFQ2_3std151initializer_list__tm__126_Q3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc10value_typeRCQ3_3stdJ217JJ248J
+   __CPR356____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_typeRCQ3_3stdJ113J10value_type
+   __CPR403____ct__Q2_3std90vector__tm__76_PQ2_3ATC14TraceInterfaceQ2_3std42allocator__tm__25_PQ2_3ATCJ38JFQ3_3std103_Vector_alloc__tm__82_Q2_3std72_Vec_base_types__tm__49_Z1ZQ3_3std29_Vec_base_types__tm__7_Z1ZZ2Z6_Alloc9size_typeRCQ3_3stdJ113J10value_typeRCQ3_3stdJ181JJ212J
+   __CPR62____ct__Q2_3std18_Vb_val__tm__4_Z1ZFEQ2_3stdJ13J
+   __CPR63____ct__Q2_3std18_Vb_val__tm__4_Z1ZFRCQ2_3stdJ13J
+   __CPR67____ct__Q2_3std18_Vb_val__tm__4_Z1ZFEQ2_3stdJ13JRCZ1Z
+   __CPR68____ct__Q2_3std18_Vb_val__tm__4_Z1ZFRCQ2_3stdJ13JRCZ1Z
+   __ExceptionPtrAssign__FPvPCv
+   __ExceptionPtrCompare__FPCvT1
+   __ExceptionPtrCopyException__FPvPCvT2
+   __ExceptionPtrCopy__FPvPCv
+   __ExceptionPtrCreate__FPv
+   __ExceptionPtrCurrentException__FPv
+   __ExceptionPtrDestroy__FPv
+   __ExceptionPtrRethrow__FPCv
+   __ExceptionPtrSwap__FPvT1
+   __ExceptionPtrToBool__FPCv
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC16ConfigMemoryAreaFv
+   __ct__Q2_3ATC18AbstractConfigBaseFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_100Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q2_3ATP14AbstractConfigFv
+   __ct__Q2_3std18_Vb_val__tm__4_Z1ZFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_typeRCb
+   __ct__Q2_3std18_Vb_val__tm__4_Z1ZFQ4_3std19vector__tm__6_UiZ1Z5_Alty9size_typeRCbRCZ1Z
+   __ct__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFPCZ1ZUi
+   __ct__Q2_3std36_Array_const_iterator__tm__8_Z1ZXZ2ZFv
+   __ct__Q2_3std42allocator__tm__25_PQ2_3ATC14TraceInterfaceFRCQ2_3std20allocator__tm__4_Z1Z
+   __ct__Q2_3std42allocator__tm__25_PQ2_3ATC14TraceInterfaceFv
+   __ct__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFv
+   __ct__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFv
+   __ct__Q2_3std71_Wrap_alloc__tm__52_Q2_3std42allocator__tm__25_PQ2_3ATC14TraceInterfaceFEQ2_3std22_Wrap_alloc__tm__4_Z1Z
+   __ct__Q2_3std71_Wrap_alloc__tm__52_Q2_3std42allocator__tm__25_PQ2_3ATC14TraceInterfaceFRCQ2_3std22_Wrap_alloc__tm__4_Z1Z
+   __ct__Q2_3std71_Wrap_alloc__tm__52_Q2_3std42allocator__tm__25_PQ2_3ATC14TraceInterfaceFv
+   __ct__Q2_3std75_Vector_val__tm__56_Q2_3std46_Simple_types__tm__25_PQ2_3ATC14TraceInterfaceFv
+   __ct__Q3_3ATP2DS10BaseTargetFQ4_3ATP2DS10BaseTarget14CoreTargetTypeRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS10BaseTargetFv
+   __ct__Q3_3ATP2DS11SpeedTargetFUiT1RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS11SpeedTargetFv
+   __ct__Q3_3ATP2DS13PrimaryTargetFUiUcT1T2RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriPCcQ2_3ATP12LocationTypeSc
+   __ct__Q3_3ATP2DS13PrimaryTargetFv
+   __ct__Q3_3ATP2DS14AbstractTracksFv
+   __ct__Q3_3ATP2DS14GradientTargetFScRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS14GradientTargetFv
+   __ct__Q3_3ATP2DS15AbstractTargetsFv
+   __ct__Q3_3ATP2DS16SupervisedTargetFv
+   __ct__Q3_3ATP2DS17ConditionalTargetFv
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFUcRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriUs
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFv
+   __ct__Q3_3ATP2DS5TrackFUsQ2_3ATP9TravelDirT1UiQ2_3ATP6OdoDir
+   __ct__Q3_3ATP2DS5TrackFv
+   __ct__Q3_3ATP2DS6BaliseFUsT1Ui
+   __ct__Q3_3ATP2DS6BaliseFv
+   __ct__tm__11_Z1_2ZZ2_2Z__Q2_3std60_Vector_alloc__tm__39_Q2_3std29_Vec_base_types__tm__7_Z1ZZ2ZFEZ1_2Z
+   __ct__tm__11_Z1_2ZZ2_2Z__Q2_3std63_String_alloc__tm__42_Q2_3std32_String_base_types__tm__7_Z1ZZ3ZFEZ1_2Z
+   __dl__FPv
+   __dl__FPvUi
+   __dt__Q2_3ATC14BaseConfigItemFv
+   __dt__Q2_3std18_Vb_val__tm__4_Z1ZFv
+   __dt__Q3_3ATP2DS10BaseTargetFv
+   __dt__Q3_3ATP2DS11SpeedTargetFv
+   __dt__Q3_3ATP2DS13PrimaryTargetFv
+   __dt__Q3_3ATP2DS14GradientTargetFv
+   __dt__Q3_3ATP2DS16SupervisedTargetFv
+   __dt__Q3_3ATP2DS19TrackDataItemTargetFv
+   __dt__Q3_3ATP2DS5TrackFv
+   __dt__Q3_3ATP2DS6BaliseFv
+   __nw__FUi
+   __nw__FUiRCQ2_3std9nothrow_t
+   __std_exception_copy
+   __std_exception_destroy
+   __vcrt_va_start_verify_argument_type__tm__4_PCc__Fv_v
+   _get_unexpected
+   _m_packssdw
+   _m_packsswb
+   _m_pcmpgtb
+   _m_pcmpgtw
+   _m_punpckhwd
+   _m_punpcklbw
+   _m_punpcklwd
+   _mm_cvt_pi2ps
+   _mm_cvt_ps2pi
+   _mm_movehl_ps
+   _mm_movelh_ps
+   _mm_setzero_ps
+   _mm_setzero_si64
+   addTarget__Q3_3ATP2DS15AbstractTargetsFRCQ3_3ATP2DS16SupervisedTarget
+   aosHalt__3ATCFPCciT1
+   calculateTrackAndPos__Q3_3ATP2DS14AbstractTracksCFi
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATP14AbstractConfigSFv
+   corePtr__Q3_3ATP2DS14AbstractTracksSFv
+   corePtr__Q3_3ATP2DS15AbstractTargetsSFv
+   delAllRelatedSupvTarget__Q3_3ATP2DS15AbstractTargetsFPCQ3_3ATP2DS10BaseTarget
+   getDirection__Q3_3ATP2DS10BaseTargetCFv
+   getEbMargin__Q2_3ATP14AbstractConfigCFv
+   getOdometer__Q3_3ATP2DS10BaseTargetCFv
+   getSbToEbMargin__Q2_3ATP14AbstractConfigCFv
+   memchr
+   memcmp
+   memcpy
+   memmove
+   memset
+   strchr
+   strrchr
+   strstr
+   wcschr
+   wcsrchr
+   wcsstr
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+   npos__Q2_3std78basic_string__tm__58_cQ2_3std20char_traits__tm__2_cQ2_3std18allocator__tm__2_c
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+   nothrow__3std
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)100U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)100U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::IO::BTMTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATP::DS::ConditionalTarget
+   ATP::DS::ErrorHandler
+   ATP::DS::TargetErrorHandler
+   ATP::IO::ErrorHandler
+   ATP::TrackAndPos
+   std::_Bitwise_hash<__int64>
+   std::_Bitwise_hash<__wchar_t>
+   std::_Bitwise_hash<bool>
+   std::_Bitwise_hash<char16_t>
+   std::_Bitwise_hash<char32_t>
+   std::_Bitwise_hash<char>
+   std::_Bitwise_hash<double>
+   std::_Bitwise_hash<float>
+   std::_Bitwise_hash<int>
+   std::_Bitwise_hash<long double>
+   std::_Bitwise_hash<long>
+   std::_Bitwise_hash<short>
+   std::_Bitwise_hash<signed char>
+   std::_Bitwise_hash<unsigned __int64>
+   std::_Bitwise_hash<unsigned char>
+   std::_Bitwise_hash<unsigned long>
+   std::_Bitwise_hash<unsigned short>
+   std::_Bitwise_hash<unsigned>
+   std::_Char_traits<char16_t, unsigned short>
+   std::_Char_traits<char32_t, unsigned>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>, std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>::value_type>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATC::BaseComponent *>>, std::_Vector_val<std::_Simple_types<ATC::BaseComponent *>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATC::TraceInterface *>>, std::_Vector_val<std::_Simple_types<ATC::TraceInterface *>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>, std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>::value_type>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<char>>, std::_String_val<std::_Simple_types<char>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Compressed_pair<std::_Wrap_alloc<std::allocator<const ATC::Event *>>, std::_Vector_val<std::_Simple_types<const ATC::Event *>>, std::integral_constant<bool, true>::value &&!std::integral_constant<bool, false>::value>
+   std::_Container_base0
+   std::_Container_base12
+   std::_Container_proxy
+   std::_Iterator_base0
+   std::_Iterator_base12
+   std::_Lockit
+   std::_String_alloc<std::_String_base_types<char, std::allocator<char>>>
+   std::_String_val<std::_Simple_types<char>>
+   std::_String_val<std::_Simple_types<char>>::_Bxty
+   std::_Vector_alloc<std::_Vec_base_types<ATC::AbstractEventHandler::EventListItem, std::allocator<ATC::AbstractEventHandler::EventListItem>>>
+   std::_Vector_alloc<std::_Vec_base_types<ATC::BaseComponent *, std::allocator<ATC::BaseComponent *>>>
+   std::_Vector_alloc<std::_Vec_base_types<ATC::TraceInterface *, std::allocator<ATC::TraceInterface *>>>
+   std::_Vector_alloc<std::_Vec_base_types<ATP::Pos::AbstractDecode::BaliseInfo, std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>>
+   std::_Vector_alloc<std::_Vec_base_types<const ATC::Event *, std::allocator<const ATC::Event *>>>
+   std::_Vector_val<std::_Simple_types<ATC::BaseComponent *>>
+   std::_Vector_val<std::_Simple_types<ATC::TraceInterface *>>
+   std::_Vector_val<std::_Simple_types<const ATC::Event *>>
+   std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>::value_type>>
+   std::_Vector_val<std::_Simple_types<std::_Wrap_alloc<std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>::value_type>>
+   std::_Wrap_alloc<std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::_Wrap_alloc<std::allocator<ATC::BaseComponent *>>
+   std::_Wrap_alloc<std::allocator<ATC::TraceInterface *>>
+   std::_Wrap_alloc<std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>
+   std::_Wrap_alloc<std::allocator<char>>
+   std::_Wrap_alloc<std::allocator<const ATC::Event *>>
+   std::_Wrap_int
+   std::allocator<ATC::AbstractEventHandler::EventListItem>
+   std::allocator<ATC::BaseComponent *>
+   std::allocator<ATC::TraceInterface *>
+   std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>
+   std::allocator<char>
+   std::allocator<const ATC::Event *>
+   std::allocator<void>
+   std::allocator_traits<std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::allocator_traits<std::allocator<ATC::BaseComponent *>>
+   std::allocator_traits<std::allocator<ATC::TraceInterface *>>
+   std::allocator_traits<std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>
+   std::allocator_traits<std::allocator<char>>
+   std::allocator_traits<std::allocator<const ATC::Event *>>
+   std::bad_alloc
+   std::bad_array_new_length
+   std::bad_exception
+   std::basic_string<char, std::char_traits<char>, std::allocator<char>>
+   std::char_traits<__wchar_t>
+   std::char_traits<char>
+   std::char_traits<unsigned short>
+   std::domain_error
+   std::exception
+   std::exception_ptr
+   std::hash<double>
+   std::hash<float>
+   std::hash<long double>
+   std::initializer_list<bool>
+   std::integral_constant<bool, false>
+   std::integral_constant<bool, true>
+   std::integral_constant<unsigned, 0U>
+   std::integral_constant<unsigned, 1U>
+   std::integral_constant<unsigned, 2U>
+   std::integral_constant<unsigned, 4U>
+   std::integral_constant<unsigned, 8U>
+   std::invalid_argument
+   std::length_error
+   std::logic_error
+   std::nested_exception
+   std::numeric_limits<__int64>
+   std::numeric_limits<__wchar_t>
+   std::numeric_limits<bool>
+   std::numeric_limits<char16_t>
+   std::numeric_limits<char32_t>
+   std::numeric_limits<char>
+   std::numeric_limits<double>
+   std::numeric_limits<float>
+   std::numeric_limits<int>
+   std::numeric_limits<long double>
+   std::numeric_limits<long>
+   std::numeric_limits<short>
+   std::numeric_limits<signed char>
+   std::numeric_limits<unsigned __int64>
+   std::numeric_limits<unsigned char>
+   std::numeric_limits<unsigned long>
+   std::numeric_limits<unsigned short>
+   std::numeric_limits<unsigned>
+   std::out_of_range
+   std::overflow_error
+   std::range_error
+   std::runtime_error
+   std::underflow_error
+   std::vector<ATC::AbstractEventHandler::EventListItem, std::allocator<ATC::AbstractEventHandler::EventListItem>>
+   std::vector<ATC::BaseComponent *, std::allocator<ATC::BaseComponent *>>
+   std::vector<ATC::TraceInterface *, std::allocator<ATC::TraceInterface *>>
+   std::vector<ATP::Pos::AbstractDecode::BaliseInfo, std::allocator<ATP::Pos::AbstractDecode::BaliseInfo>>
+   std::vector<const ATC::Event *, std::allocator<const ATC::Event *>>
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::ConditionalTarget
+INCLUDES
+END_RECORD conditional_target.cpp
+BEGIN_RECORD gradient_target.cpp
+CHECKSUM  4268527945
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATP2DS14GradientTargetFScRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __dl__Q3_3ATP2DS14GradientTargetSFPv
+   __dt__Q3_3ATP2DS14GradientTargetFv
+   __nw__Q3_3ATP2DS14GradientTargetSFUi
+   availableMemPool__Q3_3ATP2DS14GradientTargetSFv
+   getTrackGradient__Q3_3ATP2DS14GradientTargetFv
+   getWriteCrossCompareMaxSizeSubClass__Q3_3ATP2DS14GradientTargetCFv
+   initMemPoolSize__Q3_3ATP2DS14GradientTargetSFUi
+   isPassedTargetHandled__Q3_3ATP2DS14GradientTargetCFv
+   isTargetPassed__Q3_3ATP2DS14GradientTargetCFv
+   writeCrossCompareSubClass__Q3_3ATP2DS14GradientTargetCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR148____ct__Q3_3ATP2DS16SupervisedTargetFQ4_3ATP2DSJ16J20SupervisedTargetTypePQ3_3ATP2DS10BaseTargetRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __ct__Q3_3ATP2DS10BaseTargetFQ4_3ATP2DS10BaseTarget14CoreTargetTypeRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS10BaseTargetFv
+   __ct__Q3_3ATP2DS11SpeedTargetFUiT1RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS11SpeedTargetFv
+   __ct__Q3_3ATP2DS13PrimaryTargetFUiUcT1T2RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriPCcQ2_3ATP12LocationTypeSc
+   __ct__Q3_3ATP2DS13PrimaryTargetFv
+   __ct__Q3_3ATP2DS14GradientTargetFv
+   __ct__Q3_3ATP2DS15AbstractTargetsFv
+   __ct__Q3_3ATP2DS16SupervisedTargetFv
+   __ct__Q3_3ATP2DS17ConditionalTargetFbUiRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS17ConditionalTargetFv
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFUcRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriUs
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFv
+   __ct__Q3_3ATP3Pos16AbstractPositionFv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __dt__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __dt__Q3_3ATP2DS10BaseTargetFv
+   __dt__Q3_3ATP2DS11SpeedTargetFv
+   __dt__Q3_3ATP2DS13PrimaryTargetFv
+   __dt__Q3_3ATP2DS16SupervisedTargetFv
+   __dt__Q3_3ATP2DS17ConditionalTargetFv
+   __dt__Q3_3ATP2DS19TrackDataItemTargetFv
+   allocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   corePtr__Q3_3ATP2DS15AbstractTargetsSFv
+   corePtr__Q3_3ATP3Pos16AbstractPositionSFv
+   createPool__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFUiUs
+   deAllocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFPv
+   getDirection__Q3_3ATP2DS10BaseTargetCFv
+   getNumberOfFreeBlocks__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   getOdometer__Q3_3ATP2DS10BaseTargetCFv
+   getSafeTrailingPosOdo__Q3_3ATP3Pos16AbstractPositionCFv
+   getSupposedTravelDir__Q3_3ATP2DS15AbstractTargetsCFv
+   poolBlockSize__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   poolCreatedOk__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+   setCurTrackGradient__Q3_3ATP2DS15AbstractTargetsFi
+   vfwPutI32
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   memPool__38__N_22_TU_gradient_target_cpp_9aa8641f
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)153U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)462U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::IO::BtmTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATP::DS::GradientTarget
+   ATP::DS::TargetErrorHandler
+   ATP::IO::ErrorHandler
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::GradientTarget
+INCLUDES
+END_RECORD gradient_target.cpp
+BEGIN_RECORD primary_target.cpp
+CHECKSUM  4088214833
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATP2DS13PrimaryTargetFUiUcT1T2RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriPCcQ2_3ATP12LocationTypeSc
+   __dl__Q3_3ATP2DS13PrimaryTargetSFPv
+   __dt__Q3_3ATP2DS13PrimaryTargetFv
+   __nw__Q3_3ATP2DS13PrimaryTargetSFUi
+   addRelatedSuperviseTargets__Q3_3ATP2DS13PrimaryTargetFUi
+   availableMemPool__Q3_3ATP2DS13PrimaryTargetSFv
+   getLocGradValue__Q3_3ATP2DS13PrimaryTargetCFv
+   getLocationName__Q3_3ATP2DS13PrimaryTargetCFPc
+   getLocationType__Q3_3ATP2DS13PrimaryTargetCFv
+   getMAMargin__Q3_3ATP2DS13PrimaryTargetCFv
+   getMATimeoutTimeStamp__Q3_3ATP2DS13PrimaryTargetCFv
+   getMATimeout__Q3_3ATP2DS13PrimaryTargetCFv
+   getRouteType__Q3_3ATP2DS13PrimaryTargetCFv
+   getWriteCrossCompareMaxSizeSubClass__Q3_3ATP2DS13PrimaryTargetCFv
+   initMemPoolSize__Q3_3ATP2DS13PrimaryTargetSFUi
+   isPassedTargetHandled__Q3_3ATP2DS13PrimaryTargetCFv
+   isTargetPassed__Q3_3ATP2DS13PrimaryTargetCFv
+   writeCrossCompareSubClass__Q3_3ATP2DS13PrimaryTargetCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR148____ct__Q3_3ATP2DS16SupervisedTargetFQ4_3ATP2DSJ16J20SupervisedTargetTypePQ3_3ATP2DS10BaseTargetRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __CPR71____ct__Q3_3ATP4Supv17BrakeCalculationsFRCQ3_3ATPJ13JJ18J
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __ct__Q3_3ATP2DS10BaseTargetFQ4_3ATP2DS10BaseTarget14CoreTargetTypeRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS10BaseTargetFv
+   __ct__Q3_3ATP2DS11SpeedTargetFUiT1RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS11SpeedTargetFv
+   __ct__Q3_3ATP2DS13PrimaryTargetFv
+   __ct__Q3_3ATP2DS14AbstractTracksFv
+   __ct__Q3_3ATP2DS14GradientTargetFScRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS14GradientTargetFv
+   __ct__Q3_3ATP2DS15AbstractTargetsFv
+   __ct__Q3_3ATP2DS16SupervisedTargetFv
+   __ct__Q3_3ATP2DS17ConditionalTargetFbUiRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS17ConditionalTargetFv
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFUcRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriUs
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFv
+   __ct__Q3_3ATP2DS5TrackFUsQ2_3ATP9TravelDirT1UiQ2_3ATP6OdoDir
+   __ct__Q3_3ATP2DS5TrackFv
+   __ct__Q3_3ATP2DS6BaliseFUsT1Ui
+   __ct__Q3_3ATP2DS6BaliseFv
+   __ct__Q3_3ATP3Pos16AbstractOdometryFv
+   __ct__Q3_3ATP3Pos16AbstractPositionFv
+   __ct__Q3_3ATP4Supv17BrakeCalculationsFv
+   __ct__Q3_3ATP6Kernel12AbstractModeFv
+   __ct__Q3_3ATP6Kernel14DriverLoginSeqFv
+   __ct__Q3_3ATP6Kernel14ModeRequestSeqFv
+   __ct__Q3_3ATP6Kernel17EmergencyAlertSeqFv
+   __ct__Q3_3ATP6Kernel19AbstractModeControlFv
+   __ct__Q3_3ATP7Support18CrossCompareOutputFv
+   __ct__Q3_3ATP7Support25CrossCompareOutputChannelFv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __dt__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __dt__Q3_3ATP2DS10BaseTargetFv
+   __dt__Q3_3ATP2DS11SpeedTargetFv
+   __dt__Q3_3ATP2DS14GradientTargetFv
+   __dt__Q3_3ATP2DS16SupervisedTargetFv
+   __dt__Q3_3ATP2DS17ConditionalTargetFv
+   __dt__Q3_3ATP2DS19TrackDataItemTargetFv
+   __dt__Q3_3ATP2DS5TrackFv
+   __dt__Q3_3ATP2DS6BaliseFv
+   __dt__Q3_3ATP6Kernel12AbstractModeFv
+   __dt__Q3_3ATP6Kernel14ModeRequestSeqFv
+   __dt__Q3_3ATP6Kernel17EmergencyAlertSeqFv
+   __dt__Q3_3ATP7Support18CrossCompareOutputFv
+   __dt__Q3_3ATP7Support25CrossCompareOutputChannelFv
+   addTarget__Q3_3ATP2DS15AbstractTargetsFRCQ3_3ATP2DS16SupervisedTarget
+   allocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   aosHalt__3ATCFPCciT1
+   calcAccDeaccDistance__Q3_3ATP4Supv17BrakeCalculationsCFUiN21i
+   calculateTrackAndPos__Q3_3ATP2DS14AbstractTracksCFi
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   corePtr__Q3_3ATP2DS14AbstractTracksSFv
+   corePtr__Q3_3ATP2DS15AbstractTargetsSFv
+   corePtr__Q3_3ATP3Pos16AbstractOdometrySFv
+   corePtr__Q3_3ATP3Pos16AbstractPositionSFv
+   corePtr__Q3_3ATP6Kernel19AbstractModeControlSFv
+   createPool__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFUiUs
+   deAllocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFPv
+   findSupvTargetOdo__Q3_3ATP4Supv17BrakeCalculationsCFQ2_3ATP9TravelDiriUiN23
+   get1stwarnCurveDelay__Q3_3ATP4Supv17BrakeCalculationsCFv
+   get2ndwarnCurveDelay__Q3_3ATP4Supv17BrakeCalculationsCFv
+   getCurrentMode__Q3_3ATP6Kernel19AbstractModeControlCFv
+   getDirection__Q3_3ATP2DS10BaseTargetCFv
+   getEBCurveDelay__Q3_3ATP4Supv17BrakeCalculationsCFv
+   getLeadingPosOdo__Q3_3ATP3Pos16AbstractPositionCFv
+   getNumberOfFreeBlocks__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   getOdometer__Q3_3ATP2DS10BaseTargetCFv
+   getSBCurveDelay__Q3_3ATP4Supv17BrakeCalculationsCFv
+   getSupposedTravelDir__Q3_3ATP2DS15AbstractTargetsCFv
+   instance__Q3_3ATP4Supv17BrakeCalculationsSFv
+   isTrainStandStill__Q3_3ATP3Pos16AbstractOdometryCFv
+   poolBlockSize__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   poolCreatedOk__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+   setGradient__Q3_3ATP2DS16SupervisedTargetFi
+   vfwGetReferenceTime
+   vfwPutI64
+   vfwPutU32
+   vfwPutU8
+   vfw_strlcpy
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   memPool__37__N_21_TU_primary_target_cpp_e8b97c75
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)153U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)462U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::IO::BtmTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATP::DS::ErrorHandler
+   ATP::DS::PrimaryTarget
+   ATP::DS::TargetErrorHandler
+   ATP::IO::ErrorHandler
+   ATP::Kernel::ConfigModeRequestSeq
+   ATP::Kernel::DriverLoginSeq
+   ATP::Kernel::PosModeRequestSeq
+   ATP::Kernel::ShuntModeRequestSeq
+   ATP::Kernel::YardModeRequestSeq
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::PrimaryTarget
+INCLUDES
+END_RECORD primary_target.cpp
+BEGIN_RECORD speed_target.cpp
+CHECKSUM  960558848
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATP2DS11SpeedTargetFUiT1RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __dl__Q3_3ATP2DS11SpeedTargetSFPv
+   __dt__Q3_3ATP2DS11SpeedTargetFv
+   __nw__Q3_3ATP2DS11SpeedTargetSFUi
+   addRelatedSuperviseTargets__Q3_3ATP2DS11SpeedTargetFUii
+   availableMemPool__Q3_3ATP2DS11SpeedTargetSFv
+   calcSupTargOdoOffset__Q3_3ATP2DS11SpeedTargetCFUiT1iT3
+   getSpeedChangeReason__Q3_3ATP2DS11SpeedTargetCFv
+   getSpeedChange__Q3_3ATP2DS11SpeedTargetCFv
+   getWriteCrossCompareMaxSizeSubClass__Q3_3ATP2DS11SpeedTargetCFv
+   initMemPoolSize__Q3_3ATP2DS11SpeedTargetSFUi
+   isPassedTargetHandled__Q3_3ATP2DS11SpeedTargetCFv
+   writeCrossCompareSubClass__Q3_3ATP2DS11SpeedTargetCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR148____ct__Q3_3ATP2DS16SupervisedTargetFQ4_3ATP2DSJ16J20SupervisedTargetTypePQ3_3ATP2DS10BaseTargetRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __CPR71____ct__Q3_3ATP4Supv17BrakeCalculationsFRCQ3_3ATPJ13JJ18J
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC67GPList__tm__53_PQ3_3ATP2DS5TrackXCUsL_3_100Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC68GPList__tm__54_PQ3_3ATP2DS6BaliseXCUsL_3_200Q3_3ATP2DS12ErrorHandlerFv
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q2_3ATC7ATCMathFRCQ2_3ATC7ATCMath
+   __ct__Q2_3ATC7ATCMathFv
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __ct__Q3_3ATP2DS10BaseTargetFQ4_3ATP2DS10BaseTarget14CoreTargetTypeRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS10BaseTargetFv
+   __ct__Q3_3ATP2DS10TrainSetupFv
+   __ct__Q3_3ATP2DS11SpeedTargetFv
+   __ct__Q3_3ATP2DS12VehicleSetupFv
+   __ct__Q3_3ATP2DS13PrimaryTargetFUiUcT1T2RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriPCcQ2_3ATP12LocationTypeSc
+   __ct__Q3_3ATP2DS13PrimaryTargetFv
+   __ct__Q3_3ATP2DS14AbstractTSetupFv
+   __ct__Q3_3ATP2DS14AbstractTracksFv
+   __ct__Q3_3ATP2DS14GradientTargetFScRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS14GradientTargetFv
+   __ct__Q3_3ATP2DS15AbstractTargetsFv
+   __ct__Q3_3ATP2DS16SupervisedTargetFv
+   __ct__Q3_3ATP2DS17ConditionalTargetFbUiRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS17ConditionalTargetFv
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFUcRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriUs
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFv
+   __ct__Q3_3ATP2DS5TrackFUsQ2_3ATP9TravelDirT1UiQ2_3ATP6OdoDir
+   __ct__Q3_3ATP2DS5TrackFv
+   __ct__Q3_3ATP2DS6BaliseFUsT1Ui
+   __ct__Q3_3ATP2DS6BaliseFv
+   __ct__Q3_3ATP4Supv17BrakeCalculationsFv
+   __ct__Q4_3ATP2DS14AbstractTSetup17TrainSetupStorageFv
+   __ct__Q4_3ATP2DS14AbstractTSetup19VehicleSetupStorageFv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __dt__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __dt__Q3_3ATP2DS10BaseTargetFv
+   __dt__Q3_3ATP2DS10TrainSetupFv
+   __dt__Q3_3ATP2DS12VehicleSetupFv
+   __dt__Q3_3ATP2DS13PrimaryTargetFv
+   __dt__Q3_3ATP2DS14GradientTargetFv
+   __dt__Q3_3ATP2DS16SupervisedTargetFv
+   __dt__Q3_3ATP2DS17ConditionalTargetFv
+   __dt__Q3_3ATP2DS19TrackDataItemTargetFv
+   __dt__Q3_3ATP2DS5TrackFv
+   __dt__Q3_3ATP2DS6BaliseFv
+   addTarget__Q3_3ATP2DS15AbstractTargetsFRCQ3_3ATP2DS16SupervisedTarget
+   allocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   aosHalt__3ATCFPCciT1
+   calcDeceleration__Q3_3ATP4Supv17BrakeCalculationsCFiT1
+   calcEmergencyBrakeLimitMargin__Q3_3ATP4Supv17BrakeCalculationsCFUi
+   calcServiceBrakeLimitMargin__Q3_3ATP4Supv17BrakeCalculationsCFUi
+   calcWarningLimitMargin__Q3_3ATP4Supv17BrakeCalculationsCFUi
+   calculateTrackAndPos__Q3_3ATP2DS14AbstractTracksCFi
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   corePtr__Q3_3ATP2DS14AbstractTSetupSFv
+   corePtr__Q3_3ATP2DS14AbstractTracksSFv
+   corePtr__Q3_3ATP2DS15AbstractTargetsSFv
+   createPool__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFUiUs
+   deAllocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFPv
+   get1stwarnCurveDelay__Q3_3ATP4Supv17BrakeCalculationsCFv
+   get2ndwarnCurveDelay__Q3_3ATP4Supv17BrakeCalculationsCFv
+   getDirection__Q3_3ATP2DS10BaseTargetCFv
+   getEBCurveDelay__Q3_3ATP4Supv17BrakeCalculationsCFv
+   getNumberOfFreeBlocks__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   getOdometer__Q3_3ATP2DS10BaseTargetCFv
+   getPosition__Q3_3ATP2DS10BaseTargetCFv
+   getSBCurveDelay__Q3_3ATP4Supv17BrakeCalculationsCFv
+   getWorstBrakeabilityInRange__Q3_3ATP2DS14AbstractTSetupCFUiT1
+   instance__Q2_3ATC7ATCMathSFv
+   instance__Q3_3ATP4Supv17BrakeCalculationsSFv
+   minimum__Q2_3ATC7ATCMathSFiT1
+   poolBlockSize__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   poolCreatedOk__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+   setCurCeilingSpeed__Q3_3ATP2DS15AbstractTargetsFUi
+   signDiv__Q2_3ATC7ATCMathCFiT1PCcT1
+   signMul__Q2_3ATC7ATCMathCFUiT1PCci
+   signMul__Q2_3ATC7ATCMathCFUiiPCcT2
+   signMul__Q2_3ATC7ATCMathCFiT1PCcT1
+   signMul__Q2_3ATC7ATCMathCFiUiPCcT1
+   vfwPutU32
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   memPool__35__N_19_TU_speed_target_cpp_728fb739
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::Balise *, (unsigned short)200U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)153U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)462U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::Track *, (unsigned short)100U, ATP::DS::ErrorHandler>
+   ATC::GPList<ATP::IO::BtmTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATP::DS::ErrorHandler
+   ATP::DS::SpeedTarget
+   ATP::DS::TargetErrorHandler
+   ATP::IO::ErrorHandler
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::SpeedTarget
+INCLUDES
+END_RECORD speed_target.cpp
+BEGIN_RECORD supervised_target.cpp
+CHECKSUM  1603159010
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __CPR148____ct__Q3_3ATP2DS16SupervisedTargetFQ4_3ATP2DSJ16J20SupervisedTargetTypePQ3_3ATP2DS10BaseTargetRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __dl__Q3_3ATP2DS16SupervisedTargetSFPv
+   __dt__Q3_3ATP2DS16SupervisedTargetFv
+   __nw__Q3_3ATP2DS16SupervisedTargetSFUi
+   availableMemPool__Q3_3ATP2DS16SupervisedTargetSFv
+   getCeilingSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getEBSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getEbCeilingSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getFirstWarningSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getFwCeilingSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getGradient__Q3_3ATP2DS16SupervisedTargetCFv
+   getParentTarget__Q3_3ATP2DS16SupervisedTargetFv
+   getSBSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getSbCeilingSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getSecondWarningSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getSupervisedTargetType__Q3_3ATP2DS16SupervisedTargetCFv
+   getSwCeilingSpeed__Q3_3ATP2DS16SupervisedTargetCFv
+   getWriteCrossCompareMaxSizeSubClass__Q3_3ATP2DS16SupervisedTargetCFv
+   initMemPoolSize__Q3_3ATP2DS16SupervisedTargetSFUi
+   isGradientValid__Q3_3ATP2DS16SupervisedTargetCFv
+   isPassedTargetHandled__Q3_3ATP2DS16SupervisedTargetCFv
+   isTargetPassed__Q3_3ATP2DS16SupervisedTargetCFv
+   setCeilingSpeed__Q3_3ATP2DS16SupervisedTargetFUi
+   setEBSpeed__Q3_3ATP2DS16SupervisedTargetFUi
+   setEbCeilingSpeed__Q3_3ATP2DS16SupervisedTargetFUi
+   setFirstWarningSpeed__Q3_3ATP2DS16SupervisedTargetFUi
+   setFwCeilingSpeed__Q3_3ATP2DS16SupervisedTargetFUi
+   setGradient__Q3_3ATP2DS16SupervisedTargetFi
+   setSBSpeed__Q3_3ATP2DS16SupervisedTargetFUi
+   setSbCeilingSpeed__Q3_3ATP2DS16SupervisedTargetFUi
+   setSecondWarningSpeed__Q3_3ATP2DS16SupervisedTargetFUi
+   setSwCeilingSpeed__Q3_3ATP2DS16SupervisedTargetFUi
+   writeCrossCompareSubClass__Q3_3ATP2DS16SupervisedTargetCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR95____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC10ConfigFileQ3_3ATCJ13J12ItemDatatype
+   __ct__Q2_3ATC10ConfigFileFUibPCcT3T1UcT6
+   __ct__Q2_3ATC10ConfigFileFv
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC18AbstractConfigBaseFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q2_3ATP14AbstractConfigFv
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __ct__Q3_3ATP2DS10BaseTargetFQ4_3ATP2DS10BaseTarget14CoreTargetTypeRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS10BaseTargetFv
+   __ct__Q3_3ATP2DS11SpeedTargetFUiT1RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS11SpeedTargetFv
+   __ct__Q3_3ATP2DS13PrimaryTargetFUiUcT1T2RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriPCcQ2_3ATP12LocationTypeSc
+   __ct__Q3_3ATP2DS13PrimaryTargetFv
+   __ct__Q3_3ATP2DS14GradientTargetFScRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS14GradientTargetFv
+   __ct__Q3_3ATP2DS15AbstractTargetsFv
+   __ct__Q3_3ATP2DS16SupervisedTargetFv
+   __ct__Q3_3ATP2DS17ConditionalTargetFbUiRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS17ConditionalTargetFv
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFUcRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriUs
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __dt__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __dt__Q3_3ATP2DS10BaseTargetFv
+   __dt__Q3_3ATP2DS11SpeedTargetFv
+   __dt__Q3_3ATP2DS13PrimaryTargetFv
+   __dt__Q3_3ATP2DS14GradientTargetFv
+   __dt__Q3_3ATP2DS17ConditionalTargetFv
+   __dt__Q3_3ATP2DS19TrackDataItemTargetFv
+   allocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   corePtr__Q2_3ATP14AbstractConfigSFv
+   corePtr__Q3_3ATP2DS15AbstractTargetsSFv
+   createPool__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFUiUs
+   deAllocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFPv
+   getNumberOfFreeBlocks__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   getReleaseSpeed__Q2_3ATP14AbstractConfigCFv
+   isTargetPassed__Q3_3ATP2DS10BaseTargetCFv
+   isTargetPassed__Q3_3ATP2DS13PrimaryTargetCFv
+   isTargetPassed__Q3_3ATP2DS14GradientTargetCFv
+   poolBlockSize__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   poolCreatedOk__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+   setCurGradient__Q3_3ATP2DS15AbstractTargetsFi
+   setCurrEbCeilingSpeed__Q3_3ATP2DS15AbstractTargetsFUi
+   setCurrFwCeilingSpeed__Q3_3ATP2DS15AbstractTargetsFUi
+   setCurrSbCeilingSpeed__Q3_3ATP2DS15AbstractTargetsFUi
+   setCurrSwCeilingSpeed__Q3_3ATP2DS15AbstractTargetsFUi
+   setSMSpeedRestriction__Q3_3ATP2DS15AbstractTargetsFUi
+   vfwPutI32
+   vfwPutU32
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   memPool__40__N_24_TU_supervised_target_cpp_8d186a1e
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)153U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)462U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::IO::BtmTelegram, (unsigned short)4U, ATP::IO::ErrorHandler>
+   ATP::DS::SupervisedTarget
+   ATP::DS::TargetErrorHandler
+   ATP::IO::ErrorHandler
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::SupervisedTarget
+INCLUDES
+END_RECORD supervised_target.cpp
+BEGIN_RECORD track_data_item_target.cpp
+CHECKSUM  1790348748
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFUcRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriUs
+   __dl__Q3_3ATP2DS19TrackDataItemTargetSFPv
+   __dt__Q3_3ATP2DS19TrackDataItemTargetFv
+   __nw__Q3_3ATP2DS19TrackDataItemTargetSFUi
+   availableMemPool__Q3_3ATP2DS19TrackDataItemTargetSFv
+   getTDIType__Q3_3ATP2DS19TrackDataItemTargetCFv
+   getTDIValue__Q3_3ATP2DS19TrackDataItemTargetCFv
+   getWriteCrossCompareMaxSizeSubClass__Q3_3ATP2DS19TrackDataItemTargetCFv
+   initMemPoolSize__Q3_3ATP2DS19TrackDataItemTargetSFUi
+   isPassedTargetHandled__Q3_3ATP2DS19TrackDataItemTargetCFv
+   writeCrossCompareSubClass__Q3_3ATP2DS19TrackDataItemTargetCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __CPR148____ct__Q3_3ATP2DS16SupervisedTargetFQ4_3ATP2DSJ16J20SupervisedTargetTypePQ3_3ATP2DS10BaseTargetRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC79GPList__tm__65_PQ3_3ATP2DS10BaseTargetXCUsL_3_153Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFRCQ2_3ATC25GPList__tm__11_Z1ZXZ2ZZ3Z
+   __ct__Q2_3ATC85GPList__tm__71_PQ3_3ATP2DS16SupervisedTargetXCUsL_3_462Q3_3ATP2DS18TargetErrorHandlerFv
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __ct__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __ct__Q3_3ATP2DS10BaseTargetFQ4_3ATP2DS10BaseTarget14CoreTargetTypeRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS10BaseTargetFv
+   __ct__Q3_3ATP2DS11SpeedTargetFUiT1RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS11SpeedTargetFv
+   __ct__Q3_3ATP2DS13PrimaryTargetFUiUcT1T2RCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiriPCcQ2_3ATP12LocationTypeSc
+   __ct__Q3_3ATP2DS13PrimaryTargetFv
+   __ct__Q3_3ATP2DS14GradientTargetFScRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS14GradientTargetFv
+   __ct__Q3_3ATP2DS15AbstractTargetsFv
+   __ct__Q3_3ATP2DS16SupervisedTargetFv
+   __ct__Q3_3ATP2DS17ConditionalTargetFbUiRCQ2_3ATP11TrackAndPosQ2_3ATP9TravelDiri
+   __ct__Q3_3ATP2DS17ConditionalTargetFv
+   __ct__Q3_3ATP2DS19TrackDataItemTargetFv
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   __dt__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   __dt__Q3_3ATP2DS10BaseTargetFv
+   __dt__Q3_3ATP2DS11SpeedTargetFv
+   __dt__Q3_3ATP2DS13PrimaryTargetFv
+   __dt__Q3_3ATP2DS14GradientTargetFv
+   __dt__Q3_3ATP2DS16SupervisedTargetFv
+   __dt__Q3_3ATP2DS17ConditionalTargetFv
+   allocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   corePtr__Q3_3ATP2DS15AbstractTargetsSFv
+   createPool__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFUiUs
+   deAllocateBlock__Q3_3ATC6AOSMem19FixedSizeMemoryPoolFPv
+   getNumberOfFreeBlocks__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   poolBlockSize__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   poolCreatedOk__Q3_3ATC6AOSMem19FixedSizeMemoryPoolCFv
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+   setFreeRollingTargetActive__Q3_3ATP2DS15AbstractTargetsFb
+   setOdometerInvalidTargetActive__Q3_3ATP2DS15AbstractTargetsFb
+   setSafetyMarginChangeTargetActive__Q3_3ATP2DS15AbstractTargetsFUs
+   vfwPutU16
+   vfwPutU32
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   memPool__45__N_29_TU_track_data_item_target_cpp_125a2a65
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::GPList<ATP::DS::BaseTarget *, (unsigned short)153U, ATP::DS::TargetErrorHandler>
+   ATC::GPList<ATP::DS::SupervisedTarget *, (unsigned short)462U, ATP::DS::TargetErrorHandler>
+   ATP::DS::TargetErrorHandler
+   ATP::DS::TrackDataItemTarget
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::DS::TrackDataItemTarget
+INCLUDES
+END_RECORD track_data_item_target.cpp

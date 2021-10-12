@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Pos::Odometry">
+    <Position X="2" Y="6.75" Width="2" />
+    <Members>
+      <Method Name="Odometry" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAABAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_bhp\impl\position\odometry\odometry.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Pos::AbstractOdometry">
+    <Position X="5" Y="6.75" Width="3.5" />
+    <Members>
+      <Field Name="absNomSpeed" Hidden="true" />
+      <Method Name="AbstractOdometry" Hidden="true" />
+      <Method Name="checkTrainStandStill" Hidden="true" />
+      <Field Name="chstat" Hidden="true" />
+      <Field Name="configFailure" Hidden="true" />
+      <Field Name="crossCompareConfigChannel" Hidden="true" />
+      <Field Name="dirMultiplier" Hidden="true" />
+      <Field Name="dMaxAccumulated" Hidden="true" />
+      <Field Name="dMaxOld" Hidden="true" />
+      <Field Name="dMinAccumulated" Hidden="true" />
+      <Field Name="dMinOld" Hidden="true" />
+      <Field Name="dNomAccumulated" Hidden="true" />
+      <Field Name="dNomOld" Hidden="true" />
+      <Field Name="dopplerFailure" Hidden="true" />
+      <Field Name="dopplerFailureOccured" Hidden="true" />
+      <Field Name="dopplerFailureRecovered" Hidden="true" />
+      <Field Name="dopplerRadarNeedsMaintenance" Hidden="true" />
+      <Method Name="evaluateOdometerSensorFailure" Hidden="true" />
+      <Field Name="exceededSafetyMargin" Hidden="true" />
+      <Field Name="expectedBalisePassed" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="invalidMeasurementData" Hidden="true" />
+      <Field Name="invalidState" Hidden="true" />
+      <Field Name="isFreeRolling" Hidden="true" />
+      <Field Name="isSlipClear" Hidden="true" />
+      <Field Name="isTrainStandStillFlag" Hidden="true" />
+      <Field Name="lastCarBaliseWindow" Hidden="true" />
+      <Field Name="lastLogCODDetails" Hidden="true" />
+      <Field Name="locoEndBaliseWindow" Hidden="true" />
+      <Field Name="maxAccelComp" Hidden="true" />
+      <Field Name="maxCountTrainStandStill" Hidden="true" />
+      <Field Name="noConfigResponse" Hidden="true" />
+      <Field Name="noMeasurementData" Hidden="true" />
+      <Field Name="numVfwChannelsOdo" Hidden="true" />
+      <Field Name="odoData" Hidden="true" />
+      <Field Name="odoDataRaw" Hidden="true" />
+      <Field Name="odoDataStatus" Hidden="true" />
+      <Field Name="odoDynamicConfig" Hidden="true" />
+      <Field Name="odometerConfigMaxTime" Hidden="true" />
+      <Field Name="odometerConfigSent" Hidden="true" />
+      <Field Name="odometerConfigSentTime" Hidden="true" />
+      <Field Name="odometerConfigState" Hidden="true" />
+      <Field Name="odometerSpeedSensorFailure" Hidden="true" />
+      <Field Name="odometerSpeedSensorFailureOccurred" Hidden="true" />
+      <Field Name="odometerSpeedSensorFailureRecovered" Hidden="true" />
+      <Field Name="odoNom" Hidden="true" />
+      <Field Name="odoNomOld" Hidden="true" />
+      <Field Name="odoValForAnalyser" Hidden="true" />
+      <Field Name="offset" Hidden="true" />
+      <Method Name="processMeasurementData" Hidden="true" />
+      <Method Name="processSlipSlideCheck" Hidden="true" />
+      <Field Name="rawLastCarBaliseWindow" Hidden="true" />
+      <Field Name="rawLocoEndBaliseWindow" Hidden="true" />
+      <Method Name="readConfigResponse" Hidden="true" />
+      <Method Name="readMeasurementTelegram" Hidden="true" />
+      <Method Name="readMeasurementTelegrams" Hidden="true" />
+      <Method Name="resetBaliseWindow" Hidden="true" />
+      <Field Name="safetyIssueCodData" Hidden="true" />
+      <Field Name="safetyMarginCrossedFlag" Hidden="true" />
+      <Field Name="sdpMajorVersion" Hidden="true" />
+      <Field Name="sdpMiddleVersion" Hidden="true" />
+      <Field Name="sdpMinorVersion" Hidden="true" />
+      <Method Name="sendDynamicConfig" Hidden="true" />
+      <Method Name="sendStaticConfig" Hidden="true" />
+      <Method Name="setSDPVersion" Hidden="true" />
+      <Field Name="slideDetected" Hidden="true" />
+      <Field Name="slipDetected" Hidden="true" />
+      <Field Name="syncConfigResponseChannel" Hidden="true" />
+      <Field Name="syncDataChannel" Hidden="true" />
+      <Field Name="tachometer1Failure" Hidden="true" />
+      <Field Name="tachometer1FailureOccured" Hidden="true" />
+      <Field Name="tachometer1FailureRecovered" Hidden="true" />
+      <Field Name="tachometer2Failure" Hidden="true" />
+      <Field Name="tachometer2FailureOccured" Hidden="true" />
+      <Field Name="tachometer2FailureRecovered" Hidden="true" />
+      <Field Name="trainNotAtStandStillCounter" Hidden="true" />
+      <Field Name="trainStandStillCounter" Hidden="true" />
+      <Method Name="updateBaliseWindow" Hidden="true" />
+      <Method Name="updateDynamicConfig" Hidden="true" />
+      <Method Name="validateSdpVersion" Hidden="true" />
+      <Field Name="vCacheMaxSize" Hidden="true" />
+      <Field Name="versionCODMismatch" Hidden="true" />
+      <Field Name="vMax" Hidden="true" />
+      <Field Name="vMaxDiffTime" Hidden="true" />
+      <Field Name="vMin" Hidden="true" />
+      <Field Name="vMinDiffTime" Hidden="true" />
+      <Field Name="vNomDiffFailureOccured" Hidden="true" />
+      <Field Name="vNomDiffTimeMax" Hidden="true" />
+      <Field Name="vPos" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ATP::Pos::AbstractOdometry::OdoData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::Pos::AbstractOdometry::OdoDataRaw" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::Pos::AbstractOdometry::OdoDataStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::Pos::AbstractOdometry::ConfigResponse" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Class Name="ATP::Pos::AbstractOdometry::OdoDynamicConfig" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>VFTmQh5BEdNZblGAIVOALSpCLEm7QUIRgCAIA6jr6A4=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\position\odometry\abstract_odometry.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="9.25" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="11.75" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

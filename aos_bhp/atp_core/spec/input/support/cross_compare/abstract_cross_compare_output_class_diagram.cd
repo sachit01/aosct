@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Support::CrossCompareOutputChannel">
+    <Position X="3" Y="2.5" Width="3" />
+    <Members>
+      <Field Name="channelWriteDesc" Hidden="true" />
+      <Field Name="chName" Hidden="true" />
+      <Field Name="sendDividedMessage" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::Support::CrossCompareOutput">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.264" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QAQAAgAAAAAgAAAAAAAAAAAAAAAAAAAAAABEIAAAAIA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_output_channel.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Support::CrossCompareOutput" Collapsed="true">
+    <Position X="3" Y="1.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>SAgCBlEIAAAgAIAAAAAABAAIQIBQEgAAJAQCCAAIABA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_output.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

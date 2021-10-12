@@ -1,0 +1,50 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atp_core\impl\train_gateway\vehicle_com
+BEGIN_RECORD abstract_vehicle_com.cpp
+CHECKSUM  2651298234
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q3_3ATP2TG18AbstractVehicleComFv
+   connectedVehicleComm__Q3_3ATP2TG18AbstractVehicleComCFv
+   corePtr__Q3_3ATP2TG18AbstractVehicleComSFv
+   initCrossCompare__Q3_3ATP2TG18AbstractVehicleComCFv
+   init__Q3_3ATP2TG18AbstractVehicleComFv
+   startupAndHealthSupTest__Q3_3ATP2TG18AbstractVehicleComCFv
+CALLED_OBJECTS
+   __CPR83____ct__Q3_3ATP7Support20AbstractCrossCompareFRCQ3_3ATPJ13JJ21J
+   __ct__Q2_3ATC11IOComponentFRCQ2_3ATC11IOComponent
+   __ct__Q2_3ATC11IOComponentFUsPCcT2
+   __ct__Q2_3ATC11IOComponentFv
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q3_3ATP7Support18CrossCompareObjectFv
+   __ct__Q3_3ATP7Support18CrossCompareOutputFv
+   __ct__Q3_3ATP7Support20AbstractCrossCompareFv
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFPCZ1Z
+   __ct__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFRCQ3_3ATP7Support33CrossCompareSimpleType__tm__4_Z1Z
+   __dt__Q3_3ATP7Support18CrossCompareObjectFv
+   __dt__Q3_3ATP7Support18CrossCompareOutputFv
+   __dt__Q3_3ATP7Support20AbstractCrossCompareFv
+   __dt__Q3_3ATP7Support31CrossCompareSimpleType__tm__2_bFv
+   addCrossCompareData__Q3_3ATP7Support20AbstractCrossCompareFPQ3_3ATP7Support18CrossCompareObject
+   aosHalt__3ATCFPCciT1
+   corePtr__Q3_3ATP7Support20AbstractCrossCompareSFv
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATP::TG::AbstractVehicleCom
+   ATP::TrackAndPos
+DEFAULT_TESTABLE_CLASSES
+   ATP::TG::AbstractVehicleCom
+INCLUDES
+END_RECORD abstract_vehicle_com.cpp

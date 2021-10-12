@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::AbstractTIC">
+    <Position X="2.75" Y="0.75" Width="4.5" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>iBIABgBEQAARIACAAEDCAAAAAQAABAIAAAAAAAABRAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\train_gateway\tic\abstract_tic.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ATP::TG::TICConfigStatus">
+    <Position X="7.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAACAAACEAAABAAAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\train_gateway\tic\abstract_tic.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ATP::TG::TICConfigReqStatus">
+    <Position X="7.75" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\train_gateway\tic\abstract_tic.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

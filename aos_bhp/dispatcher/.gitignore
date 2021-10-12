@@ -1,0 +1,80 @@
+# Compiled source #
+
+###################
+
+*.com
+
+*.obj
+
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.htm
+*.ncb
+
+# Specific files     #
+######################
+pclint/files/all.lnt
+
+target/hil/dispatcher_hil
+
+target/emd/dispatcher_emd
+
+target/vsim/dispatcher_vsim
+
+
+# OS generated files #
+######################
+Thumbs.db
+
+# Visual Studio User Options #
+##############################
+*.suo
+
+# Temporary files    #
+######################
+*test_disp*.user
+~AutoRecover*
+*.project
+*.cproject
+*.bak
+*.bak~*
+*.vpp~*
+*~
+*.opendb
+*.VC.db
+spec/input/dispatcher_all/*.tag
+
+# Folders            #
+######################
+impl/test_disp/Debug
+impl/test_disp/Release
+impl/obj/
+impl/test_disp/ipch/
+
+.settings/
+.externalToolBuilders/
+spec/html
+spec/rtf
+spec/latex
+spec/output
+pclint/result
+.settings/

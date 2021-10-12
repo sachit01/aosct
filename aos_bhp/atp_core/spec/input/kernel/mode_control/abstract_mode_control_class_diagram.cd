@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Kernel::AbstractModeControl">
+    <Position X="6.25" Y="1" Width="5" />
+    <Members>
+      <Field Name="aosStatusToggleFrequency" Hidden="true" />
+      <Field Name="atpResetRequired" Hidden="true" />
+      <Field Name="brakeTestMandatory" Hidden="true" />
+      <Field Name="brakeTestPossible" Hidden="true" />
+      <Field Name="brakeTestRequested" Hidden="true" />
+      <Field Name="cabActive" Hidden="true" />
+      <Field Name="configSeq" Hidden="true" />
+      <Field Name="coreInitDone" Hidden="true" />
+      <Method Name="createModeObject" Hidden="true" />
+      <Field Name="currentMaxAllowedSpeedInLocation" Hidden="true" />
+      <Field Name="currentMode" Hidden="true" />
+      <Field Name="driverLoginSeq" Hidden="true" />
+      <Field Name="emergencyAlertAlarmSeq" Hidden="true" />
+      <Method Name="handleATPResetCondition" Hidden="true" />
+      <Field Name="isTimeForBrakeTestNotification" Hidden="true" />
+      <Field Name="logSleepingSignalStatus" Hidden="true" />
+      <Field Name="logVersionsToTCCFlag" Hidden="true" />
+      <Field Name="maxAllowableTimeAOSRunWithoutReset" Hidden="true" />
+      <Field Name="modeList" Hidden="true" />
+      <Field Name="posSeq" Hidden="true" />
+      <Method Name="postProcessEventsForAllModes" Hidden="true" />
+      <Method Name="preProcessEventsForAllModes" Hidden="true" />
+      <Field Name="prevActiveCab" Hidden="true" />
+      <Field Name="previousMode" Hidden="true" />
+      <Field Name="remainingTimeToMandatoryBrakeTest" Hidden="true" />
+      <Method Name="runAllSeqs" Hidden="true" />
+      <Field Name="shuntSeq" Hidden="true" />
+      <Method Name="traceMode" Hidden="true" />
+      <Field Name="yardSeq" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>D7XKXmnBHRgMOgRkMFCNpQOhubeZAD7YT/8aAT4sb0k=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\abstract_mode_control.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="12" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="14.75" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

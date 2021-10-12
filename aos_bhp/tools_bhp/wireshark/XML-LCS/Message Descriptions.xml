@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MessageDescriptions>
+
+  <Message type="AOS_status_message" value="50001">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="CabinMode"                 Pos="Data0"/>
+    <FieldType Name="TrainIdle"                 Pos="Data1"/>
+    <FieldType Name="FrontTrack" Type="UINT16"  Pos="Data2-3"><Display>Track Id Front of train</Display></FieldType>
+    <FieldType Name="FrontPos"   Type="UINT32"  Pos="Data4-7"><Display>Position on Track of Front of train </Display></FieldType>
+    <FieldType Name="FrontOrientation" Pos="Data8"/>
+    <FieldType Name="RearTrack"  Type="UINT16"  Pos="Data9-10"><Display>Track Id Front of train</Display></FieldType>
+    <FieldType Name="RearPos"    Type="UINT32"  Pos="Data11-14"><Display>Position on Track of Front of train </Display></FieldType>
+    <FieldType Name="RearOrientation"           Pos="Data15"/>
+    <FieldType Name="TravelDirection"           Pos="Data16"/>
+    <FieldType Name="AOSSpeed"   Type="UINT16"  Pos="Data17-18"/>
+    <FieldType Name="SystemBlueFlag"            Pos="Data19"/>
+    <FieldType Name="Time"       Type="UINT32"  Pos="Data20-23"/>
+    <FieldType Name="LimitedSupervision"        Pos="Data20-23"/>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="ATP_Command_Message" value="50002">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="ATO_Driving_Message" value="50003">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="Movement_Authority" value="50004">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="ATP_Warning_Curve_Message" value="50005">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="Train_Composition_Message" value="50009">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="Path_Message" value="50011">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="ATO_Command_Message" value="50012">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+  <Message type="Train_Status_Message" value="50101">
+    <FieldType Name="ATO_Mode_Cabin_Sel_Status"                 Pos="Data0"/>
+    <FieldType Name="ATO_Driver_Mode"                           Pos="Data1"/>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+  
+  <Message type="ECPB_Train_Composition_Message" value="50102">
+    <StationaryMessage>True</StationaryMessage>
+    <Filtered>False</Filtered>
+    <FieldType Name="M_END_OF_MESSAGE" />
+  </Message>
+
+</MessageDescriptions>

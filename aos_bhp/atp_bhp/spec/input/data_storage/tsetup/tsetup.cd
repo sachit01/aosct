@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::DS::TSetup">
+    <Position X="4.5" Y="7.5" Width="4.25" />
+    <Members>
+      <Field Name="brakeAbilityBhp" Hidden="true" />
+      <Field Name="brakeHandlingEvent" Hidden="true" />
+      <Field Name="ecpbReportedTooLowPercentageOfWorkingBrakes" Hidden="true" />
+      <Field Name="eventDataValidTSetup" Hidden="true" />
+      <Field Name="eventOutOfIndexTSetup" Hidden="true" />
+      <Field Name="eventOutOfRangeTSetup" Hidden="true" />
+      <Method Name="handleBrakeBrakeSystemInUse" Hidden="true" />
+      <Field Name="maxConsecutiveCarsLength" Hidden="true" />
+      <Field Name="newBrakeSystemUpdated" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="sbDueToLowLambdaPercentage" Hidden="true" />
+      <Field Name="sbEcpbReportedChangedRunMode" Hidden="true" />
+      <Field Name="standStillDueToLowLambdaPercentage" Hidden="true" />
+      <Field Name="standstillEcpbReportedChangedRunMode" Hidden="true" />
+      <Field Name="standStillTooLowPercentageOfWorkingBrakes" Hidden="true" />
+      <Method Name="TSetup" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAmAAgACBAQwAAAJABAAAQABIESAAAQAgggQgQQA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\data_storage\tsetup\tsetup.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::AbstractTSetup" Collapsed="true">
+    <Position X="5.75" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAUcAkCAgIIFIY4AJMFEwJKwEAIAAIIRBCIJogABVEA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\tsetup\abstract_tsetup.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

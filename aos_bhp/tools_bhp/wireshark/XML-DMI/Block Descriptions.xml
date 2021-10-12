@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BlockDescriptions>
+
+  <Block type="CarNameListEntry" value="1">
+    <FieldType Name="CarNumber" Type="UINT16" Pos="Data0-1"/>
+    <FieldType Name="CarName"   Type="CHAR20" Pos="Data2-21"/>
+  </Block>
+  
+  <Block type="CarListEntry" value="2">
+    <FieldType Name="CarID"  Type="UINT16" Pos="Data0-1"/>
+    <FieldType Name="CarTyp" Type="UINT8"  Pos="Data2"/>
+  </Block>
+  
+  <Block type="SpeedBlock" value="3">
+    <FieldType Name="OdoPosition" Type="INT16" Pos="Data0-1"><Display>Odometer position</Display></FieldType>
+    <FieldType Name="NewSpeed"    Type="UINT8" Pos="Data2"><Display>Odometer position</Display></FieldType>
+    <FieldType Name="SpeedReason"              Pos="Data3"/>
+  </Block>
+
+  <Block type="GradientBlock" value="4">
+    <FieldType Name="OdoPosition" Type="INT16" Pos="Data0-1"><Display>Odometer position</Display></FieldType>
+    <FieldType Name="Newgradient" Type="INT8"  Pos="Data2"><Display>New Gradient</Display></FieldType>
+  </Block>
+
+  <Block type="HistoryBlock" value="5">
+    <FieldType Name="char"   Type="CHAR" Pos="Data0"/>
+  </Block>
+
+  <Block type="AreaBlock" value="6">
+    <FieldType Name="AreaID" Type="UINT8" Pos="Data0"/>
+  </Block>
+
+  <Block type="CarStatus" value="7">
+    <FieldType Name="CarNumer"   Type="UINT16" Pos="Data0-1"/>
+    <FieldType Name="LoadWeight" Type="UINT16" Pos="Data2-3"><Display> Load Weight</Display></FieldType>
+    <FieldType Name="TicStatus"                Pos="Data4-5"/>
+    <FieldType Name="PlatformStatus"           Pos="Data6"/>
+  </Block>
+
+</BlockDescriptions>

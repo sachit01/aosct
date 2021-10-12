@@ -1,0 +1,108 @@
+# Compiled source #
+###################
+*.com
+*.obj
+*.dll
+*.exe
+*.o
+*.d
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.htm
+*.ncb
+
+# Specific files     #
+######################
+impl/test_atp_vs15/Debug/test_atp.ini
+lintATP.txt
+target/cpu_a/platform_halt
+target/cpu_b/platform_halt
+target/cpu_a/vsim/atp_bhp_vsim
+target/cpu_b/vsim/atp_bhp_vsim
+target/cpu_a/emd/atp_bhp_emd
+target/cpu_b/emd/atp_bhp_emd
+target/cpu_a/hil/atp_bhp_hil
+target/cpu_b/hil/atp_bhp_hil
+target/cpu_a/sil
+nvshft/data_files/CFG_DATA_READOUT.txt
+nvshft/data_files/DISPATCHER_DATA_READOUT.txt
+nvshft/data_files/INSTANCE_DATA_READOUT.txt
+nvshft/data_files/MNT_DATA_READOUT.txt
+nvshft/data_files/RT_DATA_READOUT.txt
+nvshft/data_files/TYPE_DATA_READOUT.txt
+nvshft/data_files/cfg_data.bin
+nvshft/data_files/dispatcher_data.bin
+nvshft/data_files/instance_data.bin
+nvshft/data_files/mnt_data.bin
+nvshft/data_files/rt_data.bin
+nvshft/data_files/type_data.bin
+
+# OS generated files #
+######################
+Thumbs.db
+
+# Visual Studio User Options #
+##############################
+*.suo
+
+# Temporary files    #
+######################
+*test_atp*.user
+~AutoRecover*
+*.project
+*.hpp.txt
+*.cpp.txt
+*.cproject
+*.bak
+*.bak~*
+*.vpp~*
+*.vpp.bak*
+*.vpp.vbak*
+*~
+*.opendb
+*.VC.db
+spec/input/atp_bhp_all/*.tag
+
+# Folders            #
+######################
+impl/test_atp/Debug
+impl/test_atp/Release
+impl/test_atp_vs15/Debug
+impl/test_atp_vs15/Release
+impl/test_atp_vs15/ipch
+impl/obj/
+impl/bin/
+nvshft/debug
+nvshft/release
+nvshft/implementation/vs15/x64
+target/install_packages
+target/install_packages_emd
+target/install_packages_hil
+tdd/brake_test/html
+tdd/brake_test/latex
+
+
+.settings/
+.externalToolBuilders/
+spec/html
+spec/rtf
+spec/latex
+spec/output
+.settings/
+.metadata/

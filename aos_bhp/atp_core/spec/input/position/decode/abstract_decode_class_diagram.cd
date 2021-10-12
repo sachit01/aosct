@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Pos::AbstractDecode">
+    <Position X="2.5" Y="4.75" Width="3.5" />
+    <Members>
+      <Field Name="baliseDetectedStandStill" Hidden="true" />
+      <Field Name="baliseDetectSpeed" Hidden="true" />
+      <Field Name="baliseInfoQAspect" Hidden="true" />
+      <Field Name="baliseNidEndPackets" Hidden="true" />
+      <Field Name="baliseOutputQueueNotEmpty" Hidden="true" />
+      <Field Name="baliseQueueSize" Hidden="true" />
+      <Field Name="baliseQupdownInfo" Hidden="true" />
+      <Field Name="baliseShNidpacket" Hidden="true" />
+      <Method Name="calculateOdometerPosition" Hidden="true" />
+      <Field Name="curStandStillCount" Hidden="true" />
+      <Field Name="dangerForShunting" Hidden="true" />
+      <Field Name="historyCounter" Hidden="true" />
+      <Field Name="historyCountStandStill" Hidden="true" />
+      <Field Name="historyOdoStandStillPosition" Hidden="true" />
+      <Field Name="historyPosition" Hidden="true" />
+      <Field Name="historyTime" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="lastOdoHistoryValue" Hidden="true" />
+      <Field Name="odoChangeDelta" Hidden="true" />
+      <Field Name="odoHistoryMaxCount" Hidden="true" />
+      <Method Name="parseTelegramPacket" Hidden="true" />
+      <Field Name="redBaliseDetected" Hidden="true" />
+      <Field Name="redBaliseDetectedFlag" Hidden="true" />
+      <Method Name="saveStandStillData" Hidden="true" />
+      <Field Name="standStillMaxCount" Hidden="true" />
+      <Field Name="timeStampError" Hidden="true" />
+      <Method Name="updateHistoryDataList" Hidden="true" />
+      <Method Name="updatePositionHistory" Hidden="true" />
+      <Field Name="vecBaliseInfo" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ATP::Pos::AbstractDecode::BaliseInfo">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\decode\abstract_decode.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ATP::Pos::AbstractDecode::BaliseTelegram">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\position\decode\abstract_decode.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AABAQgCDIBB4JEAQAAAAAEBAEIAIAAYjKAQUAAAF0AI=</HashCode>
+      <FileName>C:\git\AOS_IF150_R4\aos_bhp\atp_core\impl\position\decode\abstract_decode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent">
+    <Position X="3" Y="3" Width="2.5" />
+    <Members>
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="ProcComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\git\AOS_IF150_R4\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="3" Y="1" Width="2.5" />
+    <Members>
+      <Method Name="~BaseComponent" Hidden="true" />
+      <Method Name="BaseComponent" Hidden="true" />
+      <Field Name="compId" Hidden="true" />
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="getShortName" Hidden="true" />
+      <Method Name="getTrace" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="shortName" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Method Name="writeToLog" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>C:\git\AOS_IF150_R4\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

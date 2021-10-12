@@ -1,0 +1,15 @@
+ATC_MODULES += $(ATC_ROOT)/impl/aos_template_library/
+ATC_MODULES += $(ATC_ROOT)/impl/application/
+ATC_MODULES += $(ATC_ROOT)/impl/analyzer_if/
+ATC_MODULES += $(ATC_ROOT)/impl/atc_base/
+ATC_MODULES += $(ATC_ROOT)/impl/atc_types/
+ATC_MODULES += $(ATC_ROOT)/impl/basic_ip/
+ATC_MODULES += $(ATC_ROOT)/impl/config/
+ATC_MODULES += $(ATC_ROOT)/impl/console/
+ATC_MODULES += $(ATC_ROOT)/impl/crc32/
+ATC_MODULES += $(ATC_ROOT)/impl/event_handler/
+ATC_MODULES += $(ATC_ROOT)/impl/fixed_size_mempool/
+ATC_MODULES += $(ATC_ROOT)/impl/log_handler/
+ATC_MODULES += $(ATC_ROOT)/impl/math/
+ATC_MODULES += $(ATC_ROOT)/impl/util/
+ATC_MODULES += $(ATC_ROOT)/impl/vfw/

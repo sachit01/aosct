@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::TG::VehicleCom">
+    <Position X="1.5" Y="1" Width="3.75" />
+    <Members>
+      <Method Name="initCrossCompare" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATP::TG::AbstractVehicleCom" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="1.375" />
+        <Point X="5.25" Y="1.375" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.225" Y="0.05" Height="0.182" Width="0.575" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>CECCAAFAAQIaQEAAokygCAgEIABhEQqYAEAFAAoKUQE=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\vehicle_com.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::AbstractVehicleCom">
+    <Position X="6.25" Y="1" Width="2.5" />
+    <Members>
+      <Method Name="AbstractVehicleCom" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::IOComponent">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.141" Y="0.05" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAIAABAAAAAAAAIAAEAAIAAAAAAAAAQAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\train_gateway\vehicle_com\abstract_vehicle_com.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::IOComponent" Collapsed="true">
+    <Position X="9.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent" Collapsed="true">
+    <Position X="11.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ATP::TG::VComConfigState">
+    <Position X="6.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAgAAABAAAAAAAAAAAAAAAAAAAAAIAwAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\vehicle_com\vehicle_com.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Supv::BrakeCalculations">
+    <Position X="3.25" Y="0.5" Width="3.5" />
+    <Members>
+      <Field Name="errorSquareNegative" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAIAgEAQYAEwBAAAAAAIAIAAAABAAgCAAoAhCQAQUBA=</HashCode>
+      <FileName>C:\git\AOS_IF150_R4\aos_bhp\atp_core\impl\supervision\brake_curve_calculations\brake_calculations.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

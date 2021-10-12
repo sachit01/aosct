@@ -1,0 +1,33 @@
+
+
+
+// /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_Linux_ppc-1.0/CROSS_RHEL4_x86_Linux_ppc/distribution/usr/bin/../lib/gcc/powerpc-unknown-linux-uclibc/4.6.1/include
+// /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_Linux_ppc-1.0/CROSS_RHEL4_x86_Linux_ppc/distribution/usr/bin/../lib/gcc/powerpc-unknown-linux-uclibc/4.6.1/include-fixed
+// /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_Linux_ppc-1.0/CROSS_RHEL4_x86_Linux_ppc/distribution/usr/bin/../lib/gcc/powerpc-unknown-linux-uclibc/4.6.1/../../../../powerpc-unknown-linux-uclibc/include
+// /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_Linux_ppc-1.0/CROSS_RHEL4_x86_Linux_ppc/distribution/usr/bin/../powerpc-unknown-linux-uclibc/sysroot/usr/include
+
+
+--u_GLIBCXX_EXTERN_TEMPLATE
+--u_GLIBCXX_LONG_DOUBLE_COMPAT
+//--u_GLIBCXX_USE_WCHAR_T
+--u__UCLIBC_HAS_THREADS__
+
+////--u__UCLIBC_HAS_WCHAR__
+
+
+--i"%CROSS_COMPILER_DIR%\distribution\usr\bin\..\lib\gcc\powerpc-unknown-linux-uclibc\4.6.1\..\..\..\..\powerpc-unknown-linux-uclibc\include\c++\4.6.1"
+//--i"/appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_Linux_ppc-1.0/CROSS_RHEL4_x86_Linux_ppc/distribution/usr/bin/../lib/gcc/powerpc-unknown-linux-uclibc/4.6.1/../../../../powerpc-unknown-linux-uclibc/include/c++/4.6.1/tr1"
+--i"%CROSS_COMPILER_DIR%\distribution\usr\bin\..\lib\gcc\powerpc-unknown-linux-uclibc\4.6.1\..\..\..\..\powerpc-unknown-linux-uclibc\include\c++\4.6.1\powerpc-unknown-linux-uclibc"
+--i"%CROSS_COMPILER_DIR%\distribution\usr\bin\..\lib\gcc\powerpc-unknown-linux-uclibc\4.6.1\..\..\..\..\powerpc-unknown-linux-uclibc\include\c++\4.6.1\backward"
+--i"%CROSS_COMPILER_DIR%\distribution\usr\bin\..\lib\gcc\powerpc-unknown-linux-uclibc\4.6.1\include"
+--i"%CROSS_COMPILER_DIR%\distribution\usr\bin\..\lib\gcc\powerpc-unknown-linux-uclibc\4.6.1\include-fixed"
+--i"%CROSS_COMPILER_DIR%\distribution\usr\bin\..\lib\gcc\powerpc-unknown-linux-uclibc\4.6.1\..\..\..\..\powerpc-unknown-linux-uclibc\include"
+--i"%CROSS_COMPILER_DIR%\distribution\usr\bin\..\powerpc-unknown-linux-uclibc\sysroot\usr\include"
+
+--i"\localProducts\CoVP_CoHP_Dev-1.0\CoVP_CoHP_Dev\distribution\Linux_ppc\include"
+--i"LINUX"
+
+-i"..\base\include"
+-i"..\base\diagnosticsd"
+-i"..\base\sendlib"
+-i"..\base\util"

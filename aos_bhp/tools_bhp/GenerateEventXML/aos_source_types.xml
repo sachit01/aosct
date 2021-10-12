@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rcs:data xmlns:rcs="http://www.transport.bombardier.com/2014/RcsCmm">
+  <rcs:LogSourceTypeInfo>
+    <sourceType>products/AOS/1</sourceType>
+    <description>
+      <desc>
+        <lang>en</lang>
+        <text>AOS master type</text>
+      </desc>
+    </description>
+    <property>
+      <key>type</key>
+      <stringValue>system</stringValue>
+    </property>
+  </rcs:LogSourceTypeInfo>
+  <rcs:LogSourceTypeInfo>
+    <sourceType>products/AOS/device_types/AOS/1</sourceType>
+    <description>
+      <desc>
+        <lang>en</lang>
+        <text>AOS</text>
+      </desc>
+    </description>
+    <ownerType>products/AOS/1</ownerType>
+    <property>
+      <key>type</key>
+      <stringValue>device</stringValue>
+    </property>
+  </rcs:LogSourceTypeInfo>
+</rcs:data>

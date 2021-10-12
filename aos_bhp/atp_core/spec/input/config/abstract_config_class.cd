@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="ATP::AbstractConfig">
+    <Position X="4.75" Y="0.75" Width="3.25" />
+    <Members>
+      <Method Name="AbstractConfig" Hidden="true" />
+      <Field Name="coreInitDone" Hidden="true" />
+      <Method Name="corePtr" Hidden="true" />
+      <Method Name="getDefaultValLocoType" Hidden="true" />
+      <Method Name="getMaxValLocoType" Hidden="true" />
+      <Method Name="getMinValLocoType" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>H/hXNEFjCAAIKtDsgYVkUZOkFUYCwELpIhUpKAgFy6Y=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\config\abstract_config.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::AbstractConfigBase">
+    <Position X="1" Y="4.5" Width="2.75" />
+    <Members>
+      <Method Name="AbstractConfigBase" Hidden="true" />
+      <Method Name="addBoolConfigItem" Hidden="true" />
+      <Method Name="addConfigItem" Hidden="true" />
+      <Method Name="addInt16ConfigItem" Hidden="true" />
+      <Method Name="addInt32ConfigItem" Hidden="true" />
+      <Method Name="addInt64ConfigItem" Hidden="true" />
+      <Method Name="addInt8ConfigItem" Hidden="true" />
+      <Method Name="addIPaddrConfigItem" Hidden="true" />
+      <Method Name="addStringConfigItem" Hidden="true" />
+      <Method Name="addUint16ConfigItem" Hidden="true" />
+      <Method Name="addUint32ConfigItem" Hidden="true" />
+      <Method Name="addUint64ConfigItem" Hidden="true" />
+      <Method Name="addUint8ConfigItem" Hidden="true" />
+      <Method Name="basePtr" Hidden="true" />
+      <Field Name="buffSize" Hidden="true" />
+      <Field Name="configFileCommon" Hidden="true" />
+      <Field Name="configFileDisp" Hidden="true" />
+      <Field Name="configFileInstance" Hidden="true" />
+      <Field Name="configFileMaint" Hidden="true" />
+      <Field Name="configFileRuntime" Hidden="true" />
+      <Field Name="configFileType" Hidden="true" />
+      <Field Name="configItems" Hidden="true" />
+      <Field Name="configParamIds" Hidden="true" />
+      <Method Name="consoleCall" Hidden="true" />
+      <Method Name="crossCompareVersions" Hidden="true" />
+      <Method Name="displayAllConfigItems" Hidden="true" />
+      <Method Name="displayConfigItem" Hidden="true" />
+      <Field Name="expectedNumberOfConfigItemsToReadFromFile" Hidden="true" />
+      <Method Name="getBdsLevel" Hidden="true" />
+      <Method Name="getBdsPort" Hidden="true" />
+      <Method Name="getConfig" Hidden="true" />
+      <Method Name="getConfigInfo" Hidden="true" />
+      <Method Name="getConfigItem" Hidden="true" />
+      <Method Name="getConsolePort" Hidden="true" />
+      <Method Name="getItemInfoForVfwSim" Hidden="true" />
+      <Method Name="getNjruIp" Hidden="true" />
+      <Method Name="getNjruLevel" Hidden="true" />
+      <Method Name="getNjruPort" Hidden="true" />
+      <Method Name="getRuIp" Hidden="true" />
+      <Method Name="getRuLogDynValuePeriod" Hidden="true" />
+      <Method Name="getRuLogValueDiff" Hidden="true" />
+      <Method Name="getRuPort" Hidden="true" />
+      <Method Name="getWriteCrossCompareMaxSize" Hidden="true" />
+      <Field Name="isAnyRunTimeConfigUpdated" Hidden="true" />
+      <Field Name="numberOfConfigItems" Hidden="true" />
+      <Field Name="numConfigItemsRead" Hidden="true" />
+      <Method Name="putConfigString" Hidden="true" />
+      <Method Name="readConfigParameters" Hidden="true" />
+      <Method Name="reportConfigError" Hidden="true" />
+      <Method Name="saveRunTimeParameters" Hidden="true" />
+      <Method Name="setGlobalNameToConfigParameter" Hidden="true" />
+      <Method Name="setRunTimeConfigValue" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+      <Method Name="writeCrossCompare" Hidden="true" />
+      <Method Name="writeCrossCompareVersions" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="ATC::AbstractConfigBase::ConfigState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\config\abstract_config_base.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>JAcKljQAgAgACBhACEAAgYAaBgEDmAIGDAAKqFQCgEg=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\abstract_config_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent">
+    <Position X="1" Y="2.5" Width="2.75" />
+    <Members>
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="ProcComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="1" Y="0.75" Width="2.75" />
+    <Members>
+      <Method Name="~BaseComponent" Hidden="true" />
+      <Method Name="BaseComponent" Hidden="true" />
+      <Field Name="compId" Hidden="true" />
+      <Method Name="consoleCall" Hidden="true" />
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="getShortName" Hidden="true" />
+      <Method Name="getTrace" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="preInit" Hidden="true" />
+      <Field Name="shortName" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Method Name="writeToLog" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

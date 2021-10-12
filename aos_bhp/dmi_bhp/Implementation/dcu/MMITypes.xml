@@ -1,0 +1,3073 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="MMITypes">
+  <const name="CAR_NAME_MAX_CHARS" type="Integer" file="MMITypes.pas" line="65">
+    <value>
+      $A
+    </value>
+  </const>
+  <const name="TRAIN_NAME_MAX_CHARS" type="Integer" file="MMITypes.pas" line="66">
+    <value>
+      $A
+    </value>
+  </const>
+  <const name="PASSWORD_MAX_CHARS" type="Integer" file="MMITypes.pas" line="67">
+    <value>
+      $A
+    </value>
+  </const>
+  <const name="DRIVER_MAX_CHARS" type="Integer" file="MMITypes.pas" line="68">
+    <value>
+      $14
+    </value>
+  </const>
+  <const name="CAR_BLOCK_LIST_MAX" type="Integer" file="MMITypes.pas" line="69">
+    <value>
+      $8
+    </value>
+  </const>
+  <const name="CAR_LIST_MAX" type="Integer" file="MMITypes.pas" line="71">
+    <value>
+      $1B
+    </value>
+  </const>
+  <const name="CEILING_SPEED_MAX" type="Integer" file="MMITypes.pas" line="72">
+    <value>
+      $16
+    </value>
+  </const>
+  <const name="GRADIENT_MAX" type="Integer" file="MMITypes.pas" line="73">
+    <value>
+      $16
+    </value>
+  </const>
+  <const name="MMI_MAX_PACKAGE_SIZE" type="Integer" file="MMITypes.pas" line="76">
+    <value>
+      $200
+    </value>
+  </const>
+  <const name="MMI_HEADER_SIZE" type="Integer" file="MMITypes.pas" line="77">
+    <value>
+      $5
+    </value>
+  </const>
+  <const name="MMI_TRAILER_SIZE" type="Integer" file="MMITypes.pas" line="78">
+    <value>
+      $4
+    </value>
+  </const>
+  <const name="MMI_DATA_MAX_SIZE" type="Integer" file="MMITypes.pas" line="79">
+    <value>
+      $1F7
+    </value>
+  </const>
+  <const name="prUndefined" type="T_Projects" file="MMITypes.pas" line="89">
+    <value>
+      prUndefined
+    </value>
+  </const>
+  <const name="prEsmeralda" type="T_Projects" file="MMITypes.pas" line="90">
+    <value>
+      prEsmeralda
+    </value>
+  </const>
+  <const name="prTeniente8" type="T_Projects" file="MMITypes.pas" line="91">
+    <value>
+      prTeniente8
+    </value>
+  </const>
+  <const name="orUndefined" type="T_Orientation" file="MMITypes.pas" line="93">
+    <value>
+      orUndefined
+    </value>
+  </const>
+  <const name="orFixed" type="T_Orientation" file="MMITypes.pas" line="94">
+    <value>
+      orFixed
+    </value>
+  </const>
+  <const name="orNotFixed" type="T_Orientation" file="MMITypes.pas" line="95">
+    <value>
+      orNotFixed
+    </value>
+  </const>
+  <const name="amUndefined" type="T_ATPmodes" file="MMITypes.pas" line="100">
+    <value>
+      amUndefined
+    </value>
+  </const>
+  <const name="amPowerup" type="T_ATPmodes" file="MMITypes.pas" line="101">
+    <value>
+      amPowerup
+    </value>
+  </const>
+  <const name="amTrainconfiguration" type="T_ATPmodes" file="MMITypes.pas" line="102">
+    <value>
+      amTrainconfiguration
+    </value>
+  </const>
+  <const name="amTrainregistration" type="T_ATPmodes" file="MMITypes.pas" line="103">
+    <value>
+      amTrainregistration
+    </value>
+  </const>
+  <const name="amBalisSearchMode" type="T_ATPmodes" file="MMITypes.pas" line="104">
+    <value>
+      amBalisSearchMode
+    </value>
+  </const>
+  <const name="amFullATP" type="T_ATPmodes" file="MMITypes.pas" line="105">
+    <value>
+      amFullATP
+    </value>
+  </const>
+  <const name="amShunting" type="T_ATPmodes" file="MMITypes.pas" line="106">
+    <value>
+      amShunting
+    </value>
+  </const>
+  <const name="amLocation" type="T_ATPmodes" file="MMITypes.pas" line="107">
+    <value>
+      amLocation
+    </value>
+  </const>
+  <const name="amAutomaticUnload" type="T_ATPmodes" file="MMITypes.pas" line="109">
+    <value>
+      amAutomaticUnload
+    </value>
+  </const>
+  <const name="amService" type="T_ATPmodes" file="MMITypes.pas" line="110">
+    <value>
+      amService
+    </value>
+  </const>
+  <const name="amUnregistered" type="T_ATPmodes" file="MMITypes.pas" line="112">
+    <value>
+      amUnregistered
+    </value>
+  </const>
+  <const name="asUndefined" type="T_ATPStates" file="MMITypes.pas" line="116">
+    <value>
+      asUndefined
+    </value>
+  </const>
+  <const name="asBasicsSystemStartUp" type="T_ATPStates" file="MMITypes.pas" line="117">
+    <value>
+      asBasicsSystemStartUp
+    </value>
+  </const>
+  <const name="asApplicationStartUp" type="T_ATPStates" file="MMITypes.pas" line="118">
+    <value>
+      asApplicationStartUp
+    </value>
+  </const>
+  <const name="asFirstTimeInactive" type="T_ATPStates" file="MMITypes.pas" line="119">
+    <value>
+      asFirstTimeInactive
+    </value>
+  </const>
+  <const name="asInactive" type="T_ATPStates" file="MMITypes.pas" line="120">
+    <value>
+      asInactive
+    </value>
+  </const>
+  <const name="asActivationInitiation" type="T_ATPStates" file="MMITypes.pas" line="121">
+    <value>
+      asActivationInitiation
+    </value>
+  </const>
+  <const name="asActivationTest" type="T_ATPStates" file="MMITypes.pas" line="122">
+    <value>
+      asActivationTest
+    </value>
+  </const>
+  <const name="asActiveState" type="T_ATPStates" file="MMITypes.pas" line="123">
+    <value>
+      asActiveState
+    </value>
+  </const>
+  <const name="asFatalFailureState" type="T_ATPStates" file="MMITypes.pas" line="124">
+    <value>
+      asFatalFailureState
+    </value>
+  </const>
+  <const name="asServiceModeVerification" type="T_ATPStates" file="MMITypes.pas" line="125">
+    <value>
+      asServiceModeVerification
+    </value>
+  </const>
+  <const name="asServiceModeActivation" type="T_ATPStates" file="MMITypes.pas" line="126">
+    <value>
+      asServiceModeActivation
+    </value>
+  </const>
+  <const name="asServiceModeActive" type="T_ATPStates" file="MMITypes.pas" line="127">
+    <value>
+      asServiceModeActive
+    </value>
+  </const>
+  <const name="asSystemRestart" type="T_ATPStates" file="MMITypes.pas" line="128">
+    <value>
+      asSystemRestart
+    </value>
+  </const>
+  <const name="asSpecialPreActivation" type="T_ATPStates" file="MMITypes.pas" line="129">
+    <value>
+      asSpecialPreActivation
+    </value>
+  </const>
+  <const name="asssUndefined" type="T_ATPServiceSubStates" file="MMITypes.pas" line="131">
+    <value>
+      asssUndefined
+    </value>
+  </const>
+  <const name="asssMainMenu" type="T_ATPServiceSubStates" file="MMITypes.pas" line="132">
+    <value>
+      asssMainMenu
+    </value>
+  </const>
+  <const name="asssTimeDate" type="T_ATPServiceSubStates" file="MMITypes.pas" line="133">
+    <value>
+      asssTimeDate
+    </value>
+  </const>
+  <const name="asssParameter" type="T_ATPServiceSubStates" file="MMITypes.pas" line="134">
+    <value>
+      asssParameter
+    </value>
+  </const>
+  <const name="asssMMIDiag" type="T_ATPServiceSubStates" file="MMITypes.pas" line="135">
+    <value>
+      asssMMIDiag
+    </value>
+  </const>
+  <const name="asssIOAccess" type="T_ATPServiceSubStates" file="MMITypes.pas" line="136">
+    <value>
+      asssIOAccess
+    </value>
+  </const>
+  <const name="asssTicAccess" type="T_ATPServiceSubStates" file="MMITypes.pas" line="137">
+    <value>
+      asssTicAccess
+    </value>
+  </const>
+  <const name="avsUndefined" type="T_ATPVerificationStates" file="MMITypes.pas" line="139">
+    <value>
+      avsUndefined
+    </value>
+  </const>
+  <const name="avsNoActionState" type="T_ATPVerificationStates" file="MMITypes.pas" line="140">
+    <value>
+      avsNoActionState
+    </value>
+  </const>
+  <const name="avsInputState" type="T_ATPVerificationStates" file="MMITypes.pas" line="141">
+    <value>
+      avsInputState
+    </value>
+  </const>
+  <const name="avsVerificationState" type="T_ATPVerificationStates" file="MMITypes.pas" line="142">
+    <value>
+      avsVerificationState
+    </value>
+  </const>
+  <const name="avsRedoinputState" type="T_ATPVerificationStates" file="MMITypes.pas" line="143">
+    <value>
+      avsRedoinputState
+    </value>
+  </const>
+  <const name="atomUndefined" type="T_ATOModes" file="MMITypes.pas" line="146">
+    <value>
+      atomUndefined
+    </value>
+  </const>
+  <const name="atomManual" type="T_ATOModes" file="MMITypes.pas" line="147">
+    <value>
+      atomManual
+    </value>
+  </const>
+  <const name="atomSupervised" type="T_ATOModes" file="MMITypes.pas" line="148">
+    <value>
+      atomSupervised
+    </value>
+  </const>
+  <const name="atomAutomatic" type="T_ATOModes" file="MMITypes.pas" line="149">
+    <value>
+      atomAutomatic
+    </value>
+  </const>
+  <const name="atomRemote" type="T_ATOModes" file="MMITypes.pas" line="150">
+    <value>
+      atomRemote
+    </value>
+  </const>
+  <const name="ATOSwitch_Undefined" type="T_ATOSwitch" file="MMITypes.pas" line="153">
+    <value>
+      ATOSwitch_Undefined
+    </value>
+  </const>
+  <const name="ATOSwitch_Manual" type="T_ATOSwitch" file="MMITypes.pas" line="154">
+    <value>
+      ATOSwitch_Manual
+    </value>
+  </const>
+  <const name="ATOSwitch_SupervisedAutomatic" type="T_ATOSwitch" file="MMITypes.pas" line="155">
+    <value>
+      ATOSwitch_SupervisedAutomatic
+    </value>
+  </const>
+  <const name="ATOSwitch_Automatic" type="T_ATOSwitch" file="MMITypes.pas" line="156">
+    <value>
+      ATOSwitch_Automatic
+    </value>
+  </const>
+  <const name="ATOSwitch_Illegal" type="T_ATOSwitch" file="MMITypes.pas" line="157">
+    <value>
+      ATOSwitch_Illegal
+    </value>
+  </const>
+  <const name="mtUndefined" type="TMessageType" file="MMITypes.pas" line="162">
+    <value>
+      mtUndefined
+    </value>
+  </const>
+  <const name="mtATPModes_States" type="TMessageType" file="MMITypes.pas" line="163">
+    <value>
+      mtATPModes_States
+    </value>
+  </const>
+  <const name="mtSpare2" type="TMessageType" file="MMITypes.pas" line="164">
+    <value>
+      mtSpare2
+    </value>
+  </const>
+  <const name="mtDriverInfo" type="TMessageType" file="MMITypes.pas" line="165">
+    <value>
+      mtDriverInfo
+    </value>
+  </const>
+  <const name="mtSpare4" type="TMessageType" file="MMITypes.pas" line="166">
+    <value>
+      mtSpare4
+    </value>
+  </const>
+  <const name="mtSpeed_Distance" type="TMessageType" file="MMITypes.pas" line="167">
+    <value>
+      mtSpeed_Distance
+    </value>
+  </const>
+  <const name="mtTACSpeed_Distance" type="TMessageType" file="MMITypes.pas" line="168">
+    <value>
+      mtTACSpeed_Distance
+    </value>
+  </const>
+  <const name="mtSpare7" type="TMessageType" file="MMITypes.pas" line="169">
+    <value>
+      mtSpare7
+    </value>
+  </const>
+  <const name="mtTrnConfigData" type="TMessageType" file="MMITypes.pas" line="170">
+    <value>
+      mtTrnConfigData
+    </value>
+  </const>
+  <const name="mtSpare9" type="TMessageType" file="MMITypes.pas" line="171">
+    <value>
+      mtSpare9
+    </value>
+  </const>
+  <const name="mtErrorMessages" type="TMessageType" file="MMITypes.pas" line="172">
+    <value>
+      mtErrorMessages
+    </value>
+  </const>
+  <const name="mtSpare11" type="TMessageType" file="MMITypes.pas" line="173">
+    <value>
+      mtSpare11
+    </value>
+  </const>
+  <const name="mtSpare12" type="TMessageType" file="MMITypes.pas" line="174">
+    <value>
+      mtSpare12
+    </value>
+  </const>
+  <const name="mtManualConfigSelected" type="TMessageType" file="MMITypes.pas" line="175">
+    <value>
+      mtManualConfigSelected
+    </value>
+  </const>
+  <const name="mtSpare14" type="TMessageType" file="MMITypes.pas" line="176">
+    <value>
+      mtSpare14
+    </value>
+  </const>
+  <const name="mtSpare15" type="TMessageType" file="MMITypes.pas" line="177">
+    <value>
+      mtSpare15
+    </value>
+  </const>
+  <const name="mtSpare16" type="TMessageType" file="MMITypes.pas" line="178">
+    <value>
+      mtSpare16
+    </value>
+  </const>
+  <const name="mtSpare17" type="TMessageType" file="MMITypes.pas" line="179">
+    <value>
+      mtSpare17
+    </value>
+  </const>
+  <const name="mtTime" type="TMessageType" file="MMITypes.pas" line="180">
+    <value>
+      mtTime
+    </value>
+  </const>
+  <const name="mtCarNameList" type="TMessageType" file="MMITypes.pas" line="181">
+    <value>
+      mtCarNameList
+    </value>
+  </const>
+  <const name="mtTrnVSTrackDirWanted" type="TMessageType" file="MMITypes.pas" line="182">
+    <value>
+      mtTrnVSTrackDirWanted
+    </value>
+  </const>
+  <const name="mtMMITime" type="TMessageType" file="MMITypes.pas" line="183">
+    <value>
+      mtMMITime
+    </value>
+  </const>
+  <const name="mtMMIStatus" type="TMessageType" file="MMITypes.pas" line="184">
+    <value>
+      mtMMIStatus
+    </value>
+  </const>
+  <const name="mtCarListAnswer" type="TMessageType" file="MMITypes.pas" line="185">
+    <value>
+      mtCarListAnswer
+    </value>
+  </const>
+  <const name="mtCarPlatformCmd" type="TMessageType" file="MMITypes.pas" line="186">
+    <value>
+      mtCarPlatformCmd
+    </value>
+  </const>
+  <const name="mtCarTrnConfigOutputCmd" type="TMessageType" file="MMITypes.pas" line="187">
+    <value>
+      mtCarTrnConfigOutputCmd
+    </value>
+  </const>
+  <const name="mtBoolConfirmation" type="TMessageType" file="MMITypes.pas" line="188">
+    <value>
+      mtBoolConfirmation
+    </value>
+  </const>
+  <const name="mtDriverID_Password" type="TMessageType" file="MMITypes.pas" line="189">
+    <value>
+      mtDriverID_Password
+    </value>
+  </const>
+  <const name="mtGetCarStatus" type="TMessageType" file="MMITypes.pas" line="190">
+    <value>
+      mtGetCarStatus
+    </value>
+  </const>
+  <const name="mtLCarBuzzerCmd" type="TMessageType" file="MMITypes.pas" line="191">
+    <value>
+      mtLCarBuzzerCmd
+    </value>
+  </const>
+  <const name="mtLCarTrnConfigCmd" type="TMessageType" file="MMITypes.pas" line="192">
+    <value>
+      mtLCarTrnConfigCmd
+    </value>
+  </const>
+  <const name="mtLCarLightCmd" type="TMessageType" file="MMITypes.pas" line="193">
+    <value>
+      mtLCarLightCmd
+    </value>
+  </const>
+  <const name="mtLCarWarningSignalCmd" type="TMessageType" file="MMITypes.pas" line="194">
+    <value>
+      mtLCarWarningSignalCmd
+    </value>
+  </const>
+  <const name="mtLocVSTrnDir" type="TMessageType" file="MMITypes.pas" line="195">
+    <value>
+      mtLocVSTrnDir
+    </value>
+  </const>
+  <const name="mtMMIToATP_Data" type="TMessageType" file="MMITypes.pas" line="196">
+    <value>
+      mtMMIToATP_Data
+    </value>
+  </const>
+  <const name="mtServicePassword" type="TMessageType" file="MMITypes.pas" line="197">
+    <value>
+      mtServicePassword
+    </value>
+  </const>
+  <const name="mtSubmenuButton" type="TMessageType" file="MMITypes.pas" line="198">
+    <value>
+      mtSubmenuButton
+    </value>
+  </const>
+  <const name="mtT44ControlButtons" type="TMessageType" file="MMITypes.pas" line="199">
+    <value>
+      mtT44ControlButtons
+    </value>
+  </const>
+  <const name="mtSpare38" type="TMessageType" file="MMITypes.pas" line="200">
+    <value>
+      mtSpare38
+    </value>
+  </const>
+  <const name="mtTrnVSTrackDir" type="TMessageType" file="MMITypes.pas" line="201">
+    <value>
+      mtTrnVSTrackDir
+    </value>
+  </const>
+  <const name="mtErasePlanningArea" type="TMessageType" file="MMITypes.pas" line="202">
+    <value>
+      mtErasePlanningArea
+    </value>
+  </const>
+  <const name="mtConfirmationRequest" type="TMessageType" file="MMITypes.pas" line="203">
+    <value>
+      mtConfirmationRequest
+    </value>
+  </const>
+  <const name="mtTextMessage" type="TMessageType" file="MMITypes.pas" line="204">
+    <value>
+      mtTextMessage
+    </value>
+  </const>
+  <const name="mtMMIShutdown" type="TMessageType" file="MMITypes.pas" line="205">
+    <value>
+      mtMMIShutdown
+    </value>
+  </const>
+  <const name="mtCarStatusData" type="TMessageType" file="MMITypes.pas" line="206">
+    <value>
+      mtCarStatusData
+    </value>
+  </const>
+  <const name="mtCarDerailPwrCmd" type="TMessageType" file="MMITypes.pas" line="207">
+    <value>
+      mtCarDerailPwrCmd
+    </value>
+  </const>
+  <const name="mtCeilingSpeedList" type="TMessageType" file="MMITypes.pas" line="208">
+    <value>
+      mtCeilingSpeedList
+    </value>
+  </const>
+  <const name="mtGradientDataList" type="TMessageType" file="MMITypes.pas" line="209">
+    <value>
+      mtGradientDataList
+    </value>
+  </const>
+  <const name="mtMMIStartUp" type="TMessageType" file="MMITypes.pas" line="210">
+    <value>
+      mtMMIStartUp
+    </value>
+  </const>
+  <const name="mtSpare49" type="TMessageType" file="MMITypes.pas" line="211">
+    <value>
+      mtSpare49
+    </value>
+  </const>
+  <const name="mtSpare50" type="TMessageType" file="MMITypes.pas" line="212">
+    <value>
+      mtSpare50
+    </value>
+  </const>
+  <const name="mtReConfigSelected" type="TMessageType" file="MMITypes.pas" line="213">
+    <value>
+      mtReConfigSelected
+    </value>
+  </const>
+  <const name="mtTrainName" type="TMessageType" file="MMITypes.pas" line="214">
+    <value>
+      mtTrainName
+    </value>
+  </const>
+  <const name="mtLogData" type="TMessageType" file="MMITypes.pas" line="215">
+    <value>
+      mtLogData
+    </value>
+  </const>
+  <const name="mtLogVersion" type="TMessageType" file="MMITypes.pas" line="216">
+    <value>
+      mtLogVersion
+    </value>
+  </const>
+  <const name="mtCarPlatformPreloadCmd" type="TMessageType" file="MMITypes.pas" line="217">
+    <value>
+      mtCarPlatformPreloadCmd
+    </value>
+  </const>
+  <const name="mtCarBrakeCmd" type="TMessageType" file="MMITypes.pas" line="218">
+    <value>
+      mtCarBrakeCmd
+    </value>
+  </const>
+  <const name="mtPredefinedTextMsg" type="TMessageType" file="MMITypes.pas" line="219">
+    <value>
+      mtPredefinedTextMsg
+    </value>
+  </const>
+  <const name="mtAtpNotification" type="TMessageType" file="MMITypes.pas" line="220">
+    <value>
+      mtAtpNotification
+    </value>
+  </const>
+  <const name="mtSpecialConfigRecord" type="TMessageType" file="MMITypes.pas" line="221">
+    <value>
+      mtSpecialConfigRecord
+    </value>
+  </const>
+  <const name="mtLocoCarListAnswer" type="TMessageType" file="MMITypes.pas" line="222">
+    <value>
+      mtLocoCarListAnswer
+    </value>
+  </const>
+  <const name="lLoginName" type="TLogin" file="MMITypes.pas" line="228">
+    <value>
+      lLoginName
+    </value>
+  </const>
+  <const name="lLoginPassword" type="TLogin" file="MMITypes.pas" line="228">
+    <value>
+      lLoginPassword
+    </value>
+  </const>
+  <const name="cmUndefined" type="TConfigMode" file="MMITypes.pas" line="230">
+    <value>
+      cmUndefined
+    </value>
+  </const>
+  <const name="cmManual" type="TConfigMode" file="MMITypes.pas" line="231">
+    <value>
+      cmManual
+    </value>
+  </const>
+  <const name="cmAutomatic" type="TConfigMode" file="MMITypes.pas" line="232">
+    <value>
+      cmAutomatic
+    </value>
+  </const>
+  <const name="cmReConfig" type="TConfigMode" file="MMITypes.pas" line="233">
+    <value>
+      cmReConfig
+    </value>
+  </const>
+  <const name="lhUndefined" type="TLoadHandlingMode" file="MMITypes.pas" line="235">
+    <value>
+      lhUndefined
+    </value>
+  </const>
+  <const name="lhAutomatic" type="TLoadHandlingMode" file="MMITypes.pas" line="236">
+    <value>
+      lhAutomatic
+    </value>
+  </const>
+  <const name="lhManual" type="TLoadHandlingMode" file="MMITypes.pas" line="237">
+    <value>
+      lhManual
+    </value>
+  </const>
+  <const name="Brake" type="TEAreaSymbols" file="MMITypes.pas" line="239">
+    <value>
+      Brake
+    </value>
+  </const>
+  <const name="ServiceBake" type="TEAreaSymbols" file="MMITypes.pas" line="240">
+    <value>
+      ServiceBake
+    </value>
+  </const>
+  <const name="EmergencyBrake" type="TEAreaSymbols" file="MMITypes.pas" line="241">
+    <value>
+      EmergencyBrake
+    </value>
+  </const>
+  <const name="EmergencyAlert" type="TEAreaSymbols" file="MMITypes.pas" line="242">
+    <value>
+      EmergencyAlert
+    </value>
+  </const>
+  <const name="TrainIntegrity" type="TEAreaSymbols" file="MMITypes.pas" line="243">
+    <value>
+      TrainIntegrity
+    </value>
+  </const>
+  <const name="LastCarAlert" type="TEAreaSymbols" file="MMITypes.pas" line="244">
+    <value>
+      LastCarAlert
+    </value>
+  </const>
+  <const name="cpsPlatformDownUnloaded" type="TCarPlatformStatus" file="MMITypes.pas" line="246">
+    <value>
+      cpsPlatformDownUnloaded
+    </value>
+  </const>
+  <const name="cpsPlatformDownLoaded" type="TCarPlatformStatus" file="MMITypes.pas" line="247">
+    <value>
+      cpsPlatformDownLoaded
+    </value>
+  </const>
+  <const name="cpsPlatformGoingup" type="TCarPlatformStatus" file="MMITypes.pas" line="248">
+    <value>
+      cpsPlatformGoingup
+    </value>
+  </const>
+  <const name="cpsPlatformUp" type="TCarPlatformStatus" file="MMITypes.pas" line="249">
+    <value>
+      cpsPlatformUp
+    </value>
+  </const>
+  <const name="cpsPlatformGoingDown" type="TCarPlatformStatus" file="MMITypes.pas" line="250">
+    <value>
+      cpsPlatformGoingDown
+    </value>
+  </const>
+  <const name="ssrUndefined" type="TCeilingSpeedReason" file="MMITypes.pas" line="252">
+    <value>
+      ssrUndefined
+    </value>
+  </const>
+  <const name="ssrPointStraight" type="TCeilingSpeedReason" file="MMITypes.pas" line="253">
+    <value>
+      ssrPointStraight
+    </value>
+  </const>
+  <const name="ssrPointCurve" type="TCeilingSpeedReason" file="MMITypes.pas" line="254">
+    <value>
+      ssrPointCurve
+    </value>
+  </const>
+  <const name="ssrPointPassed" type="TCeilingSpeedReason" file="MMITypes.pas" line="255">
+    <value>
+      ssrPointPassed
+    </value>
+  </const>
+  <const name="ssrLocation" type="TCeilingSpeedReason" file="MMITypes.pas" line="256">
+    <value>
+      ssrLocation
+    </value>
+  </const>
+  <const name="ssrOther" type="TCeilingSpeedReason" file="MMITypes.pas" line="257">
+    <value>
+      ssrOther
+    </value>
+  </const>
+  <const name="ssrEndOfMa" type="TCeilingSpeedReason" file="MMITypes.pas" line="258">
+    <value>
+      ssrEndOfMa
+    </value>
+  </const>
+  <const name="ssrTSR" type="TCeilingSpeedReason" file="MMITypes.pas" line="259">
+    <value>
+      ssrTSR
+    </value>
+  </const>
+  <const name="ebUndefinedBlock" type="TERRORBlock" file="MMITypes.pas" line="261">
+    <value>
+      ebUndefinedBlock
+    </value>
+  </const>
+  <const name="ebACT" type="TERRORBlock" file="MMITypes.pas" line="262">
+    <value>
+      ebACT
+    </value>
+  </const>
+  <const name="ebBRK" type="TERRORBlock" file="MMITypes.pas" line="263">
+    <value>
+      ebBRK
+    </value>
+  </const>
+  <const name="ebCOM" type="TERRORBlock" file="MMITypes.pas" line="264">
+    <value>
+      ebCOM
+    </value>
+  </const>
+  <const name="ebCOMATO" type="TERRORBlock" file="MMITypes.pas" line="265">
+    <value>
+      ebCOMATO
+    </value>
+  </const>
+  <const name="ebCOMLCS" type="TERRORBlock" file="MMITypes.pas" line="266">
+    <value>
+      ebCOMLCS
+    </value>
+  </const>
+  <const name="ebDECO" type="TERRORBlock" file="MMITypes.pas" line="267">
+    <value>
+      ebDECO
+    </value>
+  </const>
+  <const name="ebGLUE" type="TERRORBlock" file="MMITypes.pas" line="268">
+    <value>
+      ebGLUE
+    </value>
+  </const>
+  <const name="ebLOG" type="TERRORBlock" file="MMITypes.pas" line="269">
+    <value>
+      ebLOG
+    </value>
+  </const>
+  <const name="ebMISC" type="TERRORBlock" file="MMITypes.pas" line="270">
+    <value>
+      ebMISC
+    </value>
+  </const>
+  <const name="ebMMICL" type="TERRORBlock" file="MMITypes.pas" line="271">
+    <value>
+      ebMMICL
+    </value>
+  </const>
+  <const name="ebMON" type="TERRORBlock" file="MMITypes.pas" line="272">
+    <value>
+      ebMON
+    </value>
+  </const>
+  <const name="ebRCOND" type="TERRORBlock" file="MMITypes.pas" line="273">
+    <value>
+      ebRCOND
+    </value>
+  </const>
+  <const name="ebSEL" type="TERRORBlock" file="MMITypes.pas" line="274">
+    <value>
+      ebSEL
+    </value>
+  </const>
+  <const name="ebSTART" type="TERRORBlock" file="MMITypes.pas" line="275">
+    <value>
+      ebSTART
+    </value>
+  </const>
+  <const name="ebSUP" type="TERRORBlock" file="MMITypes.pas" line="276">
+    <value>
+      ebSUP
+    </value>
+  </const>
+  <const name="ebT44IH" type="TERRORBlock" file="MMITypes.pas" line="277">
+    <value>
+      ebT44IH
+    </value>
+  </const>
+  <const name="ebTAC" type="TERRORBlock" file="MMITypes.pas" line="278">
+    <value>
+      ebTAC
+    </value>
+  </const>
+  <const name="ebTICL" type="TERRORBlock" file="MMITypes.pas" line="279">
+    <value>
+      ebTICL
+    </value>
+  </const>
+  <const name="ebVCOM" type="TERRORBlock" file="MMITypes.pas" line="280">
+    <value>
+      ebVCOM
+    </value>
+  </const>
+  <const name="ebLCS" type="TERRORBlock" file="MMITypes.pas" line="281">
+    <value>
+      ebLCS
+    </value>
+  </const>
+  <const name="ebMMI" type="TERRORBlock" file="MMITypes.pas" line="282">
+    <value>
+      ebMMI
+    </value>
+  </const>
+  <const name="ebMMICLMMI" type="TERRORBlock" file="MMITypes.pas" line="283">
+    <value>
+      ebMMICLMMI
+    </value>
+  </const>
+  <const name="egUndefined" type="TERRORGrade" file="MMITypes.pas" line="287">
+    <value>
+      egUndefined
+    </value>
+  </const>
+  <const name="egFatalErrorA" type="TERRORGrade" file="MMITypes.pas" line="288">
+    <value>
+      egFatalErrorA
+    </value>
+  </const>
+  <const name="egFatalErrorB" type="TERRORGrade" file="MMITypes.pas" line="289">
+    <value>
+      egFatalErrorB
+    </value>
+  </const>
+  <const name="egFatalErrorC" type="TERRORGrade" file="MMITypes.pas" line="290">
+    <value>
+      egFatalErrorC
+    </value>
+  </const>
+  <const name="egMinorErrorA" type="TERRORGrade" file="MMITypes.pas" line="291">
+    <value>
+      egMinorErrorA
+    </value>
+  </const>
+  <const name="egMinorErrorB" type="TERRORGrade" file="MMITypes.pas" line="292">
+    <value>
+      egMinorErrorB
+    </value>
+  </const>
+  <const name="egMinorErrorC" type="TERRORGrade" file="MMITypes.pas" line="293">
+    <value>
+      egMinorErrorC
+    </value>
+  </const>
+  <const name="egLogErrorA" type="TERRORGrade" file="MMITypes.pas" line="294">
+    <value>
+      egLogErrorA
+    </value>
+  </const>
+  <const name="egLogErrorB" type="TERRORGrade" file="MMITypes.pas" line="295">
+    <value>
+      egLogErrorB
+    </value>
+  </const>
+  <const name="egLogErrorC" type="TERRORGrade" file="MMITypes.pas" line="296">
+    <value>
+      egLogErrorC
+    </value>
+  </const>
+  <const name="BaliseDataChannelSafeA" type="T_BTIUAvailableStatus" file="MMITypes.pas" line="300">
+    <value>
+      BaliseDataChannelSafeA
+    </value>
+  </const>
+  <const name="BaliseDataChannelAvailableA" type="T_BTIUAvailableStatus" file="MMITypes.pas" line="301">
+    <value>
+      BaliseDataChannelAvailableA
+    </value>
+  </const>
+  <const name="BaliseDataChannelUnavailableA" type="T_BTIUAvailableStatus" file="MMITypes.pas" line="302">
+    <value>
+      BaliseDataChannelUnavailableA
+    </value>
+  </const>
+  <const name="lcbc1_bipp" type="TLCarBuzzerCmd" file="MMITypes.pas" line="304">
+    <value>
+      lcbc1_bipp
+    </value>
+  </const>
+  <const name="lcbc2_bipp" type="TLCarBuzzerCmd" file="MMITypes.pas" line="305">
+    <value>
+      lcbc2_bipp
+    </value>
+  </const>
+  <const name="lcbcConstant" type="TLCarBuzzerCmd" file="MMITypes.pas" line="306">
+    <value>
+      lcbcConstant
+    </value>
+  </const>
+  <const name="lcbcConstant_pulsing" type="TLCarBuzzerCmd" file="MMITypes.pas" line="307">
+    <value>
+      lcbcConstant_pulsing
+    </value>
+  </const>
+  <const name="bsUndefined" type="TButtonStatus" file="MMITypes.pas" line="309">
+    <value>
+      bsUndefined
+    </value>
+  </const>
+  <const name="bsBrakeRelease" type="TButtonStatus" file="MMITypes.pas" line="310">
+    <value>
+      bsBrakeRelease
+    </value>
+  </const>
+  <const name="bsTICConfirmation" type="TButtonStatus" file="MMITypes.pas" line="311">
+    <value>
+      bsTICConfirmation
+    </value>
+  </const>
+  <const name="bsDerailInhibit" type="TButtonStatus" file="MMITypes.pas" line="312">
+    <value>
+      bsDerailInhibit
+    </value>
+  </const>
+  <const name="bsTrainConfig" type="TButtonStatus" file="MMITypes.pas" line="313">
+    <value>
+      bsTrainConfig
+    </value>
+  </const>
+  <const name="bsManualHandling" type="TButtonStatus" file="MMITypes.pas" line="314">
+    <value>
+      bsManualHandling
+    </value>
+  </const>
+  <const name="bsHandlingDone" type="TButtonStatus" file="MMITypes.pas" line="315">
+    <value>
+      bsHandlingDone
+    </value>
+  </const>
+  <const name="bsServiceLogin" type="TButtonStatus" file="MMITypes.pas" line="316">
+    <value>
+      bsServiceLogin
+    </value>
+  </const>
+  <const name="bsAlertButton" type="TButtonStatus" file="MMITypes.pas" line="317">
+    <value>
+      bsAlertButton
+    </value>
+  </const>
+  <const name="bsTest" type="TButtonStatus" file="MMITypes.pas" line="318">
+    <value>
+      bsTest
+    </value>
+  </const>
+  <const name="bsResetATP" type="TButtonStatus" file="MMITypes.pas" line="319">
+    <value>
+      bsResetATP
+    </value>
+  </const>
+  <const name="bsRetryConfig" type="TButtonStatus" file="MMITypes.pas" line="320">
+    <value>
+      bsRetryConfig
+    </value>
+  </const>
+  <const name="bsRetryBrakeLineTest" type="TButtonStatus" file="MMITypes.pas" line="321">
+    <value>
+      bsRetryBrakeLineTest
+    </value>
+  </const>
+  <const name="bsLogOut" type="TButtonStatus" file="MMITypes.pas" line="322">
+    <value>
+      bsLogOut
+    </value>
+  </const>
+  <const name="smbMainmenu" type="TSubmenuButton" file="MMITypes.pas" line="324">
+    <value>
+      smbMainmenu
+    </value>
+  </const>
+  <const name="smbTimeAndDate" type="TSubmenuButton" file="MMITypes.pas" line="325">
+    <value>
+      smbTimeAndDate
+    </value>
+  </const>
+  <const name="smbParameters" type="TSubmenuButton" file="MMITypes.pas" line="326">
+    <value>
+      smbParameters
+    </value>
+  </const>
+  <const name="smbMMIDiagnostics" type="TSubmenuButton" file="MMITypes.pas" line="327">
+    <value>
+      smbMMIDiagnostics
+    </value>
+  </const>
+  <const name="smbIOAccess" type="TSubmenuButton" file="MMITypes.pas" line="328">
+    <value>
+      smbIOAccess
+    </value>
+  </const>
+  <const name="smbTICAccess" type="TSubmenuButton" file="MMITypes.pas" line="329">
+    <value>
+      smbTICAccess
+    </value>
+  </const>
+  <const name="smbExit" type="TSubmenuButton" file="MMITypes.pas" line="330">
+    <value>
+      smbExit
+    </value>
+  </const>
+  <const name="cbReboot" type="TT44ControlButtons" file="MMITypes.pas" line="332">
+    <value>
+      cbReboot
+    </value>
+  </const>
+  <const name="cbComtest" type="TT44ControlButtons" file="MMITypes.pas" line="333">
+    <value>
+      cbComtest
+    </value>
+  </const>
+  <const name="cbTICAvailable" type="TT44ControlButtons" file="MMITypes.pas" line="334">
+    <value>
+      cbTICAvailable
+    </value>
+  </const>
+  <const name="cbStartcarListConfig" type="TT44ControlButtons" file="MMITypes.pas" line="335">
+    <value>
+      cbStartcarListConfig
+    </value>
+  </const>
+  <const name="cbGetcarlist" type="TT44ControlButtons" file="MMITypes.pas" line="336">
+    <value>
+      cbGetcarlist
+    </value>
+  </const>
+  <const name="cbReadBuzzerFunction" type="TT44ControlButtons" file="MMITypes.pas" line="337">
+    <value>
+      cbReadBuzzerFunction
+    </value>
+  </const>
+  <const name="cbGetLastcarstatus" type="TT44ControlButtons" file="MMITypes.pas" line="338">
+    <value>
+      cbGetLastcarstatus
+    </value>
+  </const>
+  <const name="cbStartcarListConfigMaintain" type="TT44ControlButtons" file="MMITypes.pas" line="339">
+    <value>
+      cbStartcarListConfigMaintain
+    </value>
+  </const>
+  <const name="cbGetcarlistMaintain" type="TT44ControlButtons" file="MMITypes.pas" line="340">
+    <value>
+      cbGetcarlistMaintain
+    </value>
+  </const>
+  <const name="cpcLower" type="TCarPlatformCmd" file="MMITypes.pas" line="342">
+    <value>
+      cpcLower
+    </value>
+  </const>
+  <const name="cpcRaise" type="TCarPlatformCmd" file="MMITypes.pas" line="342">
+    <value>
+      cpcRaise
+    </value>
+  </const>
+  <const name="cppDeactivate" type="TCarPlatformPreloadCmd" file="MMITypes.pas" line="344">
+    <value>
+      cppDeactivate
+    </value>
+  </const>
+  <const name="cppActivate" type="TCarPlatformPreloadCmd" file="MMITypes.pas" line="344">
+    <value>
+      cppActivate
+    </value>
+  </const>
+  <const name="cbcRelease" type="TCarBrakeCmd" file="MMITypes.pas" line="346">
+    <value>
+      cbcRelease
+    </value>
+  </const>
+  <const name="cbcApply" type="TCarBrakeCmd" file="MMITypes.pas" line="346">
+    <value>
+      cbcApply
+    </value>
+  </const>
+  <const name="tdUndefined" type="TTrackDirection" file="MMITypes.pas" line="348">
+    <value>
+      tdUndefined
+    </value>
+  </const>
+  <const name="tdForwardDrivingForward" type="TTrackDirection" file="MMITypes.pas" line="349">
+    <value>
+      tdForwardDrivingForward
+    </value>
+  </const>
+  <const name="tdReverseDrivingForward" type="TTrackDirection" file="MMITypes.pas" line="350">
+    <value>
+      tdReverseDrivingForward
+    </value>
+  </const>
+  <const name="tdForwardDrivingReverse" type="TTrackDirection" file="MMITypes.pas" line="351">
+    <value>
+      tdForwardDrivingReverse
+    </value>
+  </const>
+  <const name="tdReverseDrivingReverse" type="TTrackDirection" file="MMITypes.pas" line="352">
+    <value>
+      tdReverseDrivingReverse
+    </value>
+  </const>
+  <const name="pddUndefined" type="TPermittedDrivingDirection" file="MMITypes.pas" line="354">
+    <value>
+      pddUndefined
+    </value>
+  </const>
+  <const name="pddNone" type="TPermittedDrivingDirection" file="MMITypes.pas" line="355">
+    <value>
+      pddNone
+    </value>
+  </const>
+  <const name="pddForward" type="TPermittedDrivingDirection" file="MMITypes.pas" line="356">
+    <value>
+      pddForward
+    </value>
+  </const>
+  <const name="pddReverse" type="TPermittedDrivingDirection" file="MMITypes.pas" line="357">
+    <value>
+      pddReverse
+    </value>
+  </const>
+  <const name="pddBoth" type="TPermittedDrivingDirection" file="MMITypes.pas" line="358">
+    <value>
+      pddBoth
+    </value>
+  </const>
+  <const name="lcUndefined" type="TLocomotiveConnected" file="MMITypes.pas" line="360">
+    <value>
+      lcUndefined
+    </value>
+  </const>
+  <const name="lcAEnd" type="TLocomotiveConnected" file="MMITypes.pas" line="360">
+    <value>
+      lcAEnd
+    </value>
+  </const>
+  <const name="lcBEnd" type="TLocomotiveConnected" file="MMITypes.pas" line="360">
+    <value>
+      lcBEnd
+    </value>
+  </const>
+  <const name="tcUndefined" type="TTachoConfiguration" file="MMITypes.pas" line="362">
+    <value>
+      tcUndefined
+    </value>
+  </const>
+  <const name="tcThreePhase" type="TTachoConfiguration" file="MMITypes.pas" line="363">
+    <value>
+      tcThreePhase
+    </value>
+  </const>
+  <const name="tcTwoPhase" type="TTachoConfiguration" file="MMITypes.pas" line="364">
+    <value>
+      tcTwoPhase
+    </value>
+  </const>
+  <const name="tcTwoPlusOnePhase" type="TTachoConfiguration" file="MMITypes.pas" line="365">
+    <value>
+      tcTwoPlusOnePhase
+    </value>
+  </const>
+  <const name="CarBlockTypeNone" type="TCarBlockType" file="MMITypes.pas" line="367">
+    <value>
+      CarBlockTypeNone
+    </value>
+  </const>
+  <const name="CarBlockTypeStandard" type="TCarBlockType" file="MMITypes.pas" line="368">
+    <value>
+      CarBlockTypeStandard
+    </value>
+  </const>
+  <const name="CarBlockTypeLocomotive" type="TCarBlockType" file="MMITypes.pas" line="369">
+    <value>
+      CarBlockTypeLocomotive
+    </value>
+  </const>
+  <const name="CarBlockTypeService" type="TCarBlockType" file="MMITypes.pas" line="370">
+    <value>
+      CarBlockTypeService
+    </value>
+  </const>
+  <const name="CarBlockTypeOther" type="TCarBlockType" file="MMITypes.pas" line="371">
+    <value>
+      CarBlockTypeOther
+    </value>
+  </const>
+  <const name="CarBlockColumnCount" type="TCarBlockColumns" file="MMITypes.pas" line="376">
+    <value>
+      CarBlockColumnCount
+    </value>
+  </const>
+  <const name="CarBlockColumnIcon" type="TCarBlockColumns" file="MMITypes.pas" line="377">
+    <value>
+      CarBlockColumnIcon
+    </value>
+  </const>
+  <const name="CarBlockColumnTypeOfCar" type="TCarBlockColumns" file="MMITypes.pas" line="378">
+    <value>
+      CarBlockColumnTypeOfCar
+    </value>
+  </const>
+  <const name="cssUndefined" type="TConfigSubstate" file="MMITypes.pas" line="453">
+    <value>
+      cssUndefined
+    </value>
+  </const>
+  <const name="cssBrakeLineTestInactive" type="TConfigSubstate" file="MMITypes.pas" line="454">
+    <value>
+      cssBrakeLineTestInactive
+    </value>
+  </const>
+  <const name="cssBrakeLineTestActive" type="TConfigSubstate" file="MMITypes.pas" line="455">
+    <value>
+      cssBrakeLineTestActive
+    </value>
+  </const>
+  <const name="cssBrakeLineTestFailed" type="TConfigSubstate" file="MMITypes.pas" line="456">
+    <value>
+      cssBrakeLineTestFailed
+    </value>
+  </const>
+  <const name="UndefText" type="TTexttypeEnum" file="MMITypes.pas" line="461">
+    <value>
+      UndefText
+    </value>
+  </const>
+  <const name="EmergencyBrakeError" type="TTexttypeEnum" file="MMITypes.pas" line="462">
+    <value>
+      EmergencyBrakeError
+    </value>
+  </const>
+  <const name="ATP_WheelSizeError" type="TTexttypeEnum" file="MMITypes.pas" line="463">
+    <value>
+      ATP_WheelSizeError
+    </value>
+  </const>
+  <const name="TT_RcondError" type="TTexttypeEnum" file="MMITypes.pas" line="464">
+    <value>
+      TT_RcondError
+    </value>
+  </const>
+  <const name="TachometerError" type="TTexttypeEnum" file="MMITypes.pas" line="465">
+    <value>
+      TachometerError
+    </value>
+  </const>
+  <const name="BaliseAntennaError" type="TTexttypeEnum" file="MMITypes.pas" line="466">
+    <value>
+      BaliseAntennaError
+    </value>
+  </const>
+  <const name="SpeedometerError" type="TTexttypeEnum" file="MMITypes.pas" line="467">
+    <value>
+      SpeedometerError
+    </value>
+  </const>
+  <const name="BaliseError" type="TTexttypeEnum" file="MMITypes.pas" line="468">
+    <value>
+      BaliseError
+    </value>
+  </const>
+  <const name="ATP_SW_Error" type="TTexttypeEnum" file="MMITypes.pas" line="469">
+    <value>
+      ATP_SW_Error
+    </value>
+  </const>
+  <const name="DX_Error" type="TTexttypeEnum" file="MMITypes.pas" line="470">
+    <value>
+      DX_Error
+    </value>
+  </const>
+  <const name="VDX_Error" type="TTexttypeEnum" file="MMITypes.pas" line="471">
+    <value>
+      VDX_Error
+    </value>
+  </const>
+  <const name="MMI_Error" type="TTexttypeEnum" file="MMITypes.pas" line="472">
+    <value>
+      MMI_Error
+    </value>
+  </const>
+  <const name="TargetPassed" type="TTexttypeEnum" file="MMITypes.pas" line="473">
+    <value>
+      TargetPassed
+    </value>
+  </const>
+  <const name="MA_TimeOut" type="TTexttypeEnum" file="MMITypes.pas" line="474">
+    <value>
+      MA_TimeOut
+    </value>
+  </const>
+  <const name="TT_UndefText" type="TTexttypeEnum" file="MMITypes.pas" line="477">
+    <value>
+      TT_UndefText
+    </value>
+  </const>
+  <const name="TT_T44TimeOut" type="TTexttypeEnum" file="MMITypes.pas" line="478">
+    <value>
+      TT_T44TimeOut
+    </value>
+  </const>
+  <const name="TT_NoCarConfig" type="TTexttypeEnum" file="MMITypes.pas" line="479">
+    <value>
+      TT_NoCarConfig
+    </value>
+  </const>
+  <const name="TT_Derail" type="TTexttypeEnum" file="MMITypes.pas" line="480">
+    <value>
+      TT_Derail
+    </value>
+  </const>
+  <const name="TT_SensorError" type="TTexttypeEnum" file="MMITypes.pas" line="481">
+    <value>
+      TT_SensorError
+    </value>
+  </const>
+  <const name="TT_CarPlatform" type="TTexttypeEnum" file="MMITypes.pas" line="482">
+    <value>
+      TT_CarPlatform
+    </value>
+  </const>
+  <const name="TT_LastCar" type="TTexttypeEnum" file="MMITypes.pas" line="483">
+    <value>
+      TT_LastCar
+    </value>
+  </const>
+  <const name="TT_EMSButton" type="TTexttypeEnum" file="MMITypes.pas" line="484">
+    <value>
+      TT_EMSButton
+    </value>
+  </const>
+  <const name="TT_TICL" type="TTexttypeEnum" file="MMITypes.pas" line="485">
+    <value>
+      TT_TICL
+    </value>
+  </const>
+  <const name="TT_DumpingHW" type="TTexttypeEnum" file="MMITypes.pas" line="486">
+    <value>
+      TT_DumpingHW
+    </value>
+  </const>
+  <const name="TT_TICHW" type="TTexttypeEnum" file="MMITypes.pas" line="487">
+    <value>
+      TT_TICHW
+    </value>
+  </const>
+  <const name="TT_L40Rear" type="TTexttypeEnum" file="MMITypes.pas" line="488">
+    <value>
+      TT_L40Rear
+    </value>
+  </const>
+  <const name="TT_L40Front" type="TTexttypeEnum" file="MMITypes.pas" line="489">
+    <value>
+      TT_L40Front
+    </value>
+  </const>
+  <const name="TT_UndefMsg" type="TTexttypeEnum" file="MMITypes.pas" line="490">
+    <value>
+      TT_UndefMsg
+    </value>
+  </const>
+  <const name="LCS_Alarm" type="TTexttypeEnum" file="MMITypes.pas" line="491">
+    <value>
+      LCS_Alarm
+    </value>
+  </const>
+  <const name="eseDefault" type="TErrorSwitchEnum" file="MMITypes.pas" line="493">
+    <value>
+      eseDefault
+    </value>
+  </const>
+  <const name="eseIni" type="TErrorSwitchEnum" file="MMITypes.pas" line="493">
+    <value>
+      eseIni
+    </value>
+  </const>
+  <const name="ifUndef" type="TIfaceEnum" file="MMITypes.pas" line="497">
+    <value>
+      ifUndef
+    </value>
+  </const>
+  <const name="ifUStrt" type="TIfaceEnum" file="MMITypes.pas" line="498">
+    <value>
+      ifUStrt
+    </value>
+  </const>
+  <const name="ifTConf" type="TIfaceEnum" file="MMITypes.pas" line="499">
+    <value>
+      ifTConf
+    </value>
+  </const>
+  <const name="ifTReg" type="TIfaceEnum" file="MMITypes.pas" line="500">
+    <value>
+      ifTReg
+    </value>
+  </const>
+  <const name="ifBSeek" type="TIfaceEnum" file="MMITypes.pas" line="501">
+    <value>
+      ifBSeek
+    </value>
+  </const>
+  <const name="ifFullATP" type="TIfaceEnum" file="MMITypes.pas" line="502">
+    <value>
+      ifFullATP
+    </value>
+  </const>
+  <const name="ifShnt" type="TIfaceEnum" file="MMITypes.pas" line="503">
+    <value>
+      ifShnt
+    </value>
+  </const>
+  <const name="ifLocat" type="TIfaceEnum" file="MMITypes.pas" line="504">
+    <value>
+      ifLocat
+    </value>
+  </const>
+  <const name="ifAUload" type="TIfaceEnum" file="MMITypes.pas" line="506">
+    <value>
+      ifAUload
+    </value>
+  </const>
+  <const name="ifSrv" type="TIfaceEnum" file="MMITypes.pas" line="507">
+    <value>
+      ifSrv
+    </value>
+  </const>
+  <const name="ifATPModeU" type="TIfaceEnum" file="MMITypes.pas" line="509">
+    <value>
+      ifATPModeU
+    </value>
+  </const>
+  <const name="ifATPStU" type="TIfaceEnum" file="MMITypes.pas" line="510">
+    <value>
+      ifATPStU
+    </value>
+  </const>
+  <const name="ifATPStFF" type="TIfaceEnum" file="MMITypes.pas" line="511">
+    <value>
+      ifATPStFF
+    </value>
+  </const>
+  <const name="ifATPVsstU" type="TIfaceEnum" file="MMITypes.pas" line="512">
+    <value>
+      ifATPVsstU
+    </value>
+  </const>
+  <const name="ifATPSrvSStU" type="TIfaceEnum" file="MMITypes.pas" line="513">
+    <value>
+      ifATPSrvSStU
+    </value>
+  </const>
+  <const name="ifATPBssys_str" type="TIfaceEnum" file="MMITypes.pas" line="514">
+    <value>
+      ifATPBssys_str
+    </value>
+  </const>
+  <const name="ifATPApplStr" type="TIfaceEnum" file="MMITypes.pas" line="515">
+    <value>
+      ifATPApplStr
+    </value>
+  </const>
+  <const name="ifATPTst" type="TIfaceEnum" file="MMITypes.pas" line="516">
+    <value>
+      ifATPTst
+    </value>
+  </const>
+  <const name="ifATPDefTrn" type="TIfaceEnum" file="MMITypes.pas" line="517">
+    <value>
+      ifATPDefTrn
+    </value>
+  </const>
+  <const name="ifATPRegtTrn" type="TIfaceEnum" file="MMITypes.pas" line="518">
+    <value>
+      ifATPRegtTrn
+    </value>
+  </const>
+  <const name="ifStrtMMI" type="TIfaceEnum" file="MMITypes.pas" line="519">
+    <value>
+      ifStrtMMI
+    </value>
+  </const>
+  <const name="ifMMIClk" type="TIfaceEnum" file="MMITypes.pas" line="520">
+    <value>
+      ifMMIClk
+    </value>
+  </const>
+  <const name="ifATPinactiv" type="TIfaceEnum" file="MMITypes.pas" line="521">
+    <value>
+      ifATPinactiv
+    </value>
+  </const>
+  <const name="ifName" type="TIfaceEnum" file="MMITypes.pas" line="522">
+    <value>
+      ifName
+    </value>
+  </const>
+  <const name="ifPsswd" type="TIfaceEnum" file="MMITypes.pas" line="523">
+    <value>
+      ifPsswd
+    </value>
+  </const>
+  <const name="ifLocDir" type="TIfaceEnum" file="MMITypes.pas" line="524">
+    <value>
+      ifLocDir
+    </value>
+  </const>
+  <const name="ifTrnCnf" type="TIfaceEnum" file="MMITypes.pas" line="525">
+    <value>
+      ifTrnCnf
+    </value>
+  </const>
+  <const name="ifTrnReg" type="TIfaceEnum" file="MMITypes.pas" line="526">
+    <value>
+      ifTrnReg
+    </value>
+  </const>
+  <const name="ifTRnVsTrk" type="TIfaceEnum" file="MMITypes.pas" line="527">
+    <value>
+      ifTRnVsTrk
+    </value>
+  </const>
+  <const name="ifSrvLogin" type="TIfaceEnum" file="MMITypes.pas" line="528">
+    <value>
+      ifSrvLogin
+    </value>
+  </const>
+  <const name="ifLoginTRUE" type="TIfaceEnum" file="MMITypes.pas" line="529">
+    <value>
+      ifLoginTRUE
+    </value>
+  </const>
+  <const name="ifLoginVer" type="TIfaceEnum" file="MMITypes.pas" line="530">
+    <value>
+      ifLoginVer
+    </value>
+  </const>
+  <const name="ifLoginFALSE" type="TIfaceEnum" file="MMITypes.pas" line="531">
+    <value>
+      ifLoginFALSE
+    </value>
+  </const>
+  <const name="ifSpsswdTRUE" type="TIfaceEnum" file="MMITypes.pas" line="532">
+    <value>
+      ifSpsswdTRUE
+    </value>
+  </const>
+  <const name="ifVerSPsswd" type="TIfaceEnum" file="MMITypes.pas" line="533">
+    <value>
+      ifVerSPsswd
+    </value>
+  </const>
+  <const name="ifSrvpsswdFALSE" type="TIfaceEnum" file="MMITypes.pas" line="534">
+    <value>
+      ifSrvpsswdFALSE
+    </value>
+  </const>
+  <const name="ifLoginBtn" type="TIfaceEnum" file="MMITypes.pas" line="535">
+    <value>
+      ifLoginBtn
+    </value>
+  </const>
+  <const name="ifSrvBtn" type="TIfaceEnum" file="MMITypes.pas" line="536">
+    <value>
+      ifSrvBtn
+    </value>
+  </const>
+  <const name="ifCnfBtn" type="TIfaceEnum" file="MMITypes.pas" line="537">
+    <value>
+      ifCnfBtn
+    </value>
+  </const>
+  <const name="ifAccepBtn" type="TIfaceEnum" file="MMITypes.pas" line="538">
+    <value>
+      ifAccepBtn
+    </value>
+  </const>
+  <const name="ifRenterBtn" type="TIfaceEnum" file="MMITypes.pas" line="539">
+    <value>
+      ifRenterBtn
+    </value>
+  </const>
+  <const name="ifDelBtn" type="TIfaceEnum" file="MMITypes.pas" line="540">
+    <value>
+      ifDelBtn
+    </value>
+  </const>
+  <const name="ifCommLost" type="TIfaceEnum" file="MMITypes.pas" line="541">
+    <value>
+      ifCommLost
+    </value>
+  </const>
+  <const name="ifFatal1" type="TIfaceEnum" file="MMITypes.pas" line="542">
+    <value>
+      ifFatal1
+    </value>
+  </const>
+  <const name="ifFatal2" type="TIfaceEnum" file="MMITypes.pas" line="543">
+    <value>
+      ifFatal2
+    </value>
+  </const>
+  <const name="ifRetryButton" type="TIfaceEnum" file="MMITypes.pas" line="544">
+    <value>
+      ifRetryButton
+    </value>
+  </const>
+  <const name="ifUnreg1" type="TIfaceEnum" file="MMITypes.pas" line="545">
+    <value>
+      ifUnreg1
+    </value>
+  </const>
+  <const name="ifReConfig1" type="TIfaceEnum" file="MMITypes.pas" line="546">
+    <value>
+      ifReConfig1
+    </value>
+  </const>
+  <const name="ifReConfig2" type="TIfaceEnum" file="MMITypes.pas" line="547">
+    <value>
+      ifReConfig2
+    </value>
+  </const>
+  <const name="ifRetryConfig" type="TIfaceEnum" file="MMITypes.pas" line="548">
+    <value>
+      ifRetryConfig
+    </value>
+  </const>
+  <const name="ifTrain" type="TIfaceEnum" file="MMITypes.pas" line="549">
+    <value>
+      ifTrain
+    </value>
+  </const>
+  <const name="ifBrkTst" type="TIfaceEnum" file="MMITypes.pas" line="550">
+    <value>
+      ifBrkTst
+    </value>
+  </const>
+  <const name="ifBrkTstFail" type="TIfaceEnum" file="MMITypes.pas" line="551">
+    <value>
+      ifBrkTstFail
+    </value>
+  </const>
+  <const name="ifBrkTstMsg" type="TIfaceEnum" file="MMITypes.pas" line="552">
+    <value>
+      ifBrkTstMsg
+    </value>
+  </const>
+  <const name="ifRetryBrkTstBtn" type="TIfaceEnum" file="MMITypes.pas" line="553">
+    <value>
+      ifRetryBrkTstBtn
+    </value>
+  </const>
+  <const name="ifRetryConfigCount" type="TIfaceEnum" file="MMITypes.pas" line="554">
+    <value>
+      ifRetryConfigCount
+    </value>
+  </const>
+  <const name="ifsDefault" type="TSwitchEnum" file="MMITypes.pas" line="556">
+    <value>
+      ifsDefault
+    </value>
+  </const>
+  <const name="ifsIni" type="TSwitchEnum" file="MMITypes.pas" line="556">
+    <value>
+      ifsIni
+    </value>
+  </const>
+  <enum name="T_Projects" file="MMITypes.pas" line="89">
+    <element name="prUndefined" file="MMITypes.pas" line="89" />
+    <element name="prEsmeralda" file="MMITypes.pas" line="90" />
+    <element name="prTeniente8" file="MMITypes.pas" line="91" />
+  </enum>
+  <enum name="T_Orientation" file="MMITypes.pas" line="93">
+    <element name="orUndefined" file="MMITypes.pas" line="93" />
+    <element name="orFixed" file="MMITypes.pas" line="94" />
+    <element name="orNotFixed" file="MMITypes.pas" line="95" />
+  </enum>
+  <enum name="T_ATPmodes" file="MMITypes.pas" line="100">
+    <element name="amUndefined" file="MMITypes.pas" line="100" />
+    <element name="amPowerup" file="MMITypes.pas" line="101" />
+    <element name="amTrainconfiguration" file="MMITypes.pas" line="102" />
+    <element name="amTrainregistration" file="MMITypes.pas" line="103" />
+    <element name="amBalisSearchMode" file="MMITypes.pas" line="104" />
+    <element name="amFullATP" file="MMITypes.pas" line="105" />
+    <element name="amShunting" file="MMITypes.pas" line="106" />
+    <element name="amLocation" file="MMITypes.pas" line="107" />
+    <element name="amAutomaticUnload" file="MMITypes.pas" line="109" />
+    <element name="amService" file="MMITypes.pas" line="110" />
+    <element name="amUnregistered" file="MMITypes.pas" line="112" />
+  </enum>
+  <array name="TATPModesToStr">
+    <element type="string" />
+  </array>
+  <enum name="T_ATPStates" file="MMITypes.pas" line="116">
+    <element name="asUndefined" file="MMITypes.pas" line="116" />
+    <element name="asBasicsSystemStartUp" file="MMITypes.pas" line="117" />
+    <element name="asApplicationStartUp" file="MMITypes.pas" line="118" />
+    <element name="asFirstTimeInactive" file="MMITypes.pas" line="119" />
+    <element name="asInactive" file="MMITypes.pas" line="120" />
+    <element name="asActivationInitiation" file="MMITypes.pas" line="121" />
+    <element name="asActivationTest" file="MMITypes.pas" line="122" />
+    <element name="asActiveState" file="MMITypes.pas" line="123" />
+    <element name="asFatalFailureState" file="MMITypes.pas" line="124" />
+    <element name="asServiceModeVerification" file="MMITypes.pas" line="125" />
+    <element name="asServiceModeActivation" file="MMITypes.pas" line="126" />
+    <element name="asServiceModeActive" file="MMITypes.pas" line="127" />
+    <element name="asSystemRestart" file="MMITypes.pas" line="128" />
+    <element name="asSpecialPreActivation" file="MMITypes.pas" line="129" />
+  </enum>
+  <enum name="T_ATPServiceSubStates" file="MMITypes.pas" line="131">
+    <element name="asssUndefined" file="MMITypes.pas" line="131" />
+    <element name="asssMainMenu" file="MMITypes.pas" line="132" />
+    <element name="asssTimeDate" file="MMITypes.pas" line="133" />
+    <element name="asssParameter" file="MMITypes.pas" line="134" />
+    <element name="asssMMIDiag" file="MMITypes.pas" line="135" />
+    <element name="asssIOAccess" file="MMITypes.pas" line="136" />
+    <element name="asssTicAccess" file="MMITypes.pas" line="137" />
+  </enum>
+  <enum name="T_ATPVerificationStates" file="MMITypes.pas" line="139">
+    <element name="avsUndefined" file="MMITypes.pas" line="139" />
+    <element name="avsNoActionState" file="MMITypes.pas" line="140" />
+    <element name="avsInputState" file="MMITypes.pas" line="141" />
+    <element name="avsVerificationState" file="MMITypes.pas" line="142" />
+    <element name="avsRedoinputState" file="MMITypes.pas" line="143" />
+  </enum>
+  <type name="T_ATPLocomotiveStatus" type="word" loBound="0" hiBound="65535" />
+  <enum name="T_ATOModes" file="MMITypes.pas" line="146">
+    <element name="atomUndefined" file="MMITypes.pas" line="146" />
+    <element name="atomManual" file="MMITypes.pas" line="147" />
+    <element name="atomSupervised" file="MMITypes.pas" line="148" />
+    <element name="atomAutomatic" file="MMITypes.pas" line="149" />
+    <element name="atomRemote" file="MMITypes.pas" line="150" />
+  </enum>
+  <enum name="T_ATOSwitch" file="MMITypes.pas" line="152">
+    <element name="ATOSwitch_Undefined" file="MMITypes.pas" line="153" />
+    <element name="ATOSwitch_Manual" file="MMITypes.pas" line="154" />
+    <element name="ATOSwitch_SupervisedAutomatic" file="MMITypes.pas" line="155" />
+    <element name="ATOSwitch_Automatic" file="MMITypes.pas" line="156" />
+    <element name="ATOSwitch_Illegal" file="MMITypes.pas" line="157" />
+  </enum>
+  <enum name="TMessageType" file="MMITypes.pas" line="162">
+    <element name="mtUndefined" file="MMITypes.pas" line="162" />
+    <element name="mtATPModes_States" file="MMITypes.pas" line="163" />
+    <element name="mtSpare2" file="MMITypes.pas" line="164" />
+    <element name="mtDriverInfo" file="MMITypes.pas" line="165" />
+    <element name="mtSpare4" file="MMITypes.pas" line="166" />
+    <element name="mtSpeed_Distance" file="MMITypes.pas" line="167" />
+    <element name="mtTACSpeed_Distance" file="MMITypes.pas" line="168" />
+    <element name="mtSpare7" file="MMITypes.pas" line="169" />
+    <element name="mtTrnConfigData" file="MMITypes.pas" line="170" />
+    <element name="mtSpare9" file="MMITypes.pas" line="171" />
+    <element name="mtErrorMessages" file="MMITypes.pas" line="172" />
+    <element name="mtSpare11" file="MMITypes.pas" line="173" />
+    <element name="mtSpare12" file="MMITypes.pas" line="174" />
+    <element name="mtManualConfigSelected" file="MMITypes.pas" line="175" />
+    <element name="mtSpare14" file="MMITypes.pas" line="176" />
+    <element name="mtSpare15" file="MMITypes.pas" line="177" />
+    <element name="mtSpare16" file="MMITypes.pas" line="178" />
+    <element name="mtSpare17" file="MMITypes.pas" line="179" />
+    <element name="mtTime" file="MMITypes.pas" line="180" />
+    <element name="mtCarNameList" file="MMITypes.pas" line="181" />
+    <element name="mtTrnVSTrackDirWanted" file="MMITypes.pas" line="182" />
+    <element name="mtMMITime" file="MMITypes.pas" line="183" />
+    <element name="mtMMIStatus" file="MMITypes.pas" line="184" />
+    <element name="mtCarListAnswer" file="MMITypes.pas" line="185" />
+    <element name="mtCarPlatformCmd" file="MMITypes.pas" line="186" />
+    <element name="mtCarTrnConfigOutputCmd" file="MMITypes.pas" line="187" />
+    <element name="mtBoolConfirmation" file="MMITypes.pas" line="188" />
+    <element name="mtDriverID_Password" file="MMITypes.pas" line="189" />
+    <element name="mtGetCarStatus" file="MMITypes.pas" line="190" />
+    <element name="mtLCarBuzzerCmd" file="MMITypes.pas" line="191" />
+    <element name="mtLCarTrnConfigCmd" file="MMITypes.pas" line="192" />
+    <element name="mtLCarLightCmd" file="MMITypes.pas" line="193" />
+    <element name="mtLCarWarningSignalCmd" file="MMITypes.pas" line="194" />
+    <element name="mtLocVSTrnDir" file="MMITypes.pas" line="195" />
+    <element name="mtMMIToATP_Data" file="MMITypes.pas" line="196" />
+    <element name="mtServicePassword" file="MMITypes.pas" line="197" />
+    <element name="mtSubmenuButton" file="MMITypes.pas" line="198" />
+    <element name="mtT44ControlButtons" file="MMITypes.pas" line="199" />
+    <element name="mtSpare38" file="MMITypes.pas" line="200" />
+    <element name="mtTrnVSTrackDir" file="MMITypes.pas" line="201" />
+    <element name="mtErasePlanningArea" file="MMITypes.pas" line="202" />
+    <element name="mtConfirmationRequest" file="MMITypes.pas" line="203" />
+    <element name="mtTextMessage" file="MMITypes.pas" line="204" />
+    <element name="mtMMIShutdown" file="MMITypes.pas" line="205" />
+    <element name="mtCarStatusData" file="MMITypes.pas" line="206" />
+    <element name="mtCarDerailPwrCmd" file="MMITypes.pas" line="207" />
+    <element name="mtCeilingSpeedList" file="MMITypes.pas" line="208" />
+    <element name="mtGradientDataList" file="MMITypes.pas" line="209" />
+    <element name="mtMMIStartUp" file="MMITypes.pas" line="210" />
+    <element name="mtSpare49" file="MMITypes.pas" line="211" />
+    <element name="mtSpare50" file="MMITypes.pas" line="212" />
+    <element name="mtReConfigSelected" file="MMITypes.pas" line="213" />
+    <element name="mtTrainName" file="MMITypes.pas" line="214" />
+    <element name="mtLogData" file="MMITypes.pas" line="215" />
+    <element name="mtLogVersion" file="MMITypes.pas" line="216" />
+    <element name="mtCarPlatformPreloadCmd" file="MMITypes.pas" line="217" />
+    <element name="mtCarBrakeCmd" file="MMITypes.pas" line="218" />
+    <element name="mtPredefinedTextMsg" file="MMITypes.pas" line="219" />
+    <element name="mtAtpNotification" file="MMITypes.pas" line="220" />
+    <element name="mtSpecialConfigRecord" file="MMITypes.pas" line="221" />
+    <element name="mtLocoCarListAnswer" file="MMITypes.pas" line="222" />
+  </enum>
+  <enum name="TLogin" file="MMITypes.pas" line="228">
+    <element name="lLoginName" file="MMITypes.pas" line="228" />
+    <element name="lLoginPassword" file="MMITypes.pas" line="228" />
+  </enum>
+  <enum name="TConfigMode" file="MMITypes.pas" line="230">
+    <element name="cmUndefined" file="MMITypes.pas" line="230" />
+    <element name="cmManual" file="MMITypes.pas" line="231" />
+    <element name="cmAutomatic" file="MMITypes.pas" line="232" />
+    <element name="cmReConfig" file="MMITypes.pas" line="233" />
+  </enum>
+  <enum name="TLoadHandlingMode" file="MMITypes.pas" line="235">
+    <element name="lhUndefined" file="MMITypes.pas" line="235" />
+    <element name="lhAutomatic" file="MMITypes.pas" line="236" />
+    <element name="lhManual" file="MMITypes.pas" line="237" />
+  </enum>
+  <enum name="TEAreaSymbols" file="MMITypes.pas" line="239">
+    <element name="Brake" file="MMITypes.pas" line="239" />
+    <element name="ServiceBake" file="MMITypes.pas" line="240" />
+    <element name="EmergencyBrake" file="MMITypes.pas" line="241" />
+    <element name="EmergencyAlert" file="MMITypes.pas" line="242" />
+    <element name="TrainIntegrity" file="MMITypes.pas" line="243" />
+    <element name="LastCarAlert" file="MMITypes.pas" line="244" />
+  </enum>
+  <enum name="TCarPlatformStatus" file="MMITypes.pas" line="246">
+    <element name="cpsPlatformDownUnloaded" file="MMITypes.pas" line="246" />
+    <element name="cpsPlatformDownLoaded" file="MMITypes.pas" line="247" />
+    <element name="cpsPlatformGoingup" file="MMITypes.pas" line="248" />
+    <element name="cpsPlatformUp" file="MMITypes.pas" line="249" />
+    <element name="cpsPlatformGoingDown" file="MMITypes.pas" line="250" />
+  </enum>
+  <enum name="TCeilingSpeedReason" file="MMITypes.pas" line="252">
+    <element name="ssrUndefined" file="MMITypes.pas" line="252" />
+    <element name="ssrPointStraight" file="MMITypes.pas" line="253" />
+    <element name="ssrPointCurve" file="MMITypes.pas" line="254" />
+    <element name="ssrPointPassed" file="MMITypes.pas" line="255" />
+    <element name="ssrLocation" file="MMITypes.pas" line="256" />
+    <element name="ssrOther" file="MMITypes.pas" line="257" />
+    <element name="ssrEndOfMa" file="MMITypes.pas" line="258" />
+    <element name="ssrTSR" file="MMITypes.pas" line="259" />
+  </enum>
+  <enum name="TERRORBlock" file="MMITypes.pas" line="261">
+    <element name="ebUndefinedBlock" file="MMITypes.pas" line="261" />
+    <element name="ebACT" file="MMITypes.pas" line="262" />
+    <element name="ebBRK" file="MMITypes.pas" line="263" />
+    <element name="ebCOM" file="MMITypes.pas" line="264" />
+    <element name="ebCOMATO" file="MMITypes.pas" line="265" />
+    <element name="ebCOMLCS" file="MMITypes.pas" line="266" />
+    <element name="ebDECO" file="MMITypes.pas" line="267" />
+    <element name="ebGLUE" file="MMITypes.pas" line="268" />
+    <element name="ebLOG" file="MMITypes.pas" line="269" />
+    <element name="ebMISC" file="MMITypes.pas" line="270" />
+    <element name="ebMMICL" file="MMITypes.pas" line="271" />
+    <element name="ebMON" file="MMITypes.pas" line="272" />
+    <element name="ebRCOND" file="MMITypes.pas" line="273" />
+    <element name="ebSEL" file="MMITypes.pas" line="274" />
+    <element name="ebSTART" file="MMITypes.pas" line="275" />
+    <element name="ebSUP" file="MMITypes.pas" line="276" />
+    <element name="ebT44IH" file="MMITypes.pas" line="277" />
+    <element name="ebTAC" file="MMITypes.pas" line="278" />
+    <element name="ebTICL" file="MMITypes.pas" line="279" />
+    <element name="ebVCOM" file="MMITypes.pas" line="280" />
+    <element name="ebLCS" file="MMITypes.pas" line="281" />
+    <element name="ebMMI" file="MMITypes.pas" line="282" />
+    <element name="ebMMICLMMI" file="MMITypes.pas" line="283" />
+  </enum>
+  <array name="TErrorBlocKToStr">
+    <element type="string" />
+  </array>
+  <enum name="TERRORGrade" file="MMITypes.pas" line="287">
+    <element name="egUndefined" file="MMITypes.pas" line="287" />
+    <element name="egFatalErrorA" file="MMITypes.pas" line="288" />
+    <element name="egFatalErrorB" file="MMITypes.pas" line="289" />
+    <element name="egFatalErrorC" file="MMITypes.pas" line="290" />
+    <element name="egMinorErrorA" file="MMITypes.pas" line="291" />
+    <element name="egMinorErrorB" file="MMITypes.pas" line="292" />
+    <element name="egMinorErrorC" file="MMITypes.pas" line="293" />
+    <element name="egLogErrorA" file="MMITypes.pas" line="294" />
+    <element name="egLogErrorB" file="MMITypes.pas" line="295" />
+    <element name="egLogErrorC" file="MMITypes.pas" line="296" />
+  </enum>
+  <array name="TErrorGradeToStr">
+    <element type="string" />
+  </array>
+  <enum name="T_BTIUAvailableStatus" file="MMITypes.pas" line="300">
+    <element name="BaliseDataChannelSafeA" file="MMITypes.pas" line="300" />
+    <element name="BaliseDataChannelAvailableA" file="MMITypes.pas" line="301" />
+    <element name="BaliseDataChannelUnavailableA" file="MMITypes.pas" line="302" />
+  </enum>
+  <enum name="TLCarBuzzerCmd" file="MMITypes.pas" line="304">
+    <element name="lcbc1_bipp" file="MMITypes.pas" line="304" />
+    <element name="lcbc2_bipp" file="MMITypes.pas" line="305" />
+    <element name="lcbcConstant" file="MMITypes.pas" line="306" />
+    <element name="lcbcConstant_pulsing" file="MMITypes.pas" line="307" />
+  </enum>
+  <enum name="TButtonStatus" file="MMITypes.pas" line="309">
+    <element name="bsUndefined" file="MMITypes.pas" line="309" />
+    <element name="bsBrakeRelease" file="MMITypes.pas" line="310" />
+    <element name="bsTICConfirmation" file="MMITypes.pas" line="311" />
+    <element name="bsDerailInhibit" file="MMITypes.pas" line="312" />
+    <element name="bsTrainConfig" file="MMITypes.pas" line="313" />
+    <element name="bsManualHandling" file="MMITypes.pas" line="314" />
+    <element name="bsHandlingDone" file="MMITypes.pas" line="315" />
+    <element name="bsServiceLogin" file="MMITypes.pas" line="316" />
+    <element name="bsAlertButton" file="MMITypes.pas" line="317" />
+    <element name="bsTest" file="MMITypes.pas" line="318" />
+    <element name="bsResetATP" file="MMITypes.pas" line="319" />
+    <element name="bsRetryConfig" file="MMITypes.pas" line="320" />
+    <element name="bsRetryBrakeLineTest" file="MMITypes.pas" line="321" />
+    <element name="bsLogOut" file="MMITypes.pas" line="322" />
+  </enum>
+  <enum name="TSubmenuButton" file="MMITypes.pas" line="324">
+    <element name="smbMainmenu" file="MMITypes.pas" line="324" />
+    <element name="smbTimeAndDate" file="MMITypes.pas" line="325" />
+    <element name="smbParameters" file="MMITypes.pas" line="326" />
+    <element name="smbMMIDiagnostics" file="MMITypes.pas" line="327" />
+    <element name="smbIOAccess" file="MMITypes.pas" line="328" />
+    <element name="smbTICAccess" file="MMITypes.pas" line="329" />
+    <element name="smbExit" file="MMITypes.pas" line="330" />
+  </enum>
+  <enum name="TT44ControlButtons" file="MMITypes.pas" line="332">
+    <element name="cbReboot" file="MMITypes.pas" line="332" />
+    <element name="cbComtest" file="MMITypes.pas" line="333" />
+    <element name="cbTICAvailable" file="MMITypes.pas" line="334" />
+    <element name="cbStartcarListConfig" file="MMITypes.pas" line="335" />
+    <element name="cbGetcarlist" file="MMITypes.pas" line="336" />
+    <element name="cbReadBuzzerFunction" file="MMITypes.pas" line="337" />
+    <element name="cbGetLastcarstatus" file="MMITypes.pas" line="338" />
+    <element name="cbStartcarListConfigMaintain" file="MMITypes.pas" line="339" />
+    <element name="cbGetcarlistMaintain" file="MMITypes.pas" line="340" />
+  </enum>
+  <enum name="TCarPlatformCmd" file="MMITypes.pas" line="342">
+    <element name="cpcLower" file="MMITypes.pas" line="342" />
+    <element name="cpcRaise" file="MMITypes.pas" line="342" />
+  </enum>
+  <enum name="TCarPlatformPreloadCmd" file="MMITypes.pas" line="344">
+    <element name="cppDeactivate" file="MMITypes.pas" line="344" />
+    <element name="cppActivate" file="MMITypes.pas" line="344" />
+  </enum>
+  <enum name="TCarBrakeCmd" file="MMITypes.pas" line="346">
+    <element name="cbcRelease" file="MMITypes.pas" line="346" />
+    <element name="cbcApply" file="MMITypes.pas" line="346" />
+  </enum>
+  <enum name="TTrackDirection" file="MMITypes.pas" line="348">
+    <element name="tdUndefined" file="MMITypes.pas" line="348" />
+    <element name="tdForwardDrivingForward" file="MMITypes.pas" line="349" />
+    <element name="tdReverseDrivingForward" file="MMITypes.pas" line="350" />
+    <element name="tdForwardDrivingReverse" file="MMITypes.pas" line="351" />
+    <element name="tdReverseDrivingReverse" file="MMITypes.pas" line="352" />
+  </enum>
+  <enum name="TPermittedDrivingDirection" file="MMITypes.pas" line="354">
+    <element name="pddUndefined" file="MMITypes.pas" line="354" />
+    <element name="pddNone" file="MMITypes.pas" line="355" />
+    <element name="pddForward" file="MMITypes.pas" line="356" />
+    <element name="pddReverse" file="MMITypes.pas" line="357" />
+    <element name="pddBoth" file="MMITypes.pas" line="358" />
+  </enum>
+  <enum name="TLocomotiveConnected" file="MMITypes.pas" line="360">
+    <element name="lcUndefined" file="MMITypes.pas" line="360" />
+    <element name="lcAEnd" file="MMITypes.pas" line="360" />
+    <element name="lcBEnd" file="MMITypes.pas" line="360" />
+  </enum>
+  <enum name="TTachoConfiguration" file="MMITypes.pas" line="362">
+    <element name="tcUndefined" file="MMITypes.pas" line="362" />
+    <element name="tcThreePhase" file="MMITypes.pas" line="363" />
+    <element name="tcTwoPhase" file="MMITypes.pas" line="364" />
+    <element name="tcTwoPlusOnePhase" file="MMITypes.pas" line="365" />
+  </enum>
+  <enum name="TCarBlockType" file="MMITypes.pas" line="367">
+    <element name="CarBlockTypeNone" file="MMITypes.pas" line="367" />
+    <element name="CarBlockTypeStandard" file="MMITypes.pas" line="368" />
+    <element name="CarBlockTypeLocomotive" file="MMITypes.pas" line="369" />
+    <element name="CarBlockTypeService" file="MMITypes.pas" line="370" />
+    <element name="CarBlockTypeOther" file="MMITypes.pas" line="371" />
+  </enum>
+  <array name="TCarBlockTypeToStr">
+    <element type="string" />
+  </array>
+  <enum name="TCarBlockColumns" file="MMITypes.pas" line="376">
+    <element name="CarBlockColumnCount" file="MMITypes.pas" line="376" />
+    <element name="CarBlockColumnIcon" file="MMITypes.pas" line="377" />
+    <element name="CarBlockColumnTypeOfCar" file="MMITypes.pas" line="378" />
+  </enum>
+  <struct name="TCarBlockEntry" file="MMITypes.pas" line="398">
+    <field name="Count" type="Byte" visibility="public" file="MMITypes.pas" line="399" />
+    <field name="ID" type="AnsiString" visibility="public" file="MMITypes.pas" line="400" />
+  </struct>
+  <array name="TCarBlockListRecord" low="1" high="8">
+    <element type="TCarBlockEntry" />
+  </array>
+  <struct name="TCarBlocksRecord" file="MMITypes.pas" line="405">
+    <field name="NumberofCarBlocks" type="Integer" visibility="public" file="MMITypes.pas" line="406" />
+    <field name="CarBlocks" type="TCarBlockListRecord" visibility="public" file="MMITypes.pas" line="407" />
+  </struct>
+  <set name="TErrorSet" type="TERRORGrade">
+    <element name="egUndefined" />
+    <element name="egFatalErrorA" />
+    <element name="egFatalErrorB" />
+    <element name="egFatalErrorC" />
+    <element name="egMinorErrorA" />
+    <element name="egMinorErrorB" />
+    <element name="egMinorErrorC" />
+    <element name="egLogErrorA" />
+    <element name="egLogErrorB" />
+    <element name="egLogErrorC" />
+  </set>
+  <array name="TErrorTextType" low="0" high="255">
+    <element type="string" />
+  </array>
+  <class name="EMMI" file="MMITypes.pas" line="424">
+    <ancestor name="Exception" namespace="SysUtils">
+      <methodref name="Create@" visibility="class private" procflags="class constructor noself">
+      </methodref>
+      <methodref name="Destroy@" visibility="class private" procflags="class destructor noself">
+      </methodref>
+      <methodref name="SetInnerException" visibility="protected">
+      </methodref>
+      <methodref name="SetStackInfo" visibility="protected">
+      </methodref>
+      <methodref name="GetStackTrace" visibility="protected">
+      </methodref>
+      <methodref name="RaisingException" visibility="protected" procflags="virtual">
+      </methodref>
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="CreateFmt" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="CreateRes" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateRes" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateResFmt" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateResFmt" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateHelp" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="CreateFmtHelp" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="CreateResHelp" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateResHelp" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateResFmtHelp" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateResFmtHelp" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor override">
+      </methodref>
+      <methodref name="GetBaseException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="override">
+      </methodref>
+      <propertyref name="BaseException" visibility="public">
+      </propertyref>
+      <propertyref name="HelpContext" visibility="public">
+      </propertyref>
+      <propertyref name="InnerException" visibility="public">
+      </propertyref>
+      <propertyref name="Message" visibility="public">
+      </propertyref>
+      <propertyref name="StackTrace" visibility="public">
+      </propertyref>
+      <propertyref name="StackInfo" visibility="public">
+      </propertyref>
+      <methodref name="RaiseOuterException" visibility="public" procflags="static">
+      </methodref>
+      <methodref name="ThrowOuterException" visibility="public" procflags="static">
+      </methodref>
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public" procflags="constructor">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="InitInstance" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="ClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassParent" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="UnitName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="Equals" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetHashCode" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="ToString" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Dispatch" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="NewInstance" visibility="public" procflags="class virtual">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+        </methodref>
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="Block" type="TERRORBlock" visibility="public" file="MMITypes.pas" line="426" />
+      <field name="ErrorNumber" type="Byte" visibility="public" file="MMITypes.pas" line="427" />
+      <field name="LineNo" type="Word" visibility="public" file="MMITypes.pas" line="428" />
+      <field name="TimeStamp" type="Integer" visibility="public" file="MMITypes.pas" line="429" />
+      <field name="ErrorGrade" type="TERRORGrade" visibility="public" file="MMITypes.pas" line="430" />
+      <field name="TextType" type="Byte" visibility="public" file="MMITypes.pas" line="431" />
+      <field name="AUX" type="Byte" visibility="public" file="MMITypes.pas" line="432" />
+      <field name="Filename" visibility="public" file="MMITypes.pas" line="433">
+        <type name="Filename" type="ShortString" />
+      </field>
+      <field name="BaliseID" type="Word" visibility="public" file="MMITypes.pas" line="434" />
+      <field name="MISCSequenceNumber" type="Byte" visibility="public" file="MMITypes.pas" line="435" />
+      <constructor name="CreatMMI" visibility="public" file="MMITypes.pas" line="436">
+        <parameters>
+          <parameter name="FBlock" type="TERRORBlock" />
+          <parameter name="FErrorNumber" type="Byte" />
+          <parameter name="FLineNo" type="Word" />
+          <parameter name="FTimeStamp" type="Integer" />
+          <parameter name="FErrorGrade" type="TERRORGrade" />
+          <parameter name="FTextType" type="Byte" />
+          <parameter name="FAUX" type="Byte" />
+          <parameter name="FFilename" type="AnsiString" />
+          <parameter name="FBaliseID" type="Word" />
+          <parameter name="FMISCSequenceNumber" type="Byte" />
+        </parameters>
+      </constructor>
+    </members>
+  </class>
+  <enum name="TConfigSubstate" file="MMITypes.pas" line="452">
+    <element name="cssUndefined" file="MMITypes.pas" line="453" />
+    <element name="cssBrakeLineTestInactive" file="MMITypes.pas" line="454" />
+    <element name="cssBrakeLineTestActive" file="MMITypes.pas" line="455" />
+    <element name="cssBrakeLineTestFailed" file="MMITypes.pas" line="456" />
+  </enum>
+  <enum name="TTexttypeEnum" file="MMITypes.pas" line="460">
+    <element name="UndefText" file="MMITypes.pas" line="461" />
+    <element name="EmergencyBrakeError" file="MMITypes.pas" line="462" />
+    <element name="ATP_WheelSizeError" file="MMITypes.pas" line="463" />
+    <element name="TT_RcondError" file="MMITypes.pas" line="464" />
+    <element name="TachometerError" file="MMITypes.pas" line="465" />
+    <element name="BaliseAntennaError" file="MMITypes.pas" line="466" />
+    <element name="SpeedometerError" file="MMITypes.pas" line="467" />
+    <element name="BaliseError" file="MMITypes.pas" line="468" />
+    <element name="ATP_SW_Error" file="MMITypes.pas" line="469" />
+    <element name="DX_Error" file="MMITypes.pas" line="470" />
+    <element name="VDX_Error" file="MMITypes.pas" line="471" />
+    <element name="MMI_Error" file="MMITypes.pas" line="472" />
+    <element name="TargetPassed" file="MMITypes.pas" line="473" />
+    <element name="MA_TimeOut" file="MMITypes.pas" line="474" />
+    <element name="TT_UndefText" file="MMITypes.pas" line="477" />
+    <element name="TT_T44TimeOut" file="MMITypes.pas" line="478" />
+    <element name="TT_NoCarConfig" file="MMITypes.pas" line="479" />
+    <element name="TT_Derail" file="MMITypes.pas" line="480" />
+    <element name="TT_SensorError" file="MMITypes.pas" line="481" />
+    <element name="TT_CarPlatform" file="MMITypes.pas" line="482" />
+    <element name="TT_LastCar" file="MMITypes.pas" line="483" />
+    <element name="TT_EMSButton" file="MMITypes.pas" line="484" />
+    <element name="TT_TICL" file="MMITypes.pas" line="485" />
+    <element name="TT_DumpingHW" file="MMITypes.pas" line="486" />
+    <element name="TT_TICHW" file="MMITypes.pas" line="487" />
+    <element name="TT_L40Rear" file="MMITypes.pas" line="488" />
+    <element name="TT_L40Front" file="MMITypes.pas" line="489" />
+    <element name="TT_UndefMsg" file="MMITypes.pas" line="490" />
+    <element name="LCS_Alarm" file="MMITypes.pas" line="491" />
+  </enum>
+  <enum name="TErrorSwitchEnum" file="MMITypes.pas" line="493">
+    <element name="eseDefault" file="MMITypes.pas" line="493" />
+    <element name="eseIni" file="MMITypes.pas" line="493" />
+  </enum>
+  <array name="TErrorEnumToStr">
+    <array name="TErrorEnumToStr">
+      <element type="string" />
+    </array>
+  </array>
+  <enum name="TIfaceEnum" file="MMITypes.pas" line="497">
+    <element name="ifUndef" file="MMITypes.pas" line="497" />
+    <element name="ifUStrt" file="MMITypes.pas" line="498" />
+    <element name="ifTConf" file="MMITypes.pas" line="499" />
+    <element name="ifTReg" file="MMITypes.pas" line="500" />
+    <element name="ifBSeek" file="MMITypes.pas" line="501" />
+    <element name="ifFullATP" file="MMITypes.pas" line="502" />
+    <element name="ifShnt" file="MMITypes.pas" line="503" />
+    <element name="ifLocat" file="MMITypes.pas" line="504" />
+    <element name="ifAUload" file="MMITypes.pas" line="506" />
+    <element name="ifSrv" file="MMITypes.pas" line="507" />
+    <element name="ifATPModeU" file="MMITypes.pas" line="509" />
+    <element name="ifATPStU" file="MMITypes.pas" line="510" />
+    <element name="ifATPStFF" file="MMITypes.pas" line="511" />
+    <element name="ifATPVsstU" file="MMITypes.pas" line="512" />
+    <element name="ifATPSrvSStU" file="MMITypes.pas" line="513" />
+    <element name="ifATPBssys_str" file="MMITypes.pas" line="514" />
+    <element name="ifATPApplStr" file="MMITypes.pas" line="515" />
+    <element name="ifATPTst" file="MMITypes.pas" line="516" />
+    <element name="ifATPDefTrn" file="MMITypes.pas" line="517" />
+    <element name="ifATPRegtTrn" file="MMITypes.pas" line="518" />
+    <element name="ifStrtMMI" file="MMITypes.pas" line="519" />
+    <element name="ifMMIClk" file="MMITypes.pas" line="520" />
+    <element name="ifATPinactiv" file="MMITypes.pas" line="521" />
+    <element name="ifName" file="MMITypes.pas" line="522" />
+    <element name="ifPsswd" file="MMITypes.pas" line="523" />
+    <element name="ifLocDir" file="MMITypes.pas" line="524" />
+    <element name="ifTrnCnf" file="MMITypes.pas" line="525" />
+    <element name="ifTrnReg" file="MMITypes.pas" line="526" />
+    <element name="ifTRnVsTrk" file="MMITypes.pas" line="527" />
+    <element name="ifSrvLogin" file="MMITypes.pas" line="528" />
+    <element name="ifLoginTRUE" file="MMITypes.pas" line="529" />
+    <element name="ifLoginVer" file="MMITypes.pas" line="530" />
+    <element name="ifLoginFALSE" file="MMITypes.pas" line="531" />
+    <element name="ifSpsswdTRUE" file="MMITypes.pas" line="532" />
+    <element name="ifVerSPsswd" file="MMITypes.pas" line="533" />
+    <element name="ifSrvpsswdFALSE" file="MMITypes.pas" line="534" />
+    <element name="ifLoginBtn" file="MMITypes.pas" line="535" />
+    <element name="ifSrvBtn" file="MMITypes.pas" line="536" />
+    <element name="ifCnfBtn" file="MMITypes.pas" line="537" />
+    <element name="ifAccepBtn" file="MMITypes.pas" line="538" />
+    <element name="ifRenterBtn" file="MMITypes.pas" line="539" />
+    <element name="ifDelBtn" file="MMITypes.pas" line="540" />
+    <element name="ifCommLost" file="MMITypes.pas" line="541" />
+    <element name="ifFatal1" file="MMITypes.pas" line="542" />
+    <element name="ifFatal2" file="MMITypes.pas" line="543" />
+    <element name="ifRetryButton" file="MMITypes.pas" line="544" />
+    <element name="ifUnreg1" file="MMITypes.pas" line="545" />
+    <element name="ifReConfig1" file="MMITypes.pas" line="546" />
+    <element name="ifReConfig2" file="MMITypes.pas" line="547" />
+    <element name="ifRetryConfig" file="MMITypes.pas" line="548" />
+    <element name="ifTrain" file="MMITypes.pas" line="549" />
+    <element name="ifBrkTst" file="MMITypes.pas" line="550" />
+    <element name="ifBrkTstFail" file="MMITypes.pas" line="551" />
+    <element name="ifBrkTstMsg" file="MMITypes.pas" line="552" />
+    <element name="ifRetryBrkTstBtn" file="MMITypes.pas" line="553" />
+    <element name="ifRetryConfigCount" file="MMITypes.pas" line="554" />
+  </enum>
+  <enum name="TSwitchEnum" file="MMITypes.pas" line="556">
+    <element name="ifsDefault" file="MMITypes.pas" line="556" />
+    <element name="ifsIni" file="MMITypes.pas" line="556" />
+  </enum>
+  <array name="TIfaceEnumToStr">
+    <array name="TIfaceEnumToStr">
+      <element type="string" />
+    </array>
+  </array>
+  <array name="TSpeedReasonEnumToStr">
+    <array name="TSpeedReasonEnumToStr">
+      <element type="string" />
+    </array>
+  </array>
+  <array name="TTrainName" low="0" high="9">
+    <element type="AnsiChar" />
+  </array>
+  <array name="TCarName" low="0" high="9">
+    <element type="AnsiChar" />
+  </array>
+  <array name="TMMIByteArray" low="0" high="65535">
+    <element type="Byte" />
+  </array>
+  <array name="TWordArray" low="0" high="65535">
+    <element type="Word" />
+  </array>
+  <array name="TSmallIntArray" low="0" high="65535">
+    <element type="SmallInt" />
+  </array>
+  <array name="TLongIntArray" low="0" high="65535">
+    <element type="Integer" />
+  </array>
+  <pointer name="PInt" type="Integer" indircnt="1" />
+  <pointer name="PByte" type="Byte" indircnt="1" />
+  <pointer name="PMMIByteArray" type="TMMIByteArray" indircnt="1" />
+  <pointer name="PWordArray" type="TWordArray" indircnt="1" />
+  <pointer name="PSmallIntArray" type="TSmallIntArray" indircnt="1" />
+  <pointer name="PLongIntArray" type="TLongIntArray" indircnt="1" />
+  <struct name="TWordType" packed="true" file="MMITypes.pas" line="577">
+    <field name="Byte0" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="580" />
+    <field name="Byte1" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="581" />
+    <field name="Total" type="Word" visibility="public" variant="true" file="MMITypes.pas" line="583" />
+  </struct>
+  <struct name="TSmallIntType" packed="true" file="MMITypes.pas" line="586">
+    <field name="Byte0" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="589" />
+    <field name="Byte1" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="590" />
+    <field name="Total" type="SmallInt" visibility="public" variant="true" file="MMITypes.pas" line="592" />
+  </struct>
+  <struct name="TCardinalType" packed="true" file="MMITypes.pas" line="595">
+    <field name="byte0" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="598" />
+    <field name="byte1" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="599" />
+    <field name="byte2" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="600" />
+    <field name="byte3" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="601" />
+    <field name="Total" type="Cardinal" visibility="public" variant="true" file="MMITypes.pas" line="603" />
+  </struct>
+  <struct name="TLongintType" packed="true" file="MMITypes.pas" line="606">
+    <field name="byte0" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="609" />
+    <field name="byte1" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="610" />
+    <field name="byte2" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="611" />
+    <field name="byte3" type="Byte" visibility="public" variant="true" file="MMITypes.pas" line="612" />
+    <field name="Total" type="Integer" visibility="public" variant="true" file="MMITypes.pas" line="614" />
+  </struct>
+  <struct name="TATPModes_StatesMT" packed="true" file="MMITypes.pas" line="621">
+    <field name="ATPMode" type="T_ATPmodes" visibility="public" file="MMITypes.pas" line="622" />
+    <field name="ATPState" type="T_ATPStates" visibility="public" file="MMITypes.pas" line="623" />
+    <field name="ATPServiceSS" type="T_ATPServiceSubStates" visibility="public" file="MMITypes.pas" line="624" />
+    <field name="ATPVerification" type="T_ATPVerificationStates" visibility="public" file="MMITypes.pas" line="625" />
+    <field name="LocoStatus" type="Word" visibility="public" file="MMITypes.pas" line="626" />
+    <field name="ATOMode" type="T_ATOModes" visibility="public" file="MMITypes.pas" line="627" />
+    <field name="ATOSwitch" type="T_ATOSwitch" visibility="public" file="MMITypes.pas" line="628" />
+  </struct>
+  <pointer name="PATPModes_StatesMT" type="TATPModes_StatesMT" indircnt="1" />
+  <struct name="TBaliseInfoMT" packed="true" file="MMITypes.pas" line="632">
+    <field name="BTIUAvailableStatus" type="T_BTIUAvailableStatus" visibility="public" file="MMITypes.pas" line="633" />
+    <field name="newInfo" type="Byte" visibility="public" file="MMITypes.pas" line="634" />
+    <field name="baliseID" type="TWordType" visibility="public" file="MMITypes.pas" line="635" />
+    <field name="odometer" type="TLongintType" visibility="public" file="MMITypes.pas" line="636" />
+  </struct>
+  <pointer name="PBaliseInfoMT" type="TBaliseInfoMT" indircnt="1" />
+  <struct name="TDriverInfoMT" packed="true" file="MMITypes.pas" line="640">
+    <field name="Permitteddrivingdirection" type="TPermittedDrivingDirection" visibility="public" file="MMITypes.pas" line="641" />
+    <field name="Pspeed" type="Byte" visibility="public" file="MMITypes.pas" line="642" />
+    <field name="Tspeed" type="Byte" visibility="public" file="MMITypes.pas" line="643" />
+    <field name="Timetointervention" type="Byte" visibility="public" file="MMITypes.pas" line="644" />
+    <field name="RemainingDistanceToTargetPoint" type="Word" visibility="public" file="MMITypes.pas" line="645" />
+    <field name="RemainingDistanceToBCA" type="Word" visibility="public" file="MMITypes.pas" line="646" />
+    <field name="PredictedDistanceToStandStillLocation" type="Word" visibility="public" file="MMITypes.pas" line="647" />
+    <field name="PredictedRelativeSpeedAtBrakeTarget" type="Byte" visibility="public" file="MMITypes.pas" line="648" />
+    <field name="StatusD11" type="Byte" visibility="public" file="MMITypes.pas" line="649" />
+    <field name="StatusD12" type="Byte" visibility="public" file="MMITypes.pas" line="650" />
+  </struct>
+  <pointer name="PDriverInfoMT" type="TDriverInfoMT" indircnt="1" />
+  <struct name="TDxVdxIOMT" packed="true" file="MMITypes.pas" line="654">
+    <field name="DXinput0" type="Byte" visibility="public" file="MMITypes.pas" line="655" />
+    <field name="DXinput1" type="Byte" visibility="public" file="MMITypes.pas" line="656" />
+    <field name="DXinput2" type="Byte" visibility="public" file="MMITypes.pas" line="657" />
+    <field name="DXinput3" type="Byte" visibility="public" file="MMITypes.pas" line="658" />
+    <field name="DXinput4" type="Byte" visibility="public" file="MMITypes.pas" line="659" />
+    <field name="DXinput5" type="Byte" visibility="public" file="MMITypes.pas" line="660" />
+    <field name="DXinput6" type="Byte" visibility="public" file="MMITypes.pas" line="661" />
+    <field name="DXinput7" type="Byte" visibility="public" file="MMITypes.pas" line="662" />
+    <field name="DXinput8" type="Byte" visibility="public" file="MMITypes.pas" line="663" />
+    <field name="DXinput9" type="Byte" visibility="public" file="MMITypes.pas" line="664" />
+    <field name="DXselfTestStatus" type="Byte" visibility="public" file="MMITypes.pas" line="665" />
+    <field name="DXselfTestToggleBit" type="Byte" visibility="public" file="MMITypes.pas" line="666" />
+    <field name="DXtransmissionValid1" type="Byte" visibility="public" file="MMITypes.pas" line="667" />
+    <field name="DXinputStatus0" type="Byte" visibility="public" file="MMITypes.pas" line="668" />
+    <field name="DXinputStatus1" type="Byte" visibility="public" file="MMITypes.pas" line="669" />
+    <field name="DXinputStatus2" type="Byte" visibility="public" file="MMITypes.pas" line="670" />
+    <field name="DXinputStatus3" type="Byte" visibility="public" file="MMITypes.pas" line="671" />
+    <field name="DXinputStatus4" type="Byte" visibility="public" file="MMITypes.pas" line="672" />
+    <field name="DXinputStatus5" type="Byte" visibility="public" file="MMITypes.pas" line="673" />
+    <field name="DXinputStatus6" type="Byte" visibility="public" file="MMITypes.pas" line="674" />
+    <field name="DXinputStatus7" type="Byte" visibility="public" file="MMITypes.pas" line="675" />
+    <field name="DXinputStatus8" type="Byte" visibility="public" file="MMITypes.pas" line="676" />
+    <field name="DXinputStatus9" type="Byte" visibility="public" file="MMITypes.pas" line="677" />
+    <field name="DXoutputStatus0" type="Byte" visibility="public" file="MMITypes.pas" line="678" />
+    <field name="DXoutputStatus1" type="Byte" visibility="public" file="MMITypes.pas" line="679" />
+    <field name="DXoutputStatus2" type="Byte" visibility="public" file="MMITypes.pas" line="680" />
+    <field name="DXoutputStatus3" type="Byte" visibility="public" file="MMITypes.pas" line="681" />
+    <field name="DXoutputStatus4" type="Byte" visibility="public" file="MMITypes.pas" line="682" />
+    <field name="DXoutputStatus5" type="Byte" visibility="public" file="MMITypes.pas" line="683" />
+    <field name="DXtransmissionValid2" type="Byte" visibility="public" file="MMITypes.pas" line="684" />
+    <field name="VDXin1" type="Byte" visibility="public" file="MMITypes.pas" line="685" />
+    <field name="VDXin2" type="Byte" visibility="public" file="MMITypes.pas" line="686" />
+    <field name="VDXin3" type="Byte" visibility="public" file="MMITypes.pas" line="687" />
+    <field name="VDXhr1_Status" type="Byte" visibility="public" file="MMITypes.pas" line="688" />
+    <field name="VDXhr2_Status" type="Byte" visibility="public" file="MMITypes.pas" line="689" />
+    <field name="VDXfs_Status" type="Byte" visibility="public" file="MMITypes.pas" line="690" />
+  </struct>
+  <pointer name="PDxVdxIOMT" type="TDxVdxIOMT" indircnt="1" />
+  <struct name="TSpeed_DistanceMT" packed="true" file="MMITypes.pas" line="694">
+    <field name="CurrentSpeed" type="Word" visibility="public" file="MMITypes.pas" line="695" />
+    <field name="CurrentOdometer" type="SmallInt" visibility="public" file="MMITypes.pas" line="696" />
+  </struct>
+  <pointer name="PSpeed_DistanceMT" type="TSpeed_DistanceMT" indircnt="1" />
+  <struct name="TTACSpeed_DistanceMT" packed="true" file="MMITypes.pas" line="700">
+    <field name="Speed" type="TWordType" visibility="public" file="MMITypes.pas" line="701" />
+    <field name="SpeedLastPulseTime" type="TCardinalType" visibility="public" file="MMITypes.pas" line="702" />
+    <field name="SpeedServiceAvailable" type="Byte" visibility="public" file="MMITypes.pas" line="703" />
+    <field name="OdometerServiceAvailable" type="Byte" visibility="public" file="MMITypes.pas" line="704" />
+    <field name="Odometer" type="TLongintType" visibility="public" file="MMITypes.pas" line="705" />
+    <field name="OdometerLastPulseTime" type="TCardinalType" visibility="public" file="MMITypes.pas" line="706" />
+    <field name="DrivingDirection" type="Boolean" visibility="public" file="MMITypes.pas" line="707" />
+    <field name="SlipSlide" type="Boolean" visibility="public" file="MMITypes.pas" line="708" />
+  </struct>
+  <pointer name="PTACSpeed_DistanceMT" type="TTACSpeed_DistanceMT" indircnt="1" />
+  <struct name="TCarListCompletedMT" packed="true" file="MMITypes.pas" line="712">
+    <field name="Status" type="Byte" visibility="public" file="MMITypes.pas" line="713" />
+  </struct>
+  <pointer name="PCarListCompletedMT" type="TCarListCompletedMT" indircnt="1" />
+  <struct name="TTrnConfigDataMT" packed="true" file="MMITypes.pas" line="717">
+    <field name="TrainName" type="TTrainName" visibility="public" file="MMITypes.pas" line="718" />
+    <field name="TrainLength" type="Word" visibility="public" file="MMITypes.pas" line="719" />
+    <field name="TICAvailable" type="Boolean" visibility="public" file="MMITypes.pas" line="720" />
+  </struct>
+  <pointer name="PTrnConfigDataMT" type="TTrnConfigDataMT" indircnt="1" />
+  <struct name="TCarStatusAnswerMT" packed="true" file="MMITypes.pas" line="724">
+    <field name="CarNumber" type="Word" visibility="public" file="MMITypes.pas" line="725" />
+    <field name="StatusBitfieldInput1" type="Byte" visibility="public" file="MMITypes.pas" line="726" />
+    <field name="StatusBitfieldInput2" type="Byte" visibility="public" file="MMITypes.pas" line="727" />
+    <field name="StatusBitfieldInput3" type="Byte" visibility="public" file="MMITypes.pas" line="728" />
+    <field name="StatusBitfieldInput4" type="Byte" visibility="public" file="MMITypes.pas" line="729" />
+    <field name="R02" type="Word" visibility="public" file="MMITypes.pas" line="730" />
+  </struct>
+  <pointer name="PCarStatusAnswerMT" type="TCarStatusAnswerMT" indircnt="1" />
+  <struct name="TErrorMessagesMT" packed="true" file="MMITypes.pas" line="734">
+    <field name="Block" type="TERRORBlock" visibility="public" file="MMITypes.pas" line="735" />
+    <field name="ErrorNumber" type="Byte" visibility="public" file="MMITypes.pas" line="736" />
+    <field name="LineNo" type="Word" visibility="public" file="MMITypes.pas" line="737" />
+    <field name="TimeStamp" type="Integer" visibility="public" file="MMITypes.pas" line="738" />
+    <field name="ErrorGrade" type="TERRORGrade" visibility="public" file="MMITypes.pas" line="739" />
+    <field name="TextType" type="Byte" visibility="public" file="MMITypes.pas" line="740" />
+    <field name="AUX" type="Byte" visibility="public" file="MMITypes.pas" line="741" />
+    <field name="Filename" visibility="public" file="MMITypes.pas" line="742">
+      <array name="Filename" visibility="public" low="1" high="13">
+        <element type="AnsiChar" />
+      </array>
+    </field>
+    <field name="BaliseID" type="Word" visibility="public" file="MMITypes.pas" line="743" />
+    <field name="MISCSequenceNumber" type="Byte" visibility="public" file="MMITypes.pas" line="744" />
+  </struct>
+  <pointer name="PErrorMessagesMT" type="TErrorMessagesMT" indircnt="1" />
+  <array name="TErrorTxtTypeToStrArray" low="0" high="255">
+    <element type="string" />
+  </array>
+  <struct name="TGradientDataMT" packed="true" file="MMITypes.pas" line="750">
+    <field name="Odometerposition" type="SmallInt" visibility="public" file="MMITypes.pas" line="751" />
+    <field name="NewGradient" type="ShortInt" visibility="public" file="MMITypes.pas" line="752" />
+  </struct>
+  <pointer name="PGradientDataMT" type="TGradientDataMT" indircnt="1" />
+  <struct name="TGradientDataList" packed="true" file="MMITypes.pas" line="756">
+    <field name="NrOfGradientDataBlocks" type="Byte" visibility="public" file="MMITypes.pas" line="757" />
+    <field name="Gradient" visibility="public" file="MMITypes.pas" line="758">
+      <array name="Gradient" visibility="public" low="1" high="22">
+        <element type="TGradientDataMT" />
+      </array>
+    </field>
+  </struct>
+  <pointer name="PGradientDataList" type="TGradientDataList" indircnt="1" />
+  <struct name="TLCarStatusAnswerMT" packed="true" file="MMITypes.pas" line="763">
+    <field name="StatusBitfieldInput" type="Byte" visibility="public" file="MMITypes.pas" line="764" />
+  </struct>
+  <pointer name="PLCarStatusAnswerMT" type="TLCarStatusAnswerMT" indircnt="1" />
+  <struct name="TCeilingSpeedMT" packed="true" file="MMITypes.pas" line="768">
+    <field name="OdometerPosition" type="SmallInt" visibility="public" file="MMITypes.pas" line="769" />
+    <field name="NewSpeed" type="Byte" visibility="public" file="MMITypes.pas" line="770" />
+    <field name="Reason" type="TCeilingSpeedReason" visibility="public" file="MMITypes.pas" line="771" />
+  </struct>
+  <pointer name="PCeilingSpeedMT" type="TCeilingSpeedMT" indircnt="1" />
+  <struct name="TCeilingSpeedList" packed="true" file="MMITypes.pas" line="775">
+    <field name="NrOfSpeedDataBlocks" type="Byte" visibility="public" file="MMITypes.pas" line="776" />
+    <field name="Speed" visibility="public" file="MMITypes.pas" line="777">
+      <array name="Speed" visibility="public" low="1" high="22">
+        <element type="TCeilingSpeedMT" />
+      </array>
+    </field>
+  </struct>
+  <pointer name="PCeilingSpeedList" type="TCeilingSpeedList" indircnt="1" />
+  <struct name="TT44ComtestAnswerMT" packed="true" file="MMITypes.pas" line="782">
+    <field name="Status" type="Byte" visibility="public" file="MMITypes.pas" line="783" />
+  </struct>
+  <pointer name="PT44ComtestAnswerMT" type="TT44ComtestAnswerMT" indircnt="1" />
+  <struct name="TTICAvailableAnswerMT" packed="true" file="MMITypes.pas" line="787">
+    <field name="Status" type="Byte" visibility="public" file="MMITypes.pas" line="788" />
+  </struct>
+  <pointer name="PTICAvailableAnswerMT" type="TTICAvailableAnswerMT" indircnt="1" />
+  <struct name="TTimeMT" packed="true" file="MMITypes.pas" line="792">
+    <field name="Time" type="Integer" visibility="public" file="MMITypes.pas" line="793" />
+  </struct>
+  <pointer name="PTimeMT" type="TTimeMT" indircnt="1" />
+  <struct name="TCarNameDataMT" packed="true" file="MMITypes.pas" line="797">
+    <field name="CarNumber" type="Word" visibility="public" file="MMITypes.pas" line="798" />
+    <field name="CarName" visibility="public" file="MMITypes.pas" line="799">
+      <array name="CarName" visibility="public" low="1" high="10">
+        <element type="AnsiChar" />
+      </array>
+    </field>
+  </struct>
+  <struct name="TCarNameListMT" packed="true" file="MMITypes.pas" line="802">
+    <field name="NrOfDataBlocks" type="Byte" visibility="public" file="MMITypes.pas" line="803" />
+    <field name="Entry" visibility="public" file="MMITypes.pas" line="804">
+      <array name="Entry" visibility="public" low="1" high="27">
+        <element type="TCarNameDataMT" />
+      </array>
+    </field>
+  </struct>
+  <pointer name="PCarNameListMT" type="TCarNameListMT" indircnt="1" />
+  <struct name="TCarNameListMsg" packed="true" file="MMITypes.pas" line="809">
+    <field name="MT" type="Byte" visibility="public" file="MMITypes.pas" line="811" />
+    <field name="NamesToSend" type="TCarNameListMT" visibility="public" file="MMITypes.pas" line="812" />
+  </struct>
+  <pointer name="PCarNameListMsg" type="TCarNameListMsg" indircnt="1" />
+  <struct name="TTrainNameDataMT" packed="true" file="MMITypes.pas" line="818">
+    <field name="TrainName" visibility="public" file="MMITypes.pas" line="819">
+      <array name="TrainName" visibility="public" low="1" high="10">
+        <element type="AnsiChar" />
+      </array>
+    </field>
+  </struct>
+  <pointer name="PTrainNameMT" type="TTrainNameDataMT" indircnt="1" />
+  <struct name="TMMITimeMT" packed="true" file="MMITypes.pas" line="823">
+    <field name="Time" type="Integer" visibility="public" file="MMITypes.pas" line="824" />
+  </struct>
+  <pointer name="PMMITimeMT" type="TMMITimeMT" indircnt="1" />
+  <struct name="TMMIStatusMT" packed="true" file="MMITypes.pas" line="828">
+    <field name="MMIStatus" type="Word" visibility="public" file="MMITypes.pas" line="829" />
+  </struct>
+  <pointer name="PMMIStatusMT" type="TMMIStatusMT" indircnt="1" />
+  <struct name="TMMIStartUpMT" packed="true" file="MMITypes.pas" line="833">
+    <field name="MMIStatus" type="Word" visibility="public" file="MMITypes.pas" line="834" />
+  </struct>
+  <pointer name="PMMIStartUpMT" type="TMMIStartUpMT" indircnt="1" />
+  <struct name="TCarListDataBlock" packed="true" file="MMITypes.pas" line="838">
+    <field name="CarId" type="Word" visibility="public" file="MMITypes.pas" line="839" />
+    <field name="VehicleType" type="Byte" visibility="public" file="MMITypes.pas" line="840" />
+  </struct>
+  <struct name="TCarListAnswerMT" packed="true" file="MMITypes.pas" line="843">
+    <field name="NrOfCars" type="Byte" visibility="public" file="MMITypes.pas" line="844" />
+    <field name="DataBlock" visibility="public" file="MMITypes.pas" line="845">
+      <array name="DataBlock" visibility="public" low="1" high="27">
+        <element type="TCarListDataBlock" />
+      </array>
+    </field>
+  </struct>
+  <pointer name="PCarListAnswerMT" type="TCarListAnswerMT" indircnt="1" />
+  <struct name="TCarListAnswerMsg" packed="true" file="MMITypes.pas" line="850">
+    <field name="MT" type="Byte" visibility="public" file="MMITypes.pas" line="851" />
+    <field name="Msg" type="TCarListAnswerMT" visibility="public" file="MMITypes.pas" line="852" />
+  </struct>
+  <pointer name="PCarListAnswerMsg" type="TCarListAnswerMsg" indircnt="1" />
+  <struct name="TCarPlatformCmdMT" packed="true" file="MMITypes.pas" line="857">
+    <field name="carNumber" type="Word" visibility="public" file="MMITypes.pas" line="858" />
+    <field name="command" type="TCarPlatformCmd" visibility="public" file="MMITypes.pas" line="859" />
+  </struct>
+  <pointer name="PCarPlatformCmdMT" type="TCarPlatformCmdMT" indircnt="1" />
+  <struct name="TCarTrnConfigOutputCmdMT" packed="true" file="MMITypes.pas" line="863">
+    <field name="CarNumber" type="Word" visibility="public" file="MMITypes.pas" line="864" />
+    <field name="TrainConfigurationOutput" type="Byte" visibility="public" file="MMITypes.pas" line="865" />
+  </struct>
+  <pointer name="PCarTrnConfigOutputCmdMT" type="TCarTrnConfigOutputCmdMT" indircnt="1" />
+  <struct name="TConfirmationMT" packed="true" file="MMITypes.pas" line="869">
+    <field name="Confirmation" type="Byte" visibility="public" file="MMITypes.pas" line="870" />
+  </struct>
+  <pointer name="PConfirmationMT" type="TConfirmationMT" indircnt="1" />
+  <struct name="TDriverID_PasswordMT" packed="true" file="MMITypes.pas" line="874">
+    <field name="DriverID" visibility="public" file="MMITypes.pas" line="875">
+      <array name="DriverID" visibility="public" low="1" high="20">
+        <element type="AnsiChar" />
+      </array>
+    </field>
+    <field name="Password" visibility="public" file="MMITypes.pas" line="876">
+      <array name="Password" visibility="public" low="1" high="10">
+        <element type="AnsiChar" />
+      </array>
+    </field>
+  </struct>
+  <pointer name="PDriverID_PasswordMT" type="TDriverID_PasswordMT" indircnt="1" />
+  <struct name="TGetCarStatusMT" packed="true" file="MMITypes.pas" line="880">
+    <field name="CarNumber" type="Word" visibility="public" file="MMITypes.pas" line="881" />
+  </struct>
+  <pointer name="PGetCarStatusMT" type="TGetCarStatusMT" indircnt="1" />
+  <struct name="TLCarBuzzerCmdMT" packed="true" file="MMITypes.pas" line="885">
+    <field name="Config" type="TLCarBuzzerCmd" visibility="public" file="MMITypes.pas" line="886" />
+    <field name="Output" type="Boolean" visibility="public" file="MMITypes.pas" line="887" />
+  </struct>
+  <pointer name="PLCarBuzzerCmdMT" type="TLCarBuzzerCmdMT" indircnt="1" />
+  <struct name="TLCarTrnConfigCmdMT" packed="true" file="MMITypes.pas" line="891">
+    <field name="Output" type="Boolean" visibility="public" file="MMITypes.pas" line="892" />
+  </struct>
+  <pointer name="PLCarTrnConfigCmdMT" type="TLCarTrnConfigCmdMT" indircnt="1" />
+  <struct name="TLCarLightCmdMT" packed="true" file="MMITypes.pas" line="896">
+    <field name="Output" type="Byte" visibility="public" file="MMITypes.pas" line="897" />
+  </struct>
+  <pointer name="PLCarLightCmdMT" type="TLCarLightCmdMT" indircnt="1" />
+  <struct name="TLCarWarningSignalCmdMT" packed="true" file="MMITypes.pas" line="901">
+    <field name="Output" type="Byte" visibility="public" file="MMITypes.pas" line="902" />
+  </struct>
+  <pointer name="PLCarWarningSignalCmdMT" type="TLCarWarningSignalCmdMT" indircnt="1" />
+  <struct name="TLocoVSTrnDirMT" packed="true" file="MMITypes.pas" line="906">
+    <field name="LocoVSTrainDir" type="TLocomotiveConnected" visibility="public" file="MMITypes.pas" line="907" />
+  </struct>
+  <pointer name="PLocoVSTrnDirMT" type="TLocoVSTrnDirMT" indircnt="1" />
+  <struct name="TMMIToATP_DataMT" packed="true" file="MMITypes.pas" line="911">
+    <field name="ButtonStatus" type="TButtonStatus" visibility="public" file="MMITypes.pas" line="912" />
+  </struct>
+  <pointer name="PMMIToATP_DataMT" type="TMMIToATP_DataMT" indircnt="1" />
+  <struct name="TServicePasswordMT" packed="true" file="MMITypes.pas" line="916">
+    <field name="Password" visibility="public" file="MMITypes.pas" line="917">
+      <array name="Password" visibility="public" low="1" high="10">
+        <element type="AnsiChar" />
+      </array>
+    </field>
+  </struct>
+  <pointer name="PServicePasswordMT" type="TServicePasswordMT" indircnt="1" />
+  <struct name="TSubmenuButtonMT" packed="true" file="MMITypes.pas" line="921">
+    <field name="Button" type="TSubmenuButton" visibility="public" file="MMITypes.pas" line="922" />
+  </struct>
+  <pointer name="PSubmenuButtonMT" type="TSubmenuButtonMT" indircnt="1" />
+  <struct name="TT44ControlButtonsMT" packed="true" file="MMITypes.pas" line="926">
+    <field name="Buttons" type="TT44ControlButtons" visibility="public" file="MMITypes.pas" line="927" />
+  </struct>
+  <pointer name="PT44ControlButtonsMT" type="TT44ControlButtonsMT" indircnt="1" />
+  <struct name="TTrnDataMT" packed="true" file="MMITypes.pas" line="931">
+    <field name="WheelSize1" type="Word" visibility="public" file="MMITypes.pas" line="932" />
+    <field name="WheelSize2" type="Word" visibility="public" file="MMITypes.pas" line="933" />
+    <field name="StartUpSpeed" type="Byte" visibility="public" file="MMITypes.pas" line="934" />
+    <field name="BaliseSearchSpeed" type="Byte" visibility="public" file="MMITypes.pas" line="935" />
+    <field name="BaliseSearchDistance" type="Byte" visibility="public" file="MMITypes.pas" line="936" />
+    <field name="baliseWindow" type="Byte" visibility="public" file="MMITypes.pas" line="937" />
+    <field name="baliseAntennaPositionEnd" type="Word" visibility="public" file="MMITypes.pas" line="938" />
+    <field name="BaliseAntennaPositionFront" type="Word" visibility="public" file="MMITypes.pas" line="939" />
+    <field name="ServiceModePassword" visibility="public" file="MMITypes.pas" line="940">
+      <array name="ServiceModePassword" visibility="public" low="1" high="10">
+        <element type="AnsiChar" />
+      </array>
+    </field>
+    <field name="RadioID" type="Byte" visibility="public" file="MMITypes.pas" line="941" />
+    <field name="TachoConfig" type="TTachoConfiguration" visibility="public" file="MMITypes.pas" line="942" />
+    <field name="ServiceBrakeAvail" type="Boolean" visibility="public" file="MMITypes.pas" line="943" />
+    <field name="PressureSensorLoco" type="Boolean" visibility="public" file="MMITypes.pas" line="944" />
+    <field name="SpecialVehicle" type="Boolean" visibility="public" file="MMITypes.pas" line="945" />
+  </struct>
+  <pointer name="PTrnDataMT" type="TTrnDataMT" indircnt="1" />
+  <struct name="TTrnVSTrackDirMT" packed="true" file="MMITypes.pas" line="949">
+    <field name="TrackDirection" type="TTrackDirection" visibility="public" file="MMITypes.pas" line="950" />
+  </struct>
+  <pointer name="PTrnVSTrackDirMT" type="TTrnVSTrackDirMT" indircnt="1" />
+  <struct name="TTextMessageMT" packed="true" file="MMITypes.pas" line="954">
+    <field name="ConfirmationRequested" type="Boolean" visibility="public" file="MMITypes.pas" line="955" />
+    <field name="Text" visibility="public" file="MMITypes.pas" line="956">
+      <array name="Text" visibility="public" low="1" high="20">
+        <element type="AnsiChar" />
+      </array>
+    </field>
+  </struct>
+  <pointer name="PTextMessageMT" type="TTextMessageMT" indircnt="1" />
+  <struct name="TCarStatusDataMT" packed="true" file="MMITypes.pas" line="960">
+    <field name="CarNumber" type="Word" visibility="public" file="MMITypes.pas" line="961" />
+    <field name="LoadWeight" type="Word" visibility="public" file="MMITypes.pas" line="962" />
+    <field name="TICStatus" type="Word" visibility="public" file="MMITypes.pas" line="963" />
+    <field name="PlatformStatus" type="TCarPlatformStatus" visibility="public" file="MMITypes.pas" line="964" />
+  </struct>
+  <pointer name="PCarStatusDataMT" type="TCarStatusDataMT" indircnt="1" />
+  <struct name="TCarDerailPwrCmdMT" packed="true" file="MMITypes.pas" line="968">
+    <field name="CarNumber" type="Word" visibility="public" file="MMITypes.pas" line="969" />
+    <field name="DerailingOutput" type="Byte" visibility="public" file="MMITypes.pas" line="970" />
+  </struct>
+  <pointer name="PCarDerailPwrCmdMT" type="TCarDerailPwrCmdMT" indircnt="1" />
+  <pointer name="PLogDataMT" alias="MMITypes.PMMIByteArray" type="TMMIByteArray" indircnt="1" />
+  <struct name="TLogVersionMT" packed="true" file="MMITypes.pas" line="976">
+    <field name="projectNbr" type="Byte" visibility="public" file="MMITypes.pas" line="977" />
+    <field name="versionNbr" type="Byte" visibility="public" file="MMITypes.pas" line="978" />
+    <field name="newLogFile" type="Boolean" visibility="public" file="MMITypes.pas" line="979" />
+  </struct>
+  <pointer name="PLogVersionMT" type="TLogVersionMT" indircnt="1" />
+  <struct name="TCarPlatformPreloadCmdMT" packed="true" file="MMITypes.pas" line="983">
+    <field name="carNumber" type="Word" visibility="public" file="MMITypes.pas" line="984" />
+    <field name="command" type="TCarPlatformPreloadCmd" visibility="public" file="MMITypes.pas" line="985" />
+  </struct>
+  <pointer name="PCarPlatformPreloadCmdMT" type="TCarPlatformPreloadCmdMT" indircnt="1" />
+  <struct name="TCarBrakeCmdMT" packed="true" file="MMITypes.pas" line="989">
+    <field name="carNumber" type="Word" visibility="public" file="MMITypes.pas" line="990" />
+    <field name="command" type="TCarBrakeCmd" visibility="public" file="MMITypes.pas" line="991" />
+  </struct>
+  <pointer name="PCarBrakeCmdMT" type="TCarBrakeCmdMT" indircnt="1" />
+  <struct name="TPredefinedTextMsgMT" packed="true" file="MMITypes.pas" line="995">
+    <field name="confirmationRequested" type="Boolean" visibility="public" file="MMITypes.pas" line="996" />
+    <field name="messageSpecifier" type="Byte" visibility="public" file="MMITypes.pas" line="997" />
+  </struct>
+  <pointer name="PPredefinedTextMsgMT" type="TPredefinedTextMsgMT" indircnt="1" />
+  <struct name="TAtpNotificationMT" packed="true" file="MMITypes.pas" line="1001">
+    <field name="mode" type="Byte" visibility="public" file="MMITypes.pas" line="1002" />
+    <field name="Text" visibility="public" file="MMITypes.pas" line="1003">
+      <array name="Text" visibility="public" low="1" high="35">
+        <element type="AnsiChar" />
+      </array>
+    </field>
+  </struct>
+  <pointer name="PAtpNotificationMT" type="TAtpNotificationMT" indircnt="1" />
+  <struct name="TSpecialConfigRecordMT" packed="true" file="MMITypes.pas" line="1007">
+    <field name="configSequenceNumber" type="Byte" visibility="public" file="MMITypes.pas" line="1008" />
+    <field name="configurationID" type="Byte" visibility="public" file="MMITypes.pas" line="1009" />
+    <field name="trainLength" type="Word" visibility="public" file="MMITypes.pas" line="1010" />
+  </struct>
+  <pointer name="PSpecialConfigRecordMT" type="TSpecialConfigRecordMT" indircnt="1" />
+  <struct name="TTextEntry" packed="true" file="MMITypes.pas" line="1019">
+    <field name="Time" type="TDateTime" visibility="public" file="MMITypes.pas" line="1020" />
+    <field name="Confirm" type="Boolean" visibility="public" file="MMITypes.pas" line="1021" />
+    <field name="Error" type="Boolean" visibility="public" file="MMITypes.pas" line="1022" />
+    <field name="Valid" type="Boolean" visibility="public" file="MMITypes.pas" line="1023" />
+    <field name="Text" visibility="public" file="MMITypes.pas" line="1024">
+      <type name="Text" type="ShortString" />
+    </field>
+  </struct>
+  <pointer name="PTextEntry" type="TTextEntry" indircnt="1" />
+  <const name="SecsPerHour" type="Integer" file="MMITypes.pas" line="1033">
+    <value>
+      $E10
+    </value>
+  </const>
+  <const name="SecsPerMinute" type="Integer" file="MMITypes.pas" line="1034">
+    <value>
+      $3C
+    </value>
+  </const>
+  <const name="UnixOffset" type="TDateTime" visibility="public" file="MMITypes.pas" line="1035" />
+  <const name="MAXBYTE" type="Byte" visibility="public" file="MMITypes.pas" line="1037" />
+  <const name="MMIPathConst" type="string" file="MMITypes.pas" line="1038">
+    <value>
+      MMIPath
+    </value>
+  </const>
+  <const name="MAX_EVENT_LOG_BUFFER" type="Integer" file="MMITypes.pas" line="1040">
+    <value>
+      $FA0
+    </value>
+  </const>
+  <const name="MS_TRANSMISSIONVALID" type="Word" visibility="public" file="MMITypes.pas" line="1047" />
+  <const name="MS_HW_ERROR" type="Word" visibility="public" file="MMITypes.pas" line="1048" />
+  <const name="MS_SW_ERROR" type="Word" visibility="public" file="MMITypes.pas" line="1049" />
+  <const name="MS_MAIN" type="Word" visibility="public" file="MMITypes.pas" line="1052" />
+  <const name="MS_SER" type="Word" visibility="public" file="MMITypes.pas" line="1053" />
+  <const name="MS_FILE" type="Word" visibility="public" file="MMITypes.pas" line="1054" />
+  <const name="MS_ATRN_CNF" type="Word" visibility="public" file="MMITypes.pas" line="1055" />
+  <const name="MS_MTRN_CNF" type="Word" visibility="public" file="MMITypes.pas" line="1056" />
+  <const name="MS_KEYB" type="Word" visibility="public" file="MMITypes.pas" line="1057" />
+  <const name="MS_LHANDLING" type="Word" visibility="public" file="MMITypes.pas" line="1058" />
+  <const name="MS_SMAIN" type="Word" visibility="public" file="MMITypes.pas" line="1059" />
+  <const name="MS_SDIAG" type="Word" visibility="public" file="MMITypes.pas" line="1060" />
+  <const name="MS_SIO" type="Word" visibility="public" file="MMITypes.pas" line="1061" />
+  <const name="MS_SPARAM" type="Word" visibility="public" file="MMITypes.pas" line="1062" />
+  <const name="MS_STIC" type="Word" visibility="public" file="MMITypes.pas" line="1063" />
+  <const name="MS_SERVICE" type="Word" visibility="public" file="MMITypes.pas" line="1064" />
+  <const name="MS_Undefined" type="Word" visibility="public" file="MMITypes.pas" line="1065" />
+  <const name="SER_INIT_ERR" type="Byte" visibility="public" file="MMITypes.pas" line="1069" />
+  <const name="SER_EXIT_ERR" type="Byte" visibility="public" file="MMITypes.pas" line="1070" />
+  <const name="SER_POLL_ERR" type="Byte" visibility="public" file="MMITypes.pas" line="1071" />
+  <const name="SER_DETECT_ERR" type="Byte" visibility="public" file="MMITypes.pas" line="1072" />
+  <const name="INBCA" type="Byte" visibility="public" file="MMITypes.pas" line="1077" />
+  <const name="ATPWARNING" type="Byte" visibility="public" file="MMITypes.pas" line="1078" />
+  <const name="ATPINTERVENTION" type="Byte" visibility="public" file="MMITypes.pas" line="1079" />
+  <const name="FLASHSBBRAKEBUTTON" type="Byte" visibility="public" file="MMITypes.pas" line="1080" />
+  <const name="RADIOAVALIABLE" type="Byte" visibility="public" file="MMITypes.pas" line="1081" />
+  <const name="SERVICEBRAKEAREAPPLIED" type="Byte" visibility="public" file="MMITypes.pas" line="1082" />
+  <const name="EMERGENCYBRAKEAREAPPLIED" type="Byte" visibility="public" file="MMITypes.pas" line="1083" />
+  <const name="FLASHEBBRAKEBUTTON" type="Byte" visibility="public" file="MMITypes.pas" line="1084" />
+  <const name="INDPERMDIR" type="Byte" visibility="public" file="MMITypes.pas" line="1086" />
+  <const name="INDPERMSPEED" type="Byte" visibility="public" file="MMITypes.pas" line="1087" />
+  <const name="INDTARGETSPEED" type="Byte" visibility="public" file="MMITypes.pas" line="1088" />
+  <const name="INDREMDISTTOTARGETPOINT" type="Byte" visibility="public" file="MMITypes.pas" line="1089" />
+  <const name="INDREMDISTTOBCA" type="Byte" visibility="public" file="MMITypes.pas" line="1090" />
+  <const name="INDPREDDISTTOSSLOC" type="Byte" visibility="public" file="MMITypes.pas" line="1091" />
+  <const name="INDPREDSPEEDATBRKTRGT" type="Byte" visibility="public" file="MMITypes.pas" line="1092" />
+  <const name="INDTIMETOINT" type="Byte" visibility="public" file="MMITypes.pas" line="1093" />
+  <const name="OK" type="Byte" visibility="public" file="MMITypes.pas" line="1095" />
+  <const name="ERROR" type="Byte" visibility="public" file="MMITypes.pas" line="1096" />
+  <const name="Cars_connected" type="Byte" visibility="public" file="MMITypes.pas" line="1099" />
+  <const name="No_cars_connected" type="Byte" visibility="public" file="MMITypes.pas" line="1100" />
+  <const name="TIC_FrontRightDerail" type="Word" visibility="public" file="MMITypes.pas" line="1104" />
+  <const name="TIC_FrontLeftDerail" type="Word" visibility="public" file="MMITypes.pas" line="1105" />
+  <const name="TIC_RearRightDerail" type="Word" visibility="public" file="MMITypes.pas" line="1106" />
+  <const name="TIC_RearLeftDerail" type="Word" visibility="public" file="MMITypes.pas" line="1107" />
+  <const name="TIC_CarDumpBottom" type="Word" visibility="public" file="MMITypes.pas" line="1108" />
+  <const name="TIC_CarDumpTop" type="Word" visibility="public" file="MMITypes.pas" line="1109" />
+  <const name="TIC_CarDumpClosed" type="Word" visibility="public" file="MMITypes.pas" line="1110" />
+  <const name="TIC_LoadWeightBad" type="Word" visibility="public" file="MMITypes.pas" line="1111" />
+  <const name="TIC_DerailInhibit" type="Word" visibility="public" file="MMITypes.pas" line="1112" />
+  <const name="TIC_Derail" type="Word" visibility="public" file="MMITypes.pas" line="1113" />
+  <const name="TIC_PlatformError" type="Word" visibility="public" file="MMITypes.pas" line="1114" />
+  <const name="LS_FatalFailure" type="Word" visibility="public" file="MMITypes.pas" line="1117" />
+  <const name="LS_EmergencyAlert" type="Word" visibility="public" file="MMITypes.pas" line="1118" />
+  <const name="LS_TIC_Error" type="Word" visibility="public" file="MMITypes.pas" line="1119" />
+  <const name="LS_MinorFailure" type="Word" visibility="public" file="MMITypes.pas" line="1120" />
+  <const name="LS_HandlingDone" type="Word" visibility="public" file="MMITypes.pas" line="1121" />
+  <const name="LS_OnStation" type="Word" visibility="public" file="MMITypes.pas" line="1122" />
+  <const name="LS_TrainIdling" type="Word" visibility="public" file="MMITypes.pas" line="1123" />
+  <const name="LS_TIC_InhibitButton" type="Word" visibility="public" file="MMITypes.pas" line="1124" />
+  <const name="LS_MA_TimeOut" type="Word" visibility="public" file="MMITypes.pas" line="1125" />
+  <const name="LS_ATP_Restarted" type="Word" visibility="public" file="MMITypes.pas" line="1126" />
+  <const name="LS_LoadWeightBad" type="Word" visibility="public" file="MMITypes.pas" line="1127" />
+  <const name="LS_ATPIntervention" type="Word" visibility="public" file="MMITypes.pas" line="1128" />
+  <const name="LS_Derailing" type="Word" visibility="public" file="MMITypes.pas" line="1129" />
+  <const name="LS_DrivingForward" type="Word" visibility="public" file="MMITypes.pas" line="1130" />
+  <const name="LS_CarPlatformError" type="Word" visibility="public" file="MMITypes.pas" line="1131" />
+  <const name="WhiteLight" type="Integer" file="MMITypes.pas" line="1134">
+    <value>
+      $1
+    </value>
+  </const>
+  <const name="Redlight" type="Integer" file="MMITypes.pas" line="1135">
+    <value>
+      $1
+    </value>
+  </const>
+  <const name="vtUndefinedCar" type="Integer" file="MMITypes.pas" line="1138">
+    <value>
+      $0
+    </value>
+  </const>
+  <const name="vtAutoSideTiltCar" type="Integer" file="MMITypes.pas" line="1139">
+    <value>
+      $1
+    </value>
+  </const>
+  <const name="vtTicCar" type="Integer" file="MMITypes.pas" line="1140">
+    <value>
+      $2
+    </value>
+  </const>
+  <const name="vtBottomDumpCar" type="Integer" file="MMITypes.pas" line="1141">
+    <value>
+      $3
+    </value>
+  </const>
+  <const name="vtPassengerCar" type="Integer" file="MMITypes.pas" line="1142">
+    <value>
+      $4
+    </value>
+  </const>
+  <const name="vtGeneralCar" type="Integer" file="MMITypes.pas" line="1143">
+    <value>
+      $5
+    </value>
+  </const>
+  <const name="vtInterflowCar" type="Integer" file="MMITypes.pas" line="1144">
+    <value>
+      $65
+    </value>
+  </const>
+  <const name="vtInterflowAtoCar" type="Integer" file="MMITypes.pas" line="1145">
+    <value>
+      $66
+    </value>
+  </const>
+  <const name="vtInterflowMotorCar" type="Integer" file="MMITypes.pas" line="1146">
+    <value>
+      $67
+    </value>
+  </const>
+  <const name="ATPModesToStr" type="TATPModesToStr" visibility="public" file="MMITypes.pas" line="1148" />
+  <const name="ErrorBlockToStr" type="TErrorBlocKToStr" visibility="public" file="MMITypes.pas" line="1162" />
+  <const name="ErrorGradeToStr" type="TErrorGradeToStr" visibility="public" file="MMITypes.pas" line="1186" />
+  <const name="ErrorTxtTypeToStr" type="TErrorTxtTypeToStrArray" visibility="public" file="MMITypes.pas" line="1202" />
+  <const name="CarBlockTypeToStr" type="TCarBlockTypeToStr" visibility="public" file="MMITypes.pas" line="1256" />
+  <const name="NumberOfIStrings" type="Integer" file="MMITypes.pas" line="1267">
+    <value>
+      $38
+    </value>
+  </const>
+  <const name="TInterfaceString" type="TIfaceEnumToStr" visibility="public" file="MMITypes.pas" line="1269" />
+  <const name="NumberOfSReasonsStrings" type="Integer" file="MMITypes.pas" line="1332">
+    <value>
+      $8
+    </value>
+  </const>
+  <const name="TSpeedReasonStr" type="TSpeedReasonEnumToStr" visibility="public" file="MMITypes.pas" line="1333" />
+  <const name="NumberOfEStrings" type="Integer" file="MMITypes.pas" line="1343">
+    <value>
+      $1D
+    </value>
+  </const>
+  <const name="TErrorString" type="TErrorEnumToStr" visibility="public" file="MMITypes.pas" line="1344" />
+  <const name="LogFileHead" type="PWideChar" visibility="public" file="MMITypes.pas" line="1376" />
+  <const name="TEMPERATURE" type="Integer" file="MMITypes.pas" line="1401">
+    <value>
+      $0
+    </value>
+  </const>
+  <const name="LIGHT" type="Integer" file="MMITypes.pas" line="1402">
+    <value>
+      $1
+    </value>
+  </const>
+  <const name="TRION_FAN" type="Byte" visibility="public" file="MMITypes.pas" line="1405" />
+  <const name="TRION_LED_2" type="Byte" visibility="public" file="MMITypes.pas" line="1406" />
+  <const name="TRION_LED_1" type="Byte" visibility="public" file="MMITypes.pas" line="1407" />
+  <const name="TRION_DPCS_3" type="Byte" visibility="public" file="MMITypes.pas" line="1408" />
+  <const name="TRION_DPCS_2" type="Byte" visibility="public" file="MMITypes.pas" line="1409" />
+  <const name="TRION_DPCS_1" type="Byte" visibility="public" file="MMITypes.pas" line="1410" />
+  <const name="TRION_DPCLK" type="Byte" visibility="public" file="MMITypes.pas" line="1411" />
+  <const name="TRION_DPUD" type="Byte" visibility="public" file="MMITypes.pas" line="1412" />
+  <const name="TRION_SDC" type="Byte" visibility="public" file="MMITypes.pas" line="1415" />
+  <const name="TRION_SDA" type="Byte" visibility="public" file="MMITypes.pas" line="1416" />
+  <const name="TRION_RBBID" type="Byte" visibility="public" file="MMITypes.pas" line="1417" />
+  <const name="TRION_RMVBID" type="Byte" visibility="public" file="MMITypes.pas" line="1418" />
+  <const name="TRION_OTSS" type="Byte" visibility="public" file="MMITypes.pas" line="1419" />
+  <const name="TRION_DIN_DOUT" type="Byte" visibility="public" file="MMITypes.pas" line="1420" />
+  <const name="TRION_CLK" type="Byte" visibility="public" file="MMITypes.pas" line="1421" />
+  <const name="TRION_CS" type="Byte" visibility="public" file="MMITypes.pas" line="1422" />
+  <const name="TRION_SIOSEL" type="Byte" visibility="public" file="MMITypes.pas" line="1425" />
+  <const name="TRION_RS485_TR" type="Byte" visibility="public" file="MMITypes.pas" line="1426" />
+  <const name="TRION_SEL_422_485" type="Byte" visibility="public" file="MMITypes.pas" line="1427" />
+  <const name="TRION_WDOG_EN" type="Byte" visibility="public" file="MMITypes.pas" line="1428" />
+  <const name="TRION_S107" type="Byte" visibility="public" file="MMITypes.pas" line="1432" />
+  <const name="TRION_MVBDA7" type="Byte" visibility="public" file="MMITypes.pas" line="1435" />
+  <const name="TRION_MVBDA6" type="Byte" visibility="public" file="MMITypes.pas" line="1436" />
+  <const name="TRION_MVBDA5" type="Byte" visibility="public" file="MMITypes.pas" line="1437" />
+  <const name="TRION_MVBDA4" type="Byte" visibility="public" file="MMITypes.pas" line="1438" />
+  <const name="TRION_MVBDA3" type="Byte" visibility="public" file="MMITypes.pas" line="1439" />
+  <const name="TRION_MVBDA2" type="Byte" visibility="public" file="MMITypes.pas" line="1440" />
+  <const name="TRION_MVBDA1" type="Byte" visibility="public" file="MMITypes.pas" line="1441" />
+  <const name="TRION_MVBDA0" type="Byte" visibility="public" file="MMITypes.pas" line="1442" />
+  <const name="TRION_ID4" type="Byte" visibility="public" file="MMITypes.pas" line="1445" />
+  <const name="TRION_ID3" type="Byte" visibility="public" file="MMITypes.pas" line="1446" />
+  <const name="TRION_ID2" type="Byte" visibility="public" file="MMITypes.pas" line="1447" />
+  <const name="TRION_ID1" type="Byte" visibility="public" file="MMITypes.pas" line="1448" />
+  <const name="TRION_WDT_L7" type="Byte" visibility="public" file="MMITypes.pas" line="1451" />
+  <const name="TRION_WDT_L6" type="Byte" visibility="public" file="MMITypes.pas" line="1452" />
+  <const name="TRION_WDT_L5" type="Byte" visibility="public" file="MMITypes.pas" line="1453" />
+  <const name="TRION_WDT_L4" type="Byte" visibility="public" file="MMITypes.pas" line="1454" />
+  <const name="TRION_WDT_L3" type="Byte" visibility="public" file="MMITypes.pas" line="1455" />
+  <const name="TRION_WDT_L2" type="Byte" visibility="public" file="MMITypes.pas" line="1456" />
+  <const name="TRION_WDT_L1" type="Byte" visibility="public" file="MMITypes.pas" line="1457" />
+  <const name="TRION_WDT_L0" type="Byte" visibility="public" file="MMITypes.pas" line="1458" />
+  <const name="TRION_CSAB15" type="Word" visibility="public" file="MMITypes.pas" line="1461" />
+  <const name="TRION_CSAB14" type="Word" visibility="public" file="MMITypes.pas" line="1462" />
+  <const name="TRION_CSAB13" type="Word" visibility="public" file="MMITypes.pas" line="1463" />
+  <const name="TRION_CSAB12" type="Word" visibility="public" file="MMITypes.pas" line="1464" />
+  <const name="TRION_CSAB11" type="Word" visibility="public" file="MMITypes.pas" line="1465" />
+  <const name="TRION_CSAB10" type="Word" visibility="public" file="MMITypes.pas" line="1466" />
+  <const name="TRION_CSAB9" type="Word" visibility="public" file="MMITypes.pas" line="1467" />
+  <const name="TRION_CSAB8" type="Word" visibility="public" file="MMITypes.pas" line="1468" />
+  <const name="TRION_CSAB7" type="Word" visibility="public" file="MMITypes.pas" line="1469" />
+  <const name="TRION_CSAB6" type="Word" visibility="public" file="MMITypes.pas" line="1470" />
+  <const name="TRION_CSAB5" type="Word" visibility="public" file="MMITypes.pas" line="1471" />
+  <const name="TRION_CSAB4" type="Word" visibility="public" file="MMITypes.pas" line="1472" />
+  <const name="TRION_CSAB3" type="Word" visibility="public" file="MMITypes.pas" line="1473" />
+  <const name="TRION_CSAB2" type="Word" visibility="public" file="MMITypes.pas" line="1474" />
+  <const name="TRION_CSAB1" type="Word" visibility="public" file="MMITypes.pas" line="1475" />
+  <const name="TRION_CSAB0" type="Word" visibility="public" file="MMITypes.pas" line="1476" />
+  <const name="TRION_MASK11" type="Word" visibility="public" file="MMITypes.pas" line="1483" />
+  <const name="TRION_MASK10" type="Word" visibility="public" file="MMITypes.pas" line="1484" />
+  <const name="TRION_MASK9" type="Word" visibility="public" file="MMITypes.pas" line="1485" />
+  <const name="TRION_MASK8" type="Word" visibility="public" file="MMITypes.pas" line="1486" />
+  <const name="TRION_MASK7" type="Word" visibility="public" file="MMITypes.pas" line="1487" />
+  <const name="TRION_MASK6" type="Word" visibility="public" file="MMITypes.pas" line="1488" />
+  <const name="TRION_MASK5" type="Word" visibility="public" file="MMITypes.pas" line="1489" />
+  <const name="TRION_MASK4" type="Word" visibility="public" file="MMITypes.pas" line="1490" />
+  <const name="TRION_MASK3" type="Word" visibility="public" file="MMITypes.pas" line="1491" />
+  <const name="TRION_MASK2" type="Word" visibility="public" file="MMITypes.pas" line="1492" />
+  <const name="TRION_MASK1" type="Word" visibility="public" file="MMITypes.pas" line="1493" />
+  <const name="TRION_MASK0" type="Word" visibility="public" file="MMITypes.pas" line="1494" />
+  <const name="TRION_ASL11" type="Word" visibility="public" file="MMITypes.pas" line="1497" />
+  <const name="TRION_ASL10" type="Word" visibility="public" file="MMITypes.pas" line="1498" />
+  <const name="TRION_ASL9" type="Word" visibility="public" file="MMITypes.pas" line="1499" />
+  <const name="TRION_ASL8" type="Word" visibility="public" file="MMITypes.pas" line="1500" />
+  <const name="TRION_ASL7" type="Word" visibility="public" file="MMITypes.pas" line="1501" />
+  <const name="TRION_ASL6" type="Word" visibility="public" file="MMITypes.pas" line="1502" />
+  <const name="TRION_ASL5" type="Word" visibility="public" file="MMITypes.pas" line="1503" />
+  <const name="TRION_ASL4" type="Word" visibility="public" file="MMITypes.pas" line="1504" />
+  <const name="TRION_ASL3" type="Word" visibility="public" file="MMITypes.pas" line="1505" />
+  <const name="TRION_ASL2" type="Word" visibility="public" file="MMITypes.pas" line="1506" />
+  <const name="TRION_ASL1" type="Word" visibility="public" file="MMITypes.pas" line="1507" />
+  <const name="TRION_ASL0" type="Word" visibility="public" file="MMITypes.pas" line="1508" />
+  <const name="TRION_PLD_RESET" type="Word" visibility="public" file="MMITypes.pas" line="1511" />
+  <const name="TRION_HI_Z_MODE" type="Word" visibility="public" file="MMITypes.pas" line="1512" />
+  <const name="TRION_JTAG_RESET" type="Word" visibility="public" file="MMITypes.pas" line="1513" />
+  <const name="TRION_OPT_LB_EN" type="Word" visibility="public" file="MMITypes.pas" line="1514" />
+  <const name="TRION_EN_CS" type="Word" visibility="public" file="MMITypes.pas" line="1518" />
+  <const name="TRION_MVB_RESET" type="Word" visibility="public" file="MMITypes.pas" line="1519" />
+  <const name="TRION_FCL" type="Word" visibility="public" file="MMITypes.pas" line="1520" />
+  <const name="TRION_INTSEL12" type="Word" visibility="public" file="MMITypes.pas" line="1521" />
+  <const name="TRION_INTSEL11" type="Word" visibility="public" file="MMITypes.pas" line="1522" />
+  <const name="TRION_INTSEL10" type="Word" visibility="public" file="MMITypes.pas" line="1523" />
+  <const name="TRION_INTSEL02" type="Word" visibility="public" file="MMITypes.pas" line="1524" />
+  <const name="TRION_INTSEL01" type="Word" visibility="public" file="MMITypes.pas" line="1525" />
+  <const name="TRION_INTSEL00" type="Word" visibility="public" file="MMITypes.pas" line="1526" />
+</namespace>

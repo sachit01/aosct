@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::DS::Brakeability">
+    <Position X="9.25" Y="3" Width="3.75" />
+    <Members>
+      <Method Name="Brakeability" Hidden="true" />
+      <Field Name="brakeAbilitySystems" Hidden="true" />
+      <Field Name="changeCounter" Hidden="true" />
+      <Field Name="currentBrakeSystemInUse" Hidden="true" />
+      <Field Name="numberOfBrakeabilitySystemsInUse" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AFAAAAAAAAAANAgAAAkEAAAQAAQAAIIBAAogAACAUQA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\data_storage\tsetup\brakeability.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::DS::BrakeabilityBhp">
+    <Position X="3.5" Y="3.75" Width="4.25" />
+    <Members>
+      <Field Name="bhpDefaultBrakeSystemPneumatic" Hidden="true" />
+      <Method Name="BrakeabilityBhp" Hidden="true" />
+      <Field Name="defaultBrakeSystem" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="pSystem1" Hidden="true" />
+      <Field Name="pSystem2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABQABABCAAAAIAAAAAAAgAAAYAAAAgAAAAAIA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\data_storage\tsetup\brakeability_bhp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

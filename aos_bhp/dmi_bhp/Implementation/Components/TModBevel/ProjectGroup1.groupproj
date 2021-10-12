@@ -1,0 +1,39 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{C7B70BDD-DA18-4034-8FA1-DED0D0EF5FD9}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="modbevelp.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="modbevelp.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="modbevelp">
+			<MSBuild Projects="modbevelp.dproj"/>
+		</Target>
+		<Target Name="modbevelp:Clean">
+			<MSBuild Projects="modbevelp.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="modbevelp:Make">
+			<MSBuild Projects="modbevelp.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="modbevelp;modbevelp"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="modbevelp:Clean;modbevelp:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="modbevelp:Make;modbevelp:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATP::Kernel::MessageHandler">
+    <Position X="3.75" Y="6.75" Width="3" />
+    <Members>
+      <Field Name="creators" Hidden="true" />
+      <Method Name="getBHPBSafeForBoarding" Hidden="true" />
+      <Method Name="getRadioChannelEnable" Hidden="true" />
+      <Method Name="getRadioChannelName" Hidden="true" />
+      <Method Name="getStaticConfigurationVersionInPath" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Method Name="instance" Hidden="true" />
+      <Method Name="MessageHandler" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="parsers" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABgAAAAIAAAAAAIAQBBAAIAgAAgAAABQAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\kernel\message_handler\message_handler.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::AbstractMessageHandler">
+    <Position X="4" Y="4.5" Width="2.5" />
+    <Members>
+      <Method Name="AbstractMessageHandler" Hidden="true" />
+      <Method Name="ackDefaultPositionReport" Hidden="true" />
+      <Field Name="approxPosReceivedEarlier" Hidden="true" />
+      <Field Name="approxPosRejected" Hidden="true" />
+      <Field Name="blockNidProVer" Hidden="true" />
+      <Method Name="clearAreaSelectedByDriver" Hidden="true" />
+      <Method Name="compensateCalendarCalculations" Hidden="true" />
+      <Field Name="configurationDataRecv" Hidden="true" />
+      <Method Name="corePtr" Hidden="true" />
+      <Field Name="defaultPositionReport" Hidden="true" />
+      <Field Name="defaultPositionReportMsg" Hidden="true" />
+      <Method Name="getAckDefaultPositionReport" Hidden="true" />
+      <Method Name="getApproxFrontPos" Hidden="true" />
+      <Method Name="getApproximatePosition" Hidden="true" />
+      <Method Name="getApproxPosReceived" Hidden="true" />
+      <Method Name="getAreaRequested" Hidden="true" />
+      <Method Name="getConfigDataReceived" Hidden="true" />
+      <Method Name="getDefaultPositionReport" Hidden="true" />
+      <Method Name="getDepartureSignal" Hidden="true" />
+      <Method Name="getDriverLogonStatus" Hidden="true" />
+      <Method Name="getEmAlertReason" Hidden="true" />
+      <Method Name="getIncomingProtocolVersionFromTCC" Hidden="true" />
+      <Method Name="getInitiateConfig" Hidden="true" />
+      <Method Name="getJoinCommand" Hidden="true" />
+      <Method Name="getMAHead" Hidden="true" />
+      <Method Name="getMAReceived" Hidden="true" />
+      <Method Name="getMaxSearchDistInReReg" Hidden="true" />
+      <Method Name="getPartlyMaReceived" Hidden="true" />
+      <Method Name="getPath" Hidden="true" />
+      <Method Name="getPossessionAcknowledge" Hidden="true" />
+      <Method Name="getProtocolVersion" Hidden="true" />
+      <Method Name="getProtocolVersionResponse" Hidden="true" />
+      <Method Name="getQSetup" Hidden="true" />
+      <Method Name="getRegAreaSelectedByDriver" Hidden="true" />
+      <Method Name="getRegistrationArea" Hidden="true" />
+      <Method Name="getRegistrationAreaMessageSentToCentralTCC" Hidden="true" />
+      <Method Name="getRejectConfigurationInfo" Hidden="true" />
+      <Method Name="getReplyChannelInitConfig" Hidden="true" />
+      <Method Name="getRevokeEmAlert" Hidden="true" />
+      <Method Name="getShuntingAcknowledge" Hidden="true" />
+      <Method Name="getStopTrain" Hidden="true" />
+      <Method Name="getTextMessage" Hidden="true" />
+      <Method Name="getTimeAtReq" Hidden="true" />
+      <Method Name="getTimeNew" Hidden="true" />
+      <Method Name="getTrainSetupMaxGradient" Hidden="true" />
+      <Method Name="getTrainSetupReceived" Hidden="true" />
+      <Method Name="getUnregInfo" Hidden="true" />
+      <Method Name="getUpdateDMITime" Hidden="true" />
+      <Method Name="getYardAcknowledge" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="inQueueSize" Hidden="true" />
+      <Field Name="invalidMessageType" Hidden="true" />
+      <Method Name="isApproximatePositionMsgRejected" Hidden="true" />
+      <Method Name="isApproxPosReceivedEarlier" Hidden="true" />
+      <Method Name="isConfigDataReceived" Hidden="true" />
+      <Method Name="isEmAlertStatusSetByUncondMsg" Hidden="true" />
+      <Method Name="isMAFromScratch" Hidden="true" />
+      <Method Name="isProtocolVersionMatching" Hidden="true" />
+      <Field Name="isRegAreaSelectedByDriver" Hidden="true" />
+      <Field Name="isSendRegAreaToTCC" Hidden="true" />
+      <Method Name="isStartUpMessageSent" Hidden="true" />
+      <Method Name="isTrainSetupRejectedByAOS" Hidden="true" />
+      <Method Name="isValidMAReceived" Hidden="true" />
+      <Field Name="maxProVerMsgData" Hidden="true" />
+      <Field Name="messageQueueIn" Hidden="true" />
+      <Field Name="messageQueueOut" Hidden="true" />
+      <Field Name="msgNidProVer" Hidden="true" />
+      <Field Name="newTimeToSet" Hidden="true" />
+      <Field Name="nidMessageTypePos" Hidden="true" />
+      <Field Name="noValidPositionreport" Hidden="true" />
+      <Field Name="numberOfRegions" Hidden="true" />
+      <Field Name="outQueueSize" Hidden="true" />
+      <Field Name="parserNotImplemented" Hidden="true" />
+      <Field Name="parserNullPtr" Hidden="true" />
+      <Method Name="popMessages" Hidden="true" />
+      <Field Name="protocolVersionValid" Hidden="true" />
+      <Method Name="readMessage" Hidden="true" />
+      <Field Name="receiveQueueFullError" Hidden="true" />
+      <Field Name="regAreaMsgSendToCentralTCC" Hidden="true" />
+      <Field Name="region1Pos" Hidden="true" />
+      <Field Name="region2Pos" Hidden="true" />
+      <Field Name="registrationArea" Hidden="true" />
+      <Field Name="replyChInitConfig" Hidden="true" />
+      <Field Name="selectedRegArea" Hidden="true" />
+      <Field Name="sendQueueFullError" Hidden="true" />
+      <Method Name="setProtocolVersionStatus" Hidden="true" />
+      <Method Name="setRegAreaSelectedByDriver" Hidden="true" />
+      <Method Name="setRegistrationAreaMessageSentToCentralTCC" Hidden="true" />
+      <Method Name="setReplyChannelInitConfig" Hidden="true" />
+      <Method Name="setReplyRegAreaToTCC" Hidden="true" />
+      <Method Name="setUpdateDMITime" Hidden="true" />
+      <Field Name="timeAtReq" Hidden="true" />
+      <Field Name="trainSetupRejected" Hidden="true" />
+      <Field Name="updateDMITime" Hidden="true" />
+      <Method Name="updateSystemTime" Hidden="true" />
+      <Method Name="validateAreaRequest" Hidden="true" />
+      <Method Name="validateMsgType" Hidden="true" />
+      <Method Name="validateProtocolVersion" Hidden="true" />
+      <Field Name="validationIncomingMessageFailed" Hidden="true" />
+      <Field Name="validationOutgoingMessageFailed" Hidden="true" />
+      <Field Name="validPositionReport" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>Ai4iisJAD2BXdxQhYY4QhMIEgBL3bpHABFSAMYdA00I=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\kernel\message_handler\abstract_message_handler.hpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="messagesInParsers" />
+      <Field Name="messagesOutCreators" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ATC::IOComponent">
+    <Position X="4.25" Y="2.5" Width="2" />
+    <Members>
+      <Method Name="IOComponent" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="4.25" Y="0.5" Width="2" />
+    <Members>
+      <Method Name="~BaseComponent" Hidden="true" />
+      <Method Name="BaseComponent" Hidden="true" />
+      <Field Name="compId" Hidden="true" />
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="getShortName" Hidden="true" />
+      <Method Name="getTrace" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="shortName" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Method Name="writeToLog" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::AbstractRadioMessageIn" Collapsed="true">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCCBIQAAAAABABAQAAAAQAIEUgIAAAAAAAMEAQIAzg=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\kernel\message_handler\abstract_radio_message_in.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::AbstractRadioMessageOut" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>IAACAIQABAAABAAAQAAAAAAAFAAYgAAAAAAEECQEIAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\kernel\message_handler\abstract_radio_message_out.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

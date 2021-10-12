@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATP::TG::OBRDMessageIn">
+    <Position X="2.5" Y="3" Width="2" />
+    <Members>
+      <Method Name="~OBRDMessageIn" Hidden="true" />
+      <Method Name="invalidate" Hidden="true" />
+      <Field Name="messageType" Hidden="true" />
+      <Method Name="OBRDMessageIn" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAYQAAAAABAAAAAAAAAAAEAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\tims\obrd_message_in.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::OBRDMessageHandler">
+    <Position X="5" Y="0.5" Width="2.5" />
+    <Members>
+      <Method Name="assembleMessageData" Hidden="true" />
+      <Method Name="calculateCRC" Hidden="true" />
+      <Field Name="channelStatistics" Hidden="true" />
+      <Field Name="connectedToOBRD" Hidden="true" />
+      <Field Name="connectionLossTimeout" Hidden="true" />
+      <Field Name="connectionTimeoutWithOBRD" Hidden="true" />
+      <Field Name="crcInitValue" Hidden="true" />
+      <Field Name="crossCompareWriteChannel" Hidden="true" />
+      <Field Name="defaultTRef" Hidden="true" />
+      <Field Name="establishedConnectionWithOBRD" Hidden="true" />
+      <Method Name="extractMessage" Hidden="true" />
+      <Method Name="findStartOfTelegram" Hidden="true" />
+      <Field Name="inBuf" Hidden="true" />
+      <Field Name="inBufReadIndex" Hidden="true" />
+      <Field Name="inBufWriteIndex" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="isUnitStatusReportRecv" Hidden="true" />
+      <Field Name="lastMessageReceivedTime" Hidden="true" />
+      <Field Name="lostConnectionWithOBRD" Hidden="true" />
+      <Field Name="numVfwChannelsOBRDMessage" Hidden="true" />
+      <Method Name="OBRDMessageHandler" Hidden="true" />
+      <Field Name="obrdReadChannelName" Hidden="true" />
+      <Field Name="obrdWriteChannelName" Hidden="true" />
+      <Method Name="packMessage" Hidden="true" />
+      <Field Name="parserNullPtr" Hidden="true" />
+      <Field Name="protocolVersionMatched" Hidden="true" />
+      <Field Name="rejectionReason" Hidden="true" />
+      <Field Name="sendProtocolVersionMessage" Hidden="true" />
+      <Field Name="sendRejectMessage" Hidden="true" />
+      <Field Name="statusReport" Hidden="true" />
+      <Field Name="syncChannelReadDesc" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Field Name="validationIncomingMessageFailed" Hidden="true" />
+      <Field Name="wrongOBRDProtocolVersionRecvd" Hidden="true" />
+      <Field Name="wrongOBRDTypeMessageRecvd" Hidden="true" />
+    </Members>
+    <AssociationLine Name="protocolVersionParser" Type="ATP::TG::OBRDMessageInProtocolVersion">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-3.598" Y="3.591" Height="0.182" Width="1.613" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="unitStatusParser" Type="ATP::TG::OBRDMessageInUnitStatus">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.338" Y="2.122" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="protocolVersionCreator" Type="ATP::TG::OBRDMessageOutProtocolVersion">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.775" Y="2.122" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="rejectMessageCreator" Type="ATP::TG::OBRDMessageOutRejectMessage">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.183" Y="3.591" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>xABaAASABAgQAhAgYCQEBQgBNICAAAIEQAEBAAgRVAE=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\tims\obrd_message_handler.hpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="protocolVersionParser" />
+      <Field Name="unitStatusParser" />
+      <Field Name="protocolVersionCreator" />
+      <Field Name="rejectMessageCreator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ATP::TG::OBRDMessageInUnitStatus">
+    <Position X="3.75" Y="5" Width="2.25" />
+    <Members>
+      <Method Name="invalidate" Hidden="true" />
+      <Field Name="maxBrakePressure" Hidden="true" />
+      <Method Name="OBRDMessageInUnitStatus" Hidden="true" />
+      <Field Name="obrdUnitStatusReport" Hidden="true" />
+      <Method Name="parseMessageData" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAQAAIABAAAAAgAAAAAAAAAAAAAQAAAgAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\tims\obrd_message_in_obrd_unit_status.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::OBRDMessageInProtocolVersion">
+    <Position X="0.75" Y="5" Width="2.5" />
+    <Members>
+      <Method Name="invalidate" Hidden="true" />
+      <Field Name="majorProVersion" Hidden="true" />
+      <Field Name="minorProVersion" Hidden="true" />
+      <Method Name="OBRDMessageInProtocolVersion" Hidden="true" />
+      <Method Name="parseMessageData" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAMAAAAAABAAAACgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\tims\obrd_message_in_protocol_version.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::OBRDMessageOut">
+    <Position X="8.25" Y="3" Width="2" />
+    <Members>
+      <Method Name="~OBRDMessageOut" Hidden="true" />
+      <Field Name="messageType" Hidden="true" />
+      <Method Name="OBRDMessageOut" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AACIAAQAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\tims\obrd_message_out.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::OBRDMessageOutProtocolVersion">
+    <Position X="6.5" Y="5" Width="2.5" />
+    <Members>
+      <Method Name="OBRDMessageOutProtocolVersion" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\tims\obrd_message_out_protocol_version.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::TG::OBRDMessageOutRejectMessage">
+    <Position X="9.5" Y="5" Width="2.5" />
+    <Members>
+      <Method Name="OBRDMessageOutRejectMessage" Hidden="true" />
+      <Field Name="rejectReason" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\train_gateway\tims\obrd_message_out_reject_message.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

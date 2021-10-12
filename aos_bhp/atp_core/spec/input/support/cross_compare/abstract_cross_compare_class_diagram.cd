@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Support::AbstractCrossCompare">
+    <Position X="7.25" Y="2.25" Width="3.25" />
+    <Members>
+      <Method Name="~AbstractCrossCompare" Hidden="true" />
+      <Method Name="AbstractCrossCompare" Hidden="true" />
+      <Method Name="compareCrossCompareDataIn" Hidden="true" />
+      <Method Name="compareCrossCompareDataOut" Hidden="true" />
+      <Method Name="compareCrossCompareVersionCheck" Hidden="true" />
+      <Field Name="crossCompareErrorOccured_" Hidden="true" />
+      <Field Name="crossComparePointInput" Hidden="true" />
+      <Field Name="crossComparePointOutput" Hidden="true" />
+      <Field Name="crossComparePointVersion" Hidden="true" />
+      <Field Name="eventCouldNotAddIOSafetyHalt_" Hidden="true" />
+      <Field Name="eventCouldNotWriteSafetyHalt_" Hidden="true" />
+      <Field Name="eventMismatchSafetyHalt_" Hidden="true" />
+      <Field Name="initHasFinished" Hidden="true" />
+      <Field Name="inputBufferPos_" Hidden="true" />
+      <Field Name="inputOutputCrossCompareBuffer_" Hidden="true" />
+      <Field Name="isVersionSentForCrossCompare_" Hidden="true" />
+      <Field Name="maxCrcDataSize" Hidden="true" />
+      <Field Name="maxLowFrequencyCount" Hidden="true" />
+      <Field Name="maxVersionLength" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="pCrossCompareHandle_" Hidden="true" />
+      <Field Name="pCrossCompareOutputHandle_" Hidden="true" />
+      <Field Name="pCurrentLowFrequencyCrossCompare_" Hidden="true" />
+      <Method Name="receiveCrossCompareDataCallbackIn" Hidden="true" />
+      <Method Name="receiveCrossCompareDataCallbackOut" Hidden="true" />
+      <Method Name="receiveCrossCompareVersionCheck" Hidden="true" />
+      <Method Name="writeCrossCompareDataCallbackRunIn" Hidden="true" />
+      <Method Name="writeCrossCompareDataCallbackRunOut" Hidden="true" />
+      <Method Name="writeCrossCompareDataCallbackVersionCheck" Hidden="true" />
+      <Method Name="writeCrossCompareDataLow_" Hidden="true" />
+      <Method Name="writeCrossCompareDataOutput_" Hidden="true" />
+      <Method Name="writeCrossCompareDataRunIn" Hidden="true" />
+      <Method Name="writeCrossCompareDataRunOut" Hidden="true" />
+      <Method Name="writeCrossCompareVersionCheck" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::IOComponent">
+      <InheritanceModifierLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.175" Y="0.047" Height="0.182" Width="0.563" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>RYAiDIAEAYgAIQAAMAQAAEAISgABkAIMAAQigAAVECY=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\abstract_cross_compare.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::IOComponent">
+    <Position X="4" Y="4" Width="2.25" />
+    <Members>
+      <Method Name="IOComponent" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseComponent">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.048" Y="0.102" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAEAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="4" Y="2.25" Width="2.25" />
+    <Members>
+      <Method Name="~BaseComponent" Hidden="true" />
+      <Method Name="BaseComponent" Hidden="true" />
+      <Field Name="compId" Hidden="true" />
+      <Method Name="consoleCall" Hidden="true" />
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="getShortName" Hidden="true" />
+      <Method Name="getTrace" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="shortName" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Method Name="writeToLog" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Support::CrossCompareObject" Collapsed="true">
+    <Position X="5.75" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAQAAAAAEAgAAAAAAAAAAAAAAAAAIIACAAAIAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Support::CrossCompareSimpleType&lt;T&gt;" Collapsed="true">
+    <Position X="4.25" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAQBAAAAAAAAAAAAAAAAAAAAAgAIAIAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Support::CrossCompareEnum&lt;T&gt;" Collapsed="true">
+    <Position X="1.25" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAQAAAAAQAAAAAABAAAAAAAAAgAAAIAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Support::CrossCompareArray&lt;T&gt;" Collapsed="true">
+    <Position X="7.25" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAgAAAAAAAAAAAAAAAAAAACIAAAAAgAAAIAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_array.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Support::CrossCompareComplex&lt;T&gt;" Collapsed="true">
+    <Position X="10.25" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAQAEAAAAAAAAAAAAAAAAAAAAAABAAAgAAAIAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_complex.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="ATP::Support::CrossCompareUint64" Collapsed="true">
+    <Position X="5.75" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::Support::CrossCompareInt64" Collapsed="true">
+    <Position X="8.75" Y="12.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+    <AliasOfLine Type="ATP::Support::CrossCompareSimpleType&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="5.375" Y="8.441" />
+        <Point X="5.375" Y="11.795" />
+        <Point X="9.875" Y="11.795" />
+        <Point X="9.875" Y="12.25" />
+      </Path>
+    </AliasOfLine>
+  </Typedef>
+  <Typedef Name="ATP::Support::CrossCompareUint32" Collapsed="true">
+    <Position X="2.75" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::Support::CrossCompareInt32" Collapsed="true">
+    <Position X="5.75" Y="12.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+    <AliasOfLine Type="ATP::Support::CrossCompareSimpleType&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="5.375" Y="8.441" />
+        <Point X="5.375" Y="11.817" />
+        <Point X="6.875" Y="11.817" />
+        <Point X="6.875" Y="12.25" />
+      </Path>
+    </AliasOfLine>
+  </Typedef>
+  <Typedef Name="ATP::Support::CrossCompareUint16" Collapsed="true">
+    <Position X="8.75" Y="9.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::Support::CrossCompareInt16" Collapsed="true">
+    <Position X="2.75" Y="12.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+    <AliasOfLine Type="ATP::Support::CrossCompareSimpleType&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="5.375" Y="8.441" />
+        <Point X="5.375" Y="11.806" />
+        <Point X="3.875" Y="11.806" />
+        <Point X="3.875" Y="12.25" />
+      </Path>
+    </AliasOfLine>
+  </Typedef>
+  <Typedef Name="ATP::Support::CrossCompareUint8" Collapsed="true">
+    <Position X="5.75" Y="9.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::Support::CrossCompareInt8" Collapsed="true">
+    <Position X="8.75" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ATP::Support::CrossCompareBool" Collapsed="true">
+    <Position X="2.75" Y="9.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\support\cross_compare\cross_compare_object.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,9 @@
+
+
+[azacher@storhl02 BSD]$ /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/arm-unknown-freebsd8-gcc-4.2.1 -E -dM empty.c > lint_cmac.h
+
+[azacher@storhl02 BSD]$ /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/arm-unknown-freebsd8-gcc-4.2.1 -c -v empty.c
+
+
+
+[azacher@storhl02 BSD]$ /appl/ebiconfig/compilersCoHP/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm-1.1/CROSS_RHEL4_x86_32_FreeBSD_armv5te_arm/distribution/bin/arm-unknown-freebsd8-g++ -E -dM empty.c > lint_cppmac.h

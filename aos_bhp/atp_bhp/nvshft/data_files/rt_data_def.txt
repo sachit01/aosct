@@ -1,0 +1,10 @@
+# Version
+Version 1.0
+
+# Parameter name and type
+LastBtmTestTimeId WORD_TYPE
+LastBtmTestTime DWORD_TYPE
+LastBrakeTestTimeId WORD_TYPE
+LastBrakeTestTime DWORD_TYPE
+BrakeTestReasonId WORD_TYPE
+BrakeTestReason DWORD_TYPE

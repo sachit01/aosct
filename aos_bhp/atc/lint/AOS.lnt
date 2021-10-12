@@ -1,0 +1,35 @@
+/* Suppress warnings from external libraries */
+-esym(14,"tzname")
+-esym(18,__STDIO_FILE_STRUCT::__lock)
+-elib(19)
+-elib(49)
+-elib(78)
+-esym(129,"__MINGW_IMPORT")
+-esym(526,*__builtin_va_start)
+-esym(628,*__builtin_va_start)
+-elib(1048)
+-esym(1960,std::*)
+
+/* Global Suppressions according to Lint Warning Guide, 1DOC-1015361 */
+-e451 /* Header file 'X' repeatedly included but does not have a standard include guard */
+-e537 /* "Repeated include file" */
+-e778 /* "Constant expression evaluates to 0" */
+-esym(829,cstdio) /* "A +headerwarn option was previously issued for header" */
+-esym(829,errno.h) /* "A +headerwarn option was previously issued for header" */
+-esym(829,signal.h) /* "A +headerwarn option was previously issued for header" */
+-esym(829,stddef.h) /* "A +headerwarn option was previously issued for header" */
+-esym(829,stdio.h) /* "A +headerwarn option was previously issued for header" */
+-esym(829,string.h) /* "A +headerwarn option was previously issued for header" */
+-esym(829,time.h) /* "A +headerwarn option was previously issued for header" */
+-e843 /* "Variable could be declared as const" (erroneous warning) */
+-e1502 /* "Object has no nonstatic data members" - done by design */
+-e1526 /* "Member function not defined" - done by design (to disable certain constructors) */
+-e1702 /* "Operator is both an ordinary function and a member function" - common in STL, not an error */
+-e1704 /* "Constructor has private access specification" - this is used to forbid copying */
+-e1795 /* "Template was defined but not instantiated" - no, it's instantiated by the compiler */
+-e1938 /* "Constructor accesses global data" - no, the constructor accesses constants, not "global data" */
+-emacro(1960,VFW_CH_NAME_MAX) /* The VFW library uses lowercase 'u' for unsigned literals */
+-emacro(1960,VFW_CH_NAME_MAX_Z) /* The VFW library uses lowercase 'u' for unsigned literals */
+-esym(1960,0-1-8) /* "Void return type for function without external side-effects" */
+-esym(1960,5-0-15) /* "Pointer arithmetic other than array indexing used" */
+-esym(1960,11-0-1) /* "Non-private data member within a non-POD structure" */

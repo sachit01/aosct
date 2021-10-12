@@ -1,0 +1,10 @@
+# Version of Maintenance Parameters Specification:
+Version 1.0
+
+# Parameters:
+WheelSize1Id 117
+WheelSize1 1092
+WheelSize2Id 118
+WheelSize2 1092
+DopplerPulsesPerKmId 162
+DopplerPulsesPerKm 26172

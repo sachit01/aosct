@@ -1,0 +1,36 @@
+/*****************************************************************************
+*           © COPYRIGHT Bombardier Transportation AB, SWEDEN 2012.           *
+*           ======================================================           *
+*                                                                            *
+*    The copyright to the computer program herein is the                     *
+*    property of Bombardier Transportation AB, Sweden. All rights reserved.  *
+*    The program may be used and/or copied only with the                     *
+*    written permission from Bombardier Transportation AB,                   *
+*    or in accordance with the terms and conditions stipulated in the        *
+*    agreement/contract under which the program has been supplied.           *
+*                                                                            *
+*    NAME:  MMIAreaB.rc                                                      *
+*                                                                            *
+*    PROJECT:  LKAB, InterFlow TrainBorne                                    *
+*                                                                            *
+*    Ver    Author           Date    Reason                                  *
+*    ---    ------           ------  ------                                  *
+*           Bo Hermansson    120511  Created                                 *
+*           Bo Hermansson    130919  LEFT/RIGHT                              *
+*                                                                            *
+*    DESCRIPTION: Resources accessed from MMI Area B                         *
+*                                                                            *
+*    INTERFACE:                                                              *
+******************************************************************************/
+
+
+COLON BITMAP colon.bmp
+FORWARD BITMAP forward.bmp
+FREE BITMAP free.bmp
+MINA BITMAP mina.bmp
+NONE BITMAP none.bmp
+REVERSE BITMAP reverse.bmp
+LEFT BITMAP left.bmp
+RIGHT BITMAP right.bmp
+
+

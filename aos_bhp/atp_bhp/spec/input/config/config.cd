@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ATP::Config">
+    <Position X="4.25" Y="0.75" Width="2.75" />
+    <Members>
+      <Method Name="Config" Hidden="true" />
+      <Method Name="getDefaultValLocoType" Hidden="true" />
+      <Method Name="getMaxValLocoType" Hidden="true" />
+      <Method Name="getMinValLocoType" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQgIAgAAIsUQECAIIww8QQDQABBAIGoCIAIggAABQAQ=</HashCode>
+      <FileName>P:\aos_bhp\atp_bhp\impl\config\config.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::AbstractConfig">
+    <Position X="1" Y="6.75" Width="2.25" />
+    <Members>
+      <Method Name="AbstractConfig" Hidden="true" />
+      <Field Name="coreInitDone" Hidden="true" />
+      <Method Name="corePtr" Hidden="true" />
+      <Method Name="getAnalyzerIFPort" Hidden="true" />
+      <Method Name="getAtoEnable" Hidden="true" />
+      <Method Name="getBalAntennaPosEnd" Hidden="true" />
+      <Method Name="getBalAntennaPosFront" Hidden="true" />
+      <Method Name="getBalNidC" Hidden="true" />
+      <Method Name="getBalSearchDistance" Hidden="true" />
+      <Method Name="getBalSearchSpeed" Hidden="true" />
+      <Method Name="getBalWindowMin" Hidden="true" />
+      <Method Name="getBalWindowPermil" Hidden="true" />
+      <Method Name="getBrakeLambdaMax" Hidden="true" />
+      <Method Name="getBrakeLambdaMin" Hidden="true" />
+      <Method Name="getBrakeParameter" Hidden="true" />
+      <Method Name="getBrakeTestExecTime" Hidden="true" />
+      <Method Name="getBrakeTestMandatoryTime" Hidden="true" />
+      <Method Name="getBrakeTestNotifyTime" Hidden="true" />
+      <Method Name="getBrakeTestReason" Hidden="true" />
+      <Method Name="getBTMTestMandatory" Hidden="true" />
+      <Method Name="getBTMTestNotify" Hidden="true" />
+      <Method Name="getCabinConfiguration" Hidden="true" />
+      <Method Name="getCODSensorConfiguration" Hidden="true" />
+      <Method Name="getDefaultBrakeability" Hidden="true" />
+      <Method Name="getDefaultBrakeDelay" Hidden="true" />
+      <Method Name="getDefaultValLocoType" Hidden="true" />
+      <Method Name="getDeleteTrackMargin" Hidden="true" />
+      <Method Name="getDepartureWarningId" Hidden="true" />
+      <Method Name="getDopplerPulsePrecision" Hidden="true" />
+      <Method Name="getDopplerPulsesPerKm" Hidden="true" />
+      <Method Name="getEbExpectedDecLimit" Hidden="true" />
+      <Method Name="getEbMargin" Hidden="true" />
+      <Method Name="getEBMarginAdded" Hidden="true" />
+      <Method Name="getEbPrPropagationSpeed" Hidden="true" />
+      <Method Name="getEbTimeoutExpDec" Hidden="true" />
+      <Method Name="getEffectiveEbDelay" Hidden="true" />
+      <Method Name="getESAInputAvail" Hidden="true" />
+      <Method Name="getEventKeepActiveTime" Hidden="true" />
+      <Method Name="getFirstToSecondWarnCurveDelay" Hidden="true" />
+      <Method Name="getInternalRelaysTimeout" Hidden="true" />
+      <Method Name="getLastBrakeTestTime" Hidden="true" />
+      <Method Name="getLastBTMTestTime" Hidden="true" />
+      <Method Name="getLocoType" Hidden="true" />
+      <Method Name="getLowerSpeedEbDec" Hidden="true" />
+      <Method Name="getLowerSpeedSbDec" Hidden="true" />
+      <Method Name="getMaxAcceleration" Hidden="true" />
+      <Method Name="getMaxDeceleration" Hidden="true" />
+      <Method Name="getMaxDopplerAccel" Hidden="true" />
+      <Method Name="getMaxDopplerSpeed" Hidden="true" />
+      <Method Name="getMaxLowDecAccumEB" Hidden="true" />
+      <Method Name="getMaxLowDecAccumSB" Hidden="true" />
+      <Method Name="getMaxLowDecInRowEB" Hidden="true" />
+      <Method Name="getMaxLowDecInRowSB" Hidden="true" />
+      <Method Name="getMaxNrHelperGradTarget" Hidden="true" />
+      <Method Name="getMaxSpeedMarginEB" Hidden="true" />
+      <Method Name="getMaxSpeedMarginSB" Hidden="true" />
+      <Method Name="getMaxSpeedMarginWarn" Hidden="true" />
+      <Method Name="getMaxTimeAOSRun" Hidden="true" />
+      <Method Name="getMaxValLocoType" Hidden="true" />
+      <Method Name="getMaxWheelSizeError" Hidden="true" />
+      <Method Name="getMinDopplerSpeed" Hidden="true" />
+      <Method Name="getMinHelperGradTargetDist" Hidden="true" />
+      <Method Name="getMinSpeedMarginEB" Hidden="true" />
+      <Method Name="getMinSpeedMarginSB" Hidden="true" />
+      <Method Name="getMinSpeedMarginWarn" Hidden="true" />
+      <Method Name="getMinValLocoType" Hidden="true" />
+      <Method Name="getRadioId" Hidden="true" />
+      <Method Name="getRadioTimeOut" Hidden="true" />
+      <Method Name="getRadioTimeOutSb" Hidden="true" />
+      <Method Name="getRadioTimeOutYardMode" Hidden="true" />
+      <Method Name="getReleaseSpeed" Hidden="true" />
+      <Method Name="getRevSupMargForShuntRoute" Hidden="true" />
+      <Method Name="getRevSupMargin" Hidden="true" />
+      <Method Name="getRollAwayMargin" Hidden="true" />
+      <Method Name="getSbAvailable" Hidden="true" />
+      <Method Name="getSbExpectedDecLimit" Hidden="true" />
+      <Method Name="getSbTimeoutExpDec" Hidden="true" />
+      <Method Name="getSbToEbDelay" Hidden="true" />
+      <Method Name="getSbToEbMargin" Hidden="true" />
+      <Method Name="getSecondBaliseSearchDistance" Hidden="true" />
+      <Method Name="getSecondToSBCurveDelay" Hidden="true" />
+      <Method Name="getSendCycleAIF" Hidden="true" />
+      <Method Name="getSiteId" Hidden="true" />
+      <Method Name="getSlipAndSlideCheckInterval" Hidden="true" />
+      <Method Name="getSpeedMarginEB" Hidden="true" />
+      <Method Name="getSpeedMarginSB" Hidden="true" />
+      <Method Name="getSpeedMarginWarn" Hidden="true" />
+      <Method Name="getStandstillEventKeepActiveTime" Hidden="true" />
+      <Method Name="getTacho1Direction" Hidden="true" />
+      <Method Name="getTacho2Direction" Hidden="true" />
+      <Method Name="getTachoPulsesPer10Revolutions1" Hidden="true" />
+      <Method Name="getTachoPulsesPer10Revolutions2" Hidden="true" />
+      <Method Name="getTimeEbv0" Hidden="true" />
+      <Method Name="getTimeSbv0" Hidden="true" />
+      <Method Name="getTimeSyncServerVersionNumber" Hidden="true" />
+      <Method Name="getTimsConfirmTimeout" Hidden="true" />
+      <Method Name="getTimsManualConfTime" Hidden="true" />
+      <Method Name="getTimsSensorTimeDiff" Hidden="true" />
+      <Method Name="getTractionControlValue" Hidden="true" />
+      <Method Name="getTractionCutoffDelay" Hidden="true" />
+      <Method Name="getTrainCfgTicTimeout" Hidden="true" />
+      <Method Name="getUpperSpeedEbDec" Hidden="true" />
+      <Method Name="getUpperSpeedSbDec" Hidden="true" />
+      <Method Name="getVehicleType1" Hidden="true" />
+      <Method Name="getVehicleType10" Hidden="true" />
+      <Method Name="getVehicleType11" Hidden="true" />
+      <Method Name="getVehicleType12" Hidden="true" />
+      <Method Name="getVehicleType13" Hidden="true" />
+      <Method Name="getVehicleType14" Hidden="true" />
+      <Method Name="getVehicleType15" Hidden="true" />
+      <Method Name="getVehicleType16" Hidden="true" />
+      <Method Name="getVehicleType17" Hidden="true" />
+      <Method Name="getVehicleType18" Hidden="true" />
+      <Method Name="getVehicleType19" Hidden="true" />
+      <Method Name="getVehicleType2" Hidden="true" />
+      <Method Name="getVehicleType20" Hidden="true" />
+      <Method Name="getVehicleType3" Hidden="true" />
+      <Method Name="getVehicleType4" Hidden="true" />
+      <Method Name="getVehicleType5" Hidden="true" />
+      <Method Name="getVehicleType6" Hidden="true" />
+      <Method Name="getVehicleType7" Hidden="true" />
+      <Method Name="getVehicleType8" Hidden="true" />
+      <Method Name="getVehicleType9" Hidden="true" />
+      <Method Name="getWheelSize1" Hidden="true" />
+      <Method Name="getWheelSize2" Hidden="true" />
+      <Method Name="getYardSpeed" Hidden="true" />
+      <Method Name="initCrossCompare" Hidden="true" />
+      <Method Name="setBrakeTestReason" Hidden="true" />
+      <Method Name="setLastBrakeTestTime" Hidden="true" />
+      <Method Name="setLastBTMTestTime" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>H/hXNEFjCIAIKtDsgYRkUZOkFUYCgEKpChEpKggFy6Y=</HashCode>
+      <FileName>P:\aos_bhp\atp_core\impl\config\abstract_config.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::AbstractConfigBase">
+    <Position X="1" Y="4.5" Width="2.25" />
+    <Members>
+      <Method Name="AbstractConfigBase" Hidden="true" />
+      <Method Name="addBoolConfigItem" Hidden="true" />
+      <Method Name="addConfigItem" Hidden="true" />
+      <Method Name="addInt16ConfigItem" Hidden="true" />
+      <Method Name="addInt32ConfigItem" Hidden="true" />
+      <Method Name="addInt64ConfigItem" Hidden="true" />
+      <Method Name="addInt8ConfigItem" Hidden="true" />
+      <Method Name="addIPaddrConfigItem" Hidden="true" />
+      <Method Name="addStringConfigItem" Hidden="true" />
+      <Method Name="addUint16ConfigItem" Hidden="true" />
+      <Method Name="addUint32ConfigItem" Hidden="true" />
+      <Method Name="addUint64ConfigItem" Hidden="true" />
+      <Method Name="addUint8ConfigItem" Hidden="true" />
+      <Method Name="basePtr" Hidden="true" />
+      <Field Name="buffSize" Hidden="true" />
+      <Field Name="configFileCommon" Hidden="true" />
+      <Field Name="configFileDisp" Hidden="true" />
+      <Field Name="configFileInstance" Hidden="true" />
+      <Field Name="configFileMaint" Hidden="true" />
+      <Field Name="configFileRuntime" Hidden="true" />
+      <Field Name="configFileType" Hidden="true" />
+      <Field Name="configItems" Hidden="true" />
+      <Field Name="configParamIds" Hidden="true" />
+      <Method Name="consoleCall" Hidden="true" />
+      <Method Name="crossCompareVersions" Hidden="true" />
+      <Method Name="displayAllConfigItems" Hidden="true" />
+      <Method Name="displayConfigItem" Hidden="true" />
+      <Field Name="expectedNumberOfConfigItemsToReadFromFile" Hidden="true" />
+      <Method Name="getBdsLevel" Hidden="true" />
+      <Method Name="getBdsPort" Hidden="true" />
+      <Method Name="getConfig" Hidden="true" />
+      <Method Name="getConfigInfo" Hidden="true" />
+      <Method Name="getConfigItem" Hidden="true" />
+      <Method Name="getConsolePort" Hidden="true" />
+      <Method Name="getItemInfoForVfwSim" Hidden="true" />
+      <Method Name="getNjruIp" Hidden="true" />
+      <Method Name="getNjruLevel" Hidden="true" />
+      <Method Name="getNjruPort" Hidden="true" />
+      <Method Name="getRuIp" Hidden="true" />
+      <Method Name="getRuLogDynValuePeriod" Hidden="true" />
+      <Method Name="getRuLogValueDiff" Hidden="true" />
+      <Method Name="getRuPort" Hidden="true" />
+      <Method Name="getWriteCrossCompareMaxSize" Hidden="true" />
+      <Field Name="isAnyRunTimeConfigUpdated" Hidden="true" />
+      <Field Name="numberOfConfigItems" Hidden="true" />
+      <Field Name="numConfigItemsRead" Hidden="true" />
+      <Method Name="putConfigString" Hidden="true" />
+      <Method Name="readConfigParameters" Hidden="true" />
+      <Method Name="reportConfigError" Hidden="true" />
+      <Method Name="saveRunTimeParameters" Hidden="true" />
+      <Method Name="setGlobalNameToConfigParameter" Hidden="true" />
+      <Method Name="setRunTimeConfigValue" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+      <Method Name="writeCrossCompare" Hidden="true" />
+      <Method Name="writeCrossCompareVersions" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="ATC::AbstractConfigBase::ConfigState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\config\abstract_config_base.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>JAcKljQAgAgACBhACEAAgYAaBgEDmAIGDAAKqFQCgEg=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\abstract_config_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent">
+    <Position X="1" Y="2.5" Width="2.25" />
+    <Members>
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="ProcComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BaseComponent">
+    <Position X="1" Y="0.75" Width="2.25" />
+    <Members>
+      <Method Name="~BaseComponent" Hidden="true" />
+      <Method Name="BaseComponent" Hidden="true" />
+      <Field Name="compId" Hidden="true" />
+      <Method Name="consoleCall" Hidden="true" />
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="getShortName" Hidden="true" />
+      <Method Name="getTrace" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="preInit" Hidden="true" />
+      <Field Name="shortName" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Method Name="writeToLog" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAAIAAIMAAAACAEAAEAAIAAACkEAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

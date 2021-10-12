@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FieldDescriptions>
+
+  <!-- AOS_status_message -->
+  
+  <FieldDescription type="CabinMode">
+    <Detail>ATO Mode Cabin Selector</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> Manual</Field>
+	<Field value="1"> Supervised6</Field>
+	<Field value="2"> Automatic6</Field>
+	<Field value="255"> No ATO Mode Asserted</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>  
+
+  <FieldDescription type="TrainIdle">
+    <Detail>Train Idling1</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> MA exists</Field>
+	<Field value="1"> Train is Idling</Field>
+	<Field value="255"> Not Asserted5</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>  
+
+  <FieldDescription type="TrainIdle">
+    <Detail>Train Idling1</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> MA exists</Field>
+	<Field value="1"> Train is Idling</Field>
+	<Field value="255"> Not Asserted5</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+
+  <FieldDescription type="FrontOrientation">
+    <Detail>Train orientation on front track</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> Lead locomotive towards Leg 0</Field>
+	<Field value="1"> Towards Leg 1</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+  
+  <FieldDescription type="RearOrientation">
+    <Detail>Train orientation on rear track</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> Lead locomotive towards Leg 0</Field>
+	<Field value="1"> Towards Leg 1</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+
+  <FieldDescription type="TravelDirection">
+    <Detail>Current travel direction</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> Locomotive leading (Forward)</Field>
+	<Field value="1"> Locomotive trailing (Reverse) For single locomotives forward is the A-end leading (short hood)</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+  
+  <FieldDescription type="SystemBlueFlag">
+    <Detail>System Blue Flag</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> Not Active</Field>
+	<Field value="1"> Active</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+  
+  <FieldDescription type="LimitedSupervision">
+    <Detail>Limited supervised mode4</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+      <Fields>
+	<Field value="0"> Not Active</Field>
+	<Field value="1"> Active</Field>
+	<Field value="255"> Not Asserted</Field>
+      </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+
+  
+  <!-- Train_Status_Message -->
+  
+  <FieldDescription type="ATO_Mode_Cabin_Sel_Status">
+    <Detail>ATO Mode Cabin Selector Status</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+        <Fields>
+            <Field value="0"> Manual</Field>
+            <Field value="1"> Supervised</Field>
+            <Field value="2"> Automatic</Field>
+            <Field value="255"> No ATO Mode Asserted</Field>
+        </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+  
+    <FieldDescription type="ATO_Driver_Mode">
+    <Detail>ATO Mode Cabin Selector Status</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>255</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+        <Fields>
+            <Field value="0"> None</Field>
+            <Field value="1"> ETA Pacing</Field>
+            <Field value="2"> Ceiling Speed</Field>
+            <Field value="3"> Loading</Field>
+            <Field value="4"> Precision Stop</Field>
+            <Field value="5"> Unloading (Free Rolling)</Field>
+            <Field value="255"> Not Asserted</Field>
+        </Fields>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+  
+  <!-- ATP_Command_Message -->
+
+
+
+
+  <FieldDescription type="M_END_OF_MESSAGE">
+    <Detail>End of message for variable length messages</Detail>
+    <Length>1</Length>
+    <Min>0</Min>
+    <Max>0</Max>
+    <Resolution></Resolution>
+    <Format>UINT</Format>
+    <Special>
+    </Special>
+    <Default>0</Default>
+  </FieldDescription>
+  
+</FieldDescriptions>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATP::Supv::Supervise">
+    <Position X="6.75" Y="1" Width="3" />
+    <Members>
+      <Field Name="accumulatedReverseDistance" Hidden="true" />
+      <Method Name="calculateAccumulatedReverseDistance" Hidden="true" />
+      <Field Name="extRevEBMarginError" Hidden="true" />
+      <Field Name="extRevSupvEmergencyBrakeCeilingSpeed" Hidden="true" />
+      <Field Name="extRevSupvEnabled" Hidden="true" />
+      <Field Name="extRevSupvError" Hidden="true" />
+      <Field Name="extRevSupvServiceBrakeCeilingSpeed" Hidden="true" />
+      <Method Name="getDistanceFromScratchMA" Hidden="true" />
+      <Method Name="getExtndReverseCeilingSpeed" Hidden="true" />
+      <Method Name="getMaxExtndReverseDistance" Hidden="true" />
+      <Method Name="isExtRevSupervisionEnabled" Hidden="true" />
+      <Method Name="isMovingAgainstMA" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="posAtMAFromScratch" Hidden="true" />
+      <Field Name="posAtMAFromScratchValid" Hidden="true" />
+      <Method Name="Supervise" Hidden="true" />
+      <Method Name="superviseExtRevCeilingSpeed" Hidden="true" />
+      <Method Name="superviseExtRevDistance" Hidden="true" />
+      <Method Name="superviseTims" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAACABBAAQAAAAAgqAAAIiAAADEAoAIAAAgIAACQAA=</HashCode>
+      <FileName>C:\git\AOS_IF150_R4\aos_bhp\atp_bhp\impl\supervision\supervise\supervise.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Supv::AbstractSupervise">
+    <Position X="3.75" Y="1" Width="2.25" />
+    <Members>
+      <Field Name="atpIntervention" Hidden="true" />
+      <Field Name="atpWarning" Hidden="true" />
+      <Field Name="buzzer" Hidden="true" />
+      <Method Name="calcBrakeCurveSpeedAtCurPosition" Hidden="true" />
+      <Method Name="calcDistanceToBCA" Hidden="true" />
+      <Method Name="calcDMIDisplayData" Hidden="true" />
+      <Method Name="calcTimeToIntervention" Hidden="true" />
+      <Field Name="ceilingSpeedLimitExceed" Hidden="true" />
+      <Method Name="consoleCall" Hidden="true" />
+      <Method Name="corePtr" Hidden="true" />
+      <Field Name="currentSpeedLimit" Hidden="true" />
+      <Field Name="currentZone" Hidden="true" />
+      <Field Name="distanceToBCA" Hidden="true" />
+      <Field Name="distanceToTarget" Hidden="true" />
+      <Field Name="ebSpeed" Hidden="true" />
+      <Field Name="emergencyBrakeCeilingSpeed" Hidden="true" />
+      <Field Name="emergencyBrakeStandstillSupervision" Hidden="true" />
+      <Field Name="emergencyBrakeTargetSupervision" Hidden="true" />
+      <Field Name="errorInTargetList" Hidden="true" />
+      <Method Name="findRestrictiveTarget" Hidden="true" />
+      <Field Name="firstWarningSpeed" Hidden="true" />
+      <Field Name="firstWarningSpeedExceed" Hidden="true" />
+      <Method Name="getAtpIntervention" Hidden="true" />
+      <Method Name="getAtpWarning" Hidden="true" />
+      <Method Name="getBuzzerRequest" Hidden="true" />
+      <Method Name="getDistanceToBCA" Hidden="true" />
+      <Method Name="getDistanceToTarget" Hidden="true" />
+      <Method Name="getFirstSupTarget" Hidden="true" />
+      <Method Name="getInBCA" Hidden="true" />
+      <Method Name="getInReleaseSpeedArea" Hidden="true" />
+      <Method Name="getPermittedSpeed" Hidden="true" />
+      <Method Name="getPredDistToStandStill" Hidden="true" />
+      <Method Name="getSpeedAtTarget" Hidden="true" />
+      <Method Name="getTimeToIntervention" Hidden="true" />
+      <Method Name="handleModes" Hidden="true" />
+      <Field Name="inBCA" Hidden="true" />
+      <Field Name="initDone" Hidden="true" />
+      <Field Name="inReleaseSpeedArea" Hidden="true" />
+      <Field Name="invalidAtpMode" Hidden="true" />
+      <Field Name="mrtOdo" Hidden="true" />
+      <Field Name="predDistToStandStill" Hidden="true" />
+      <Field Name="prevTargetListEmpty" Hidden="true" />
+      <Field Name="requestEmAlert" Hidden="true" />
+      <Field Name="resetOfReverseRefPosition" Hidden="true" />
+      <Field Name="resetOfStandStillRefPosition" Hidden="true" />
+      <Field Name="revEBMarginError" Hidden="true" />
+      <Field Name="reverseDistance" Hidden="true" />
+      <Field Name="revSupvError" Hidden="true" />
+      <Field Name="rollAwayDistance" Hidden="true" />
+      <Field Name="rollAwayEBMarginError" Hidden="true" />
+      <Method Name="rollAwaySupervision" Hidden="true" />
+      <Field Name="rollAwaySupvError" Hidden="true" />
+      <Field Name="sbSpeed" Hidden="true" />
+      <Field Name="secondWarningSpeed" Hidden="true" />
+      <Field Name="secondWarningSpeedExceed" Hidden="true" />
+      <Field Name="serviceBrakeCeilingSpeed" Hidden="true" />
+      <Field Name="serviceBrakeStandstillSupervision" Hidden="true" />
+      <Field Name="serviceBrakeTargetSupervision" Hidden="true" />
+      <Field Name="serviceBrakeTIMSBroken" Hidden="true" />
+      <Field Name="speedAtTarget" Hidden="true" />
+      <Field Name="speedExceedSBSpeed" Hidden="true" />
+      <Field Name="speedWarningLimitExceed" Hidden="true" />
+      <Field Name="standstillCeilingSpeedZero" Hidden="true" />
+      <Field Name="standstillNoTarget" Hidden="true" />
+      <Field Name="standstillOdoPos" Hidden="true" />
+      <Method Name="superviseCeilingSpeed" Hidden="true" />
+      <Method Name="superviseTargets" Hidden="true" />
+      <Method Name="superviseTims" Hidden="true" />
+      <Method Name="superviseTrainAtStandstill" Hidden="true" />
+      <Field Name="targetId" Hidden="true" />
+      <Field Name="timeToIntervention" Hidden="true" />
+      <Field Name="triggerStandstillSup" Hidden="true" />
+      <Field Name="warningLimitEventReportedToTCC" Hidden="true" />
+      <Method Name="verifyBrakeabilityVsGradient" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ATP::Supv::AbstractSupervise::ZoneStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\supervision\supervise\abstract_supervise.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ATP::Supv::AbstractSupervise::SpeedLimitStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atp_core\impl\supervision\supervise\abstract_supervise.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IAwghgkGgghQM0hIBGCIQAzB1qCkAIckQAYgASkDQSQ=</HashCode>
+      <FileName>C:\git\AOS_IF150_R4\aos_bhp\atp_core\impl\supervision\supervise\abstract_supervise.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::ProcComponent">
+    <Position X="0.5" Y="1" Width="2.5" />
+    <Members>
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="ProcComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\git\AOS_IF150_R4\aos_bhp\atc\impl\atc_base\atc_base.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

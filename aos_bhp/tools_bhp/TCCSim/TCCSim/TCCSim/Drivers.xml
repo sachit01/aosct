@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Drivers>
+	<Driver>
+		<Name>AK</Name>
+		<Password>AK</Password>
+	</Driver>
+	<Driver>
+		<Name>ak</Name>
+		<Password>ak</Password>
+	</Driver>
+</Drivers>

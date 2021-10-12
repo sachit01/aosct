@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ATP::Kernel::ConfigModeRequestSeq">
+    <Position X="13.25" Y="7.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>BAAAAgAgAAAAAAAAEAAFAAACAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\config_mode_request_seq.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::ModeRequestSeq">
+    <Position X="7.5" Y="1.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAIQEkAAAEEBAAAAAAAAEAACEAAAAAIAAEEAQAAAQIQ=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\mode_request_seq.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::PosModeRequestSeq">
+    <Position X="9.25" Y="7.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAgBAAAAQAAAwAiAQAAACAAAABAAAIAAAACAAAAA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\possession_mode_request_seq.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::ShuntModeRequestSeq">
+    <Position X="0.75" Y="7.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>QAAAAgAAAIAAEBAAAAAQAAACAAAAAAAAAAAAKAoAQIA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\shunting_mode_request_seq.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::YardModeRequestSeq">
+    <Position X="5" Y="7.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAABgACAAAQgAEAAAAAAgACAAAAgAIAAIAAAAAUABA=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\yard_mode_request_seq.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::DriverLoginSeq">
+    <Position X="5.75" Y="12" Width="3.25" />
+    <Members>
+      <Field Name="driverLoginNotAuthorizedStandstill" Hidden="true" />
+      <Field Name="driverLogoutEvent" Hidden="true" />
+      <Field Name="driverNotAuthStandstill" Hidden="true" />
+      <Field Name="isLogInFromYardWithoutTCC" Hidden="true" />
+      <Field Name="loginFailedCycleCount" Hidden="true" />
+      <Field Name="maxLoginFailedCycles" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QACCIgAAAQoAKAAAAAAABAAAAAAAsAEAAABQgAAAYAQ=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\driver_login_seq.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATP::Kernel::EmergencyAlertSeq">
+    <Position X="9.25" Y="12" Width="3.5" />
+    <Members>
+      <Method Name="~EmergencyAlertSeq" Hidden="true" />
+      <Field Name="emergencyAlertActiveEvent" Hidden="true" />
+      <Method Name="runEmergencyAlertInactive" Hidden="true" />
+      <Method Name="runEmergencyAlertSeq" Hidden="true" />
+      <Field Name="seqState" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QIEAAwAAAAAAAAAgAAAAAAAAEAAAIAAAQAAAAAAAQAQ=</HashCode>
+      <FileName>C:\gitRoot\aos_bhp\atp_core\impl\kernel\mode_control\emergency_alert_seq.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

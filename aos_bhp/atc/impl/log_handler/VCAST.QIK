@@ -1,0 +1,124 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atc\impl\log_handler
+BEGIN_RECORD abstract_log_handler.cpp
+CHECKSUM  773333606
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __CPR113__writeToLogInternal__Q2_3ATC18AbstractLogHandlerFRQ3_3ATCJ27J30CharBuffer__tm__12_XCUiL_3_256PCcib
+   __CPR81__logRU__Q2_3ATC18AbstractLogHandlerFUcQ3_3ATCJ14J12InterfaceDirT1b
+   __CPR82__logRU__Q2_3ATC18AbstractLogHandlerFUcQ3_3ATCJ14J12InterfaceDirT1Us
+   __CPR84__logRU__Q2_3ATC18AbstractLogHandlerFUcQ3_3ATCJ14J12InterfaceDirPCUcUi
+   __CPR93__addHeaderToRUBuffer__Q2_3ATC18AbstractLogHandlerFUcQ3_3ATCJ28J12InterfaceDirc
+   __CPR95__logFragmentToRU__Q2_3ATC18AbstractLogHandlerFUcQ3_3ATCJ24J12InterfaceDirPCUcUic
+   __ct__Q2_3ATC18AbstractLogHandlerFv
+   __ct__Q3_3ATC18AbstractLogHandler30CharBuffer__tm__12_XCUiL_3_256Fv
+   __ct__Q3_3ATC18AbstractLogHandler32CharBuffer__tm__14_XCUiL_5_32768Fv
+   __ct__Q3_3ATC18AbstractLogHandler32CharBuffer__tm__14_XCUiL_5_53248Fv
+   appendToBuffer__Q3_3ATC18AbstractLogHandler30CharBuffer__tm__12_XCUiL_3_256FPCc_b
+   appendToBuffer__Q3_3ATC18AbstractLogHandler32CharBuffer__tm__14_XCUiL_5_32768FPCc_b
+   appendToBuffer__Q3_3ATC18AbstractLogHandler32CharBuffer__tm__14_XCUiL_5_53248FPCc_b
+   buffer__Q3_3ATC18AbstractLogHandler30CharBuffer__tm__12_XCUiL_3_256Fv_Pc
+   consoleCall__Q2_3ATC18AbstractLogHandlerFUiPA30_Cc
+   corePtr__Q2_3ATC18AbstractLogHandlerSFv
+   extractFileName__Q2_3ATC18AbstractLogHandlerCFPCcUi
+   getCompShortName__Q2_3ATC18AbstractLogHandlerCFUs
+   getEventTypeStr__Q2_3ATC18AbstractLogHandlerCFQ3_3ATC5Event9EventType
+   getSideChar__Q2_3ATC18AbstractLogHandlerCFv
+   init__Q2_3ATC18AbstractLogHandlerFv
+   init__Q3_3ATC18AbstractLogHandler30CharBuffer__tm__12_XCUiL_3_256Fv_v
+   init__Q3_3ATC18AbstractLogHandler32CharBuffer__tm__14_XCUiL_5_32768Fv_v
+   init__Q3_3ATC18AbstractLogHandler32CharBuffer__tm__14_XCUiL_5_53248Fv_v
+   interfaceIdToString__Q2_3ATC18AbstractLogHandlerFUc
+   isLegalLogLevel__Q2_3ATC18AbstractLogHandlerCFPCc
+   run__Q2_3ATC18AbstractLogHandlerFv
+   writeBufferTo__Q3_3ATC18AbstractLogHandler32CharBuffer__tm__14_XCUiL_5_32768FUc_v
+   writeBufferTo__Q3_3ATC18AbstractLogHandler32CharBuffer__tm__14_XCUiL_5_53248FUc_v
+   writeEventToLogger__Q2_3ATC18AbstractLogHandlerFRCQ2_3ATC5EventPCci
+   writeToBDS__Q2_3ATC18AbstractLogHandlerFPc
+   writeToLog__Q2_3ATC18AbstractLogHandlerFQ2_3ATC8LogLevelPCcN22i
+   writeToLog__Q2_3ATC18AbstractLogHandlerFQ2_3ATC8LogLevelPCcUiN22i
+   writeToLog__Q2_3ATC18AbstractLogHandlerFQ2_3ATC8LogLevelPCcbN22i
+   writeToLog__Q2_3ATC18AbstractLogHandlerFQ2_3ATC8LogLevelPCciN22T3
+   writeToNJRU__Q2_3ATC18AbstractLogHandlerFv
+   writeToRU__Q2_3ATC18AbstractLogHandlerFv
+CALLED_OBJECTS
+   __CPR101____ct__Q2_3ATC14BaseConfigItemFUsPCcN22PQ2_3ATC16ConfigMemoryAreaQ3_3ATCJ13J12ItemDatatype
+   __CPR128____ct__Q2_3ATC16ConfigMemoryAreaFUibPCcT3T1PFP20vfw_i_NvshDescriptor13VFW_NvshError_vPFPJ45JP14VFW_BufferNode_v
+   __CPR82____ct__Q2_3ATC15AbstractBasicIPFPQ3_3ATCJ13J22ConnectionControlBlockUc
+   __CPR94__initConnection__Q2_3ATC15AbstractBasicIPFUcQ3_3ATCJ23J16IPConnectionTypePCcUsUiT5
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14BaseConfigItemFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractBasicIPFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC16ConfigMemoryAreaFv
+   __ct__Q2_3ATC18AbstractConfigBaseFv
+   __ct__Q2_3ATC23AbstractApplicationBaseFQ2_3ATC14ComponentBlock
+   __ct__Q2_3ATC23AbstractApplicationBaseFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __dt__Q2_3ATC14BaseConfigItemFv
+   __dt__Q2_3ATC23AbstractApplicationBaseFv
+   aosHalt__3ATCFPCciT1
+   basePtr__Q2_3ATC18AbstractConfigBaseSFv
+   corePtr__Q2_3ATC15AbstractBasicIPSFv
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC23AbstractApplicationBaseSFv
+   diaInit
+   diaSendString
+   getBdsLevel__Q2_3ATC18AbstractConfigBaseCFv
+   getBdsPort__Q2_3ATC18AbstractConfigBaseCFv
+   getCompIteratorEnd__Q2_3ATC23AbstractApplicationBaseFv
+   getCompIterator__Q2_3ATC23AbstractApplicationBaseFv
+   getComponentId__Q2_3ATC5EventCFv
+   getConnectionStatus__Q2_3ATC15AbstractBasicIPCFUc
+   getDynamicText__Q2_3ATC5EventCFv
+   getFileNameFromPath__3ATCFPCcUi
+   getId__Q2_3ATC13BaseComponentCFv
+   getNjruIp__Q2_3ATC18AbstractConfigBaseCFv
+   getNjruLevel__Q2_3ATC18AbstractConfigBaseCFv
+   getNjruPort__Q2_3ATC18AbstractConfigBaseCFv
+   getRuIp__Q2_3ATC18AbstractConfigBaseCFv
+   getRuPort__Q2_3ATC18AbstractConfigBaseCFv
+   getShortName__Q2_3ATC13BaseComponentCFv
+   getText__Q2_3ATC5EventCFv
+   getType__Q2_3ATC5EventCFv
+   isTextMatch__3ATCFPCcT1Ui
+   minU32__3ATCFUiT1
+   vfwGetReferenceTime
+   vfwGetSide
+   vfwGetTimeOfDay
+   vfwVisitCheckPoint
+   vfw_strlcat
+   vfw_strlcpy
+   writeBuf__Q2_3ATC15AbstractBasicIPFUcPCUcUi
+   writeWithNewline__Q2_3ATC15AbstractConsoleFPCc
+   write__Q2_3ATC14TraceInterfaceCFUcPCcb
+   write__Q2_3ATC14TraceInterfaceCFUcPCcib
+   write__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::AbstractLogHandler
+   ATC::AbstractLogHandler::CharBuffer<256U>
+   ATC::AbstractLogHandler::CharBuffer<32768U>
+   ATC::AbstractLogHandler::CharBuffer<53248U>
+   ATC::BaseComponent
+DEFAULT_TESTABLE_CLASSES
+   ATC::AbstractLogHandler
+   ATC::AbstractLogHandler::CharBuffer<256U>
+   ATC::AbstractLogHandler::CharBuffer<32768U>
+   ATC::AbstractLogHandler::CharBuffer<53248U>
+INCLUDES
+END_RECORD abstract_log_handler.cpp

@@ -1,0 +1,134 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY P:\aos_bhp\atc\impl\event_handler
+BEGIN_RECORD abstract_event_handler.cpp
+CHECKSUM 51103896
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __CPR97____as__Q3_3ATC20AbstractEventHandler13EventListItemFRCQ3_3ATCJ13JJ35J
+   __ct__Q2_3ATC20AbstractEventHandlerFUsN21b
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFPCQ2_3ATC5EventLiPCc
+   __dt__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   consoleCall__Q2_3ATC20AbstractEventHandlerFUiPA30_Cc
+   corePtr__Q2_3ATC20AbstractEventHandlerSFv
+   deleteTcc2Event__Q2_3ATC20AbstractEventHandlerFv
+   deleteTcc3Event__Q2_3ATC20AbstractEventHandlerFv
+   getEbReleaser__Q2_3ATC20AbstractEventHandlerCFv
+   getNextDmiEvent__Q2_3ATC20AbstractEventHandlerFv
+   getNextTcc2Event__Q2_3ATC20AbstractEventHandlerFv
+   getNextTcc3Event__Q2_3ATC20AbstractEventHandlerFv
+   getNumberOfStandstillEvents__Q2_3ATC20AbstractEventHandlerCFv
+   getSbReleaser__Q2_3ATC20AbstractEventHandlerCFv
+   init__Q2_3ATC20AbstractEventHandlerFv
+   isApplyEb__Q2_3ATC20AbstractEventHandlerCFv
+   isApplySb__Q2_3ATC20AbstractEventHandlerCFv
+   isModeChangeToSafeBrakeToStop__Q2_3ATC20AbstractEventHandlerCFv
+   isModeChangeToSafetyHalt__Q2_3ATC20AbstractEventHandlerCFv
+   isStandstillEventActive__Q2_3ATC20AbstractEventHandlerCFv
+   logEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5Event
+   reportEvent__Q2_3ATC20AbstractEventHandlerFRCQ2_3ATC5EventPCci
+   run__Q2_3ATC20AbstractEventHandlerFv
+CALLED_OBJECTS
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC13ProcComponentFRCQ2_3ATC13ProcComponent
+   __ct__Q2_3ATC13ProcComponentFUsPCcT2
+   __ct__Q2_3ATC13ProcComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC15AbstractConsoleFPCc
+   __ct__Q2_3ATC15AbstractConsoleFv
+   __ct__Q2_3ATC18AbstractLogHandlerFv
+   __ct__Q2_3ATC20AbstractEventHandlerFv
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   __ct__Q3_3ATC18AbstractLogHandler32CharBuffer__tm__14_XCUiL_5_32768Fv
+   __ct__Q3_3ATC18AbstractLogHandler32CharBuffer__tm__14_XCUiL_5_53248Fv
+   __ct__Q3_3ATC20AbstractEventHandler13EventListItemFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC15AbstractConsoleSFv
+   corePtr__Q2_3ATC18AbstractLogHandlerSFv
+   getComponentContainer__Q2_3ATC5EventCFv
+   getComponentId__Q2_3ATC5EventCFv
+   getDmiEventCode__Q2_3ATC5EventCFv
+   getEventNum__Q2_3ATC5EventCFv
+   getFileNameFromPath__3ATCFPCcUi
+   getId__Q2_3ATC5EventCFv
+   getReleaser__Q2_3ATC5EventCFv
+   getType__Q2_3ATC5EventCFv
+   isTextMatch__3ATCFPCcT1Ui
+   vfwGetReferenceTime
+   vfwVisitCheckPoint
+   writeEventToLogger__Q2_3ATC18AbstractLogHandlerFRCQ2_3ATC5EventPCci
+   writeWithNewline__Q2_3ATC15AbstractConsoleFPCc
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::AbstractEventHandler
+   ATC::AbstractEventHandler::EventListItem
+   ATC::BaseComponent
+DEFAULT_TESTABLE_CLASSES
+   ATC::AbstractEventHandler
+   ATC::AbstractEventHandler::EventListItem
+INCLUDES
+END_RECORD abstract_event_handler.cpp
+BEGIN_RECORD event.cpp
+CHECKSUM 1279014802
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC5EventFUsQ2_3ATC19ComponentContainersT1Q3_3ATC5Event9EventTypeUcT1PCcb
+   __ct__Q2_3ATC5EventFv
+   createEBReqEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10EBReleaserT1PCcb
+   createLogEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersN21PCcb
+   createSBReqEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10SBReleaserT1PCcb
+   createSafeBrakeEBEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10EBReleaserT1PCcb
+   createSafeBrakeSBEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10SBReleaserT1PCcb
+   createSafetyHaltEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10EBReleaserT1PCcb
+   createStandstillEvent__Q2_3ATC5EventSFUsQ2_3ATC19ComponentContainersT1Q2_3ATC10SBReleaserT1PCcb
+   getComponentContainer__Q2_3ATC5EventCFv
+   getComponentId__Q2_3ATC5EventCFv
+   getDmiEventCode__Q2_3ATC5EventCFv
+   getDynamicText__Q2_3ATC5EventCFv
+   getEventNum__Q2_3ATC5EventCFv
+   getId__Q2_3ATC5EventCFv
+   getReleaser__Q2_3ATC5EventCFv
+   getText__Q2_3ATC5EventCFv
+   getType__Q2_3ATC5EventCFv
+   getWriteCrossCompareMaxSize__Q2_3ATC5EventCFv
+   setDynamicText__Q2_3ATC5EventCFPCc
+   setDynamicText__Q2_3ATC5EventCFUi
+   writeCrossCompare__Q2_3ATC5EventCFP14VFW_BufferNode
+CALLED_OBJECTS
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC23AbstractApplicationBaseFQ2_3ATC14ComponentBlock
+   __ct__Q2_3ATC23AbstractApplicationBaseFv
+   __dt__Q2_3ATC23AbstractApplicationBaseFv
+   aosHalt__3ATCFPCciT1
+   corePtr__Q2_3ATC23AbstractApplicationBaseSFv
+   getBlockNr__Q2_3ATC23AbstractApplicationBaseCFv
+   vfwPutString
+   vfwPutU16
+   vfwPutU32
+   vfwPutU8
+   vfw_strlcpy
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::BaseComponent
+   ATC::Event
+DEFAULT_TESTABLE_CLASSES
+   ATC::Event
+INCLUDES
+END_RECORD event.cpp

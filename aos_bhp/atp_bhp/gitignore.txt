@@ -1,0 +1,41 @@
+# Compiled source #
+###################
+*.com
+*.obj
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.htm
+*.ncb
+
+# OS generated files #
+######################
+Thumbs.db
+
+# Visual Studio User Options #
+##############################
+*.suo
+
+
+# Folders            #
+######################
+impl/test_atp/Debug
+impl/test_atp/Release

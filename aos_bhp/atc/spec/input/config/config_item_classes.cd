@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="ATC::BaseConfigItem">
+    <Position X="15.5" Y="0.5" Width="3.75" />
+    <Members>
+      <Method Name="~BaseConfigItem" Hidden="true" />
+      <Method Name="BaseConfigItem" Hidden="true" />
+      <Field Name="configItemId" Hidden="true" />
+      <Method Name="copyTo" Hidden="true" />
+      <Field Name="descriptiveText" Hidden="true" />
+      <Field Name="globalName" Hidden="true" />
+      <Field Name="itemDatatype" Hidden="true" />
+      <Field Name="maxConfigNameLength" Hidden="true" />
+      <Field Name="memArea" Hidden="true" />
+      <Field Name="nameString" Hidden="true" />
+      <Field Name="paramRead" Hidden="true" />
+      <Field Name="unitString" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="ATC::BaseConfigItem::ItemDatatype" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\config\base_config_item.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BZBiAlAAAQQAAAABQAEAARAYAAFAAAACAACMAgAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\base_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::Uint8ConfigItem">
+    <Position X="17.75" Y="6.5" Width="2.5" />
+    <Members>
+      <Field Name="defaultValue" Hidden="true" />
+      <Method Name="getDefault" Hidden="true" />
+      <Field Name="max" Hidden="true" />
+      <Field Name="min" Hidden="true" />
+      <Method Name="Uint8ConfigItem" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="5.928" />
+        <Point X="19.188" Y="5.928" />
+        <Point X="19.188" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAQAQACAAAAIAAAAAAABAQCAAQACEIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\uint8_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::Uint16ConfigItem">
+    <Position X="11.25" Y="6.5" Width="2.75" />
+    <Members>
+      <Field Name="defaultValue" Hidden="true" />
+      <Method Name="getDefault" Hidden="true" />
+      <Field Name="max" Hidden="true" />
+      <Field Name="min" Hidden="true" />
+      <Method Name="Uint16ConfigItem" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="5.672" />
+        <Point X="12.625" Y="5.672" />
+        <Point X="12.625" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAQAQACAAAAIAAAAAAQBAACAAQACEIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\uint16_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::Uint32ConfigItem">
+    <Position X="14.5" Y="6.5" Width="2.5" />
+    <Members>
+      <Field Name="defaultValue" Hidden="true" />
+      <Method Name="getDefault" Hidden="true" />
+      <Field Name="max" Hidden="true" />
+      <Field Name="min" Hidden="true" />
+      <Method Name="Uint32ConfigItem" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="5.927" />
+        <Point X="15.75" Y="5.927" />
+        <Point X="15.75" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAQAQACAAAAIAAAAAAARAACAAQACEIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\uint32_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::Uint64ConfigItem">
+    <Position X="20.75" Y="6.5" Width="2.5" />
+    <Members>
+      <Field Name="defaultValue" Hidden="true" />
+      <Field Name="max" Hidden="true" />
+      <Field Name="min" Hidden="true" />
+      <Method Name="Uint64ConfigItem" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="5.692" />
+        <Point X="22" Y="5.692" />
+        <Point X="22" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAACQAQACAAAAIAAAAAAABAACAAQACEIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\uint64_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::StringConfigItem">
+    <Position X="16" Y="14.25" Width="2.75" />
+    <Members>
+      <Field Name="defaultValue" Hidden="true" />
+      <Method Name="getDefault" Hidden="true" />
+      <Field Name="maxLength" Hidden="true" />
+      <Field Name="minLength" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="StringConfigItem" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="13.794" />
+        <Point X="17.375" Y="13.794" />
+        <Point X="17.375" Y="14.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAACAAAgIQAAAAAABAADAAQACkIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\string_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::BoolConfigItem">
+    <Position X="13" Y="14.25" Width="2.25" />
+    <Members>
+      <Method Name="BoolConfigItem" Hidden="true" />
+      <Field Name="defaultValue" Hidden="true" />
+      <Method Name="getDefault" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="13.594" />
+        <Point X="14.125" Y="13.594" />
+        <Point X="14.125" Y="14.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAQAAACAAAAIAAAAAAABAACAAQACEIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\bool_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::Int8ConfigItem">
+    <Position X="17.75" Y="10.5" Width="2.5" />
+    <Members>
+      <Field Name="defaultValue" Hidden="true" />
+      <Method Name="getDefault" Hidden="true" />
+      <Method Name="Int8ConfigItem" Hidden="true" />
+      <Field Name="max" Hidden="true" />
+      <Field Name="min" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="9.868" />
+        <Point X="19" Y="9.868" />
+        <Point X="19" Y="10.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAQAQACAAAAIAAAAAAABAAGAAQACEIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\int8_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::Int16ConfigItem">
+    <Position X="11.25" Y="10.5" Width="2.75" />
+    <Members>
+      <Field Name="defaultValue" Hidden="true" />
+      <Method Name="getDefault" Hidden="true" />
+      <Method Name="Int16ConfigItem" Hidden="true" />
+      <Field Name="max" Hidden="true" />
+      <Field Name="min" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="9.534" />
+        <Point X="12.625" Y="9.534" />
+        <Point X="12.625" Y="10.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAQAQACAAAAIAAAAAAABAACAQQACEIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\int16_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::Int32ConfigItem">
+    <Position X="14.5" Y="10.5" Width="2.5" />
+    <Members>
+      <Field Name="defaultValue" Hidden="true" />
+      <Method Name="getDefault" Hidden="true" />
+      <Method Name="Int32ConfigItem" Hidden="true" />
+      <Field Name="max" Hidden="true" />
+      <Field Name="min" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="9.864" />
+        <Point X="15.75" Y="9.864" />
+        <Point X="15.75" Y="10.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAQAQACAAAAIAAAAAAABAACAAQACEIAAEAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\int32_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::Int64ConfigItem">
+    <Position X="20.75" Y="10.5" Width="2.5" />
+    <Members>
+      <Field Name="defaultValue" Hidden="true" />
+      <Method Name="getDefault" Hidden="true" />
+      <Method Name="Int64ConfigItem" Hidden="true" />
+      <Field Name="max" Hidden="true" />
+      <Field Name="min" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="9.555" />
+        <Point X="22" Y="9.555" />
+        <Point X="22" Y="10.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEgAAAQAQACAAAAIAAAAAAABAACAAQACEIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\int64_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATC::IPaddressConfigItem">
+    <Position X="19.5" Y="14.25" Width="2.75" />
+    <Members>
+      <Field Name="defaultValue" Hidden="true" />
+      <Method Name="getDefault" Hidden="true" />
+      <Field Name="ipAddress" Hidden="true" />
+      <Method Name="IPaddressConfigItem" Hidden="true" />
+      <Field Name="ipAddrLength" Hidden="true" />
+      <Field Name="maxLength" Hidden="true" />
+      <Field Name="minLength" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ATC::BaseConfigItem" ManuallyRouted="true">
+      <Path>
+        <Point X="17.375" Y="5.132" />
+        <Point X="17.375" Y="13.605" />
+        <Point X="20.875" Y="13.605" />
+        <Point X="20.875" Y="14.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAQAAAKAAAAIQAAAAAABIADAAQACkIAAAAAA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\config\ipaddress_config_item.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

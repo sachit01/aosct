@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ATC::Event">
+    <Position X="3.25" Y="0.5" Width="2.25" />
+    <Members>
+      <Field Name="blockOffsetMultiplier" Hidden="true" />
+      <Field Name="componentID" Hidden="true" />
+      <Field Name="componentOffsetMultiplier" Hidden="true" />
+      <Field Name="container" Hidden="true" />
+      <Field Name="containerOffsetMultiplier" Hidden="true" />
+      <Field Name="dmiEventCode" Hidden="true" />
+      <Field Name="dynamicText" Hidden="true" />
+      <Method Name="Event" Hidden="true" />
+      <Field Name="eventNum" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Field Name="isDynamicTextSet" Hidden="true" />
+      <Field Name="maxDynamicTextLen" Hidden="true" />
+      <Field Name="maxTextLen" Hidden="true" />
+      <Method Name="registerEvent" Hidden="true" />
+      <Field Name="releaser" Hidden="true" />
+      <Field Name="text" Hidden="true" />
+      <Field Name="type" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ATC::Event::EventType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>P:\aos_bhp\atc\impl\event_handler\event.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>RgACIICAAIABABACAhAACJAAAwABIAkMEACMAiQEIgA=</HashCode>
+      <FileName>P:\aos_bhp\atc\impl\event_handler\event.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

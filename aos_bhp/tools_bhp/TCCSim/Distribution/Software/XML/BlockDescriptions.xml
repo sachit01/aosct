@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+/*******************************************************************************
+*
+* (C) COPYRIGHT Bombardier Transportation (Signal) Sweden AB, 2018
+* 
+* We reserve all rights in this file and in the information 
+* contained therein. Reproduction, use or disclosure to third 
+* parties without written authority is strictly forbidden.
+*
+*  %name:          BlockDescriptions.xml %
+*
+*  %version:       12 %
+*
+*  %created_by:    skothiya %
+*
+*  %date_created:  2017-07-11 15:33 %
+*
+*  DESCRIPTION: 
+*              
+*
+******************************************************************************/
+
+/*******************************************************************************
+*
+* REVISION HISTORY :
+*
+* Date          Name        Changes
+* 2011-09-26    Antbäck     NID_TRACK_SECTION -> NID_TRACK
+*                           TRACK_SECTION_DATA -> TRACK_DATA
+* 2011-10-03    Hidaji      Removed Q_REASON field from TEXT_MESSAGE
+*                           changed B_TRAIN_STATUS from word to dword
+*                           removed bits 12,13,14 added bits 16 17	
+* 2011-10-31    Antbäck     Reworked Pantograph Shift
+* 2011-11-22    Antbäck     Implemented KEEP_TRACK_DATA/MAX_SEARCH_DIST
+* 2011-01-06    Hidaji      Added AOS_VERSION block
+* 2012-01-18    Antbäck     Text description of AOS_Version
+* 2012-01-20    Antbäck     Removed D_PREVIOUS_BG
+* 2013-11-07    Hidaji      Added PANTO_START_POSITION
+* 2014-08-15    Antbäck     Added version info as XML data 
+* 2016-06-23    akushwah    Added/updated blocks for BHP projects
+* 2017-07-11    skothiya    Corrected blocks for KEEP_TRACK_DATA and TRACK_DATA_ITEM
+* 2018-02-02    nsyed       Upgrade to FFFIS TCC-AOS v5.12
+* 2018-03-15    akushwah    Upgrade to FFFIS Core TCC-AOS v5.16 and Adap v1.6
+* 2019-01-28    nosharma    Updated TRACK_DATA according to FFFIS Core TCC-AOS v5.26
+*******************************************************************************/
+-->
+<BlockDescriptions>
+  <VersionData>
+    <Name>%name:          BlockDescriptions.xml %</Name>
+    <Version>%version:       13 %</Version>
+    <CreatedBy>%created_by:    nsyed %</CreatedBy>
+    <Date>%date_created:  2018-02-02 15:33 %</Date>
+  </VersionData>
+  <Comment String="Complies to FFFIS TCC-AOS, v5.16(Core) and 1.6 (BHP adaptation)"></Comment>
+
+  <Block type="CANCEL_AREA" value="25">
+  </Block>
+  <Block type="ATO_PROFILE_CONTROL" value="13">
+    <FieldType Name="Q_PROFILE"/>
+    <FieldType Name="D_REVERSE"/>
+    <FieldType Name="B_DIRECTION"/>
+  </Block>
+  <Block type="CONFIGURATION_DATA" value="38">
+    <FieldType Name="TID_TEXT_STRING">
+      <Display>Parameter name</Display>
+    </FieldType>
+    <FieldType Name="TID_TEXT_STRING">
+      <Display>Value string</Display>
+    </FieldType>
+  </Block>
+  <Block type="INITIATE_CONFIG" value="34">
+    <FieldType Name="Q_INITIATE"/>
+  </Block>
+  <Block type="ATO_STOP_POSITION" value="10">
+    <FieldType Name="NID_TRACK"/>
+    <FieldType Name="D_POSITION"/>
+  </Block>
+  <Block type="BALISE_DATA" value="4">
+    <FieldType Name="NID_TRACK"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="NID_BG"/>
+  </Block>
+  <Block type="LOCATION_DATA" value="9">
+    <FieldType Name="TID_LOCATION"/>
+    <FieldType Name="NID_LOCATION_TYPE"/>
+  </Block>
+  <Block type="AREAS" value="42">
+    <FieldType Name="NID_AREA"/>
+  </Block>
+  <Block type="MESSAGE_ACKNOWLEDGE" value="44">
+    <FieldType Name="NID_MSG" />
+    <FieldType Name="Q_MESSAGE_STATUS"/>
+  </Block>
+  <Block type="PARTLY_TRACK_DATA" value="45"></Block>
+  <Block type="CAR_STATUS_DATA" value="130">
+    <FieldType Name="NID_VEHICLE"/>
+    <FieldType Name="B_TIC_STATUS"/>
+  </Block>
+  <Block type="CEILING_SPEED_DATA" value="6">
+    <FieldType Name="NID_TRACK"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="V_SPEED"/>
+    <FieldType Name="Q_SPEED"/>
+  </Block>
+  <Block type="CONFIG_CONFIRMATION" value="37">
+    <FieldType Name="Q_ACKNOWLEDGE"/>
+  </Block>
+  <Block type="ERROR_MESSAGE_DATA" value="129">
+    <FieldType Name="Q_ERROR_LEVEL"/>
+    <FieldType Name="NID_ERROR_NO"/>
+  </Block>
+  <Block type="ETA_CONFIRMATION" value="20">
+    <FieldType Name="Q_ACKNOWLEDGE"/>
+    <FieldType Name="T_CLOCK"/>
+  </Block>
+  <Block type="EVENT_DATA" value="30">
+    <FieldType Name="NID_EVENT_NO"/>
+  </Block>
+  <Block type="ETA_REQUEST" value="39">
+    <FieldType Name="T_CLOCK"/>
+  </Block>
+  <Block type="EVENT_DATA_TEXT" value="24">
+    <FieldType Name="NID_EVENT_NO"/>
+    <FieldType Name="TID_TEXT_STRING"/>
+  </Block>
+  <Block type="EXTERNAL_DATA" value="33">
+    <FieldType Name="NID_SYSTEM"/>
+    <FieldType Name="N_LENGTH"/>
+  </Block>
+  <Block type="STOP_DIST_DATA" value="46">
+    <FieldType Name="G_GRADIENT"/>
+    <FieldType Name="D_STOP_DIST"/>
+    <FieldType Name="D_STOP_DIST"/>
+  </Block>
+  <Block type="GRADIENT_DATA" value="5">
+    <FieldType Name="NID_TRACK"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="G_GRADIENT"/>
+  </Block>
+  <Block type="LAST_BALISE" value="27">
+    <FieldType Name="NID_BG"/>
+  </Block>
+  <Block type="LOAD_FINISHED" value="13"></Block>
+  <Block type="LOCOMOTIVE_POWER" value="16">
+    <FieldType Name="Q_POWER"/>
+  </Block>
+  <Block type="MAX_SEARCH_DIST" value="17">
+    <FieldType Name="D_MAX_DIST"/>
+  </Block>
+  <Block type="VEHICLE_TYPE_DATA" value="31">
+    <FieldType Name="NID_VEHICLE_TYPE"/>
+    <FieldType Name="W_WEIGHT">
+      <Display>Dynamic wgt. loaded</Display>
+    </FieldType>
+    <FieldType Name="W_WEIGHT">
+      <Display>Dynamic wgt. empty</Display>
+    </FieldType>
+    <FieldType Name="W_WEIGHT">
+      <Display>Brake wgt. loaded Brake System Pneumatic</Display>
+    </FieldType>
+    <FieldType Name="W_WEIGHT">
+      <Display>Brake wgt. empty Brake System Pneumatic</Display>
+    </FieldType>
+    <FieldType Name="W_WEIGHT">
+      <Display>Brake wgt. loaded Brake System ECPB</Display>
+    </FieldType>
+    <FieldType Name="W_WEIGHT">
+      <Display>Brake wgt. empty Brake System ECPB</Display>
+    </FieldType>
+    <FieldType Name="W_WEIGHT">
+      <Display>Brake wgt. loaded Brake System Not used</Display>
+    </FieldType>
+    <FieldType Name="W_WEIGHT">
+      <Display>Brake wgt. empty Brake System Not used</Display>
+    </FieldType>
+  </Block>
+  <Block type="PARTLY_MA" value="19"></Block>
+  <Block type="POSSESSION_REQUEST" value="28"></Block>
+  <Block type="PROTOCOL_VERSION" value="2">
+    <FieldType Name="M_VERSION">
+      <Display>Major Version</Display>
+    </FieldType>
+    <FieldType Name="M_VERSION">
+      <Display>Minor Version</Display>
+    </FieldType>
+  </Block>
+  <Block type="SPEED_CHANGE_POSITION" value="40">
+    <FieldType Name="NID_TRACK"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="V_SPEED"/>
+  </Block>
+  <Block type="RELEASE_BRAKE" value="12"></Block>
+  <Block type="REQ_CAR_STATUS" value="10"></Block>
+  <Block type="SET_TIME" value="8">
+    <FieldType Name="T_CLOCK"/>
+  </Block>
+  <Block type="SHUNTING_REQUEST" value="29"></Block>
+  <Block type="TEXT_MESSAGE" value="14">
+    <FieldType Name="M_TEXT"/>
+  </Block>
+  <Block type="TRACKS" value="41">
+    <FieldType Name="NID_TRACK"/>
+  </Block>
+  <Block type="TRACK_DATA_ITEM" value="16">
+    <FieldType Name="Q_TRACK_DATA_TYPE"/>
+    <FieldType Name="NID_TRACK"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="Q_DIRECTION"/>
+    <FieldType Name="N_VALUE"/>
+  </Block>
+  <Block type="TRACK_DATA" value="3">
+    <FieldType Name="NID_TRACK"/>
+    <FieldType Name="L_TRACK"/>
+    <FieldType Name="B_DIRECTION"/>
+    <FieldType Name="NID_PREVIOUS_TRACK"/>
+  </Block>
+  <Block type="TRAIN_NAME" value="7">
+    <FieldType Name="TID_TRAIN_NAME"/>
+  </Block>
+  <Block type="VEHICLE_DATA" value="23">
+    <FieldType Name="N_VALUE"/>
+    <FieldType Name="NID_VEHICLE_TYPE"/>
+    <FieldType Name="NID_VEHICLE"/>
+    <FieldType Name="TID_VEHICLE_NAME"/>
+  </Block>
+  <Block type="WAITING_TIME" value="15">
+    <FieldType Name="T_WAITING_TIME"/>
+  </Block>
+  <Block type="DEPARTURE_WARNING" value="22">
+    <FieldType Name="Q_SIGNAL"/>
+  </Block>
+  <Block type="YARD_REQUEST" value="32"></Block>
+  <Block type="LOCATION_BORDERS" value="35">
+    <FieldType Name="NID_TRACK"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="NID_TRACK"/>
+    <FieldType Name="D_POSITION"/>
+    <FieldType Name="V_SPEED"/>
+    <FieldType Name="G_GRADIENT"/>
+    <FieldType Name="G_GRADIENT"/>
+  </Block>
+  <Block type="BALISE_IDENTITY" value="43">
+    <FieldType Name="NID_BG"/>
+  </Block>
+
+  <!--BHPB Adaptation Blocks-->
+  <Block type="BHPB_CONFIG_VERSION" value="129">
+    <FieldType Name="N_LENGTH"/>
+    <FieldType Name="M_VERSION">
+      <Display>Configuration Major Version</Display>
+    </FieldType>
+    <FieldType Name="M_VERSION">
+      <Display>Configuration Minor Version</Display>
+    </FieldType>
+  </Block>
+  <Block type="BHPB_RADIO_CHANNEL" value="130">
+    <FieldType Name="N_LENGTH"/>
+    <FieldType Name="TID_RADIO_CHANNEL"/>
+  </Block>
+  <Block type="BHPB_TRAIN_STATUS" value="131">
+    <FieldType Name="N_LENGTH"/>
+    <FieldType Name="B_BHPB_TRAIN_STATUS"/>
+  </Block>
+  <Block type="BHPB_SAFE_FOR_BOARDING" value="133">
+    <FieldType Name="N_LENGTH"/>
+  </Block>
+  <Block type="BHPB_LOAD_STATUS" value="134">
+    <FieldType Name="N_LENGTH"/>
+    <FieldType Name="Q_LOAD_STATUS"/>
+  </Block>
+  <Block type="BHPB_SET_APPROACH_SPEED" value="135">
+    <FieldType Name="N_LENGTH"/>
+    <FieldType Name="V_SPEED"/>
+  </Block>
+  <!--
+  <Block type="DEBUG_BLOCK" value="1">
+    <FieldType Name="Q_BLOCK_FIELD1"/>
+    <FieldType Name="D_BLOCK_FIELD2"/>
+    <FieldType Name="Q_BLOCK_FIELD3" />
+    <FieldType Name="Q_BLOCK_FIELD4" />
+  </Block>
+  <Block type="DEBUG_BLOCK2" value="2">
+    <FieldType Name="Q_BLOCK_FIELD4"/>
+    <FieldType Name="Q_BLOCK_FIELD5"/>
+  </Block>
+  -->
+</BlockDescriptions>
