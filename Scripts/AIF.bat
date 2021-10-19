@@ -22,16 +22,15 @@ echo options C_EXECUTE_CMD  >> commands.tmp
 echo options C_EXEC_HELP_FILE  >> commands.tmp
 echo options C_INCLUDE_FLAG /I >> commands.tmp
 echo options C_LINKER_VERSION_CMD LINK /V >> commands.tmp
-echo options C_LINK_CMD LINK Ws2_32.lib /FORCE:MULTIPLE /DEBUG >> commands.tmp
+echo options C_LINK_CMD LINK /FORCE:MULTIPLE /DEBUG >> commands.tmp
 echo options C_LINK_OPTIONS  >> commands.tmp
 echo options C_OBJECT_EXT .OBJ >> commands.tmp
 echo options C_OUTPUT_FLAG /OUT: >> commands.tmp
 echo options C_PREPROCESS_CMD CL /E /C >> commands.tmp
 echo options C_PREPROCESS_FILE  >> commands.tmp
-echo options EVENT_LIMIT 200000 >> commands.tmp
+echo options EVENT_LIMIT 50000 >> commands.tmp
 echo options EXECUTABLE_EXTENSION  >> commands.tmp
 echo options MAX_VARY_RANGE 20 >> commands.tmp
-echo options PAGE_WIDTH 80 >> commands.tmp
 echo options PRECOMPILE_CMD  >> commands.tmp
 echo options PRECOMPILE_EXT  >> commands.tmp
 echo options SBF_LOC_MEMBER_IN_NSP GLOBAL_NAMESPACE >> commands.tmp
@@ -39,22 +38,19 @@ echo options SBF_LOC_MEMBER_OUTSIDE_NSP GLOBAL_NAMESPACE >> commands.tmp
 echo options SBF_LOC_NONMEMBER_IN_NSP DECL_NAMESPACE >> commands.tmp
 echo options SBF_LOC_NONMEMBER_OUTSIDE_NSP DECL_NAMESPACE >> commands.tmp
 echo options SOURCE_EXTENSION .cpp >> commands.tmp
-echo options STANDARD_ERROR REDIRECT >> commands.tmp
 echo options STANDARD_OUTPUT REDIRECT >> commands.tmp
 echo options SUBSTITUTE_CODE_FOR_C_FILE FALSE >> commands.tmp
+echo options TARGET_VARIANT HOST >> commands.tmp
 echo options VCAST_ALT_WB_METHOD TRUE >> commands.tmp
 echo options VCAST_ASSEMBLY_FILE_EXTENSIONS asm >> commands.tmp
 echo options VCAST_ASSIGN_WITHOUT_COPY_CTOR TRUE >> commands.tmp
 echo options VCAST_AUTO_CLEAR_TEST_USER_CODE FALSE >> commands.tmp
 echo options VCAST_AVOID_COMMA_OPERATOR FALSE >> commands.tmp
-echo options VCAST_BASIS_PATHS_FOR_CONSTANT_BRANCHES TRUE >> commands.tmp
 echo options VCAST_BUFFER_OUTPUT FALSE >> commands.tmp
 echo options VCAST_COLLAPSE_STD_HEADERS COLLAPSE_NONE >> commands.tmp
 echo options VCAST_COMMAND_LINE_DEBUGGER FALSE >> commands.tmp
 echo options VCAST_COMPILER_SUPPORTS_CPP_CASTS TRUE >> commands.tmp
 echo options VCAST_COVERAGE_FOR_AGGREGATE_INIT TRUE >> commands.tmp
-echo options VCAST_CUSTOM_REPORT_FORMAT HTML >> commands.tmp
-echo options VCAST_DISABLE_AUTO_BASIS_PATH_GEN FALSE >> commands.tmp
 echo options VCAST_DISABLE_CPP_EXCEPTIONS FALSE >> commands.tmp
 echo options VCAST_DISABLE_STD_CONTAINER_DETECTION FALSE >> commands.tmp
 echo options VCAST_DISABLE_STD_STRING_DETECTION FALSE >> commands.tmp
@@ -81,7 +77,7 @@ echo options VCAST_MAIN FALSE >> commands.tmp
 echo options VCAST_MAX_COVERED_SUBPROGRAMS 1000 >> commands.tmp
 echo options VCAST_MAX_HEAP_SIZE 1000 >> commands.tmp
 echo options VCAST_MAX_MCDC_STATEMENTS 1000 >> commands.tmp
-echo options VCAST_MAX_STRING_LENGTH 33000 >> commands.tmp
+echo options VCAST_MAX_STRING_LENGTH 1000 >> commands.tmp
 echo options VCAST_MICROSOFT_LONG_LONG TRUE >> commands.tmp
 echo options VCAST_MINIMAL_TERMINATION FALSE >> commands.tmp
 echo options VCAST_NO_EXIT FALSE >> commands.tmp
@@ -100,7 +96,6 @@ echo options VCAST_PREPEND_TO_PATH_DIRS  >> commands.tmp
 echo options VCAST_PREPROCESS_PREINCLUDE  >> commands.tmp
 echo options VCAST_REMOVE_PREPROCESSOR_COMMENTS TRUE >> commands.tmp
 echo options VCAST_RPTS_DEFAULT_FONT_FACE Arial(7) >> commands.tmp
-echo options VCAST_SHOW_STDOUT_CONSOLE FALSE >> commands.tmp
 echo options VCAST_STDIO FALSE >> commands.tmp
 echo options VCAST_STRICT_TEST_CASE_IMPORT TRUE >> commands.tmp
 echo options VCAST_USE_COMPOUND_FOR_BATCH FALSE >> commands.tmp
@@ -111,61 +106,77 @@ echo options VCAST_USE_VCPP FALSE >> commands.tmp
 echo options VCAST_VXWORKS FALSE >> commands.tmp
 echo options WHITEBOX YES >> commands.tmp
 echo clear_default_source_dirs  >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\dmi_comm\dmi_handler\ >> commands.tmp
-echo options LIBRARY_INCLUDE_DIR C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\atc_base\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\atc_types\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\atp_shared\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\config\ >> commands.tmp
+echo options TYPE_HANDLED_SOURCE_DIR P:\atp_core\impl\data_storage\targets\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\data_storage\tracks\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\data_storage\tsetup\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\dmi_comm\dmi_channel\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\dmi_comm\dmi_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\input_output\btm_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\input_output\loco_io\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\kernel\atp_application\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\kernel\message_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\kernel\mode_control\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\position\decode\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\position\odometry\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\position\position\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\radio_comm\radio_channel\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\radio_comm\radio_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\supervision\brake\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\test_atp\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\atp_main\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\basic_ip\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\config\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\console\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\data_storage\targets\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\data_storage\tracks\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\data_storage\tsetup\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\dmi_comm\dmi_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\event_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\input_output\btm_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\input_output\loco_io\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\kernel\atp_application\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\kernel\message_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\kernel\mode_control\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\log_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\position\decode\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\position\odometry\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\position\position\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\radio_comm\radio_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_bhp\impl\supervision\brake\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\aos_allocator\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\aos_template_library\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\aos_template_library\old_copied_from_etcs\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\atc_base\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\atc_types\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\basic_ip\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\bds_sim\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\coding_templates\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\config\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\console\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\event_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\fixed_size_mempool\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\log_handler\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\serialization\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\simulation\cod_sim\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\simulation\common\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\simulation\opc_sim\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\simulation\vioh_sim\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\util\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\vfw\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\vfw_sim\ >> commands.tmp
 echo options TESTABLE_SOURCE_DIR C:\CoVP_CoHP\Linux_ppc\include\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\console\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\atp_shared\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\dmi_comm\dmi_channel\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\aos_template_library\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\event_handler\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\log_handler\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\vfw\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\kernel\mode_control\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\kernel\message_handler\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR C:\Program Files (x86)\Windows Kits\8.1\Include\um\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR C:\VitalIO_Handler\Implementation\Common\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR C:\VitalIO_Handler\Implementation\Client\ >> commands.tmp
 echo options TESTABLE_SOURCE_DIR C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\radio_comm\radio_handler\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\radio_comm\radio_channel\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\input_output\loco_io\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR C:\Program Files (x86)\Windows Kits\8.1\Include\um\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atc\impl\application\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\atp_core\impl\support\cross_compare\ >> commands.tmp
+echo options TESTABLE_SOURCE_DIR P:\COD_IF\ >> commands.tmp
 echo options TESTABLE_SOURCE_DIR C:\GSP_2\Software\Development\VitalIO_Handler\include\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\position\position\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\position\decode\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\input_output\btm_handler\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\position\odometry\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\COD_IF\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\simulation\cod_sim\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\kernel\atp_application\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\config\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\config\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\util\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\kernel\atp_application\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\supervision\supervise\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\supervision\brake_curve_calculations\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\math\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\supervision\brake\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\data_storage\targets\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\fixed_size_mempool\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\data_storage\tsetup\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\event_handler\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\log_handler\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\basic_ip\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\basic_ip\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR C:\BDS_IF\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\atp_main\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_core\impl\supervision\target_calculation\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\input_output\loco_io\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\data_storage\tsetup\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\kernel\mode_control\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\data_storage\targets\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\config\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atc\impl\application\ >> commands.tmp
-echo options TESTABLE_SOURCE_DIR .\aos_bhp\atp_bhp\impl\console\ >> commands.tmp
 echo environment build AIF.env >> commands.tmp
 echo /E:AIF tools script run AIF.tst >> commands.tmp
 echo /E:AIF execute batch >> commands.tmp
-echo /E:AIF tools import_coverage AIF.cvr >> commands.tmp
 echo /E:AIF reports custom management AIF_management_report.html >> commands.tmp
 "%VECTORCAST_DIR%\CLICAST"  /L:CPLUSPLUS tools execute commands.tmp false
