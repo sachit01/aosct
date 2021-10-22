@@ -182,7 +182,7 @@ TEST.NEW
 TEST.NAME:ATPApplication_getDispatcherVersionString.001
 TEST.COMPOUND_ONLY
 TEST.EXPECTED:USER_GLOBALS_VCAST.<<GLOBAL>>.IS_ERROR_REPORTED:false
-TEST.EXPECTED:atp_application.(cl)ATP::Kernel::ATPApplication::getDispatcherVersionString.return:"1.51.0"
+TEST.EXPECTED:atp_application.(cl)ATP::Kernel::ATPApplication::getDispatcherVersionString.return:"1.47.0"
 TEST.VALUE_USER_CODE:<<ATP::Kernel::ATPApplication instance>>
 <<ATP::Kernel::ATPApplication instance>> = ( &ATP::Kernel::ATPApplication::instance() );
 TEST.END_VALUE_USER_CODE:
@@ -1983,7 +1983,7 @@ TEST.NAME:ATPApplication_validateDispatcherVersion.002
 TEST.COMPOUND_ONLY
 TEST.EXPECTED:USER_GLOBALS_VCAST.<<GLOBAL>>.IS_ERROR_REPORTED:false
 TEST.EXPECTED:uut_prototype_stubs.ATC::AbstractLogHandler::writeToLog.level:BriefLog
-TEST.EXPECTED:uut_prototype_stubs.ATC::AbstractLogHandler::writeToLog.text:"Dispatcher version mismatch: 1.41.6, expecting: 1.51.0"
+TEST.EXPECTED:uut_prototype_stubs.ATC::AbstractLogHandler::writeToLog.text:"Dispatcher version mismatch: 1.41.6, expecting: 1.47.0"
 TEST.EXPECTED:uut_prototype_stubs.ATC::AbstractLogHandler::writeToLog.compName:"AP"
 TEST.EXPECTED:atp_application.(cl)ATP::Kernel::ATPApplication::validateDispatcherVersion.return:false
 TEST.VALUE_USER_CODE:<<ATP::Kernel::ATPApplication instance>>
