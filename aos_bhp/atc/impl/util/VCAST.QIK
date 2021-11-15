@@ -1,7 +1,7 @@
 --  QuickParse File Version: QP_COI_WS  --
-HOME_DIRECTORY P:\aos_bhp\atc\impl\util
+HOME_DIRECTORY D:\aosct\aos_bhp\atc\impl\util
 BEGIN_RECORD atc_util.cpp
-CHECKSUM 400248392
+CHECKSUM  400248392
 BLACKLIST FALSE
 DEFINED_OBJECTS
    aosHalt__3ATCFPCciT1

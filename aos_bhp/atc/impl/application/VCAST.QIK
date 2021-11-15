@@ -1,0 +1,34 @@
+--  QuickParse File Version: QP_COI_WS  --
+HOME_DIRECTORY D:\aosct\aos_bhp\atc\impl\application
+BEGIN_RECORD abstract_application_base.cpp
+CHECKSUM  3310516289
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   __ct__Q2_3ATC23AbstractApplicationBaseFQ2_3ATC14ComponentBlock
+   __dt__Q2_3ATC23AbstractApplicationBaseFv
+   addComponent__Q2_3ATC23AbstractApplicationBaseFPQ2_3ATC13BaseComponent
+   corePtr__Q2_3ATC23AbstractApplicationBaseSFv
+   getBlockNr__Q2_3ATC23AbstractApplicationBaseCFv
+   getCompIteratorEnd__Q2_3ATC23AbstractApplicationBaseFv
+   getCompIterator__Q2_3ATC23AbstractApplicationBaseFv
+CALLED_OBJECTS
+   __ct__Q2_3ATC13BaseComponentFRCQ2_3ATC13BaseComponent
+   __ct__Q2_3ATC13BaseComponentFUsPCcT2
+   __ct__Q2_3ATC13BaseComponentFv
+   __ct__Q2_3ATC14TraceInterfaceFPCcUcT1
+   __ct__Q2_3ATC14TraceInterfaceFv
+   __ct__Q2_3ATC23AbstractApplicationBaseFv
+   aosHalt__3ATCFPCciT1
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+   ATC::AbstractApplicationBase
+   ATC::BaseComponent
+DEFAULT_TESTABLE_CLASSES
+   ATC::AbstractApplicationBase
+INCLUDES
+END_RECORD abstract_application_base.cpp

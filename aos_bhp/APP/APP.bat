@@ -167,5 +167,5 @@ echo environment build APP.env >> commands.tmp
 echo /E:APP tools script run APP.tst >> commands.tmp
 echo /E:APP execute batch >> commands.tmp
 echo /E:APP tools import_coverage APP.cvr >> commands.tmp
-echo /E:APP reports custom management APP_management_report.html >> commands.tmp
+echo /E:APP reports custom management SCTR_Addendum_ATPApplication.html >> commands.tmp
 "%VECTORCAST_DIR%\CLICAST"  /L:CPLUSPLUS tools execute commands.tmp false

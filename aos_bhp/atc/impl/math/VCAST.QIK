@@ -1,7 +1,7 @@
 --  QuickParse File Version: QP_COI_WS  --
-HOME_DIRECTORY P:\aos_bhp\atc\impl\math
+HOME_DIRECTORY D:\aosct\aos_bhp\atc\impl\math
 BEGIN_RECORD atc_math.cpp
-CHECKSUM 3819833191
+CHECKSUM  3819833191
 BLACKLIST FALSE
 DEFINED_OBJECTS
    __ct__Q2_3ATC7ATCMathFv
