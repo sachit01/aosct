@@ -13,7 +13,7 @@ echo options C_COMPILER_VERSION_CMD CL >> commands.tmp
 echo options C_COMPILE_CMD CL /c /Zi /EHsc >> commands.tmp
 echo options C_COMPILE_CMD_FLAG /c -c >> commands.tmp
 echo options C_COMPILE_EXCLUDE_FLAGS /OUT:** /Fo** >> commands.tmp
-echo options C_DEBUG_CMD WDExpress.EXE >> commands.tmp
+echo options C_DEBUG_CMD WDExpress.exe >> commands.tmp
 echo options C_DEBUG_HELP_FILE  >> commands.tmp
 echo options C_DEFINE_FLAG /D >> commands.tmp
 echo options C_DEFINE_LIST _SIL WIN32 _USE_ATTRIBUTES_FOR_SAL=0 __EDG__ >> commands.tmp
@@ -28,7 +28,7 @@ echo options C_OBJECT_EXT .OBJ >> commands.tmp
 echo options C_OUTPUT_FLAG /OUT: >> commands.tmp
 echo options C_PREPROCESS_CMD CL /E /C >> commands.tmp
 echo options C_PREPROCESS_FILE  >> commands.tmp
-echo options EVENT_LIMIT 200000 >> commands.tmp
+echo options EVENT_LIMIT 3000 >> commands.tmp
 echo options EXECUTABLE_EXTENSION  >> commands.tmp
 echo options MAX_VARY_RANGE 20 >> commands.tmp
 echo options PAGE_WIDTH 80 >> commands.tmp
@@ -100,9 +100,10 @@ echo options VCAST_PREPEND_TO_PATH_DIRS  >> commands.tmp
 echo options VCAST_PREPROCESS_PREINCLUDE  >> commands.tmp
 echo options VCAST_REMOVE_PREPROCESSOR_COMMENTS TRUE >> commands.tmp
 echo options VCAST_RPTS_DEFAULT_FONT_FACE Arial(7) >> commands.tmp
-echo options VCAST_RPTS_HEADER SCTR Addendum ATPApplication AOS2.4.2, V1.9 >> commands.tmp
+echo options VCAST_RPTS_HEADER SCTR Addendum RadioHandler AOS2.2.6, V1.1 >> commands.tmp
 echo options VCAST_SHOW_STDOUT_CONSOLE FALSE >> commands.tmp
 echo options VCAST_STDIO FALSE >> commands.tmp
+echo options VCAST_STRICT_TEST_CASE_IMPORT TRUE >> commands.tmp
 echo options VCAST_USE_COMPOUND_FOR_BATCH FALSE >> commands.tmp
 echo options VCAST_USE_EDG_PREPROCESSOR FALSE >> commands.tmp
 echo options VCAST_USE_STATIC_MEMORY FALSE >> commands.tmp
@@ -163,9 +164,10 @@ echo options TESTABLE_SOURCE_DIR ..\.\atp_bhp\impl\data_storage\targets\ >> comm
 echo options TESTABLE_SOURCE_DIR ..\.\atp_bhp\impl\config\ >> commands.tmp
 echo options TESTABLE_SOURCE_DIR ..\.\atc\impl\application\ >> commands.tmp
 echo options TESTABLE_SOURCE_DIR ..\.\atp_bhp\impl\console\ >> commands.tmp
-echo environment build APP.env >> commands.tmp
-echo /E:APP tools script run APP.tst >> commands.tmp
-echo /E:APP execute batch >> commands.tmp
-echo /E:APP tools import_coverage APP.cvr >> commands.tmp
-echo /E:APP reports custom management SCTR_Addendum_ATPApplication.html >> commands.tmp
+echo environment build RH.env >> commands.tmp
+echo /E:RH /U:abstract_log_handler tools cover uut_disable Statement+MCDC >> commands.tmp
+echo /E:RH tools script run RH.tst >> commands.tmp
+echo /E:RH execute batch >> commands.tmp
+echo /E:RH tools import_coverage RH.cvr >> commands.tmp
+echo /E:RH reports custom management SCTR_Addendum_RadioHandler.html >> commands.tmp
 "%VECTORCAST_DIR%\CLICAST"  /L:CPLUSPLUS tools execute commands.tmp false
