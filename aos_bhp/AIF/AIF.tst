@@ -2258,8 +2258,8 @@ TEST.SUBPROGRAM:<<COMPOUND>>
 TEST.NEW
 TEST.NAME:AIF0045_ProtocolVersion_UnitData_Not_Appended
 TEST.SLOT: "1", "<<INIT>>", "<<INIT>>", "1", "Instance.001"
-TEST.SLOT: "2", "analyzer_if", "(cl)ATP::AnalyzerIF::init", "1", "AnalyzerIF_init.001"
+TEST.SLOT: "2", "analyzer_if", "(cl)ATP::AnalyzerIF::init", "2", "AnalyzerIF_init.001"
 TEST.SLOT: "3", "analyzer_if", "(cl)ATP::AnalyzerIF::registerMeasurement(const char_t*const,const char_t*const,const bool*const)bool", "1", "AnalyzerIF_registerMeasurement_bool.008"
-TEST.SLOT: "4", "analyzer_if", "(cl)ATP::AnalyzerIF::run", "1", "AnalyzerIF_run.009"
+TEST.SLOT: "4", "analyzer_if", "(cl)ATP::AnalyzerIF::run", "2", "AnalyzerIF_run.009"
 TEST.END
 --
